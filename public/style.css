@@ -163,6 +163,7 @@ nav .button:hover {
 	background-color: white;
 	border-radius: 100%;
 	font-size: 45px;
+	cursor: pointer;
 }
 
 /** WEBKIT SCROLLBAR */

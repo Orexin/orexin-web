@@ -14,10 +14,6 @@
     color: var(--text);
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Slab', sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -26,9 +22,25 @@ body{
     background-color: var(--orexin-grey);
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 75px 0px 75px 0px;
+    font-size: 75px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+
 a {
     color: var(--link);
-    text-decoration: none;
+	text-decoration: none;
+	transition: color .3s ease-in-out;
 }
 
 a:hover {
@@ -41,36 +53,6 @@ a:visited {
     color: white;
     text-decoration: none;
 }
-
-a:active body{
-    text-decoration: none;
-/*     transform: scale(2.5);
-    transition: all 0.5s ease-in; */
-}
-
-p {
-    text-align: justify;
-    font-size: 20px;
-}
-
-h1 {
-    text-align: center;
-    padding: 75px 0px 75px 0px;
-    font-size: 75px;
-}
-
-/* 0.3 BACKGROUND */
-
-/* .particles-js {
-    display: absolute;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: var(--orexin-grey);
-    z-index: -5;
-} */
-
-/* 0.4 FOOTER */
 
 footer {
     background-color: var(--orexin-grey-2);

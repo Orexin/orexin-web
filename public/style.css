@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-	--blue: #43D5FA;
-	--red: #FF5757;
+	--orexin-blue: #43D5FA;
+	--orexin-red: #FF5757;
 	--text: #222222;
 	--link: #288096;
 }
@@ -19,7 +19,7 @@ html {
 }
 
 body{
-    background-color: var(--orexin-grey);
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,7 +70,7 @@ footer p {
     padding: 0;
 }
 
-/* 1 NAV */
+/** NAV */
 
 nav {
     position: fixed;
@@ -114,130 +114,12 @@ nav ul li ul li {
     text-align: center;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
+/** INDEX */
+.welcome {
+	background: var(--orexin-blue);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: var(--orexin-grey);
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-/* 0.2 */
-
-a:hover {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-a:active body{
-    text-decoration: none;
-/*     transform: scale(2.5);
-    transition: all 0.5s ease-in; */
-}
-
-p {
-    text-align: justify;
-    font-size: 20px;
-}
-
-h1 {
-    text-align: center;
-    padding: 75px 0px 75px 0px;
-    font-size: 75px;
-}
-
-/* 0.3 BACKGROUND */
-
-/* .particles-js {
-    display: absolute;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: var(--orexin-grey);
-    z-index: -5;
-} */
-
-/* 0.4 FOOTER */
-
-footer {
-    background-color: var(--orexin-grey-2);
-    padding: 20px 0;
-    text-align: center;
-    position: absolute;
-    z-index: 998;
-    width: 100%;
-}
-
-footer p {
-    font-size: 25px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* 1 NAV */
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: appropriate;
-    background-color: appropriate;
-    font-size: appropriate;
-    z-index: 999;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-nav ul li {
-    float:right;
-    list-style: none;
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    padding: appropriate;
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    padding: 0px;
-}
-
-nav ul li:hover > ul{
-    display: block;
-    transition: all .5s ease-in-out;
-}
-
-nav ul li ul li ul li {
-    width: appropriate;
-}
-
-nav ul li ul li {
-    text-align: center;
-}
-
-/** 8 WEBKIT SCROLLBAR */
+/** WEBKIT SCROLLBAR */
 
 ::selection {
     color: black;
@@ -265,7 +147,7 @@ nav ul li ul li {
     background: var(--orexin-blue); 
 }
 
-/** 9 RESPO */
+/** RESPO */
 
 /*? idk man not sure 'bout this */
 

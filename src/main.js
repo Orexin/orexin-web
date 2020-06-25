@@ -9,6 +9,10 @@ import './autocomplete';
 import './parallax';
 import './type-writer';
 
+
+// aos inicializace
+AOS.init();
+
 // stl viewer
 var stl_viewer=new StlViewer
 (document.getElementById("stl_cont"),

@@ -2,6 +2,7 @@ import * as firebase from 'firebase/app';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos';
+import 'aos/dist/aos.css';
 import 'jquery';
 import './viewstl/stl_viewer.min';
 import './contact-form';

@@ -251,3 +251,50 @@ nav ul li ul li ul li {
 nav ul li ul li {
     text-align: center;
 }
+
+/** 8 WEBKIT SCROLLBAR */
+
+::selection {
+    color: black;
+    background: appropriate;
+}
+
+::-moz-selection { 
+    color: black;
+    background: var(--orexin-blue);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px var(--orexin-grey-2); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orexin-blue); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orexin-blue); 
+}
+
+/** 9 RESPO */
+
+/*? idk man not sure 'bout this */
+
+/* 9.1 XS (<576px) */
+@media only screen and (max-width: 576px) {}
+
+/* 9.2 SM (>=576px) */
+@media only screen and (min-width: 576px) {}
+
+/* 9.3 MD (>=768px) */
+@media only screen and (min-width: 768px) {}
+
+/* 9.4 LG (>=992px) */
+@media only screen and (min-width: 992px) {}
+
+/* 9.5 EL (>=1200px) */
+@media only screen and (min-width: 1140px) {}

@@ -1,13 +1,13 @@
 {
-  "name": "public",
+  "name": "orexin-web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Orexin Econtech",
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.4.2",
@@ -16,6 +16,7 @@
     "firebase-tools": "^8.4.3",
     "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   }
 }

@@ -121,6 +121,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// aos inicializace
+AOS.init();
+
 // stl viewer
 var stl_viewer=new StlViewer
 (document.getElementById("stl_cont"),

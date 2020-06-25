@@ -54,6 +54,15 @@ a:visited {
     text-decoration: none;
 }
 
+.button-red {
+	padding: 13px 30px;
+	background: var(--orexin-red);
+	color: white;
+	font-weight: 600;
+	font-size: 24px;
+	border-radius: 30px;
+}
+
 footer {
     background-color: var(--orexin-grey-2);
     padding: 20px 0;
@@ -81,7 +90,6 @@ nav {
     background-color: appropriate;
     font-size: appropriate;
     z-index: 999;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 nav ul li {

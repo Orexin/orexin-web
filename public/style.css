@@ -3,6 +3,7 @@
 :root {
 	--orexin-blue: #43D5FA;
 	--orexin-red: #FF5757;
+	--orexin-red-dark: #e64e4e;
 	--text: #222222;
 	--link: #288096;
 }
@@ -45,7 +46,7 @@ a {
 
 a:hover {
     text-decoration: none !important;
-    color: white !important;
+    color: white;
     cursor: pointer;
 }
 
@@ -97,6 +98,7 @@ nav a:hover {
 
 nav ul {
 	list-style: none;
+	margin: 0;
 }
 
 nav ul li {
@@ -110,6 +112,13 @@ nav .button {
 	font-weight: 600;
 	font-size: 20px;
 	border-radius: 30px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: all .3s ease-in-out;
+}
+
+nav .button:hover {
+	color: white;
+	background-color: var(--orexin-red-dark);
 }
 
 /** INDEX */
@@ -131,7 +140,7 @@ nav .button {
 }
 
 .welcome-text h1 {
-	font-size: 40px;
+	font-size: 50px;
 	text-align: left;
 	padding: 0 0 20px;
 	margin: 0;
@@ -139,7 +148,7 @@ nav .button {
 }
 
 .welcome-text span {
-	font-size: 25px;
+	font-size: 35px;
 	padding: 0;
 	margin: 0;
 	font-weight: 600;

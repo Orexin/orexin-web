@@ -44,23 +44,14 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
     cursor: pointer;
 }
 
 a:visited {
-    color: white;
+    color: unset;
     text-decoration: none;
-}
-
-.button-red {
-	padding: 13px 30px;
-	background: var(--orexin-red);
-	color: white;
-	font-weight: 600;
-	font-size: 24px;
-	border-radius: 30px;
 }
 
 footer {
@@ -86,40 +77,39 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: appropriate;
-    background-color: appropriate;
-    font-size: appropriate;
+    height: 80px;
     z-index: 999;
 }
 
+nav a {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 0 10px;
+	color: var(--text);
+}
+
+
+/*? potřebujeme něco na hover */
+nav a:hover {
+	color: var(--text);
+}
+
+nav ul {
+	list-style: none;
+}
+
 nav ul li {
-    float:right;
-    list-style: none;
-    position: relative;
+	float: left;
 }
 
-nav ul li a {
-    display: block;
-    padding: appropriate;
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    padding: 0px;
-}
-
-nav ul li:hover > ul{
-    display: block;
-    transition: all .5s ease-in-out;
-}
-
-nav ul li ul li ul li {
-    width: appropriate;
-}
-
-nav ul li ul li {
-    text-align: center;
+nav .button {
+	padding: 7px 25px;
+	background: var(--orexin-red);
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	border-radius: 30px;
 }
 
 /** INDEX */

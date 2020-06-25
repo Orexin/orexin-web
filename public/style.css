@@ -4,13 +4,18 @@
 	--blue: #43D5FA;
 	--red: #FF5757;
 	--text: #222222;
+	--link: #288096;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 html {
@@ -22,11 +27,9 @@ body{
 }
 
 a {
-    color: white;
+    color: var(--link);
     text-decoration: none;
 }
-
-/* 0.2 */
 
 a:hover {
     text-decoration: none;

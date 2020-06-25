@@ -117,6 +117,34 @@ nav ul li ul li {
 /** INDEX */
 .welcome {
 	background: var(--orexin-blue);
+	height: 95vh;
+}
+
+.welcome-img {
+	width: max-content;
+}
+
+.welcome-img img {
+	width: 500px;
+}
+
+.welcome-text {
+	padding-left: 20%;
+}
+
+.welcome-text h1 {
+	font-size: 40px;
+	text-align: left;
+	padding: 0 0 20px;
+	margin: 0;
+	font-weight: 700;
+}
+
+.welcome-text span {
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
 }
 
 /** WEBKIT SCROLLBAR */

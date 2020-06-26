@@ -1,17 +1,24 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const importsloader = require('imports-loader');
 
 module.exports = {
 	mode: 'none',
-	entry: './src/main.js',
+	entry: './src/js/main.js',
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'public'),
+		path: path.resolve(__dirname, 'public/dist'),
 	},
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: 'bundle.css',
+		}),
+	],
 	module: {
 		rules: [
 			{
 				test: /\.css$/i,
-				use: ['style-loader', 'css-loader'],
+				use: [MiniCssExtractPlugin.loader, 'css-loader'],
 			},
 		],
 	},

@@ -1,17 +1,20 @@
 import * as firebase from 'firebase/app';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'aos';
-import 'aos/dist/aos.css';
-import 'jquery';
-import './viewstl/stl_viewer.min';
-import './contact-form';
-import './autocomplete';
-import './parallax';
-import './type-writer';
-import 'animate.css/animate.min.css';
-import 'snapsvg';
 
+// css
+require('bootstrap/dist/css/bootstrap.min.css');
+require('animate.css/animate.min.css');
+require('aos/dist/aos.css');
+
+// JS
+var $ = require('jquery');
+require('bootstrap');
+require('aos');
+require('snapsvg');
+require('./viewstl/stl_viewer.min');
+require('./contact-form');
+require('./autocomplete');
+require('./parallax');
+require('./type-writer');
 
 // aos inicializace
 AOS.init();

@@ -50,13 +50,13 @@ a.color-red {
 }
 
 a:hover {
-    text-decoration: none !important;
-    color: var(--orexin-blue-dark) !important;
+    text-decoration: none;
+    color: var(--orexin-blue-dark);
     cursor: pointer;
 }
 
 a.color-red:hover {
-	color: var(--orexin-red-dark) !important;
+	color: var(--orexin-red-dark);
 }
 
 a:visited {
@@ -178,7 +178,7 @@ nav .button:hover {
 }
 
 .index-1 .row {
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 }
 
 .index-1 img {
@@ -206,7 +206,7 @@ nav .button:hover {
 }
 
 .index-1 a.color-blue:hover {
-	border-bottom: solid 3px #0056b3;
+	border-bottom: solid 3px var(--orexin-blue-dark);
 }
 
 .index-1 a span {

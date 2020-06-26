@@ -9,6 +9,8 @@ import './contact-form';
 import './autocomplete';
 import './parallax';
 import './type-writer';
+import 'animate.css/animate.min.css';
+import 'snapsvg';
 
 
 // aos inicializace

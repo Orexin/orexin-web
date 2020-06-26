@@ -10,6 +10,7 @@
   "author": "Orexin Econtech",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "css-loader": "^3.6.0",
@@ -17,6 +18,7 @@
     "firebase-tools": "^8.4.3",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "snapsvg": "^0.5.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"

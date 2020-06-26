@@ -3,10 +3,10 @@
 
 :root {
 	--orexin-blue: #43D5FA;
+	--orexin-blue-dark: #2f95af;
 	--orexin-red: #FF5757;
-	--orexin-red-dark: #e64e4e;
+	--orexin-red-dark: #b33d3d;
 	--text: #222222;
-	--link: #288096;
 }
 
 * {
@@ -40,21 +40,32 @@ p {
 }
 
 a {
-    color: var(--link);
+    color: var(--orexin-blue);
 	text-decoration: none;
-	transition: color .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+a.color-red {
+	color: var(--orexin-red);
 }
 
 a:hover {
     text-decoration: none !important;
-    color: white;
+    color: var(--orexin-blue-dark) !important;
     cursor: pointer;
+}
+
+a.color-red:hover {
+	color: var(--orexin-red-dark) !important;
 }
 
 a:visited {
     color: unset;
     text-decoration: none;
 }
+
+.color-red {color: var(--orexin-red);}
+.color-blue {color: var(--orexin-blue);}
 
 footer {
     background-color: var(--orexin-red);
@@ -164,6 +175,45 @@ nav .button:hover {
 	border-radius: 100%;
 	font-size: 45px;
 	cursor: pointer;
+}
+
+.index-1 .row {
+	padding-bottom: 50px;
+}
+
+.index-1 img {
+	width: 400px;
+}
+
+.index-1 a {
+	font-size: 24px;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+}
+
+.index-1 a.color-red {
+	border-bottom: solid 3px var(--orexin-red);
+}
+
+.index-1 a.color-red:hover {
+	color: var(--orexin-red-dark);
+	border-bottom: solid 3px var(--orexin-red-dark);
+}
+
+.index-1 a.color-blue {
+	border-bottom: solid 3px var(--orexin-blue);
+}
+
+.index-1 a.color-blue:hover {
+	border-bottom: solid 3px #0056b3;
+}
+
+.index-1 a span {
+	color: inherit;
+	display: inline-flex;
+	align-items: center;
+	padding-left: 10px;
 }
 
 /* 4.2.2 parallax */

@@ -131,7 +131,11 @@
 
 	<script src="dist/bundle.js"></script>
 	<script>
-		$('.index-1-text-inner').hide();
+		import $ from 'jquery';
+		$(document).ready(function () {
+			$('.index-1').hide();
+		});
+		
 	</script>
 </body>
 </html>

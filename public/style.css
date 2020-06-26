@@ -216,6 +216,20 @@ nav .button:hover {
 	padding-left: 10px;
 }
 
+/* type-writer */
+
+.uvodni-title-1-text, .uvodni-title-1-type-container{
+    display: inline;
+}
+
+.title-type{
+    color: var(--orexin-red);
+}
+
+.title-type > .txt {
+    border-right: 0.1rem solid var(--orexin-red);
+}
+
 /* 4.2.2 parallax */
 
 .container_paralax1 {

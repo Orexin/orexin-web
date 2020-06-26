@@ -7,6 +7,7 @@ require('aos/dist/aos.css');
 
 // JS
 var $ = require('jquery');
+require('popper.js');
 require('bootstrap');
 require('aos');
 require('snapsvg');

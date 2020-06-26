@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="ChangeColorOnLoad()" class="body-color">
 
     <!-- sluzby -->
     <div class="sluzby-container">
@@ -97,6 +97,40 @@
         <p>Orexin Econtech &copy; 2020</p>
     </footer>
 
+    <script>
+    //on first load should be random, on every other load should change to the other color
+    
+    var random = Math.round(Math.random());
+    console.log(random);
+
+    if (random == 1)
+        document.body.style.background = "#FF5757";
+    else
+        document.body.style.background = "#2f95af";
+
+    // Run function on load, could also run on dom ready
+    window.onload = function() {
+    // Check if localStorage is available (IE8+) and make sure that the visited flag is not already set.
+    if(typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
+         // Set visited flag in local storage
+        localStorage.setItem('visited', true);
+         // Alert the user
+        alert("Hello my friend. This is your first visit.");   
+    }
+}
+}
+
+    function ChangeColorOnLoad(){
+        
+        var random = Math.round(Math.random());
+        console.log(random);
+        
+        if (random == 1)
+            document.body.style.background = "#FF5757";
+        else
+            document.body.style.background = "#2f95af";
+    }
+    </script>
     <script src="bundle.js"></script>
 </body>
 </html>

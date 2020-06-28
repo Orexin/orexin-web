@@ -98,13 +98,15 @@
     </footer>
 
     <script>
+	//------------------------------------RANDOM-BACKGROUND--------------------------------------------
+
     //addressing elements
-    var nav = document.getElementsByTagName("nav");
-    var footer = document.getElementsByTagName("footer");
+	var nav = document.getElementsByTagName(nav);
+    var footer = document.getElementsByTagName(footer);
+	var kontakt_button = document.getElementById("button");
 
     //svgs
-    var undraw_svg_mobile_marketing = document.getElementById("undraw-svg-mobile-marketing");
-
+    var undraw_svg_mobile_marketing = document.getElementByClassName("undraw-svg-mobile-marketing");
 
     //random output 
     var random = Math.floor(Math.random() * 6);
@@ -118,6 +120,7 @@
         document.body.style.background = "#EFE9F4";
         nav.style.backgroundColor = "#EFE9F4";
         footer.style.backgroundColor = "#EFE9F4";
+		kontakt_button.style.backgroundColor = "#EFE9F4";
 
         undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/white/mobile-marketing.svg";
         break;
@@ -127,6 +130,7 @@
         document.body.style.background = "#50FFB1";
         nav.style.backgroundColor = "#50FFB1";
         footer.style.backgroundColor = "#50FFB1";
+		kontakt_button.style.backgroundColor = "#50FFB1";
         
         undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
         break;
@@ -136,6 +140,7 @@
         document.body.style.background = "#43D5FA";
         nav.style.backgroundColor = "#43D5FA";
         footer.style.backgroundColor = "#43D5FA";
+		kontakt_button.style.backgroundColor = "#43D5FA";
         
         undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/blue/mobile-marketing.svg";
         break;
@@ -145,6 +150,7 @@
         document.body.style.background = "#FFFF47";
         nav.style.backgroundColor = "#FFFF47";
         footer.style.backgroundColor = "#FFFF47";
+		kontakt_button.style.backgroundColor = "#FFFF47";
         
         undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/yellow/mobile-marketing.svg";
         break;
@@ -154,6 +160,7 @@
         document.body.style.background = "#FF5757";
         nav.style.backgroundColor = "#FF5757";
         footer.style.backgroundColor = "#FF5757";
+		kontakt_button.style.backgroundColor = "#FF5757";
         
         undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/red/mobile-marketing.svg";
         break;
@@ -163,6 +170,7 @@
         document.body.style.background = "#232C33";
         nav.style.backgroundColor = "#232C33";
         footer.style.backgroundColor = "#232C33";
+		kontakt_button.style.backgroundColor = "#232C33";
         
         undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/grey/mobile-marketing.svg";
         break;

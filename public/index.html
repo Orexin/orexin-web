@@ -29,7 +29,7 @@
 				</ul>
 			</div>
 			<div class="col-3 d-flex align-items-center justify-content-center">
-				<a href="kontakt.html" class="button">Kontaktujte nás</a>
+				<a href="kontakt.html" class="button" id="button">Kontaktujte nás</a>
 			</div>
 		</div>
 	</nav>
@@ -51,7 +51,7 @@
 			</div>
 			<div class="col-sm-6 d-flex align-items-center justify-content-center">
 				<div class="welcome-img">
-					<img class="undraw-svg undraw-svg-mobile-marketing" src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="orexin">
+					<img id="undraw-svg undraw-svg-mobile-marketing" src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="orexin">
 				</div>
 			</div>
 		</div>
@@ -175,6 +175,17 @@
 		</div>
 	</section>
 
+    <!-- footer -->
+    <footer class="footer-index footer">
+        <div>
+            <a href="https://www.facebook.com/OrexinEcontech" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/orexin_econtech" target="_blank">Instagram</a> |
+            <a href="https://twitter.com/EcontechOrexin" target="_blank">Twitter</a>
+        </div>
+
+        <p>Orexin Econtech &copy; 2020</p>
+    </footer>
+
 	<script src="dist/bundle.js"></script>
 	<script>
 		import $ from 'jquery';
@@ -186,79 +197,87 @@
 	<script>
 	//------------------------------------RANDOM-BACKGROUND--------------------------------------------
 
-    //addressing elements
-	var nav = document.getElementsByTagName("nav");
+	//addressing elements
     var footer = document.getElementsByTagName("footer");
-	var kontakt_button = document.getElementByClassName("button");
+	var kontakt_button = document.getElementById("button");
 
-    //svgs
-    var undraw_svg_mobile_marketing = document.getElementByClassName("undraw-svg-mobile-marketing");
+	//svgs
+    var undraw_svg_mobile_marketing = document.getElementById("undraw-svg-mobile-marketing");
+
+	//cycle integer
+	var i;
 
     //random output 
-    var random = Math.floor(Math.random() * 6);
+    var random = Math.floor(Math.random() * 5);
     console.log(random);
 
     switch(random)
     {
-        //white
-
+        //purple
         case 0:
-        document.body.style.background = "#EFE9F4";
-        nav.style.backgroundColor = "#EFE9F4";
-        footer.style.backgroundColor = "#EFE9F4";
-		kontakt_button.style.backgroundColor = "#EFE9F4";
+			document.body.style.background = "#8555E4";
 
-        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/white/mobile-marketing.svg";
+			for (i = 0; i < footer.length; i++) {
+				footer[i].style.backgroundColor = "#8555E4";
+			}
+
+			kontakt_button.style.backgroundColor = "#8555E4";
+
+			undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/blue/mobile-marketing.svg";
         break;
 
         //turqoise
         case 1:
-        document.body.style.background = "#50FFB1";
-        nav.style.backgroundColor = "#50FFB1";
-        footer.style.backgroundColor = "#50FFB1";
-		kontakt_button.style.backgroundColor = "#50FFB1";
-        
-        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
+			document.body.style.background = "#50FFB1";
+
+			for (i = 0; i < footer.length; i++) {
+				footer[i].style.backgroundColor = "#50FFB1";
+			}
+
+			kontakt_button.style.backgroundColor = "#50FFB1";  
+
+			undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
         break;
 
         //blue
         case 2:
-        document.body.style.background = "#43D5FA";
-        nav.style.backgroundColor = "#43D5FA";
-        footer.style.backgroundColor = "#43D5FA";
-		kontakt_button.style.backgroundColor = "#43D5FA";
-        
-        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/blue/mobile-marketing.svg";
+			document.body.style.background = "#43D5FA";
+
+			for (i = 0; i < footer.length; i++) {
+				footer[i].style.backgroundColor = "#43D5FA";
+			}
+
+			kontakt_button.style.backgroundColor = "#43D5FA";  
+
+			undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
         break;
 
         //yellow
         case 3:
-        document.body.style.background = "#FFFF47";
-        nav.style.backgroundColor = "#FFFF47";
-        footer.style.backgroundColor = "#FFFF47";
-		kontakt_button.style.backgroundColor = "#FFFF47";
-        
-        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/yellow/mobile-marketing.svg";
+			document.body.style.background = "#FFFF47";
+
+
+
+			for (i = 0; i < footer.length; i++) {
+				footer[i].style.backgroundColor = "#8555E4";
+			}
+
+			kontakt_button.style.backgroundColor = "#FF5757";  
+
+			undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
         break;
 
         //red
         case 4:
-        document.body.style.background = "#FF5757";
-        nav.style.backgroundColor = "#FF5757";
-        footer.style.backgroundColor = "#FF5757";
-		kontakt_button.style.backgroundColor = "#FF5757";
-        
-        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/red/mobile-marketing.svg";
-        break;
+			document.body.style.background = "#FF5757";
 
-        //grey
-        case 5:
-        document.body.style.background = "#232C33";
-        nav.style.backgroundColor = "#232C33";
-        footer.style.backgroundColor = "#232C33";
-		kontakt_button.style.backgroundColor = "#232C33";
-        
-        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/grey/mobile-marketing.svg";
+			for (i = 0; i < footer.length; i++) {
+				footer[i].style.backgroundColor = "#43D5FA";
+			}
+
+			kontakt_button.style.backgroundColor = "#FF5757";  
+
+			undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
         break;
 
     }

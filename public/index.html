@@ -51,7 +51,7 @@
 			</div>
 			<div class="col-sm-6 d-flex align-items-center justify-content-center">
 				<div class="welcome-img">
-					<img src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="orexin">
+					<img class="undraw-svg undraw-svg-mobile-marketing" src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="orexin">
 				</div>
 			</div>
 		</div>
@@ -76,12 +76,12 @@
 					</div>
 				</div>
 				<div class="col-md-6 d-flex justify-content-center">
-					<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+					<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 d-flex justify-content-center">
-					<img src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="">
+					<img class="undraw-svg" src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="">
 				</div>
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
@@ -100,12 +100,12 @@
 					</div>
 				</div>
 				<div class="col-md-6 d-flex justify-content-center">
-					<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+					<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 d-flex justify-content-center">
-					<img src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="">
+					<img class="undraw-svg" src="assets/img/undraw-svg/red/mobile-marketing.svg" alt="">
 				</div>
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
@@ -128,7 +128,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 d-flex justify-content-center">
-					<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+					<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
 				</div>
 			</div>
 			<div class="row">
@@ -140,7 +140,7 @@
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
 						<h2 class="text-center">MLM</h2>
-						<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+						<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
                         <p>Multi-level Marketing, nebo také síťový marketing. Jedná se o budování sítě lidí za účelem vyššího zisku. Aneb nemáte peníze pouze za svoji práci, ale také za práci lidí, kteří jsou pod Vámi. A o tom jak se Vaše zisky zvyšují, rozhoduje jen Vaše aktivita.</p>                    
 						<a class="color-blue" href="projekty-mlm.html">Dozvědět se více <span class="material-icons">arrow_forward</span></a>
 					</div>
@@ -148,7 +148,7 @@
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
 						<h2 class="text-center">Uživatelské průzkumy</h2>
-						<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+						<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
                         <p>Doba, kdy se na měření oblíbenosti posílaly do schránek dotazníky, je už dávno pryč. V dnešní době se k měření oblíbenosti používají digitální uživatelské průzkumy. Aplikace jako Trendaro, Vám navíc práci zpříjemní zábavnými a zajímavými fakty ze světa tak, aby jste se při práci nenudili.</p>                    
 						<a class="color-red" href="projekty-pruzkumy.html">Dozvědět se více <span class="material-icons">arrow_forward</span></a>
 					</div>
@@ -158,7 +158,7 @@
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
 						<h2 class="text-center">Aktivní pohyb</h2>
-						<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+						<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
                         <p>Rádi se procházíte? Nebo třeba chodíte pěšky do práce, či školy? Chtěli byste za to být i odměněni? Nemusíte být obdařeni pouze zdravím. </p>                    
 						<a class="color-red" href="projekty-pohyb.html">Dozvědět se více <span class="material-icons">arrow_forward</span></a>
 					</div>
@@ -166,7 +166,7 @@
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
 						<h2 class="text-center">Ostatní</h2>
-						<img src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
+						<img class="undraw-svg" src="assets/img/undraw-svg/blue/mobile-marketing.svg" alt="">
                         <p>Peníze se dají vydělat opravdu mnoha různými způsoby. Stačí jen správně investovat svůj čas. Ve světě je ale tolik možností, že by se z toho jeden pomátl, proto Vám další zajímavé projekty, které se nám nepovedlo zařadit ukážeme zde.</p>                    
 						<a class="color-blue" href="projekty-pohyb.html">Dozvědět se více <span class="material-icons">arrow_forward</span></a>
 					</div>
@@ -182,6 +182,86 @@
 			$('.index-1').hide();
 		});
 		
+	</script>
+	<script>
+	//------------------------------------RANDOM-BACKGROUND--------------------------------------------
+
+    //addressing elements
+	var nav = document.getElementsByTagName("nav");
+    var footer = document.getElementsByTagName("footer");
+	var kontakt_button = document.getElementByClassName("button");
+
+    //svgs
+    var undraw_svg_mobile_marketing = document.getElementByClassName("undraw-svg-mobile-marketing");
+
+    //random output 
+    var random = Math.floor(Math.random() * 6);
+    console.log(random);
+
+    switch(random)
+    {
+        //white
+
+        case 0:
+        document.body.style.background = "#EFE9F4";
+        nav.style.backgroundColor = "#EFE9F4";
+        footer.style.backgroundColor = "#EFE9F4";
+		kontakt_button.style.backgroundColor = "#EFE9F4";
+
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/white/mobile-marketing.svg";
+        break;
+
+        //turqoise
+        case 1:
+        document.body.style.background = "#50FFB1";
+        nav.style.backgroundColor = "#50FFB1";
+        footer.style.backgroundColor = "#50FFB1";
+		kontakt_button.style.backgroundColor = "#50FFB1";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
+        break;
+
+        //blue
+        case 2:
+        document.body.style.background = "#43D5FA";
+        nav.style.backgroundColor = "#43D5FA";
+        footer.style.backgroundColor = "#43D5FA";
+		kontakt_button.style.backgroundColor = "#43D5FA";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/blue/mobile-marketing.svg";
+        break;
+
+        //yellow
+        case 3:
+        document.body.style.background = "#FFFF47";
+        nav.style.backgroundColor = "#FFFF47";
+        footer.style.backgroundColor = "#FFFF47";
+		kontakt_button.style.backgroundColor = "#FFFF47";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/yellow/mobile-marketing.svg";
+        break;
+
+        //red
+        case 4:
+        document.body.style.background = "#FF5757";
+        nav.style.backgroundColor = "#FF5757";
+        footer.style.backgroundColor = "#FF5757";
+		kontakt_button.style.backgroundColor = "#FF5757";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/red/mobile-marketing.svg";
+        break;
+
+        //grey
+        case 5:
+        document.body.style.background = "#232C33";
+        nav.style.backgroundColor = "#232C33";
+        footer.style.backgroundColor = "#232C33";
+		kontakt_button.style.backgroundColor = "#232C33";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/grey/mobile-marketing.svg";
+        break;
+
+    }
 	</script>
 </body>
 </html>

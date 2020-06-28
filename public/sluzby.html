@@ -87,7 +87,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer-index">
+    <footer class="footer-index footer">
         <div>
             <a href="https://www.facebook.com/OrexinEcontech" target="_blank">Facebook</a> |
             <a href="https://www.instagram.com/orexin_econtech" target="_blank">Instagram</a> |
@@ -98,38 +98,76 @@
     </footer>
 
     <script>
-    //on first load should be random, on every other load should change to the other color
-    
-    var random = Math.round(Math.random());
+    //addressing elements
+    var nav = document.getElementsByTagName("nav");
+    var footer = document.getElementsByTagName("footer");
+
+    //svgs
+    var undraw_svg_mobile_marketing = document.getElementById("undraw-svg-mobile-marketing");
+
+
+    //random output 
+    var random = Math.floor(Math.random() * 6);
     console.log(random);
 
-    if (random == 1)
+    switch(random)
+    {
+        //white
+
+        case 0:
+        document.body.style.background = "#EFE9F4";
+        nav.style.backgroundColor = "#EFE9F4";
+        footer.style.backgroundColor = "#EFE9F4";
+
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/white/mobile-marketing.svg";
+        break;
+
+        //turqoise
+        case 1:
+        document.body.style.background = "#50FFB1";
+        nav.style.backgroundColor = "#50FFB1";
+        footer.style.backgroundColor = "#50FFB1";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/turqoise/mobile-marketing.svg";
+        break;
+
+        //blue
+        case 2:
+        document.body.style.background = "#43D5FA";
+        nav.style.backgroundColor = "#43D5FA";
+        footer.style.backgroundColor = "#43D5FA";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/blue/mobile-marketing.svg";
+        break;
+
+        //yellow
+        case 3:
+        document.body.style.background = "#FFFF47";
+        nav.style.backgroundColor = "#FFFF47";
+        footer.style.backgroundColor = "#FFFF47";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/yellow/mobile-marketing.svg";
+        break;
+
+        //red
+        case 4:
         document.body.style.background = "#FF5757";
-    else
-        document.body.style.background = "#2f95af";
+        nav.style.backgroundColor = "#FF5757";
+        footer.style.backgroundColor = "#FF5757";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/red/mobile-marketing.svg";
+        break;
 
-    // Run function on load, could also run on dom ready
-    window.onload = function() {
-    // Check if localStorage is available (IE8+) and make sure that the visited flag is not already set.
-    if(typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
-         // Set visited flag in local storage
-        localStorage.setItem('visited', true);
-         // Alert the user
-        alert("Hello my friend. This is your first visit.");   
+        //grey
+        case 5:
+        document.body.style.background = "#232C33";
+        nav.style.backgroundColor = "#232C33";
+        footer.style.backgroundColor = "#232C33";
+        
+        undraw_svg_mobile_marketing.src = "assets/img/undraw-svg/grey/mobile-marketing.svg";
+        break;
+
     }
-}
-/* }
-
-    function ChangeColorOnLoad(){
-        
-        var random = Math.round(Math.random());
-        console.log(random);
-        
-        if (random == 1)
-            document.body.style.background = "#FF5757";
-        else
-            document.body.style.background = "#2f95af";
-    } */
     </script>
 	<script src="dist/bundle.js"></script>
 </body>

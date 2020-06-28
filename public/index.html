@@ -197,6 +197,8 @@
 	<script>
 	//------------------------------------RANDOM-BACKGROUND--------------------------------------------
 
+	//zjistit jaká byla hodnota proměné když se kód pustil předtím, jestli je random stejné
+
 	//addressing elements
     var footer = document.getElementsByTagName("footer");
 	var kontakt_button = document.getElementById("button");
@@ -209,7 +211,7 @@
 
     //random output 
     var random = Math.floor(Math.random() * 5);
-    console.log(random);
+	console.log(random);
 
     switch(random)
     {

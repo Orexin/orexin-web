@@ -105,6 +105,9 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-md-6 d-flex justify-content-center">
+					<img id="undraw-svg undraw-svg-vytvoreni-znacky" class="undraw-svg" src="//:0">
+				</div>
 				<div class="col-md-6 d-flex align-items-center">
 					<div class="index-1-text-inner">
 						<h2>Vytvoření značky</h2>
@@ -114,11 +117,8 @@
 							<li>logo které zaujme</li>
 							<li>Vizuální úpravu vaší reklamy</li>
 						</ul>   						
-						<a onmouseover="info_button_color" href="vytvoreni-znacky.html">Dozvědět se více <span class="material-icons">arrow_forward</span></a>
+						<a id="info-button" onmouseover="info_button_color" href="vytvoreni-znacky.html">Dozvědět se více <span class="material-icons">arrow_forward</span></a>
 					</div>
-				</div>
-				<div class="col-md-6 d-flex justify-content-center">
-					<img id="undraw-svg undraw-svg-vytvoreni-znacky" class="undraw-svg" src="//:0">
 				</div>
 			</div>
 			<div class="row">
@@ -208,7 +208,7 @@
 	var welcome_section = document.getElementById("welcome");
 
 	//svgs
-    var undraw_svg_vytvoreni_marketingu = document.getElementById("#undraw-svg-vytvoreni-marketingu");
+    var undraw_svg_vytvoreni_marketingu = document.getElementById("undraw-svg-vytvoreni-marketingu");
 	var undraw_svg_sprava_marketingu = document.getElementById("undraw-svg-sprava-marketingu");
 	var undraw_svg_svg_vytvoreni_webu = document.getElementById("undraw-svg-vytvoreni-webu");
 	var undraw_svg_sprava_webu = document.getElementById("undraw-svg-sprava-webu");
@@ -269,8 +269,8 @@
 
 			kontakt_button.style.backgroundColor = yellow;
 			kontakt_button.style.color = black;    
-			info_button.style.color = blue;
-			info_button.info_button_color(darker_blue)
+			info_button.style.color = yellow
+			info_button.info_button_color(darker_yellow)
 
 			undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/purple/vytvoreni-marketingu.svg";
 			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/purple/sprava-marketingu.svg";

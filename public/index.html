@@ -183,6 +183,10 @@
 			$('.index-1').hide();
 		});
 		
+/* 		function changeImage(address, src)
+		{
+			docuemnt.querySelector(address).src = src;
+		} */
 	</script>
 	<script>
 	//------------------------------------RANDOM-BACKGROUND--------------------------------------------
@@ -222,9 +226,20 @@
 	//cycle integer
 	var i;
 
+	//<img src={require('/images/image-name.png')} /> 
+
     //random output 
     var random = Math.floor(Math.random() * 5);
 	console.log(random);
+
+/* 	var randomToCookies = random;
+	if(runnedBefore && randomToCookies == random)
+		{
+			if(random <= 3)
+			random = random++;
+			if(random = 4)
+			random = random--;
+		} */
 
     switch(random)
     {
@@ -237,6 +252,10 @@
 				footer[i].style.backgroundColor = red;
 			}
 
+/* 			for (i = 0; i < undraw_svg_vytvoreni_marketingu.length; i++) {
+				undraw_svg_vytvoreni_marketingu[i].src = "/assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
+			}
+*/
 			kontakt_button.style.backgroundColor = blue;
 			kontakt_button.style.color = black;
 			info_button.style.color = blue;
@@ -245,8 +264,9 @@
 			for (i = 0; i < footer.length; i++) {
 				undraw_svg_vytvoreni_marketingu[i].src = "assets/img/undraw-svg/blue/vytvoreni-marketingu.svg";
 			}
-
-			undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
+			
+			//undraw_svg_vytvoreni_marketingu = changeImage("#undraw-svg-vytvoreni-marketingu","assets/img/undraw-svg/blue/vytvoreni-marketingu.svg")
+			undraw_svg_vytvoreni_marketingu.src = "/assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
 			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/red/sprava-marketingu.svg";
 			undraw_svg_svg_vytvoreni_webu.src = "assets/img/undraw-svg/red/vytvoreni-webu.svg";
 			undraw_svg_sprava_webu.src = "assets/img/undraw-svg/red/sprava-webu.svg";
@@ -365,6 +385,7 @@
 	function info_button_color(color) {
 		info_button.style.color = color;
 	}
+
 	</script>
 </body>
 </html>

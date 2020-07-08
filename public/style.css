@@ -137,10 +137,38 @@ nav .button:hover {
 }
 
 /** INDEX */
-.welcome {
-	background: var(--orexin-blue);
+#welcome {
+	background: linear-gradient(231deg, #43d5fa, #ff5757);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 	height: 95vh;
 }
+
+/*! welcome-area gradient background animation!*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+/*! welcome-area gradient background animation!*/
 
 .welcome-img {
 	width: max-content;

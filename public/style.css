@@ -217,14 +217,14 @@ nav .button:hover {
 	margin-bottom: 2vh;
 }
 .wc-wrapper h3{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 2.5rem;
-	color: var(--text);
+	color: white;
 }
 .wc-wrapper h6{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
-	color: var(--text);
+	color: white;
 }
 
 .welcome > span {

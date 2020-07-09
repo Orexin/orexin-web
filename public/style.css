@@ -150,7 +150,7 @@ nav .button:hover {
 	-webkit-animation: gradientAnim 20s ease infinite;
     -moz-animation: gradientAnim 20s ease infinite;
     -o-animation: gradientAnim 20s ease infinite;
-    animation: gradientAnim 30s ease infinite;
+    animation: gradientAnim 20s ease infinite;
 
 	height: 95vh;
 }

@@ -141,7 +141,7 @@ nav .button:hover {
 /** INDEX */
 #welcome {
 	/* background: linear-gradient(231deg, #43d5fa, #ff5757); */
-	background: linear-gradient(231deg, var(--orexin-blue), var(--orexin-red), var(--orexin-purple), var(--orexin-yellow), var(--orexin-turqoise));
+	background: linear-gradient(231deg, var(--orexin-blue), var(--orexin-red), var(--orexin-purple), var(--orexin-turqoise));
     background-size: 400% 400%;
 /*     -webkit-animation: gradientAnim 10s ease infinite;
     -moz-animation: gradientAnim 10s ease infinite;

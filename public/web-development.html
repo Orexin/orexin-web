@@ -140,6 +140,7 @@
 		</div>
 		<div class="row">
 			<span id="web-drivejsi-vyroba">Potřebuji web do dvou týdnů</span>
+			<input type="range" id="web-drivejsi-vyroba-range" min="1" max="10" style="display: none;">
 		</div>
 		<div class="row">
 			<span id="cena">3000kč</span>
@@ -174,6 +175,7 @@
 		</div>
 		<div class="row">
 			<span id="web-drivejsi-vyroba">Potřebuji web do dvou týdnů</span>
+			<input type="range" id="web-drivejsi-vyroba-range" min="1" max="10" style="display: none;">
 		</div>
 		<div class="row">
 			<span id="cena">4000kč</span>
@@ -272,6 +274,7 @@
 	var instant_messeging = document.getElementById("instant-messeging");
 	var vyber = document.getElementById("vyber");
 	var web_drivejsi_vyroba = document.getElementById("web-drivejsi-vyroba");
+	var web_drivejsi_vyroba_range = document.getElementById("web-drivejsi-vyroba-range");
 
 	var cena_value = 0;
 	var cena_produkty = 0;
@@ -336,6 +339,7 @@
 
 	//web dřívěji
 	web_drivejsi_vyroba.onclick() = function(){
+		web_drivejsi_vyroba_range.style.display = "block";
 		cena.innerHTML = cena_value + 1000 + "Kč";
 		doba_value_1 = 1;
 		doba_value_2 = 2;

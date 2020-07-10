@@ -221,6 +221,14 @@ nav .button:hover {
 	left: 50%;
 	transform: translateX(-50%);
 	margin-bottom: 2vh;
+	height: 15vh;
+	width: 15vh;
+}
+
+@keyframes Rotating_Picture{
+	0%{transform: rotate(60deg);}
+
+	100%{transform: rotate(360deg);}
 }
 .wc-wrapper h3{
 	font-family: 'Roboto', sans-serif;
@@ -299,7 +307,11 @@ nav .button:hover {
 .title-type > .txt {
     border-right: 0.1rem solid var(--orexin-red);
 }
-*/
+
+.undraw-svg{
+	height: 70vh;
+	width: 70vh;
+}
 
 /* 4.2.2 parallax */
 

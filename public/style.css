@@ -218,17 +218,26 @@ nav .button:hover {
 }
 .wc-wrapper img{
 	position: relative;
-	left: 50%;
+	left: 15%;
 	transform: translateX(-50%);
 	margin-bottom: 2vh;
 	height: 15vh;
-	width: 15vh;
+	width: 13.5vh;
+	animation: RotateTranslatePic 20s infinite;
 }
 
-@keyframes Rotating_Picture{
-	0%{transform: rotate(60deg);}
+@keyframes RotateTranslatePic{
+	0%{
+		transform: translateX(0px) rotate(0deg);
+	}
 
-	100%{transform: rotate(360deg);}
+	50%{
+		transform: translateX(110vh) rotate(360deg)
+	}
+
+	100%{
+		transform: translateX(0px) rotate(0deg)
+	}
 }
 .wc-wrapper h3{
 	font-family: 'Roboto', sans-serif;

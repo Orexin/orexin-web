@@ -7,108 +7,104 @@
 
 	<title>Orexin Econtech</title>
 
+	<link rel="stylesheet" href="dist/bundle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
 </head>
 
 <body>
+	<nav class="container-fluid">
+		<div class="row h-100">
+			<div class="col-1">
+				<!-- logo -->
+			</div>
+			<div class="col-2">
+				<!-- search -->
+			</div>
+			<div class="col-6 d-flex align-items-center justify-content-center">
+				<ul>
+					<li><a href="index.html#sluzby">Služby</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="o-nas.html">O nás</a></li>
+					<li><a href="index.html#projekty">Projekty</a></li>
+				</ul>
+			</div>
+			<div class="col-3 d-flex align-items-center justify-content-center">
+				<a href="kontakt.html" class="button" id="button">Kontaktujte nás</a>
+			</div>
+		</div>
+	</nav>
 
 	<!-- section web-making -->
 	<div id="web-dev-nabidka">
 		<section class="section web-dev">
-			<div class="row" onclick="blog_clicked()">
-				<div class="projekty-diagonal-section-top skew-js">
-					<div class="col-lg-7 d-flex justify-content-center align-items-center">
-						<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
+			<div class="row">
+				<div class="web-dev-sub-section col-6" onclick="blog_clicked()">
+					<div class="projekty-diagonal-section-top skew-js">
+						<div class="col-lg-7 d-flex justify-content-center align-items-center">
+							<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
+						</div>
+						<div class="col-lg-5 d-flex justify-content-center align-items-center">
+							<div class="web-making-text">
+								<h3>Blog</h3>
+								<p>Jednoduchý a okouzlující web, který zachytí vaše osobní záměry a váš příběh.</p>
+								<ul>
+									<li>3000</li>
+									<li>20 dní</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-5 d-flex justify-content-center align-items-center">
-						<div class="web-making-text">
-							<h3>Blog</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum autem sint ullam ad eaque, placeat maiores optio maxime repellat illum quasi vel dolores eligendi, quos ipsam mollitia ipsum veritatis tenetur?</p>
-							<ul>
-								<li>3000</li>
-								<li>1-3 týdny</li>
-							</ul>
+				</div>
+				<div class="web-dev-sub-section col-6" onclick="web_prezentace_clicked()">
+					<div class="projekty-diagonal-section-top skew-js">
+						<div class="col-lg-5 d-flex justify-content-center align-items-center">
+							<div class="web-making-text">
+								<h3>Webová prezentace</h3>
+								<p>Způsob prezentace vhodný pro každou organizaci, společnost, neziskovku, komunitu, která chce dát světu o sobě vědět.</p>
+								<ul>
+									<li>4000</li>
+									<li>25 dní</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-7 d-flex justify-content-center align-items-center">
+							<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row" onclick="web_prezentace_clicked()">
-				<div class="projekty-diagonal-section-top skew-js">
-					<div class="col-lg-5 d-flex justify-content-center align-items-center">
-						<div class="web-making-text">
-							<h3>Webová prezentace</h3>
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis libero perspiciatis rerum cumque cupiditate. Recusandae quam, dignissimos fugit voluptate, voluptatibus enim quae magnam molestiae rem ad, dolores ullam vero minus?</p>
-							<ul>
-								<li>4000</li>
-								<li>3-4 týdny</li>
-							</ul>
+			<div class="row">
+				<div class="web-dev-sub-section col-6" onclick="e_shop_clicked()">
+					<div class="projekty-diagonal-section-top skew-js">
+						<div class="col-lg-7 d-flex justify-content-center align-items-center">
+							<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
 						</div>
-					</div>
-					<div class="col-lg-7 d-flex justify-content-center align-items-center">
-						<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
-					</div>
-				</div>
-			</div>
-			<div class="row" onclick="e_shop_clicked()">
-				<div class="projekty-diagonal-section-top skew-js">
-					<div class="col-lg-7 d-flex justify-content-center align-items-center">
-						<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
-					</div>
-					<div class="col-lg-5 d-flex justify-content-center align-items-center">
-						<div class="web-making-text">
-							<h3>E-shop</h3>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, molestias fugiat! Eius nesciunt eligendi harum molestias optio laborum facere neque corporis, quasi, porro, molestiae maxime cumque corrupti nobis ut ratione.</p>
-							<ul>
-								<li>
-									<span>Do 6 produktů</span>
-									<ul>
-										<li>4500</li>
-										<li>3-4 týdny</li>
-									</ul>
-								</li>
-								<li>
-									<span>Do 50 produktů</span>
-									<ul>
-										<li>5000</li>
-										<li>5-6 týdnů</li>
-									</ul>
-								</li>
-								<li>
-									<span>Do 100 produktů</span>
-									<ul>
-										<li>7000</li>
-										<li>6-7 týdnů</li>
-									</ul>
-								</li>
-								<li>
-									<span>Do 200 produktů</span>
-									<ul>
-										<li>8000</li>
-										<li>7-8 týdnů</li>
-									</ul>
-								</li>
-							</ul>
+						<div class="col-lg-5 d-flex justify-content-center align-items-center">
+							<div class="web-making-text">
+								<h3>E-shop</h3>
+								<p>Ať už jste vlastníte maloobchod nebo plánujete celorepublikovou expanzi bet funkčního a vzhledného E-shopu se neobejdete.</p>
+								<ul>
+									<li>7000</li>
+									<li>45 dní</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<!-- web-management -->
-		<section class="section" id="web-management">
-			<div class="row" onclick="web_management_clicked()">
-				<div class="projekty-diagonal-section-top skew-js">
-					<div class="col-lg-5 d-flex justify-content-center align-items-center">
-						<div class="web-making-text">
-							<h3>Web management</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum autem sint ullam ad eaque, placeat maiores optio maxime repellat illum quasi vel dolores eligendi, quos ipsam mollitia ipsum veritatis tenetur?</p>
-							<span>cena</span>
+				<div class="web-dev-sub-section col-6" id="web-management" onclick="web_management_clicked()">
+					<div class="projekty-diagonal-section-top skew-js">
+						<div class="col-lg-5 d-flex justify-content-center align-items-center">
+							<div class="web-making-text">
+								<h3>Web management</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum autem sint ullam ad eaque, placeat maiores optio maxime repellat illum quasi vel dolores eligendi, quos ipsam mollitia ipsum veritatis tenetur?</p>
+								<span>cena</span>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-7 d-flex justify-content-center align-items-center">
-						<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
+						<div class="col-lg-7 d-flex justify-content-center align-items-center">
+							<img class="web-making-pic" src="assets/img/undraw-svg/webdesign-heatmap.svg" alt="web design">
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="cs" translate="no">
 <head>
-    <meta charset="utf-8">
-    <meta name="google" content="notranslate">
+	<meta charset="utf-8">
+	<meta name="google" content="notranslate">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Orexin Econtech</title>
@@ -185,59 +185,44 @@
 
 	<script src="dist/bundle.js"></script>
 	<script>
-		import $ from 'jquery';
-		$(document).ready(function () {
-			$('.index-1').hide();
-		});
-		
-/* 		function changeImage(address, src)
-		{
-			docuemnt.querySelector(address).src = src;
-		} */
-	</script>
-	<script>
-	//------------------------------------RANDOM-BACKGROUND--------------------------------------------
+		document.getElementById("undraw-svg-vytvoreni-webu").src = "assets/img/undraw-svg/red/vytvoreni-webu.svg";
+		//------------------------------------RANDOM-BACKGROUND--------------------------------------------
 
-	//zjistit jaká byla hodnota proměné když se kód pustil předtím, jestli je random stejné
+		//zjistit jaká byla hodnota proměné když se kód pustil předtím, jestli je random stejné
 
-	var blue = "#43D5FA";
-	var darker_blue = "#2f95af";
-	var red = "#FF5757";
-	var darker_red = "#b33d3d";
-	var yellow = "#FFFF47";
-	var darker_yellow = "#e1e142";
-	var purple = "#8555E4";
-	var darker_purple = "#734bc2";
-	var turqoise = "#50FFB1";
-	var darker_turqoise = "#47db98";
-	var black = "#000000";
+		var blue = "#43D5FA";
+		var darker_blue = "#2f95af";
+		var red = "#FF5757";
+		var darker_red = "#b33d3d";
+		var yellow = "#FFFF47";
+		var darker_yellow = "#e1e142";
+		var purple = "#8555E4";
+		var darker_purple = "#734bc2";
+		var turqoise = "#50FFB1";
+		var darker_turqoise = "#47db98";
+		var black = "#000000";
 
-	//addressing elements
-    var footer = document.getElementsByTagName("footer");
-	var kontakt_button = document.getElementById("button");
-	var info_button = document.getElementById("info-button");
-	var welcome_section = document.getElementById("welcome");
+		//addressing elements
+		var footer = document.getElementsByTagName("footer");
+		var kontakt_button = document.getElementById("button");
+		var info_button = document.getElementById("info-button");
+		var welcome_section = document.getElementById("welcome");
 
-	//svgs
-	var undraw_svg_uvodni = document.getElementById("undraw-svg-uvodni");
-    var undraw_svg_vytvoreni_marketingu = document.getElementById("undraw-svg-vytvoreni-marketingu");
-	var undraw_svg_sprava_marketingu = document.getElementById("undraw-svg-sprava-marketingu");
-	var undraw_svg_svg_vytvoreni_webu = document.getElementById("undraw-svg-vytvoreni-webu");
-	var undraw_svg_sprava_webu = document.getElementById("undraw-svg-sprava-webu");
-	var undraw_svg_vytvoreni_znacky = document.getElementById("undraw-svg-vytvoreni-znacky");
-	var undraw_svg_recenze_projektu = document.getElementById("undraw-svg-recenze-projektu");
-	var undraw_svg_projekty_mlm = document.getElementById("undraw-svg-projekty-mlm");
-	var undraw_svg_projekty_pruzkumy = document.getElementById("undraw-svg-projekty-pruzkumy");
-	var undraw_svg_projekty_pohyb = document.getElementById("undraw-svg-projekty-pohyb");
-	var undraw_svg_projekty_ostatni = document.getElementById("undraw-svg-projekty-ostatni");
+		//svgs
+		var undraw_svg_vytvoreni_webu = document.getElementById("undraw-svg-vytvoreni-webu");
+		var undraw_svg_sprava_webu = document.getElementById("undraw-svg-sprava-webu");
+		var undraw_svg_vytvoreni_marketingu = document.getElementById("undraw-svg-vytvoreni-marketingu");
+		var undraw_svg_vytvoreni_znacky = document.getElementById("undraw-svg-vytvoreni-znacky");
+		var undraw_svg_projekty_mlm = document.getElementById("undraw-svg-projekty-mlm");
+		var undraw_svg_projekty_pruzkumy = document.getElementById("undraw-svg-projekty-pruzkumy");
+		var undraw_svg_projekty_pohyb = document.getElementById("undraw-svg-projekty-pohyb");
+		var undraw_svg_projekty_ostatni = document.getElementById("undraw-svg-projekty-ostatni");
 
+		//<img src={require('/images/image-name.png')} /> 
 
-
-	//<img src={require('/images/image-name.png')} /> 
-
-    //random output 
-    var random = Math.floor(Math.random() * 5);
-	console.log(random);
+		//random output 
+		var random = Math.floor(Math.random() * 5);
+		console.log(random);
 
 /* 	var randomToCookies = random;
 	if(runnedBefore && randomToCookies == random)
@@ -248,154 +233,89 @@
 			random = random--;
 		} */
 
-	//cycle integer
-	var i;
+		switch(random) {
+			//purple
+			case 0:
+				kontakt_button.style.backgroundColor = purple;
+				kontakt_button.style.color = purple;
+				info_button.style.color = purple;
+				info_button.style.background = purple;
 
-    switch(random)
-    {
-        //purple
-        case 0:
-			//document.body.style.background = purple;
-			//welcome_section.style.backgroundColor = purple;
+				undraw_svg_vytvoreni_webu.src = "assets/img/undraw-svg/purple/vytvoreni-webu.svg";
+				undraw_svg_sprava_webu.src = "assets/img/undraw-svg/purple/sprava-webu.svg";
+				undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/purple/vytvoreni-marketingu.svg";
+				undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/purple/vytvoreni-znacky.svg";
+				undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/purple/projekty-mlm.svg";
+				undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/purple/projekty-pruzkumy.svg";
+				undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/purple/projekty-pohyb.svg";
+				undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/purple/projekty-ostatni.svg";
+				break;
 
-			/*for (i = 0; i < footer.length; i++) {
-				footer[i].style.backgroundColor = red;
-			}*/
+			//turqoise
+			case 1:
+				kontakt_button.style.backgroundColor = turqoise;
+				kontakt_button.style.color = black;    
+				info_button.style.color = turqoise;
+				info_button.style.backgroundColor = darker_turqoise;
 
-/* 			for (i = 0; i < undraw_svg_vytvoreni_marketingu.length; i++) {
-				undraw_svg_vytvoreni_marketingu[i].src = "/assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
-			}
-*/
-			kontakt_button.style.backgroundColor = blue;
-			kontakt_button.style.color = black;
-			info_button.style.color = blue;
-			info_button.info_button_color(darker_blue)
+				undraw_svg_vytvoreni_webu.src = "assets/img/undraw-svg/turqoise/vytvoreni-webu.svg";
+				undraw_svg_sprava_webu.src = "assets/img/undraw-svg/turqoise/sprava-webu.svg";
+				undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/turqoise/vytvoreni-marketingu.svg";
+				undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/turqoise/vytvoreni-znacky.svg";
+				undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/turqoise/projekty-mlm.svg";
+				undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/turqoise/projekty-pruzkumy.svg";
+				undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/turqoise/projekty-pohyb.svg";
+				undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/turqoise/projekty-ostatni.svg";
+				break;
 
-			for (i = 0; i < footer.length; i++) {
-				undraw_svg_vytvoreni_marketingu[i].src = "assets/img/undraw-svg/blue/vytvoreni-marketingu.svg";
-			}
-			
-			//undraw_svg_vytvoreni_marketingu = changeImage("#undraw-svg-vytvoreni-marketingu","assets/img/undraw-svg/blue/vytvoreni-marketingu.svg")
-			undraw_svg_vytvoreni_marketingu.src = "/assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
-			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/red/sprava-marketingu.svg";
-			undraw_svg_svg_vytvoreni_webu.src = "assets/img/undraw-svg/red/vytvoreni-webu.svg";
-			undraw_svg_sprava_webu.src = "assets/img/undraw-svg/red/sprava-webu.svg";
-			undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/red/vytvoreni-znacky.svg";
-			undraw_svg_recenze_projektu.src = "assets/img/undraw-svg/red/recenze-projektu.svg";
-			undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/red/projekty-mlm.svg";
-			undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/red/projekty-pruzkumy.svg";
-			undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/red/projekty-pohyb.svg";
-			undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/red/projekty-ostatni.svg";
-        break;
+			//blue
+			case 2:
+				kontakt_button.style.backgroundColor = blue;  
+				info_button.style.color = blue;
+				info_button.style.backgroundColor = darker_blue;
 
-        //turqoise
-        case 1:
-			//document.body.style.background = turqoise;
-			//welcome_section.style.backgroundColor = turqoise;
+				undraw_svg_vytvoreni_webu.src = "assets/img/undraw-svg/blue/vytvoreni-webu.svg";
+				undraw_svg_sprava_webu.src = "assets/img/undraw-svg/blue/sprava-webu.svg";
+				undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/blue/vytvoreni-marketingu.svg";
+				undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/blue/vytvoreni-znacky.svg";
+				undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/blue/projekty-mlm.svg";
+				undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/blue/projekty-pruzkumy.svg";
+				undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/blue/projekty-pohyb.svg";
+				undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/blue/projekty-ostatni.svg";
+				break;
 
-			/*for (i = 0; i < footer.length; i++) {
-				footer[i].style.backgroundColor = blue;
-			}*/
+			//yellow
+			case 3:
+				kontakt_button.style.backgroundColor = yellow;  
+				info_button.style.color = yellow;
+				info_button.style.backgroundColor = yellow;
 
-			kontakt_button.style.backgroundColor = yellow;
-			kontakt_button.style.color = black;    
-			info_button.style.color = yellow
-			info_button.info_button_color(darker_yellow)
+				undraw_svg_vytvoreni_webu.src = "assets/img/undraw-svg/yellow/vytvoreni-webu.svg";
+				undraw_svg_sprava_webu.src = "assets/img/undraw-svg/yellow/sprava-webu.svg";
+				undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/yellow/vytvoreni-marketingu.svg";
+				undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/yellow/vytvoreni-znacky.svg";
+				undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/yellow/projekty-mlm.svg";
+				undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/yellow/projekty-pruzkumy.svg";
+				undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/yellow/projekty-pohyb.svg";
+				undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/yellow/projekty-ostatni.svg";
+				break;
 
-			undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/purple/vytvoreni-marketingu.svg";
-			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/purple/sprava-marketingu.svg";
-			undraw_svg_svg_vytvoreni_webu.src = "assets/img/undraw-svg/purple/vytvoreni-webu.svg";
-			undraw_svg_sprava_webu.src = "assets/img/undraw-svg/purple/sprava-webu.svg";
-			undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/purple/vytvoreni-znacky.svg";
-			undraw_svg_recenze_projektu.src = "assets/img/undraw-svg/purple/recenze-projektu.svg";
-			undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/purple/projekty-mlm.svg";
-			undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/purple/projekty-pruzkumy.svg";
-			undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/purple/projekty-pohyb.svg";
-			undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/purple/projekty-ostatni.svg";
-        break;
+			//red
+			case 4:
+				kontakt_button.style.backgroundColor = red;  
+				kontakt_button.style.color = black; 
+				info_button.style.color = red;
+				info_button.style.backgroundColor = red;
 
-        //blue
-        case 2:
-			//document.body.style.background = blue;
-			//welcome_section.style.backgroundColor = blue;
-
-			/*for (i = 0; i < footer.length; i++) {
-				footer[i].style.backgroundColor = purple;
-			}*/
-
-			kontakt_button.style.backgroundColor = red;  
-			info_button.style.color = red;
-			info_button.info_button_color(darker_red)
-
-			undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/purple/vytvoreni-marketingu.svg";
-			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/purple/sprava-marketingu.svg";
-			undraw_svg_svg_vytvoreni_webu.src = "assets/img/undraw-svg/purple/vytvoreni-webu.svg";
-			undraw_svg_sprava_webu.src = "assets/img/undraw-svg/purple/sprava-webu.svg";
-			undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/purple/vytvoreni-znacky.svg";
-			undraw_svg_recenze_projektu.src = "assets/img/undraw-svg/purple/recenze-projektu.svg";
-			undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/purple/projekty-mlm.svg";
-			undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/purple/projekty-pruzkumy.svg";
-			undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/purple/projekty-pohyb.svg";
-			undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/purple/projekty-ostatni.svg";
-        break;
-
-        //yellow
-        case 3:
-			//document.body.style.background = yellow;
-			//welcome_section.style.backgroundColor = yellow;
-
-			/*for (i = 0; i < footer.length; i++) {
-				footer[i].style.backgroundColor = purple;
-			}*/
-
-			kontakt_button.style.backgroundColor = red;  
-			info_button.style.color = purple;
-			info_button.info_button_color(darker_purple)
-
-			undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
-			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/red/sprava-marketingu.svg";
-			undraw_svg_svg_vytvoreni_webu.src = "assets/img/undraw-svg/red/vytvoreni-webu.svg";
-			undraw_svg_sprava_webu.src = "assets/img/undraw-svg/red/sprava-webu.svg";
-			undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/red/vytvoreni-znacky.svg";
-			undraw_svg_recenze_projektu.src = "assets/img/undraw-svg/red/recenze-projektu.svg";
-			undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/red/projekty-mlm.svg";
-			undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/red/projekty-pruzkumy.svg";
-			undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/red/projekty-pohyb.svg";
-			undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/red/projekty-ostatni.svg";
-        break;
-
-        //red
-        case 4:
-			//document.body.style.background = red;
-			//welcome_section.style.backgroundColor = red;
-
-			/*for (i = 0; i < footer.length; i++) {
-				footer[i].style.backgroundColor = blue;
-			}*/
-
-			kontakt_button.style.backgroundColor = yellow;  
-			kontakt_button.style.color = black; 
-			info_button.style.color = blue;
-			info_button.info_button_color(darker_blue)
-
-			undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/blue/vytvoreni-marketingu.svg";
-			undraw_svg_sprava_marketingu.src = "assets/img/undraw-svg/blue/sprava-marketingu.svg";
-			undraw_svg_svg_vytvoreni_webu.src = "assets/img/undraw-svg/blue/vytvoreni-webu.svg";
-			undraw_svg_sprava_webu.src = "assets/img/undraw-svg/blue/sprava-webu.svg";
-			undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/blue/vytvoreni-znacky.svg";
-			undraw_svg_recenze_projektu.src = "assets/img/undraw-svg/blue/recenze-projektu.svg";
-			undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/blue/projekty-mlm.svg";
-			undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/blue/projekty-pruzkumy.svg";
-			undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/blue/projekty-pohyb.svg";
-			undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/blue/projekty-ostatni.svg";
-        break;
-
-	}
-	
-	function info_button_color(color) {
-		info_button.style.color = color;
-	}
-
+				undraw_svg_vytvoreni_webu.src = "assets/img/undraw-svg/red/vytvoreni-webu.svg";
+				undraw_svg_sprava_webu.src = "assets/img/undraw-svg/red/sprava-webu.svg";
+				undraw_svg_vytvoreni_marketingu.src = "assets/img/undraw-svg/red/vytvoreni-marketingu.svg";
+				undraw_svg_vytvoreni_znacky.src = "assets/img/undraw-svg/red/vytvoreni-znacky.svg";
+				undraw_svg_projekty_mlm.src = "assets/img/undraw-svg/red/projekty-mlm.svg";
+				undraw_svg_projekty_pruzkumy.src = "assets/img/undraw-svg/red/projekty-pruzkumy.svg";
+				undraw_svg_projekty_pohyb.src = "assets/img/undraw-svg/red/projekty-pohyb.svg";
+				undraw_svg_projekty_ostatni.src = "assets/img/undraw-svg/red/projekty-ostatni.svg";
+		}
 	</script>
 </body>
 </html>

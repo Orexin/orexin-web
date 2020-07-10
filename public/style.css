@@ -73,12 +73,19 @@ a:visited {
 .color-blue {color: var(--orexin-blue);}
 
 footer {
-    background-color: var(--orexin-red);
+	background: linear-gradient(231deg, var(--orexin-blue), var(--orexin-red), var(--orexin-purple), var(--orexin-turqoise));
+    background-size: 400% 400%;
+	-webkit-animation: gradientAnim 20s ease infinite;
+    -moz-animation: gradientAnim 20s ease infinite;
+    -o-animation: gradientAnim 20s ease infinite;
+    animation: gradientAnim 20s ease infinite;
+	height: 14vh;
     padding: 20px 0;
     text-align: center;
     position: absolute;
     z-index: 998;
-    width: 100%;
+	width: 100%;
+	
 }
 
 footer p {
@@ -140,18 +147,12 @@ nav .button:hover {
 
 /** INDEX */
 #welcome {
-	/* background: linear-gradient(231deg, #43d5fa, #ff5757); */
 	background: linear-gradient(231deg, var(--orexin-blue), var(--orexin-red), var(--orexin-purple), var(--orexin-turqoise));
     background-size: 400% 400%;
-/*     -webkit-animation: gradientAnim 10s ease infinite;
-    -moz-animation: gradientAnim 10s ease infinite;
-    -o-animation: gradientAnim 10s ease infinite;
-	animation: gradientAnim 10s ease infinite; */
 	-webkit-animation: gradientAnim 20s ease infinite;
     -moz-animation: gradientAnim 20s ease infinite;
     -o-animation: gradientAnim 20s ease infinite;
     animation: gradientAnim 20s ease infinite;
-
 	height: 95vh;
 }
 

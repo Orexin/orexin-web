@@ -1,0 +1,28 @@
+{
+  "name": "orexin-web",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html --out-dir public --no-hmr",
+    "build": "parcel build src/index.html --out-dir public --no-hmr"
+  },
+  "keywords": [],
+  "author": "Orexin Econtech",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "firebase": "^7.15.4",
+    "firebase-tools": "^8.4.3",
+    "jquery": "^3.5.1",
+    "material-icons": "^0.3.1",
+    "popper.js": "^1.16.1",
+    "snapsvg": "^0.5.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "1.12.4",
+    "parcel-plugin-purifycss": "^1.0.5"
+  }
+}

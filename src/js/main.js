@@ -18,7 +18,6 @@ import './contact-form';
 //import './autocomplete';
 import './parallax';
 import * as randomColors from './random-colors';
-//import './type-writer';
 
 // firebase config
 const firebaseConfig = {

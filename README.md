@@ -4,7 +4,7 @@ Webová stránka Orexinu
 
 **NOVĚ SE KÓD PÍŠE POUZE V `SRC`**
 
-**Naučte se používat JavaScript ES6 Modules [Video](https://www.youtube.com/watch?v=cRHQNNcYf6s), javascript nebude v `script` tagu**
+**Naučte se používat JavaScript ES6 Modules - [Video](https://www.youtube.com/watch?v=cRHQNNcYf6s), javascript nebude v `script` tagu**
 
 ## Dependencies
 - `firebase-tools` (jen pro deploy)

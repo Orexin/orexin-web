@@ -2,7 +2,7 @@
 
 Webová stránka Orexinu
 
-**NOVĚ SE KÓD PÍŠE POUZE V SRC**
+**NOVĚ SE KÓD PÍŠE POUZE V `SRC`**
 
 **Naučte se používat JavaScript ES6 Modules [Video](https://www.youtube.com/watch?v=cRHQNNcYf6s), javascript nebute v `script` tagu**
 

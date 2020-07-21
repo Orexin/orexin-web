@@ -52,6 +52,7 @@ var cookieName; //cookie name that we are searching for
 	 var allowedCookie = true;
 	setCookie(cookieName, allowedCookie);
 	document.cookie = cookieName, allowedCookie;
+	//alert("Soubory cookies používáme pro zlepšení našich služeb a pro správný průběh funkcí našeho webu")
 	console.log("Cookies are now allowed -> cookie value:" +allowedCookie);
 	console.log("true - allowed | false - denied");
   }

@@ -11,9 +11,9 @@ Webová stránka Orexinu
 
 ## Jak zfungovat repo pro development
 - `git clone https://github.com/Orexin/orexin-web.git`
-- login do GitHubu
+- login do GitHubu (spustit příkaz ve složce orexin-web)
 - `npm install`
-- pro spuštění webu `npm run dev`
+- pro spuštění webu `npm run dev` 
 - pro build webu `npm run build`
 
 ## Firebase deploy

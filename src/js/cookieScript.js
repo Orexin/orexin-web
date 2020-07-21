@@ -1,18 +1,18 @@
   /*COOKIE NAME = COOKIE VALUE*/ 
   /*CookiesAllowed = allowedCookie*/ 
 
-function setCookie(cname,cvalue) { 
+export function setCookie(cname,cvalue) { 
 	document.cookie = cname + "=" + cvalue + ";";
   }
 
-function setTimedCookie(cname, cvalue, exdays){ //exdays in days
+export function setTimedCookie(cname, cvalue, exdays){ //exdays in days
 	var d = new Date();
   	d.setTime(d.getTime() + (exdays*24*60*60*1000));
   	var expires = "expires="+ d.toUTCString();
   	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
   
-  function getCookie(cname) {
+export function getCookie(cname) {
 	var name = cname + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
 	var ca = decodedCookie.split(';');
@@ -30,7 +30,7 @@ function setTimedCookie(cname, cvalue, exdays){ //exdays in days
   
   /*function to check whether are cookies allowed*/
   /*kinda dumb ya gotta store cookie about whether the user chosed not to use them or not xddd*/
-  function checkCookie() {
+export function checkCookie() {
 	 allowedCookie=getCookie("CookiesAllowed");
 	if (allowedCookie == true) {
 	  console.log("Cookies are allowed.");
@@ -48,7 +48,7 @@ function setTimedCookie(cname, cvalue, exdays){ //exdays in days
 
 var cookieName; //cookie name that we are searching for
 
-  function allowCookie(){
+export function allowCookie(){
 	 var allowedCookie = true;
 	setCookie(cookieName, allowedCookie);
 	document.cookie = cookieName, allowedCookie;
@@ -58,7 +58,7 @@ var cookieName; //cookie name that we are searching for
   }
   //allow specific cookie
 
-  function denyCookie(){
+export function denyCookie(){
 	var allowedCookie = false;
 	setCookie(cookieName, allowedCookie);
 	document.cookie = cookie, allowedCookie;
@@ -68,7 +68,7 @@ var cookieName; //cookie name that we are searching for
   //deny specific cookie
 
   /*for debug purposes only*/
-  function getCurrentStateOfCookie(){
+export function getCurrentStateOfCookie(){
 	var allowedCookie = getCookie(cookieName);
 	alert("Current state of CookiesAllowed is:" + allowedCookie);	  
   }
@@ -77,4 +77,7 @@ var cookieName; //cookie name that we are searching for
 
   /*! FOR POP UP WINDOW [CONSENT ABOUT COOKIES] !*/
 
+
+
+  
 

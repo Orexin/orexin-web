@@ -1,4 +1,5 @@
 import * as undrawSVG from './import-svg';
+import * as cookie from './cookieScript';
 
 var blue = "#43D5FA";
 var darker_blue = "#2f95af";
@@ -16,8 +17,8 @@ var white = "#ffffff";
 var footer = document.getElementsByTagName("footer");
 var button = document.getElementById("button");
 
-var random = Math.floor(Math.random() * 5);
-console.log(random);
+//var random = Math.floor(Math.random() * 5);
+//console.log(random);
 
 export function colorsIndex() {
 	var infoButton = document.getElementById("info-button");
@@ -32,7 +33,22 @@ export function colorsIndex() {
 	var undraw_svg_projekty_pohyb = document.getElementById("undraw-svg-projekty-pohyb");
 	var undraw_svg_projekty_ostatni = document.getElementById("undraw-svg-projekty-ostatni");
 
-	switch(random) {
+	var lastCookie = cookie.getCookie('sessionColor');
+		if(lastCookie == " "){
+			cookie.setCookie('sessionColor', ' ');
+			console.log('SessionColor cookie has been created.');
+		}
+		else{
+			var colorAsNumber = Math.floor(Math.random() * 5);
+			if(colorAsNumber == lastCookie){
+				colorAsNumber += 1;
+				colorAsNumber = Math.abs(colorAsNumber + 1);
+				cookie.setCookie('sessionColor', colorAsNumber);
+			}
+			
+		}
+
+	switch(colorAsNumber) {
 		// purple
 		case 0:
 			button.style.backgroundColor = purple;

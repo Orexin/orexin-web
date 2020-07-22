@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import 'aos/dist/aos.css';
 import 'material-icons';
+import 'typicons.font/src/font/typicons.css';
 import './../css/style.css';
 
 // JS

@@ -2,8 +2,8 @@
   "name": "orexin-web",
   "version": "1.0.0",
   "description": "",
-	"private": true,
-	"main": "src/index.html",
+  "private": true,
+  "main": "src/index.html",
   "scripts": {
     "dev": "parcel serve src/index.html --out-dir public --no-hmr",
     "build": "parcel build src/index.html --out-dir public",
@@ -21,7 +21,8 @@
     "jquery": "^3.5.1",
     "material-icons": "^0.3.1",
     "popper.js": "^1.16.1",
-    "snapsvg": "^0.5.1"
+    "snapsvg": "^0.5.1",
+    "typicons.font": "^2.0.9"
   },
   "devDependencies": {
     "parcel": "^1.12.4"

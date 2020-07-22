@@ -1,15 +1,12 @@
   /*COOKIE NAME = COOKIE VALUE*/ 
   /*CookiesAllowed = allowedCookie*/ 
 
-export function setCookie(cname,cvalue) { 
-	document.cookie = cname + "=" + cvalue + ";";
-  }
 
-export function setTimedCookie(cname, cvalue, exdays){ //exdays in days
+export function setCookie(cname, cvalue, exdays){ //exdays in days
 	var d = new Date();
   	d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  	var expires = "expires="+ d.toUTCString();
-  	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	var expires = "expires="+ d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
   
 export function getCookie(cname) {

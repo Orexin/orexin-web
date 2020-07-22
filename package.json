@@ -2,10 +2,12 @@
   "name": "orexin-web",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+	"private": true,
+	"main": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html --out-dir public --no-hmr",
-    "build": "parcel build src/index.html --out-dir public --no-hmr"
+    "dev": "parcel serve src/index.html --out-dir public --no-hmr",
+    "build": "parcel build src/index.html --out-dir public",
+    "help": "parcel help serve"
   },
   "keywords": [],
   "author": "Orexin Econtech",
@@ -22,7 +24,6 @@
     "snapsvg": "^0.5.1"
   },
   "devDependencies": {
-    "parcel-bundler": "1.12.4",
-    "parcel-plugin-purifycss": "^1.0.5"
+    "parcel": "^1.12.4"
   }
 }

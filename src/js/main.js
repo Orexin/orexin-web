@@ -17,6 +17,7 @@ import 'snapsvg';
 import './contact-form';
 //import './autocomplete';
 import './parallax';
+import './nav';
 import * as randomColors from './random-colors';
 
 // firebase config

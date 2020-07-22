@@ -112,6 +112,15 @@ nav {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+.nav-logo {
+	width: 35px;
+	display: none;
+}
+
+.nav-slim .nav-logo {
+	display: block;
+}
+
 nav a {
 	font-weight: 600;
 	font-size: 20px;

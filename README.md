@@ -11,7 +11,8 @@ Webová stránka Orexinu
 
 ## Jak zfungovat repo pro development
 - `git clone https://github.com/Orexin/orexin-web.git`
-- login do GitHubu (spustit příkaz ve složce orexin-web)
+- login do GitHubu
+- `cd orexin-web` (`npm` příkazy spouštět v `orexin-web`, bcs @TurniXXD keeps forgetting)
 - `npm install`
 - pro spuštění webu `npm run dev` 
 - pro build webu `npm run build`

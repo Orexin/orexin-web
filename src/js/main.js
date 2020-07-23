@@ -39,7 +39,10 @@ aos.init();
 // random colors
 $(document).ready(function() {
 	if ($('body').hasClass('index')) {
-		randomColors.colorsIndex();
+		randomColors.colorsIndex(randomColors.sessionColor);
+	}
+	else if ($('body').hasClass('p404')) {
+		randomColors.colors404(randomColors.sessionColor);
 	}
 });
 

@@ -345,8 +345,26 @@ nav .button:hover {
 
 /** 404 */
 
-.p404 {
+.p404 .box {
+	position: relative;
+	background-color: #FFF;
+	padding: 50px;
+	width: 40vh;
+}
 
+.inner-404 {
+	position: relative;
+	width: 100%;
+}
+
+.inner-404 img {
+	position: absolute;
+	width: 100%;
+}
+
+.p404-text {
+	position: relative;
+	z-index: 1;
 }
 
 /** RESPO */

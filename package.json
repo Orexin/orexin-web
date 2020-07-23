@@ -5,7 +5,7 @@
   "private": true,
   "main": "src/index.html",
   "scripts": {
-    "dev": "parcel serve src/index.html --out-dir public --no-hmr",
+    "dev": "parcel serve src/index.html --out-dir public --no-hmr --port 4200",
     "build": "parcel build src/index.html --out-dir public",
     "help": "parcel help serve"
   },

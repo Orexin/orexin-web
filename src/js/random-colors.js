@@ -102,6 +102,56 @@ export function hoverOutColor(element) {
 	}
 }
 
+export function hoverInBG(element) {
+	switch(sessionColor) {
+		// purple
+		case 0:
+			element.style.backgroundColor = darker_purple;
+			break;
+		// turqoise
+		case 1:
+			element.style.backgroundColor = darker_turqoise;
+			break;
+		// blue
+		case 2:
+			element.style.backgroundColor = darker_blue;
+			break;
+		// yellow
+		case 3:
+			element.style.backgroundColor = darker_yellow;
+			break;
+		// red
+		case 4:
+			element.style.backgroundColor = darker_red;
+			break;
+	}
+}
+
+export function hoverOutBG(element) {
+	switch(sessionColor) {
+		// purple
+		case 0:
+			element.style.backgroundColor = purple;
+			break;
+		// turqoise
+		case 1:
+			element.style.backgroundColor = turqoise;
+			break;
+		// blue
+		case 2:
+			element.style.backgroundColor = blue;
+			break;
+		// yellow
+		case 3:
+			element.style.backgroundColor = yellow;
+			break;
+		// red
+		case 4:
+			element.style.backgroundColor = red;
+			break;
+	}
+}
+
 export function colorsIndex() { //gets called when document ready
 	var infoButtons = document.getElementsByClassName("info-button");
 

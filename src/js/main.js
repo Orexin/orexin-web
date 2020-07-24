@@ -23,6 +23,8 @@ import * as randomColors from './random-colors';
 
 window.hoverInColor = randomColors.hoverInColor;
 window.hoverOutColor = randomColors.hoverOutColor;
+window.hoverInBG = randomColors.hoverInBG;
+window.hoverOutBG = randomColors.hoverOutBG;
 
 // firebase config
 const firebaseConfig = {

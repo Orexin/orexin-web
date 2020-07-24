@@ -53,7 +53,7 @@ else {
 }
 
 export function colorsIndex(color) { //gets called when document ready
-	var infoButton = document.getElementById("info-button");
+	var infoButton = document.getElementsByClassName("info-button");
 
 	// svg
 	var undraw_svg_vytvoreni_webu = document.getElementById("undraw-svg-vytvoreni-webu");
@@ -73,6 +73,10 @@ export function colorsIndex(color) { //gets called when document ready
 			infoButton.style.color = purple;
 			infoButton.style.background = purple;
 		
+			for (i = 0; i < infoButton.length; i++) {
+				infoButton[i].style.color = purple;
+			}
+
 			undraw_svg_vytvoreni_webu.src = undrawSVG.purple_vytvoreni_webu;
 			undraw_svg_sprava_webu.src = undrawSVG.purple_sprava_webu;
 			undraw_svg_vytvoreni_marketingu.src = undrawSVG.purple_vytvoreni_marketingu;
@@ -86,9 +90,11 @@ export function colorsIndex(color) { //gets called when document ready
 		case 1:
 			button.style.backgroundColor = turqoise;
 			button.style.color = black;    
-			infoButton.style.color = turqoise;
-			infoButton.style.backgroundColor = darker_turqoise;
 		
+			for (i = 0; i < infoButton.length; i++) {
+				infoButton[i].style.color = turqoise;
+			}
+
 			undraw_svg_vytvoreni_webu.src = undrawSVG.turqoise_vytvoreni_webu;
 			undraw_svg_sprava_webu.src = undrawSVG.turqoise_sprava_webu;
 			undraw_svg_vytvoreni_marketingu.src = undrawSVG.turqoise_vytvoreni_marketingu;
@@ -104,6 +110,10 @@ export function colorsIndex(color) { //gets called when document ready
 			infoButton.style.color = blue;
 			infoButton.style.backgroundColor = darker_blue;
 		
+			for (i = 0; i < infoButton.length; i++) {
+				infoButton[i].style.color = blue;
+			}
+
 			undraw_svg_vytvoreni_webu.src = undrawSVG.blue_vytvoreni_webu;
 			undraw_svg_sprava_webu.src = undrawSVG.blue_sprava_webu;
 			undraw_svg_vytvoreni_marketingu.src = undrawSVG.blue_vytvoreni_marketingu;
@@ -120,6 +130,10 @@ export function colorsIndex(color) { //gets called when document ready
 			infoButton.style.color = yellow;
 			infoButton.style.backgroundColor = yellow;
 		
+			for (i = 0; i < infoButton.length; i++) {
+				infoButton[i].style.color = yellow;
+			}
+			
 			undraw_svg_vytvoreni_webu.src = undrawSVG.yellow_vytvoreni_webu;
 			undraw_svg_sprava_webu.src = undrawSVG.yellow_sprava_webu;
 			undraw_svg_vytvoreni_marketingu.src = undrawSVG.yellow_vytvoreni_marketingu;
@@ -136,6 +150,10 @@ export function colorsIndex(color) { //gets called when document ready
 			infoButton.style.color = red;
 			infoButton.style.backgroundColor = red;
 		
+			for (i = 0; i < infoButton.length; i++) {
+				infoButton[i].style.color = red;
+			}
+
 			undraw_svg_vytvoreni_webu.src = undrawSVG.red_vytvoreni_webu;
 			undraw_svg_sprava_webu.src = undrawSVG.red_sprava_webu;
 			undraw_svg_vytvoreni_marketingu.src = undrawSVG.red_vytvoreni_marketingu;
@@ -145,6 +163,14 @@ export function colorsIndex(color) { //gets called when document ready
 			undraw_svg_projekty_pohyb.src = undrawSVG.red_projekty_pohyb;
 			undraw_svg_projekty_ostatni.src = undrawSVG.red_projekty_ostatni;
 			break;
+	}
+}
+
+export function infoButtonHover (color) {
+	var infoButton = document.getElementsByClassName("info-button");
+
+	for (i = 0; i < infoButton.length; i++) {
+		infoButton[i].style.color = color;
 	}
 }
 

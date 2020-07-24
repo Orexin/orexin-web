@@ -52,8 +52,58 @@ else {
 	cookie.setCookie('lastSessionColor', sessionColor, 1);
 }
 
-export function colorsIndex(color) { //gets called when document ready
-	var infoButton = document.getElementsByClassName("info-button");
+export function hoverInColor(element) {
+	switch(sessionColor) {
+		// purple
+		case 0:
+			element.style.color = darker_purple;
+			break;
+		// turqoise
+		case 1:
+			element.style.color = darker_turqoise;
+			break;
+		// blue
+		case 2:
+			element.style.color = darker_blue;
+			break;
+		// yellow
+		case 3:
+			element.style.color = darker_yellow;
+			break;
+		// red
+		case 4:
+			element.style.color = darker_red;
+			break;
+	}
+}
+
+export function hoverOutColor(element) {
+	switch(sessionColor) {
+		// purple
+		case 0:
+			element.style.color = purple;
+			break;
+		// turqoise
+		case 1:
+			element.style.color = turqoise;
+			break;
+		// blue
+		case 2:
+			element.style.color = blue;
+			break;
+		// yellow
+		case 3:
+			element.style.color = yellow;
+			break;
+		// red
+		case 4:
+			element.style.color = red;
+			break;
+	}
+}
+
+export function colorsIndex() { //gets called when document ready
+	var infoButtons = document.getElementsByClassName("info-button");
 
 	// svg
 	var undraw_svg_vytvoreni_webu = document.getElementById("undraw-svg-vytvoreni-webu");
@@ -65,16 +115,14 @@ export function colorsIndex(color) { //gets called when document ready
 	var undraw_svg_projekty_pohyb = document.getElementById("undraw-svg-projekty-pohyb");
 	var undraw_svg_projekty_ostatni = document.getElementById("undraw-svg-projekty-ostatni");
 
-	switch(color) {
+	switch(sessionColor) {
 		// purple
 		case 0:
 			button.style.backgroundColor = purple;
 			button.style.color = white;
-			infoButton.style.color = purple;
-			infoButton.style.background = purple;
 		
-			for (i = 0; i < infoButton.length; i++) {
-				infoButton[i].style.color = purple;
+			for (const i of infoButtons) {
+				i.style.color = purple;
 			}
 
 			undraw_svg_vytvoreni_webu.src = undrawSVG.purple_vytvoreni_webu;
@@ -91,8 +139,8 @@ export function colorsIndex(color) { //gets called when document ready
 			button.style.backgroundColor = turqoise;
 			button.style.color = black;    
 		
-			for (i = 0; i < infoButton.length; i++) {
-				infoButton[i].style.color = turqoise;
+			for (const i of infoButtons) {
+				i.style.color = turqoise;
 			}
 
 			undraw_svg_vytvoreni_webu.src = undrawSVG.turqoise_vytvoreni_webu;
@@ -107,11 +155,9 @@ export function colorsIndex(color) { //gets called when document ready
 		// blue
 		case 2:
 			button.style.backgroundColor = blue;  
-			infoButton.style.color = blue;
-			infoButton.style.backgroundColor = darker_blue;
 		
-			for (i = 0; i < infoButton.length; i++) {
-				infoButton[i].style.color = blue;
+			for (const i of infoButtons) {
+				i.style.color = blue;
 			}
 
 			undraw_svg_vytvoreni_webu.src = undrawSVG.blue_vytvoreni_webu;
@@ -127,11 +173,9 @@ export function colorsIndex(color) { //gets called when document ready
 		case 3:
 			button.style.backgroundColor = yellow;  
 			button.style.color = black;
-			infoButton.style.color = yellow;
-			infoButton.style.backgroundColor = yellow;
 		
-			for (i = 0; i < infoButton.length; i++) {
-				infoButton[i].style.color = yellow;
+			for (const i of infoButtons) {
+				i.style.color = yellow;
 			}
 			
 			undraw_svg_vytvoreni_webu.src = undrawSVG.yellow_vytvoreni_webu;
@@ -147,11 +191,9 @@ export function colorsIndex(color) { //gets called when document ready
 		case 4:
 			button.style.backgroundColor = red;  
 			button.style.color = white; 
-			infoButton.style.color = red;
-			infoButton.style.backgroundColor = red;
 		
-			for (i = 0; i < infoButton.length; i++) {
-				infoButton[i].style.color = red;
+			for (const i of infoButtons) {
+				i.style.color = red;
 			}
 
 			undraw_svg_vytvoreni_webu.src = undrawSVG.red_vytvoreni_webu;
@@ -163,14 +205,6 @@ export function colorsIndex(color) { //gets called when document ready
 			undraw_svg_projekty_pohyb.src = undrawSVG.red_projekty_pohyb;
 			undraw_svg_projekty_ostatni.src = undrawSVG.red_projekty_ostatni;
 			break;
-	}
-}
-
-export function infoButtonHover (color) {
-	var infoButton = document.getElementsByClassName("info-button");
-
-	for (i = 0; i < infoButton.length; i++) {
-		infoButton[i].style.color = color;
 	}
 }
 

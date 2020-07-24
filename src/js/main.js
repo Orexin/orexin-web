@@ -21,6 +21,9 @@ import './parallax';
 import './nav';
 import * as randomColors from './random-colors';
 
+window.hoverInColor = randomColors.hoverInColor;
+window.hoverOutColor = randomColors.hoverOutColor;
+
 // firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyCvDyE4xoEntTjo6G1f6M5qvmhqDPYUNKk",
@@ -39,10 +42,10 @@ aos.init();
 // random colors
 $(document).ready(function() {
 	if ($('body').hasClass('index')) {
-		randomColors.colorsIndex(randomColors.sessionColor);
+		randomColors.colorsIndex();
 	}
 	else if ($('body').hasClass('p404')) {
-		randomColors.colors404(randomColors.sessionColor);
+		randomColors.colors404();
 	}
 });
 

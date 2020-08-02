@@ -43,11 +43,14 @@ aos.init();
 
 // random colors
 $(document).ready(function() {
-	if ($('body').hasClass('index')) {
+	if ($('body').is('#index')) {
 		randomColors.colorsIndex();
 	}
-	else if ($('body').hasClass('p404')) {
+	else if ($('body').is('#p404')) {
 		randomColors.colors404();
+	}
+	else if ($('body').is('#kontakt')) {
+		randomColors.colorsKontakt();
 	}
 });
 

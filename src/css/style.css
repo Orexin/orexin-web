@@ -63,13 +63,19 @@ a.color-red:hover {
 	color: var(--orexin-red-dark);
 }
 
-a:visited {
-	color: unset;
-	text-decoration: none;
-}
-
 .color-red {color: var(--orexin-red);}
 .color-blue {color: var(--orexin-blue);}
+
+.button {
+	padding: 7px 25px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all .3s ease-in-out;
+	border: none;
+}
 
 .box {
 	border-radius: 30px;
@@ -147,6 +153,14 @@ nav {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+.nav-slim a {
+	color: var(--text);
+}
+
+.nav-slim a:hover {
+	color: var(--text);
+}
+
 .nav-logo {
 	width: 35px;
 	display: none;
@@ -161,13 +175,12 @@ nav a {
 	font-size: 20px;
 	line-height: 24px;
 	padding: 0 10px;
-	color: var(--text);
+	color: white;
 }
-
 
 /*? potřebujeme něco na hover */
 nav a:hover {
-	color: var(--text);
+	color: white;
 }
 
 nav ul {
@@ -181,18 +194,7 @@ nav ul li {
 }
 
 nav .button {
-	padding: 7px 25px;
-	color: white;
-	font-weight: 600;
 	font-size: 20px;
-	border-radius: 30px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all .3s ease-in-out;
-}
-
-nav .button:hover {
-	color: white;
-	background-color: var(--orexin-red-dark);
 }
 
 /** INDEX */
@@ -319,6 +321,182 @@ nav .button:hover {
 .container_paralax3 img:nth-child(2) {opacity: 0.8;z-index: 3;}
 .container_paralax3 img:nth-child(3) {opacity: 0.6;z-index: 2;}
 .container_paralax3 img:nth-child(4) {opacity: 0.4;z-index: 1;}
+
+/** KONTAKT */
+
+.kontakt-left-text {
+	margin-top: 80px;
+}
+
+.timeline {
+	list-style-type: none;
+	position: relative;
+	margin-right: 45px;
+	margin-top: 40px;
+}
+
+.timeline:before {
+	content: ' ';
+	background: #d4d9df;
+	display: inline-block;
+	position: absolute;
+	left: 9px;
+	width: 2px;
+	height: 100%;
+	z-index: 400;
+}
+
+.timeline > li {
+	margin: 0;
+	padding: 0;
+}
+
+.timeline > li:before {
+	content: ' ';
+	background: white;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #22c0e8;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 400;
+}
+
+.timeline h5 {
+	margin-left: 30px;
+	font-size: 18px;
+}
+
+.timeline p {
+	font-size: 14px;
+	margin-left: 30px;
+}
+
+.kontakt-left-text h2 {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.kontakt-header-text {
+	padding-top: 150px;
+}
+
+.kontakt-header-text h1 {
+	color: white;
+	font-size: 48px;
+	font-weight: 600;
+	text-align: left;
+	margin: 25px 0;
+	padding: 0;
+}
+
+.kontakt-header-text p {
+	color: white;
+	margin-bottom: 70px;
+}
+
+.kontakt-header-social {
+	padding-bottom: 30px;
+}
+
+.kontakt-header-social a {
+	font-size: 45px;
+	margin-right: 30px;
+}
+
+.kontakt-header-social span {
+	color: white;
+}
+
+.kontakt {
+	background-color: #F4F4F5;
+	padding-bottom: 100px;
+}
+
+.kontakt-form-header {
+	background-color: #F4F4F5;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.kontakt-form-header-icon {
+	height: min-content;
+}
+
+.kontakt-form {
+	background-color: white;
+	border-radius: 20px;
+	margin-top: -123px;
+	box-shadow: 2px 2px 9px 0 rgba(16, 16, 17, .15);
+}
+
+.kontakt-form > div {
+	padding: 30px;
+}
+
+.kontakt-form-header-icon span {
+	font-size: 60px;
+	height: 60px;
+	display: inline-block;
+	line-height: 50px;
+	background-color: var(--orexin-blue);
+	color: white;
+	border-radius: 5px;
+}
+
+.kontakt-form-header-text {
+	margin-left: 30px;
+	font-size: 21px
+}
+
+.kontakt-form-body textarea {
+	height: 200px;
+}
+
+.kontakt-form-body p {
+	font-size: 12px;
+	text-align: center;
+}
+
+.kontakt-form-body h4 {
+	font-size: 16px;
+}
+
+/** FORMS */
+
+.form-group {
+	position: relative;
+}
+
+.form-group label {
+	line-height: 5px;
+	font-size: 14px;
+	left: 35px;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all .2s;
+	padding: 0 5px;
+	margin: 0;
+}
+
+.form-group input[type=text]:not(:placeholder-shown) + label {
+	background: white;
+	transform: translate(0, -50%);
+	opacity: 1;
+}
+
+.form-group input[type=text], textarea {
+	border-radius: 20px;
+	border: 1px solid var(--text);
+	padding: 5px 24px;
+}
+
+.form-group input[type=button] {
+	font-weight: 500;
+}
 
 /** WEBKIT SCROLLBAR */
 

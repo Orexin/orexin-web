@@ -11,11 +11,8 @@ const purple = "#8555E4";
 const darker_purple = "#734bc2";
 const turqoise = "#50FFB1";
 const darker_turqoise = "#47db98";
-const black = "#000000";
+const black = "#222222";
 const white = "#ffffff";
-
-var footer = document.getElementsByTagName("footer");
-var button = document.getElementById("button");
 
 var lastSessionColor = cookie.getCookie('lastSessionColor');
 export var sessionColor = Math.abs(Math.floor(Math.random() * 5));
@@ -152,6 +149,47 @@ export function hoverOutBG(element) {
 	}
 }
 
+export function Btn() {
+	var Btns = document.getElementsByClassName("button");
+	switch(sessionColor) {
+		// purple
+		case 0:
+			for (const i of Btns) {
+				i.style.backgroundColor = purple;
+				i.style.color = white;
+			}
+			break;
+		// turqoise
+		case 1:
+			for (const i of Btns) {
+				i.style.backgroundColor = turqoise;
+				i.style.color = black;
+			}
+			break;
+		// blue
+		case 2:
+			for (const i of Btns) {
+				i.style.backgroundColor = blue;
+				i.style.color = white;
+			}
+			break;
+		// yellow
+		case 3:
+			for (const i of Btns) {
+				i.style.backgroundColor = yellow;
+				i.style.color = black;
+			}
+			break;
+		// red
+		case 4:
+			for (const i of Btns) {
+				i.style.backgroundColor = red;
+				i.style.color = white;
+			}
+			break;
+	}
+}
+
 export function colorsIndex() { //gets called when document ready
 	var infoButtons = document.getElementsByClassName("info-button");
 
@@ -165,12 +203,11 @@ export function colorsIndex() { //gets called when document ready
 	var undraw_svg_projekty_pohyb = document.getElementById("undraw-svg-projekty-pohyb");
 	var undraw_svg_projekty_ostatni = document.getElementById("undraw-svg-projekty-ostatni");
 
+	Btn();
+
 	switch(sessionColor) {
 		// purple
 		case 0:
-			button.style.backgroundColor = purple;
-			button.style.color = white;
-		
 			for (const i of infoButtons) {
 				i.style.color = purple;
 			}
@@ -186,9 +223,6 @@ export function colorsIndex() { //gets called when document ready
 			break;
 		// turqoise
 		case 1:
-			button.style.backgroundColor = turqoise;
-			button.style.color = black;    
-		
 			for (const i of infoButtons) {
 				i.style.color = turqoise;
 			}
@@ -204,8 +238,6 @@ export function colorsIndex() { //gets called when document ready
 			break;
 		// blue
 		case 2:
-			button.style.backgroundColor = blue;  
-		
 			for (const i of infoButtons) {
 				i.style.color = blue;
 			}
@@ -221,9 +253,6 @@ export function colorsIndex() { //gets called when document ready
 			break;
 		// yellow
 		case 3:
-			button.style.backgroundColor = yellow;  
-			button.style.color = black;
-		
 			for (const i of infoButtons) {
 				i.style.color = yellow;
 			}
@@ -239,9 +268,6 @@ export function colorsIndex() { //gets called when document ready
 			break;
 		// red
 		case 4:
-			button.style.backgroundColor = red;  
-			button.style.color = white; 
-		
 			for (const i of infoButtons) {
 				i.style.color = red;
 			}
@@ -258,11 +284,11 @@ export function colorsIndex() { //gets called when document ready
 	}
 }
 
-export function colors404(color) {
+export function colors404() {
 	const link = document.getElementsByTagName("A");
 	const undraw_svg_404 = document.getElementById("undraw-svg-404");
 
-	switch(color) {
+	switch(sessionColor) {
 		// purple
 		case 0:
 			undraw_svg_404.src = undrawSVG.purple_404;
@@ -284,4 +310,35 @@ export function colors404(color) {
 			undraw_svg_404.src = undrawSVG.red_404;
 			break;
 	}
+}
+
+export function colorsKontakt() {
+	const ikona = document.getElementById("kontaktIkona");
+
+	switch(sessionColor) {
+		// purple
+		case 0:
+			ikona.style.backgroundColor = purple;
+			break;
+		// turqoise
+		case 1:
+			ikona.style.backgroundColor = turqoise;
+			ikona.style.color = black;
+			break;
+		// blue
+		case 2:
+			ikona.style.backgroundColor = blue;
+			break;
+		// yellow
+		case 3:
+			ikona.style.backgroundColor = yellow;
+			ikona.style.color = black;
+			break;
+		// red
+		case 4:
+			ikona.style.backgroundColor = red;
+			break;
+	}
+
+	Btn();
 }

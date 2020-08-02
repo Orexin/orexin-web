@@ -203,7 +203,7 @@
 		<div class="row">
 			<h3>Speciální prvky</h3>
 			<ul id="specialni-prvky">
-				<li id="3D-model" onclick="model_3D()">
+				<li id="3D-model">
 					<span>3D modelování produktů</span>
 					<input type="range" id="3D-model-range" min="1" max="200" style="display: none;">
 				</li>
@@ -252,11 +252,9 @@
 
         <p>Orexin Econtech &copy; 2020</p>
     </footer>
-    
-	<script>AOS.init();</script>
 	<script>
 	//po kliknutí na prvek nabídky display none hlavní nabídce a spustit animaci prvků vybrané nabídky (blog, e-shp...)
-		/*
+		
 	//addressing elements
 	var web_dev_nabidka = document.getElementById("web-dev-nabidka");
 	var blog = document.getElementById("blog");
@@ -321,28 +319,28 @@
 	}
 
 	//speciální prvky
-	model_3D.onclick() = function(){
+	model_3D.onclick = function(){
 		model_3D_range.style.display = "block";
 		model_3D_range_value = model_3D_range.value * 250;
 		model_3D_range_doba_value = model_3D_range.value / 2;
 
 		cena.innerHTML = cena_value + model_3D_range_value + "Kč";
 		doba.innerHTML = doba_value + model_3D_range_doba_value + "dní";
-	}
+	};
 
-	instant_messeging.onclick() = function(){
+	instant_messeging.onclick = function(){
 		cena.innerHTML = cena_value + 1000 + "Kč";
 		doba.innerHTML = doba_value + 2 + "dní";
-	}
+	};
 
 	//web dřívěji
-	web_drivejsi_vyroba.onclick() = function(){
+	web_drivejsi_vyroba.onclick = function(){
 		web_drivejsi_vyroba_range.style.display = "block";
 		cena.innerHTML = cena_value + 1000 + "Kč";
 		doba_value_1 = 1;
 		doba_value_2 = 2;
 		doba.innerHTML = doba_value_1 + " - " + doba_value_2 + "týdnů";
-	} */
+	};
 
 	</script>
 </body>

@@ -264,6 +264,11 @@ nav .button:hover {
 	width: 65%;
 }
 
+.info-button span {
+	display: inline-flex;
+	vertical-align: middle;
+}
+
 /* 4.2.2 parallax */
 
 .container_paralax1 {

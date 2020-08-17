@@ -276,10 +276,10 @@ export function colorsIndex() { //gets called when document ready
 			undraw_svg_sprava_webu.src = undrawSVG.red_sprava_webu;
 			//undraw_svg_vytvoreni_marketingu.src = undrawSVG.red_vytvoreni_marketingu;
 			undraw_svg_vytvoreni_znacky.src = undrawSVG.red_vytvoreni_znacky;
-			undraw_svg_projekty_mlm.src = undrawSVG.red_projekty_mlm;
+/* 			undraw_svg_projekty_mlm.src = undrawSVG.red_projekty_mlm;
 			undraw_svg_projekty_pruzkumy.src = undrawSVG.red_projekty_pruzkumy;
 			undraw_svg_projekty_pohyb.src = undrawSVG.red_projekty_pohyb;
-			undraw_svg_projekty_ostatni.src = undrawSVG.red_projekty_ostatni;
+			undraw_svg_projekty_ostatni.src = undrawSVG.red_projekty_ostatni; */
 			break;
 	}
 }

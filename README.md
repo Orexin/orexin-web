@@ -9,4 +9,4 @@ Webová stránka Orexinu
 - build `npm build`
 
 ## Deploy
-- `npm deploy`
+- `npm run deploy`

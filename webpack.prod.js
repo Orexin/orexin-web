@@ -58,7 +58,7 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin(buildPath),
+		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 			inject: 'body',
@@ -74,18 +74,20 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "[name].[contenthash].css",
 			chunkFilename: "[id].[contenthash].css"
+		}),
+		new OptimizeCssAssetsPlugin({
+			cssProcessor: require('cssnano'),
+			cssProcessorOptions: {
+				map: {
+					inline: false,
+				},
+				discardComments: {
+					removeAll: true
+				},
+				discardUnused: false
+			},
+			canPrint: true
 		})
 	],
 
-	optimization: {
-		minimize: true,
-		minimizer: [
-			new TerserPlugin({
-				cache: true,
-				parallel: true,
-				sourceMap: true
-			}),
-			new OptimizeCssAssetsPlugin({})
-		]
-	}
 };

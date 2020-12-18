@@ -2,22 +2,11 @@
 
 Webová stránka Orexinu
 
-**NOVĚ SE KÓD PÍŠE POUZE V `SRC`**
-
-**Naučte se používat JavaScript ES6 Modules - [Video](https://www.youtube.com/watch?v=cRHQNNcYf6s), javascript nebude v `script` tagu**
-
-## Dependencies
-- `firebase-tools` (jen pro deploy)
-
 ## Jak zfungovat repo pro development
 - `git clone https://github.com/Orexin/orexin-web.git`
-- login do GitHubu
-- `cd orexin-web` (`npm` příkazy spouštět v `orexin-web`, bcs @TurniXXD keeps forgetting)
-- `npm install`
-- pro spuštění webu `npm run dev` 
-- pro build webu `npm run build`
+- `npm i`
+- `npm start` (`localhost:6969`) 
+- build `npm build`
 
-## Firebase deploy
-- `npm run build`
-- `firebase login`
-- `firebase deploy`
+## Deploy
+- `npm deploy`

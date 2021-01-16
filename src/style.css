@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	color: white;
+	font-size: 7vh;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+	--violet: #4508BD;
+	--violet-light: #5C09FF;
+	--violet-dark: #310686;
+	--violet-darker: #1B0050;
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* UVOD */
+
+nav {
+	
+	color: black;
+	background: none;
+	top: 0;
+	position: absolute;
+	padding: 1vh;
+	padding-top: 2vh;
+	width: 100%;
+}
+
+nav div {
+	float: right !important;
+	font-size: 3vh;
+}
+
+nav div button{
+	float: right;
+	border: none;
+	background: RGBA(255,255,255,0.4);
+	border-radius: 10vh;
+	padding: 0.1vh 4vh 0.1vh 4vh;
+	font-size: 3vh;
+	color: var(--violet-light);
+}
+
+#uvod img{
+	top: 0;
+
+}
+
+h1 {
+
+}
+
+footer {
+
+}
+
+@keyframes fromTop {
+	from {
+		margin-top: -100vh;
+	}
+
+	to {
+		margin-top: 10vh;
+	}
+}
+
+/** RESPO */
+
+/* 9.1 XS (<576px) */
+@media only screen and (max-width: 576px) {
+
+}
+
+/* 9.2 SM (>=576px) */
+@media only screen and (min-width: 576px) {
+
+}
+
+/* 9.3 MD (>=768px) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* 9.4 LG (>=992px) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* 9.5 EL (>=1200px) */
+@media only screen and (min-width: 1140px) {
+
+}

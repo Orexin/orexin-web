@@ -10,3 +10,6 @@ Webová stránka Orexinu
 
 ## Deploy
 - `npm run deploy`
+
+## Ideas
+- nav background none, při hoveru white background celého navu

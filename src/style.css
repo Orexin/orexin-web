@@ -41,7 +41,7 @@ nav {
 	width: 100%;
 }
 
-nav div {
+nav div{
 	float: right !important;
 	font-size: 3vh;
 }
@@ -164,7 +164,8 @@ footer {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-bottom: 13px;
 }
 
 .custom-shape-divider-bottom-1610843841 svg {

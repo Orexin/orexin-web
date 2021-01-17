@@ -32,7 +32,6 @@ body {
 /* UVOD */
 
 nav {
-	
 	color: black;
 	background: none;
 	top: 0;
@@ -47,7 +46,7 @@ nav div {
 	font-size: 3vh;
 }
 
-nav div button{
+.kontakt-container div{
 	float: right;
 	border: none;
 	background: RGBA(255,255,255,0.4);
@@ -55,15 +54,64 @@ nav div button{
 	padding: 0.1vh 4vh 0.1vh 4vh;
 	font-size: 3vh;
 	color: var(--violet-light);
+	transition: all 0.3s ease-in-out;
 }
 
-#uvod img{
+.kontakt-container div:hover {
+	background: #fff;
+}
+
+.kontakt-container div:hover .logo-container {
+	transform: rotate(30deg);
+}
+
+#uvod img {
 	top: 0;
 
 }
 
-h1 {
+#uvod-text {
+	top: 75px;
+	position: absolute;
+	margin-left: 3vh;
+	display: grid;
+	grid-template-columns: 0.2fr 1.5fr 1.6fr;
+	grid-template-rows: 0.3fr 2.3fr 0.4fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	  ". . ."
+	  ". text ."
+	  ". . .";
+}
 
+#uvod-text div {
+	grid-area: text;
+	
+}
+
+#uvod-text div h1{
+	text-align: left;
+	font-size: 6vh;
+}
+
+#uvod-text div h1 strong {
+	color: #fff;
+}
+
+#uvod-text div h2{
+	text-align: left;
+}
+
+/* NABIDKA */
+
+#nabidka {
+	background: var(--violet-dark);
+}
+
+#co-nabizime {
+	background-color: #fff;
+	height: 70vh;
+	width: 100%;
 }
 
 footer {
@@ -105,4 +153,27 @@ footer {
 /* 9.5 EL (>=1200px) */
 @media only screen and (min-width: 1140px) {
 
+}
+
+/* Waves SVG*/
+
+.custom-shape-divider-bottom-1610843841 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1610843841 svg {
+    position: relative;
+    display: block;
+    width: calc(274% + 1.3px);
+    height: 69px;
+}
+
+.custom-shape-divider-bottom-1610843841 .shape-fill {
+    fill: #FFFFFF;
 }

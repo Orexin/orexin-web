@@ -6,10 +6,12 @@ Webová stránka Orexinu
 - `git clone https://github.com/Orexin/orexin-web.git`
 - `npm i`
 - `npm start` (`localhost:6969`) 
-- build `npm build`
+- build `npm build` (nefunkční webpack.prod.js config zatím)
+
+snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## Deploy
-- `npm run deploy`
+- `npm run deploy` (nefunkční webpack.prod.js config zatím)
 
 ## Ideas
 - nav background none, při hoveru white background celého navu

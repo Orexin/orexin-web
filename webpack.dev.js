@@ -35,19 +35,16 @@ module.exports = {
 			// load images (base64 < 8192B)
 			{
 				test: /\.(png|jpg|gif)$/,
-				use: [{
-					loader: 'url-loader',
-					options: {
-						name: '[path][name].[ext]?hash=[hash:20]',
-						limit: 8192
-					}
-				}]
-			},
+				type: 'asset/resource',
+				generator: {
+					filename: 'img/[name][hash].[ext]'
+				}
+			}
 			// load svg
-			{
+			/*{
 				test: /\.svg$/,
 				use: ["file-loader"]
-			}
+			}*/
 		]
 	},
 

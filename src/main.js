@@ -1,8 +1,8 @@
 // CSS
 import './style.css';
 import 'bulma/css/bulma.min.css';
-import 'aos';
+import AOS from 'aos';
 
 import './js/onscroll-skew';
 
-Aos.init({once: true});
+AOS.init({once: true});

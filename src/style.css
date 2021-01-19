@@ -88,7 +88,7 @@ nav div{
 	transition: all 0.3s ease-in-out;
 }
 
-.kontakt-container div:hover {
+nav .kontakt-container div:hover {
 	background: var(--violet-light);
 }
 

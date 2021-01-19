@@ -4,4 +4,5 @@ export function onscrollSkew (){
 		var value = -5 + window.scrollY/60;
 		skewed.style.transform = "skewY(" + value + "deg)"
 	})
+	console.log('kokot')
 }

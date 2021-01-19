@@ -8,6 +8,8 @@ Webová stránka Orexinu
 - `npm start` (`localhost:6969`) 
 - build `npm build`
 
+snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
+
 ## Deploy
 - `npm run deploy`
 

@@ -39,18 +39,39 @@ nav {
 	padding: 1vh;
 	padding-top: 2vh;
 	width: 100%;
-	display: grid;
-	grid-template-columns: 0.1fr 0.1fr 0.3fr 0.3fr 0.3fr 1fr 0.6fr 0.1fr;
-	grid-template-rows: 0.2fr 0.5fr 2.3fr;
-	gap: 0px 0px;
-	grid-template-areas:
-	  ". . . . . . . ."
-	  ". logo úvod o-nás služby . kontakt ."
-	  ". . . . . . . .";
+	transition: all 0.3s ease-in-out;
+	height: 75px;
+	padding-right: 1vh;
+}
+
+nav a div {
+	transition: all 0.3s ease-in-out;
+}
+
+nav a img {
+
+}
+
+nav:hover{
+	background: #fff;
+}
+
+nav:hover a div {
+	color: var(--violet);
+}
+
+nav:hover .kontakt-container div {
+	background: var(--violet);
+	color: #fff;
 }
 
 nav a {
 	text-align: left !important;
+	float: left;
+}
+
+nav a img {
+	
 }
 
 nav div{
@@ -58,32 +79,30 @@ nav div{
 	font-size: 3vh;
 }
 
-.column {
-	width: 15% !important;
-}
-
 .kontakt-container div{
-	float: right;
-	border: none;
 	background: RGBA(255,255,255,0.4);
 	border-radius: 10vh;
 	padding: 0.1vh 4vh 0.1vh 4vh;
 	font-size: 3vh;
-	color: var(--violet-light);
+	color: var(--violet);
 	transition: all 0.3s ease-in-out;
 }
 
 .kontakt-container div:hover {
-	background: #fff;
+	background: var(--violet-light);
 }
 
 .kontakt-container div:hover .logo-container {
 	transform: rotate(30deg);
 }
 
+#uvod {
+	
+}
+
 #uvod img {
 	top: 0;
-
+	width: 100%;
 }
 
 #uvod-text {
@@ -121,13 +140,23 @@ nav div{
 /* NABIDKA */
 
 #nabidka {
-	background: var(--violet-dark);
+	width: 100%;
 }
 
 #co-nabizime {
 	background-color: #fff;
 	height: 70vh;
 	width: 100%;
+}
+
+#nabidka-vyber {
+	background: var(--violet-dark);
+	transform: skewY(-5deg);
+	transform-origin: top left;
+}
+
+#nabidka-vyber div div h1, #nabidka-vyber div div p, #nabidka-vyber div div div div {
+	transform: skewY(5deg);
 }
 
 footer {

@@ -34,7 +34,7 @@ module.exports = {
 			},
 			// load images (base64 < 8192B)
 			{
-				test: /\.(png|jpg|gif)$/,
+				test: /\.(png|jpg|gif|webp)$/,
 				type: 'asset/resource',
 				generator: {
 					filename: 'img/[name][hash].[ext]'

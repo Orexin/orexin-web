@@ -42,6 +42,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bulma": "^0.9.1",
     "normalize.css": "^8.0.1"
   }

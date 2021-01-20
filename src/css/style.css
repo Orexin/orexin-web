@@ -11,13 +11,16 @@
 }
 
 :root {
-	--violet: #4508BD;
-	--violet-light: #5C09FF;
+	--violet: #4508bd;
+	--violet-light: #5c09ff;
 	--violet-dark: #310686;
-	--violet-darker: #1B0050;
+	--violet-darker: #1b0050;
 }
 
-a, a:hover, a:visited, a:active {
+a,
+a:hover,
+a:visited,
+a:active {
 	text-decoration: none;
 	color: inherit;
 }
@@ -27,7 +30,8 @@ li {
 }
 
 body {
-    background-color: #fff;
+	background-color: #fff;
+	scroll-behavior: smooth;
 }
 
 /* UVOD */
@@ -51,10 +55,9 @@ nav a div {
 }
 
 nav a img {
-
 }
 
-nav:hover{
+nav:hover {
 	background: #fff;
 }
 
@@ -78,16 +81,15 @@ nav a {
 }
 
 nav a img {
-	
 }
 
-nav div{
+nav div {
 	float: right !important;
 	font-size: 25px;
 }
 
-.kontakt-container div{
-	background: RGBA(255,255,255,0.4);
+.kontakt-container div {
+	background: RGBA(255, 255, 255, 0.4);
 	border-radius: 10vh;
 	padding: 0.1vh 4vh 0.1vh 4vh;
 	font-size: 25px;
@@ -104,7 +106,6 @@ nav .kontakt-container div:hover {
 }
 
 #uvod {
-	
 }
 
 #uvod img {
@@ -121,17 +122,16 @@ nav .kontakt-container div:hover {
 	grid-template-rows: 0.3fr 2.3fr 0.4fr;
 	gap: 0px 0px;
 	grid-template-areas:
-	  ". . ."
-	  ". text ."
-	  ". . .";
+		'. . .'
+		'. text .'
+		'. . .';
 }
 
 #uvod-text div {
 	grid-area: text;
-	
 }
 
-#uvod-text div h1{
+#uvod-text div h1 {
 	text-align: left;
 	font-size: 45px;
 }
@@ -140,7 +140,7 @@ nav .kontakt-container div:hover {
 	color: #fff;
 }
 
-#uvod-text div h2{
+#uvod-text div h2 {
 	text-align: left;
 }
 
@@ -168,8 +168,9 @@ nav .kontakt-container div:hover {
 	transform-origin: top left;
 }
 
-#nabidka-vyber div div h1, #nabidka-vyber div div p, #nabidka-vyber div div div div {
-
+#nabidka-vyber div div h1,
+#nabidka-vyber div div p,
+#nabidka-vyber div div div div {
 }
 
 #nabidka-okna {
@@ -177,7 +178,6 @@ nav .kontakt-container div:hover {
 }
 
 footer {
-
 }
 
 @keyframes fromTop {
@@ -194,49 +194,44 @@ footer {
 
 /* 9.1 XS (<576px) */
 @media only screen and (max-width: 576px) {
-
 }
 
 /* 9.2 SM (>=576px) */
 @media only screen and (min-width: 576px) {
-
 }
 
 /* 9.3 MD (>=768px) */
 @media only screen and (min-width: 768px) {
-
 }
 
 /* 9.4 LG (>=992px) */
 @media only screen and (min-width: 992px) {
-
 }
 
 /* 9.5 EL (>=1200px) */
 @media only screen and (min-width: 1140px) {
-
 }
 
 /* Waves SVG*/
 
 .custom-shape-divider-bottom-1610843841 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
 	transform: rotate(180deg);
 	margin-bottom: 13px;
 }
 
 .custom-shape-divider-bottom-1610843841 svg {
-    position: relative;
-    display: block;
-    width: calc(274% + 1.3px);
-    height: 69px;
+	position: relative;
+	display: block;
+	width: calc(274% + 1.3px);
+	height: 69px;
 }
 
 .custom-shape-divider-bottom-1610843841 .shape-fill {
-    fill: #FFFFFF;
+	fill: #ffffff;
 }

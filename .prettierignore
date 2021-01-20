@@ -1,0 +1,8 @@
+dist
+node_modules
+.vscode
+
+.firebaserc
+.gitignore
+webpack.*.js
+package-lock.json

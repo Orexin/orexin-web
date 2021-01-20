@@ -3,4 +3,5 @@
 	"git.autofetch": true,
 	"editor.insertSpaces": false,
 	"editor.renderWhitespace": "all",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 }

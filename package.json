@@ -45,6 +45,7 @@
 	"dependencies": {
 		"aos": "^2.3.4",
 		"bulma": "^0.9.1",
-		"normalize.css": "^8.0.1"
+		"normalize.css": "^8.0.1",
+		"typicons.font": "^2.0.9"
 	}
 }

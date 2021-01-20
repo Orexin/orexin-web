@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
 	entry: {
-		main: './src/js/main.js'
+		main: './src/js/main.js',
+		contact: './src/js/contact.js'
 	},
 
 	devServer: {
@@ -39,6 +40,11 @@ module.exports = {
 				generator: {
 					filename: 'img/[name][hash].[ext]'
 				}
+			},
+			// load icons
+			{
+				test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+				type: 'asset/resource'
 			}
 			// load svg
 			/*{
@@ -58,7 +64,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/contact.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'contact'],
 			filename: 'contact.html'
 		})
 	]

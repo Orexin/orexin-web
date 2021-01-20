@@ -5,21 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Orexin Solutions</title>
 
-		<link rel="shortcut icon" href="<%= require('./img/Emblem_gradient.png') %>" type="image/x-icon" />
+		<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
 	</head>
 	<body>
+		<!-- NAV -->
+		<nav class="columns">
+			<a href="./index.html" class="column is-1"><img src="<%= require('./img/emblem-white-sm.png') %>" alt="logo" /></a>
+			<a href="./index.html" class="column is-1"><div>Úvod</div></a>
+			<a href="./about.html" class="column is-1"><div>O nás</div></a>
+			<a href="./services.html" class="column is-1"><div>Služby</div></a>
+			<a href="./contact.html" class="kontakt-container column is-1 is-offset-7">
+				<div>Kontakt</div>
+			</a>
+		</nav>
 		<!-- UVOD -->
 		<section id="uvod">
-			<img src="<%= require('./img/1536.webp') %>" alt="úvodní fotka" />
-			<nav class="columns">
-				<a href="./index.html" class="column is-1"><img src="<%= require('./img/Emblem_white_small.png') %>" alt="logo" /></a>
-				<a href="./index.html" class="column is-1"><div>Úvod</div></a>
-				<a href="./about.html" class="column is-1"><div>O nás</div></a>
-				<a href="./services.html" class="column is-1"><div>Služby</div></a>
-				<a href="./contact.html" class="kontakt-container column is-1 is-offset-7">
-					<div>Kontakt</div>
-				</a>
-			</nav>
+			<img src="<%= require('./img/hero.webp') %>" alt="úvodní fotka" />
 			<div id="uvod-text">
 				<div>
 					<h1><strong>VAŠI TVÁŘ V ONLINE SVĚTĚ VYBUDUJEME MY,</strong> a vy tak můžete dělat to co vám jde nejlépe</h1>

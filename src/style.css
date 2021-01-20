@@ -162,13 +162,18 @@ nav .kontakt-container div:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	margin-top: 100vh;
 	background: var(--violet-dark);
-	transform: skewY(-5deg);
+	transform: skewY(-10deg);
 	transform-origin: top left;
 }
 
 #nabidka-vyber div div h1, #nabidka-vyber div div p, #nabidka-vyber div div div div {
 
+}
+
+#nabidka-okna {
+	height: 100vh;
 }
 
 footer {

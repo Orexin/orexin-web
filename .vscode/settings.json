@@ -4,4 +4,10 @@
 	"editor.insertSpaces": false,
 	"editor.renderWhitespace": "all",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"javascript.preferences.quoteStyle": "single",
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 2,
+	"prettier.printWidth": 180,
+	"editor.formatOnSave": true
 }

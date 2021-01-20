@@ -7,5 +7,5 @@ import * as skew from './onscroll-skew';
 //JS
 import AOS from 'aos';
 
-AOS.init({once: true});
+AOS.init({ once: true });
 skew.onscrollSkew();

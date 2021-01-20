@@ -34,6 +34,10 @@ body {
 	scroll-behavior: smooth;
 }
 
+.columns {
+	margin-left: 0;
+}
+
 /* UVOD */
 
 nav {
@@ -75,13 +79,27 @@ nav:hover .kontakt-container div {
 	color: #fff;
 }
 
+nav:hover #nav-logo div {
+	content: url(./../img/emblem-gradient.png);
+}
+
 nav a {
 	text-align: left !important;
 	float: left;
 }
 
-nav a img {
+#nav-logo {
+	align-items: center !important;
 }
+
+#nav-logo div{
+	margin-left: auto;
+	margin-right: auto;
+	content: url(./../img/emblem-white-sm.png);
+	text-align: center !important;
+}
+
+
 
 nav div {
 	float: right !important;
@@ -99,6 +117,8 @@ nav div {
 
 nav .kontakt-container div:hover {
 	background: var(--violet-light);
+	padding-bottom: 5px;
+	border-bottom: none;
 }
 
 .kontakt-container div:hover .logo-container {
@@ -150,32 +170,26 @@ nav .kontakt-container div:hover {
 	width: 100%;
 }
 
-#co-nabizime {
+#nabidka-okna {
 	background-color: #fff;
 	height: 70vh;
 	width: 100%;
 }
 
 #nabidka-vyber {
-	position: absolute;
-	bottom: -100%;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	margin-top: 100vh;
+	margin-top: 5vh;
 	background: var(--violet-dark);
-	transform: skewY(-10deg);
+	transform: skewY(-5deg);
 	transform-origin: top left;
 }
 
-#nabidka-vyber div div h1,
-#nabidka-vyber div div p,
-#nabidka-vyber div div div div {
+.unskewed {
+	transform: skewY(5deg);
 }
 
-#nabidka-okna {
-	height: 100vh;
-}
+
 
 footer {
 }

@@ -18,4 +18,10 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## Ideas
 
-- nav background none, při hoveru white background celého navu
+[x] nav background none, při hoveru white background celého navu
+[ ] nav hover sharing moving underline at first active at that link on which you're on
+[ ] nabidka section
+[ ] contact form
+[ ] portfolio
+[ ] footer
+[ ] language redirecting (cs/en), onload redirect depending on browser language preference

@@ -11,18 +11,23 @@
 		<!-- NAV -->
 		<nav class="columns ml-0">
 			<a href="./index.html" id="nav-logo"><div></div></a>
-			<a href="./index.html" class="column is-1"><div>Úvod</div></a>
-			<a href="./about.html" class="column is-1"><div>O nás</div></a>
-			<a href="./services.html" class="column is-1"><div>Služby</div></a>
+			<a href="./index.html" class="column is-1 nav-link"><div>Úvod</div></a>
+			<a href="./about.html" class="column is-1 nav-link"><div>O nás</div></a>
+			<a href="./services.html" class="column is-1 nav-link"><div>Služby</div></a>
 			<a href="./contact.html" class="kontakt-container column is-1 is-offset-7">
 				<div>Kontakt</div>
-            </a>
-            <select name="language" id="language">
-                <option value="CZ"><img src="<%= require('./img/flags/cs.png %>" alt="cs-flag"></option>
-                <option value="EN"><img src="<%= require('./img/flags/en.png %>" alt="en-flag"></option>
-                <option value="DE"><img src="<%= require('./img/flags/de.png %>" alt="de-flag"></option>
-            </select>
+			</a>
+			<ul>
+				<li id="cs-flag">
+					<a href="#"><img src="<%= require('./img/flags/cs.png') %>" alt="cs-flag" /></a>
+				</li>
+				<li id="en-flag">
+					<a href="#"><img src="<%= require('./img/flags/en.png') %>" alt="en-flag" /></a>
+				</li>
+			</ul>
+			<span id="nav-indicator"></span>
 		</nav>
+
 		<!-- UVOD -->
 		<section id="uvod">
 			<img src="<%= require('./img/hero.webp') %>" alt="úvodní fotka" />

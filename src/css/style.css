@@ -51,6 +51,7 @@ nav {
 	transition: all 0.3s ease-in-out;
 	height: 75px;
 	padding-right: 1vh;
+	z-index: 1000;
 }
 
 nav a div {
@@ -58,7 +59,13 @@ nav a div {
 	padding-bottom: 10px;
 }
 
-nav select {
+nav div {
+	float: right !important;
+	font-size: 25px;
+}
+
+nav select,
+nav select option {
 	background: none;
 	border: none;
 	font-size: 30px;
@@ -73,8 +80,6 @@ nav:hover a div {
 }
 
 nav a div:hover {
-	padding-bottom: 5px;
-	border-bottom: 5px var(--violet) solid;
 }
 
 nav:hover .kontakt-container div {
@@ -98,16 +103,11 @@ nav a {
 	margin-left: 5px;
 }
 
-#nav-logo div{
+#nav-logo div {
 	margin-left: auto;
 	margin-right: auto;
 	content: url(./../img/emblem-white-sm.png);
 	text-align: center !important;
-}
-
-nav div {
-	float: right !important;
-	font-size: 25px;
 }
 
 .kontakt-container div {
@@ -121,8 +121,6 @@ nav div {
 
 nav .kontakt-container div:hover {
 	background: var(--violet-light);
-	padding-bottom: 1px;
-	border-bottom: none;
 }
 
 .kontakt-container div:hover .logo-container {
@@ -192,8 +190,6 @@ nav .kontakt-container div:hover {
 .unskewed {
 	transform: skewY(5deg);
 }
-
-
 
 footer {
 }

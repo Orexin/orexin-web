@@ -10,5 +10,5 @@ import * as skew from './onscroll-skew';
 import * as underline from './shifting-underline';
 
 AOS.init({ once: true });
-//underline.shiftingUnderline();
-skew.onscrollSkew();
+underline.shiftingUnderline();
+//skew.onscrollSkew();

@@ -2,7 +2,7 @@
 	"Webpack img src": {
 		"prefix": "%",
 		"body": [
-			"<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">"
+			"<img src=\"<%= require('${1:link} ') %>\" alt=\"${2}\">"
 		],
 		"description": "Webpack img src"
 	}

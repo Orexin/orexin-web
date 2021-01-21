@@ -58,7 +58,10 @@ nav a div {
 	padding-bottom: 10px;
 }
 
-nav a img {
+nav select {
+	background: none;
+	border: none;
+	font-size: 30px;
 }
 
 nav:hover {
@@ -80,7 +83,7 @@ nav:hover .kontakt-container div {
 }
 
 nav:hover #nav-logo div {
-	content: url(./../img/emblem-gradient.png);
+	content: url(./../img/emblem-gradient-sm.png);
 }
 
 nav a {
@@ -90,6 +93,9 @@ nav a {
 
 #nav-logo {
 	align-items: center !important;
+	width: 3%;
+	margin-top: 13px;
+	margin-left: 5px;
 }
 
 #nav-logo div{
@@ -98,8 +104,6 @@ nav a {
 	content: url(./../img/emblem-white-sm.png);
 	text-align: center !important;
 }
-
-
 
 nav div {
 	float: right !important;
@@ -117,7 +121,7 @@ nav div {
 
 nav .kontakt-container div:hover {
 	background: var(--violet-light);
-	padding-bottom: 5px;
+	padding-bottom: 1px;
 	border-bottom: none;
 }
 

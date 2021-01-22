@@ -22,7 +22,7 @@ a:hover,
 a:visited,
 a:active {
 	text-decoration: none;
-	color: inherit;
+	color: #fff;
 }
 
 li {
@@ -204,6 +204,35 @@ nav .kontakt-container div:hover {
 	background: var(--violet-dark);
 	transform: skewY(-5deg);
 	transform-origin: top left;
+	padding-top: 20vh;
+}
+
+#nabidka-vyber div div h1,
+#nabidka-vyber div div p {
+	text-align: left;
+}
+
+#nabidka-vyber div div h1 {
+	margin-left: 2vh;
+}
+
+#nabidka-vyber div div p {
+	margin-left: 6vh;
+	font-size: 30px;
+}
+
+#nabidka-vyber div div a div {
+	font-size: 25px;
+	border: 3px #fff solid;
+	border-radius: 10vh;
+	margin: 5vh auto 0 auto;
+	width: 275px;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+#nabidka-vyber div div a div:hover {
+	background: var(--violet);
 }
 
 .unskewed {

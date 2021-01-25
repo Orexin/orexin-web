@@ -17,6 +17,10 @@
 	--violet-darker: #1b0050;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 a,
 a:hover,
 a:visited,
@@ -31,7 +35,6 @@ li {
 
 body {
 	background-color: #fff;
-	scroll-behavior: smooth;
 }
 
 .columns {
@@ -185,10 +188,37 @@ nav .kontakt-container div:hover {
 	text-align: left;
 }
 
+#get-started-button {
+	position: absolute;
+	bottom: -7vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1.8fr 0.3fr 1.8fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: '. get-started .';
+}
+
+#get-started-button div {
+	grid-area: get-started;
+
+	background: var(--violet-dark);
+	border-radius: 10vh;
+	font-size: 30px;
+	transition: all 0.3s ease-in-out;
+	justify-content: center;
+}
+
+#get-started-button div:hover {
+	background: var(--violet);
+}
+
 /* NABIDKA */
 
 #nabidka {
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 #nabidka-okna {
@@ -239,8 +269,37 @@ nav .kontakt-container div:hover {
 	transform: skewY(5deg);
 }
 
-footer {
+#nabidka-vyber-bottom {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 30vh;
+	background: var(--violet-dark);
+	z-index: -1;
 }
+
+/* PORTFOLIO */
+
+#portfolio {
+	background: #000;
+	height: 100vh;
+}
+
+/* CONTACT FORM INDEX */
+
+#contact-form {
+	height: 100vh;
+}
+
+/* FOOTER */
+
+footer {
+	height: 70vh;
+	background: var(--violet-darker);
+}
+
+/* KEYFRAMES */
 
 @keyframes fromTop {
 	from {

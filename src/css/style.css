@@ -14,7 +14,8 @@
 	--violet-light: #5c09ff;
 	--violet-dark: #310686;
 	--violet-darker: #1b0050;
-	--light-gray: #dadada;
+	--light-gray: #e7e7e7;
+	--text-gray: #969696;
 }
 
 html {
@@ -48,7 +49,9 @@ body {
 .columns {
 	margin-left: 0;
 }
+/*! GLOBALS END !*/
 
+/*! PRELOADER !*/
 /* PRELOADER
 	inner-circle
 	circular-path-1
@@ -224,7 +227,9 @@ body {
 	}
 }
 
-/* UVOD */
+/*! PRELAODER  END!*/
+
+/*! UVOD !*/
 
 nav {
 	color: black;
@@ -396,6 +401,7 @@ nav .kontakt-container div:hover {
 #get-started-button div:hover {
 	background: var(--violet-light);
 }
+/*! UVOD END !*/
 
 /*! NABIDKA !*/
 
@@ -422,7 +428,7 @@ nav .kontakt-container div:hover {
 }
 .quick-desc p {
 	font-size: 20px;
-	color: #525252; /*change to darker gray*/
+	color: var(--text-gray);
 }
 .offers {
 	display: flex;
@@ -476,47 +482,29 @@ nav .kontakt-container div:hover {
 /*SKEW*/
 
 #nabidka-vyber {
-	left: 0;
 	width: 100%;
-	margin-top: -5vh;
+	margin-top: -10vh;
 	background: var(--violet-darker);
 	transform: skewY(-5deg);
 	transform-origin: top left;
-	padding-top: 20vh;
+	padding: 30vh 5vw 0px 5vw;
 }
 
-#nabidka-vyber div div h1,
-#nabidka-vyber div div p {
-	text-align: left;
-}
-
-#nabidka-vyber div div h1 {
-	margin-left: 2vh;
-}
-
-#nabidka-vyber div div p {
-	margin-left: 6vh;
-	font-size: 30px;
-}
-
-#nabidka-vyber div div a div {
-	font-size: 25px;
-	border: 3px #fff solid;
-	border-radius: 10vh;
-	margin: 5vh auto 0 auto;
-	width: 275px;
-	color: #fff;
-	transition: all 0.3s ease-in-out;
-}
-
-#nabidka-vyber div div a div:hover {
-	background: var(--violet);
+#nabidka-vyber > h1 {
+	font-weight: 900 !important;
+	text-align: center !important;
 }
 
 .unskewed {
 	transform: skewY(5deg);
 }
 
+#nabidka-vyber > .option {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+/*unskew bottom elemnt*/
 #nabidka-vyber-bottom {
 	bottom: 0;
 	left: 0;

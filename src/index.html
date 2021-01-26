@@ -109,27 +109,44 @@
 		<!-- NABIDKA -->
 		<section id="nabidka">
 			<div id="nabidka-okna">
-				<h1>Co nabízíme?</h1>
-				<div id="nabidka-okna-blog">
-					<img src="<%= require('./img/emblem-white-sm.png') %>" alt="" />
-					<h2>Blog</h2>
-					<h3>cena</h3>
-					<div class="spinner scroll-down"><a class="animate"></a></div>
+				<div class="quick-desc">
+					<h3>Co nabízíme?</h3>
+					<p>Od templatů po kompletní řešení na míru.</p>
 				</div>
-				<div id="nabidka-okna-web-pres">
-					<img src="<%= require('./img/emblem-white-sm.png') %>" alt="" />
-					<h2>Webová prezentace</h2>
-					<h3>cena</h3>
-					<div class="spinner scroll-down"><a class="animate"></a></div>
-				</div>
-				<div id="nabidka-okna-ecommerce">
-					<img src="<%= require('./img/emblem-white-sm.png') %>" alt="" />
-					<h2>Ecommerce</h2>
-					<h3>cena</h3>
-					<div class="spinner scroll-down"><a class="animate"></a></div>
+
+				<!-- JEŠTĚ NEVÍM JAK S TÍM LAYOUTEM-->
+				<div class="offers">
+					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+						<div class="img">
+							<img src="<%= require('./img/Logo/Emblem/Black/Emblem_black.png') %>" alt="" />
+						</div>
+						<div class="text">
+							<h5>Lorem</h5>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+						</div>
+					</div>
+					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+						<div class="img">
+							<img src="<%= require('./img/Logo/Emblem/Black/Emblem_black.png') %>" alt="" />
+						</div>
+						<div class="text">
+							<h5>Lorem</h5>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+						</div>
+					</div>
+					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+						<div class="img">
+							<img src="<%= require('./img/Logo/Emblem/Black/Emblem_black.png') %>" alt="" />
+						</div>
+						<div class="text">
+							<h5>Lorem</h5>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="nabidka-vyber">
+				<h1 class="unskewed">Začněme s typem řešení.</h1>
 				<div class="columns unskewed">
 					<div class="column">
 						<h1>Blog</h1>
@@ -168,12 +185,19 @@
 		</section>
 
 		<!-- PORTFOLIO -->
-		<section id="portfolio" class="columns"></section>
+		<section id="portfolio"></section>
 
 		<!-- CONTACT US -->
 		<section id="contact-form" class="columns"></section>
 
 		<!-- FOOTER -->
 		<footer></footer>
+
+		<script>
+			// Used for redirecting non href elements
+			function redirectOnClick(link) {
+				window.location.replace(link);
+			}
+		</script>
 	</body>
 </html>

@@ -13,6 +13,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	document.getElementById('preloader').style.display = 'none';
 	AOS.init({ once: true });
 });
-
 //underline.shiftingUnderline();
 //skew.onscrollSkew();

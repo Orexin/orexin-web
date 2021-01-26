@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 * {
 	color: white;
 	font-size: 45px;
-	text-align: center;
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
@@ -15,6 +14,7 @@
 	--violet-light: #5c09ff;
 	--violet-dark: #310686;
 	--violet-darker: #1b0050;
+	--light-gray: #dadada;
 }
 
 html {
@@ -389,7 +389,7 @@ nav .kontakt-container div:hover {
 	background: var(--violet-light);
 }
 
-/* NABIDKA */
+/*! NABIDKA !*/
 
 #nabidka {
 	width: 100%;
@@ -398,59 +398,80 @@ nav .kontakt-container div:hover {
 }
 
 #nabidka-okna {
-	background-color: #fff;
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr 1fr;
-	grid-template-rows: 0.2fr 0.5fr 0.3fr 2.3fr;
-	gap: 0px 0px;
-	grid-template-areas:
-		'. . . . . . .'
-		'. co-nabizime co-nabizime co-nabizime . . .'
-		'. . . . . . .'
-		'. blog . web-pres . ecommerce .';
+	padding: 75px 5vw 0px 5vw;
+	position: relative;
+	z-index: 1;
+}
+.quick-desc {
+	text-align: left !important;
+}
+.quick-desc h3 {
+	font-size: 40px;
+	color: var(--violet);
+	margin: 0;
+	font-weight: 900;
+}
+.quick-desc p {
+	font-size: 20px;
+	color: #525252; /*change to darker gray*/
+}
+.offers {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 75px;
+}
+.offers > .offer {
+	height: 450px;
+	width: 300px;
+	background-color: var(--light-gray);
+	padding: 15px;
+	margin: 20px;
+	cursor: pointer;
+	border-radius: 15px;
+	transition-duration: 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.offer:hover {
+	background-color: var(--violet);
+	transform: translateY(-50px);
 }
 
-#nabidka-okna h1 {
-	color: var(--violet-light);
-	font-weight: bold;
-	font-size: 70px;
-	grid-area: co-nabizime;
+.offer:hover > .text > h5 {
+	color: white;
+}
+.offer:hover > .text > p {
+	color: white;
+}
+.offer > .img > img {
+	height: 40px;
+	width: 40px;
+}
+.offer > .img {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 20%;
+}
+.text > h5 {
+	color: black;
+}
+.text > p {
+	color: black;
+	font-size: 20px;
 }
 
-#nabidka-okna div {
-	display: block;
-	border-radius: 2vh;
-	z-index: 2;
-	box-shadow: 10px 10px 20px #1d014a;
-	top: -10vh;
-}
-
-#nabidka-okna div h2 {
-	text-align: left;
-	margin-left: 1vh;
-}
-
-#nabidka-okna-blog {
-	background: var(--violet-darker);
-	grid-area: blog;
-}
-
-#nabidka-okna-web-pres {
-	background: var(--violet-dark);
-	grid-area: web-pres;
-}
-
-#nabidka-okna-ecommerce {
-	background: var(--violet);
-	grid-area: ecommerce;
-}
+/*SKEW*/
 
 #nabidka-vyber {
 	left: 0;
 	width: 100%;
-	margin-top: 5vh;
-	background: var(--violet-dark);
+	margin-top: -5vh;
+	background: var(--violet-darker);
 	transform: skewY(-5deg);
 	transform-origin: top left;
 	padding-top: 20vh;
@@ -494,30 +515,38 @@ nav .kontakt-container div:hover {
 	position: absolute;
 	width: 100%;
 	height: 30vh;
-	background: var(--violet-dark);
+	background: var(--violet-darker);
 	z-index: -1;
 }
+/*SKEW END */
 
-/* PORTFOLIO */
+/*! NABIDKA END !*/
+
+/*! PORTFOLIO !*/
 
 #portfolio {
 	background: #000;
 	height: 100vh;
 }
 
-/* CONTACT FORM INDEX */
+/*! PORTFOLIO END !*/
+
+/*! CONTACT FORM INDEX !*/
 
 #contact-form {
 	height: 100vh;
 }
 
-/* FOOTER */
+/*! CONTACT-FORM-INDEX END !*/
+
+/*! FOOTER !*/
 
 footer {
 	height: 70vh;
 	background: var(--violet-darker);
 }
 
+/*! FOOTER END !*/
 /* KEYFRAMES */
 
 @keyframes fromTop {

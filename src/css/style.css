@@ -197,7 +197,6 @@ body {
 	from {
 		transform: scale(0);
 	}
-
 	to {
 		transform: scale(1);
 	}
@@ -224,8 +223,8 @@ nav {
 	background: none;
 	top: 0;
 	position: absolute;
-	padding: 1vh;
-	padding-top: 2vh;
+	padding: 0;
+	padding-top: 1.5vh;
 	width: 100%;
 	transition: all 0.3s ease-in-out;
 	height: 75px;
@@ -321,6 +320,7 @@ nav .kontakt-container div:hover {
 	bottom: 0;
 	transition: all 0.3s ease-in-out;
 	margin-left: 6%;
+	z-index: -1;
 }
 
 /* UVOD */
@@ -533,8 +533,28 @@ nav .kontakt-container div:hover {
 
 /*! CONTACT FORM INDEX !*/
 
-#contact-form {
-	height: 100vh;
+#partneri {
+	height: 50vh;
+	position: relative;
+	display: grid;
+	grid-template-columns: 0.5fr 1.1fr 1.4fr;
+	grid-template-rows: 0.3fr 2.4fr 0.3fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'. . .'
+		'. partneri .'
+		'. . .';
+}
+
+#partneri div:nth-child(1) {
+	grid-area: partneri;
+	color: grey;
+}
+
+#partneri div:nth-child(2) {
+	position: absolute;
+	display: block;
+	bottom: 0;
 }
 
 /*! CONTACT-FORM-INDEX END !*/

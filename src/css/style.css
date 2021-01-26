@@ -505,10 +505,30 @@ nav .kontakt-container div:hover {
 	height: 100vh;
 }
 
-/* CONTACT FORM INDEX */
+/* PARTNEŘI */
 
-#contact-form {
-	height: 100vh;
+#partneri {
+	height: 50vh;
+	position: relative;
+	display: grid;
+	grid-template-columns: 0.5fr 1.1fr 1.4fr;
+	grid-template-rows: 0.3fr 2.4fr 0.3fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'. . .'
+		'. partneri .'
+		'. . .';
+}
+
+#partneri div:nth-child(1) {
+	grid-area: partneri;
+	color: grey;
+}
+
+#partneri div:nth-child(2) {
+	position: absolute;
+	display: block;
+	bottom: 0;
 }
 
 /* FOOTER */

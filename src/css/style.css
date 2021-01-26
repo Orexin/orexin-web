@@ -41,6 +41,182 @@ body {
 	margin-left: 0;
 }
 
+/* PRELOADER
+	inner-circle
+	circular-path-1
+	circular-path-2
+	line-down-left-1
+	line-top-right-1
+	line-down-left-2
+	line-top-2
+	line-top-right-2
+	line-down-right-2 */
+
+#preloader {
+	background: var(--violet-dark);
+	width: 100%;
+	height: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+
+#inner-circle {
+	animation: innerCircle 3s ease;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#circular-path-1,
+#circular-path-2 {
+	opacity: 0;
+}
+
+#emblem-path-1 {
+	transform-origin: center;
+	transform-box: fill-box;
+	-webkit-animation: moveCounterClockwise 5s linear infinite;
+	animation: emblemPath1 5s linear infinite;
+}
+
+#emblem-path-2 {
+	transform-origin: center;
+	transform-box: fill-box;
+	-webkit-animation: moveClockwise 5s linear infinite;
+	animation: emblemPath2 5s linear infinite;
+}
+
+@keyframes emblemPath1 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes emblemPath2 {
+	from {
+		transform: rotateZ(360deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
+/* #line-down-left-1 {
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transform: translateY(10%) translateX(-2%);
+	motion-path: path(
+		'M107.447 173.403C128.152 173.403 144.937 156.618 144.937 135.913C144.937 115.208 128.152 98.4226 107.447 98.4226C86.7415 98.4226 69.9565 115.208 69.9565 135.913C69.9565 156.618 86.7415 173.403 107.447 173.403Z'
+	);
+	offset-path: path(
+		'M107.447 173.403C128.152 173.403 144.937 156.618 144.937 135.913C144.937 115.208 128.152 98.4226 107.447 98.4226C86.7415 98.4226 69.9565 115.208 69.9565 135.913C69.9565 156.618 86.7415 173.403 107.447 173.403Z'
+	);
+	motion-rotation: reverse;
+	-webkit-animation: moveCounterClockwise 3s linear infinite;
+	animation: moveCounterClockwise 5s linear infinite;
+}
+
+#line-top-right-1 {
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transform: translateY(-35%) rotateZ(100deg);
+	motion-path: path(
+		'M107.447 173.403C128.152 173.403 144.937 156.618 144.937 135.913C144.937 115.208 128.152 98.4226 107.447 98.4226C86.7415 98.4226 69.9565 115.208 69.9565 135.913C69.9565 156.618 86.7415 173.403 107.447 173.403Z'
+	);
+	offset-path: path(
+		'M107.447 173.403C128.152 173.403 144.937 156.618 144.937 135.913C144.937 115.208 128.152 98.4226 107.447 98.4226C86.7415 98.4226 69.9565 115.208 69.9565 135.913C69.9565 156.618 86.7415 173.403 107.447 173.403Z'
+	);
+	motion-rotation: reverse;
+	-webkit-animation: moveCounterClockwise 3s linear infinite;
+	animation: moveCounterClockwise 5s 3.75s linear infinite;
+}
+
+#line-down-left-2 {
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transform: translateY(5%) translateX(-75%);
+	motion-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	offset-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	motion-rotation: reverse 20deg;
+	-webkit-animation: moveClockwise 3s linear infinite;
+	animation: moveClockwise 5s linear infinite;
+}
+
+#line-top-2 {
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transform: translateY(-70%) translateX(10%) rotateZ(175deg);
+	motion-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	offset-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	motion-rotation: reverse 20deg;
+	-webkit-animation: moveClockwise 3s linear infinite;
+	animation: moveClockwise 5s 7s linear infinite;
+}
+
+#line-top-right-2 {
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transform: translateY(-30%) translateX(10%) rotateZ(115deg);
+	motion-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	offset-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	motion-rotation: reverse 20deg;
+	-webkit-animation: moveClockwise 3s linear infinite;
+	animation: moveClockwise 5s 2.8s linear infinite;
+}
+
+#line-down-right-2 {
+	transform-origin: bottom;
+	transform-box: fill-box;
+	transform: translateY(0) translateX(80%) rotateZ(-365deg);
+	motion-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	offset-path: path(
+		'M107.447 201.347C143.585 201.347 172.881 172.051 172.881 135.913C172.881 99.7746 143.585 70.4788 107.447 70.4788C71.3085 70.4788 42.0127 99.7746 42.0127 135.913C42.0127 172.051 71.3085 201.347 107.447 201.347Z'
+	);
+	motion-rotation: reverse 20deg;
+	-webkit-animation: moveClockwise 3s linear infinite;
+	animation: moveClockwise 5s 10s linear infinite;
+} */
+
+@keyframes innerCircle {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes moveCounterClockwise {
+	100% {
+		motion-offset: 100%;
+		offset-distance: 100%;
+	}
+}
+
+@keyframes moveClockwise {
+	0% {
+		motion-offset: 100%;
+		offset-distance: 100%;
+	}
+}
+
 /* UVOD */
 
 nav {
@@ -202,7 +378,7 @@ nav .kontakt-container div:hover {
 #get-started-button div {
 	grid-area: get-started;
 
-	background: var(--violet-dark);
+	background: var(--violet);
 	border-radius: 10vh;
 	font-size: 30px;
 	transition: all 0.3s ease-in-out;
@@ -210,7 +386,7 @@ nav .kontakt-container div:hover {
 }
 
 #get-started-button div:hover {
-	background: var(--violet);
+	background: var(--violet-light);
 }
 
 /* NABIDKA */
@@ -223,8 +399,51 @@ nav .kontakt-container div:hover {
 
 #nabidka-okna {
 	background-color: #fff;
-	height: 70vh;
 	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr 1fr;
+	grid-template-rows: 0.2fr 0.5fr 0.3fr 2.3fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'. . . . . . .'
+		'. co-nabizime co-nabizime co-nabizime . . .'
+		'. . . . . . .'
+		'. blog . web-pres . ecommerce .';
+}
+
+#nabidka-okna h1 {
+	color: var(--violet-light);
+	font-weight: bold;
+	font-size: 70px;
+	grid-area: co-nabizime;
+}
+
+#nabidka-okna div {
+	display: block;
+	border-radius: 2vh;
+	z-index: 2;
+	box-shadow: 10px 10px 20px #1d014a;
+	top: -10vh;
+}
+
+#nabidka-okna div h2 {
+	text-align: left;
+	margin-left: 1vh;
+}
+
+#nabidka-okna-blog {
+	background: var(--violet-darker);
+	grid-area: blog;
+}
+
+#nabidka-okna-web-pres {
+	background: var(--violet-dark);
+	grid-area: web-pres;
+}
+
+#nabidka-okna-ecommerce {
+	background: var(--violet);
+	grid-area: ecommerce;
 }
 
 #nabidka-vyber {

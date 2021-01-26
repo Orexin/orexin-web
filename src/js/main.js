@@ -9,6 +9,10 @@ import AOS from 'aos';
 import * as skew from './onscroll-skew';
 import * as underline from './shifting-underline';
 
-AOS.init({ once: true });
-underline.shiftingUnderline();
+document.addEventListener('DOMContentLoaded', function (event) {
+	document.getElementById('preloader').style.display = 'none';
+	AOS.init({ once: true });
+});
+
+//underline.shiftingUnderline();
 //skew.onscrollSkew();

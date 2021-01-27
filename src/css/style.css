@@ -483,6 +483,7 @@ nav .kontakt-container div:hover {
 }
 .text > h5 {
 	color: black;
+	font-size: 30px;
 }
 .text > p {
 	color: black;
@@ -503,6 +504,7 @@ nav .kontakt-container div:hover {
 #nabidka-vyber > h1 {
 	font-weight: 900 !important;
 	text-align: center !important;
+	font-size: 40px;
 }
 
 .unskewed {
@@ -513,6 +515,11 @@ nav .kontakt-container div:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.text > h4 {
+	font-size: 30px;
 }
 /*unskew bottom elemnt*/
 #nabidka-vyber-bottom {

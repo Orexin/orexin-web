@@ -30,6 +30,21 @@ a:active {
 	color: #fff;
 }
 
+/* nadpisy v hero */
+h1 {
+	font-size: 45px;
+	color: #fff;
+	text-align: left;
+}
+
+/* nadpisy ve stránce */
+h2 {
+}
+
+/* podnadpisy */
+h3 {
+}
+
 li {
 	list-style: none;
 }
@@ -366,15 +381,6 @@ nav .kontakt-container div:hover {
 
 #uvod-text div {
 	grid-area: text;
-}
-
-#uvod-text div h1 {
-	text-align: left;
-	font-size: 45px;
-}
-
-#uvod-text div h1 strong {
-	color: #fff;
 }
 
 #uvod-text div h2 {

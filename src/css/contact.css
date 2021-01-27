@@ -1,4 +1,18 @@
 .contact-hero {
-	background: url(./../img/hero.webp) center no-repeat;
+	background: url(./../img/hero-blur.webp) center no-repeat;
 	background-size: cover;
+}
+
+.contact-hero.text {
+	background: none;
+}
+
+.contact-hero.socials {
+	background: none;
+}
+
+.contact {
+	background-color: #1b0050;
+	min-height: 100vh;
+	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }

@@ -96,7 +96,6 @@
 			</ul>
 			<span id="nav-indicator"></span>
 		</nav>
-
 		<!-- UVOD -->
 		<section id="uvod">
 			<img src="<%= require('./img/hero.webp') %>" alt="úvodní fotka" />
@@ -112,60 +111,55 @@
 			</a>
 		</section>
 
-		<!-- NABIDKA -->
+		<!--NABIDKA-->
 		<section id="nabidka">
 			<div id="nabidka-okna">
-				<h1>Co nabízíme?</h1>
-				<div id="nabidka-okna-blog">
-					<img src="<%= require('./img/emblem-white-sm.png') %>" alt="" />
-					<h2>Blog</h2>
-					<h3>cena</h3>
-					<div class="spinner scroll-down"><a class="animate"></a></div>
+				<div class="quick-desc">
+					<h3>Co nabízíme?</h3>
+					<p>Od templatů po kompletní řešení na míru.</p>
 				</div>
-				<div id="nabidka-okna-web-pres">
-					<img src="<%= require('./img/emblem-white-sm.png') %>" alt="" />
-					<h2>Webová prezentace</h2>
-					<h3>cena</h3>
-					<div class="spinner scroll-down"><a class="animate"></a></div>
-				</div>
-				<div id="nabidka-okna-ecommerce">
-					<img src="<%= require('./img/emblem-white-sm.png') %>" alt="" />
-					<h2>Ecommerce</h2>
-					<h3>cena</h3>
-					<div class="spinner scroll-down"><a class="animate"></a></div>
+				<!---JEŠTĚ NEVÍM JAK S TÍM LAYOUTEM-->
+				<div class="offers">
+					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+						<div class="img">
+							<img src="<%= require('./img/Logo/Emblem/Black/Emblem_black.png') %>" alt="" />
+						</div>
+						<div class="text">
+							<h5>Lorem</h5>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+						</div>
+					</div>
+					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+						<div class="img">
+							<img src="<%= require('./img/Logo/Emblem/Black/Emblem_black.png') %>" alt="" />
+						</div>
+						<div class="text">
+							<h5>Lorem</h5>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+						</div>
+					</div>
+					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+						<div class="img">
+							<img src="<%= require('./img/Logo/Emblem/Black/Emblem_black.png') %>" alt="" />
+						</div>
+						<div class="text">
+							<h5>Lorem</h5>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="nabidka-vyber">
-				<div class="columns unskewed">
-					<div class="column">
-						<h1>Blog</h1>
-						<p>Jednoduchý ale poutající web reprezentující vás samotné a váš cíl.</p>
-						<a href="./services.html#blog"><div>Dozvědět se více</div></a>
-					</div>
-					<div class="column">
-						<img src="" alt="" />
-					</div>
-				</div>
-				<div class="columns unskewed">
-					<div class="column">
-						<img src="" alt="" />
-					</div>
-					<div class="column">
-						<h1>Webová prezentace</h1>
-						<p>Jsou vaše cíle daleko větší? Pokud ano vytvoříme pro vaši organizaci nebo větší projekt rozsáhlou webovou prezentaci.</p>
-						<a href="./services.html#web-pres"><div>Dozvědět se více</div></a>
-					</div>
-				</div>
-				<div class="columns unskewed">
-					<div class="column">
-						<h1>Ecommerce</h1>
+				<h1 class="unskewed">Začněme s typem řešení.</h1>
+				<div class="option unskewed">
+					<div class="text">
+						<h4>Webová prezentace</h4>
 						<p>
-							Rozjíždíte svůj vlastní business a potřebujete Eshop? S námi můžete počítat s jednoduchým uživatelským rozhraním, bezpečnými možnostmi platby a designem na míru podle
-							vašeho zájmu.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, vero repellendus, temporibus accusamus in cumque aliquid fugiat reiciendis exercitationem quibusdam
+							laudantium velit odio facere? Necessitatibus numquam eum optio illum modi.
 						</p>
-						<a href="./services.html#ecommmerce"><div>Dozvědět se více</div></a>
 					</div>
-					<div class="column">
+					<div class="image">
 						<img src="" alt="" />
 					</div>
 				</div>
@@ -188,5 +182,12 @@
 
 		<!-- FOOTER -->
 		<footer></footer>
+
+		<script>
+			// Used for redirecting non href elements
+			function redirectOnClick(link) {
+				window.location.replace(link);
+			}
+		</script>
 	</body>
 </html>

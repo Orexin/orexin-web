@@ -18,13 +18,13 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## Ideas
 
-[ ] nav
--------[x] nav background none, při hoveru white background celého navu
--------[ ] nav hover sharing moving underline at first active at that link on which you're on https://codepen.io/bennettfeely/pen/MxOrLO
--------[ ] respo
-[ ] nabidka section
-[ ] contact form
-[ ] portfolio
-[ ] footer
-[ ] language redirecting (cs/en), onload redirect depending on browser language preference
-[ ] respo
+- [ ] nav
+- [x] nav background none, při hoveru white background celého navu
+- [ ] nav hover sharing moving underline at first active at that link on which you're on https://codepen.io/bennettfeely/pen/MxOrLO
+- [ ] respo
+- [ ] nabidka section
+- [ ] contact form
+- [ ] portfolio
+- [ ] footer
+- [ ] language redirecting (cs/en), onload redirect depending on browser language preference
+- [ ] respo

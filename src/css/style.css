@@ -273,7 +273,7 @@ nav a {
 }
 
 nav a div,
-nav a h5 {
+nav a span {
 	transition: all 0.3s ease-in-out;
 	padding-bottom: 10px;
 }
@@ -283,8 +283,13 @@ nav div {
 	font-size: 25px;
 }
 
-nav a h5 {
+nav a span {
 	font-size: 25px;
+	text-align: center;
+}
+
+nav ul {
+	margin-top: 13px;
 }
 
 nav select,
@@ -299,7 +304,7 @@ nav:hover {
 }
 
 nav:hover a div,
-nav:hover a h5 {
+nav:hover a span {
 	color: var(--violet);
 }
 
@@ -326,7 +331,7 @@ nav a {
 
 #nav-logo {
 	width: 3%;
-	margin-top: 13px;
+	margin-top: 10px;
 	margin-left: 5px;
 	transition: all 0.3s ease-in-out;
 }
@@ -362,8 +367,8 @@ nav .kontakt-container div:hover {
 	position: absolute;
 	border-bottom: 5px solid var(--violet);
 	bottom: 0 !important;
-	transition: all 0.3s ease-in-out !important;
-	z-index: -2000 !important;
+	transition: all 0.3s ease-in-out;
+	z-index: -1;
 }
 
 /* UVOD */
@@ -494,6 +499,7 @@ nav .kontakt-container div:hover {
 }
 .text > h5 {
 	color: black;
+	font-size: 30px;
 }
 .text > p {
 	color: black;
@@ -514,6 +520,7 @@ nav .kontakt-container div:hover {
 #nabidka-vyber > h1 {
 	font-weight: 900 !important;
 	text-align: center !important;
+	font-size: 40px;
 }
 
 .unskewed {
@@ -524,6 +531,11 @@ nav .kontakt-container div:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.text > h4 {
+	font-size: 30px;
 }
 /*unskew bottom elemnt*/
 #nabidka-vyber-bottom {

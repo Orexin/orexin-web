@@ -1,7 +1,7 @@
 export function shiftingUnderline() {
 	(function () {
 		const target = document.querySelector('#nav-indicator');
-		const links = document.querySelectorAll('nav a h5');
+		const links = document.querySelectorAll('nav a span');
 
 		function mouseenterFunc() {
 			if (!this.parentNode.classList.contains('active')) {
@@ -28,7 +28,7 @@ export function shiftingUnderline() {
 		}
 
 		function resizeFunc() {
-			const active = document.querySelector('nav a h5.active');
+			const active = document.querySelector('nav a span.active');
 
 			if (active) {
 				const left = active.getBoundingClientRect().left + window.pageXOffset;

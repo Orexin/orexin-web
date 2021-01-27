@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Orexin Solutions</title>
+		<title>Web-development na míru | Orexin Solutions</title>
+		<meta
+			name="description"
+			content="Profesionální, na míru realizovaný web-development.
+			"
+		/>
+		<meta name="keywords" content="web levně, web na míru, web-development, web-development Ostrava, web-development Frýdek-Místek, web Ostrava, web Frýdek-Místek" />
+		<meta name="author" content="Orexin Solutions" />
 
+		<!-- SOCIAL -->
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Orexin Solutions" />
+		<meta property="og:description" content="Realizujeme webové stránky, které přesně odrážejí vás a váš cíl" />
+		<meta property="og:image" content="./img/emblem-gradient.png" />
+
+		<!-- <link rel="canonical" href="https://orexinsolutions.com/" /> sets page as the main page and prevents other pages from indexing -->
 		<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
 	</head>
 	<body>
@@ -104,7 +118,7 @@
 			<img src="<%= require('./img/hero.webp') %>" alt="úvodní fotka" />
 			<div id="uvod-text">
 				<div>
-					<h1><strong>VAŠI TVÁŘ V ONLINE SVĚTĚ VYBUDUJEME MY,</strong> a vy tak můžete dělat to co vám jde nejlépe</h1>
+					<h1>VAŠI TVÁŘ V ONLINE SVĚTĚ <wbr>VYBUDUJEME MY,</wbr> a vy tak můžete dělat to co vám jde nejlépe</h1>
 				</div>
 				<div></div>
 			</div>
@@ -172,26 +186,29 @@
 		<!-- PORTFOLIO -->
 		<section id="portfolio"></section>
 
-		<!-- CONTACT US -->
-		<section id="partneri" class="container">
-			<h2>Naši partneři</h2>
+		<!-- PARTNERI -->
+		<section id="partneri">
+			<h2 class="is-size-1">Naši partneři</h2>
 			<div class="columns">
-				<div class="column">
-					<img src="<%= require('./img/emblem-gradient-sm.png') %>" alt="" />
-				</div>
+				<div class="column"></div>
 			</div>
 		</section>
 
 		<!-- FOOTER -->
 		<footer>
-			<a href="./contact.html"><div>Kontaktuje nás</div></a>
+			<div class="footer-kontakt-button columns is-centered">
+				<a href="./contact.html" class="column is-size-1 p-0">
+					<i class="fa fa-envelope is-inline"></i>
+					<div class="is-size-2 is-inline">Kontaktuje nás</div>
+				</a>
+			</div>
 			<div class="footer-tel columns">
-				<div class="column">
+				<div class="column is-size-1">
 					<img src="<%= require('./img/Inline_white-sm.png') %>" alt="" />
 				</div>
-				<div class="column is-offset-6">
-					<i></i>
-					<a href="tel:+420-666-666-666"><h3>+420 666 666 666</h3></a>
+				<div class="column is-offset-5 is-size-1">
+					<i class="fa fa-mobile is-inline"></i>
+					<a href="tel:+420-666-666-666"><h3 class="is-size-1 is-inline">+420 666 666 666</h3></a>
 				</div>
 			</div>
 			<div class="columns footer-links">
@@ -221,7 +238,7 @@
 						<h4 class="is-size-6">Ochrana osobních údajů</h4>
 					</a>
 					<a href="./faq/web-rights-transfer.html">
-						<h4 class="is-size-6">Předání webu</h4>
+						<h4 class="is-size-6">Předání práv webu</h4>
 					</a>
 					<a href="./faq/annual-payment.html">
 						<h4 class="is-size-6">Roční platba</h4>
@@ -241,6 +258,9 @@
 					<h3 class="is-size-3">Sledujte nás</h3>
 					<div></div>
 				</div>
+			</div>
+			<div class="columns is-centered">
+				<div class="column is-half is-size-6" style="text-align: center">&copy; Orexin Solutions | 2021</div>
 			</div>
 		</footer>
 

@@ -18,6 +18,8 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## Ideas
 
+ascii art logo to meta desc
+
 - [ ] nav
 - [x] nav background none, při hoveru white background celého navu
 - [ ] [nav hover sharing moving underline at first active at that link on which you're on](https://codepen.io/bennettfeely/pen/MxOrLO)
@@ -28,3 +30,5 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 - [ ] footer
 - [ ] language redirecting (cs/en), onload redirect depending on browser language preference
 - [ ] respo
+- [ ] activate preloader only if needed, which will solve blink and scroll up on load
+- [ ] SEO feature snippet

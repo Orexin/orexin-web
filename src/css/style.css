@@ -57,6 +57,10 @@ body {
 	background-color: #fff;
 }
 
+.columns {
+	margin: 0 !important;
+}
+
 .block-center {
 	display: block;
 	margin-left: auto;
@@ -111,33 +115,6 @@ body {
 	animation: emblemPath2 5s linear infinite;
 }
 
-@keyframes emblemPath1 {
-	from {
-		transform: rotateZ(0deg);
-	}
-	to {
-		transform: rotateZ(360deg);
-	}
-}
-
-@keyframes emblemPath2 {
-	from {
-		transform: rotateZ(360deg);
-	}
-	to {
-		transform: rotateZ(0deg);
-	}
-}
-
-@keyframes innerCircle {
-	from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(1);
-	}
-}
-
 /*! PRELAODER  END!*/
 
 /*! UVOD !*/
@@ -154,6 +131,7 @@ nav {
 	height: 75px;
 	padding-right: 1vh;
 	z-index: 1000;
+	top: -10px;
 }
 
 nav a {
@@ -448,7 +426,7 @@ nav .kontakt-container div:hover {
 
 /*! PORTFOLIO END !*/
 
-/*! CONTACT FORM INDEX !*/
+/*! PARTNERI !*/
 
 #partneri {
 	height: 50vh;
@@ -463,47 +441,60 @@ nav .kontakt-container div:hover {
 		'. . .';
 }
 
-#partneri div:nth-child(1) {
+#partneri h2 {
+	color: var(--text-gray);
 	grid-area: partneri;
-	color: grey;
 }
 
-#partneri div:nth-child(2) {
-	position: absolute;
-	display: block;
-	bottom: 0;
-}
-
-/*! CONTACT-FORM-INDEX END !*/
+/*! PARTNERI END!*/
 
 /*! FOOTER !*/
 
 footer {
 	background: var(--violet-darker);
+	width: 100%;
 }
 
-footer a {
-	text-align: center;
+.footer-kontakt-button {
+}
+
+.footer-kontakt-button a {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0px 15px 0px 15px !important;
+	border: 5px #fff solid;
+	border-radius: 10vh;
+	flex: none;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+.footer-kontakt-button a i {
 	display: block;
 }
 
-footer a div {
-	margin-top: 50px;
-	border: 5px #fff solid;
-	border-radius: 10vh;
-	width: 100%;
+.footer-kontakt-button:hover a i {
+	animation: kontaktButtonIcon 1s ease-in-out;
 }
 
 .footer-tel {
 	background: var(--violet-light);
 }
 
+.footer-tel div i {
+	color: #fff;
+	display: inline;
+}
+
 .footer-tel div a {
+	display: inline;
 	color: #fff;
 }
 
 .footer-links div a h4 {
 	transition: all 0.3s ease-in-out !important;
+	text-align: left;
 }
 
 .footer-links div a h4:hover {
@@ -513,13 +504,41 @@ footer a div {
 /*! FOOTER END !*/
 /* KEYFRAMES */
 
-@keyframes fromTop {
+@keyframes kontaktButtonIcon {
 	from {
-		margin-top: -100vh;
+		display: none;
+		left: -50px;
 	}
-
 	to {
-		margin-top: 10vh;
+		display: block;
+		left: 0;
+	}
+}
+
+@keyframes emblemPath1 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes emblemPath2 {
+	from {
+		transform: rotateZ(360deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes innerCircle {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
 	}
 }
 
@@ -566,5 +585,5 @@ footer a div {
 }
 
 .custom-shape-divider-bottom-1610843841 .shape-fill {
-	fill: #ffffff;
+	fill: #fff;
 }

@@ -254,6 +254,11 @@ nav div {
 
 nav a h5 {
 	font-size: 25px;
+	text-align: center;
+}
+
+nav ul {
+	margin-top: 13px;
 }
 
 nav select,

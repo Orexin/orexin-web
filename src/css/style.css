@@ -232,13 +232,22 @@ nav {
 	z-index: 1000;
 }
 
-nav a div {
+nav a {
+	transition: all 0.3s ease-in-out;
+}
+
+nav a div,
+nav a h5 {
 	transition: all 0.3s ease-in-out;
 	padding-bottom: 10px;
 }
 
 nav div {
 	float: right !important;
+	font-size: 25px;
+}
+
+nav a h5 {
 	font-size: 25px;
 }
 
@@ -253,7 +262,8 @@ nav:hover {
 	background: #fff;
 }
 
-nav:hover a div {
+nav:hover a div,
+nav:hover a h5 {
 	color: var(--violet);
 }
 
@@ -314,13 +324,10 @@ nav .kontakt-container div:hover {
 #nav-indicator {
 	display: none;
 	position: absolute;
-	height: 5%;
-	width: 5%;
-	background: var(--violet);
-	bottom: 0;
-	transition: all 0.3s ease-in-out;
-	margin-left: 6%;
-	z-index: -1;
+	border-bottom: 5px solid var(--violet);
+	bottom: 0 !important;
+	transition: all 0.3s ease-in-out !important;
+	z-index: -2000 !important;
 }
 
 /* UVOD */

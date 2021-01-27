@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	AOS.init({ once: true });
 });
 
-//underline.shiftingUnderline();
+underline.shiftingUnderline();
 //skew.onscrollSkew();

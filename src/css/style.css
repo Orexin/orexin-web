@@ -257,7 +257,7 @@ nav a {
 }
 
 nav a div,
-nav a h5 {
+nav a span {
 	transition: all 0.3s ease-in-out;
 	padding-bottom: 10px;
 }
@@ -267,7 +267,7 @@ nav div {
 	font-size: 25px;
 }
 
-nav a h5 {
+nav a span {
 	font-size: 25px;
 	text-align: center;
 }
@@ -288,7 +288,7 @@ nav:hover {
 }
 
 nav:hover a div,
-nav:hover a h5 {
+nav:hover a span {
 	color: var(--violet);
 }
 
@@ -315,7 +315,7 @@ nav a {
 
 #nav-logo {
 	width: 3%;
-	margin-top: 13px;
+	margin-top: 10px;
 	margin-left: 5px;
 	transition: all 0.3s ease-in-out;
 }
@@ -351,8 +351,8 @@ nav .kontakt-container div:hover {
 	position: absolute;
 	border-bottom: 5px solid var(--violet);
 	bottom: 0 !important;
-	transition: all 0.3s ease-in-out !important;
-	z-index: -2000 !important;
+	transition: all 0.3s ease-in-out;
+	z-index: -1;
 }
 
 /* UVOD */

@@ -7,7 +7,7 @@
 
 		<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
 	</head>
-	<body>
+	<body id="contact">
 		<!-- NAV -->
 		<nav class="columns">
 			<a href="./index.html" class="column is-1"><img src="<%= require('./img/emblem-white-sm.png') %>" alt="logo" /></a>
@@ -35,7 +35,86 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact"></section>
+		<section class="contact">
+			<div class="container container is-flex is-flex-direction-row">
+				<div class="contact-left column is-two-fifths">
+					<div class="contact-left-text">
+						<h2>What will be<br />the next step?</h2>
+						<p>Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.</p>
+					</div>
+					<div class="contact-timeline">
+						<ul class="timeline">
+							<li>
+								<h5>1. <b>Připravíme návrh</b></h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed laborum neque dolor totam perferendis harum velit vel</p>
+							</li>
+							<li>
+								<h5>2. <b>Návrh společně prodiskutujeme</b></h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed laborum neque dolor totam perferendis harum velit vel</p>
+							</li>
+							<li>
+								<h5>3. <b>Začneme s prací na projektu</b></h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed laborum neque dolor totam perferendis harum velit vel</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="contact-right column is-three-fifths">
+					<div class="contact-form block-center">
+						<div class="contact-form-header is-flex is-flex-direction-row is-align-items-center">
+							<div class="contact-form-header-icon">
+								<span class="typcn typcn-mail"></span>
+							</div>
+							<div class="contact-form-header-text">
+								<span>Napište nám pár slov o Vašem projektu a my Vás kontaktujeme do <b>5</b> dní</span>
+							</div>
+						</div>
+						<div class="contact-form-body">
+							<form>
+								<div>
+									<div class="column form-group">
+										<input id="jmeno" type="text" placeholder="Vaše jméno" />
+										<label>Vaše jméno</label>
+									</div>
+									<div class="column form-group">
+										<input id="email" type="text" placeholder="Váš e-mail" />
+										<label>Váš e-mail</label>
+									</div>
+								</div>
+								<div>
+									<div class="column form-group">
+										<input id="firma" type="text" placeholder="Firma" />
+										<label>Firma</label>
+									</div>
+									<div class="column">
+										<h4>Služba:</h4>
+										<div class="form-check">
+											<input id="web" type="checkbox" />
+											<label for="web">Webová prezentace</label>
+										</div>
+										<div class="form-check">
+											<input id="shop" type="checkbox" />
+											<label for="shop">E-commerence řešení</label>
+										</div>
+										<div class="form-check">
+											<input id="mark" type="checkbox" />
+											<label for="mark">Online marketing</label>
+										</div>
+									</div>
+								</div>
+								<div class="is-width-100">
+									<textarea id="detaily" class="w-100" maxlength="5000" placeholder="Detaily projektu"></textarea>
+								</div>
+								<div class="form-group">
+									<input class="button w-100" type="button" value="Odeslat" />
+								</div>
+								<p>Odesláním souhlasíte se <a href="#">zpracováním osobních údajů</a>.</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- FOOTER -->
 		<footer></footer>
 	</body>

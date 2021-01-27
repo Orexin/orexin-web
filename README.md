@@ -18,14 +18,13 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## Ideas
 
-[ ] nav
--------[x] nav background none, při hoveru white background celého navu
--------[x] nav hover sharing moving underline at first active at that link on which you're on https://codepen.io/bennettfeely/pen/MxOrLO
--------[ ] respo
-[ ] nabidka section
-[ ] partneři
-[ ] portfolio
-[ ] footer
-[ ] language redirecting (cs/en), onload redirect depending on browser language preference
-[ ] respo
-[ ] activate preloader only if needed which will solve blink and scroll up after refresh
+- [ ] nav
+- [x] nav background none, při hoveru white background celého navu
+- [ ] [nav hover sharing moving underline at first active at that link on which you're on](https://codepen.io/bennettfeely/pen/MxOrLO)
+- [ ] respo
+- [ ] nabidka section
+- [ ] contact form
+- [ ] portfolio
+- [ ] footer
+- [ ] language redirecting (cs/en), onload redirect depending on browser language preference
+- [ ] respo

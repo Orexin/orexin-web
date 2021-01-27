@@ -18,7 +18,6 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## Ideas
 
-<<<<<<< HEAD
 [ ] nav
 -------[x] nav background none, při hoveru white background celého navu
 -------[x] nav hover sharing moving underline at first active at that link on which you're on https://codepen.io/bennettfeely/pen/MxOrLO
@@ -29,15 +28,4 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 [ ] footer
 [ ] language redirecting (cs/en), onload redirect depending on browser language preference
 [ ] respo
-=======
-- [ ] nav
-- [x] nav background none, při hoveru white background celého navu
-- [ ] [nav hover sharing moving underline at first active at that link on which you're on](https://codepen.io/bennettfeely/pen/MxOrLO)
-- [ ] respo
-- [ ] nabidka section
-- [ ] contact form
-- [ ] portfolio
-- [ ] footer
-- [ ] language redirecting (cs/en), onload redirect depending on browser language preference
-- [ ] respo
->>>>>>> cc64676e8938a0f8c1ec4e8a50458fec892ae0c2
+[ ] activate preloader only if needed which will solve blink and scroll up after refresh

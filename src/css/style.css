@@ -41,10 +41,12 @@ h1 {
 
 /* nadpisy ve stránce */
 h2 {
+	font-size: 40px;
 }
 
 /* podnadpisy */
 h3 {
+	font-size: 40px;
 }
 
 li {
@@ -332,7 +334,7 @@ nav .kontakt-container div:hover {
 .quick-desc {
 	text-align: left !important;
 }
-.quick-desc h3 {
+.quick-desc h2 {
 	font-size: 40px;
 	color: var(--violet);
 	margin: 0;
@@ -403,7 +405,7 @@ nav .kontakt-container div:hover {
 	padding: 30vh 5vw 0px 5vw;
 }
 
-#nabidka-vyber > h1 {
+#nabidka-vyber > h2 {
 	font-weight: 900 !important;
 	text-align: center !important;
 	font-size: 40px;
@@ -490,6 +492,22 @@ footer a div {
 	border: 5px #fff solid;
 	border-radius: 10vh;
 	width: 100%;
+}
+
+.footer-tel {
+	background: var(--violet-light);
+}
+
+.footer-tel div a {
+	color: #fff;
+}
+
+.footer-links div a h4 {
+	transition: all 0.3s ease-in-out !important;
+}
+
+.footer-links div a h4:hover {
+	text-decoration: underline;
 }
 
 /*! FOOTER END !*/

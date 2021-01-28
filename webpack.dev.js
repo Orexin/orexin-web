@@ -62,6 +62,18 @@ module.exports = {
 			filename: 'index.html'
 		}),
 		new HtmlWebpackPlugin({
+			template: './src/about.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'about.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/services.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'services.html'
+		}),
+		new HtmlWebpackPlugin({
 			template: './src/contact.html',
 			inject: true,
 			chunks: ['main', 'contact'],

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="379"
+   height="379"
+   viewBox="0 0 379 379"
+   fill="none"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="blog.svg"
+   inkscape:export-filename="/home/turnix/WORK/Orexin/SVGs/blog.png"
+   inkscape:export-xdpi="271.677"
+   inkscape:export-ydpi="271.677"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)">
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1874"
+     inkscape:window-height="1045"
+     id="namedview21"
+     showgrid="false"
+     inkscape:zoom="1.6569921"
+     inkscape:cx="189.5"
+     inkscape:cy="189.5"
+     inkscape:window-x="46"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19" />
+  <g
+     id="blog">
+    <g
+       id="blog-text-lines">
+      <line
+         id="Line 27"
+         x1="209"
+         y1="86"
+         x2="312"
+         y2="86"
+         stroke="white"
+         stroke-width="10" />
+      <line
+         id="Line 30"
+         x1="321"
+         y1="86"
+         x2="356"
+         y2="86"
+         stroke="white"
+         stroke-width="10" />
+      <line
+         id="Line 34"
+         x1="209"
+         y1="122"
+         x2="356"
+         y2="122"
+         stroke="white"
+         stroke-width="10" />
+      <line
+         id="Line 31"
+         x1="209"
+         y1="104"
+         x2="356"
+         y2="104"
+         stroke="white"
+         stroke-width="10" />
+      <line
+         id="Line 35"
+         x1="253"
+         y1="140"
+         x2="356"
+         y2="140"
+         stroke="white"
+         stroke-width="10" />
+      <line
+         id="Line 36"
+         x1="209"
+         y1="140"
+         x2="244"
+         y2="140"
+         stroke="white"
+         stroke-width="10" />
+    </g>
+    <g
+       id="blog-person">
+      <path
+         id="blog-body"
+         d="M202.915 302.916C202.915 360.441 163.983 347.828 115.957 347.828C67.9322 347.828 29 360.441 29 302.916C29 245.391 67.9322 198.758 115.957 198.758C163.983 198.758 202.915 245.391 202.915 302.916Z"
+         fill="white" />
+      <circle
+         id="blog-head"
+         cx="115.958"
+         cy="137.601"
+         r="51.6011"
+         fill="white" />
+    </g>
+    <g
+       id="blog-tile">
+      <line
+         id="Line 24"
+         x1="2"
+         y1="60"
+         x2="379"
+         y2="60"
+         stroke="white"
+         stroke-width="10" />
+      <ellipse
+         id="blog-circle-1"
+         cx="282.5"
+         cy="33.5"
+         rx="11.5"
+         ry="10.5"
+         fill="white" />
+      <ellipse
+         id="blog-circle-2"
+         cx="310.5"
+         cy="33.5"
+         rx="11.5"
+         ry="10.5"
+         fill="white" />
+      <ellipse
+         id="blog-circle-3"
+         cx="338.5"
+         cy="33.5"
+         rx="11.5"
+         ry="10.5"
+         fill="white" />
+      <rect
+         id="blog-frame"
+         x="5"
+         y="5"
+         width="369"
+         height="369"
+         rx="40"
+         stroke="white"
+         stroke-width="10" />
+    </g>
+  </g>
+</svg>

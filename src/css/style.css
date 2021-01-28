@@ -344,28 +344,29 @@ nav .kontakt-container div:hover {
 	transform: translateY(-50px);
 }
 
-.offer:hover > .text > h5 {
+.offer:hover > .nabidka-okna-text > h2 {
 	color: white;
 }
-.offer:hover > .text > p {
+.offer:hover > .nabidka-okna-text > p {
 	color: white;
 }
-.offer > .img > img {
+/* .offer > .img > img {
 	height: 40px;
 	width: 40px;
-}
-.offer > .img {
+} */
+.offer div .img {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	height: 20%;
 }
-.text > h5 {
+
+.nabidka-okna-text > h2 {
 	color: black;
-	font-size: 30px;
 }
-.text > p {
+
+.nabidka-okna-text > p {
 	color: black;
 	font-size: 20px;
 }

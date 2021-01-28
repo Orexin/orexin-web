@@ -41,10 +41,12 @@ h1 {
 
 /* nadpisy ve stránce */
 h2 {
+	font-size: 40px;
 }
 
 /* podnadpisy */
 h3 {
+	font-size: 40px;
 }
 
 li {
@@ -53,6 +55,10 @@ li {
 
 body {
 	background-color: #fff;
+}
+
+.columns {
+	margin: 0 !important;
 }
 
 .block-center {
@@ -109,33 +115,6 @@ body {
 	animation: emblemPath2 5s linear infinite;
 }
 
-@keyframes emblemPath1 {
-	from {
-		transform: rotateZ(0deg);
-	}
-	to {
-		transform: rotateZ(360deg);
-	}
-}
-
-@keyframes emblemPath2 {
-	from {
-		transform: rotateZ(360deg);
-	}
-	to {
-		transform: rotateZ(0deg);
-	}
-}
-
-@keyframes innerCircle {
-	from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(1);
-	}
-}
-
 /*! PRELAODER  END!*/
 
 /*! UVOD !*/
@@ -152,6 +131,7 @@ nav {
 	height: 75px;
 	padding-right: 1vh;
 	z-index: 1000;
+	top: -10px;
 }
 
 nav a {
@@ -268,7 +248,7 @@ nav .kontakt-container div:hover {
 }
 
 #uvod-text {
-	top: 75px;
+	top: 125px;
 	position: absolute;
 	margin-left: 3vh;
 	display: grid;
@@ -285,29 +265,27 @@ nav .kontakt-container div:hover {
 	grid-area: text;
 }
 
-#uvod-text div h2 {
+#uvod-text div h1:nth-child(1) {
 	text-align: left;
+	font-size: 50px;
+	resize: horizontal;
+}
+#uvod-text div h2:nth-child(2) {
+	text-align: left;
+	font-size: 35px;
+	resize: horizontal;
 }
 
 #get-started-button {
-	position: absolute;
-	bottom: -7vh;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1.8fr 0.3fr 1.8fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: '. get-started .';
+	margin-top: -40px !important;
 }
 
-#get-started-button div {
-	grid-area: get-started;
-
+#get-started-button a div {
 	background: var(--violet);
 	border-radius: 10vh;
 	font-size: 30px;
 	transition: all 0.3s ease-in-out;
-	justify-content: center;
+	text-align: center;
 }
 
 #get-started-button div:hover {
@@ -332,7 +310,7 @@ nav .kontakt-container div:hover {
 .quick-desc {
 	text-align: left !important;
 }
-.quick-desc h3 {
+.quick-desc h2 {
 	font-size: 40px;
 	color: var(--violet);
 	margin: 0;
@@ -403,7 +381,7 @@ nav .kontakt-container div:hover {
 	padding: 30vh 5vw 0px 5vw;
 }
 
-#nabidka-vyber > h1 {
+#nabidka-vyber > h2 {
 	font-weight: 900 !important;
 	text-align: center !important;
 	font-size: 40px;
@@ -446,7 +424,7 @@ nav .kontakt-container div:hover {
 
 /*! PORTFOLIO END !*/
 
-/*! CONTACT FORM INDEX !*/
+/*! PARTNERI !*/
 
 #partneri {
 	height: 50vh;
@@ -461,47 +439,104 @@ nav .kontakt-container div:hover {
 		'. . .';
 }
 
-#partneri div:nth-child(1) {
+#partneri h2 {
+	color: var(--text-gray);
 	grid-area: partneri;
-	color: grey;
 }
 
-#partneri div:nth-child(2) {
-	position: absolute;
-	display: block;
-	bottom: 0;
-}
-
-/*! CONTACT-FORM-INDEX END !*/
+/*! PARTNERI END!*/
 
 /*! FOOTER !*/
 
 footer {
 	background: var(--violet-darker);
+	width: 100%;
 }
 
-footer a {
-	text-align: center;
+.footer-kontakt-button {
+}
+
+.footer-kontakt-button a {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0px 15px 0px 15px !important;
+	border: 5px #fff solid;
+	border-radius: 10vh;
+	flex: none;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+.footer-kontakt-button a i {
 	display: block;
 }
 
-footer a div {
-	margin-top: 50px;
-	border: 5px #fff solid;
-	border-radius: 10vh;
-	width: 100%;
+.footer-kontakt-button:hover a i {
+	animation: kontaktButtonIcon 1s ease-in-out;
+}
+
+.footer-tel {
+	background: var(--violet-light);
+}
+
+.footer-tel div i {
+	color: #fff;
+	display: inline;
+}
+
+.footer-tel div a {
+	display: inline;
+	color: #fff;
+}
+
+.footer-links div a h4 {
+	transition: all 0.3s ease-in-out !important;
+	text-align: left;
+}
+
+.footer-links div a h4:hover {
+	text-decoration: underline;
 }
 
 /*! FOOTER END !*/
 /* KEYFRAMES */
 
-@keyframes fromTop {
+@keyframes kontaktButtonIcon {
 	from {
-		margin-top: -100vh;
+		display: none;
+		left: -50px;
 	}
-
 	to {
-		margin-top: 10vh;
+		display: block;
+		left: 0;
+	}
+}
+
+@keyframes emblemPath1 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes emblemPath2 {
+	from {
+		transform: rotateZ(360deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes innerCircle {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
 	}
 }
 
@@ -548,5 +583,5 @@ footer a div {
 }
 
 .custom-shape-divider-bottom-1610843841 .shape-fill {
-	fill: #ffffff;
+	fill: #fff;
 }

@@ -12,6 +12,7 @@ import * as underline from './shifting-underline';
 document.addEventListener('DOMContentLoaded', function (event) {
 	document.getElementById('preloader').style.display = 'none';
 	AOS.init({ once: true });
+	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
 });
 
 underline.shiftingUnderline();

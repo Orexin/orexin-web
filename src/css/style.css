@@ -248,7 +248,7 @@ nav .kontakt-container div:hover {
 }
 
 #uvod-text {
-	top: 75px;
+	top: 125px;
 	position: absolute;
 	margin-left: 3vh;
 	display: grid;
@@ -265,29 +265,27 @@ nav .kontakt-container div:hover {
 	grid-area: text;
 }
 
-#uvod-text div h2 {
+#uvod-text div h1:nth-child(1) {
 	text-align: left;
+	font-size: 50px;
+	resize: horizontal;
+}
+#uvod-text div h2:nth-child(2) {
+	text-align: left;
+	font-size: 35px;
+	resize: horizontal;
 }
 
 #get-started-button {
-	position: absolute;
-	bottom: -7vh;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1.8fr 0.3fr 1.8fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: '. get-started .';
+	margin-top: -40px !important;
 }
 
-#get-started-button div {
-	grid-area: get-started;
-
+#get-started-button a div {
 	background: var(--violet);
 	border-radius: 10vh;
 	font-size: 30px;
 	transition: all 0.3s ease-in-out;
-	justify-content: center;
+	text-align: center;
 }
 
 #get-started-button div:hover {

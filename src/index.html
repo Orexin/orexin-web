@@ -115,16 +115,19 @@
 		</nav>
 		<!-- UVOD -->
 		<section id="uvod">
-			<img src="<%= require('./img/hero.webp') %>" alt="úvodní fotka" />
+			<img src="<%= require('./img/uvod-bg-cropped.png') %>" alt="úvodní fotka" height="500px" width="100px"/>
 			<div id="uvod-text">
 				<div>
-					<h1>VAŠI TVÁŘ V ONLINE SVĚTĚ <wbr>VYBUDUJEME MY,</wbr> a vy tak můžete dělat to co vám jde nejlépe</h1>
+					<h1 class="is-size-1">VAŠI TVÁŘ V ONLINE SVĚTĚ <wbr>VYBUDUJEME MY,</wbr></h1><br>
+					<h2 class="is-size-3"> a vy tak můžete dělat to co vám jde nejlépe</h2>
 				</div>
 				<div></div>
 			</div>
-			<a href="./index.html#nabidka-vyber" id="get-started-button">
-				<div>Začít</div>
-			</a>
+			<div id="get-started-button" class="columns is-centered">
+				<a href="./index.html#nabidka-vyber" class="column is-1">
+					<div class="">Začít</div>
+				</a>
+			</div>
 		</section>
 
 		<!--NABIDKA-->
@@ -203,12 +206,14 @@
 				</a>
 			</div>
 			<div class="footer-tel columns">
-				<div class="column is-size-1">
-					<img src="<%= require('./img/Inline_white-sm.png') %>" alt="" />
+				<div class="column is-size-1 mt-2">
+					<img src="<%= require('./img/Inline_white-sm.png') %>" alt=""/>
 				</div>
-				<div class="column is-offset-5 is-size-1">
-					<i class="fa fa-mobile is-inline"></i>
-					<a href="tel:+420-666-666-666"><h3 class="is-size-1 is-inline">+420 666 666 666</h3></a>
+				<div class="column level is-size-1">
+					<div class="level-right">
+						<i class="fa fa-mobile is-inline"></i>
+						<a href="tel:+420-666-666-666" class=""><h3 class="is-size-1 is-inline ml-3">+420 666 666 666</h3></a>
+					</div>
 				</div>
 			</div>
 			<div class="columns footer-links">
@@ -259,7 +264,7 @@
 					<div></div>
 				</div>
 			</div>
-			<div class="columns is-centered">
+			<div class="columns is-centered mt-3">
 				<div class="column is-half is-size-6" style="text-align: center">&copy; Orexin Solutions | 2021</div>
 			</div>
 		</footer>

@@ -291,6 +291,10 @@ nav .kontakt-container div:hover {
 #get-started-button div:hover {
 	background: var(--violet-light);
 }
+
+.uvod-sub-pages img {
+	width: 100%;
+}
 /*! UVOD END !*/
 
 /*! NABIDKA !*/

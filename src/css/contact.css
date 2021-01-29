@@ -2,9 +2,8 @@
 	background-color: var(--violet-darker);
 }
 
-.contact-hero {
-	background: url(./../img/hero-blur.webp) center no-repeat;
-	background-size: cover;
+.uvod-sub-pages img {
+	width: 100%;
 }
 
 .contact-hero.text {
@@ -17,7 +16,10 @@
 
 .contact {
 	min-height: 100vh;
-	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.contact-socials-container {
+	width: 100%;
 }
 
 .btn {

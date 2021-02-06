@@ -9,5 +9,9 @@
 	"prettier.useTabs": true,
 	"prettier.tabWidth": 2,
 	"prettier.printWidth": 180,
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"editor.cursorSmoothCaretAnimation": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	}
 }

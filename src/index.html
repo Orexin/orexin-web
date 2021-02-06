@@ -113,6 +113,7 @@
 			</ul>
 			<span id="nav-indicator" style="transition: all 0.5s ease-in-out !important"></span>
 		</nav>
+
 		<!-- UVOD -->
 		<section id="uvod">
 			<img src="<%= require('./img/uvod-bg-cropped.png') %>" alt="úvodní fotka"/>
@@ -138,28 +139,31 @@
 					<p>Od templatů po kompletní řešení na míru.</p>
 				</div>
 				<!---JEŠTĚ NEVÍM JAK S TÍM LAYOUTEM > kámo já nevím co se svým životem po tom co tady opravuju classy a funkčnost-->
-				<div class="offers">
-					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+				<div class="nabidka-okna-content">
+					<div class="nabidka-okna-content-okno" onclick="redirectOnClick('https://www.google.com')">
 						<div>
-							<img src="<%= require('./img/blog.png') %>" alt="blog custom icon">
+							<img src="<%= require('./img/blog-violet.png') %>" alt="blog custom icon" class="img nabidka-okna-img-violet">
+							<img src="<%= require('./img/blog.png') %>" alt="blog custom icon" class="img nabidka-okna-img-white">
 						</div>
 						<div class="nabidka-okna-text">
 							<h2 class="is-size-2">Blog</h2>
 							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
 						</div>
 					</div>
-					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+					<div class="nabidka-okna-content-okno" onclick="redirectOnClick('https://www.google.com')">
 						<div>
-							<img src="<%= require('./img/web-pres.png') %>" alt="web presentation custom icon">
+							<img src="<%= require('./img/web-pres-violet.png') %>" alt="web presentation custom icon" class=" img nabidka-okna-img-violet">
+							<img src="<%= require('./img/web-pres.png') %>" alt="blog custom icon" class="img nabidka-okna-img-white">
 						</div>
 						<div class="nabidka-okna-text">
 							<h2 class="is-size-2 mt-10">Webová prezentace</h2>
-							<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+							<p>Lorem Ipsum dolor sit amet koupím si akcie.</p>
 						</div>
 					</div>
-					<div class="offer" onclick="redirectOnClick('https://www.google.com')">
+					<div class="nabidka-okna-content-okno" onclick="redirectOnClick('https://www.google.com')">
 						<div>
-							<img src="<%= require('./img/ecommerce.png') %>" alt="ecommerce custom icon">
+							<img src="<%= require('./img/ecommerce-violet.png') %>" alt="ecommerce custom icon" class="img nabidka-okna-img-violet">
+							<img src="<%= require('./img/ecommerce.png') %>" alt="blog custom icon" class="img nabidka-okna-img-white">
 						</div>
 						<div class="nabidka-okna-text">
 							<h2 class="is-size-2">Ecommerce</h2>

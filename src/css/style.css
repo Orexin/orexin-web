@@ -311,59 +311,85 @@ nav .kontakt-container div:hover {
 	position: relative;
 	z-index: 1;
 }
+
+.nabidka-okna-img-violet {
+}
+
 .quick-desc {
 	text-align: left !important;
 }
+
 .quick-desc h2 {
 	font-size: 40px;
 	color: var(--violet);
 	margin: 0;
 	font-weight: 900;
 }
+
 .quick-desc p {
 	font-size: 20px;
 	color: var(--text-gray);
 }
-.offers {
+
+.nabidka-okna-content {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 75px;
 }
-.offers > .offer {
-	height: 450px;
+
+.nabidka-okna-content > .nabidka-okna-content-okno {
+	height: 65vh;
 	width: 300px;
 	background-color: var(--light-gray);
 	padding: 15px;
 	margin: 20px;
 	cursor: pointer;
-	border-radius: 15px;
+	border-radius: 5vh;
 	transition-duration: 0.5s;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-.offer:hover {
+
+.nabidka-okna-content-okno:hover {
 	background-color: var(--violet);
 	transform: translateY(-50px);
 }
 
-.offer:hover > .nabidka-okna-text > h2 {
+.nabidka-okna-img-white {
+	display: none;
+}
+
+.nabidka-okna-img-violet {
+	display: flex;
+}
+
+.nabidka-okna-content-okno:hover div .nabidka-okna-img-white {
+	display: flex;
+}
+
+.nabidka-okna-content-okno:hover div .nabidka-okna-img-violet {
+	display: none;
+}
+
+.nabidka-okna-content-okno:hover > .nabidka-okna-text > h2 {
 	color: white;
 }
-.offer:hover > .nabidka-okna-text > p {
+
+.nabidka-okna-content-okno:hover > .nabidka-okna-text > p {
 	color: white;
 }
-/* .offer > .img > img {
+
+/* .nabidka-okna-content-okno > .img > img {
 	height: 40px;
 	width: 40px;
 } */
-.offer div .img {
-	display: flex;
+.nabidka-okna-content-okno div img {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 20%;
+	margin-top: -2vh;
 }
 
 .nabidka-okna-text > h2 {

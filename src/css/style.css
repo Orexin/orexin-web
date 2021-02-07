@@ -476,9 +476,9 @@ nav .kontakt-container div:hover {
 .portfolio-btn {
 	padding: 5px 15px 5px 15px;
 	position: absolute;
-	top:  65%;
+	top: 65%;
 	left: 50%;
-	transform: translate(-50%,-50%) !important;
+	transform: translate(-50%, -50%) !important;
 	color: white;
 	background-color: var(--violet);
 	border: solid var(--violet) 1px;
@@ -492,9 +492,9 @@ nav .kontakt-container div:hover {
 	top: 50%;
 }
 .portfolio-btn:hover {
-		color: white !important;
-		background-color: var(--violet-light);
-		border-color: var(--violet-light);
+	color: white !important;
+	background-color: var(--violet-light);
+	border-color: var(--violet-light);
 }
 /*! PORTFOLIO END !*/
 

@@ -108,6 +108,6 @@ module.exports = {
 			inject: true,
 			chunks: ['main'],
 			filename: 'terms-and-conditions.html'
-		}),
+		})
 	]
 };

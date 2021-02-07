@@ -18,6 +18,7 @@
 	--text-dark: #3b4246;
 	--text-light: #fff;
 	--text-gray: #969696;
+	--borderRadius: 5px;
 }
 
 html {
@@ -345,12 +346,12 @@ nav .kontakt-container div:hover {
 
 .nabidka-okna-content > .nabidka-okna-content-okno {
 	height: 65vh;
-	width: 300px;
+	width: 400px;
 	background-color: var(--light-gray);
 	padding: 15px;
-	margin: 20px;
+	margin: 40px;
 	cursor: pointer;
-	border-radius: 5vh;
+	border-radius: 5px;	
 	transition-duration: 0.5s;
 	display: flex;
 	flex-direction: column;
@@ -358,7 +359,7 @@ nav .kontakt-container div:hover {
 }
 
 .nabidka-okna-content-okno:hover {
-	background-color: var(--violet);
+	background-color: var(--violet-darker);
 	transform: translateY(-50px);
 }
 
@@ -411,7 +412,7 @@ nav .kontakt-container div:hover {
 #nabidka-vyber {
 	width: 100%;
 	margin-top: -10vh;
-	background: var(--violet-darker);
+	background: var(--violet);
 	transform: skewY(-5deg);
 	transform-origin: top left;
 	padding: 30vh 5vw 0px 5vw;
@@ -444,7 +445,7 @@ nav .kontakt-container div:hover {
 	position: absolute;
 	width: 100%;
 	height: 30vh;
-	background: var(--violet-darker);
+	background: var(--violet);
 	z-index: -1;
 }
 /*SKEW END */
@@ -679,54 +680,72 @@ nav .kontakt-container div:hover {
 /*! FOOTER !*/
 
 footer {
-	background: var(--violet-darker);
+	margin-top: 10vh;
+	background: var(--violet);
 	width: 100%;
+	height: auto;
 }
 
-.footer-kontakt-button {
+footer > .top-banner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--violet-darker);
+	height: 15vh;
+	width: 80vw;
+	border-radius: 5px;
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
-.footer-kontakt-button a {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding: 0px 15px 0px 15px !important;
-	border: 5px #fff solid;
-	border-radius: 10vh;
-	flex: none;
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: auto;
+.top-banner > h2 {
+	color: white !important;
+	font-weight: 900;
+	font-size: 25px;
 }
-
-.footer-kontakt-button a i {
-	display: block;
+.top-banner > p {
+	color: white !important;
 }
-
-.footer-kontakt-button:hover a i {
-	animation: kontaktButtonIcon 1s ease-in-out;
+.top-banner > a {
+	color: white;
+	padding: 5px 15px 5px 15px;
+	border: solid var(--violet) 2px;
+	border-radius: 25px;
+	transition-duration: 0.3s;
 }
-
-.footer-tel {
-	background: var(--violet-light);
+.top-banner > a:hover {
+	background-color: var(--violet);
+	color: white !important;
 }
-
-.footer-tel div i {
-	color: #fff;
-	display: inline;
+.upper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-
-.footer-tel div a {
-	display: inline;
-	color: #fff;
+.upper > img {
+	height: 50px;
+	width: auto;
 }
-
-.footer-links div a h4 {
-	transition: all 0.3s ease-in-out !important;
-	text-align: left;
+.upper > h3 {
+	margin: 15px;
 }
+.socials {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 
-.footer-links div a h4:hover {
-	text-decoration: underline;
+	justify-content: space-around;
+	gap: 50px;
+}
+.socials > a  {
+	font-size: 40px;
 }
 
 /*! FOOTER END !*/

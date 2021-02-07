@@ -2,24 +2,41 @@
 	background-color: var(--violet-darker);
 }
 
-.uvod-sub-pages img {
-	width: 100%;
+.contact-hero {
+	background: url(./../img/hero.webp) center no-repeat;
+	background-size: cover;
 }
 
 .contact-hero.text {
 	background: none;
+	padding: 120px 0 0 0;
+}
+
+.contact-hero.text h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.contact-hero.text p {
+	font-size: 30px;
 }
 
 .contact-hero.socials {
 	background: none;
+	padding: 0 0 45px 0;
+}
+
+.contact-hero.socials span {
+	font-size: 45px;
+}
+
+.contact-hero.socials > .column {
+	margin-left: -7px;
 }
 
 .contact {
 	min-height: 100vh;
-}
-
-.contact-socials-container {
-	width: 100%;
+	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .btn {
@@ -91,11 +108,11 @@
 
 .contact-form {
 	width: 80%;
-	margin-top: -10px;
+	margin-top: -154px;
 }
 
 .contact-form-header {
-	background-color: #f4f4f5;
+	background-color: #f0e9fe;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	padding: 30px;
@@ -106,14 +123,34 @@
 }
 
 .contact-form-header-icon > span {
-	font-size: 40px;
+	font-size: 55px;
 	color: var(--text-light);
 	background: var(--violet-darker);
 	border-radius: 5px;
+	padding: 0 10px;
+}
+
+.contact-form-header-icon > span::before {
+	vertical-align: 0.125em;
+	transform: scale(1.2);
+	line-height: 0.8;
+}
+
+.contact-form-header-text {
+	padding-left: 23px;
 }
 
 .contact-form-header-text > span,
 .contact-form-header-text > span > b {
 	font-size: 20px;
 	color: var(--text-dark);
+}
+
+.contact-form-body {
+	background: #f8f4fe;
+}
+
+.contact-form-body label,
+.contact-form-body p {
+	color: #15052f;
 }

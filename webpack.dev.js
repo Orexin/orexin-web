@@ -78,6 +78,36 @@ module.exports = {
 			inject: true,
 			chunks: ['main', 'contact'],
 			filename: 'contact.html'
-		})
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/faq/faq.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'faq.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/faq/annual-payment.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'annual-payment.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/faq/web-rights-transfer.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'web-rights-transfer.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/privacy.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'privacy.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/terms-and-conditions.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'terms-and-conditions.html'
+		}),
 	]
 };

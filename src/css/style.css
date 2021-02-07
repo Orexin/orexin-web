@@ -240,7 +240,7 @@ nav .kontakt-container div:hover {
 /* UVOD */
 
 #uvod {
-height: fit-content;
+	height: fit-content;
 }
 
 #uvod img {
@@ -458,7 +458,7 @@ height: fit-content;
 	height: auto;
 	padding: 0px 5vw 0px 5vw;
 }
-.splide{
+.splide {
 	height: 80vh;
 }
 .splide__slide {
@@ -526,7 +526,7 @@ height: fit-content;
 	padding: 0px 20vw 0px 20vw;
 	display: flex;
 	flex-direction: column;
-	flex-wrap:  nowrap;
+	flex-wrap: nowrap;
 	margin-bottom: 25px;
 }
 .carkyhehe {
@@ -558,7 +558,7 @@ height: fit-content;
 }
 .q-sig > p {
 	color: var(--violet) !important;
-	font-size: 30px
+	font-size: 30px;
 }
 /*! QUOTE END !*/
 /*! ABOUT!*/
@@ -641,9 +641,40 @@ height: fit-content;
 	margin-left: -300px !important;
 }
 
-/*! TECHNOLOGIE!*/
+/*! TECHNOLOGIE END!*/
 
-/*! ABOUT!*/
+/*! ABOUT END!*/
+
+/*! SLUZBY!*/
+#nase-sluzby {
+	background: var(--violet-darker);
+}
+
+#nase-sluzby-title {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	font-size: 40px;
+	color: #fff;
+	font-weight: 900;
+}
+
+.nase-sluzby-img {
+	position: relative;
+	z-index: 1000;
+	box-shadow: 30px 30px 100px #000;
+}
+
+.nase-sluzby-img-kokot {
+	position: absolute;
+	transform: translateX(-1375px) translateY(30px);
+	filter: blur(5px);
+}
+
+#nase-sluzby-content {
+	margin-top: 70px !important;
+}
+/*! SLUZBY END!*/
 
 /*! FOOTER !*/
 

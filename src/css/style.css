@@ -296,7 +296,10 @@ height: fit-content;
 
 .uvod-sub-pages img {
 	width: 100%;
+	height: 100%;
+	display: block;
 }
+
 /*! UVOD END !*/
 
 /*! NABIDKA !*/
@@ -558,6 +561,89 @@ height: fit-content;
 	font-size: 30px
 }
 /*! QUOTE END !*/
+/*! ABOUT!*/
+
+/*! STORY!*/
+#story {
+	height: 50vh;
+	width: 100%;
+	background: var(--violet-dark);
+}
+
+#story-title div {
+	margin-top: 10vh;
+	margin-left: 7vh;
+}
+
+#story-title div h2 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+#story-title div p {
+	font-size: 20px;
+	color: #fff;
+}
+/*! STORY END!*/
+
+/*! TECHNOLOGIE !*/
+
+#technologie-title {
+	margin-top: 5vh !important;
+}
+
+#technologie-title div h2 {
+	color: var(--violet);
+	font-size: 40px;
+	font-weight: 900;
+	text-align: center;
+}
+
+#technologie-title div p {
+	font-size: 20px;
+	color: var(--text-gray);
+	text-align: center;
+}
+
+#technologie-main,
+#technologie-secondary {
+	display: flex;
+	flex-direction: row;
+}
+
+#technologie-main .technologie-main-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.technologie-main-titles {
+	color: var(--violet);
+	font-size: 45px;
+	text-align: center;
+}
+
+.technologie-secondary-titles {
+	color: var(--violet);
+	font-size: 45px;
+	text-align: center;
+}
+
+.technologie-secondary-content {
+	text-align: center;
+}
+
+.technologie-secondary-content-col1 {
+	margin-right: -300px !important;
+}
+
+.technologie-secondary-content-col3 {
+	margin-left: -300px !important;
+}
+
+/*! TECHNOLOGIE!*/
+
+/*! ABOUT!*/
 
 /*! FOOTER !*/
 

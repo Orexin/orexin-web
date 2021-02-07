@@ -240,11 +240,13 @@ nav .kontakt-container div:hover {
 /* UVOD */
 
 #uvod {
+height: fit-content;
 }
 
 #uvod img {
 	top: 0;
 	width: 100%;
+	height: 95vh !important;
 }
 
 #uvod-text {
@@ -453,13 +455,15 @@ nav .kontakt-container div:hover {
 
 #portfolio {
 	background: #000;
-	height: 100vh;
+	height: auto;
 	padding: 0px 5vw 0px 5vw;
 }
-
+.splide{
+	height: 80vh;
+}
 .splide__slide {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 }
 
 .portfolio-text {
@@ -501,25 +505,62 @@ nav .kontakt-container div:hover {
 /*! PARTNERI !*/
 
 #partneri {
-	height: 50vh;
-	position: relative;
-	display: grid;
-	grid-template-columns: 0.5fr 1.1fr 1.4fr;
-	grid-template-rows: 0.3fr 2.4fr 0.3fr;
-	gap: 0px 0px;
-	grid-template-areas:
-		'. . .'
-		'. partneri .'
-		'. . .';
+	height: 15vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-evenly;
 }
-
-#partneri h2 {
-	color: var(--text-gray);
-	grid-area: partneri;
+#partneri > img {
+	height: 75px;
+	/*width: auto;*/
+	/*debug*/
+	width: 75px;
+	border: solid red 1px;
 }
-
 /*! PARTNERI END!*/
 
+/*! QUOTE !*/
+#quote {
+	padding: 0px 20vw 0px 20vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap:  nowrap;
+	margin-bottom: 25px;
+}
+.carkyhehe {
+	font-size: 125px;
+	color: var(--violet);
+	font-weight: 900;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding-left: -50px;
+}
+.q-main > h1 {
+	font-size: 45px;
+	color: black !important;
+	text-align: justify;
+	font-weight: 800;
+	font-style: italic;
+}
+.q-sig {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-end !important;
+}
+.q-sig > img {
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	margin: 15px;
+}
+.q-sig > p {
+	color: var(--violet) !important;
+	font-size: 30px
+}
+/*! QUOTE END !*/
 /*! ABOUT!*/
 
 /*! STORY!*/

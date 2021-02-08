@@ -38,7 +38,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 	<meta property="og:image" content="./img/emblem-gradient.png" />
 
 	<!-- <link rel="canonical" href="https://orexinsolutions.com/" /> sets page as the main page and prevents other pages from indexing -->
-	<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('./img/emblem-white-sm.png') %>" type="image/x-icon" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 </head>
 
@@ -138,63 +138,78 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 	<section id="nabidka">
 		<div id="nabidka-okna">
 			<div class="quick-desc">
-				<h2>Co nabízíme?</h2>
-				<p>Od templatů po kompletní řešení na míru.</p>
+				<h2>Proč si vybrat rešení od Orexinu?</h2>
+				<p>Hlavní výhody, které nikde jinde nenajdete.</p>
 			</div>
-			<!---JEŠTĚ NEVÍM JAK S TÍM LAYOUTEM > kámo já nevím co se svým životem po tom co tady opravuju classy a funkčnost-->
-			<div class="nabidka-okna-content">
-				<div class="nabidka-okna-content-okno" onclick="redirectOnClick('https://www.google.com')">
-					<div>
-						<img src="<%= require('./img/blog-violet.png') %>" alt="blog custom icon"
-							class="img nabidka-okna-img-violet">
-						<img src="<%= require('./img/blog.png') %>" alt="blog custom icon" class="img nabidka-okna-img-white">
+			<div class="card-rows">
+				<div class="cards">
+					<div class="card">
+						<div class="card-img">
+							<span class="typcn typcn-credit-card card-icon"></span>
+							<h2>Pay-as-you-go</h2>
+						</div>
+						<div class="card-text">
+							<p>Platba podle trafficu a dalších faktorů webů. Plaťte jen za to, za co opravdu musíte.</p>
+						</div>
 					</div>
-					<div class="nabidka-okna-text">
-						<h2 class="is-size-2">Blog</h2>
-						<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+					<div class="card">
+						<div class="card-img">
+							<span class="typcn typcn-chart-bar-outline card-icon"></span>
+							<h2>Brand Builder</h2>
+						</div>
+						<div class="card-text">
+							<p>Orexin Vám pomůže vybudovat vaši značku, aniž by jste se moc nadřeli.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+							<span class="typcn typcn-thumbs-up card-icon"></span>
+							<h2>PR done right</h2>
+						</div>
+						<div class="card-text">
+							<p>Správa všech sociálních sítí webu na jednom místě. Jednoduše.</p>
+						</div>
 					</div>
 				</div>
-				<div class="nabidka-okna-content-okno" onclick="redirectOnClick('https://www.google.com')">
-					<div>
-						<img src="<%= require('./img/web-pres-violet.png') %>" alt="web presentation custom icon"
-							class=" img nabidka-okna-img-violet">
-						<img src="<%= require('./img/web-pres.png') %>" alt="blog custom icon" class="img nabidka-okna-img-white">
+				<div class="cards">
+					<div class="card">
+						<div class="card-img">
+							<span class="typcn typcn-puzzle-outline card-icon"></span>
+							<h2>Modulárnost</h2>
+						</div>
+						<div class="card-text">
+							<p>Náš redakční systém má to co potřebujete. A pokud potřebujete více, stačí si to doinstalovat.</p>
+						</div>
 					</div>
-					<div class="nabidka-okna-text">
-						<h2 class="is-size-2 mt-10">Webová prezentace</h2>
-						<p>Lorem Ipsum dolor sit amet koupím si akcie.</p>
+					<div class="card">
+						<div class="card-img">
+							<span class="typcn typcn-chart-bar-outline card-icon"></span>
+							<h2>Brand Builder</h2>
+						</div>
+						<div class="card-text">
+							<p>Orexin Vám pomůže vybudovat vaši značku, aniž by jste se moc nadřeli.</p>
+						</div>
 					</div>
-				</div>
-				<div class="nabidka-okna-content-okno" onclick="redirectOnClick('https://www.google.com')">
-					<div>
-						<img src="<%= require('./img/ecommerce-violet.png') %>" alt="ecommerce custom icon"
-							class="img nabidka-okna-img-violet">
-						<img src="<%= require('./img/ecommerce.png') %>" alt="blog custom icon" class="img nabidka-okna-img-white">
-					</div>
-					<div class="nabidka-okna-text">
-						<h2 class="is-size-2">Ecommerce</h2>
-						<p>Lorem Ipsum dolor sit amet koupím si akcie amazonu a budu rich jak píča borci.</p>
+					<div class="card">
+						<div class="card-img">
+							<span class="typcn typcn-thumbs-up card-icon"></span>
+							<h2>PR done right</h2>
+						</div>
+						<div class="card-text">
+							<p>Správa všech sociálních sítí webu na jednom místě. Jednoduše.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="nabidka-vyber">
-			<h2 class="unskewed">Začněme s typem řešení.</h2>
-			<div class="option unskewed">
-				<div class="text">
-					<h4>Webová prezentace</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, vero repellendus, temporibus
-						accusamus in cumque aliquid fugiat reiciendis exercitationem quibusdam
-						laudantium velit odio facere? Necessitatibus numquam eum optio illum modi.
-					</p>
-				</div>
-				<div class="image">
-					<img src="" alt="" />
-				</div>
-			</div>
 		</div>
-		<div id="nabidka-vyber-bottom">
+		<div class="skewed-backg">
+			<!--JUST A PLACEHOLDER-->
+		</div>
+	</section>
+	<section class="solutions">
+		<div class="sol-text">
+			<h2>Začněme s typem řešení</h2>
 		</div>
 	</section>
 	<!-- PORTFOLIO -->

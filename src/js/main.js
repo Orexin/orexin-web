@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	AOS.init({ once: true });
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
 
-	new Splide( '.splide' ).mount();
+	var elms = document.getElementsByClassName('splide');
+	for (var i = 0, len = elms.length; i < len; i++) {
+		new Splide(elms[i]).mount();
+	}
 });
 
 underline.shiftingUnderline();
 //skew.onscrollSkew();
-

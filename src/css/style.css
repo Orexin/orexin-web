@@ -536,7 +536,6 @@ nav .kontakt-container div:hover {
 
 /*! STORY!*/
 #story {
-	height: 50vh;
 	width: 100%;
 	background: var(--violet-dark);
 }

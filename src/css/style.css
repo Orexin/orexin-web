@@ -629,20 +629,37 @@ nav .kontakt-container div:hover {
 	font-weight: 900;
 }
 
+.nase-sluzby-img-container-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.nase-sluzby-img-container {
+}
+
+.nase-sluzby-img,
+.nase-sluzby-img-kokot {
+	max-height: 75vh;
+	text-align: center;
+}
+
 .nase-sluzby-img {
-	position: relative;
+	position: absolute;
 	z-index: 1000;
 	box-shadow: 30px 30px 100px #000;
 }
 
 .nase-sluzby-img-kokot {
+	display: flex;
+	flex-direction: column;
 	position: absolute;
-	transform: translateX(-1375px) translateY(30px);
+	margin-left: 30px !important;
+	margin-top: 30px !important;
 	filter: blur(5px);
 }
 
 #nase-sluzby-content {
-	margin-top: 70px !important;
+	margin-top: 80vh !important;
 }
 /*! SLUZBY END!*/
 

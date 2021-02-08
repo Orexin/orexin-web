@@ -351,11 +351,13 @@ nav .kontakt-container div:hover {
 	margin: 15px;
 	overflow: hidden !important;
 	padding: 15px;
+	box-shadow: 0.1px 10px 75px 1px #888888 inset !important;
 }
 
 .card:hover {
 	transform: translateY(-25px);
 	background-color: var(--violet-light);
+	box-shadow: 0.1px 0.1px 10px 1px var(--violet) inset !important;
 }
 .card:hover > .card-text {
 	transform: translateY(0px);

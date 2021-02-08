@@ -241,6 +241,10 @@ nav .kontakt-container div:hover {
 
 /* UVOD */
 
+.main-arrow {
+	padding: 15px 15px 15px 15px;
+}
+
 #uvod {
 	height: fit-content;
 }
@@ -284,9 +288,13 @@ nav .kontakt-container div:hover {
 	margin-top: -40px !important;
 }
 
+#get-started-button a {
+	width: fit-content !important;
+}
+
 #get-started-button a div {
 	background: var(--violet);
-	border-radius: 10vh;
+	border-radius: 35px;
 	font-size: 30px;
 	transition: all 0.3s ease-in-out;
 	text-align: center;

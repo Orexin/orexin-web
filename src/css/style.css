@@ -675,6 +675,111 @@ nav .kontakt-container div:hover {
 }
 /*! SLUZBY END!*/
 
+/*! FAQ!*/
+
+.uvod-subpages {
+	background: url(./../img/hero.webp) center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+}
+
+.uvod-subpages.text {
+	background: none;
+	padding: 120px 0 0 0;
+}
+
+.uvod-subpages.text h1 {
+	font-size: 80px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 9vh;
+}
+
+.uvod-subpages-faq.text h1 {
+	margin-bottom: 0;
+}
+
+.uvod-subpages-faq.text p {
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+#faq {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.faq-questions-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.faq-questions {
+	display: flex;
+	flex-direction: row;
+}
+
+.faq-question {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	border: 2px RGBA(0, 0, 0, 0.1) solid;
+	box-shadow: 0px 0px 50px #35353538 !important;
+}
+
+.faq-question h3 {
+	color: var(--violet);
+	font-size: 25px;
+	font-weight: 900;
+	display: inline;
+}
+
+.faq-icon-container,
+.faq-icon-container i {
+	display: inline;
+	color: var(--violet);
+	font-size: 25px;
+	text-align: right;
+	float: right;
+}
+
+.faq-icon-container:hover {
+	cursor: pointer;
+}
+
+.faq-questions-content {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.faq-question-text p {
+	color: var(--violet-darker);
+}
+
+.faq-question-button a {
+	color: var(--violet-darker);
+	border-radius: 30px;
+	border: 2px var(--violet-darker) solid;
+	float: right;
+	padding: 3px 7px 3px 7px;
+}
+
+.faq-question-button a div {
+	color: var(--violet-darker);
+}
+
+/*! FAQ END!*/
+
 /*! FOOTER !*/
 
 footer {

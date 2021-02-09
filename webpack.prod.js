@@ -71,6 +71,12 @@ module.exports = {
 			chunks: ['main'],
 			filename: 'contact.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/faq/faq.html',
+			inject: 'body',
+			chunks: ['main'],
+			filename: 'faq.html'
+		}),
 		new MiniCssExtractPlugin({
 			filename: "[name].[contenthash].css",
 			chunkFilename: "[id].[contenthash].css"

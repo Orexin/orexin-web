@@ -85,9 +85,120 @@
 		<span id="nav-indicator" style="transition: all 0.5s ease-in-out !important"></span>
 	</nav>
 	<!-- UVOD SUBPAGES -->
-	<section class="uvod-sub-pages">
-		<img src="<%= require('./../img/uvod-bg-blur-sm.png') %>" alt="" />
+	<section class="uvod-subpages uvod-subpages-faq">
+		<div class="uvod-subpages uvod-subpages-faq text container">
+			<div class="column">
+				<h1>FAQ</h1>
+				<p>Často kladené otázky</p>
+			</div>
+		</div>
 	</section>
+
+	<!-- FAQ -->
+	<section id="faq">
+		<div class="column is-5 faq-questions-container">
+			<div class="faq-questions">
+				<div class="column mt-2 faq-question">
+					<div class="column faq-question-title">
+						<h3>Ochrana osobních údajů</h3>
+						<div class="faq-icon-container" onclick="rockAndRoll(0)">
+							<i class="faq-icon fa fa-chevron-down"></i>
+						</div>
+					</div>
+					<div class="faq-questions-content">
+						<div class="column faq-question-text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique ipsam eligendi, aut dicta
+								voluptas
+								quam ullam aliquam nam ipsum tempora atque modi harum quas molestias, architecto sequi temporibus
+								commodi.
+							</p>
+						</div>
+						<div class="column faq-question-button">
+							<a href="./../terms-and-conditions.html">
+								<div>Dozvědět se více</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-questions">
+				<div class="column mt-2 faq-question">
+					<div class="column faq-question-title">
+						<h3>Obchodní podmínky</h3>
+						<div class="faq-icon-container" onclick="rockAndRoll(1)">
+							<i class="faq-icon fa fa-chevron-down"></i>
+						</div>
+					</div>
+					<div class="faq-questions-content">
+						<div class="column faq-question-text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique ipsam eligendi, aut dicta
+								voluptas
+								quam ullam aliquam nam ipsum tempora atque modi harum quas molestias, architecto sequi temporibus
+								commodi.
+							</p>
+						</div>
+						<div class="column faq-question-button">
+							<a href="./../terms-and-conditions.html">
+								<div>Dozvědět se více</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-questions">
+				<div class="column mt-2 faq-question">
+					<div class="column faq-question-title">
+						<h3>Předání práv webu</h3>
+						<div class="faq-icon-container" onclick="rockAndRoll(2)">
+							<i class="faq-icon fa fa-chevron-down"></i>
+						</div>
+					</div>
+					<div class="faq-questions-content">
+						<div class="column faq-question-text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique ipsam eligendi, aut dicta
+								voluptas
+								quam ullam aliquam nam ipsum tempora atque modi harum quas molestias, architecto sequi temporibus
+								commodi.
+							</p>
+						</div>
+						<div class="column faq-question-button">
+							<a href="./../terms-and-conditions.html">
+								<div>Dozvědět se více</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-questions">
+				<div class="column mt-2 faq-question">
+					<div class="column faq-question-title">
+						<h3>Roční platba služeb</h3>
+						<div class="faq-icon-container" onclick="rockAndRoll(3)">
+							<i class="faq-icon fa fa-chevron-down"></i>
+						</div>
+					</div>
+					<div class="faq-questions-content">
+						<div class="column faq-question-text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique ipsam eligendi, aut dicta
+								voluptas
+								quam ullam aliquam nam ipsum tempora atque modi harum quas molestias, architecto sequi temporibus
+								commodi.
+							</p>
+						</div>
+						<div class="column faq-question-button">
+							<a href="./../terms-and-conditions.html">
+								<div>Dozvědět se více</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column is-4 faq-form-container">
+			kokot
+		</div>
+	</section>
+
 	<!-- FOOTER -->
 	<footer>
 		<div class="footer-kontakt-button columns is-centered">
@@ -159,6 +270,24 @@
 			<div class="column is-half is-size-6" style="text-align: center">&copy; Orexin Solutions | 2021</div>
 		</div>
 	</footer>
+	<script>
+		function rockAndRoll(cardNum) {
+			var arrow = document.getElementsByClassName('faq-icon-container');
+			var arrowClass = document.getElementsByClassName('faq-icon');
+			var content = document.getElementsByClassName('faq-questions-content');
+			var l = content.length;
+			if (content.className != 'show') {
+				arrowClass[cardNum].classList.remove('fa-chevron-down');
+				arrowClass[cardNum].classList.add('fa-chevron-up');
+				content[cardNum].classList.toggle("show");
+				console.log('kokot');
+			} else if (content.classList.contains('show')) {
+				content[cardNum].classList.toggle("fa-chevron-down");
+				content[cardNum].style.display = "none"
+				console.log('kokotkokot')
+			}
+		}
+	</script>
 </body>
 
 </html>

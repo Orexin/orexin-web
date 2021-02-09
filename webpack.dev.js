@@ -6,7 +6,8 @@ module.exports = {
 
 	entry: {
 		main: './src/js/main.js',
-		contact: './src/js/contact.js'
+		contact: './src/js/contact.js',
+		faq: './src/js/faq.js'
 	},
 
 	devServer: {
@@ -82,7 +83,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/faq/faq.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'faq'],
 			filename: 'faq.html'
 		}),
 		new HtmlWebpackPlugin({

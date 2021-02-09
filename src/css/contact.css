@@ -1,5 +1,19 @@
+/* contact.css */
+
 #contact {
-	background-color: var(--violet-darker);
+	background-color: #f0e9fe;
+}
+
+.btn {
+	padding: 7px 25px;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s ease-in-out;
+	border: none;
+	background-color: var(--purple);
 }
 
 .contact-hero {
@@ -39,16 +53,8 @@
 	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.btn {
-	padding: 7px 25px;
-	color: white;
-	font-weight: 600;
-	font-size: 16px;
-	border-radius: 20px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: all 0.3s ease-in-out;
-	border: none;
-	background-color: var(--purple);
+.contact-left * {
+	color: var(--text-dark);
 }
 
 .contact-left-text {
@@ -107,8 +113,14 @@
 }
 
 .contact-form {
-	width: 80%;
-	margin-top: -154px;
+	width: 85%;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 30px;
+	transition: all 0.5s;
+}
+
+.contact-form:hover {
+	transform: translateY(-154px);
 }
 
 .contact-form-header {
@@ -148,6 +160,13 @@
 
 .contact-form-body {
 	background: #f8f4fe;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	transition: all 0.5s;
+}
+
+.contact-form-body:hover {
+	background-color: var(--violet-dark);
 }
 
 .contact-form-body label,

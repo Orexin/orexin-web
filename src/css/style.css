@@ -748,7 +748,7 @@ footer > .top-banner {
 	gap: 15px;
 	align-items: center;
 	margin-top: 50px;
-	border-top: solid white 1px;
+	/* border-top: solid white 1px; */ /*? huh yay or nay */
 }
 .nobody-cares > a {
 	color: var(--text-gray);

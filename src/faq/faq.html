@@ -114,7 +114,7 @@
 							</p>
 						</div>
 						<div class="column faq-question-button">
-							<a href="./../terms-and-conditions.html">
+							<a href="./../privacy.html">
 								<div>Dozvědět se více</div>
 							</a>
 						</div>
@@ -162,7 +162,7 @@
 							</p>
 						</div>
 						<div class="column faq-question-button">
-							<a href="./../terms-and-conditions.html">
+							<a href="./web-rights-transfer.html">
 								<div>Dozvědět se více</div>
 							</a>
 						</div>
@@ -186,7 +186,7 @@
 							</p>
 						</div>
 						<div class="column faq-question-button">
-							<a href="./../terms-and-conditions.html">
+							<a href="./annual-payment.html">
 								<div>Dozvědět se více</div>
 							</a>
 						</div>
@@ -276,14 +276,15 @@
 			var arrowClass = document.getElementsByClassName('faq-icon');
 			var content = document.getElementsByClassName('faq-questions-content');
 			var l = content.length;
-			if (content.className != 'show') {
+			if (arrowClass[cardNum].classList.contains('fa-chevron-down')) {
 				arrowClass[cardNum].classList.remove('fa-chevron-down');
 				arrowClass[cardNum].classList.add('fa-chevron-up');
 				content[cardNum].classList.toggle("show");
 				console.log('kokot');
-			} else if (content.classList.contains('show')) {
-				content[cardNum].classList.toggle("fa-chevron-down");
-				content[cardNum].style.display = "none"
+			} else {
+				arrowClass[cardNum].classList.remove('fa-chevron-up');
+				arrowClass[cardNum].classList.add('fa-chevron-down');
+				content[cardNum].classList.toggle("show");
 				console.log('kokotkokot')
 			}
 		}

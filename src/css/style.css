@@ -748,14 +748,21 @@ nav .kontakt-container div:hover {
 	font-size: 25px;
 	text-align: right;
 	float: right;
+	transition-duration: 0.5s;
+}
+
+.faq-icon {
+	transition-duration: 0.5s;
 }
 
 .faq-icon-container:hover {
 	cursor: pointer;
+	transform: scale(1.1);
 }
 
 .faq-questions-content {
 	display: none;
+	transition: all 0.5s ease-in-out;
 }
 
 .show {
@@ -776,6 +783,48 @@ nav .kontakt-container div:hover {
 
 .faq-question-button a div {
 	color: var(--violet-darker);
+}
+
+.faq-question-button a {
+	border-radius: 10rem;
+	color: #fff;
+	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.faq-question-button a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	z-index: -2;
+}
+.faq-question-button a:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: var(--violet-darker);
+	transition: all 0.3s;
+	border-radius: 30px;
+	z-index: -1;
+}
+
+.faq-question-button a:hover div {
+	color: #fff;
+}
+
+.faq-question-button a:hover {
+	color: #fff;
+}
+.faq-question-button a:hover:before {
+	width: 100%;
 }
 
 /*! FAQ END!*/

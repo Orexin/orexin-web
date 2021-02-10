@@ -4,6 +4,7 @@ import 'typicons.font/src/font/typicons.css';
 import 'bulma/css/bulma.min.css';
 import 'aos/dist/aos.css';
 import '@splidejs/splide/dist/css/splide.min.css';
+import '../components/navbar';
 
 //JS
 import AOS from 'aos';

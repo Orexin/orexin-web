@@ -764,6 +764,7 @@ nav .kontakt-container div:hover {
 	overflow: hidden;
 	max-height: 0;
 	transition: all 0.5s ease-in-out;
+	transition: max-height 1s ease-in-out;
 }
 
 .faq-show {

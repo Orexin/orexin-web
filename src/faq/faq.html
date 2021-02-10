@@ -102,7 +102,7 @@
 				<div class="column mt-2 faq-question">
 					<div class="column faq-question-title">
 						<h3>Ochrana osobních údajů</h3>
-						<div class="faq-icon-container" onclick="rockAndRoll(0)">
+						<div class="faq-icon-container">
 							<i class="faq-icon fa fa-chevron-down"></i>
 						</div>
 					</div>
@@ -126,7 +126,7 @@
 				<div class="column mt-2 faq-question">
 					<div class="column faq-question-title">
 						<h3>Obchodní podmínky</h3>
-						<div class="faq-icon-container" onclick="rockAndRoll(1)">
+						<div class="faq-icon-container">
 							<i class="faq-icon fa fa-chevron-down"></i>
 						</div>
 					</div>
@@ -150,7 +150,7 @@
 				<div class="column mt-2 faq-question">
 					<div class="column faq-question-title">
 						<h3>Předání práv webu</h3>
-						<div class="faq-icon-container" onclick="rockAndRoll(2)">
+						<div class="faq-icon-container">
 							<i class="faq-icon fa fa-chevron-down"></i>
 						</div>
 					</div>
@@ -174,7 +174,7 @@
 				<div class="column mt-2 faq-question">
 					<div class="column faq-question-title">
 						<h3>Roční platba služeb</h3>
-						<div class="faq-icon-container" onclick="rockAndRoll(3)">
+						<div class="faq-icon-container">
 							<i class="faq-icon fa fa-chevron-down"></i>
 						</div>
 					</div>
@@ -271,25 +271,6 @@
 			<div class="column is-half is-size-6" style="text-align: center">&copy; Orexin Solutions | 2021</div>
 		</div>
 	</footer>
-	<script>
-		function rockAndRoll(cardNum) {
-			var arrow = document.getElementsByClassName('faq-icon-container');
-			var arrowClass = document.getElementsByClassName('faq-icon');
-			var content = document.getElementsByClassName('faq-questions-content');
-			var l = content.length;
-			if (arrowClass[cardNum].classList.contains('fa-chevron-down')) {
-				arrowClass[cardNum].classList.remove('fa-chevron-down');
-				arrowClass[cardNum].classList.add('fa-chevron-up');
-				content[cardNum].classList.toggle("show");
-				console.log('kokot');
-			} else {
-				arrowClass[cardNum].classList.remove('fa-chevron-up');
-				arrowClass[cardNum].classList.add('fa-chevron-down');
-				content[cardNum].classList.toggle("show");
-				console.log('kokotkokot')
-			}
-		}
-	</script>
 </body>
 
 </html>

@@ -3,10 +3,11 @@ import './../css/style.css';
 import 'typicons.font/src/font/typicons.css';
 import 'bulma/css/bulma.min.css';
 import 'aos/dist/aos.css';
-import Splide from '@splidejs/splide';
+import '@splidejs/splide/dist/css/splide.min.css';
 
 //JS
 import AOS from 'aos';
+import Splide from '@splidejs/splide';
 import * as skew from './onscroll-skew';
 import * as underline from './shifting-underline';
 

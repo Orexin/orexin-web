@@ -169,6 +169,12 @@
 	background-color: var(--violet-dark);
 }
 
+.contact-form-body:hover ~ .contact-form-body label,
+.contact-form-body:hover ~ .contact-form-body p,
+.contact-form-body:hover ~ .contact-form-body h4 {
+	color: #f0e9fe;
+}
+
 .contact-form-body label,
 .contact-form-body p,
 .contact-form-body h4 {

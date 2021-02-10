@@ -761,12 +761,13 @@ nav .kontakt-container div:hover {
 }
 
 .faq-questions-content {
-	display: none;
+	overflow: hidden;
+	max-height: 0;
 	transition: all 0.5s ease-in-out;
 }
 
-.show {
-	display: block;
+.faq-show {
+	max-height: 1000px;
 }
 
 .faq-question-text p {

@@ -90,14 +90,14 @@
 		<div class="uvod-subpages uvod-subpages-faq text container">
 			<div class="column">
 				<h1>FAQ</h1>
-				<p>Často kladené otázky</p>
+				<h2>Často kladené otázky</h2>
 			</div>
 		</div>
 	</section>
 
 	<!-- FAQ -->
 	<section id="faq">
-		<div class="column is-5 faq-questions-container">
+		<div class="column is-6 faq-questions-container">
 			<div class="faq-questions">
 				<div class="column mt-2 faq-question">
 					<div class="column faq-question-title">
@@ -195,8 +195,32 @@
 				</div>
 			</div>
 		</div>
-		<div class="column is-4 faq-form-container">
-			kokot
+		<div class="column is-offset-1 is-4">
+			<div class="columns ml-10 mr-10 faq-form-container">
+				<div class="column">
+					<div class="columns is-centered faq-form-title">
+						<div class="column">
+							<h2>Zeptejte se nás</h2>
+						</div>
+					</div>
+					<form action="POST">
+						<div class="columns mt-4 is-centered">
+							<input name="name" id="frmNameA" placeholder="Full name" required autocomplete="Vaše jméno">
+						</div>
+						<div class="columns mt-3 is-centered">
+							<input type="email" name="email" id="frmEmailA" placeholder="váš@email.cz" required autocomplete="email">
+						</div>
+						<div class="columns mt-3 is-centered">
+							<textarea name="message" id="frmMessageA" placeholder="Vaše zpráva" required></textarea>
+						</div>
+						<div class="columns mt-3 is-centered">
+							<div class="faq-form-button-container">
+								<input id="faq-form-button" type="submit" value="Odeslat">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section>
 

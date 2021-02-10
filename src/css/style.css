@@ -660,12 +660,12 @@ navbar-wrapper {
 	margin-bottom: 0;
 }
 
-.uvod-subpages-faq.text p {
+.uvod-subpages-faq.text h2 {
 	font-size: 25px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 5vh;
+	margin-bottom: 11vh;
 }
 
 #faq {
@@ -706,11 +706,11 @@ navbar-wrapper {
 	font-size: 25px;
 	text-align: right;
 	float: right;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 }
 
 .faq-icon {
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 }
 
 .faq-icon-container:hover {
@@ -726,7 +726,7 @@ navbar-wrapper {
 }
 
 .faq-show {
-	max-height: 1000px;
+	max-height: 19vh;
 }
 
 .faq-question-text p {
@@ -734,15 +734,15 @@ navbar-wrapper {
 }
 
 .faq-question-button a {
-	color: var(--violet-darker);
+	color: var(--violet-dark);
 	border-radius: 30px;
-	border: 2px var(--violet-darker) solid;
+	border: 2px var(--violet-dark) solid;
 	float: right;
 	padding: 3px 7px 3px 7px;
 }
 
 .faq-question-button a div {
-	color: var(--violet-darker);
+	color: var(--violet-dark);
 }
 
 .faq-question-button a {
@@ -770,7 +770,7 @@ navbar-wrapper {
 	left: 0;
 	width: 0%;
 	height: 100%;
-	background-color: var(--violet-darker);
+	background-color: var(--violet-dark);
 	transition: all 0.3s;
 	border-radius: 30px;
 	z-index: -1;
@@ -785,6 +785,50 @@ navbar-wrapper {
 }
 .faq-question-button a:hover:before {
 	width: 100%;
+}
+
+.faq-form-container {
+	position: absolute;
+	margin-top: -10vh !important;
+	background: var(--violet-dark);
+	border-radius: 20px;
+	border-top-right-radius: 30px;
+	padding: 30px;
+}
+
+.faq-form-title {
+	margin-top: -2vh !important;
+}
+
+.faq-form-title div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.faq-form-title div h2 {
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.faq-form-container div form input,
+.faq-form-container div form textarea {
+	color: var(--text-dark);
+	background-color: #f8f4fe;
+	border: 1px solid var(--violet);
+	border-radius: 20px;
+	padding: 6px 7px 6px 7px;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+}
+
+.faq-form-container div form textarea {
+	resize: none;
+	border-radius: 15px;
+}
+
+.faq-form-button-container {
 }
 
 /*! FAQ END!*/

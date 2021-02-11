@@ -721,7 +721,7 @@ navbar-wrapper {
 .faq-questions-content {
 	overflow: hidden;
 	max-height: 0;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	transition: max-height 1s ease-in-out;
 }
 
@@ -788,16 +788,24 @@ navbar-wrapper {
 }
 
 .faq-form-container {
-	position: absolute;
+	position: relative;
 	margin-top: -10vh !important;
 	background: var(--violet-dark);
 	border-radius: 20px;
 	border-top-right-radius: 30px;
 	padding: 30px;
+	z-index: 2;
+	box-shadow: 0px 0px 40px RGBA(0, 0, 0, 0.45) !important;
+	overflow: hidden;
 }
 
 .faq-form-title {
 	margin-top: -2vh !important;
+	z-index: 3;
+}
+
+.faq-form-title {
+	z-index: 3;
 }
 
 .faq-form-title div {
@@ -816,11 +824,12 @@ navbar-wrapper {
 .faq-form-container div form textarea {
 	color: var(--text-dark);
 	background-color: #f8f4fe;
-	border: 1px solid var(--violet);
+	border: none;
 	border-radius: 20px;
 	padding: 6px 7px 6px 7px;
 	transition: all 0.3s ease-in-out;
 	outline: none;
+	z-index: 3;
 }
 
 .faq-form-container div form textarea {
@@ -829,6 +838,59 @@ navbar-wrapper {
 }
 
 .faq-form-button-container {
+	border-radius: 15px;
+	padding: 30px;
+	transition: all 0.3s ease-in-out;
+	z-index: 3;
+}
+
+.faq-form-button-container input:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.faq-form-question-mark {
+	position: absolute;
+	z-index: -1;
+	margin-top: 50px;
+	transition: all 0.3s ease;
+}
+
+.faq-form-container div .faq-form-question-mark-1 {
+	animation: questionMark 5s ease-in-out infinite;
+}
+
+.faq-form-container div .faq-form-question-mark-2 {
+	margin-left: 70px;
+	animation: questionMark 5s 1s ease-in-out infinite;
+}
+
+.faq-form-container div .faq-form-question-mark-3 {
+	animation: questionMark 4s 1.5s ease-in-out infinite;
+	margin-left: 140px;
+}
+
+.faq-form-container div .faq-form-question-mark-4 {
+	animation: questionMark 5s 0.6s ease-in-out infinite;
+	margin-left: 210px;
+}
+
+.faq-form-container div .faq-form-question-mark-5 {
+	animation: questionMark 5s 1.9s ease-in-out infinite;
+}
+
+.faq-form-container div .faq-form-question-mark-6 {
+	animation: questionMark 5s 1.9s ease-in-out infinite;
+	margin-left: 140px;
+}
+
+@keyframes questionMark {
+	from {
+		margin-top: 50px;
+	}
+	to {
+		margin-top: -500px;
+	}
 }
 
 /*! FAQ END!*/

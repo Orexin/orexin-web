@@ -403,10 +403,10 @@ navbar-wrapper {
 	height: auto;
 	padding: 0px 5vw 0px 5vw;
 }
-.splide {
+.splide-index {
 	height: 80vh;
 }
-.splide__slide {
+.splide__slide-index {
 	width: 100%;
 	height: 80vh;
 }
@@ -436,7 +436,7 @@ navbar-wrapper {
 	transition-duration: 2s;
 }
 
-.splide__slide:hover > .portfolio-btn {
+.splide__slide-index:hover > .portfolio-btn {
 	opacity: 1;
 	top: 50%;
 }
@@ -501,6 +501,7 @@ navbar-wrapper {
 	color: var(--text-gray) !important;
 	font-size: 20px;
 }
+
 /*! QUOTE END !*/
 /*! ABOUT!*/
 
@@ -511,8 +512,7 @@ navbar-wrapper {
 }
 
 #story-title div {
-	margin-top: 10vh;
-	margin-left: 7vh;
+	margin: 7vh 0 2vh 1.5vh;
 }
 
 #story-title div h2 {
@@ -524,6 +524,35 @@ navbar-wrapper {
 #story-title div p {
 	font-size: 20px;
 	color: #fff;
+}
+
+.splide-about {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.splide-about div ul li img {
+	display: block;
+	width: 100vw;
+	height: 76vh;
+	position: relative;
+}
+
+.splide__slide-about-1 h2 {
+	position: absolute;
+	top: 0;
+	font-size: 35px;
+	font-weight: 900;
+	margin: 3vh 0 1vh 7vh;
+	line-height: 40px;
+}
+
+.splide__slide-about-1 h3 {
+	position: absolute;
+	top: 15vh;
+	font-size: 25px;
+	margin: 4vh 0 1vh 7vh;
+	line-height: 30px;
 }
 /*! STORY END!*/
 
@@ -893,15 +922,6 @@ navbar-wrapper {
 	margin-left: 90px;
 }
 
-@keyframes questionMark {
-	from {
-		margin-top: 50px;
-	}
-	to {
-		margin-top: -500px;
-	}
-}
-
 /*! FAQ END!*/
 
 /*! FOOTER !*/
@@ -956,19 +976,54 @@ footer > .top-banner {
 	background-color: var(--violet);
 	color: white !important;
 }
-.upper {
+.upper,
+.upper a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
-.upper > img {
+.upper > a img {
 	height: 50px;
 	width: auto;
+	transition: all 0.3s ease-in-out;
 }
-.upper > h3 {
+.upper > a h3 {
 	margin: 15px;
+	transition: all 0.3s ease-in-out;
 }
+
+.upper > a div {
+	position: relative;
+	margin-top: -1.75vh;
+	height: 1px;
+	background: #fff;
+	width: 0%;
+	text-align: center;
+	justify-content: center;
+	display: block;
+	transition: width 0.3s ease-in-out;
+}
+
+@keyframes footerFromLeft {
+	from {
+		width: 0;
+	}
+	to {
+		width: 89.5%;
+	}
+}
+
+.upper a:hover h3,
+.upper a:hover img {
+	transform: scale(1.05);
+}
+
+.upper a:hover div {
+	animation: footerFromLeft 0.3s ease-in-out forwards;
+}
+
 .socials {
 	margin-top: 25px;
 	display: flex;
@@ -1038,6 +1093,15 @@ footer > .top-banner {
 	}
 	to {
 		transform: scale(1);
+	}
+}
+
+@keyframes questionMark {
+	from {
+		margin-top: 50px;
+	}
+	to {
+		margin-top: -500px;
 	}
 }
 

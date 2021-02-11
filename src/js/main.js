@@ -19,7 +19,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 	var elms = document.getElementsByClassName('splide');
 	for (var i = 0, len = elms.length; i < len; i++) {
-		new Splide(elms[i]).mount();
+		new Splide(elms[i], {
+			type: 'loop',
+			autoplay: true,
+			interval: 6000,
+			speed: 1500,
+		}).mount();
 	}
 });
 

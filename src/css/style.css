@@ -849,39 +849,48 @@ navbar-wrapper {
 	cursor: pointer;
 }
 
+.faq-question-mark-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .faq-form-question-mark {
 	position: absolute;
 	z-index: -1;
 	margin-top: 50px;
 	transition: all 0.3s ease;
+	text-align: center;
 }
 
 .faq-form-container div .faq-form-question-mark-1 {
 	animation: questionMark 5s ease-in-out infinite;
+	margin-left: -220px;
 }
 
 .faq-form-container div .faq-form-question-mark-2 {
-	margin-left: 70px;
+	margin-left: -90px;
 	animation: questionMark 5s 1s ease-in-out infinite;
 }
 
 .faq-form-container div .faq-form-question-mark-3 {
 	animation: questionMark 4s 1.5s ease-in-out infinite;
-	margin-left: 140px;
+	margin-left: 90px;
 }
 
 .faq-form-container div .faq-form-question-mark-4 {
 	animation: questionMark 5s 0.6s ease-in-out infinite;
-	margin-left: 210px;
+	margin-left: 220px;
 }
 
 .faq-form-container div .faq-form-question-mark-5 {
 	animation: questionMark 5s 1.9s ease-in-out infinite;
+	margin-left: -220px;
 }
 
 .faq-form-container div .faq-form-question-mark-6 {
 	animation: questionMark 5s 1.9s ease-in-out infinite;
-	margin-left: 140px;
+	margin-left: 90px;
 }
 
 @keyframes questionMark {

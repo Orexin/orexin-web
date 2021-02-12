@@ -931,6 +931,11 @@ footer-wrapper {
 	padding-top: 25px;
 	display: block;
 }
+footer-wrapper > .footer-content > .upper > img {
+	width: 50px;
+	margin: 15px;
+	height: auto;
+}
 
 .top-banner {
 	display: flex;

@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	document.getElementById('preloader').style.display = 'none';
 	var elms = document.getElementsByClassName('splide');
 	for (var i = 0, len = elms.length; i < len; i++) {
-		new Splide(elms[i]).mount();
+		new Splide(elms[i], {
+			type: 'loop',
+			autoplay: true,
+			interval: 6000,
+			speed: 1500,
+		}).mount();
 	}
 });
 

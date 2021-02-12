@@ -402,10 +402,10 @@ navbar-wrapper {
 	height: auto;
 	padding: 0px 5vw 0px 5vw;
 }
-.splide {
+.splide-index {
 	height: 80vh;
 }
-.splide__slide {
+.splide__slide-index {
 	width: 100%;
 	height: 80vh;
 }
@@ -435,7 +435,7 @@ navbar-wrapper {
 	transition-duration: 2s;
 }
 
-.splide__slide:hover > .portfolio-btn {
+.splide__slide-index:hover > .portfolio-btn {
 	opacity: 1;
 	top: 50%;
 }
@@ -500,6 +500,7 @@ navbar-wrapper {
 	color: var(--text-gray) !important;
 	font-size: 20px;
 }
+
 /*! QUOTE END !*/
 /*! ABOUT!*/
 
@@ -510,8 +511,7 @@ navbar-wrapper {
 }
 
 #story-title div {
-	margin-top: 10vh;
-	margin-left: 7vh;
+	margin: 7vh 0 2vh 1.5vh;
 }
 
 #story-title div h2 {
@@ -523,6 +523,35 @@ navbar-wrapper {
 #story-title div p {
 	font-size: 20px;
 	color: #fff;
+}
+
+.splide-about {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.splide-about div ul li img {
+	display: block;
+	width: 100vw;
+	height: 76vh;
+	position: relative;
+}
+
+.splide__slide-about-1 h2 {
+	position: absolute;
+	top: 0;
+	font-size: 35px;
+	font-weight: 900;
+	margin: 3vh 0 1vh 7vh;
+	line-height: 40px;
+}
+
+.splide__slide-about-1 h3 {
+	position: absolute;
+	top: 15vh;
+	font-size: 25px;
+	margin: 4vh 0 1vh 7vh;
+	line-height: 30px;
 }
 /*! STORY END!*/
 
@@ -720,12 +749,12 @@ navbar-wrapper {
 .faq-questions-content {
 	overflow: hidden;
 	max-height: 0;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	transition: max-height 1s ease-in-out;
 }
 
 .faq-show {
-	max-height: 19vh;
+	max-height: 22vh;
 }
 
 .faq-question-text p {
@@ -787,16 +816,24 @@ navbar-wrapper {
 }
 
 .faq-form-container {
-	position: absolute;
+	position: relative;
 	margin-top: -10vh !important;
 	background: var(--violet-dark);
 	border-radius: 20px;
 	border-top-right-radius: 30px;
 	padding: 30px;
+	z-index: 2;
+	box-shadow: 0px 0px 40px RGBA(0, 0, 0, 0.45) !important;
+	overflow: hidden;
 }
 
 .faq-form-title {
 	margin-top: -2vh !important;
+	z-index: 3;
+}
+
+.faq-form-title {
+	z-index: 3;
 }
 
 .faq-form-title div {
@@ -808,23 +845,80 @@ navbar-wrapper {
 
 .faq-form-title div h2 {
 	font-weight: 900;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .faq-form-container div form input,
 .faq-form-container div form textarea {
 	color: var(--text-dark);
 	background-color: #f8f4fe;
-	border: 1px solid var(--violet);
+	border: none;
 	border-radius: 20px;
 	padding: 6px 7px 6px 7px;
 	transition: all 0.3s ease-in-out;
 	outline: none;
+	z-index: 3;
 }
 
 .faq-form-container div form textarea {
 	resize: none;
 	border-radius: 15px;
+}
+
+.faq-form-button-contaner {
+	border-radius: 15px;
+	padding: 30px;
+	transition: all 0.3s ease-in-out;
+	z-index: 3;
+}
+
+.faq-form-button-container input:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.faq-question-mark-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.faq-form-question-mark {
+	position: absolute;
+	z-index: -1;
+	margin-top: 50px;
+	transition: all 0.3s ease;
+	text-align: center;
+}
+
+.faq-form-container div .faq-form-question-mark-1 {
+	animation: questionMark 5s ease-in-out infinite;
+	margin-left: -220px;
+}
+
+.faq-form-container div .faq-form-question-mark-2 {
+	margin-left: -90px;
+	animation: questionMark 5s 1s ease-in-out infinite;
+}
+
+.faq-form-container div .faq-form-question-mark-3 {
+	animation: questionMark 4s 1.5s ease-in-out infinite;
+	margin-left: 90px;
+}
+
+.faq-form-container div .faq-form-question-mark-4 {
+	animation: questionMark 5s 0.6s ease-in-out infinite;
+	margin-left: 220px;
+}
+
+.faq-form-container div .faq-form-question-mark-5 {
+	animation: questionMark 5s 1.9s ease-in-out infinite;
+	margin-left: -220px;
+}
+
+.faq-form-container div .faq-form-question-mark-6 {
+	animation: questionMark 5s 1.9s ease-in-out infinite;
+	margin-left: 90px;
 }
 
 /*! FAQ END!*/
@@ -882,19 +976,54 @@ footer-wrapper {
 	background-color: var(--violet);
 	color: white !important;
 }
-.upper {
+.upper,
+.upper a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
-.upper > img {
+.upper > a img {
 	height: 50px;
 	width: auto;
+	transition: all 0.3s ease-in-out;
 }
-.upper > h3 {
+.upper > a h3 {
 	margin: 15px;
+	transition: all 0.3s ease-in-out;
 }
+
+.upper > a div {
+	position: relative;
+	margin-top: -1.75vh;
+	height: 1px;
+	background: #fff;
+	width: 0%;
+	text-align: center;
+	justify-content: center;
+	display: block;
+	transition: width 0.3s ease-in-out;
+}
+
+@keyframes footerFromLeft {
+	from {
+		width: 0;
+	}
+	to {
+		width: 89.5%;
+	}
+}
+
+.upper a:hover h3,
+.upper a:hover img {
+	transform: scale(1.05);
+}
+
+.upper a:hover div {
+	animation: footerFromLeft 0.3s ease-in-out forwards;
+}
+
 .socials {
 	margin-top: 25px;
 	display: flex;
@@ -964,6 +1093,15 @@ footer-wrapper {
 	}
 	to {
 		transform: scale(1);
+	}
+}
+
+@keyframes questionMark {
+	from {
+		margin-top: 50px;
+	}
+	to {
+		margin-top: -500px;
 	}
 }
 

@@ -35,7 +35,8 @@ module.exports = {
 				test: /\.css$/,
 				use: [
 					MiniCssExtractPlugin.loader,
-					"css-loader"
+					"css-loader",
+					"style-loader"
 				]
 			},
 			// load images (base64 < 8192B)

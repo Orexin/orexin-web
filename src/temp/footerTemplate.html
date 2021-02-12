@@ -1,12 +1,4 @@
-const logoWhite = require('../img/Logo/Emblem/White/Emblem_white.svg');
-
-class Footer extends HTMLElement {
-	constructor() {
-		super();
-	}
-
-	connectedCallback() {
-		this.innerHTML = `
+<div class="footer">
 	<div class="footer-content">
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>
@@ -28,8 +20,4 @@ class Footer extends HTMLElement {
 		<a href="#">Předání práv webu</a>
 		<a href="#">Obchodní podmínky</a>
 	</div>
-		`;
-	}
-}
-
-customElements.define('footer-wrapper', Footer);
+</div>

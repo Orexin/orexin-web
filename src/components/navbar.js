@@ -24,19 +24,19 @@ class Navbar extends HTMLElement {
 	<div class="nav-links">
 		<ul>
 			<li>
-				<a href="/home.html">Domů</a>
+				<a href="index.html">Domů</a>
 			</li>
 			<li>
-				<a href="/about.html">O nás</a>
+				<a href="#">Úvod</a>
 			</li>
 			<li>
-				<a href="#">Item #3</a>
+				<a href="./about.html">O&nbsp;nás</a>
 			</li>
 			<li>
-				<a href="#">Item #4</a>
+				<a href="./services.html">Služby</a>
 			</li>
 			<li>
-				<a href="#">Item #5</a>
+				<a href="./FAQ.html">FAQ</a>
 			</li>
 		</ul>
 	</div>
@@ -55,16 +55,16 @@ class Navbar extends HTMLElement {
 				<a href="/public/home.html">Domů</a>
 			</li>
 			<li>
-				<a href="/public/produkty.html">Nabídka</a>
+				<a href="#">Úvod</a>
 			</li>
 			<li>
-				<a href="/o-nas">O&nbsp;nás</a>
+				<a href="./about.html">O&nbsp;nás</a>
 			</li>
 			<li>
-				<a href="/faq">FAQ</a>
+				<a href="./services.html">Služby</a>
 			</li>
 			<li>
-				<a href="/kontakt">Kontakt</a>
+				<a href="./FAQ.html">FAQ</a>
 			</li>
 		</ul>
 	</div>

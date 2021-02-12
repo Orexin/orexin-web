@@ -4,7 +4,10 @@ import 'typicons.font/src/font/typicons.css';
 import 'bulma/css/bulma.min.css';
 import 'aos/dist/aos.css';
 import '@splidejs/splide/dist/css/splide.min.css';
+
+// COMPONENTS
 import '../components/navbar';
+import '../components/footer';
 
 //JS
 import AOS from 'aos';
@@ -13,10 +16,9 @@ import * as skew from './onscroll-skew';
 import * as underline from './shifting-underline';
 
 document.addEventListener('DOMContentLoaded', function (event) {
-	document.getElementById('preloader').style.display = 'none';
 	AOS.init({ once: true });
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
-
+	document.getElementById('preloader').style.display = 'none';
 	var elms = document.getElementsByClassName('splide');
 	for (var i = 0, len = elms.length; i < len; i++) {
 		new Splide(elms[i]).mount();

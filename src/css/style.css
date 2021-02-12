@@ -18,7 +18,6 @@
 	--text-dark: #15052f;
 	--text-light: #fff;
 	--text-gray: #969696;
-	--borderRadius: 5px;
 }
 
 html {
@@ -472,7 +471,7 @@ navbar-wrapper {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	margin-bottom: 25px;
+	margin-bottom: 10vh; /* vh essential*/
 }
 .q-main > h1 {
 	font-size: 40px;
@@ -828,21 +827,18 @@ navbar-wrapper {
 	border-radius: 15px;
 }
 
-.faq-form-button-container {
-}
-
 /*! FAQ END!*/
 
 /*! FOOTER !*/
-
-footer {
-	margin-top: 10vh;
-	background: var(--violet);
+footer-wrapper {
+	background-color: var(--violet) !important;
 	width: 100%;
 	height: auto;
+	padding-top: 25px;
+	display: block;
 }
 
-footer > .top-banner {
+.top-banner {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -854,6 +850,7 @@ footer > .top-banner {
 	border-radius: 5px;
 	padding: 40px;
 
+	/*TO FIX*/
 	position: relative;
 	top: 50%;
 	left: 50%;

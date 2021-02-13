@@ -8,6 +8,11 @@ class Footer extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 	<div class="footer-content">
+		<div class="top-banner">
+			<h2>Připraveni?</h2>
+			<p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
+			<a href="#">Jdeme na to</a>
+		</div>
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>
 			<h3>OrexinSolutions 2021</h3>

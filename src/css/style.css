@@ -942,7 +942,6 @@ footer-wrapper {
 	background-color: var(--violet) !important;
 	width: 100%;
 	height: auto;
-	padding-top: 25px;
 	display: block;
 }
 footer-wrapper > .footer-content > .upper > img {
@@ -957,17 +956,15 @@ footer-wrapper > .footer-content > .upper > img {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--violet-darker);
-	height: 15vh;
 	width: 80vw;
-	border-radius: 5px;
-	padding: 40px;
-
-	/*TO FIX*/
-	position: relative;
-	top: 50%;
+	height: 160px;
+	position: absolute;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
+	padding: 40px;
+	margin-top: -80px;
+	border-radius: 5px;
+	background-color: var(--violet-darker);
 }
 
 .top-banner > h2 {
@@ -995,6 +992,11 @@ footer-wrapper > .footer-content > .upper > img {
 	background-color: var(--violet);
 	color: white !important;
 }
+
+.upper {
+	padding-top: 150px;
+}
+
 .upper,
 .upper a {
 	display: flex;
@@ -1068,7 +1070,8 @@ footer-wrapper > .footer-content > .upper > img {
 .nobody-cares > a {
 	color: var(--text-gray);
 	text-decoration: none;
-	margin: 10px;
+	margin: 10px 10px 30px;
+	font-size: 14px;
 }
 .nobody-cares > a:hover {
 	color: white !important;

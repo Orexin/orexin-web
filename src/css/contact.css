@@ -1,9 +1,5 @@
 /* contact.css */
 
-#contact {
-	background-color: #f0e9fe;
-}
-
 .btn {
 	padding: 7px 25px;
 	color: white;
@@ -16,13 +12,26 @@
 	background-color: var(--purple);
 }
 
+#contact {
+	background-color: #4508bd;
+	background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contact {
+	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.contact > .container {
+	margin-left: auto !important; /*! WTF BULMA??? */
+	margin-right: auto !important;
+}
+
 .contact-hero {
 	background: url(./../img/hero.webp) center no-repeat;
 	background-size: cover;
 }
 
 .contact-hero.text {
-	background: none;
 	padding: 120px 0 0 0;
 }
 
@@ -35,6 +44,20 @@
 	font-size: 30px;
 }
 
+.contact-hero.container {
+	background: none;
+}
+
+.contact-hero a {
+	font-size: 60px;
+}
+
+.contact-hero a > span:hover {
+	color: var(--violet-dark);
+	transition: all 0.5s ease;
+}
+
+/*
 .contact-hero.socials {
 	background: none;
 	padding: 0 0 45px 0;
@@ -46,11 +69,10 @@
 
 .contact-hero.socials > .column {
 	margin-left: -7px;
-}
-
-.contact {
-	min-height: 100vh;
-	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
+}*/
+.contact-left {
+	background: #4508bd;
+	padding-bottom: 20%;
 }
 
 .contact-left * {
@@ -117,10 +139,19 @@
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	border-radius: 30px;
 	transition: all 0.5s;
+	margin-top: -154px;
 }
 
 .contact-form:hover {
-	transform: translateY(-154px);
+	/*transform: translateY(-154px);*/
+}
+
+.contact .column.form-group {
+	margin: 20px;
+}
+
+.contact textarea {
+	margin: ;
 }
 
 .contact-form-header {
@@ -166,7 +197,7 @@
 }
 
 .contact-form-body:hover {
-	background-color: var(--violet-dark);
+	/*background-color: var(--violet-dark);*/
 }
 
 .contact-form-body:hover ~ .contact-form-body label,
@@ -179,6 +210,9 @@
 .contact-form-body p,
 .contact-form-body h4 {
 	color: var(--text-dark);
+	background: rgba(0, 0, 0, 0);
+	font-size: 13px;
+	margin-left: 6px;
 }
 
 .contact-form-body h4 {
@@ -217,7 +251,7 @@
 }
 
 .contact-form-body input[type='text']:not(:placeholder-shown) + label {
-	background: #fff;
+	/*background: #fff;*/
 	transform: translate(0, -50%);
 	opacity: 1;
 }

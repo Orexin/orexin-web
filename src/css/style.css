@@ -943,7 +943,9 @@ footer-wrapper {
 	width: 100%;
 	height: auto;
 	display: block;
+	margin-top: 90px;
 }
+
 footer-wrapper > .footer-content > .upper > img {
 	width: 50px;
 	margin: 15px;
@@ -965,6 +967,7 @@ footer-wrapper > .footer-content > .upper > img {
 	margin-top: -80px;
 	border-radius: 5px;
 	background-color: var(--violet-darker);
+	z-index: 5;
 }
 
 .top-banner > h2 {
@@ -973,14 +976,17 @@ footer-wrapper > .footer-content > .upper > img {
 	letter-spacing: 1px;
 	font-size: 25px;
 }
+
 .top-banner > p {
 	color: white !important;
 	text-align: center;
 	margin: 0px 10% 0px 10%;
 }
+
 .top-banner > p > strong {
 	color: white !important;
 }
+
 .top-banner > a {
 	color: white;
 	padding: 5px 15px 5px 15px;
@@ -988,6 +994,7 @@ footer-wrapper > .footer-content > .upper > img {
 	border-radius: 25px;
 	transition-duration: 0.3s;
 }
+
 .top-banner > a:hover {
 	background-color: var(--violet);
 	color: white !important;

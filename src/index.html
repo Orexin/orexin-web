@@ -86,35 +86,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 	</div>
 
 	<!-- NAV -->
-	<nav class="columns ml-0">
-		<a href="./index.html" id="nav-logo">
-			<div></div>
-		</a>
-		<a href="./index.html" class="active column is-1">
-			<span>Úvod</span>
-		</a>
-		<a href="./about.html" class="column is-1">
-			<span>O nás</span>
-		</a>
-		<a href="./services.html" class="column is-1">
-			<span>Služby</span>
-		</a>
-		<a href="./faq.html" class="column is-1">
-			<span>FAQ</span>
-		</a>
-		<a href="./contact.html" class="kontakt-container column is-1 is-offset-6">
-			<div>Kontakt</div>
-		</a>
-		<ul>
-			<!-- 				<li id="cs-flag">
-					<a href="#"><img src="<%= require('./img/flags/cs.png') %>" alt="cs-flag" /></a>
-				</li> do anglické verze -->
-			<li id="en-flag">
-				<a href="./../en/index.html"><img src="<%= require('./img/flags/en.png') %>" alt="en-flag" /></a>
-			</li>
-		</ul>
-		<span id="nav-indicator" style="transition: all 0.5s ease-in-out !important"></span>
-	</nav>
+	<navbar-wrapper></navbar-wrapper>
 
 	<!-- UVOD -->
 	<section id="uvod">
@@ -219,10 +191,10 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			<h2>Portfolio</h2>
 			<p>Referenční práce pro naše klienty</p>
 		</div>
-		<div class="splide">
+		<div class="splide splide-index">
 			<div class="splide__track">
 				<ul class="splide__list">
-					<li class="splide__slide">
+					<li class="splide__slide splide__slide-index">
 						<img src="#" alt="">
 						<h1>AHOJ AHOJ</h1>
 						<a class="portfolio-btn" href="#">Přejít na web</a>
@@ -265,36 +237,16 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 		</div>
 	</section>
 
+	<!--Banner onclick > contact -->
+	<div class="top-banner">
+		<h2>Připraveni?</h2>
+		<p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
+		<a href="#">Jdeme na to</a>
+	</div>
+
 	<!-- FOOTER -->
-	<footer>
-		<div class="top-banner">
-			<h2>Připraveni?</h2>
-			<p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
-			<a href="#">Jdeme na to</a>
-		</div>
-		<div class="footer-content">
-			<div class="upper">
-				<img src="<%= require('./img/Logo/Emblem/White/Emblem_white.svg') %>" alt="Orexin White Logo" </div>
-				<h3>OrexinSolutions 2021</h3>
-				<div class="socials">
-					<a href="https://www.facebook.com/OrexinEcontech" target="_blank"><span
-							class="typcn typcn-social-facebook-circular"></span></a>
-					<a href="https://www.instagram.com/orexin_econtech" target="_blank"><span
-							class="typcn typcn-social-instagram-circular"></span></a>
-					<a href="https://twitter.com/EcontechOrexin" target="_blank"><span
-							class="typcn typcn-social-twitter-circular"></span></a>
-					<a href="https://github.com/Orexin" target="_blank"><span
-							class="typcn typcn-social-github-circular"></span></a>
-				</div>
-			</div>
-		</div>
-		<div class="nobody-cares">
-			<a href="#">Nejčastější dotazy</a>
-			<a href="#">Ochrana osobních údajů</a>
-			<a href="#">Předání práv webu</a>
-			<a href="#">Obchodní podmínky</a>
-		</div>
-	</footer>
+	<footer-wrapper>
+	</footer-wrapper>
 </body>
 
 </html>

@@ -559,20 +559,42 @@ navbar-wrapper {
 
 #technologie {
 	background: var(--violet-dark);
+	overflow: hidden;
+}
+
+#technologie-title {
+	transform: rotateZ(-45deg);
+	display: inline-block;
 }
 
 #technologie-title div h2 {
 	font-size: 40px;
 	font-weight: 900;
-	transform: rotateZ(-45deg);
 	text-align: center;
-	display: inline-block;
+	transform: translateY(15vh) translateX(-15vh);
 }
 
-#technologie-title div p {
-	font-size: 20px;
-	color: var(--text-gray);
-	text-align: center;
+.technologie-presentation-column {
+	margin-left: -30vw;
+}
+
+.technologie-presentation-container {
+	background: #fff;
+}
+
+/* .technologie-presentation-container-1 {
+	margin-top: 7vw !important;
+	margin-right: 8vw !important;
+}
+ */
+#technologie-presentation div div {
+	position: relative;
+	transform: rotateZ(-45deg);
+	z-index: 2;
+}
+
+#technologie-presentation div div div img {
+	transform: rotateZ(135deg);
 }
 
 #technologie-main,

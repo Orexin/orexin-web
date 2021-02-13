@@ -763,10 +763,7 @@ navbar-wrapper {
 .faq-questions-content {
 	overflow: hidden;
 	max-height: 0;
-<<<<<<< HEAD
-=======
 	transition: all 0.2s ease-in-out;
->>>>>>> a5e366ce5c3d45cf56ace0e6f316fb14984f4e38
 	transition: max-height 1s ease-in-out;
 }
 

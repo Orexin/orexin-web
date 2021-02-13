@@ -939,11 +939,11 @@ navbar-wrapper {
 
 /*! FOOTER !*/
 footer-wrapper {
-	background-color: var(--violet) !important;
+	background-color: var(--violet-dark) !important;
 	width: 100%;
 	height: auto;
 	display: block;
-	margin-top: 90px;
+	margin-top: 80px;
 }
 
 footer-wrapper > .footer-content > .upper > img {

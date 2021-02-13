@@ -557,15 +557,16 @@ navbar-wrapper {
 
 /*! TECHNOLOGIE !*/
 
-#technologie-title {
-	margin-top: 5vh !important;
+#technologie {
+	background: var(--violet-dark);
 }
 
 #technologie-title div h2 {
-	color: var(--violet);
 	font-size: 40px;
 	font-weight: 900;
+	transform: rotateZ(-45deg);
 	text-align: center;
+	display: inline-block;
 }
 
 #technologie-title div p {

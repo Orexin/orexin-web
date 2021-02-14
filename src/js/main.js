@@ -35,7 +35,7 @@ underline.shiftingUnderline();
 
 // Testing
 module.exports = {
-	testFunct =function() {
-		return true
-	}
-}
+	testFunct: function () {
+		return true;
+	},
+};

@@ -1,4 +1,7 @@
 name: Commit CI/CD
+language: node_js
+  node_js:
+    - 7
 
 on:
   push:

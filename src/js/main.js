@@ -34,9 +34,8 @@ underline.shiftingUnderline();
 //skew.onscrollSkew();
 
 // Testing
-
 module.exports = {
-	sayHello: function () {
-		return 'hello';
-	},
-};
+	testFunct =function() {
+		return true
+	}
+}

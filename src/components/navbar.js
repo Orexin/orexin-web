@@ -1,6 +1,8 @@
 const logoWhite = require('../img/Logo/Emblem/White/Emblem_white.svg');
 const logoGrad = require('../img/Logo/Emblem/Gradient/Emblem_gradient.svg');
+const { Template } = require('webpack');
 
+<temlate></temlate>;
 class Navbar extends HTMLElement {
 	constructor() {
 		super();
@@ -15,6 +17,7 @@ class Navbar extends HTMLElement {
 	// appended into a document-connected element.
 	//This will happen each time the node is moved,
 	//and may happen before the element's contents have been fully parsed.
+
 	connectedCallback() {
 		this.innerHTML = `
 		<div class="logo">

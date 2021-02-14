@@ -2,16 +2,15 @@ const path = require('path');
 const buildPath = path.resolve(__dirname, 'dist');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
 
 	devtool: 'source-map',
 
 	entry: {
-		main: './src/main.js'
+		main: './src/js/main.js',
+		contact: './src/js/contact.js',
+		faq: './src/js/faq.js'
 	},
 
 	output: {
@@ -34,66 +33,86 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					MiniCssExtractPlugin.loader,
-					"css-loader",
-					"style-loader"
+				"style-loader",
+				"css-loader"
 				]
 			},
 			// load images (base64 < 8192B)
 			{
-				test: /\.(png|jpg|gif)$/,
-				use: [{
-					loader: 'url-loader',
-					options: {
-						name: '[path][name].[ext]?hash=[hash:20]',
-						limit: 8192
-					}
-				}]
+				test: /\.(png|jpg|gif|webp)$/,
+				type: 'asset/resource',
+				generator: {
+					filename: 'img/[name][hash].[ext]'
+				}
 			},
-			// load svg
+			// load icons
 			{
+				test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+				type: 'asset/resource'
+			}
+			// load svg
+			/*{
 				test: /\.svg$/,
 				use: ["file-loader"]
-			}
+			}*/
 		]
 	},
 
+
 	plugins: [
-		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
-			inject: 'body',
+			inject: true,
 			chunks: ['main'],
 			filename: 'index.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/contact.html',
-			inject: 'body',
+			template: './src/about.html',
+			inject: true,
 			chunks: ['main'],
+			filename: 'about.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/services.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'services.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/contact.html',
+			inject: true,
+			chunks: ['main', 'contact'],
 			filename: 'contact.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/faq/faq.html',
-			inject: 'body',
-			chunks: ['main'],
+			inject: true,
+			chunks: ['main', 'faq'],
 			filename: 'faq.html'
 		}),
-		new MiniCssExtractPlugin({
-			filename: "[name].[contenthash].css",
-			chunkFilename: "[id].[contenthash].css"
+		new HtmlWebpackPlugin({
+			template: './src/faq/annual-payment.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'annual-payment.html'
 		}),
-		new OptimizeCssAssetsPlugin({
-			cssProcessor: require('cssnano'),
-			cssProcessorOptions: {
-				map: {
-					inline: false,
-				},
-				discardComments: {
-					removeAll: true
-				},
-				discardUnused: false
-			},
-			canPrint: true
+		new HtmlWebpackPlugin({
+			template: './src/faq/web-rights-transfer.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'web-rights-transfer.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/privacy.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'privacy.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/terms-and-conditions.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'terms-and-conditions.html'
 		})
 	],
 

@@ -12,7 +12,6 @@ import '../components/footer';
 //JS
 import AOS from 'aos';
 import Splide from '@splidejs/splide';
-import * as skew from './onscroll-skew';
 import * as underline from './shifting-underline';
 
 document.addEventListener('DOMContentLoaded', function (event) {
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 underline.shiftingUnderline();
-//skew.onscrollSkew();
 
 // Testing
 module.exports = {

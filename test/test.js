@@ -1,8 +1,9 @@
-var app = require('../src/js/main');
+var sayHello = require('../src/js/main').sayHello;
 var assert = require('chai').assert;
 
 describe('App', () => {
 	it('App should return true', () => {
-		assert.equal(app(), 'true');
+		let result = sayHello();
+		assert.equal(result, 'true');
 	});
 });

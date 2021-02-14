@@ -35,6 +35,8 @@ underline.shiftingUnderline();
 
 // Testing
 
-module.exports = () => {
-	return 'true';
+module.exports = {
+	sayHello: function () {
+		return 'hello';
+	},
 };

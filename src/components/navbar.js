@@ -1,8 +1,6 @@
 const logoWhite = require('../img/Logo/Emblem/White/Emblem_white.svg');
 const logoGrad = require('../img/Logo/Emblem/Gradient/Emblem_gradient.svg');
-const { Template } = require('webpack');
 
-<temlate></temlate>;
 class Navbar extends HTMLElement {
 	constructor() {
 		super();

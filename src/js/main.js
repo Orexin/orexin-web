@@ -32,3 +32,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 underline.shiftingUnderline();
 //skew.onscrollSkew();
+
+// Testing
+
+module.exports = () => {
+	return 'true';
+};

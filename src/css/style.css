@@ -565,6 +565,7 @@ navbar-wrapper {
 #technologie-title {
 	transform: rotateZ(-45deg);
 	display: inline-block;
+	margin-bottom: 11vh;
 }
 
 #technologie-title div h2 {
@@ -609,10 +610,9 @@ navbar-wrapper {
 .technologie-presentation-shape-1,
 .technologie-presentation-shape-2,
 .technologie-presentation-shape-3 {
-	position: absolute;
-	height: 10%;
-	width: 10%;
 	margin: 0 !important;
+	width: 20vh;
+	height: 100%;
 }
 
 .technologie-presentation-shape-1 {
@@ -628,6 +628,12 @@ navbar-wrapper {
 .technologie-presentation-shape-3 {
 	background: var(--violet);
 	margin-left: 5vh;
+}
+
+.third-row {
+	top: -10vh;
+	left: 10vh;
+	position: absolute;
 }
 
 .first-row div img,
@@ -661,9 +667,9 @@ navbar-wrapper {
 }
 
 #technologie-desc {
-	margin-top: -40vh;
 	display: flex;
 	flex-direction: row;
+	float: right;
 }
 
 .technologie-desc-column {
@@ -674,7 +680,13 @@ navbar-wrapper {
 .technologie-desc-column div img,
 .technologie-desc-column div h2,
 .technologie-desc-column div p {
-	float: right;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.technologie-desc-column div h2 {
+	float: left;
 }
 /*! TECHNOLOGIE END!*/
 

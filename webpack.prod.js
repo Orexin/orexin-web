@@ -120,7 +120,31 @@ module.exports = {
 			inject: true,
 			chunks: ['main'],
 			filename: 'terms-and-conditions.html'
-		})
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/console/introduction.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'introduction.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/console/documentation.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'documentation.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/console/tutorials.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'tutorials.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/console/sponsor.html',
+			inject: true,
+			chunks: ['main'],
+			filename: 'sponsor.html'
+		}),
 	],
 
 };

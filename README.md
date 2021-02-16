@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/Orexin/orexin-web.svg?branch=master)](https://travis-ci.org/)
-
 # 🚀 Orexin web
 
 Webová stránka Orexinu 😍

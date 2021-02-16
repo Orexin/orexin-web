@@ -10,7 +10,8 @@ module.exports = {
 	entry: {
 		main: './src/js/main.js',
 		contact: './src/js/contact.js',
-		faq: './src/js/faq.js'
+		faq: './src/js/faq.js',
+		aboutTechnologies: './src/js/about-technologies.js'
 	},
 
 	output: {
@@ -75,7 +76,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/about.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'aboutTechnologies'],
 			filename: 'about.html'
 		}),
 		new HtmlWebpackPlugin({

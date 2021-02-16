@@ -49,6 +49,12 @@ module.exports = {
 			{
 				test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
 				type: 'asset/resource'
+			},
+			// load testing "interface"
+			{
+				test: /\test\.(js$|css)/,
+				use: 'mocha-loader',
+				exclude: /node_modules/
 			}
 			// load svg
 			/*{

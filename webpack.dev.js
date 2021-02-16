@@ -49,7 +49,7 @@ module.exports = {
 			},
 			// load testing "interface"
 			{
-				test: /\test\.js$/,
+				test: /\test\.(js$|css)/,
 				use: 'mocha-loader',
 				exclude: /node_modules/
 			}

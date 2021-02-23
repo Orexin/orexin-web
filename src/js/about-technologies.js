@@ -43,6 +43,7 @@ Array.from(img).forEach((item) => {
 				}
 			}
 			setTimeout(presentationMovement(), 50);
+			console.log('kokot');
 		}
 	});
 });

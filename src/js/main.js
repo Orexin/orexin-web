@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 underline.shiftingUnderline();
 
-// Testing
-module.exports = {
+// Testing, idk hazelo to error
+/* module.exports = {
 	testFunct: function () {
 		return true;
 	},
-};
+}; */

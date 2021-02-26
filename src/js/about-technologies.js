@@ -83,10 +83,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
 				/* 					if (is_colliding(img[i], outerElm)) {
 					img[i].style.transform = `translateX(0vh) translateY(0vh) rotateZ(135deg)`;
 				} */
-				logos[i].x -= 1;
-				logos[i].y -= 1;
+				logosReversed[i].x -= 1;
+				logosReversed[i].y -= 1;
 			}
-			await sleep(1000);
+			await sleep(500);
 			console.log(logos, logosReversed);
 			iter++;
 		}

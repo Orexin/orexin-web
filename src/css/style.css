@@ -661,6 +661,8 @@ navbar-wrapper {
 }
 
 #technologie-presentation div div div img {
+	position: relative;
+	z-index: 1000;
 }
 
 /* @keyframes technologiePresentationUp {

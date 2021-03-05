@@ -2,11 +2,31 @@ const regeneratorRuntime = require('regenerator-runtime');
 const img = document.getElementsByClassName('technologies-img');
 const imgReversed = document.getElementsByClassName('technologies-img-reversed');
 const outerElm = document.getElementsByClassName('technologie-presentation-container');
-const tech = document.getElementById('technologie-desc');
+const techDescImg = document.getElementById('technologie-desc-image');
+const techDescTitle = document.getElementById('technologie-desc-title');
+const techDescText = document.getElementById('technologie-desc-text');
 //default speed 0.15
 var speed = 0.5;
 var logos = new Array(),
 	logosReversed = new Array();
+const techDescTitleArray = [
+	'AWS',
+	'docker',
+	'figma',
+	'firebase',
+	'github',
+	'graphql',
+	'inkscape',
+	'jquery',
+	'jwt',
+	'kubernetes',
+	'linux',
+	'mongodb',
+	'nodejs',
+	'svg',
+	'vue',
+	'webpack',
+];
 console.log(outerElm[0].getBoundingClientRect().top);
 console.log(img[10].getBoundingClientRect().width);
 console.log(img[5].getBoundingClientRect().width);
@@ -18,8 +38,8 @@ for (let i = 0; i < img.length; i++) {
 		id: i,
 		x: 0,
 		y: 0,
-		originalX: img[i].x,
-		originalY: img[i].y,
+		imgLeft: img[i].getBoundingClientRect().left,
+		outerElmLeft: outerElm[0].getBoundingClientRect().left,
 	};
 }
 //asign values to js object for reversed movement imgs
@@ -28,8 +48,8 @@ for (let i = 0; i < imgReversed.length; i++) {
 		id: i,
 		x: 0,
 		y: 0,
-		width: imgReversed[i].offsetWidth,
-		height: imgReversed[i].offsetHeight,
+		imgLeft: imgReversed[i].getBoundingClientRect().left,
+		outerElmLeft: outerElm[1].getBoundingClientRect().left,
 	};
 	imgReversed[i].style.transform = 'rotateZ(135deg)';
 }
@@ -42,7 +62,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		return new Promise((resolve) => setTimeout(resolve, time));
 	};
 	const presentationMovement = async () => {
-		let indent = 135;
+		let indent = screen.width / 10;
+		let indentReversed = screen.width / 10;
 		while (true) {
 			for (let i = 0; i < img.length; i++) {
 				//move elems diagonaly up
@@ -52,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 				// collision detection and move down
 				for (let o = 0; o < outerElm.length; o++) {
 					// inkrement indent
-					if (img[0].getBoundingClientRect().right - img[0].getBoundingClientRect().width >= outerElm[o].getBoundingClientRect().right) {
+					if (img[0].getBoundingClientRect().right - img[0].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().right) {
 						indent += 5;
 						console.log('last collision');
 					}
@@ -73,23 +94,37 @@ document.addEventListener('DOMContentLoaded', function (event) {
 				logosReversed[i].y -= speed;
 				// collision detection and move down
 				// inkrement indent
-				/* 				if (imgReversed[0].getBoundingClientRect().left - imgReversed[0].getBoundingClientRect().width >= outerElm[1].getBoundingClientRect().left) {
-					indent += 5;
-					console.log('last collision');
-				} */
-				if (imgReversed[i].getBoundingClientRect().left - imgReversed[i].getBoundingClientRect().height <= outerElm[1].getBoundingClientRect().left) {
-					imgReversed[i].style.transform = `translateX(${outerElm[1].getBoundingClientRect().width - indent}px) translateY(${
-						outerElm[1].getBoundingClientRect().width - indent
+				if (imgReversed[0].getBoundingClientRect().left + imgReversed[0].getBoundingClientRect().height <= outerElm[1].getBoundingClientRect().left) {
+					console.log('last reversed collision');
+				}
+				if (imgReversed[i].getBoundingClientRect().left + imgReversed[i].getBoundingClientRect().height <= outerElm[1].getBoundingClientRect().left) {
+					imgReversed[i].style.transform = `translateX(-${outerElm[1].getBoundingClientRect().width - indentReversed}px) translateY(-${
+						outerElm[1].getBoundingClientRect().width - indentReversed
 					}px) rotateZ(135deg)`;
 
-					logosReversed[i].x -= outerElm[1].getBoundingClientRect().width - indent;
-					logosReversed[i].y -= outerElm[1].getBoundingClientRect().width - indent;
+					logosReversed[i].x += outerElm[1].getBoundingClientRect().width - indentReversed;
+					logosReversed[i].y += outerElm[1].getBoundingClientRect().width - indentReversed;
 				}
 			}
-			//console.log(img[0].getBoundingClientRect().right, img[0].getBoundingClientRect().width);
 			await sleep(5);
 		}
 	};
 	presentationMovement();
+	const techDescChange = async () => {
+		for (let i = 0; i < techDescTitleArray.length + 1; i++) {
+			techDescImg.src = `<%= require('./img/systems-logos-big/svg-${techDescTitleArray[i]}.png') %>`;
+			techDescTitle.innerHTML = techDescTitleArray[i].charAt(0).toUpperCase() + techDescTitleArray[i].slice(1);
+			console.log(techDescTitleArray[i], techDescTitleArray[i].charAt(0).toUpperCase() + techDescTitleArray[i].slice(1));
+			if ((i = techDescTitleArray.length)) {
+				i = 0;
+			}
+			await sleep(5000);
+		}
+	};
+	techDescChange();
 });
 console.log('interrupted');
+
+for (let i = 0; i < 5; i++) {
+	console.log('kokot');
+}

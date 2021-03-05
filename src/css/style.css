@@ -576,7 +576,7 @@ navbar-wrapper {
 }
 
 .technologie-presentation-column {
-	margin-left: -30vw;
+	margin-left: -39vw;
 }
 
 .technologie-presentation-container {
@@ -628,14 +628,14 @@ navbar-wrapper {
 	transform: skew(-45deg);
 	position: absolute;
 	margin-top: -22.25vh !important;
-	margin-left: -69vh !important;
+	margin-left: -79vh !important;
 }
 
 .technologie-presentation-shape-2 {
 	background: var(--violet);
 	transform: skew(-22.5deg);
 	margin-top: -22.25vh !important;
-	margin-left: -39.5vh !important;
+	margin-left: -49vh !important;
 }
 
 .technologie-presentation-shape-3 {

@@ -27,6 +27,28 @@ const techDescTitleArray = [
 	'vue',
 	'webpack',
 ];
+const techDescTextContent = {
+	aws:
+		'Amazon Web Services nabízí spolehlivé a škálovatelné služby cloud computingu. Pro hostingová řešení je AWS adekvátní volbou pokud pro vaši aplikaci potřebujete velký a bezpečný prostor. Krom hostingových řešení AWS nabízí vše od analytických nástrojů, databází všeho druhu, blockchain až po machine learning',
+	docker:
+		'Docker je open-source software, který poskytuje jednotné rozhraní pro izolaci aplikací do jednotlivých kontejnerů.\n Samostatný kontejner pak obsahuje aplikace a jejich soubory, ale narozdíl od virtualizačních systémů používá odlehčené application images.',
+	figma:
+		'Figma je bezplatný webový editor vektorové grafiky, s velkým obsahem funkcionality, open source pluginů a možností zaplacení dalších užitečných . Velkou zajímavostí figmy je, že je postavena na C++, později kompilována do web assembly a následně importována do webové formy. Toto řešení přináší velkou škálu funkcí a možností týmové spolupráce na jednotném designu',
+	firebase: '',
+	github: '',
+	graphql: '',
+	inkscape: '',
+	jquery: '',
+	jwt: '',
+	kubernetes: '',
+	linux:
+		'Open-source počítačový operační systém od developerů pro developery, který disponuje distribucemi jak pro serverové tak i osobní využití s možností naprosté kontroly nad vašim OS. Díky open-source licenci a obrovské podpoře komunity je linux neustále upravován a zvětšuje podporu stále více programům',
+	mongodb: '',
+	nodejs: '',
+	svg: '',
+	vue: '',
+	webpack: '',
+};
 console.log(outerElm[0].getBoundingClientRect().top);
 console.log(img[10].getBoundingClientRect().width);
 console.log(img[5].getBoundingClientRect().width);
@@ -112,8 +134,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	presentationMovement();
 	const techDescChange = async () => {
 		for (let i = 0; i < techDescTitleArray.length + 1; i++) {
-			techDescImg.src = `<%= require('./img/systems-logos-big/svg-${techDescTitleArray[i]}.png') %>`;
+			techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${techDescTitleArray[i]}.png') %>`;
 			techDescTitle.innerHTML = techDescTitleArray[i].charAt(0).toUpperCase() + techDescTitleArray[i].slice(1);
+			techDescText.innerHTML = techDescTextContent[techDescTitleArray[i].toLowerCase()];
 			console.log(techDescTitleArray[i], techDescTitleArray[i].charAt(0).toUpperCase() + techDescTitleArray[i].slice(1));
 			if ((i = techDescTitleArray.length)) {
 				i = 0;

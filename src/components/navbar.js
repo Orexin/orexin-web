@@ -19,7 +19,7 @@ class Navbar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<div class="logo">
-	<img src=${logoWhite}></img>
+	<img src=${logoWhite} class="nav-logo"></img>
 </div>
 <div class="nav-set">
 	<div class="nav-links">
@@ -74,11 +74,13 @@ class Navbar extends HTMLElement {
 
 		// Hide on scroll anim
 		const nav = document.querySelector('navbar-wrapper');
+		const navLogo = document.querySelector('.nav-logo');
 
 		var prevScrollpos = window.pageYOffset;
 		var currentScrollPos = 0;
 
 		document.onscroll = function () {
+			// Hide navbar 
 			currentScrollPos = window.pageYOffset;
 			if (prevScrollpos > currentScrollPos) {
 				nav.style.top = '0';
@@ -86,6 +88,15 @@ class Navbar extends HTMLElement {
 				nav.style.top = '-80px';
 			}
 			prevScrollpos = currentScrollPos;
+
+			//White nav out
+			if(document.documentElement.scrollTop >= 150) {
+				nav.classList.add('whited');
+				navLogo.setAttribute('src', logoGrad);
+			} else {
+				nav.classList.remove('whited')
+				navLogo.setAttribute('src', logoWhite);
+			}
 		};
 	}
 }

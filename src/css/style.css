@@ -199,6 +199,14 @@ navbar-wrapper {
 	width: auto;
 }
 
+.whited {
+	background-color: var(--text-light) !important;
+	filter: drop-shadow(0px 10px 10px #0000004b);
+}
+.whited > .nav-set > .nav-links > ul > li > a {
+	color: var(--violet) !important;
+}
+
 /*! NAV END!*/
 
 /* UVOD */

@@ -1107,9 +1107,8 @@ footer-wrapper > .footer-content > .upper > img {
 	width: auto;
 	transition: all 0.3s ease-in-out;
 }
-.upper > a h3 {
-	margin: 15px;
-	transition: all 0.3s ease-in-out;
+.upper h3 {
+	font-weight: 600;
 }
 
 .upper > a div {

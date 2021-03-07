@@ -72,6 +72,14 @@
 					</ul>
 				</div>
 			</div>
+			<!--
+				TODO:
+				---------------------
+				* form validation
+				* button
+				* telefon spacing
+				* respo ofc
+			-->
 			<div class="contact-right column is-three-fifths">
 				<div class="contact-form block-center">
 					<div class="contact-form-header is-flex is-flex-direction-row is-align-items-center">
@@ -84,41 +92,54 @@
 					</div>
 					<div class="contact-form-body">
 						<form>
-							<div class="columns">
-								<div class="column is-half form-group">
-									<input id="jmeno" type="text" placeholder="Vaše jméno" />
-									<label class="lbl-float" for="jmeno">Vaše jméno</label>
-								</div>
-								<div class="column is-half form-group">
-									<input id="email" type="text" placeholder="Váš e-mail" />
-									<label class="lbl-float" for="email">Váš e-mail</label>
-								</div>
-							</div>
-							<div class="columns">
-								<div class="column is-half form-group">
-									<input id="firma" type="text" placeholder="Firma" />
-									<label class="lbl-float" for="firma">Firma</label>
+							<div class="form-inputs columns">
+								<div class="column is-half">
+									<div class="form-group">
+										<label for="jmeno">Vaše jméno a příjmení</label>
+										<div class="input-icon-wrap">
+											<input id="jmeno" type="text" placeholder="Jan Novák" />
+											<span class="typcn typcn-user-outline"></span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="email">Váš e-mail</label>
+										<div class="input-icon-wrap">
+											<input id="email" type="text" placeholder="jnovak@orexin.cz" />
+											<span class="typcn typcn-mail"></span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="firma">Vaše telefonní číslo</label>
+										<div class="input-icon-wrap">
+											<input id="firma" type="text" placeholder="+420 489 156 498" />
+											<span class="typcn typcn-phone-outline"></span>
+										</div>
+									</div>
 								</div>
 								<div class="column is-half">
-									<h4>Služba:</h4>
-									<div class="form-check">
-										<input id="web" type="checkbox" />
-										<label for="web">Webová prezentace</label>
-									</div>
-									<div class="form-check">
-										<input id="shop" type="checkbox" />
-										<label for="shop">E-commerence řešení</label>
-									</div>
-									<div class="form-check">
-										<input id="mark" type="checkbox" />
-										<label for="mark">Webová aplikace</label>
+									<div class="form-group txtarea-cont">
+										<label for="msg">Detaily projektu</label>
+										<textarea id="msg" class="is-width-100 is-height-100" maxlength="5000"
+											placeholder="Detaily projektu"></textarea>
 									</div>
 								</div>
 							</div>
-							<div class="is-width-100">
-								<textarea id="detaily" class="w-100" maxlength="5000" placeholder="Detaily projektu"></textarea>
+							<label for="selectBoxes">Služby</label>
+							<div id="selectBoxes" class="select-boxes is-width-100">
+								<div class="select-box">
+									<input id="web" type="checkbox">
+									<label for="web">Webová prezentace</label>
+								</div>
+								<div class="select-box">
+									<input id="shop" type="checkbox" />
+									<label for="shop">E-commerence řešení</label>
+								</div>
+								<div class="select-box">
+									<input id="mark" type="checkbox" />
+									<label for="mark">Webová aplikace</label>
+								</div>
 							</div>
-							<div class="form-group">
+							<div class="send-button form-group">
 								<input class="button w-100" type="button" value="Odeslat" />
 							</div>
 							<p>Odesláním souhlasíte se <a href="#">zpracováním osobních údajů</a>.</p>

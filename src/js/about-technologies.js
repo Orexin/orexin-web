@@ -15,55 +15,51 @@ const techDescTitleArray = [
 	'figma',
 	'firebase',
 	'github',
-	'graphql',
+	'graphQL',
 	'inkscape',
-	'jquery',
+	'jQuery',
 	'JWT',
 	'kubernetes',
 	'linux',
-	'mongodb',
-	'nodejs',
-	'svg',
-	'vue',
+	'mongoDB',
+	'nodeJS',
+	'SVG',
+	'VUE',
 	'webpack',
 ];
 const techDescTextContent = {
 	aws:
-		'Amazon Web Services nabízí spolehlivé a škálovatelné služby cloud computingu. Pro hostingová řešení je AWS adekvátní volbou pokud pro vaši aplikaci potřebujete velký a bezpečný prostor. Krom hostingových řešení AWS nabízí vše od analytických nástrojů, databází všeho druhu, blockchain až po machine learning',
+		'Nabízí spolehlivé a škálovatelné služby cloud computingu. Pro hostingová řešení je AWS adekvátní volbou pokud pro vaši aplikaci potřebujete velký a bezpečný prostor. Krom hostingových řešení AWS nabízí vše od analytických nástrojů, databází všeho druhu, blockchain až po machine learning.',
 	docker:
-		'Docker je open-source software, který poskytuje jednotné rozhraní pro izolaci aplikací do jednotlivých kontejnerů. Samostatný kontejner pak obsahuje aplikace a jejich soubory, ale narozdíl od virtualizačních systémů používá odlehčené application images.',
+		'Open-source software, který poskytuje jednotné rozhraní pro izolaci aplikací do jednotlivých kontejnerů. Samostatný kontejner pak obsahuje aplikace a jejich soubory, ale narozdíl od virtualizačních systémů používá odlehčené application images.',
 	figma:
-		'Figma je bezplatný webový editor vektorové grafiky, s velkým obsahem funkcionality, open source pluginů a možností zaplacení dalších užitečných . Velkou zajímavostí figmy je, že je postavena na C++, později kompilována do web assembly a následně importována do webové formy. Toto řešení přináší velkou škálu funkcí a možností týmové spolupráce na jednotném designu',
+		'Bezplatný webový editor vektorové grafiky, s velkým obsahem funkcionality, open source pluginů a možností zaplacení dalších užitečných funkcí. Velkou zajímavostí figmy je, že je postavena na C++, později kompilována do web assembly a následně importována do webové formy. Toto řešení přináší velkou škálu funkcí a možností týmové spolupráce na komplexním designu.',
 	firebase:
-		'Firebase je platforma vyvinutá společností Google pro vytváření mobilních a webových aplikací. Firebase nabízí řešení pro hosting, cloud computing i machine learning. Toto hostingové řešení je vhodné pro malé i velké aplikace.',
+		'Platforma vyvinutá společností Google pro vytváření mobilních a webových aplikací. Firebase nabízí řešení pro hosting, cloud computing i machine learning. Toto hostingové řešení je vhodné pro malé i velké aplikace.',
 	github:
-		'Github nabízí bezplatný web hosting pro jakékoliv projekty a podporuje vývoj softwaru za pomocí verzovacího nástroje git. Projekty se ukládájí do jednotlivých, soukromých i veřejných, repozitářů. Pro uživatele poskytuje možnosti revize kódu, diskuze nad kódem či kooperace v organizaci',
+		'Nabízí bezplatný web hosting pro jakékoliv projekty a podporuje vývoj softwaru za pomocí verzovacího nástroje git. Projekty se ukládájí do jednotlivých, soukromých i veřejných, repozitářů. Pro uživatele poskytuje možnosti revize kódu, diskuze nad kódem či kooperace v organizaci.',
 	graphql:
-		'GraphQL je verze dotazovacího jazyka pro tvorbu API. Narozdíl od REST architektury je potřeba specifikovat konkrétní data, která chceme ze serverové strany poslat na klientskou. Velkou výhodou graphql je prevence overfatche, protože při server requestu graphql přistupuje je jen k specifickým datům',
-	inkscape: 'Inkscape je open-source editor vektorové grafiky. Tento editor lze použít na design loga, ilustraci, grafy, manipulování a úpravu, diagramy, svg a mnoho dalšího.',
+		'Jedna z verzí dotazovacího jazyka pro tvorbu API. Narozdíl od REST architektury je potřeba specifikovat konkrétní data, která chceme ze serverové strany poslat na klientskou. Velkou výhodou graphql je prevence overfatche, protože při server requestu graphql přistupuje je jen k specifickým datům.',
+	inkscape: 'Open-source editor vektorové grafiky. Tento editor lze použít na design loga, ilustraci, grafy, manipulování a úpravu, diagramy, svg a mnoho dalšího.',
 	jquery:
-		'jQuery je open-source javascriptová knihovna umožňující jednodušší interakci mezi JavaScriptem a HTML. jQuery se stal standardem pro mnoho javasciptových knihoven a jejich použití',
+		'Open-source javascriptová knihovna umožňující jednodušší interakci mezi JavaScriptem a HTML. jQuery se stal standardem pro mnoho javasciptových knihoven a jejich použití.',
 	jwt:
-		'JSON Web Token je prostředník v komunikaci mezi dvěma stranami zabezpečující adresy URL. JWT pomáhá s vytvářením dat s volitelným podpisem a šifrováním. Tokeny jsou podepsány buď pomocí soukromého nebo veřejného klíče.',
+		'Prostředník v komunikaci mezi dvěma stranami zabezpečující adresy URL. JWT pomáhá s vytvářením dat s volitelným podpisem a šifrováním. Tokeny jsou podepsány buď pomocí soukromého nebo veřejného klíče.',
 	kubernetes:
-		'Kubernetes je open-source systém pro orchestraci virtualizace a jednotlivých docker kontejnerů. Tento systém automatizuje deployment, škálovatelnost a management kontejnerových aplikací. Jednotlivé kontejnery tedy seskupuje do logických jednotek',
+		'Open-source systém pro orchestraci virtualizace a jednotlivých docker kontejnerů. Tento systém automatizuje deployment, škálovatelnost a management kontejnerových aplikací. Jednotlivé kontejnery tedy seskupuje do logických jednotek.',
 	linux:
-		'Open-source počítačový operační systém od developerů pro developery, který disponuje distribucemi jak pro serverové tak i osobní využití s možností naprosté kontroly nad vašim OS. Díky open-source licenci a obrovské podpoře komunity je linux neustále upravován a zvětšuje podporu stále více programům',
+		'Open-source počítačový operační systém od developerů pro developery, který disponuje distribucemi jak pro serverové tak i osobní využití s možností naprosté kontroly nad vašim OS. Díky open-source licenci a obrovské podpoře komunity je linux neustále upravován a zvětšuje podporu stále více programům.',
 	mongodb:
-		'MongoDB je multiplatformní noSQL databáze, která narozdíl od tradičních relačních databází využívající tabulky ukládá data do formátu BSON. Dynamické databázové schéma umožňuje vytváření a integraci dat pro aplikace jednodušeji a rychleji.',
+		'Multiplatformní noSQL databáze, která narozdíl od tradičních relačních databází využívající tabulky ukládá data do formátu BSON. Dynamické databázové schéma umožňuje vytváření a integraci dat pro aplikace jednodušeji a rychleji.',
 	nodejs:
-		'Node.js je open-source asynchronní javascript runtime enviroment, který je postaven pro škálovatelné webové aplikace a webové servery. Node.js pomáhá developerům spouštět soubory javascriptu mimo webový prohlížeč, vytváření commmand line tools, a server-side scripting.',
+		'Open-source asynchronní javascript runtime enviroment, který je postaven pro škálovatelné webové aplikace a webové servery. Node.js pomáhá developerům spouštět soubory javascriptu mimo webový prohlížeč, vytváření commmand line tools, a server-side scripting.',
 	svg:
-		'Scalable vektor graphics je značkovací jazyk, který popisuje dvojrozměrnou vektorovou grafiku pomocí XML. V prostoru web designu je to oblíbená volba pro zlepšení UI webu pomocí složitých i jednoduchých prvků. Pro vytváření SVG používáme figmu a inkscape.',
+		'Značkovací jazyk, který popisuje dvojrozměrnou vektorovou grafiku pomocí XML. V prostoru web designu je to oblíbená volba pro zlepšení UI webu pomocí složitých i jednoduchých prvků. Pro vytváření SVG používáme figmu a inkscape.',
 	vue:
-		'Vue.js je progresivní javascriptový UI framework. Vue je populární řešení frontendu webové stránky jelikož rozšiřuje UI pomocí HTML atributů a dělá tak web design jednodušší. Vhodný je například pro jednoduché aplikace vyžadující backend server side podporu.',
+		'Progresivní javascriptový UI framework. Vue je populární řešení frontendu webové stránky jelikož rozšiřuje UI pomocí HTML atributů a dělá tak web design jednodušší. Vhodný je například pro jednoduché aplikace vyžadující backend server side podporu.',
 	webpack:
-		'Webpack je open-source zdrojový modul javascriptu. Transformuje frontendová řešení HTML, CSS, obrázky. Svazuje všechny moduly do jednoho celku, který následně promítne na webovou stránku.',
+		'Open-source zdrojový modul javascriptu. Transformuje frontendová řešení HTML, CSS, obrázky. Svazuje všechny moduly do jednoho celku, který následně promítne na webovou stránku.',
 };
-console.log(outerElm[0].getBoundingClientRect().top);
-console.log(img[10].getBoundingClientRect().width);
-console.log(img[5].getBoundingClientRect().width);
-console.log(img.x);
 
 //asign values to js object
 for (let i = 0; i < img.length; i++) {
@@ -74,6 +70,7 @@ for (let i = 0; i < img.length; i++) {
 		imgLeft: img[i].getBoundingClientRect().left,
 		outerElmLeft: outerElm[0].getBoundingClientRect().left,
 	};
+	img[i].style.zIndex = '100000000';
 }
 //asign values to js object for reversed movement imgs
 for (let i = 0; i < imgReversed.length; i++) {
@@ -85,11 +82,12 @@ for (let i = 0; i < imgReversed.length; i++) {
 		outerElmLeft: outerElm[1].getBoundingClientRect().left,
 	};
 	imgReversed[i].style.transform = 'rotateZ(135deg)';
+	imgReversed[i].style.zIndex = '100000000';
 }
 console.log(logos, logosReversed);
 
 //get x and y where id = let i and then add values to it => diagonal movement
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', (event) => {
 	//sleep function
 	const sleep = (time) => {
 		return new Promise((resolve) => setTimeout(resolve, time));
@@ -143,22 +141,80 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		}
 	};
 	presentationMovement();
-	const techDescChange = async () => {
-		for (let i = 0; i < techDescTitleArray.length + 1; i++) {
-			techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${techDescTitleArray[i]}.png') %>`;
+	/* 	const techDescChange = async () => {
+		for (let i = 0; i < techDescTitleArray.length; i++) {
+			let sleepTime;
+			//techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${techDescTitleArray[i]}.png') %>`;
 			techDescTitle.innerHTML = techDescTitleArray[i].charAt(0).toUpperCase() + techDescTitleArray[i].slice(1);
 			techDescText.innerHTML = techDescTextContent[techDescTitleArray[i].toLowerCase()];
-			console.log(techDescTitleArray[i], techDescTitleArray[i].charAt(0).toUpperCase() + techDescTitleArray[i].slice(1));
-			if ((i = techDescTitleArray.length)) {
+			console.log(techDescTitleArray[i], techDescTextContent[techDescTitleArray[i].toLowerCase()].length, i);
+			if (i >= techDescTitleArray.length - 1) {
 				i = 0;
 			}
-			await sleep(5000);
+			switch (true) {
+				case techDescTextContent[techDescTitleArray[i].toLowerCase()].length >= 270:
+					sleepTime = 25000;
+					break;
+				case techDescTextContent[techDescTitleArray[i].toLowerCase()].length >= 220:
+					sleepTime = 20000;
+					break;
+				case techDescTextContent[techDescTitleArray[i].toLowerCase()].length < 220:
+					sleepTime = 15000;
+					break;
+			}
+			await sleep(sleepTime);
 		}
 	};
-	techDescChange();
+	techDescChange(); */
 });
-console.log('interrupted');
 
-for (let i = 0; i < 5; i++) {
-	console.log('kokot');
-}
+//mouseover for pointer kursor
+Array.from(img).forEach((item) => {
+	item.addEventListener('mouseover', (event) => {
+		item.style.cursor = 'pointer';
+	});
+});
+
+Array.from(imgReversed).forEach((item) => {
+	item.addEventListener('mouseover', (event) => {
+		item.style.cursor = 'pointer';
+	});
+});
+
+//mouseout for default kursor
+Array.from(img).forEach((item) => {
+	item.addEventListener('mouseout', (event) => {
+		item.style.cursor = 'auto';
+	});
+});
+
+Array.from(imgReversed).forEach((item) => {
+	item.addEventListener('mouseout', (event) => {
+		item.style.cursor = 'auto';
+	});
+});
+
+//click for selecting tech desc
+Array.from(img).forEach((item) => {
+	item.addEventListener('click', (event) => {
+		item.style.cursor = 'pointer';
+		let dataImg = item.getAttribute('data-img');
+		if (dataImg.length < 4) techDescTitle.innerHTML = dataImg.toUpperCase();
+		else techDescTitle.innerHTML = dataImg.charAt(0).toUpperCase() + dataImg.slice(1);
+		techDescText.innerHTML = techDescTextContent[dataImg];
+		techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${dataImg}.png') %>`;
+		console.log('clicked ' + item.getAttribute('data-img'));
+	});
+});
+
+Array.from(imgReversed).forEach((item) => {
+	item.addEventListener('click', (event) => {
+		item.style.cursor = 'pointer';
+		let dataImg = item.getAttribute('data-img');
+		if (dataImg.length < 4) techDescTitle.innerHTML = dataImg.toUpperCase();
+		else techDescTitle.innerHTML = dataImg.charAt(0).toUpperCase() + dataImg.slice(1);
+		techDescText.innerHTML = techDescTextContent[dataImg];
+		techDescImg.src = './img/systems-logos-big/svg-linux.png';
+		console.log('clicked ' + item.getAttribute('data-img'));
+	});
+});

@@ -17,7 +17,7 @@ import * as underline from './shifting-underline';
 document.addEventListener('DOMContentLoaded', function (event) {
 	AOS.init({ once: true });
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
-	//document.getElementById('preloader').style.display = 'none';
+	document.getElementById('preloader').style.display = 'none';
 	var elms = document.getElementsByClassName('splide');
 	for (var i = 0, len = elms.length; i < len; i++) {
 		new Splide(elms[i], {
@@ -30,10 +30,3 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 underline.shiftingUnderline();
-
-// Testing, idk hazelo to error
-/* module.exports = {
-	testFunct: function () {
-		return true;
-	},
-}; */

@@ -199,6 +199,14 @@ navbar-wrapper {
 	width: auto;
 }
 
+.whited {
+	background-color: var(--text-light) !important;
+	filter: drop-shadow(0px 10px 10px #0000004b);
+}
+.whited > .nav-set > .nav-links > ul > li > a {
+	color: var(--violet) !important;
+}
+
 /*! NAV END!*/
 
 /* UVOD */
@@ -602,11 +610,19 @@ navbar-wrapper {
 	margin: 2vh 5vh 2vh 0vh;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	z-index: -10;
 }
 
 .technologie-presentation-container div img {
 	max-height: 100%;
 	max-width: 75px;
+	position: relative;
+	z-index: 10000000;
+}
+
+.technologie-presentation-container > div > img:hover {
+	cursor: pointer;
 }
 
 /* .technologie-presentation-container-1 {
@@ -698,6 +714,13 @@ navbar-wrapper {
 
 .technologie-desc-column div h2 {
 	float: left;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.technologie-desc-column div p {
+	font-size: 19px;
+	line-height: 24px;
 }
 /*! TECHNOLOGIE END!*/
 

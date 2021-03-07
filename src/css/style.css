@@ -114,7 +114,7 @@ body {
 }
 
 #emblem-path-2 {
-	transform-origin: center center;
+	transform-origin: center;
 	transform-box: fill-box;
 	-webkit-animation: moveClockwise 6.5s linear infinite;
 	animation: emblemPath2 6.5s linear infinite;
@@ -670,24 +670,6 @@ navbar-wrapper {
 	position: relative;
 	z-index: 1000;
 }
-
-/* @keyframes technologiePresentationUp {
-	from {
-		transform: translateX(0) translateY(0) rotateZ(135deg);
-	}
-	to {
-		transform: translateX(100vh) translateY(100vh) rotateZ(135deg);
-	}
-}
-
-@keyframes technologiePresentationDown {
-	from {
-		transform: translateX(100vh) translateY(100vh) rotateZ(135deg);
-	}
-	to {
-		transform: translateX(0) translateY(0) rotateZ(135deg);
-	}
-} */
 
 .technologie-desc-container {
 	position: relative;

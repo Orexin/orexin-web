@@ -18,7 +18,7 @@ const techDescTitleArray = [
 	'graphql',
 	'inkscape',
 	'jquery',
-	'jwt',
+	'JWT',
 	'kubernetes',
 	'linux',
 	'mongodb',
@@ -31,23 +31,34 @@ const techDescTextContent = {
 	aws:
 		'Amazon Web Services nabízí spolehlivé a škálovatelné služby cloud computingu. Pro hostingová řešení je AWS adekvátní volbou pokud pro vaši aplikaci potřebujete velký a bezpečný prostor. Krom hostingových řešení AWS nabízí vše od analytických nástrojů, databází všeho druhu, blockchain až po machine learning',
 	docker:
-		'Docker je open-source software, který poskytuje jednotné rozhraní pro izolaci aplikací do jednotlivých kontejnerů.\n Samostatný kontejner pak obsahuje aplikace a jejich soubory, ale narozdíl od virtualizačních systémů používá odlehčené application images.',
+		'Docker je open-source software, který poskytuje jednotné rozhraní pro izolaci aplikací do jednotlivých kontejnerů. Samostatný kontejner pak obsahuje aplikace a jejich soubory, ale narozdíl od virtualizačních systémů používá odlehčené application images.',
 	figma:
 		'Figma je bezplatný webový editor vektorové grafiky, s velkým obsahem funkcionality, open source pluginů a možností zaplacení dalších užitečných . Velkou zajímavostí figmy je, že je postavena na C++, později kompilována do web assembly a následně importována do webové formy. Toto řešení přináší velkou škálu funkcí a možností týmové spolupráce na jednotném designu',
-	firebase: '',
-	github: '',
-	graphql: '',
-	inkscape: '',
-	jquery: '',
-	jwt: '',
-	kubernetes: '',
+	firebase:
+		'Firebase je platforma vyvinutá společností Google pro vytváření mobilních a webových aplikací. Firebase nabízí řešení pro hosting, cloud computing i machine learning. Toto hostingové řešení je vhodné pro malé i velké aplikace.',
+	github:
+		'Github nabízí bezplatný web hosting pro jakékoliv projekty a podporuje vývoj softwaru za pomocí verzovacího nástroje git. Projekty se ukládájí do jednotlivých, soukromých i veřejných, repozitářů. Pro uživatele poskytuje možnosti revize kódu, diskuze nad kódem či kooperace v organizaci',
+	graphql:
+		'GraphQL je verze dotazovacího jazyka pro tvorbu API. Narozdíl od REST architektury je potřeba specifikovat konkrétní data, která chceme ze serverové strany poslat na klientskou. Velkou výhodou graphql je prevence overfatche, protože při server requestu graphql přistupuje je jen k specifickým datům',
+	inkscape: 'Inkscape je open-source editor vektorové grafiky. Tento editor lze použít na design loga, ilustraci, grafy, manipulování a úpravu, diagramy, svg a mnoho dalšího.',
+	jquery:
+		'jQuery je open-source javascriptová knihovna umožňující jednodušší interakci mezi JavaScriptem a HTML. jQuery se stal standardem pro mnoho javasciptových knihoven a jejich použití',
+	jwt:
+		'JSON Web Token je prostředník v komunikaci mezi dvěma stranami zabezpečující adresy URL. JWT pomáhá s vytvářením dat s volitelným podpisem a šifrováním. Tokeny jsou podepsány buď pomocí soukromého nebo veřejného klíče.',
+	kubernetes:
+		'Kubernetes je open-source systém pro orchestraci virtualizace a jednotlivých docker kontejnerů. Tento systém automatizuje deployment, škálovatelnost a management kontejnerových aplikací. Jednotlivé kontejnery tedy seskupuje do logických jednotek',
 	linux:
 		'Open-source počítačový operační systém od developerů pro developery, který disponuje distribucemi jak pro serverové tak i osobní využití s možností naprosté kontroly nad vašim OS. Díky open-source licenci a obrovské podpoře komunity je linux neustále upravován a zvětšuje podporu stále více programům',
-	mongodb: '',
-	nodejs: '',
-	svg: '',
-	vue: '',
-	webpack: '',
+	mongodb:
+		'MongoDB je multiplatformní noSQL databáze, která narozdíl od tradičních relačních databází využívající tabulky ukládá data do formátu BSON. Dynamické databázové schéma umožňuje vytváření a integraci dat pro aplikace jednodušeji a rychleji.',
+	nodejs:
+		'Node.js je open-source asynchronní javascript runtime enviroment, který je postaven pro škálovatelné webové aplikace a webové servery. Node.js pomáhá developerům spouštět soubory javascriptu mimo webový prohlížeč, vytváření commmand line tools, a server-side scripting.',
+	svg:
+		'Scalable vektor graphics je značkovací jazyk, který popisuje dvojrozměrnou vektorovou grafiku pomocí XML. V prostoru web designu je to oblíbená volba pro zlepšení UI webu pomocí složitých i jednoduchých prvků. Pro vytváření SVG používáme figmu a inkscape.',
+	vue:
+		'Vue.js je progresivní javascriptový UI framework. Vue je populární řešení frontendu webové stránky jelikož rozšiřuje UI pomocí HTML atributů a dělá tak web design jednodušší. Vhodný je například pro jednoduché aplikace vyžadující backend server side podporu.',
+	webpack:
+		'Webpack je open-source zdrojový modul javascriptu. Transformuje frontendová řešení HTML, CSS, obrázky. Svazuje všechny moduly do jednoho celku, který následně promítne na webovou stránku.',
 };
 console.log(outerElm[0].getBoundingClientRect().top);
 console.log(img[10].getBoundingClientRect().width);

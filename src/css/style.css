@@ -611,17 +611,15 @@ navbar-wrapper {
 	margin-top: 10vh;
 }
 
-.technologie-presentation-container div {
+.technologie-presentation-container img {
 	margin: 2vh 5vh 2vh 0vh;
 	display: flex;
 	flex-direction: column;
-	position: relative;
-	z-index: -10;
+	max-height: 100%;
+	max-width: 75px;
 }
 
 .technologie-presentation-container div img {
-	max-height: 100%;
-	max-width: 75px;
 	position: relative;
 	z-index: 10000000;
 }

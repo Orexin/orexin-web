@@ -15,7 +15,7 @@ class Footer extends HTMLElement {
 		</div>
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>
-			<h3>OrexinSolutions 2021</h3>
+			<h3>Orexin Solutions 2021</h3>
 			<div class="socials">
 				<a href="https://www.facebook.com/OrexinEcontech" target="_blank"><span
 						class="typcn typcn-social-facebook-circular"></span></a>

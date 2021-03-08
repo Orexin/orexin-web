@@ -624,7 +624,7 @@ navbar-wrapper {
 	z-index: 10000000;
 }
 
-.technologie-presentation-container > div > img:hover {
+.technologie-presentation-container > img:hover {
 	cursor: pointer;
 }
 

@@ -183,32 +183,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	techDescChange(); */
 });
 
-//mouseover for pointer kursor
-Array.from(img).forEach((item) => {
-	item.addEventListener('mouseover', (event) => {
-		item.style.cursor = 'pointer';
-	});
-});
-
-Array.from(imgReversed).forEach((item) => {
-	item.addEventListener('mouseover', (event) => {
-		item.style.cursor = 'pointer';
-	});
-});
-
-//mouseout for default kursor
-Array.from(img).forEach((item) => {
-	item.addEventListener('mouseout', (event) => {
-		item.style.cursor = 'auto';
-	});
-});
-
-Array.from(imgReversed).forEach((item) => {
-	item.addEventListener('mouseout', (event) => {
-		item.style.cursor = 'auto';
-	});
-});
-
 //click for selecting tech desc
 Array.from(img).forEach((item) => {
 	item.addEventListener('click', (event) => {

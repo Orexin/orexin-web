@@ -5,28 +5,43 @@ const outerElm = document.getElementsByClassName('technologie-presentation-conta
 const techDescImg = document.getElementById('technologie-desc-image');
 const techDescTitle = document.getElementById('technologie-desc-title');
 const techDescText = document.getElementById('technologie-desc-text');
-//default speed 0.15
 var speed = 0.5;
 var logos = new Array(),
 	logosReversed = new Array();
-const techDescTitleArray = [
-	'AWS',
-	'docker',
-	'figma',
-	'firebase',
-	'github',
-	'graphQL',
-	'inkscape',
-	'jQuery',
-	'JWT',
-	'kubernetes',
-	'linux',
-	'mongoDB',
-	'nodeJS',
-	'SVG',
-	'VUE',
-	'webpack',
-];
+const imgAws = require(`./../img/systems-logos-big/svg-AWS.png`),
+	imgDocker = require(`./../img/systems-logos-big/svg-docker.png`),
+	imgFigma = require(`./../img/systems-logos-big/svg-figma.png`),
+	imgFirebase = require(`./../img/systems-logos-big/svg-firebase.png`),
+	imgGithub = require(`./../img/systems-logos-big/svg-github.png`),
+	imgGrapql = require(`./../img/systems-logos-big/svg-graphql.png`),
+	imgInkscape = require(`./../img/systems-logos-big/svg-inkscape.png`),
+	imgJquery = require(`./../img/systems-logos-big/svg-jquery.png`),
+	imgJwt = require(`./../img/systems-logos-big/svg-jwt.png`),
+	imgKubernetes = require(`./../img/systems-logos-big/svg-kubernetes.png`),
+	imgLinux = require(`./../img/systems-logos-big/svg-linux.png`),
+	imgMongodb = require(`./../img/systems-logos-big/svg-mongodb.png`),
+	imgNodejs = require(`./../img/systems-logos-big/svg-nodejs.png`),
+	imgSvg = require(`./../img/systems-logos-big/svg-svg.png`),
+	imgVue = require(`./../img/systems-logos-big/svg-vue.png`),
+	imgWebpack = require(`./../img/systems-logos-big/svg-webpack.png`);
+const techDescTitleContent = {
+	aws: 'AWS',
+	docker: 'Docker',
+	figma: 'Figma',
+	firebase: 'Firebase',
+	github: 'Github',
+	graphql: 'GraphQL',
+	inkscape: 'Inkscape',
+	jquery: 'jQuery',
+	jwt: 'JWT',
+	kubernetes: 'Kubernetes',
+	linux: 'Linux',
+	mongodb: 'MongoDB',
+	nodejs: 'Node.js',
+	svg: 'SVG',
+	vue: 'Vue.js',
+	webpack: 'Webpack',
+};
 const techDescTextContent = {
 	aws:
 		'Nabízí spolehlivé a škálovatelné služby cloud computingu. Pro hostingová řešení je AWS adekvátní volbou pokud pro vaši aplikaci potřebujete velký a bezpečný prostor. Krom hostingových řešení AWS nabízí vše od analytických nástrojů, databází všeho druhu, blockchain až po machine learning.',
@@ -199,8 +214,57 @@ Array.from(img).forEach((item) => {
 	item.addEventListener('click', (event) => {
 		item.style.cursor = 'pointer';
 		let dataImg = item.getAttribute('data-img');
-		if (dataImg.length < 4) techDescTitle.innerHTML = dataImg.toUpperCase();
-		else techDescTitle.innerHTML = dataImg.charAt(0).toUpperCase() + dataImg.slice(1);
+		switch (dataImg) {
+			case 'aws':
+				techDescImg.innerHTML = `<img src=${imgAws} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'docker':
+				techDescImg.innerHTML = `<img src=${imgDocker} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'figma':
+				techDescImg.innerHTML = `<img src=${imgFigma} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'firebase':
+				techDescImg.innerHTML = `<img src=${imgFirebase} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'github':
+				techDescImg.innerHTML = `<img src=${imgGithub} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'graphql':
+				techDescImg.innerHTML = `<img src=${imgGraphql} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'inkscape':
+				techDescImg.innerHTML = `<img src=${imgInkscape} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'jquery':
+				techDescImg.innerHTML = `<img src=${imgJquery} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'jwt':
+				techDescImg.innerHTML = `<img src=${imgJwt} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'kubernetes':
+				techDescImg.innerHTML = `<img src=${imgKubernetes} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'linux':
+				techDescImg.innerHTML = `<img src=${imgLinux} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'mongodb':
+				techDescImg.innerHTML = `<img src=${imgMongodb} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'nodejs':
+				techDescImg.innerHTML = `<img src=${imgNodejs} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'svg':
+				techDescImg.innerHTML = `<img src=${imgSvg} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'vue':
+				techDescImg.innerHTML = `<img src=${imgVue} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'webpack':
+				techDescImg.innerHTML = `<img src=${imgWebpack} alt="logo ${dataImg}"></img>`;
+				break;
+		}
+		techDescTitle.innerHTML = techDescTitleContent[dataImg];
 		techDescText.innerHTML = techDescTextContent[dataImg];
 		techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${dataImg}.png') %>`;
 		console.log('clicked ' + item.getAttribute('data-img'));
@@ -211,10 +275,59 @@ Array.from(imgReversed).forEach((item) => {
 	item.addEventListener('click', (event) => {
 		item.style.cursor = 'pointer';
 		let dataImg = item.getAttribute('data-img');
-		if (dataImg.length < 4) techDescTitle.innerHTML = dataImg.toUpperCase();
-		else techDescTitle.innerHTML = dataImg.charAt(0).toUpperCase() + dataImg.slice(1);
+		switch (dataImg) {
+			case 'aws':
+				techDescImg.innerHTML = `<img src=${imgAws} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'docker':
+				techDescImg.innerHTML = `<img src=${imgDocker} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'figma':
+				techDescImg.innerHTML = `<img src=${imgFigma} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'firebase':
+				techDescImg.innerHTML = `<img src=${imgFirebase} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'github':
+				techDescImg.innerHTML = `<img src=${imgGithub} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'graphql':
+				techDescImg.innerHTML = `<img src=${imgGraphql} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'inkscape':
+				techDescImg.innerHTML = `<img src=${imgInkscape} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'jquery':
+				techDescImg.innerHTML = `<img src=${imgJquery} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'jwt':
+				techDescImg.innerHTML = `<img src=${imgJwt} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'kubernetes':
+				techDescImg.innerHTML = `<img src=${imgKubernetes} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'linux':
+				techDescImg.innerHTML = `<img src=${imgLinux} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'mongodb':
+				techDescImg.innerHTML = `<img src=${imgMongodb} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'nodejs':
+				techDescImg.innerHTML = `<img src=${imgNodejs} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'svg':
+				techDescImg.innerHTML = `<img src=${imgSvg} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'vue':
+				techDescImg.innerHTML = `<img src=${imgVue} alt="logo ${dataImg}"></img>`;
+				break;
+			case 'webpack':
+				techDescImg.innerHTML = `<img src=${imgWebpack} alt="logo ${dataImg}"></img>`;
+				break;
+		}
+		techDescTitle.innerHTML = techDescTitleContent[dataImg];
 		techDescText.innerHTML = techDescTextContent[dataImg];
-		techDescImg.src = './img/systems-logos-big/svg-linux.png';
+		techDescImg.src = `<%= require('./img/systems-logos-big/svg-linux.png') %>`;
 		console.log('clicked ' + item.getAttribute('data-img'));
 	});
 });

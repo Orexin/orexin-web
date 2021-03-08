@@ -155,7 +155,9 @@ navbar-wrapper {
 .nav-links a {
 	color: white !important;
 	transition-duration: 0.3s;
+	font-weight: 600;
 }
+
 .nav-actions {
 	display: flex;
 	flex-direction: row;
@@ -200,8 +202,8 @@ navbar-wrapper {
 }
 
 .whited {
-	background-color: var(--text-light) !important;
-	filter: drop-shadow(0px 10px 10px #0000004b);
+	background-color: #ffffff !important;
+	/*filter: drop-shadow(0px 10px 10px #0000004b);*/
 }
 .whited > .nav-set > .nav-links > ul > li > a {
 	color: var(--violet) !important;

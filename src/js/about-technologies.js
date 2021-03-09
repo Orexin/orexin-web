@@ -5,7 +5,7 @@ const outerElm = document.getElementsByClassName('technologie-presentation-conta
 const techDescImg = document.getElementById('technologie-desc-image');
 const techDescTitle = document.getElementById('technologie-desc-title');
 const techDescText = document.getElementById('technologie-desc-text');
-var speed = 0.5;
+var speed = 1.5;
 var logos = new Array(),
 	logosReversed = new Array();
 const imgAws = require(`./../img/systems-logos-big-real-color/svg-AWS.png`),
@@ -81,9 +81,8 @@ for (let i = 0; i < img.length; i++) {
 	logos[i] = {
 		id: i,
 		x: 0,
-		y: 0,
 		imgLeft: img[i].getBoundingClientRect().left,
-		outerElmLeft: outerElm[0].getBoundingClientRect().left,
+		outerElmLeft: img[i].getBoundingClientRect().top,
 	};
 	img[i].style.zIndex = '100000000';
 }
@@ -92,8 +91,7 @@ for (let i = 0; i < imgReversed.length; i++) {
 	logosReversed[i] = {
 		id: i,
 		x: 0,
-		y: 0,
-		imgLeft: imgReversed[i].getBoundingClientRect().left,
+		imgLeft: imgReversed[i].getBoundingClientRect().bottom,
 		outerElmLeft: outerElm[1].getBoundingClientRect().left,
 	};
 	imgReversed[i].style.transform = 'rotateZ(135deg)';
@@ -114,20 +112,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			for (let i = 0; i < img.length; i++) {
 				//move elems diagonaly up
 				img[i].style.transform = `translateX(${logos[i].x + speed}px) rotateZ(90deg)`;
+				img[i].style.borderTop = `10px red solid`;
 				logos[i].x += speed;
-				logos[i].y += speed;
 				// collision detection and move down
 				for (let o = 0; o < outerElm.length; o++) {
 					// inkrement indent
-					if (img[0].getBoundingClientRect().right - img[0].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().right) {
+					if (img[0].getBoundingClientRect().top - img[0].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width) {
 						indent += 5;
 						console.log('last collision');
 					}
-					if (img[i].getBoundingClientRect().right - img[i].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().right) {
+					if (img[i].getBoundingClientRect().top - img[i].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width) {
 						img[i].style.transform = `translateX(-${outerElm[o].getBoundingClientRect().width - indent}px) rotateZ(90deg)`;
 
 						logos[i].x -= outerElm[o].getBoundingClientRect().width - indent;
-						logos[i].y -= outerElm[o].getBoundingClientRect().width - indent;
 					}
 				}
 			}
@@ -135,7 +132,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				//move elems diagonaly down
 				imgReversed[i].style.transform = `translateX(${logosReversed[i].x - speed}px) rotateZ(90deg)`;
 				logosReversed[i].x -= speed;
-				logosReversed[i].y -= speed;
 				// collision detection and move down
 				// inkrement indent
 				if (imgReversed[0].getBoundingClientRect().left + imgReversed[0].getBoundingClientRect().height <= outerElm[1].getBoundingClientRect().left) {
@@ -145,7 +141,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					imgReversed[i].style.transform = `translateX(-${outerElm[1].getBoundingClientRect().width - indentReversed}px) rotateZ(90deg)`;
 
 					logosReversed[i].x += outerElm[1].getBoundingClientRect().width - indentReversed;
-					logosReversed[i].y += outerElm[1].getBoundingClientRect().width - indentReversed;
 				}
 			}
 			await sleep(5);

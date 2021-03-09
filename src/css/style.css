@@ -583,7 +583,7 @@ navbar-wrapper {
 
 #technologie-title {
 	display: block;
-	transform: rotateZ(-45deg);
+	transform: rotateZ(-50deg);
 	/*margin-bottom: 11vh;*/
 }
 
@@ -592,14 +592,19 @@ navbar-wrapper {
 	font-weight: 900;
 	text-align: center;
 }
+#technologie-presentation {
+	width: 125%;
+	margin-left: -15vw !important;
+}
 
 #technologie-presentation,
 .technologie-desc-container {
-	transform: rotateZ(-45deg);
+	transform: rotateZ(-50deg);
+	border-top: 10px solid red;
 }
 
 .technologie-presentation-column {
-	/*margin-left: -39vw;*/
+	margin-left: -39vw;
 }
 
 .technologie-presentation-container {

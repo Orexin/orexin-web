@@ -13,7 +13,7 @@ const imgAws = require(`./../img/systems-logos-big-real-color/svg-AWS.png`),
 	imgFigma = require(`./../img/systems-logos-big-real-color/svg-figma.png`),
 	imgFirebase = require(`./../img/systems-logos-big-real-color/svg-firebase.png`),
 	imgGithub = require(`./../img/systems-logos-big-real-color/svg-github.png`),
-	imgGrapql = require(`./../img/systems-logos-big-real-color/svg-graphql.png`),
+	imgGraphql = require(`./../img/systems-logos-big-real-color/svg-graphql.png`),
 	imgInkscape = require(`./../img/systems-logos-big-real-color/svg-inkscape.png`),
 	imgJquery = require(`./../img/systems-logos-big-real-color/svg-jquery.png`),
 	imgJwt = require(`./../img/systems-logos-big-real-color/svg-jwt.png`),
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		while (true) {
 			for (let i = 0; i < img.length; i++) {
 				//move elems diagonaly up
-				img[i].style.transform = `translateX(${logos[i].x + speed}px) translateY(${logos[i].y + speed}px) rotateZ(135deg)`;
+				img[i].style.transform = `translateX(${logos[i].x + speed}px) rotateZ(90deg)`;
 				logos[i].x += speed;
 				logos[i].y += speed;
 				// collision detection and move down
@@ -124,9 +124,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						console.log('last collision');
 					}
 					if (img[i].getBoundingClientRect().right - img[i].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().right) {
-						img[i].style.transform = `translateX(-${outerElm[o].getBoundingClientRect().width - indent}px) translateY(-${
-							outerElm[o].getBoundingClientRect().width - indent
-						}px) rotateZ(135deg)`;
+						img[i].style.transform = `translateX(-${outerElm[o].getBoundingClientRect().width - indent}px) rotateZ(90deg)`;
 
 						logos[i].x -= outerElm[o].getBoundingClientRect().width - indent;
 						logos[i].y -= outerElm[o].getBoundingClientRect().width - indent;
@@ -135,7 +133,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			}
 			for (let i = 0; i < imgReversed.length; i++) {
 				//move elems diagonaly down
-				imgReversed[i].style.transform = `translateX(${logosReversed[i].x - speed}px) translateY(${logosReversed[i].y - speed}px) rotateZ(135deg)`;
+				imgReversed[i].style.transform = `translateX(${logosReversed[i].x - speed}px) rotateZ(90deg)`;
 				logosReversed[i].x -= speed;
 				logosReversed[i].y -= speed;
 				// collision detection and move down
@@ -144,9 +142,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					console.log('last reversed collision');
 				}
 				if (imgReversed[i].getBoundingClientRect().left + imgReversed[i].getBoundingClientRect().height <= outerElm[1].getBoundingClientRect().left) {
-					imgReversed[i].style.transform = `translateX(-${outerElm[1].getBoundingClientRect().width - indentReversed}px) translateY(-${
-						outerElm[1].getBoundingClientRect().width - indentReversed
-					}px) rotateZ(135deg)`;
+					imgReversed[i].style.transform = `translateX(-${outerElm[1].getBoundingClientRect().width - indentReversed}px) rotateZ(90deg)`;
 
 					logosReversed[i].x += outerElm[1].getBoundingClientRect().width - indentReversed;
 					logosReversed[i].y += outerElm[1].getBoundingClientRect().width - indentReversed;

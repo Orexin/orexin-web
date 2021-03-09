@@ -13,7 +13,7 @@ const imgAws = require(`./../img/systems-logos-big-real-color/svg-AWS.png`),
 	imgFigma = require(`./../img/systems-logos-big-real-color/svg-figma.png`),
 	imgFirebase = require(`./../img/systems-logos-big-real-color/svg-firebase.png`),
 	imgGithub = require(`./../img/systems-logos-big-real-color/svg-github.png`),
-	imgGrapql = require(`./../img/systems-logos-big-real-color/svg-graphql.png`),
+	imgGraphql = require(`./../img/systems-logos-big-real-color/svg-graphql.png`),
 	imgInkscape = require(`./../img/systems-logos-big-real-color/svg-inkscape.png`),
 	imgJquery = require(`./../img/systems-logos-big-real-color/svg-jquery.png`),
 	imgJwt = require(`./../img/systems-logos-big-real-color/svg-jwt.png`),
@@ -183,151 +183,135 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	techDescChange(); */
 });
 
-//mouseover for pointer kursor
-Array.from(img).forEach((item) => {
-	item.addEventListener('mouseover', (event) => {
-		item.style.cursor = 'pointer';
-	});
-});
-
-Array.from(imgReversed).forEach((item) => {
-	item.addEventListener('mouseover', (event) => {
-		item.style.cursor = 'pointer';
-	});
-});
-
-//mouseout for default kursor
-Array.from(img).forEach((item) => {
-	item.addEventListener('mouseout', (event) => {
-		item.style.cursor = 'auto';
-	});
-});
-
-Array.from(imgReversed).forEach((item) => {
-	item.addEventListener('mouseout', (event) => {
-		item.style.cursor = 'auto';
-	});
-});
-
 //click for selecting tech desc
 Array.from(img).forEach((item) => {
-	item.addEventListener('click', (event) => {
-		item.style.cursor = 'pointer';
-		let dataImg = item.getAttribute('data-img');
-		switch (dataImg) {
-			case 'aws':
-				techDescImg.innerHTML = `<img src=${imgAws} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'docker':
-				techDescImg.innerHTML = `<img src=${imgDocker} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'figma':
-				techDescImg.innerHTML = `<img src=${imgFigma} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'firebase':
-				techDescImg.innerHTML = `<img src=${imgFirebase} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'github':
-				techDescImg.innerHTML = `<img src=${imgGithub} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'graphql':
-				techDescImg.innerHTML = `<img src=${imgGraphql} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'inkscape':
-				techDescImg.innerHTML = `<img src=${imgInkscape} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'jquery':
-				techDescImg.innerHTML = `<img src=${imgJquery} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'jwt':
-				techDescImg.innerHTML = `<img src=${imgJwt} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'kubernetes':
-				techDescImg.innerHTML = `<img src=${imgKubernetes} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'linux':
-				techDescImg.innerHTML = `<img src=${imgLinux} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'mongodb':
-				techDescImg.innerHTML = `<img src=${imgMongodb} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'nodejs':
-				techDescImg.innerHTML = `<img src=${imgNodejs} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'svg':
-				techDescImg.innerHTML = `<img src=${imgSvg} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'vue':
-				techDescImg.innerHTML = `<img src=${imgVue} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'webpack':
-				techDescImg.innerHTML = `<img src=${imgWebpack} alt="logo ${dataImg}"></img>`;
-				break;
-		}
-		techDescTitle.innerHTML = techDescTitleContent[dataImg];
-		techDescText.innerHTML = techDescTextContent[dataImg];
-		techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${dataImg}.png') %>`;
-		console.log('clicked ' + item.getAttribute('data-img'));
-	});
+	setTimeout(
+		item.addEventListener('click', (event) => {
+			const selectDesc = () => {
+				item.style.cursor = 'pointer';
+				let dataImg = item.getAttribute('data-img');
+				switch (dataImg) {
+					case 'aws':
+						techDescImg.innerHTML = `<img src=${imgAws} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'docker':
+						techDescImg.innerHTML = `<img src=${imgDocker} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'figma':
+						techDescImg.innerHTML = `<img src=${imgFigma} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'firebase':
+						techDescImg.innerHTML = `<img src=${imgFirebase} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'github':
+						techDescImg.innerHTML = `<img src=${imgGithub} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'graphql':
+						techDescImg.innerHTML = `<img src=${imgGraphql} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'inkscape':
+						techDescImg.innerHTML = `<img src=${imgInkscape} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'jquery':
+						techDescImg.innerHTML = `<img src=${imgJquery} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'jwt':
+						techDescImg.innerHTML = `<img src=${imgJwt} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'kubernetes':
+						techDescImg.innerHTML = `<img src=${imgKubernetes} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'linux':
+						techDescImg.innerHTML = `<img src=${imgLinux} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'mongodb':
+						techDescImg.innerHTML = `<img src=${imgMongodb} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'nodejs':
+						techDescImg.innerHTML = `<img src=${imgNodejs} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'svg':
+						techDescImg.innerHTML = `<img src=${imgSvg} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'vue':
+						techDescImg.innerHTML = `<img src=${imgVue} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'webpack':
+						techDescImg.innerHTML = `<img src=${imgWebpack} alt="logo ${dataImg}"></img>`;
+						break;
+				}
+				techDescTitle.innerHTML = techDescTitleContent[dataImg];
+				techDescText.innerHTML = techDescTextContent[dataImg];
+				techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${dataImg}.png') %>`;
+				console.log('clicked ' + item.getAttribute('data-img'));
+			};
+			setTimeout(selectDesc, 100);
+		})
+	);
 });
 
 Array.from(imgReversed).forEach((item) => {
-	item.addEventListener('click', (event) => {
-		item.style.cursor = 'pointer';
-		let dataImg = item.getAttribute('data-img');
-		switch (dataImg) {
-			case 'aws':
-				techDescImg.innerHTML = `<img src=${imgAws} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'docker':
-				techDescImg.innerHTML = `<img src=${imgDocker} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'figma':
-				techDescImg.innerHTML = `<img src=${imgFigma} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'firebase':
-				techDescImg.innerHTML = `<img src=${imgFirebase} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'github':
-				techDescImg.innerHTML = `<img src=${imgGithub} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'graphql':
-				techDescImg.innerHTML = `<img src=${imgGraphql} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'inkscape':
-				techDescImg.innerHTML = `<img src=${imgInkscape} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'jquery':
-				techDescImg.innerHTML = `<img src=${imgJquery} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'jwt':
-				techDescImg.innerHTML = `<img src=${imgJwt} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'kubernetes':
-				techDescImg.innerHTML = `<img src=${imgKubernetes} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'linux':
-				techDescImg.innerHTML = `<img src=${imgLinux} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'mongodb':
-				techDescImg.innerHTML = `<img src=${imgMongodb} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'nodejs':
-				techDescImg.innerHTML = `<img src=${imgNodejs} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'svg':
-				techDescImg.innerHTML = `<img src=${imgSvg} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'vue':
-				techDescImg.innerHTML = `<img src=${imgVue} alt="logo ${dataImg}"></img>`;
-				break;
-			case 'webpack':
-				techDescImg.innerHTML = `<img src=${imgWebpack} alt="logo ${dataImg}"></img>`;
-				break;
-		}
-		techDescTitle.innerHTML = techDescTitleContent[dataImg];
-		techDescText.innerHTML = techDescTextContent[dataImg];
-		techDescImg.src = `<%= require('./img/systems-logos-big/svg-linux.png') %>`;
-		console.log('clicked ' + item.getAttribute('data-img'));
-	});
+	setTimeout(
+		item.addEventListener('click', (event) => {
+			const selectDesc = () => {
+				item.style.cursor = 'pointer';
+				let dataImg = item.getAttribute('data-img');
+				switch (dataImg) {
+					case 'aws':
+						techDescImg.innerHTML = `<img src=${imgAws} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'docker':
+						techDescImg.innerHTML = `<img src=${imgDocker} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'figma':
+						techDescImg.innerHTML = `<img src=${imgFigma} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'firebase':
+						techDescImg.innerHTML = `<img src=${imgFirebase} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'github':
+						techDescImg.innerHTML = `<img src=${imgGithub} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'graphql':
+						techDescImg.innerHTML = `<img src=${imgGraphql} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'inkscape':
+						techDescImg.innerHTML = `<img src=${imgInkscape} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'jquery':
+						techDescImg.innerHTML = `<img src=${imgJquery} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'jwt':
+						techDescImg.innerHTML = `<img src=${imgJwt} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'kubernetes':
+						techDescImg.innerHTML = `<img src=${imgKubernetes} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'linux':
+						techDescImg.innerHTML = `<img src=${imgLinux} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'mongodb':
+						techDescImg.innerHTML = `<img src=${imgMongodb} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'nodejs':
+						techDescImg.innerHTML = `<img src=${imgNodejs} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'svg':
+						techDescImg.innerHTML = `<img src=${imgSvg} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'vue':
+						techDescImg.innerHTML = `<img src=${imgVue} alt="logo ${dataImg}"></img>`;
+						break;
+					case 'webpack':
+						techDescImg.innerHTML = `<img src=${imgWebpack} alt="logo ${dataImg}"></img>`;
+						break;
+				}
+				techDescTitle.innerHTML = techDescTitleContent[dataImg];
+				techDescText.innerHTML = techDescTextContent[dataImg];
+				techDescImg.src = `<%= require('./../img/systems-logos-big/svg-${dataImg}.png') %>`;
+				console.log('clicked ' + item.getAttribute('data-img'));
+			};
+			setTimeout(selectDesc, 100);
+		})
+	);
 });

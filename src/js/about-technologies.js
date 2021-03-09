@@ -117,14 +117,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				// collision detection and move down
 				for (let o = 0; o < outerElm.length; o++) {
 					// inkrement indent
-					if (img[0].getBoundingClientRect().top - img[0].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width) {
+					if (img[0].getBoundingClientRect().left - img[0].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width) {
 						indent += 5;
 						console.log('last collision');
 					}
-					if (img[i].getBoundingClientRect().top - img[i].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width) {
-						img[i].style.transform = `translateX(-${outerElm[o].getBoundingClientRect().width - indent}px) rotateZ(90deg)`;
+					if (img[i].getBoundingClientRect().left - img[i].getBoundingClientRect().height >= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width) {
+						img[i].style.transform = `translateX(-${outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width}px) rotateZ(90deg)`;
 
-						logos[i].x -= outerElm[o].getBoundingClientRect().width - indent;
+						logos[i].x -= outerElm[o].getBoundingClientRect().left + outerElm[o].getBoundingClientRect().width;
 					}
 				}
 			}

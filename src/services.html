@@ -124,35 +124,7 @@
 	</div>
 
 	<!-- NAV -->
-	<nav class="columns ml-0">
-		<a href="./index.html" id="nav-logo">
-			<div></div>
-		</a>
-		<a href="./index.html" class="active column is-1">
-			<span>Úvod</span>
-		</a>
-		<a href="./about.html" class="column is-1">
-			<span>O nás</span>
-		</a>
-		<a href="./services.html" class="column is-1">
-			<span>Služby</span>
-		</a>
-		<a href="./faq.html" class="column is-1">
-			<span>FAQ</span>
-		</a>
-		<a href="./contact.html" class="kontakt-container column is-1 is-offset-6">
-			<div>Kontakt</div>
-		</a>
-		<ul>
-			<!-- 				<li id="cs-flag">
-					<a href="#"><img src="<%= require('./img/flags/cs.png') %>" alt="cs-flag" /></a>
-				</li> do anglické verze -->
-			<li id="en-flag">
-				<a href="./../en/index.html"><img src="<%= require('./img/flags/en.png') %>" alt="en-flag" /></a>
-			</li>
-		</ul>
-		<span id="nav-indicator" style="transition: all 0.5s ease-in-out !important"></span>
-	</nav>
+	<navbar-wrapper></navbar-wrapper>
 	<!-- UVOD SUBPAGES -->
 	<section class="uvod-sub-pages">
 		<img src="<%= require('./img/uvod-bg-blur-sm.png') %>" alt="" />
@@ -166,7 +138,8 @@
 			</div>
 		</div>
 		<div class="columns is-centered nase-sluzby-img-container-container">
-			<img class="columns nase-sluzby-img" src="<%= require('./img/web-pres-sluzby.png') %>" alt="" style="z-index: 2;">
+			<img class="columns nase-sluzby-img" src="<%= require('./img/web-pres-sluzby.png') %>" alt=""
+				style="z-index: 2;">
 			<img class="columns nase-sluzby-img-kokot" src="<%= require('./img/web-pres-sluzby.png') %>" alt="">
 		</div>
 		<div id="nase-sluzby-content" class="columns is-centered">
@@ -191,7 +164,8 @@
 				Má vaše podnikání velké cíle?
 				Náš produkt webová prezentace Vám umožní odlišit se v digitálním světě.
 				Jsou vaše cíle opravdu velké a chcete mít dobrou
-				reprezentaci v digitálním světě? Pokud ano webová prezentace vám zaručí spokojenost návštěvníků vaší stránky a
+				reprezentaci v digitálním světě? Pokud ano webová prezentace vám zaručí spokojenost návštěvníků vaší
+				stránky a
 				místo kde můžete svět informovat o všem co je pro vás důležité.
 			</div>
 			<div class="column"></div>
@@ -202,7 +176,8 @@
 			</div>
 		</div>
 		<div class="columns is-centered nase-sluzby-img-container-container">
-			<img class="columns nase-sluzby-img" src="<%= require('./img/web-pres-sluzby.png') %>" alt="" style="z-index: 2;">
+			<img class="columns nase-sluzby-img" src="<%= require('./img/web-pres-sluzby.png') %>" alt=""
+				style="z-index: 2;">
 			<img class="columns nase-sluzby-img-kokot" src="<%= require('./img/web-pres-sluzby.png') %>" alt="">
 		</div>
 		<div id="nase-sluzby-content" class="columns is-centered">
@@ -223,9 +198,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="column is-offset-2 is-5 mt-3 is-size-4 is-narrow"> Potřebujete rozsáhlé technické řešení pro business
+			<div class="column is-offset-2 is-5 mt-3 is-size-4 is-narrow"> Potřebujete rozsáhlé technické řešení pro
+				business
 				management, správu databáze, rezervační systém či jiný náročnější proces?
-				Webová aplikace vám zaručí rychlý přístup, jednoduché uživatelské rozhraní, bezpečnost, a cenově výhodné řešení
+				Webová aplikace vám zaručí rychlý přístup, jednoduché uživatelské rozhraní, bezpečnost, a cenově výhodné
+				řešení
 				pro vaše podnikání.
 			</div>
 			<div class="column"></div>
@@ -236,7 +213,8 @@
 			</div>
 		</div>
 		<div class="columns is-centered nase-sluzby-img-container-container">
-			<img class="columns nase-sluzby-img" src="<%= require('./img/web-pres-sluzby.png') %>" alt="" style="z-index: 2;">
+			<img class="columns nase-sluzby-img" src="<%= require('./img/web-pres-sluzby.png') %>" alt=""
+				style="z-index: 2;">
 			<img class="columns nase-sluzby-img-kokot" src="<%= require('./img/web-pres-sluzby.png') %>" alt="">
 		</div>
 		<div id="nase-sluzby-content" class="columns is-centered">
@@ -258,8 +236,10 @@
 				</div>
 			</div>
 			<div class="column is-offset-2 is-5 mt-3 is-size-4 is-narrow">Rozjíždíte svůj vlastní business a potřebujete
-				Eshop? Naše řešení ecommerce vám zaručí jednoduchý přístup, uživatelskou spokojenost, celkovou bezpečnost,
-				rychlé připojení k databázi produktů, informační systém objednávek, uživatelské účty pro stálé zákazníky a další
+				Eshop? Naše řešení ecommerce vám zaručí jednoduchý přístup, uživatelskou spokojenost, celkovou
+				bezpečnost,
+				rychlé připojení k databázi produktů, informační systém objednávek, uživatelské účty pro stálé zákazníky
+				a další
 				řešení vašich požadavků.
 			</div>
 			<div class="column"></div>
@@ -279,82 +259,14 @@
 		<div class="columns is-centered">
 			<div class="column is-size-5 nase-sluzby-item">Roční poplatky se počítají podle náročnosti provedení vašich
 				požadavků, návštěvnosti vaší stránky a
-				aktivity používání placených částí našich technologií. Více informací o roční platbě si můžete přečíst <a
-					href="./faq/annual-payment.html">zde</a></div>
+				aktivity používání placených částí našich technologií. Více informací o roční platbě si můžete přečíst
+				<a href="./faq/annual-payment.html">zde</a>
+			</div>
 		</div>
 	</section>
 
 	<!-- FOOTER -->
-	<footer>
-		<div class="footer-kontakt-button columns is-centered">
-			<a href="./contact.html" class="column is-size-1 p-0">
-				<i class="fa fa-envelope is-inline"></i>
-				<div class="is-size-2 is-inline">Kontaktuje nás</div>
-			</a>
-		</div>
-		<div class="footer-tel columns">
-			<div class="column is-size-1">
-				<img src="<%= require('./img/Inline_white-sm.png') %>" alt="" />
-			</div>
-			<div class="column is-offset-5 is-size-1">
-				<i class="fa fa-mobile is-inline"></i>
-				<a href="tel:+420-666-666-666">
-					<h3 class="is-size-1 is-inline">+420 666 666 666</h3>
-				</a>
-			</div>
-		</div>
-		<div class="columns footer-links">
-			<div class="column">
-				<h3 class="is-size-3">O společnosti</h3>
-				<div></div>
-				<a href="./about.html">
-					<h4 class="is-size-6">O nás</h4>
-				</a>
-				<a href="./services.html">
-					<h4 class="is-size-6">Služby</h4>
-				</a>
-				<a href="./contact.html">
-					<h4 class="is-size-6">Kontaktní formulář</h4>
-				</a>
-				<!-- 					<a href="#">
-						<h4>Volná místa</h4>
-					</a> -->
-			</div>
-			<div class="column">
-				<h3 class="is-size-3">FAQ</h3>
-				<div></div>
-				<a href="./faq/faq.html">
-					<h4 class="is-size-6">Nejčastější dotazy</h4>
-				</a>
-				<a href="./privacy.html">
-					<h4 class="is-size-6">Ochrana osobních údajů</h4>
-				</a>
-				<a href="./faq/web-rights-transfer.html">
-					<h4 class="is-size-6">Předání webu</h4>
-				</a>
-				<a href="./faq/annual-payment.html">
-					<h4 class="is-size-6">Roční platba</h4>
-				</a>
-			</div>
-			<div class="column">
-				<h3 class="is-size-3">Naše služby</h3>
-				<div></div>
-				<a href="./services.html">
-					<h4 class="is-size-6">Web-development</h4>
-				</a>
-				<a href="./terms-and-conditions.html">
-					<h4 class="is-size-6">Obchodní podmínky</h4>
-				</a>
-			</div>
-			<div class="column">
-				<h3 class="is-size-3">Sledujte nás</h3>
-				<div></div>
-			</div>
-		</div>
-		<div class="columns is-centered">
-			<div class="column is-half is-size-6" style="text-align: center">&copy; Orexin Solutions | 2021</div>
-		</div>
-	</footer>
+	<footer-wrapper></footer-wrapper>
 </body>
 
 </html>

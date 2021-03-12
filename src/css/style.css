@@ -1055,7 +1055,7 @@ navbar-wrapper {
 
 /*! FAQ END!*/
 
-/*! FOOTER !*/
+/*! 	R !*/
 footer-wrapper {
 	background-color: var(--violet-dark) !important;
 	width: 100%;
@@ -1180,6 +1180,12 @@ footer-wrapper > .footer-content > .upper > img {
 }
 .socials > a {
 	font-size: 40px;
+}
+.socials > a span {
+	transition-duration: 0.3s;
+}
+.socials > a:hover span {
+	transform: translateY(-5px);
 }
 .nobody-cares {
 	display: flex;

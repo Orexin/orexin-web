@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Orexin Solutions | Ochrana osobních údajů</title>
-	<meta name="description" content="Vaše data jsou u nás v bezpečí" />
+	<title>Orexin Solutions | Předání práv webu</title>
 	<meta name="author" content="Orexin Solutions" />
+	<meta name="description" content="Jak probíhá předání práv na váš web?" />
 
 	<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
 </head>
@@ -124,9 +124,37 @@
 	</div>
 
 	<!-- NAV -->
-	<navbar-wrapper></navbar-wrapper>
+	<nav class="columns ml-0">
+		<a href="./index.html" id="nav-logo">
+			<div></div>
+		</a>
+		<a href="./index.html" class="active column is-1">
+			<span>Úvod</span>
+		</a>
+		<a href="./about.html" class="column is-1">
+			<span>O nás</span>
+		</a>
+		<a href="./services.html" class="column is-1">
+			<span>Služby</span>
+		</a>
+		<a href="./faq.html" class="column is-1">
+			<span>FAQ</span>
+		</a>
+		<a href="./contact.html" class="kontakt-container column is-1 is-offset-6">
+			<div>Kontakt</div>
+		</a>
+		<ul>
+			<!-- 				<li id="cs-flag">
+					<a href="#"><img src="<%= require('./img/flags/cs.png') %>" alt="cs-flag" /></a>
+				</li> do anglické verze -->
+			<li id="en-flag">
+				<a href="./../en/index.html"><img src="<%= require('./img/flags/en.png') %>" alt="en-flag" /></a>
+			</li>
+		</ul>
+		<span id="nav-indicator" style="transition: all 0.5s ease-in-out !important"></span>
+	</nav>
 
-	<!-- HERO SUBPAGES -->
+	<!-- UVOD SUBPAGES -->
 	<section class="uvod-sub-pages">
 		<img src="<%= require('./img/uvod-bg-blur-sm.png') %>" alt="" />
 	</section>

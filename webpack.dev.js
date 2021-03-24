@@ -88,19 +88,19 @@ module.exports = {
 			filename: 'contact.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/faq/faq.html',
+			template: './src/faq.html',
 			inject: true,
 			chunks: ['main', 'faq'],
 			filename: 'faq.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/faq/annual-payment.html',
+			template: './src/annual-payment.html',
 			inject: true,
 			chunks: ['main'],
 			filename: 'annual-payment.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/faq/web-rights-transfer.html',
+			template: './src/web-rights-transfer.html',
 			inject: true,
 			chunks: ['main'],
 			filename: 'web-rights-transfer.html'
@@ -118,28 +118,22 @@ module.exports = {
 			filename: 'terms-and-conditions.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/console/introduction.html',
+			template: './src/services/ecommerce.html',
 			inject: true,
 			chunks: ['main'],
-			filename: 'introduction.html'
+			filename: 'ecommerce.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/console/documentation.html',
+			template: './src/services/web-app.html',
 			inject: true,
 			chunks: ['main'],
-			filename: 'documentation.html'
+			filename: 'web-app.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/console/tutorials.html',
+			template: './src/services/web-pres.html',
 			inject: true,
 			chunks: ['main'],
-			filename: 'tutorials.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/console/sponsor.html',
-			inject: true,
-			chunks: ['main'],
-			filename: 'sponsor.html'
+			filename: 'web-pres.html'
 		}),
 	]
 };

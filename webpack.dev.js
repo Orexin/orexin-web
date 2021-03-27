@@ -94,18 +94,6 @@ module.exports = {
 			filename: 'faq.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/annual-payment.html',
-			inject: true,
-			chunks: ['main'],
-			filename: 'annual-payment.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/web-rights-transfer.html',
-			inject: true,
-			chunks: ['main'],
-			filename: 'web-rights-transfer.html'
-		}),
-		new HtmlWebpackPlugin({
 			template: './src/privacy.html',
 			inject: true,
 			chunks: ['main'],

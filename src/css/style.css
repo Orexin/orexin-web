@@ -329,9 +329,8 @@ navbar-wrapper {
 	margin-bottom: 75px;
 }
 .card-el {
-	height: 400px;
-	width: 400px;
-	cursor: pointer;
+	height: 450px;
+	width: 450px;
 	transition-duration: 0.5s;
 	margin: 15px;
 	overflow: hidden !important;
@@ -362,6 +361,49 @@ navbar-wrapper {
 .card-text p {
 	text-align: center;
 }
+.see-also {
+	text-align: center;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+.see-also a {
+	border: solid white 2px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	color: var(--violet-light);
+	background-color: white;
+
+}
+.see-also a:hover {
+	color: white;
+	background-color: var(--violet-light);
+}
+/*cards translate hover effects*/
+
+#pay:after {
+	content: "Pay-as-you-go";
+}
+#pay:hover:after {
+	content: "Jak to přeložit??";
+}
+#oldMan:after {
+	content: "The future is now, old man."
+}
+#oldMan:hover:after {
+	content: "Budoucnost je nyní, staříku.";
+}
+#third:after {
+	content: "Full control";
+}
+#third:hover:after {
+	content: "Plná kontrola";
+}
+
+/*cards translate hover effects*/
+
 .card-icon {
 	font-size: 150px;
 	line-height: 100px;
@@ -390,7 +432,7 @@ navbar-wrapper {
 /*SKEW*/
 .skewed-backg {
 	position: absolute;
-	top: 35%;
+	top: 50%;
 	z-index: -99999;
 	background-color: var(--violet);
 	width: 100%;

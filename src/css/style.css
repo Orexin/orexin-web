@@ -773,63 +773,77 @@ navbar-wrapper {
 /*! ABOUT END!*/
 
 /*! SLUZBY!*/
-#nase-sluzby {
-	background: var(--violet-darker);
+#sluzby-rozcestnik-layer-1 {
+	position: absolute;
+	top: 0;
+	display: grid;
+	grid-template-columns: 0.3fr 0.7fr;
+	grid-template-rows: 1fr;
 }
 
-#nase-sluzby-title {
-	margin-top: 60px;
-	margin-bottom: 40px;
-	margin-left: 40px;
-	font-size: 40px;
+#sluzby-rozcestnik-layer-1 div:nth-child(1) {
+	height: 100vh;
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+#sluzby-rozcestnik-layer-1 div:nth-child(2) {
+	height: 100vh;
+	grid-area: 1 / 2 / 2 / 3;
+	background: var(--violet-dark);
+}
+
+#sluzby-rozcestnik-layer-2 {
+}
+
+.sluzby-card {
+	position: relative;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 0.2fr 0.6fr 0.2fr;
+	grid-template-rows: 1fr;
+}
+
+.sluzby-card-grid-col {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.sluzby-card-grid-col > div {
+	border-radius: 60px;
+	background: var(--violet-light);
+	box-shadow: 0 0 30px 1px RGBA(0, 0, 0, 0.25);
+}
+
+.sluzby-card-grid-col div h2 {
 	color: #fff;
 	font-weight: 900;
-}
-
-.nase-sluzby-img-container-container {
-	display: flex;
-	flex-direction: row;
-}
-
-.nase-sluzby-img-container {
-}
-
-.nase-sluzby-img,
-.nase-sluzby-img-kokot {
-	max-height: 75vh;
+	font-size: 30px;
 	text-align: center;
 }
 
-.nase-sluzby-img {
-	position: absolute;
-	z-index: 1000;
-	box-shadow: 30px 30px 100px #000;
-}
-
-.nase-sluzby-img-kokot {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	margin-left: 30px !important;
-	margin-top: 30px !important;
-	filter: blur(5px);
-}
-
-#nase-sluzby-content {
-	margin-top: 80vh !important;
-}
-
-.nase-sluzby-sleva-container div {
+.sluzby-card-grid-col div div {
+	padding: 45px;
 	background: #fff;
-	border-radius: 15px;
-	border: 2px lightgray solid;
-	box-shadow: 0px 0px 50px #35353538 !important;
+	border-radius: 58px;
 }
 
-.nase-sluzby-sleva-container div p,
-.nase-sluzby-sleva-container div p span {
-	color: var(--violet-dark);
-	font-weight: 900;
+.sluzby-card-grid-col div div p {
+	color: var(--violet);
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.sluzby-card-grid-col div div a span {
+	float: right;
+	font-weight: 600;
+	background: var(--violet);
+	border-radius: 15px;
+	font-size: 15px;
+	padding: 2px 12px 2px 12px;
+	transition: all 0.3s ease-in-out;
+}
+
+.sluzby-card-grid-col div div a span:hover {
+	background: var(--violet-light);
 }
 
 /*! SLUZBY END!*/

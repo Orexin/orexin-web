@@ -137,7 +137,7 @@ navbar-wrapper {
 	align-items: center;
 	background-color: transparent;
 	height: 80px;
-	border-radius: 15px;
+	border-radius: 10px;
 	width: calc(100vw - 45px) !important;
 	transition-duration: 0.3s;
 }
@@ -205,7 +205,7 @@ navbar-wrapper {
 .whited {
 	background-color: white !important;
 	filter: drop-shadow(0px 10px 10px #0000004b);
-	border-radius: 15px;
+	border-radius: 10px;
 	margin: 15px;
 }
 .whited > .nav-set > .nav-links > ul > li > a {
@@ -375,7 +375,6 @@ navbar-wrapper {
 	border-radius: 5px;
 	color: var(--violet-light);
 	background-color: white;
-
 }
 .see-also a:hover {
 	color: white;
@@ -384,22 +383,22 @@ navbar-wrapper {
 /*cards translate hover effects*/
 
 #pay:after {
-	content: "Pay-as-you-go";
+	content: 'Pay-as-you-go';
 }
 #pay:hover:after {
-	content: "Jak to přeložit??";
+	content: 'Jak to přeložit??';
 }
 #oldMan:after {
-	content: "The future is now, old man."
+	content: 'The future is now, old man.';
 }
 #oldMan:hover:after {
-	content: "Budoucnost je nyní, staříku.";
+	content: 'Budoucnost je nyní, staříku.';
 }
 #third:after {
-	content: "Full control";
+	content: 'Full control';
 }
 #third:hover:after {
-	content: "Plná kontrola";
+	content: 'Plná kontrola';
 }
 
 /*cards translate hover effects*/

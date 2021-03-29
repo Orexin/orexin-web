@@ -20,15 +20,12 @@ class Navbar extends HTMLElement {
 		this.innerHTML = `
 		<div class="logo">
 	<img src=${logoWhite} class="nav-logo"></img>
-</div>
+	</div>
 <div class="nav-set">
 	<div class="nav-links">
 		<ul>
 			<li>
-				<a href="index.html">Domů</a>
-			</li>
-			<li>
-				<a href="#">Úvod</a>
+				<a href="./index.html">Úvod</a>
 			</li>
 			<li>
 				<a href="./about.html">O&nbsp;nás</a>
@@ -37,7 +34,7 @@ class Navbar extends HTMLElement {
 				<a href="./services.html">Služby</a>
 			</li>
 			<li>
-				<a href="./FAQ.html">FAQ</a>
+				<a href="./faq.html">FAQ</a>
 			</li>
 		</ul>
 	</div>
@@ -53,10 +50,7 @@ class Navbar extends HTMLElement {
 	<div class="nav-links-slider">
 		<ul>
 			<li>
-				<a href="/public/home.html">Domů</a>
-			</li>
-			<li>
-				<a href="#">Úvod</a>
+				<a href="./index.html">Úvod</a>
 			</li>
 			<li>
 				<a href="./about.html">O&nbsp;nás</a>
@@ -65,7 +59,7 @@ class Navbar extends HTMLElement {
 				<a href="./services.html">Služby</a>
 			</li>
 			<li>
-				<a href="./FAQ.html">FAQ</a>
+				<a href="./faq.html">FAQ</a>
 			</li>
 		</ul>
 	</div>
@@ -80,7 +74,7 @@ class Navbar extends HTMLElement {
 		var currentScrollPos = 0;
 
 		document.onscroll = function () {
-			// Hide navbar 
+			// Hide navbar
 			currentScrollPos = window.pageYOffset;
 			if (prevScrollpos > currentScrollPos) {
 				nav.style.top = '0';
@@ -90,11 +84,11 @@ class Navbar extends HTMLElement {
 			prevScrollpos = currentScrollPos;
 
 			//White nav out
-			if(document.documentElement.scrollTop >= 150) {
+			if (document.documentElement.scrollTop >= 150) {
 				nav.classList.add('whited');
 				navLogo.setAttribute('src', logoGrad);
 			} else {
-				nav.classList.remove('whited')
+				nav.classList.remove('whited');
 				navLogo.setAttribute('src', logoWhite);
 			}
 		};

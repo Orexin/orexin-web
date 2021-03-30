@@ -15,3 +15,7 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 ## ☁️ Deploy
 
 - `npm run deploy` (nefunkční webpack.prod.js config zatím)
+
+## Img logo policy:
+
+- copy logo-type from inter-company into src

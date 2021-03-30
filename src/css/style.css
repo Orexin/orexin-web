@@ -774,29 +774,40 @@ navbar-wrapper {
 
 /*! SLUZBY!*/
 #sluzby-rozcestnik-layer-1 {
-	position: absolute;
 	top: 0;
 	display: grid;
 	grid-template-columns: 0.3fr 0.7fr;
 	grid-template-rows: 1fr;
+	height: 145vh;
 }
 
 #sluzby-rozcestnik-layer-1 div:nth-child(1) {
-	height: 100vh;
 	grid-area: 1 / 1 / 2 / 2;
 }
 
 #sluzby-rozcestnik-layer-1 div:nth-child(2) {
-	height: 100vh;
 	grid-area: 1 / 2 / 2 / 3;
 	background: var(--violet-dark);
 }
 
+#complementing-object-v1-container {
+	margin-left: 6px;
+	position: absolute;
+	bottom: -400px;
+}
+
+#complementing-object-v5-container {
+	position: absolute;
+	right: 6px;
+	margin-top: 6px;
+}
+
 #sluzby-rozcestnik-layer-2 {
+	position: absolute;
+	top: 29vh;
 }
 
 .sluzby-card {
-	position: relative;
 	margin-top: 50px;
 	display: grid;
 	grid-template-columns: 0.2fr 0.6fr 0.2fr;
@@ -829,7 +840,7 @@ navbar-wrapper {
 .sluzby-card-grid-col div div p {
 	color: var(--violet);
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 19px;
 }
 
 .sluzby-card-grid-col div div a span {

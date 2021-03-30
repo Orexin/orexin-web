@@ -1,4 +1,4 @@
-const logoWhite = require('../img/Logo/Emblem/White/Emblem_white.svg');
+const logoWhite = require('../img/Emblem_white.svg');
 
 class Footer extends HTMLElement {
 	constructor() {

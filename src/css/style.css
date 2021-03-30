@@ -776,9 +776,9 @@ navbar-wrapper {
 #sluzby-rozcestnik-layer-1 {
 	top: 0;
 	display: grid;
-	grid-template-columns: 0.3fr 0.7fr;
+	grid-template-columns: 0.5fr 0.5fr;
 	grid-template-rows: 1fr;
-	height: 145vh;
+	height: 160vh;
 }
 
 #sluzby-rozcestnik-layer-1 div:nth-child(1) {
@@ -791,7 +791,7 @@ navbar-wrapper {
 }
 
 #complementing-object-v1-container {
-	margin-left: 6px;
+	margin-left: 40px;
 	position: absolute;
 	bottom: -400px;
 }
@@ -808,10 +808,14 @@ navbar-wrapper {
 }
 
 .sluzby-card {
-	margin-top: 50px;
+	margin-top: 100px;
 	display: grid;
-	grid-template-columns: 0.2fr 0.6fr 0.2fr;
+	grid-template-columns: 0.35fr 0.6fr 0.05fr;
 	grid-template-rows: 1fr;
+}
+
+.sluzby-card:nth-child(2) {
+	grid-template-columns: 0.05fr 0.6fr 0.35fr;
 }
 
 .sluzby-card-grid-col {
@@ -819,27 +823,27 @@ navbar-wrapper {
 }
 
 .sluzby-card-grid-col > div {
-	border-radius: 60px;
+	border-radius: 30px;
 	background: var(--violet-light);
 	box-shadow: 0 0 30px 1px RGBA(0, 0, 0, 0.25);
 }
 
 .sluzby-card-grid-col div h2 {
 	color: #fff;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 30px;
 	text-align: center;
 }
 
 .sluzby-card-grid-col div div {
-	padding: 45px;
+	padding: 15px 45px 45px 45px;
 	background: #fff;
-	border-radius: 58px;
+	border-radius: 28px;
 }
 
 .sluzby-card-grid-col div div p {
 	color: var(--violet);
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 19px;
 }
 

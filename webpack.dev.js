@@ -6,9 +6,12 @@ module.exports = {
 
 	entry: {
 		main: './src/js/main.js',
+		// pages
+		index: './src/js/index.js',
+		about: './src/js/about.js',
 		contact: './src/js/contact.js',
 		faq: './src/js/faq.js',
-		aboutTechnologies: './src/js/about-technologies.js'
+		services: './src/js/services.js'
 	},
 
 	devServer: {
@@ -63,64 +66,71 @@ module.exports = {
 	},
 
 	plugins: [
+		/* INDEX */
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'index'],
 			filename: 'index.html'
 		}),
+		/* ABOUT */
 		new HtmlWebpackPlugin({
 			template: './src/about.html',
 			inject: true,
-			chunks: ['main', 'aboutTechnologies'],
+			chunks: ['main', 'about'],
 			filename: 'about.html'
 		}),
-		new HtmlWebpackPlugin({
-			template: './src/services.html',
-			inject: true,
-			chunks: ['main'],
-			filename: 'services.html'
-		}),
+		/* CONTACT */
 		new HtmlWebpackPlugin({
 			template: './src/contact.html',
 			inject: true,
 			chunks: ['main', 'contact'],
 			filename: 'contact.html'
 		}),
+		/* FAQ */
 		new HtmlWebpackPlugin({
 			template: './src/faq.html',
 			inject: true,
 			chunks: ['main', 'faq'],
 			filename: 'faq.html'
 		}),
+		/* PRIVACY */
 		new HtmlWebpackPlugin({
 			template: './src/privacy.html',
 			inject: true,
 			chunks: ['main'],
 			filename: 'privacy.html'
 		}),
+		/* TER.MS AND CONDITIONS */
 		new HtmlWebpackPlugin({
 			template: './src/terms-and-conditions.html',
 			inject: true,
 			chunks: ['main'],
 			filename: 'terms-and-conditions.html'
 		}),
+		/* SERVICES */
+		new HtmlWebpackPlugin({
+			template: './src/services.html',
+			inject: true,
+			chunks: ['main', 'services'],
+			filename: 'services.html'
+		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/ecommerce.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'services'],
 			filename: 'ecommerce.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-app.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'services'],
 			filename: 'web-app.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-pres.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'services'],
 			filename: 'web-pres.html'
 		}),
 	]

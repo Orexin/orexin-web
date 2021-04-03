@@ -1,9 +1,10 @@
 // CSS
-import './../css/style.css';
+import 'normalize.css';
+import './../css/main.css';
+import './../css/components/keyframes.css';
 import 'typicons.font/src/font/typicons.css';
 import 'bulma/css/bulma.min.css';
 import 'aos/dist/aos.css';
-import '@splidejs/splide/dist/css/splide.min.css';
 
 // COMPONENTS
 import '../components/navbar';
@@ -11,22 +12,15 @@ import '../components/footer';
 
 //JS
 import AOS from 'aos';
-import Splide from '@splidejs/splide';
 import * as underline from './shifting-underline';
 
-document.addEventListener('DOMContentLoaded', function (event) {
+window.onload = function () {
+	// AOS
 	AOS.init({ once: true });
+	// ✨ aestetic title ✨
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
+	// yeet out preloader
 	document.getElementById('preloader').style.display = 'none';
-	var elms = document.getElementsByClassName('splide');
-	for (var i = 0, len = elms.length; i < len; i++) {
-		new Splide(elms[i], {
-			type: 'loop',
-			autoplay: true,
-			interval: 6000,
-			speed: 1500,
-		}).mount();
-	}
-});
+};
 
 underline.shiftingUnderline();

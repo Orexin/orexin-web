@@ -1,0 +1,46 @@
+@keyframes kontaktButtonIcon {
+	from {
+		display: none;
+		left: -50px;
+	}
+	to {
+		display: block;
+		left: 0;
+	}
+}
+
+@keyframes emblemPath1 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes emblemPath2 {
+	from {
+		transform: rotateZ(360deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes innerCircle {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes questionMark {
+	from {
+		margin-top: 50px;
+	}
+	to {
+		margin-top: -500px;
+	}
+}

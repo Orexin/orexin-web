@@ -1,0 +1,150 @@
+footer-wrapper {
+	background-color: var(--violet-dark) !important;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 80px;
+}
+
+footer-wrapper > .footer-content > .upper > img {
+	width: 50px;
+	margin: 15px;
+	height: auto;
+}
+
+.top-banner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	height: 160px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 40px;
+	margin-top: -80px;
+	border-radius: 5px;
+	background-color: var(--violet-darker);
+	z-index: 5;
+}
+
+.top-banner > h2 {
+	color: white !important;
+	font-weight: 800;
+	letter-spacing: 1px;
+	font-size: 25px;
+}
+
+.top-banner > p {
+	color: white !important;
+	text-align: center;
+	margin: 0px 10% 0px 10%;
+}
+
+.top-banner > p > strong {
+	color: white !important;
+}
+
+.top-banner > a {
+	color: white;
+	padding: 5px 15px 5px 15px;
+	border: solid var(--violet) 2px;
+	border-radius: 25px;
+	transition-duration: 0.3s;
+}
+
+.top-banner > a:hover {
+	background-color: var(--violet);
+	color: white !important;
+}
+
+.upper {
+	padding-top: 150px;
+}
+
+.upper,
+.upper a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.upper > a img {
+	height: 50px;
+	width: auto;
+	transition: all 0.3s ease-in-out;
+}
+.upper h3 {
+	font-weight: 600;
+}
+
+.upper > a div {
+	position: relative;
+	margin-top: -1.75vh;
+	height: 1px;
+	background: #fff;
+	width: 0%;
+	text-align: center;
+	justify-content: center;
+	display: block;
+	transition: width 0.3s ease-in-out;
+}
+
+@keyframes footerFromLeft {
+	from {
+		width: 0;
+	}
+	to {
+		width: 89.5%;
+	}
+}
+
+.upper a:hover h3,
+.upper a:hover img {
+	transform: scale(1.05);
+}
+
+.upper a:hover div {
+	animation: footerFromLeft 0.3s ease-in-out forwards;
+}
+
+.socials {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	justify-content: space-around;
+	gap: 25px;
+}
+.socials > a {
+	font-size: 40px;
+}
+.socials > a span {
+	transition-duration: 0.3s;
+}
+.socials > a:hover span {
+	transform: translateY(-5px);
+}
+.nobody-cares {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 15px;
+	align-items: center;
+	margin-top: 50px;
+}
+.nobody-cares > a {
+	color: var(--text-gray);
+	text-decoration: none;
+	margin: 10px 10px 30px;
+	font-size: 14px;
+	transition: all 0.3s ease;
+}
+.nobody-cares > a:hover {
+	color: white !important;
+}

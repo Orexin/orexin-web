@@ -1,3 +1,5 @@
+import './../css/components/navbar.css';
+
 const logoWhite = require('../img/Emblem_white.svg');
 const logoGrad = require('../img/Emblem_gradient.svg');
 

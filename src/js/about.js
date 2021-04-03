@@ -1,3 +1,5 @@
+import '../css/about.css';
+
 const regeneratorRuntime = require('regenerator-runtime');
 const img = document.getElementsByClassName('technologies-img');
 const imgReversed = document.getElementsByClassName('technologies-img-reversed');

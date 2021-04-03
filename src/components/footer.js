@@ -1,3 +1,5 @@
+import './../css/components/footer.css';
+
 const logoWhite = require('../img/Emblem_white.svg');
 
 class Footer extends HTMLElement {

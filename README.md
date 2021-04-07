@@ -2,19 +2,21 @@
 
 Webová stránka Orexinu 😍
 
+Dev live build: [orexin.fsik.dev](https://orexin.fsik.dev/)
+
 ## ‼️ Jak zfungovat repo pro development
 
 - `git clone https://github.com/Orexin/orexin-web.git`
-- `npm i`
+- `npm ci`
 - `npm start` (`localhost:6969`)
 - **nainstalovat Prettier vscode extension**
-- build `npm build` (nefunkční webpack.prod.js config zatím)
+- build `npm build`
 
 snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 ## ☁️ Deploy
 
-- `npm run deploy` (nefunkční webpack.prod.js config zatím)
+- `npm run deploy`
 
 ## Img logo policy:
 

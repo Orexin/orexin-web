@@ -12,7 +12,7 @@ import '../components/footer';
 
 //JS
 import AOS from 'aos';
-import * as underline from './shifting-underline';
+// import * as underline from './shifting-underline';
 
 window.onload = function () {
 	// AOS
@@ -23,4 +23,4 @@ window.onload = function () {
 	document.getElementById('preloader').style.display = 'none';
 };
 
-underline.shiftingUnderline();
+// underline.shiftingUnderline();

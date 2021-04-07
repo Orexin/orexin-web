@@ -1,5 +1,6 @@
 import '../css/about.css';
 
+/*  OLD VANTYHO CODE
 const regeneratorRuntime = require('regenerator-runtime');
 const img = document.getElementsByClassName('technologies-img');
 const imgReversed = document.getElementsByClassName('technologies-img-reversed');
@@ -182,7 +183,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			await sleep(sleepTime);
 		}
 	};
-	techDescChange(); */
+	techDescChange(); 
 });
 
 //click for selecting tech desc
@@ -317,3 +318,5 @@ Array.from(imgReversed).forEach((item) => {
 		})
 	);
 });
+ 
+*/

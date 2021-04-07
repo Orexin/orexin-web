@@ -1,6 +1,152 @@
-/*! ABOUT!*/
+/*! ABOUT! */
 
-/*! STORY!*/
+.abt-landing {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--violet-darker);
+}
+.abt-main {
+	height: 90vh;
+	/*debug*/
+}
+.abt-action {
+	height: 10vh;
+	text-align: center;
+}
+.abt-action > a {
+	color: var(--violet-darker);
+	border: solid white 2px;
+	background-color: white;
+	padding: 5px 15px 5px 15px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	font-size: 1em;
+	transition-duration: 0.7s;
+	margin: 10px;
+}
+.abt-action > a:hover {
+	animation-name: aboutHover;
+	animation-duration: 0.8s;
+}
+
+@keyframes aboutHover {
+	35% {
+		transform: translateY(-5px);
+	}
+	55% {
+		transform: translateY(15px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.abt-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.abt-item {
+	width: 50% !important;
+	height: 100vh !important;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.abt-text > .smol {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+.abt-text > h3 {
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.mission {
+	height: 50vh;
+}
+
+.mission {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	/*debug*/
+	border-bottom: solid red 1px;
+}
+.m-box {
+	width: 400px !important;
+	margin: 25px;
+	text-align: justify;
+}
+.m-box h6 {
+	color: var(--violet);
+	font-size: 25px;
+	font-weight: 800;
+}
+#longerBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.m-box p {
+	color: black;
+	margin: 10px;
+}
+
+.we-are-orexin {
+	height: 100vh !important;
+	padding: 50px;
+
+	/*debug*/
+	border-bottom: solid red 1px;
+}
+.we-are-orexin > h2 {
+	font-size: 40px;
+	color: var(--violet);
+
+	margin: 0;
+	font-weight: 900;
+}
+.we-are-orexin > p {
+	color: var(--text-gray);
+}
+
+.techstack {
+	height: 100vh;
+	padding: 50px;
+	/*debug*/
+	border-bottom: solid red 1px;
+}
+.techstack > .header {
+	text-align: center;
+}
+.techstack > .header > h2 {
+	font-size: 40px;
+	color: var(--violet);
+
+	margin: 0;
+	font-weight: 900;
+}
+
+.techstack > .header > p {
+	color: var(--text-gray);
+}
+#scnd {
+	font-weight: 700;
+}
+
+/* OLD VANTYHO CODE */
+
+/*! STORY!
 #story {
 	width: 100%;
 	background: var(--violet-dark);
@@ -49,9 +195,9 @@
 	margin: 4vh 0 1vh 7vh;
 	line-height: 30px;
 }
-/*! STORY END!*/
+/*! STORY END!
 
-/*! TECHNOLOGIE !*/
+/*! TECHNOLOGIE !
 
 #technologie {
 	background: var(--violet-dark);
@@ -111,7 +257,7 @@
 	margin-top: 7vw !important;
 	margin-right: 8vw !important;
 }
- */
+ 
 .technologie-presentation-column div {
 	position: relative;
 	transform: rotateZ(-45deg);
@@ -205,3 +351,7 @@
 	line-height: 24px;
 }
 /*! TECHNOLOGIE END!*/
+
+/*OLD VANTYHO CODE END*/
+
+/*! ABOUT END!*/

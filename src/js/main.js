@@ -1,10 +1,10 @@
 // CSS
 import 'normalize.css';
+import 'bulma/css/bulma.min.css';
+import 'aos/dist/aos.css';
 import './../css/main.css';
 import './../css/components/keyframes.css';
 import 'typicons.font/src/font/typicons.css';
-import 'bulma/css/bulma.min.css';
-import 'aos/dist/aos.css';
 
 // COMPONENTS
 import '../components/navbar';

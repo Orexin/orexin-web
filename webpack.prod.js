@@ -9,6 +9,7 @@ module.exports = {
 
 	entry: {
 		main: './src/js/main.js',
+		article: './src/js/article.js',
 		// pages
 		index: './src/js/index.js',
 		about: './src/js/about.js',
@@ -102,7 +103,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/privacy.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'article'],
 			filename: 'privacy.html'
 		}),
 		/* TER.MS AND CONDITIONS */

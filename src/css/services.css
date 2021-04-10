@@ -1,58 +1,10 @@
-#nase-sluzby {
-	background: var(--violet-darker);
+#svg-rozcestnik svg {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
-
-#nase-sluzby-title {
-	margin-top: 60px;
-	margin-bottom: 40px;
-	margin-left: 40px;
-	font-size: 40px;
-	color: #fff;
-	font-weight: 900;
-}
-
-.nase-sluzby-img-container-container {
-	display: flex;
-	flex-direction: row;
-}
-
-.nase-sluzby-img-container {
-}
-
-.nase-sluzby-img,
-.nase-sluzby-img-kokot {
-	max-height: 75vh;
-	text-align: center;
-}
-
-.nase-sluzby-img {
-	position: absolute;
-	z-index: 1000;
-	box-shadow: 30px 30px 100px #000;
-}
-
-.nase-sluzby-img-kokot {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	margin-left: 30px !important;
-	margin-top: 30px !important;
-	filter: blur(5px);
-}
-
-#nase-sluzby-content {
-	margin-top: 80vh !important;
-}
-
-.nase-sluzby-sleva-container div {
-	background: #fff;
-	border-radius: 15px;
-	border: 2px lightgray solid;
-	box-shadow: 0px 0px 50px #35353538 !important;
-}
-
-.nase-sluzby-sleva-container div p,
-.nase-sluzby-sleva-container div p span {
-	color: var(--violet-dark);
-	font-weight: 900;
+svg {
+	position: relative;
+	width: 50%;
+	height: 50%;
 }

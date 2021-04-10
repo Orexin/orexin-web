@@ -94,9 +94,7 @@
 .quick-desc h2 {
 	font-size: 40px;
 	color: var(--violet);
-
 	margin: 0;
-	font-weight: 900;
 }
 
 .quick-desc p {
@@ -141,7 +139,6 @@
 	color: var(--violet);
 	font-size: 25px;
 	text-align: center;
-	font-weight: 900;
 }
 .card-text p {
 	text-align: center;
@@ -237,7 +234,6 @@
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
-	font-weight: 900;
 }
 /*! SOLUTIONS SELECT! END */
 

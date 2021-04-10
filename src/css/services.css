@@ -15,5 +15,9 @@ svg {
 	color: var(--violet);
 }
 
+.sluzby-content-text div h2,
+.sluzby-content-text div p {
+}
+
 #svg-grafika-na-miru div h2 {
 }

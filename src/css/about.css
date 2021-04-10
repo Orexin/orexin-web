@@ -112,9 +112,7 @@
 .we-are-orexin > h2 {
 	font-size: 40px;
 	color: var(--violet);
-
 	margin: 0;
-	font-weight: 900;
 }
 .we-are-orexin > p {
 	color: var(--text-gray);
@@ -132,9 +130,7 @@
 .techstack > .header > h2 {
 	font-size: 40px;
 	color: var(--violet);
-
 	margin: 0;
-	font-weight: 900;
 }
 
 .techstack > .header > p {

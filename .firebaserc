@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "orexin-econtech"
+    "orexin-web": "orexin-econtech"
+  },
+  "targets": {
+    "orexin-econtech": {
+      "hosting": {
+        "live-dev": [
+          "dev-6969"
+        ]
+      }
+    }
   }
 }

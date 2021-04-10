@@ -13,7 +13,7 @@ class Footer extends HTMLElement {
 		<div class="top-banner">
 			<h2>Připraveni?</h2>
 			<p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
-			<a href="#">Jdeme na to</a>
+			<a href="/contact.html">Jdeme na to</a>
 		</div>
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>

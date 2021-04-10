@@ -1,10 +1,10 @@
 // CSS
 import 'normalize.css';
+import 'bulma/css/bulma.min.css';
+import 'aos/dist/aos.css';
 import './../css/main.css';
 import './../css/components/keyframes.css';
 import 'typicons.font/src/font/typicons.css';
-import 'bulma/css/bulma.min.css';
-import 'aos/dist/aos.css';
 
 // COMPONENTS
 import '../components/navbar';
@@ -12,7 +12,7 @@ import '../components/footer';
 
 //JS
 import AOS from 'aos';
-import * as underline from './shifting-underline';
+// import * as underline from './shifting-underline';
 
 window.onload = function () {
 	// AOS
@@ -23,4 +23,4 @@ window.onload = function () {
 	document.getElementById('preloader').style.display = 'none';
 };
 
-underline.shiftingUnderline();
+// underline.shiftingUnderline();

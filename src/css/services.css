@@ -3,8 +3,17 @@
 	width: 100%;
 	height: 100%;
 }
+
 svg {
 	position: relative;
-	width: 50%;
-	height: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+#svg-grafika-na-miru div h2,
+#svg-grafika-na-miru div p {
+	color: var(--violet);
+}
+
+#svg-grafika-na-miru div h2 {
 }

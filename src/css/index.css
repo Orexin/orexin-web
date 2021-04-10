@@ -37,10 +37,11 @@
 	font-size: 50px;
 	resize: horizontal;
 }
-#uvod-text div h2:nth-child(2) {
+#uvod-text div h2 {
 	text-align: left;
 	font-size: 35px;
 	resize: horizontal;
+	font-weight: 400;
 }
 
 #get-started-button {

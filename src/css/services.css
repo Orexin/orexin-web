@@ -15,30 +15,10 @@ svg {
 
 /* DEFAULTS END */
 
-#svg-sluzby-rozcestnik-bg {
-}
-
-#svg-sluzby-rozcestnik-bg:hover {
-}
-
-#svg-rozcestnik svg {
-}
-
 #svg-grafika div p {
 	width: 55%;
 }
 
 #svg-bezpeci div p {
 	width: 70%;
-}
-
-#svg-dynamika div svg {
-	height: 100%;
-	width: 150%;
-}
-
-#svg-grafika div svg {
-	overflow: visible;
-	width: 100%;
-	object-fit: fill;
 }

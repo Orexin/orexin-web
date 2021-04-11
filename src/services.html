@@ -134,9 +134,19 @@
 	<section id="sluzby-rozcestnik">
 		<div id="svg-rozcestnik">
 			<svg width="1920" height="749" viewBox="0 0 1920 749" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path
+				<defs>
+					<linearGradient id="fillFromLeft">
+						<stop offset="0%" stop-color="#fff">
+							<animate attributeName="stop-color" values="#310686, #fff" dur="30s" fill="freeze" />
+						</stop>
+						<stop offset="100%" stop-color="#310686">
+							<animate attributeName="stop-color" values="#310686, #fff" dur="30s" fill="freeze" begin="3s" />
+						</stop>
+					</linearGradient>
+				</defs>
+				<path id="svg-sluzby-rozcestnik-bg"
 					d="M0 115C0 115 580.342 219.802 957 220.056C1335.98 220.311 1920 115 1920 115V441.548C1920 441.548 1338.56 586.348 957 585.999C577.754 585.653 0 441.548 0 441.548V115Z"
-					fill="#310686" />
+					fill="url(#fillFromLeft)" />
 				<g filter="url(#filter0_d)">
 					<rect x="56" y="63" width="552" height="564" rx="50" fill="#4508BD" />
 				</g>
@@ -1104,8 +1114,8 @@
 			</svg>
 
 		</div>
-		<div id="svg-grafika-na-miru" class="columns">
-			<div class="column is-6 ml-6 sluzby-content-text">
+		<div id="svg-grafika-na-miru" class="columns is-centered">
+			<div class="column is-6 ml-6 sluzby-content-text txt-violet">
 				<h2>Design i grafika na míru</h2>
 				<p>Záleží nám na tom, aby byl váš web jedinečný. Design i grafiku si děláme sami a rádi se s vámi podělíme o
 					naše nejlepší designéry.</p>
@@ -1380,8 +1390,8 @@
 
 
 		</div>
-		<div id="svg-bezpeci" class="columns">
-			<div class="column is-6">
+		<div id="svg-bezpeci" class="columns is-centered is-narrow bg-violet-dark">
+			<div class="column is-6 is-narrow">
 				<svg width="853" height="1087" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M729.874 555.729C675.02 683.362 572.591 728.731 461.9 738.222c-145.723 12.495-307.923-14.403-394.571-138.118-180.54-257.771 59.165-381.501 59.165-381.501 322.108-179.33 673.955 172.914 603.38 337.126z"
@@ -1724,10 +1734,10 @@
 					</defs>
 				</svg>
 			</div>
-			<div class="column is-6 sluzby-content-text">
-				<h2>Design i grafika na míru</h2>
-				<p>Záleží nám na tom, aby byl váš web jedinečný. Design i grafiku si děláme sami a rádi se s vámi podělíme o
-					naše nejlepší designéry.</p>
+			<div class="column is-6 is-narrow sluzby-content-text txt-white">
+				<h2>Bezpečí a spolehlivost</h2>
+				<p>Informace vás i vašich zákazníků jsou u nás v bezpečí. K zabezpečení využíváme nejmodernějších a spolehlivých
+					řešení.</p>
 			</div>
 		</div>
 	</section>

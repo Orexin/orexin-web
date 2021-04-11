@@ -23,6 +23,47 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* style classes */
+.bg-white * {
+	background-color: #fff;
+}
+
+.bg-violet * {
+	background-color: var(--violet);
+}
+
+.bg-violet-light * {
+	background-color: var(--violet-light);
+}
+
+.bg-violet-dark * {
+	background-color: var(--violet-dark);
+}
+
+.bg-violet-darker * {
+	background-color: var(--violet-darker);
+}
+
+.txt-white * {
+	color: #fff;
+}
+
+.txt-violet * {
+	color: var(--violet);
+}
+
+.txt-violet-light * {
+	color: var(--violet-light);
+}
+
+.txt-violet-dark * {
+	color: var(--violet-dark);
+}
+
+.txt-violet-darker * {
+	color: var(--violet-darker);
+}
+
 a,
 a:hover,
 a:visited,

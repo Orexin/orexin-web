@@ -1,23 +1,39 @@
-#svg-rozcestnik svg {
-	position: relative;
-	width: 100%;
-	height: 100%;
+/* DEFAULTS */
+
+.sluzby-content-text p {
+	font-size: 25px;
+	margin-top: 35px;
+	font-weight: 400;
+	line-height: 40px;
 }
 
 svg {
 	position: relative;
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 }
 
-#svg-grafika-na-miru div h2,
-#svg-grafika-na-miru div p {
-	color: var(--violet);
+#svg-rozcestnik svg {
 }
 
-.sluzby-content-text div h2,
-.sluzby-content-text div p {
+#svg-grafika-na-miru div p {
+	width: 55%;
+}
+
+#svg-bezpeci div p {
+	width: 70%;
 }
 
 #svg-grafika-na-miru div h2 {
+}
+
+#svg-sluzby-rozcestnik-bg {
+}
+
+#svg-sluzby-rozcestnik-bg:hover {
+}
+
+@keyframes fillFromLeft {
+	to {
+	}
 }

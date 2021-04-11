@@ -209,21 +209,21 @@
 									<div class="form-group">
 										<label for="jmeno">Vaše jméno a příjmení</label>
 										<div class="input-icon-wrap">
-											<input id="jmeno" type="text" placeholder="Jan Novák" />
+											<input id="jmeno" type="text" tabindex="1" placeholder="Jan Novák" />
 											<span class="typcn typcn-user-outline"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="email">Váš e-mail</label>
 										<div class="input-icon-wrap">
-											<input id="email" type="text" placeholder="jnovak@orexin.cz" />
+											<input id="email" type="text" tabindex="2" placeholder="jnovak@orexin.cz" />
 											<span class="typcn typcn-mail"></span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="firma">Vaše telefonní číslo</label>
+										<label for="phone">Vaše telefonní číslo</label>
 										<div class="input-icon-wrap">
-											<input id="firma" type="text" placeholder="+420 489 156 498" />
+											<input id="phone" type="text" tabindex="3" placeholder="+420 489 156 498" />
 											<span class="typcn typcn-phone-outline"></span>
 										</div>
 									</div>
@@ -231,7 +231,7 @@
 								<div class="column is-half">
 									<div class="form-group txtarea-cont">
 										<label for="msg">Detaily projektu</label>
-										<textarea id="msg" class="is-width-100 is-height-100" maxlength="5000"
+										<textarea id="msg" class="is-width-100 is-height-100" tabindex="4" maxlength="5000"
 											placeholder="Detaily projektu"></textarea>
 									</div>
 								</div>
@@ -240,21 +240,21 @@
 							<div id="selectBoxes" class="select-boxes is-width-100">
 								<div class="select-box">
 									<input id="web" type="checkbox">
-									<label for="web">Webová prezentace</label>
+									<label for="web" tabindex="5">Webová prezentace</label>
 								</div>
 								<div class="select-box">
 									<input id="shop" type="checkbox" />
-									<label for="shop">E-commerence řešení</label>
+									<label for="shop" tabindex="6">E-commerence řešení</label>
 								</div>
 								<div class="select-box">
 									<input id="mark" type="checkbox" />
-									<label for="mark">Webová aplikace</label>
+									<label for="mark" tabindex="7">Webová aplikace</label>
 								</div>
 							</div>
-							<div class="send-button form-group">
-								<input class="button w-100" type="button" value="Odeslat" />
+							<div class="send-button form-group flex-center">
+								<input class="btn btn-violet w-100" type="button" tabindex="8" value="Odeslat" />
 							</div>
-							<p>Odesláním souhlasíte se <a href="#">zpracováním osobních údajů</a>.</p>
+							<p>Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.</p>
 						</form>
 					</div>
 				</div>

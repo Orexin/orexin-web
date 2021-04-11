@@ -76,67 +76,97 @@ module.exports = {
 			template: './src/index.html',
 			inject: true,
 			chunks: ['main', 'index'],
-			filename: 'index.html'
+			filename: 'index.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		/* ABOUT */
 		new HtmlWebpackPlugin({
 			template: './src/about.html',
 			inject: true,
 			chunks: ['main', 'about'],
-			filename: 'about.html'
+			filename: 'about.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		/* CONTACT */
 		new HtmlWebpackPlugin({
 			template: './src/contact.html',
 			inject: true,
 			chunks: ['main', 'contact'],
-			filename: 'contact.html'
+			filename: 'contact.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		/* FAQ */
 		new HtmlWebpackPlugin({
 			template: './src/faq.html',
 			inject: true,
 			chunks: ['main', 'faq'],
-			filename: 'faq.html'
+			filename: 'faq.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		/* PRIVACY */
 		new HtmlWebpackPlugin({
 			template: './src/privacy.html',
 			inject: true,
 			chunks: ['main', 'article'],
-			filename: 'privacy.html'
+			filename: 'privacy.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		/* TER.MS AND CONDITIONS */
 		new HtmlWebpackPlugin({
 			template: './src/terms-and-conditions.html',
 			inject: true,
 			chunks: ['main'],
-			filename: 'terms-and-conditions.html'
+			filename: 'terms-and-conditions.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		/* SERVICES */
 		new HtmlWebpackPlugin({
 			template: './src/services.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'services.html'
+			filename: 'services.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/ecommerce.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'ecommerce.html'
+			filename: 'ecommerce.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-app.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'web-app.html'
+			filename: 'web-app.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-pres.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'web-pres.html'
+			filename: 'web-pres.html',
+			minify: {
+				removeRedundantAttributes: false,
+			}
 		}),
 	],
 };

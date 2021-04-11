@@ -5,7 +5,7 @@
 	color: white;
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif !important; /*! Bulma to přemrdává v contact buttonu je to mrdka */
 }
 
 :root {
@@ -112,6 +112,27 @@ body {
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
+}
+
+.btn {
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+	/*padding: calc(0.5em - 1px) 1em calc(0.5em - 1px) 1em;*/
+	padding: 15px 30px;
+}
+
+.btn-violet {
+	color: white;
+	background: var(--violet);
+}
+
+.btn-violet:hover {
+	background: var(--violet-light);
+	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
 }
 
 /*? wat */

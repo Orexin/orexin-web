@@ -13,6 +13,14 @@ svg {
 	height: 100%;
 }
 
+/* DEFAULTS END */
+
+#svg-sluzby-rozcestnik-bg {
+}
+
+#svg-sluzby-rozcestnik-bg:hover {
+}
+
 #svg-rozcestnik svg {
 }
 
@@ -24,16 +32,13 @@ svg {
 	width: 70%;
 }
 
-#svg-grafika div h2 {
+#svg-dynamika div svg {
+	height: 100%;
+	width: 150%;
 }
 
-#svg-sluzby-rozcestnik-bg {
-}
-
-#svg-sluzby-rozcestnik-bg:hover {
-}
-
-@keyframes fillFromLeft {
-	to {
-	}
+#svg-grafika div svg {
+	overflow: visible;
+	width: 100%;
+	object-fit: fill;
 }

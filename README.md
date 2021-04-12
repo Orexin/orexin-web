@@ -18,6 +18,10 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 - `npm run deploy`
 
+## Finishing edits:
+
+- change link in `redirectByData.js` to actuall link
+
 ## Img logo policy:
 
 - copy logo-type from inter-company into src

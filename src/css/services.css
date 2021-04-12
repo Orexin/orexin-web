@@ -17,9 +17,165 @@ svg {
 
 /* DEFAULTS END */
 
+/* ROZCESTNIK */
+
+#svg-sluzby-rozcestnik-web-pres,
+#svg-sluzby-rozcestnik-web-app,
+#svg-sluzby-rozcestnik-ecommerce {
+	transition: all 0.5s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-nav,
+#svg-sluzby-rozcestnik-ecommerce-nav {
+	transition: all 0.75s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-left-column,
+#svg-sluzby-rozcestnik-web-app-left-column,
+#svg-sluzby-rozcestnik-web-app-status-top {
+	transition: all 1s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-card-top-left,
+#svg-sluzby-rozcestnik-web-pres-card-top-right,
+#svg-sluzby-rozcestnik-web-app-values,
+#svg-sluzby-rozcestnik-web-app-status-middle,
+#svg-sluzby-rozcestnik-ecommerce-left-column,
+#svg-sluzby-rozcestnik-ecommerce-filters-search,
+#svg-sluzby-rozcestnik-ecommerce-card-top-left {
+	transition: all 1.1s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-card-bottom-left,
+#svg-sluzby-rozcestnik-web-pres-card-bottom-right,
+#svg-sluzby-rozcestnik-web-app-status-bottom,
+#svg-sluzby-rozcestnik-ecommerce-card-top-middle {
+	transition: all 1.2s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-top-right {
+	transition: all 1.3s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-bottom-left {
+	transition: all 1.4s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-bottom-middle {
+	transition: all 1.5s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-bottom-right {
+	transition: all 1.6s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover {
+	transform: translate(-15px, 50px);
+	cursor: pointer;
+}
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-nav {
+	transform: translate(-5px, 20px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-left-column {
+	transform: translate(-15px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-bottom-left {
+	transform: translate(-10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-top-left {
+	transform: translate(-10px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-bottom-right {
+	transform: translate(-5px, 30px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-top-right {
+	transform: translate(-5px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover {
+	transform: translateY(50px);
+	cursor: pointer;
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-left-column {
+	transform: translate(-10px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-status-top {
+	transform: translateY(25px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-values {
+	transform: translateY(30px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-status-middle {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-status-bottom {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover {
+	transform: translate(15px, 50px);
+	cursor: pointer;
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-nav {
+	transform: translate(5px, 20px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-nav {
+	transform: translate(5px, 20px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-left-column {
+	transform: translate(15px, 25px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-filters-search {
+	transform: translate(10px, 25px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-top-left {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-top-middle {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-top-right {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-bottom-left {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-bottom-middle {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-bottom-right {
+	transform: translate(10px, 30px);
+}
+
+/* ROZCESTNIK END*/
+
+/* GRAFIKA*/
+
 #svg-grafika div p {
 	width: 55%;
 }
+
+/* GRAFIKA END*/
 
 #svg-bezpeci div p {
 	width: 70%;
@@ -34,56 +190,3 @@ svg {
 #svg-sluzby-colon {
 	transform: translate(425px, 415px) skewY(-20deg);
 }
-
-/* ROZCESTNIK */
-
-#svg-sluzby-rozcestnik-web-pres {
-	transition: all 0.5s ease-in-out;
-}
-
-#svg-sluzby-rozcestnik-web-pres-nav {
-	transition: all 0.75s ease-in-out;
-}
-
-#svg-sluzby-rozcestnik-web-pres-left-column {
-	transition: all 1s ease-in-out;
-}
-
-#svg-sluzby-rozcestnik-web-pres-card-top-left,
-#svg-sluzby-rozcestnik-web-pres-card-top-right {
-	transition: all 1.1s ease-in-out;
-}
-
-#svg-sluzby-rozcestnik-web-pres-card-bottom-left,
-#svg-sluzby-rozcestnik-web-pres-card-bottom-right {
-	transition: all 1.2s ease-in-out;
-}
-
-#svg-sluzby-rozcestnik-web-pres:hover {
-	transform: translate(-15px, 50px);
-}
-#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-nav {
-	transform: translate(-5px, 20px);
-}
-
-#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-left-column {
-	transform: translate(-15px, 25px);
-}
-
-#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-bottom-left {
-	transform: translate(-10px, 35px);
-}
-
-#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-top-left {
-	transform: translate(-10px, 30px);
-}
-
-#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-bottom-right {
-	transform: translate(-5px, 35px);
-}
-
-#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-top-right {
-	transform: translate(-5px, 30px);
-}
-
-/* ROZCESTNIK END*/

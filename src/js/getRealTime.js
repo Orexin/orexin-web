@@ -10,13 +10,9 @@ const refreshTime = async () => {
 	var time = new Date();
 	var hours = time.getHours();
 	var minutes = time.getMinutes();
-	var seconds = time.getSeconds();
-	console.log(hours + ',' + minutes + ',' + seconds);
-	time.setHours(hours, minutes, seconds + 32);
 	if (hours.toString().length == 1) hours = '0' + hours;
 	if (minutes.toString().length == 1) minutes = '0' + minutes;
 	clock1.textContent = hours;
 	clock2.textContent = minutes;
-	console.log(hours + ',' + minutes + ',' + seconds);
 };
 setInterval(refreshTime, 1000);

@@ -1,4 +1,6 @@
 /* DEFAULTS */
+/* mono font for real time clock */
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
 
 .sluzby-content-text p {
 	font-size: 25px;
@@ -21,4 +23,14 @@ svg {
 
 #svg-bezpeci div p {
 	width: 70%;
+}
+
+#svg-sluzby-clock-1 {
+	transform: translate(300px, 600px) skewY(-20deg);
+}
+#svg-sluzby-clock-2 {
+	transform: translate(530px, 515px) skewY(-20deg);
+}
+#svg-sluzby-colon {
+	transform: translate(425px, 415px) skewY(-20deg);
 }

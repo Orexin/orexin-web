@@ -12,7 +12,8 @@ module.exports = {
 		about: './src/js/about.js',
 		contact: './src/js/contact.js',
 		faq: './src/js/faq.js',
-		services: './src/js/services.js'
+		services: './src/js/services.js',
+		realtime: './src/js/getRealTime.js'
 	},
 
 	devServer: {
@@ -131,7 +132,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/services/web-pres.html',
 			inject: true,
-			chunks: ['main', 'services'],
+			chunks: ['main', 'services', 'realtime'],
 			filename: 'web-pres.html'
 		}),
 	]

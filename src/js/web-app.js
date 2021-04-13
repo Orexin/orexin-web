@@ -1,3 +1,4 @@
+import './../css/contact.css';
 // SVGs
 import svgApp from './../img/svg-services/svg-web-app.svg';
 import svgEasy from './../img/svg-services/svg-inteligentni-a-jednoducha.svg';

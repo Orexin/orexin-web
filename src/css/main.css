@@ -64,13 +64,13 @@ html {
 	color: var(--violet-darker);
 }
 
-a,
+/*a,
 a:hover,
 a:visited,
 a:active {
 	text-decoration: none;
 	color: #fff;
-}
+}*/
 
 /* nadpisy v hero */
 h1 {

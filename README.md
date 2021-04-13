@@ -25,3 +25,8 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 ## Img logo policy:
 
 - copy logo-type from inter-company into src
+
+## radius policy:
+
+- buttons 10px
+- cards 12px

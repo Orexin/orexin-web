@@ -1,7 +1,43 @@
-.article * {
-	color: black;
+#terms-and-conditions *,
+#privacy * {
+	color: var(--violet-dark);
 }
 
 ol {
-	list-style: upper-roman;
+	counter-reset: item;
+}
+
+li {
+	list-style: decimal;
+	display: block;
+	font-size: 45px;
+}
+
+li:before {
+	content: counters(item, '.') ' ';
+	counter-increment: item;
+}
+
+#terms-and-conditions div > ol {
+	counter-reset: decimalDot;
+}
+
+#terms-and-conditions div ol > li {
+	counter-increment: decimalDot;
+}
+
+#terms-and-conditions div ol > li:before {
+	content: counter(decimalDot) '. ';
+}
+
+#terms-and-conditions div ol li ol li {
+	font-size: 30px;
+}
+
+h2 {
+	display: inline-block;
+}
+
+p {
+	font-size: 20px;
 }

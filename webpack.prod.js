@@ -128,7 +128,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/terms-and-conditions.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'article'],
 			filename: 'terms-and-conditions.html',
 			minify: {
 				removeRedundantAttributes: false,

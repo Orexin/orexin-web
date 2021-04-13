@@ -175,6 +175,10 @@ svg {
 	width: 55%;
 }
 
+#svg-grafika div svg {
+	object-fit: fill;
+}
+
 /* GRAFIKA END*/
 
 #svg-bezpeci div p {

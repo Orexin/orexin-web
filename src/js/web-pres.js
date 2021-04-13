@@ -1,3 +1,13 @@
+// SVGs
+import svgWeb from './../img/svg-services/svg-web-pres.svg';
+import svgPres from './../img/svg-services/svg-reprezentace.svg';
+import svgFast from './../img/svg-services/svg-rychla-vyroba.svg';
+
+// inject SVGs
+document.getElementById('svg-web').innerHTML = svgWeb;
+document.getElementById('svg-pres').innerHTML = svgPres;
+document.getElementById('svg-fast').innerHTML = svgFast;
+
 const regeneratorRuntime = require('regenerator-runtime');
 
 // realtime clock

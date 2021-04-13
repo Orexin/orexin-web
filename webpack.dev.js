@@ -13,7 +13,9 @@ module.exports = {
 		contact: './src/js/contact.js',
 		faq: './src/js/faq.js',
 		services: './src/js/services.js',
-		webpres: './src/js/webPres.js'
+		webpres: './src/js/web-pres.js',
+		webapp: './src/js/web-app.js',
+		ecommerence: './src/js/ecommerence.js'
 	},
 
 	devServer: {
@@ -120,13 +122,13 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/services/ecommerce.html',
 			inject: true,
-			chunks: ['main', 'services'],
+			chunks: ['main', 'services', 'ecommerence'],
 			filename: 'services/ecommerce.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-app.html',
 			inject: true,
-			chunks: ['main', 'services'],
+			chunks: ['main', 'services', 'webapp'],
 			filename: 'services/web-app.html'
 		}),
 		new HtmlWebpackPlugin({

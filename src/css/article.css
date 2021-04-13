@@ -1,5 +1,5 @@
 .article *,
-a:visited {
+a:not(.footer-a):visited {
 	color: var(--violet-dark);
 }
 
@@ -7,24 +7,24 @@ a:visited {
 	margin-bottom: 150px;
 }
 
-li,
-a,
+li:not(.nav-li),
+a:not(.footer-a),
 h3 {
 	transition: all 0.3s ease-in-out;
 }
 
-a:hover h3 {
+a:not(.footer-a):hover h3 {
 	color: var(--violet-light);
 	text-decoration: underline;
 }
 
-.in-text-link,
-.in-text-link:visited {
+.in-text-link:not(.footer-a),
+.in-text-link:not(.footer-a):visited {
 	text-decoration: underline;
 	color: var(--violet-light);
 }
 
-.in-text-link:hover {
+.in-text-link:not(.footer-a):hover {
 	color: var(--violet);
 }
 
@@ -32,14 +32,14 @@ ol {
 	counter-reset: item;
 }
 
-li {
+li:not(.nav-li) {
 	list-style: decimal;
 	display: block;
 	font-size: 40px;
 	font-weight: 700;
 }
 
-li:not(.sub-ul):before {
+li:not(.sub-ul):not(.nav-li):before {
 	content: counters(item, '.') '.';
 	counter-increment: item;
 }

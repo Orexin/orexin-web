@@ -1,5 +1,4 @@
-#terms-and-conditions *,
-#privacy * {
+.article * {
 	color: var(--violet-dark);
 }
 
@@ -10,31 +9,38 @@ ol {
 li {
 	list-style: decimal;
 	display: block;
-	font-size: 45px;
+	font-size: 40px;
+	font-weight: 700;
 }
 
 li:before {
-	content: counters(item, '.') ' ';
+	content: counters(item, '.') '.';
 	counter-increment: item;
 }
 
-#terms-and-conditions div > ol {
-	counter-reset: decimalDot;
+.article div ol li ol li {
+	font-size: 35px;
+	font-weight: 600;
 }
 
-#terms-and-conditions div ol > li {
-	counter-increment: decimalDot;
+.article div ol li ol li h3 {
+	font-weight: 600;
 }
 
-#terms-and-conditions div ol > li:before {
-	content: counter(decimalDot) '. ';
+.article div ol li ol li * {
+	font-weight: 400;
 }
 
-#terms-and-conditions div ol li ol li {
-	font-size: 30px;
+.article div ol li ol li {
+	margin-left: 15px;
 }
 
-h2 {
+.article div ol li ol li p {
+	margin-left: 25px;
+}
+
+h2,
+h3 {
 	display: inline-block;
 }
 

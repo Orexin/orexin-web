@@ -27,16 +27,16 @@ class Navbar extends HTMLElement {
 	<div class="nav-links">
 		<ul>
 			<li>
-				<a href="./index.html">Úvod</a>
+				<a href="/index.html">Úvod</a>
 			</li>
 			<li>
-				<a href="./about.html">O&nbsp;nás</a>
+				<a href="/about.html">O&nbsp;nás</a>
 			</li>
 			<li>
-				<a href="./services.html">Služby</a>
+				<a href="/services.html">Služby</a>
 			</li>
 			<li>
-				<a href="./faq.html">FAQ</a>
+				<a href="/faq.html">FAQ</a>
 			</li>
 		</ul>
 	</div>

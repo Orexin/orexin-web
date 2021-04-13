@@ -1,4 +1,5 @@
 import '../css/services.css';
+
 // SVGs
 import svgRozcestnik from './../img/svg-services/svg-rozcestnik.svg';
 import svgGrafika from './../img/svg-services/svg-grafika-na-miru.svg';
@@ -10,7 +11,6 @@ import svgFotky from './../img/svg-services/svg-fotky.svg';
 import svgCustoms from './../img/svg-services/svg-tvorba-grafiky.svg';
 
 // inject SVGs
-
 document.getElementById('svg-rozcestnik').innerHTML = svgRozcestnik;
 document.getElementById('svg-grafika').innerHTML = svgGrafika;
 document.getElementById('svg-bezpeci').innerHTML = svgBezpeci;
@@ -21,15 +21,14 @@ document.getElementById('svg-fotky').innerHTML = svgFotky;
 document.getElementById('svg-customs').innerHTML = svgCustoms;
 
 // rozcestnik linky
-
 document.getElementById('svg-sluzby-rozcestnik-web-pres').addEventListener('click', (event) => {
-	window.location.href = `http://localhost:6969/web-pres.html`;
+	window.location.href = `http://localhost:6969/services/web-pres.html`;
 });
 
 document.getElementById('svg-sluzby-rozcestnik-web-app').addEventListener('click', (event) => {
-	window.location.href = `http://localhost:6969/web-app.html`;
+	window.location.href = `http://localhost:6969/services/web-app.html`;
 });
 
 document.getElementById('svg-sluzby-rozcestnik-ecommerce').addEventListener('click', (event) => {
-	window.location.href = `http://localhost:6969/ecommerce.html`;
+	window.location.href = `http://localhost:6969/services/ecommerce.html`;
 });

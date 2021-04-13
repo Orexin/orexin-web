@@ -16,7 +16,9 @@ module.exports = {
 		contact: './src/js/contact.js',
 		faq: './src/js/faq.js',
 		services: './src/js/services.js',
-		webpres: './src/js/webPres.js'
+		webpres: './src/js/web-pres.js',
+		webapp: './src/js/web-app.js',
+		ecommerence: './src/js/ecommerce.js'
 	},
 
 	output: {
@@ -145,7 +147,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/services/ecommerce.html',
 			inject: true,
-			chunks: ['main', 'services'],
+			chunks: ['main', 'services', 'ecommerce'],
 			filename: 'services/ecommerce.html',
 			minify: {
 				removeRedundantAttributes: false,
@@ -154,7 +156,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/services/web-app.html',
 			inject: true,
-			chunks: ['main', 'services'],
+			chunks: ['main', 'services', 'webapp'],
 			filename: 'services/web-app.html',
 			minify: {
 				removeRedundantAttributes: false,

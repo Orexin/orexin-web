@@ -61,12 +61,12 @@ module.exports = {
 				test: /\test\.(js$|css)/,
 				use: 'mocha-loader',
 				exclude: /node_modules/
-			}
-			// load svg
-			/*{
+			},
+			// inline SVGs
+			{
 				test: /\.svg$/,
-				use: ["file-loader"]
-			}*/
+				use: 'html-loader'
+			}
 		]
 	},
 
@@ -146,7 +146,7 @@ module.exports = {
 			template: './src/services/ecommerce.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'ecommerce.html',
+			filename: 'services/ecommerce.html',
 			minify: {
 				removeRedundantAttributes: false,
 			}
@@ -155,7 +155,7 @@ module.exports = {
 			template: './src/services/web-app.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'web-app.html',
+			filename: 'services/web-app.html',
 			minify: {
 				removeRedundantAttributes: false,
 			}
@@ -164,7 +164,7 @@ module.exports = {
 			template: './src/services/web-pres.html',
 			inject: true,
 			chunks: ['main', 'services', 'webpres'],
-			filename: 'web-pres.html',
+			filename: 'services/web-pres.html',
 			minify: {
 				removeRedundantAttributes: false,
 			}

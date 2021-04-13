@@ -59,6 +59,7 @@ module.exports = {
 				use: 'mocha-loader',
 				exclude: /node_modules/
 			},
+			// inline SVGs
 			{
 				test: /\.svg$/,
 				use: 'html-loader'
@@ -120,19 +121,19 @@ module.exports = {
 			template: './src/services/ecommerce.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'ecommerce.html'
+			filename: 'services/ecommerce.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-app.html',
 			inject: true,
 			chunks: ['main', 'services'],
-			filename: 'web-app.html'
+			filename: 'services/web-app.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-pres.html',
 			inject: true,
 			chunks: ['main', 'services', 'webpres'],
-			filename: 'web-pres.html'
+			filename: 'services/web-pres.html'
 		}),
 	]
 };

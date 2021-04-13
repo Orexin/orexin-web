@@ -1,7 +1,7 @@
 import './../css/components/navbar.css';
 
-const logoWhite = require('../img/Emblem_white.svg');
-const logoGrad = require('../img/Emblem_gradient.svg');
+const logoWhite = require('../img/emblem-white.png');
+const logoGrad = require('../img/emblem-gradient.png');
 
 class Navbar extends HTMLElement {
 	constructor() {

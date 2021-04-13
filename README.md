@@ -21,6 +21,7 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 ## Finishing edits:
 
 - change link in `redirectByData.js` to actuall link
+- add link pro vzorový formulář pro odstoupení od smlouvy do VOP
 
 ## Img logo policy:
 

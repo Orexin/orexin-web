@@ -92,6 +92,12 @@ h3 {
 	font-weight: 500;
 }
 
+/* podpodnadpisy */
+h4 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
 li {
 	list-style: none;
 }

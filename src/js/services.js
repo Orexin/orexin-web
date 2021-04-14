@@ -2,6 +2,9 @@ import '../css/services.css';
 
 // SVGs
 import svgRozcestnik from './../img/svg-services/svg-rozcestnik.svg';
+import svgRozcestnikWebPres from './../img/svg-services/svg-rozcestnik-web-pres.svg';
+import svgRozcestnikWebApp from './../img/svg-services/svg-rozcestnik-web-app.svg';
+import svgRozcestnikEcommerce from './../img/svg-services/svg-rozcestnik-ecommerce.svg';
 import svgGrafika from './../img/svg-services/svg-grafika-na-miru.svg';
 import svgBezpeci from './../img/svg-services/svg-bezpeci.svg';
 import svgSprava from './../img/svg-services/svg-sprava.svg';
@@ -11,7 +14,9 @@ import svgFotky from './../img/svg-services/svg-fotky.svg';
 import svgCustoms from './../img/svg-services/svg-tvorba-grafiky.svg';
 
 // inject SVGs
-document.getElementById('svg-rozcestnik').innerHTML = svgRozcestnik;
+document.getElementById('svg-rozcestnik-web-pres').innerHTML = svgRozcestnikWebPres;
+document.getElementById('svg-rozcestnik-web-app').innerHTML = svgRozcestnikWebApp;
+document.getElementById('svg-rozcestnik-ecommerce').innerHTML = svgRozcestnikEcommerce;
 document.getElementById('svg-grafika').innerHTML = svgGrafika;
 document.getElementById('svg-bezpeci').innerHTML = svgBezpeci;
 document.getElementById('svg-sprava').innerHTML = svgSprava;

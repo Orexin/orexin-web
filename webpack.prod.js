@@ -55,7 +55,7 @@ module.exports = {
 			},
 			// load icons
 			{
-				test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+				test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
 				type: 'asset/resource'
 			},
 			// load testing "interface"

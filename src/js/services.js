@@ -1,7 +1,8 @@
 import '../css/services.css';
+import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-import svgRozcestnik from './../img/svg-services/svg-rozcestnik.svg';
+//import svgRozcestnik from './../img/svg-services/svg-rozcestnik.svg';
 import svgRozcestnikWebPres from './../img/svg-services/svg-rozcestnik-web-pres.svg';
 import svgRozcestnikWebApp from './../img/svg-services/svg-rozcestnik-web-app.svg';
 import svgRozcestnikEcommerce from './../img/svg-services/svg-rozcestnik-ecommerce.svg';
@@ -36,4 +37,51 @@ document.getElementById('svg-sluzby-rozcestnik-web-app').addEventListener('click
 
 document.getElementById('svg-sluzby-rozcestnik-ecommerce').addEventListener('click', (event) => {
 	window.location.href = `http://localhost:6969/services/ecommerce.html`;
+});
+
+// Waypoints => onscroll events handeling
+var grafikaNaMiru = new Waypoint({
+	element: document.getElementById('grafika'),
+	handler: function () {
+		console.log('svg-sluzby-grafika-na-miru-web ');
+		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.opacity = 1;
+		document.getElementById('svg-sluzby-grafika-na-miru-web').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-grafika-na-miru-web').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var rozcestnikWebPres = new Waypoint({
+	element: document.getElementById('svg-sluzby-rozcestnik-web-pres'),
+	handler: function () {
+		console.log('svg-sluzby-grafika-na-miru-web ');
+		this.element.style.transform = 'translate(0,0)';
+		this.element.style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var rozcestnikWebPres = new Waypoint({
+	element: document.getElementById('svg-sluzby-rozcestnik-web-app'),
+	handler: function () {
+		console.log('svg-sluzby-grafika-na-miru-web ');
+		this.element.style.transform = 'translateY(0)';
+		this.element.style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var rozcestnikWebPres = new Waypoint({
+	element: document.getElementById('svg-sluzby-rozcestnik-ecommerce'),
+	handler: function () {
+		console.log('svg-sluzby-grafika-na-miru-web ');
+		this.element.style.transform = 'translate(0,0)';
+		this.element.style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
 });

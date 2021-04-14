@@ -19,10 +19,22 @@ svg {
 
 /* ROZCESTNIK */
 
-#svg-sluzby-rozcestnik-web-pres,
-#svg-sluzby-rozcestnik-web-app,
+#svg-sluzby-rozcestnik-web-pres {
+	transition: all 0.5s 0.25s ease-in-out;
+	transform: translate(-25px, 200px);
+	opacity: 0;
+}
+
+#svg-sluzby-rozcestnik-web-app {
+	transition: all 0.5s 0.5s ease-in-out;
+	transform: translateY(200px);
+	opacity: 0;
+}
+
 #svg-sluzby-rozcestnik-ecommerce {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.75s ease-in-out;
+	transform: translate(25px, 200px);
+	opacity: 0;
 }
 
 #svg-sluzby-rozcestnik-web-pres-nav,
@@ -171,12 +183,22 @@ svg {
 
 /* GRAFIKA*/
 
-#svg-grafika div p {
+#grafika div div div p {
 	width: 55%;
 }
 
-#svg-grafika div svg {
-	object-fit: fill;
+#svg-sluzby-grafika-na-miru-blueprint,
+#svg-sluzby-grafika-na-miru-web {
+	transform: translateY(100px);
+	opacity: 0;
+}
+
+#svg-sluzby-grafika-na-miru-blueprint {
+	transition: all 0.75s ease-in-out;
+}
+
+#svg-sluzby-grafika-na-miru-web {
+	transition: all 0.75s 0.25s ease-in-out;
 }
 
 /* GRAFIKA END*/

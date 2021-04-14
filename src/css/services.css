@@ -217,6 +217,18 @@ svg {
 
 /* BEZPECI END*/
 
+#svg-sluzby-sprava-cog-1 {
+	transform-origin: center;
+	transform-box: fill-box;
+	animation: emblemPath1 5s linear infinite;
+}
+
+#svg-sluzby-sprava-cog-2 {
+	transform-origin: center;
+	transform-box: fill-box;
+	animation: emblemPath2 5s linear infinite;
+}
+
 /* PODPORA */
 
 #svg-sluzby-podpora-calendar {

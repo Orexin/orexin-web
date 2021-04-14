@@ -181,31 +181,53 @@ svg {
 
 /* ROZCESTNIK END*/
 
+/* defaults for waypoints */
+#svg-sluzby-grafika-na-miru-blueprint,
+#svg-sluzby-grafika-na-miru-web,
+#svg-sluzby-bezpeci-content,
+#svg-sluzby-sprava-content,
+#svg-sluzby-podpora-content,
+#svg-sluzby-podpora-calendar,
+#svg-sluzby-podpora-clock,
+#svg-sluzby-plneni-content,
+#svg-sluzby-fotky-content,
+#svg-sluzby-customs-content {
+	transform: translateY(100px);
+	transition: all 0.75s ease-in-out;
+	opacity: 0;
+}
+
 /* GRAFIKA*/
 
 #grafika div div div p {
 	width: 55%;
 }
 
-#svg-sluzby-grafika-na-miru-blueprint,
 #svg-sluzby-grafika-na-miru-web {
-	transform: translateY(100px);
-	opacity: 0;
-}
-
-#svg-sluzby-grafika-na-miru-blueprint {
-	transition: all 0.75s ease-in-out;
-}
-
-#svg-sluzby-grafika-na-miru-web {
-	transition: all 0.75s 0.25s ease-in-out;
+	transition-delay: 0.25s;
 }
 
 /* GRAFIKA END*/
 
+/* BEZPECI */
+
 #svg-bezpeci div p {
 	width: 70%;
 }
+
+/* BEZPECI END*/
+
+/* PODPORA */
+
+#svg-sluzby-podpora-calendar {
+	transition-delay: 0.25s;
+}
+
+#svg-sluzby-podpora-clock {
+	transition-delay: 0.5s;
+}
+
+/* PODPORA END*/
 
 #svg-sluzby-clock-1 {
 	transform: translate(300px, 600px) skewY(-20deg);

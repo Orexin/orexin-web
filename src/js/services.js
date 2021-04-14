@@ -40,23 +40,9 @@ document.getElementById('svg-sluzby-rozcestnik-ecommerce').addEventListener('cli
 });
 
 // Waypoints => onscroll events handeling
-var grafikaNaMiru = new Waypoint({
-	element: document.getElementById('grafika'),
-	handler: function () {
-		console.log('svg-sluzby-grafika-na-miru-web ');
-		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.opacity = 1;
-		document.getElementById('svg-sluzby-grafika-na-miru-web').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-grafika-na-miru-web').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
-	},
-});
-
 var rozcestnikWebPres = new Waypoint({
 	element: document.getElementById('svg-sluzby-rozcestnik-web-pres'),
 	handler: function () {
-		console.log('svg-sluzby-grafika-na-miru-web ');
 		this.element.style.transform = 'translate(0,0)';
 		this.element.style.opacity = 1;
 		// animation happens only once
@@ -67,7 +53,6 @@ var rozcestnikWebPres = new Waypoint({
 var rozcestnikWebPres = new Waypoint({
 	element: document.getElementById('svg-sluzby-rozcestnik-web-app'),
 	handler: function () {
-		console.log('svg-sluzby-grafika-na-miru-web ');
 		this.element.style.transform = 'translateY(0)';
 		this.element.style.opacity = 1;
 		// animation happens only once
@@ -78,9 +63,84 @@ var rozcestnikWebPres = new Waypoint({
 var rozcestnikWebPres = new Waypoint({
 	element: document.getElementById('svg-sluzby-rozcestnik-ecommerce'),
 	handler: function () {
-		console.log('svg-sluzby-grafika-na-miru-web ');
 		this.element.style.transform = 'translate(0,0)';
 		this.element.style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var grafika = new Waypoint({
+	element: document.getElementById('grafika'),
+	handler: function () {
+		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.opacity = 1;
+		document.getElementById('svg-sluzby-grafika-na-miru-web').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-grafika-na-miru-web').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var bezpeci = new Waypoint({
+	element: document.getElementById('bezpeci'),
+	handler: function () {
+		document.getElementById('svg-sluzby-bezpeci-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-bezpeci-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var sprava = new Waypoint({
+	element: document.getElementById('sprava'),
+	handler: function () {
+		document.getElementById('svg-sluzby-sprava-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-sprava-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var podpora = new Waypoint({
+	element: document.getElementById('podpora'),
+	handler: function () {
+		document.getElementById('svg-sluzby-podpora-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-podpora-content').style.opacity = 1;
+		document.getElementById('svg-sluzby-podpora-calendar').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-podpora-calendar').style.opacity = 1;
+		document.getElementById('svg-sluzby-podpora-clock').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-podpora-clock').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var plneni = new Waypoint({
+	element: document.getElementById('plneni'),
+	handler: function () {
+		document.getElementById('svg-sluzby-plneni-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-plneni-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var fotky = new Waypoint({
+	element: document.getElementById('fotky'),
+	handler: function () {
+		document.getElementById('svg-sluzby-fotky-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-fotky-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var customs = new Waypoint({
+	element: document.getElementById('customs'),
+	handler: function () {
+		document.getElementById('svg-sluzby-customs-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-customs-content').style.opacity = 1;
 		// animation happens only once
 		this.destroy();
 	},

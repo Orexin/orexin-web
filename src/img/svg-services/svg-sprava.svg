@@ -1,20 +1,11 @@
 <svg width="817" height="933" viewBox="0 0 817 933" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<defs>
-		<filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-			<feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1" />
-			<feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-			<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" in="shadowBlurOuter1" type="matrix"
-				result="shadowMatrixOuter1" />
-			<feMerge>
-				<feMergeNode in="shadowMatrixOuter1" />
-				<feMergeNode in="SourceGraphic" />
-			</feMerge>
-		</filter>
-	</defs>
+
 	<path
+		id="svg-sluzby-sprava-bg-shape"
 		d="M817 392.247C817 675.249 686.922 763.124 595.378 783.47C474.861 810.256 261.103 677.455 177.929 623.868C150.027 605.891 0 511.67 0 307.368C0 8.90408 261 213.774 434 144.116C756.5 14.2641 817 93.7841 817 392.247Z"
 		fill="#5C09FF" />
-	<path
+	<g id="svg-sluzby-sprava-content">
+		<path
 		d="M128.49 62.3031C136.31 59.5001 145.598 59.9591 155.112 63.6181L631.354 246.788C657.121 256.699 678 287.094 678 314.694V837.729C678 865.344 657.101 879.707 631.321 869.811L166.989 691.57C141.43 681.76 120.625 651.757 120.313 624.263L114 67.4981L128.49 62.3031Z"
 		fill="#A094E3" />
 	<path
@@ -277,4 +268,17 @@
 	<path
 		d="M384.867 653.985C383.731 655.959 384.586 659.228 386.798 661.37L396.567 670.829C398.754 672.947 401.405 673.13 402.588 671.234C404.186 668.673 406.379 665.155 408.028 662.508C409.297 660.473 408.33 656.957 405.911 654.805L395.792 645.803C393.505 643.768 390.773 643.725 389.633 645.706L384.867 653.985Z"
 		fill="#3F1D0A" />
+	</g>
+		<defs>
+			<filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+				<feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1" />
+				<feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+				<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" in="shadowBlurOuter1" type="matrix"
+					result="shadowMatrixOuter1" />
+				<feMerge>
+					<feMergeNode in="shadowMatrixOuter1" />
+					<feMergeNode in="SourceGraphic" />
+				</feMerge>
+			</filter>
+		</defs>
 </svg>

@@ -1,8 +1,11 @@
 <svg width="771" height="1186" viewBox="0 0 771 1186" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path
+		id="svg-sluzby-fotky-bg-shape"
 		d="M726.74 209.555C873.909 457.147 612.734 936.084 507.875 942.803C276.609 957.621 412.031 847.532 317.509 805.999C285.799 792.066 74.3453 664.623 30.5574 568.303C-13.2304 471.982 -7.02317 315.054 30.5575 209.555C139.912 -97.4338 579.571 -38.0381 726.74 209.555Z"
 		fill="#5C09FF" />
-	<path
+	<g 
+	id="svg-sluzby-fotky-content">
+		<path
 		d="M574 198.266L580.702 200.398C582.042 200.824 582.851 202.108 582.851 203.807V250.874C582.851 253.485 580.967 256.352 578.525 257.455L574 259.5V198.266Z"
 		fill="#A094E2" />
 	<path
@@ -59,6 +62,7 @@
 	<circle r="39.1889" transform="matrix(0.938191 -0.346117 0 1 359.797 983.567)" fill="white" />
 	<circle r="34.5853" transform="matrix(0.938191 -0.346117 0 1 359.797 983.567)" fill="white" stroke="#4508BD"
 		stroke-width="2" />
+	</g>
 	<defs>
 		<filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
 			<feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1" />

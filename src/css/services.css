@@ -19,10 +19,22 @@ svg {
 
 /* ROZCESTNIK */
 
-#svg-sluzby-rozcestnik-web-pres,
-#svg-sluzby-rozcestnik-web-app,
+#svg-sluzby-rozcestnik-web-pres {
+	transition: all 0.5s 0.25s ease-in-out;
+	transform: translate(-25px, 200px);
+	opacity: 0;
+}
+
+#svg-sluzby-rozcestnik-web-app {
+	transition: all 0.5s 0.5s ease-in-out;
+	transform: translateY(200px);
+	opacity: 0;
+}
+
 #svg-sluzby-rozcestnik-ecommerce {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.75s ease-in-out;
+	transform: translate(25px, 200px);
+	opacity: 0;
 }
 
 #svg-sluzby-rozcestnik-web-pres-nav,
@@ -169,21 +181,53 @@ svg {
 
 /* ROZCESTNIK END*/
 
+/* defaults for waypoints */
+#svg-sluzby-grafika-na-miru-blueprint,
+#svg-sluzby-grafika-na-miru-web,
+#svg-sluzby-bezpeci-content,
+#svg-sluzby-sprava-content,
+#svg-sluzby-podpora-content,
+#svg-sluzby-podpora-calendar,
+#svg-sluzby-podpora-clock,
+#svg-sluzby-plneni-content,
+#svg-sluzby-fotky-content,
+#svg-sluzby-customs-content {
+	transform: translateY(100px);
+	transition: all 0.75s ease-in-out;
+	opacity: 0;
+}
+
 /* GRAFIKA*/
 
-#svg-grafika div p {
+#grafika div div div p {
 	width: 55%;
 }
 
-#svg-grafika div svg {
-	object-fit: fill;
+#svg-sluzby-grafika-na-miru-web {
+	transition-delay: 0.25s;
 }
 
 /* GRAFIKA END*/
 
+/* BEZPECI */
+
 #svg-bezpeci div p {
 	width: 70%;
 }
+
+/* BEZPECI END*/
+
+/* PODPORA */
+
+#svg-sluzby-podpora-calendar {
+	transition-delay: 0.25s;
+}
+
+#svg-sluzby-podpora-clock {
+	transition-delay: 0.5s;
+}
+
+/* PODPORA END*/
 
 #svg-sluzby-clock-1 {
 	transform: translate(300px, 600px) skewY(-20deg);

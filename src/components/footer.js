@@ -13,7 +13,7 @@ class Footer extends HTMLElement {
 		<div class="top-banner">
 			<h2>Připraveni?</h2>
 			<p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
-			<a href="/contact.html">Jdeme na to</a>
+			<a href="/contact.html" class="footer-a">Jdeme na to</a>
 		</div>
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>
@@ -30,10 +30,9 @@ class Footer extends HTMLElement {
 		</div>
 	</div>
 	<div class="nobody-cares">
-		<a href="#">Nejčastější dotazy</a>
-		<a href="#">Ochrana osobních údajů</a>
-		<a href="#">Předání práv webu</a>
-		<a href="#">Obchodní podmínky</a>
+		<a href="./faq.html" class="footer-a">Nejčastější dotazy</a>
+		<a href="./privacy.html" class="footer-a">Ochrana osobních údajů</a>
+		<a href="./terms-and-conditions.html" class="footer-a">Obchodní podmínky</a>
 	</div>
 		`;
 	}

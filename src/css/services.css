@@ -38,6 +38,51 @@ svg {
 
 /* DEFAULTS END */
 
+.skip-button {
+	margin-top: -40px !important;
+}
+
+.skip-button a {
+	width: fit-content !important;
+}
+
+.skip-button a div {
+	background: var(--violet);
+	border-radius: 35px;
+	font-size: 30px;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	overflow: hidden;
+}
+
+.skip-text {
+	padding: 20px 40px 20px 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.skip-arrow {
+	padding: 15px 5px 15px 0;
+	display: inline;
+	position: relative;
+	transition: all 0.75s ease-in-out;
+	top: 50px;
+}
+
+.skip-button a:hover div {
+	background: var(--violet-light);
+}
+
+.skip-button a:hover div .skip-text {
+	padding: 20px 15px 20px 20px;
+}
+
+.skip-button a:hover div .skip-arrow {
+	display: inline;
+	transform: translateY(0);
+	top: 0;
+	padding: 15px 5px 15px 15px;
+}
+
 /* ROZCESTNIK */
 
 #svg-sluzby-rozcestnik-web-pres {

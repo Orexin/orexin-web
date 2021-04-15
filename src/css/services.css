@@ -315,6 +315,65 @@ svg {
 	transition-delay: 0.5s;
 }
 
+#cenik * {
+	color: var(--violet);
+}
+
+#cenik h2 {
+	text-align: center;
+}
+
+#cenik > div > h2 {
+	color: #fff;
+}
+
+#cenik-title-first-box {
+	padding-top: 15px;
+}
+
+#cenik > div {
+	background: var(--violet-dark);
+	margin: 0 100px 0 100px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 45px 3px rgba(2, 4, 74, 0.25);
+}
+
+#cenik > div > div {
+	background: #fff;
+	border-radius: 10px;
+}
+
+.cenik-col-1:not(:first-child) {
+	background: var(--violet);
+	border-radius: 5px;
+}
+
+.cenik-col-1:first-child {
+	padding: 25px !important;
+}
+
+.cenik-col-1 h3 {
+	font-size: 25px;
+	color: white !important;
+}
+
+.cenik-box div div {
+	margin: 25px !important;
+	padding: 10px;
+}
+
+.cenik-box div div h3 {
+	font-size: 25px;
+}
+
+.cenik-box div div {
+	font-size: 20px;
+}
+
+#kokot > div {
+	text-align: right;
+}
+
 /* real time clock */
 
 #svg-sluzby-clock-1 {

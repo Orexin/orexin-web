@@ -315,6 +315,8 @@ svg {
 	transition-delay: 0.5s;
 }
 
+/* CENIK */
+
 #cenik * {
 	color: var(--violet);
 }
@@ -370,10 +372,103 @@ svg {
 	font-size: 20px;
 }
 
-#kokot > div {
-	text-align: right;
+/* CENIK END*/
+
+/* POSTUP VYROBY*/
+.contact-left {
+	background: var(--violet-light);
+	padding-bottom: 20%;
 }
 
+.contact-left * {
+	color: white;
+}
+
+.contact-left-text {
+	margin-top: 20px;
+}
+
+.contact-left-text h2 {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0 0 20px 50px;
+	line-height: 1.3;
+}
+
+.contact-left-text p {
+	margin-left: 50px;
+}
+
+.timeline {
+	list-style-type: none;
+	position: relative;
+	margin-right: 45px;
+	margin-top: 40px;
+}
+
+.timeline:before {
+	content: ' ';
+	background: white;
+	display: inline-block;
+	position: absolute;
+	left: 24px;
+	width: 4px;
+	height: 87%;
+	z-index: 1;
+}
+
+.timeline > li {
+	margin: 0;
+	padding: 0 0 35px;
+}
+
+.timeline > li:before {
+	background: var(--violet-light);
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	z-index: 2;
+	font-size: 28px;
+	padding: 10px 0;
+	margin-top: -15px;
+}
+
+.timeline > li:nth-child(1):before {
+	content: '📝';
+	margin-top: -20px;
+}
+.timeline > li:nth-child(2):before {
+	content: '📐';
+	margin-top: -18px;
+}
+.timeline > li:nth-child(3):before {
+	content: '💬';
+}
+.timeline > li:nth-child(4):before {
+	content: '🧑‍💻';
+	margin-top: -18px;
+}
+.timeline > li:nth-child(5):before {
+	content: '🚀';
+	margin-top: -16px;
+}
+
+.timeline h5 {
+	font-weight: 600;
+	margin-left: 55px;
+	font-size: 18px;
+}
+
+.timeline p {
+	font-size: 14px;
+	margin-left: 55px;
+}
+
+.timeline b {
+	font-weight: 600;
+	padding-left: 5px;
+}
+/* POSTUP VYROBY END */
 /* real time clock */
 
 #svg-sluzby-clock-1 {

@@ -2,6 +2,14 @@
 /* mono font for real time clock */
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
 
+#services-index {
+	margin-bottom: 175px;
+}
+
+.sluzby-content-text {
+	margin-left: 45px;
+}
+
 .sluzby-content-text p {
 	font-size: 25px;
 	margin-top: 35px;
@@ -13,6 +21,19 @@ svg {
 	position: relative;
 	max-width: 100%;
 	height: 100%;
+}
+
+.in-text-link {
+	transition: all 0.3s ease-in-out;
+}
+
+.in-text-link:visited {
+	color: #fff;
+}
+
+.in-text-link:hover {
+	color: #fff;
+	text-decoration: underline;
 }
 
 /* DEFAULTS END */
@@ -197,8 +218,6 @@ svg {
 	opacity: 0;
 }
 
-/* GRAFIKA*/
-
 #grafika div div div p {
 	width: 55%;
 }
@@ -207,29 +226,41 @@ svg {
 	transition-delay: 0.25s;
 }
 
-/* GRAFIKA END*/
-
-/* BEZPECI */
-
-#svg-bezpeci div p {
+#bezpeci div div div p {
 	width: 70%;
 }
 
-/* BEZPECI END*/
+#sprava div div div p {
+	width: 70%;
+}
 
-#svg-sluzby-sprava-cog-1 {
+#podpora div div div p {
+	width: 65%;
+}
+
+#plneni div div div p {
+	width: 70%;
+}
+
+#fotky div div div p {
+	width: 70%;
+}
+
+#customs div div div p {
+	width: 70%;
+}
+
+/* #svg-sluzby-sprava-cog-1 {
 	transform-origin: center;
 	transform-box: fill-box;
-	animation: emblemPath1 5s linear infinite;
+	animation: rotate3D 5s linear infinite;
 }
 
 #svg-sluzby-sprava-cog-2 {
 	transform-origin: center;
 	transform-box: fill-box;
 	animation: emblemPath2 5s linear infinite;
-}
-
-/* PODPORA */
+} */
 
 #svg-sluzby-podpora-calendar {
 	transition-delay: 0.25s;
@@ -239,7 +270,7 @@ svg {
 	transition-delay: 0.5s;
 }
 
-/* PODPORA END*/
+/* real time clock */
 
 #svg-sluzby-clock-1 {
 	transform: translate(300px, 600px) skewY(-20deg);

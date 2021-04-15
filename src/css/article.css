@@ -59,7 +59,8 @@ li:not(.sub-ul):not(.nav-li):before {
 }
 
 .article div:nth-child(2) ol li:hover,
-.article div:nth-child(2) ol li:hover * {
+.article div:nth-child(2) ol li:hover *,
+.article div:nth-child(4) a:hover p {
 	color: var(--violet-light);
 	text-decoration: underline;
 	cursor: pointer;
@@ -107,8 +108,16 @@ li:not(.sub-ul):not(.nav-li):before {
 }
 
 .article div:nth-child(4) a img {
-	max-height: 35px;
+	max-height: 30px;
+	margin-top: 10px;
 	margin-right: 10px;
+}
+
+.article div:nth-child(4) a p {
+	display: inline-block;
+	font-size: 20px;
+	transform: translateY(-25%);
+	transition: all 0.3s ease-in-out;
 }
 
 ul {

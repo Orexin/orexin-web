@@ -44,3 +44,12 @@
 		margin-top: -500px;
 	}
 }
+
+@keyframes rotate3D {
+	from {
+		transform: rotate3d(0, 0, 0, 0deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 20, 360deg);
+	}
+}

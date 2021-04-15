@@ -2,10 +2,6 @@
 /* mono font for real time clock */
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
 
-#services-index {
-	margin-bottom: 175px;
-}
-
 .sluzby-content-text {
 	margin-left: 45px;
 }
@@ -40,6 +36,8 @@ svg {
 
 .skip-button {
 	margin-top: -40px !important;
+	position: relative;
+	z-index: 2;
 }
 
 .skip-button a {
@@ -80,7 +78,7 @@ svg {
 	display: inline;
 	transform: translateY(0);
 	top: 0;
-	padding: 15px 5px 15px 15px;
+	padding: 15px 5px 15px 5px;
 }
 
 /* ROZCESTNIK */
@@ -316,6 +314,10 @@ svg {
 }
 
 /* CENIK */
+
+#cenik {
+	margin: 50px 0 150px 0;
+}
 
 #cenik * {
 	color: var(--violet);

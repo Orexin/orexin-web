@@ -315,12 +315,21 @@ svg {
 
 /* CENIK */
 
-#cenik {
-	margin: 50px 0 150px 0;
-}
-
 #cenik * {
 	color: var(--violet);
+}
+
+#cenik {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 50px 0 150px 0;
+	width: 99%;
+}
+#cenik > div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 #cenik h2 {

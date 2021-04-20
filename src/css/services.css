@@ -356,6 +356,7 @@ svg {
 
 #cenik > div > h2 {
 	color: #fff;
+	margin: 5px 0 5px 0;
 }
 
 #cenik-title-first-box {
@@ -372,6 +373,8 @@ svg {
 #cenik > div > div {
 	background: #fff;
 	border-radius: 10px;
+	padding-top: 5px;
+	padding-bottom: 15px;
 }
 
 .cenik-col-1:not(:first-child) {
@@ -399,6 +402,20 @@ svg {
 
 .cenik-box div div {
 	font-size: 20px;
+}
+
+.cenik-explanations * {
+	font-size: 18px;
+	list-style-type: disc;
+}
+
+.cenik-explanations div h3 {
+	margin-left: 35px;
+	font-size: 25px;
+}
+
+.cenik-explanations div ul {
+	margin-left: 55px;
 }
 
 /* CENIK END*/

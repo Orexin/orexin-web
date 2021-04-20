@@ -18,6 +18,16 @@ snippet '%' => `<img src=\"<%= require('${1:link}') %>\" alt=\"${2}\">`
 
 - `npm run deploy`
 
+## Finishing edits:
+
+- change link in `redirectByData.js` to actuall link
+- add link pro vzorový formulář pro odstoupení od smlouvy do VOP
+
 ## Img logo policy:
 
 - copy logo-type from inter-company into src
+
+## radius policy:
+
+- buttons 10px
+- cards 12px

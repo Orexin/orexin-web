@@ -8,7 +8,7 @@
 	<meta name="description" content="webové řešení pro realizaci vašeho obchodu" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./../img/emblem-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('./../img/logos/logo-gradient.png') %>" type="image/x-icon" />
 </head>
 
 <body>
@@ -127,58 +127,118 @@
 	<navbar-wrapper></navbar-wrapper>
 
 	<!-- HERO SUBPAGES -->
-	<section class="uvod-sub-pages">
-		<img src="<%= require('./../img/uvod-bg-blur-sm.png') %>" alt="" />
+	<section class="uvod-subpages uvod-subpages-faq">
+		<div class="uvod-subpages uvod-subpages-faq text container">
+			<div class="column">
+				<h1>Ecommerce</h1>
+				<h2>absolute poggers</h2>
+			</div>
+		</div>
 	</section>
 
 	<!-- CONTENT -->
-	<section id="sluzby-ecommerce">
-		<div id="svg-web-pres" class="columns is-centered is-narrow bg-violet-dark">
-			<div class="column is-6 is-narrow">
-				<object data="<%= require('./../img/svg-services/svg-ecommerce.svg') %>" type="image/svg+xml">Váš prohlížeč
-					nepodporuje
-					SVG.</object>
+	<div class="services-ecommerce">
+		<section id="ecommerce">
+			<div class="container two-columns">
+				<div id="svg-ecommerce">
+					<!-- svg -->
+				</div>
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-violet">
+						<h2>Ecommerce</h2>
+						<p>Rozjíždíte svůj vlastní business a potřebujete Eshop? Naše řešení ecommerce vám zaručí jednoduchý
+							přístup,
+							uživatelskou spokojenost, bezpečnost, škálovatelnou databázi produktů, informační systém objednávek,
+							uživatelské účty pro stálé zákazníky a další.</p>
+					</div>
+				</div>
 			</div>
-			<div class="column is-6 is-narrow sluzby-content-text txt-white">
-				<h2>Ecommerce</h2>
-				<p>Rozjíždíte svůj vlastní business a potřebujete Eshop? Naše řešení ecommerce vám zaručí jednoduchý přístup,
-					uživatelskou spokojenost, bezpečnost, škálovatelnou databázi produktů, informační systém objednávek,
-					uživatelské účty pro stálé zákazníky a další.</p>
+		</section>
+		<section id="seo" class="bg-violet-dark">
+			<div class="container two-columns">
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-white">
+						<h2>SEO a návštěvnost</h2>
+						<p>Naši SEO specialisté vám zaručí že budete na internetu vidět. Správná klíčová slova vám pak přivedou
+							ještě
+							více návštěvníků.</p>
+					</div>
+				</div>
+				<div id="svg-seo">
+					<!-- svg -->
+				</div>
 			</div>
-		</div>
-		<div id="svg-reprezentace" class="columns is-centered">
-			<div class="column is-6 ml-6 sluzby-content-text txt-violet">
-				<h2>SEO a návštěvnost</h2>
-				<p>Naši SEO specialisté vám zaručí že budete na internetu vidět. Správná klíčová slova vám pak přivedou ještě
-					více návštěvníků.</p>
+		</section>
+		<section id="platby">
+			<div class="container two-columns">
+				<div id="svg-platby">
+					<!-- svg -->
+				</div>
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-violet">
+						<h2>Možnosti platby</h2>
+						<p>Podporujeme rozvoj decentralizovaných měn a blockchainových služeb. Naše řešení nabízí kromě klasických
+							způsobů platby možnost platby kryptoměnou dle výběru zákazníka. </p>
+					</div>
+				</div>
 			</div>
-			<object data="<%= require('./../img/svg-services/svg-seo.svg') %>" type="image/svg+xml">Váš prohlížeč
-				nepodporuje SVG.</object>
-		</div>
-		<div id="svg-vyroba" class="columns is-centered is-narrow bg-violet-dark">
-			<div class="column is-6 is-narrow">
-				<object data="<%= require('./../img/svg-services/svg-moznosti-platby.svg') %>" type="image/svg+xml">Váš
-					prohlížeč
-					nepodporuje
-					SVG.</object>
+		</section>
+		<section id="ovjednavky" class="bg-violet-dark">
+			<div class="container two-columns">
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-white">
+						<h2>Dokončení objednávky</h2>
+						<p>Doveďte návštěvníky e-shopu k dokončení objednávky. Pomůže vám k tomu jednoduchý a propracovaný nákupní
+							proces.</p>
+					</div>
+				</div>
+				<div id="svg-objednavky">
+					<!-- svg -->
+				</div>
 			</div>
-			<div class="column is-6 is-narrow sluzby-content-text txt-white">
-				<h2>Možnosti platby</h2>
-				<p>Podporujeme rozvoj decentralizovaných měn a blockchainových služeb. Naše řešení nabízí kromě klasických
-					způsobů platby možnost platby kryptoměnou dle výběru zákazníka. </p>
+		</section>
+		<section class="services-contact-wrap container">
+			<div class="services-contact">
+				<div class="services-contact-grid">
+					<div class="form-group">
+						<label for="jmeno">Vaše jméno a příjmení</label>
+						<div class="input-icon-wrap">
+							<input id="jmeno" type="text" tabindex="1" placeholder="Jan Novák" />
+							<span class="typcn typcn-user-outline"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Váš e-mail</label>
+						<div class="input-icon-wrap">
+							<input id="email" type="text" tabindex="2" placeholder="jnovak@orexin.cz" />
+							<span class="typcn typcn-mail"></span>
+						</div>
+					</div>
+					<div id="selectBoxes">
+						<label for="selectBoxes">Služby</label>
+						<div class="select-boxes">
+							<div class="select-box">
+								<input id="web" type="checkbox" />
+								<label for="web" tabindex="5">Webová prezentace</label>
+							</div>
+							<div class="select-box">
+								<input id="shop" type="checkbox" checked />
+								<label for="shop" tabindex="6">E-commerence</label>
+							</div>
+							<div class="select-box">
+								<input id="mark" type="checkbox" />
+								<label for="mark" tabindex="7">Webová aplikace</label>
+							</div>
+						</div>
+					</div>
+					<div class="send-button form-group flex-center">
+						<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+					</div>
+				</div>
+				<p>Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.</p>
 			</div>
-		</div>
-		<div id="svg-reprezentace" class="columns is-centered">
-			<div class="column is-6 ml-6 sluzby-content-text txt-violet">
-				<h2>Dokončení objednávky</h2>
-				<p>Doveďte návštěvníky e-shopu k dokončení objednávky. Pomůže vám k tomu jednoduchý a propracovaný nákupní
-					proces.</p>
-			</div>
-			<object data="<%= require('./../img/svg-services/svg-dokonceni-objednavky.svg') %>" type="image/svg+xml">Váš
-				prohlížeč
-				nepodporuje SVG.</object>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<!-- FOOTER -->
 	<footer-wrapper></footer-wrapper>

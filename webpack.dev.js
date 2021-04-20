@@ -12,7 +12,10 @@ module.exports = {
 		about: './src/js/about.js',
 		contact: './src/js/contact.js',
 		faq: './src/js/faq.js',
-		services: './src/js/services.js'
+		services: './src/js/services.js',
+		webpres: './src/js/web-pres.js',
+		webapp: './src/js/web-app.js',
+		ecommerce: './src/js/ecommerce.js'
 	},
 
 	devServer: {
@@ -35,8 +38,8 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-				"style-loader",
-				"css-loader"
+				'style-loader',
+				'css-loader'
 				]
 			},
 			// load images (base64 < 8192B)
@@ -49,7 +52,7 @@ module.exports = {
 			},
 			// load icons
 			{
-				test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+				test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
 				type: 'asset/resource'
 			},
 			// load testing "interface"
@@ -57,12 +60,12 @@ module.exports = {
 				test: /\test\.(js$|css)/,
 				use: 'mocha-loader',
 				exclude: /node_modules/
-			}
-			// load svg
-			/*{
+			},
+			// inline SVGs
+			{
 				test: /\.svg$/,
-				use: ["file-loader"]
-			}*/
+				use: 'html-loader'
+			}
 		]
 	},
 
@@ -102,11 +105,11 @@ module.exports = {
 			chunks: ['main', 'article'],
 			filename: 'privacy.html'
 		}),
-		/* TER.MS AND CONDITIONS */
+		/* TERMS AND CONDITIONS */
 		new HtmlWebpackPlugin({
 			template: './src/terms-and-conditions.html',
 			inject: true,
-			chunks: ['main'],
+			chunks: ['main', 'article'],
 			filename: 'terms-and-conditions.html'
 		}),
 		/* SERVICES */
@@ -119,20 +122,20 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/services/ecommerce.html',
 			inject: true,
-			chunks: ['main', 'services'],
-			filename: 'ecommerce.html'
+			chunks: ['main', 'services', 'ecommerce'],
+			filename: 'services/ecommerce.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-app.html',
 			inject: true,
-			chunks: ['main', 'services'],
-			filename: 'web-app.html'
+			chunks: ['main', 'services', 'webapp'],
+			filename: 'services/web-app.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/services/web-pres.html',
 			inject: true,
-			chunks: ['main', 'services'],
-			filename: 'web-pres.html'
+			chunks: ['main', 'services', 'webpres'],
+			filename: 'services/web-pres.html'
 		}),
 	]
 };

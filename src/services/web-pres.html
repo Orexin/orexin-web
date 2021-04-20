@@ -8,10 +8,10 @@
 	<meta name="description" content="Webové řešení pro reprezentaci vašeho zájmu" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./../img/emblem-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('./../img/logos/logo-gradient.png') %>" type="image/x-icon" />
 </head>
 
-<body>
+<body id="services-pres">
 	<!-- PRELOADER -->
 	<div id="preloader">
 		<?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -127,46 +127,102 @@
 	<navbar-wrapper></navbar-wrapper>
 
 	<!-- HERO SUBPAGES -->
-	<section class="uvod-sub-pages">
-		<img src="<%= require('./../img/uvod-bg-blur-sm.png') %>" alt="" />
+	<section class="uvod-subpages uvod-subpages-faq">
+		<div class="uvod-subpages uvod-subpages-faq text container">
+			<div class="column">
+				<h1>Webová prezentace</h1>
+				<h2>moc popiči</h2>
+			</div>
+		</div>
 	</section>
-
 	<!-- CONTENT -->
-	<section id="sluzby-web-pres">
-		<div id="svg-web-pres" class="columns is-centered is-narrow bg-violet-dark">
-			<div class="column is-6 is-narrow">
-				<object data="<%= require('./../img/svg-services/svg-web-pres.svg') %>" type="image/svg+xml">Váš prohlížeč
-					nepodporuje
-					SVG.</object>
+	<div class="services-web">
+		<section id="web">
+			<div class="container two-columns">
+				<div id="svg-web">
+					<!-- svg -->
+				</div>
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-violet">
+						<h2>Webová prezentace</h2>
+						<p>Má vaše podnikání velké cíle? Pokud ano webová prezentace vám zaručí spokojenost návštěvníků vaší stránky
+							a
+							místo kde můžete svět informovat o všem co je pro vás důležité.</p>
+					</div>
+				</div>
 			</div>
-			<div class="column is-6 is-narrow sluzby-content-text txt-white">
-				<h2>Webová prezentace</h2>
-				<p>Má vaše podnikání velké cíle? Pokud ano webová prezentace vám zaručí spokojenost návštěvníků vaší stránky a
-					místo kde můžete svět informovat o všem co je pro vás důležité.</p>
+		</section>
+		<section id="pres" class="bg-violet-dark">
+			<div class="container two-columns">
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-white">
+						<h2>Výjimečná reprezentace</h2>
+						<p>Nic nezaujme návštěvníka webu víc než dobrý design a funkcionalita. Postaráme se o to aby byl váš projekt
+							výjimečný hned od začátku.</p>
+					</div>
+				</div>
+				<div id="svg-pres">
+					<!-- svg -->
+				</div>
 			</div>
-		</div>
-		<div id="svg-reprezentace" class="columns is-centered">
-			<div class="column is-6 ml-6 sluzby-content-text txt-violet">
-				<h2>Výjimečná reprezentace</h2>
-				<p>Nic nezaujme návštěvníka webu víc než dobrý design a funkcionalita. Postaráme se o to aby byl váš projekt
-					výjimečný hned od začátku.</p>
+		</section>
+		<section id="fast">
+			<div class="container two-columns">
+				<div id="svg-fast">
+					<!-- svg -->
+				</div>
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-violet">
+						<h2>Rychlá výroba</h2>
+						<p>Webová prezentace je často jednoduchá verze webové stránky. Díky tomu, a našim nejlepším developerům,
+							není
+							tak časově náročná.</p>
+					</div>
+				</div>
 			</div>
-			<object data="<%= require('./../img/svg-services/svg-reprezentace.svg') %>" type="image/svg+xml">Váš prohlížeč
-				nepodporuje SVG.</object>
-		</div>
-		<div id="svg-vyroba" class="columns is-centered is-narrow bg-violet-dark">
-			<div class="column is-6 is-narrow">
-				<object data="<%= require('./../img/svg-services/svg-rychla-vyroba.svg') %>" type="image/svg+xml">Váš prohlížeč
-					nepodporuje
-					SVG.</object>
+		</section>
+		<section class="services-contact-wrap container">
+			<div class="services-contact">
+				<div class="services-contact-grid">
+					<div class="form-group">
+						<label for="jmeno">Vaše jméno a příjmení</label>
+						<div class="input-icon-wrap">
+							<input id="jmeno" type="text" tabindex="1" placeholder="Jan Novák" />
+							<span class="typcn typcn-user-outline"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Váš e-mail</label>
+						<div class="input-icon-wrap">
+							<input id="email" type="text" tabindex="2" placeholder="jnovak@orexin.cz" />
+							<span class="typcn typcn-mail"></span>
+						</div>
+					</div>
+					<div id="selectBoxes">
+						<label for="selectBoxes">Služby</label>
+						<div class="select-boxes">
+							<div class="select-box">
+								<input id="web" type="checkbox" checked />
+								<label for="web" tabindex="5">Webová prezentace</label>
+							</div>
+							<div class="select-box">
+								<input id="shop" type="checkbox" />
+								<label for="shop" tabindex="6">E-commerence</label>
+							</div>
+							<div class="select-box">
+								<input id="mark" type="checkbox" />
+								<label for="mark" tabindex="7">Webová aplikace</label>
+							</div>
+						</div>
+					</div>
+					<div class="send-button form-group flex-center">
+						<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+					</div>
+				</div>
+				<p>Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.</p>
 			</div>
-			<div class="column is-6 is-narrow sluzby-content-text txt-white">
-				<h2>Rychlá výroba</h2>
-				<p>Webová prezentace je často jednoduchá verze webové stránky. Díky tomu, a našim nejlepším developerům, není
-					tak časově náročná.</p>
-			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<!-- FOOTER -->
 	<footer-wrapper></footer-wrapper>

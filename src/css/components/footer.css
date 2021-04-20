@@ -25,7 +25,7 @@ footer-wrapper > .footer-content > .upper > img {
 	transform: translate(-50%, 0);
 	padding: 40px;
 	margin-top: -80px;
-	border-radius: 5px;
+	border-radius: 12px;
 	background-color: var(--violet-darker);
 	z-index: 5;
 }
@@ -48,10 +48,12 @@ footer-wrapper > .footer-content > .upper > img {
 }
 
 .top-banner > a {
+	font-size: 14px;
+	font-weight: 500;
 	color: white;
-	padding: 5px 15px 5px 15px;
+	padding: 8px 15px;
 	border: solid var(--violet) 2px;
-	border-radius: 25px;
+	border-radius: 10px;
 	transition-duration: 0.3s;
 }
 

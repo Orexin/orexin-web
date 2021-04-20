@@ -8,7 +8,7 @@
 	<meta name="description" content="Důležitá obchodní ustanovení a obchodní smlouva" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('./img/logos/logo-gradient.png') %>" type="image/x-icon" />
 </head>
 
 <body>
@@ -124,110 +124,1041 @@
 	</div>
 
 	<!-- NAV -->
-	<nav class="columns ml-0">
-		<a href="./index.html" id="nav-logo">
-			<div></div>
-		</a>
-		<a href="./index.html" class="active column is-1">
-			<span>Úvod</span>
-		</a>
-		<a href="./about.html" class="column is-1">
-			<span>O nás</span>
-		</a>
-		<a href="./services.html" class="column is-1">
-			<span>Služby</span>
-		</a>
-		<a href="./faq.html" class="column is-1">
-			<span>FAQ</span>
-		</a>
-		<a href="./contact.html" class="kontakt-container column is-1 is-offset-6">
-			<div>Kontakt</div>
-		</a>
-		<ul>
-			<!-- 				<li id="cs-flag">
-					<a href="#"><img src="<%= require('./img/flags/cs.png') %>" alt="cs-flag" /></a>
-				</li> do anglické verze -->
-			<li id="en-flag">
-				<a href="./../en/index.html"><img src="<%= require('./img/flags/en.png') %>" alt="en-flag" /></a>
-			</li>
-		</ul>
-		<span id="nav-indicator" style="transition: all 0.5s ease-in-out !important"></span>
-	</nav>
+	<navbar-wrapper></navbar-wrapper>
+
 	<!-- UVOD SUBPAGES -->
-	<section class="uvod-sub-pages">
-		<img src="<%= require('./img/uvod-bg-blur-sm.png') %>" alt="" />
+	<section class="uvod-subpages uvod-subpages-faq">
+		<div class="uvod-subpages uvod-subpages-faq text container">
+			<div class="column">
+				<h1>Obchodní podmínky</h1>
+			</div>
+		</div>
 	</section>
-	<!-- FOOTER -->
-	<footer>
-		<div class="footer-kontakt-button columns is-centered">
-			<a href="./contact.html" class="column is-size-1 p-0">
-				<i class="fa fa-envelope is-inline"></i>
-				<div class="is-size-2 is-inline">Kontaktuje nás</div>
+
+	<!-- CONTENT -->
+	<section id="terms-and-conditions" class="article container">
+		<h1>Všeobecné obchodní podmínky</h1>
+		<div>
+			<ol>
+				<li>
+					<a href="./terms-and-conditions.html#zakladni-ustanoveni">
+						<h3>Základní ustanovení</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#vymezeni-pojmu">
+						<h3>Vymezení pojmů</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#smlouva">
+						<h3>Uzavření, vznik, trvání a ukončení smlouvy</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#prava-a-povinnost">
+						<h3>Všestranná práva a povinnosti</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#platebni-podminky">
+						<h3>Platební podmínky a transakce</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#reklamace">
+						<h3>Reklamace</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#odpovednost-za-ujmu">
+						<h3>Odpovědnost za újmu</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#dusevni-vlastnictvi">
+						<h3>Duševní vlastnictví</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#obchodni-sdeleni">
+						<h3>Obchodní sdělení</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#ochrana-osobnich-udaju">
+						<h3>Ochrana osobních údajů a související ustanovení</h3>
+					</a>
+				</li>
+				<li>
+					<a href="./terms-and-conditions.html#zaverecna-ustanoveni">
+						<h3>Závěrečná ustanovení a odkazy</h3>
+					</a>
+				</li>
+			</ol>
+		</div>
+		<div>
+			<ol>
+				<li id="zakladni-ustanoveni">
+					<h2>Základní ustanovení</h2>
+					<ol>
+						<li>
+							<p>Vymezení všeobecných obchodních podmínek (dále jen „VOP“) služeb Orexin Solutions s.r.o. (dále jen
+								„poskytovatel“), které v souladu s ustanovením § 1751 odst. 1 zákona č. 89/2012 Sb., občanský zákoník,
+								ve znění pozdějších předpisů (dále jen „občanský zákoník“) upravují vzájemná práva a povinnosti mezi
+								poskytovatelem při poskytování služeb a objednatelem užívání služeb vzniklá v souvislosti nebo na
+								základě:
+								Smlouvy o provedení služeb (dále jen „SPS“)
+								Rámcových smluv (dále jen “RS”)
+								Dílčich smluv (dále jen “DS”)
+								uzavřených mezi poskytovatelem a objednatelem. VOP jsou nedílnou součástí všech smluv uzavřených mezi
+								poskytovatelem a objednatelem.
+							</p>
+						</li>
+						<li>
+							<h3>Kontaktní údaje</h3>
+							<p>
+								Název: Orexin Solutions s.r.o. <br>
+								Sídlo: <br>
+								IČ: <br>
+								Zapsaná: (např: u Městského soudu v Praze, oddíl C, vložka 58549) <br>
+								Telefon: <a href="tel:+420666-666-666" class="in-text-link">+420-666-666-666</a> <br>
+								Email pro kontakt: <a href="mailto:kontakt@orexin.cz" class="in-text-link">kontakt@orexin.cz</a> <br>
+								Email pro konverzaci s objednatelem s platnou smlouvou: <a href="mailto:podpora@orexin.cz"
+									class="in-text-link">podpora@orexin.cz</a> <br>
+								Kontaktní adresa: <br>
+							</p>
+						</li>
+						<li>
+							<p>Ustanovení odchylná od VOP je možné sjednat ve smlouvě. Odchylná ujednání ve smlouvě mají přednost před
+								ustanoveními VOP.</p>
+						</li>
+						<li>
+							<p>Ustanovení VOP jsou nedílnou součástí smluv. VOP a smlouvy jsou vyhotoveny v českém jazyce. Smlouvy lze
+								uzavřít v českém jazyce.</p>
+						</li>
+						<li>
+							<p>Znění VOP může poskytovatel měnit či doplňovat. Tímto ustanovením nejsou dotčena práva a povinnosti
+								vzniklá po dobu účinnosti předchozího znění VOP.</p>
+						</li>
+						<li>
+							<p>Jsou-li ve smlouvě (popř. jejich dodatcích) a ve VOP ustanovení, která jsou ve vzájemném rozporu, mají
+								ujednání ve smlouvě přednost před ustanoveními VOP.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="vymezeni-pojmu">
+					<h2>Vymezení pojmů</h2>
+					<ol>
+						<li>
+							<h3>Poskytovatel</h3>
+							<p>Poskytovatelem je obchodní společnost Orexin Solutions s.r.o.</p>
+						</li>
+						<li>
+							<h3>Objednatel</h3>
+							<p>Objednatelem je jakákoliv osoba, fyzická či právnická, která v souladu s těmito VOP užívá služeb
+								Orexinu. Ustanovení těchto podmínek, stanovuje povinnosti objednatele při užívání služeb. Tato
+								ustanovení a povinnosti jejich užívání se přiměřeně uplatní i na jakoukoliv jinou osobu, které
+								objednatel umožní služby užívat.</p>
+						</li>
+						<li>
+							<h3>Smlouva</h3>
+							<p>Poskytovatel poskytuje služby vývoje a designu internetových stránek objednatele. Služby poskytovatele
+								lze využít jak pro osobní tak i firemní použití. Při volbě webového řešení rozlišujeme vývoj webové
+								prezentace, webové aplikace a ecommerce. Na základě výběru se poté odvíjí postup vývoje a celková cena.
+							</p>
+							<p style="margin-top: 10px;">Při uzavření smlouvy se jedná o jednu z následujících možností:</p>
+							<ul>
+								<li class="sub-ul">
+									<p>Uzavření RS o dílo a licenčních, uzavíraných prostřednictvím internetových stránek poskytovatele.
+									</p>
+								</li>
+								<li class="sub-ul">
+									<p>Uzavření DS o vzárámcjemná práva a povinnosti mezi poskytovatelem a objednatelem vznikající na
+										základě a v souvislosti s jednotlivými smlouvami uzavřenými na základě rámcové smlouvy, přičemž se
+										jedná o:</p>
+									<ul>
+										<li class="sub-ul">
+											<p>Licenční smlouvy o poskytnutí licence k počítačovému programu sloužícímu pro provoz internetové
+												stránky objednatele.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Smlouvy o dílo a smlouvy licenční ohledně vytvoření grafických děl v elektronické podobě
+												poskytovatelem (dále jen „grafická díla“) a ohledně poskytnutí licence ke grafickým dílům
+												objednateli.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Smlouvy o dílo ohledně provedení programátorských úprav internetové stránky objednatele.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Smlouvy o dílo ohledně zajištění plnění obsahu internetové stránky objednatele z textových
+												podkladů dodaných objednatelem poskytovateli.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Zprostředkovatelských smluv ohledně obstarání možnosti pro objednatele uzavřít licenční smlouvu
+												s nositeli práv ke grafickým prvkům či fotografiím tvořícím součást grafických děl</p>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-ul">
+									<p>Uzavření SPS o provedení služeb nutných k řádné funkčnosti internetových stránek objednatele
+										nezmíněných v RS nebo DS.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Webová prezentace</h3>
+							<p>Webová stránka určená pro prezentaci zájmu objednatele. S webovou prezentací se pojí i vytvoření
+								databázového řešení pro data webové prezentace. Webová prezentace je spravovatelná v systému pro správu
+								obsahu a je připojena k databázi.</p>
+						</li>
+						<li>
+							<h3>Webová aplikace</h3>
+							<p>Počítačový software uzpůsobený pro použití v prohlížeči. S webovou aplikací se pojí i vytvoření
+								databázového řešení pro data webové aplikace. Webová aplikace je spravovatelná v systému pro správu
+								obsahu a je připojena k databázi.</p>
+						</li>
+						<li>
+							<h3>Ecommerce</h3>
+							<p>Webová stránka určená pro realizaci internetového obchodu. S internetovým obchodem se pojí i vytvoření
+								databázového řešení pro data internetového obchodu. Internetový obchod je spravovatelný v systému pro
+								správu obsahu a je připojen k databázi.</p>
+						</li>
+						<li>
+							<h3>Internetové stránky objednatele</h3>
+							<p>Předmětem smlouvy je vyhotovení internetových stránek objednatele, kdy se může jednat o:</p>
+							<ul>
+								<li class="sub-ul">
+									<p>Webovou prezentaci</p>
+								</li>
+								<li class="sub-ul">
+									<p>Webovou aplikaci</p>
+								</li>
+								<li class="sub-ul">
+									<p>Ecommerce</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Internetové stránky poskytovatele</h3>
+							<p>Internetové stránky poskytovatele jsou <a href="#" class="in-text-link">www.orexin.cz</a></p>
+						</li>
+						<li>
+							<h3>Zkušební doba</h3>
+							<p>Zkušební doba je časové období v němž má objednatel právo vznést stížnosti na internetové stránky
+								objednatele a jejich provedení. Zkušební doba trvá 1 měsíc a počítá se ode dne uzavření smlouvy. Po
+								uplynutí zkušební doby a vyřešení všech podaných stížností na internetové stránky objednatele nabývá
+								smlouva platnosti. Poskytovatel je povinen podané stížnosti vyřešit či opravit.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="smlouva">
+					<h2>Uzavření, vznik, trvání a ukončení smlouvy</h2>
+					<ol>
+						<li>
+							<h2>Nabytí platnost smlouvy</h2>
+							<p>Smlouva nabývá platnosti a účinnosti okamžikem její akceptace smluvními stranami, tj. po stvrzení
+								podpisem nebo elektronickým podpisem. Smlouvu podepisuje účastník nebo osoba jím zmocněná na základě
+								plné moci s úředně ověřenými podpisy (povinnost předložit plnou moc s úředně ověřenými podpisy platí
+								také v případě veškerých změn objednaných služeb či při ukončení smlouvy a to i v případě manželů).</p>
+						</li>
+						<li>
+							<h3>Nedílné součásti smlouvy</h3>
+							<ol>
+								<li>
+									<p>Nedílnou součást smlouvy tvoří kromě smluvního formuláře rovněž:</p>
+									<ul>
+										<li class="sub-ul">
+											<p>Technická specifikace služeb</p>
+										</li>
+										<li class="sub-ul">
+											<p>VOP</p>
+										</li>
+										<li class="sub-ul">
+											<p>Ceník služeb</p>
+										</li>
+										<li class="sub-ul">
+											<p>Zásady zpracování osobních údajů dle GDPR</p>
+										</li>
+									</ul>
+									<p>To vše dostupné na <a href="#" class="in-text-link">www.orexin.cz</a>.</p>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<h3>Právo neuzavřít smlouvu</h3>
+							<p>Poskytovatel si vyhrazuje právo neuzavřít smlouvu, a to zejména s těmi osobami, které dříve smlouvu
+								porušily.</p>
+						</li>
+						<li>
+							<h3>Závazky vyplývající ze smlouvy</h3>
+							<p>Na základě smlouvy se poskytovatel zavazuje poskytovat objednateli sjednané služby a objednatel se
+								zavazuje poskytovat potřebnou součinnost a dodržovat povinnosti vyplývající ze smlouvy, především platit
+								řádně a včas ceny za služby.</p>
+						</li>
+						<li>
+							<h3>Způsob uložení smlouvy</h3>
+							<p>Vzniklá smlouva, resp. daňový doklad, bude uložena v elektronickém archivu. Objednateli bude smlouva
+								zaslána v elektronické podobě na požádání.</p>
+						</li>
+						<li>
+							<h3>Uzavření smlouvy</h3>
+							<ul>
+								<li class="sub-ul">
+									<h4>Uzavření smlouvy prostřednictvím komunikačních prostředků</h4>
+									<p>Objednatel souhlasí s použitím komunikačních prostředků na dálku při uzavírání smlouvy. Smlouvu v
+										tomto případě potvrzuje elektronickým podpisem. Náklady vzniklé objednateli při použití
+										komunikačních prostředků na dálku v souvislosti s uzavřením smlouvy (náklady na internetové
+										připojení, náklady na telefonní hovory) si hradí objednatel sám, přičemž poskytovatelem nejsou
+										účtovány náklady nad rámec základní sazby poskytovatele komunikačních služeb objednatele.</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Uzavření nahrazující smlouvy</h4>
+									<p>V případě, že smluvní strany uzavřou novou smlouvu nahrazující předchozí smlouvu, vzniklé finanční
+										či jiné dluhy účastníka z předcházející smlouvy nezanikají, a řídí se přiměřeně podmínkami nové
+										smlouvy (v takových případech se z účastníkem poskytnutých finančních plnění uhradí přednostně
+										nejstarší pohledávky za účastníkem).</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Smlouva se uzavírá na dobu určitou</h4>
+									<p>Smlouva se uzavírá na dobu určitou v délce jednoho roku, nesjednaly-li smluvní strany jinak.
+										Kterákoliv smluvní strana je oprávněna nejpozději 5 pracovních dní před koncem smlouvy druhé smluvní
+										straně sdělit, že trvá na ukončení smlouvy v době, na kterou byla sjednána, čímž vylučuje její
+										automatické prodloužení. Objednatel je povinen toto sdělení učinit prostřednictvím emailu na
+										adresu <a href="mailto:podpora@orexin.cz" class="in-text-link">podpora@orexin.cz</a>. V případě, že
+										objednatel nesdělí poskytovateli svojí volbu nepokračovat dále ve smlouvě, projevuje tím vůli, že
+										souhlasí s automatickým prodloužením smlouvy o dobu určitou, na
+										kterou byla původně uzavřena (např. o měsíc, o rok a pod.), za podmínek, za kterých ji uzavřel.
+										Uhrazení poplatku za službu proběhne automatickým stržením z platební karty zadané objednatelem při
+										první objednávce. Poskytovatel o této automatické platbě objednatele upozorní emailem na adresu
+										objednatele zadanou při první objednávce nejméně 5 pracovních dnů po uhrazení poplatku.</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Možnost vznést stížnost v prvním měsíci používání</h4>
+									<p>Poskytovatel umožní objednateli po dobu trvání zkušební doby vznést stížnosti na funkcionalitu webu
+										a další nesrovnalosti. Tato zkušební doba se nezapočítává do doby určité trvání smlouvy. V případě,
+										že po uplynutí zkušební doby nevznese objednatel žádnou stížnost, nebo již byly všechny vznesené
+										stížnosti řádně opraveny a vyřešeny akceptuje poskytovatel začátek doby určité trvání smlouvy.
+									</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Případ kdy je objednatel považován za spotřebitele</h4>
+									<p>V případě objednatelů, kteří jsou považováni za spotřebitele ve smyslu § 1751 občanského zákoníku,
+										těmto objednatelům přísluší rovněž práva podle § 1810 a násl. občanského zákoníku.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Ukončení smlouvy</h3>
+							<ul>
+								<li class="sub-ul">
+									<h4>Ukončení smlouvy bez uvedení důvodu a výpovědní doba</h4>
+									<p>Účastník i poskytovatel jsou oprávněni smlouvu kdykoliv zrušit i bez uvedení důvodu písemnou
+										výpovědí. Výpovědní doba činí 30 dnů a začíná běžet dnem následujícím po dni, ve kterém byla výpověď
+										doručena. Pro odstoupení od smlouvy může kupující využit <a href="#" class="in-text-link">vzorový
+											formulář</a> poskytovaný
+										prodávajícím,
+										jenž tvoří přílohu obchodních podmínek. Výpověď musí být v případě jejího podání:</p>
+									<ul>
+										<li class="sub-ul">
+											<p>Ze strany poskytovatele zaslána doporučenou poštou na adresu účastníka uvedenou účastníkem ve
+												smlouvě.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Ze strany účastníka podána písemně na adrese ZC poskytovatele (tj. osobně na ZC nebo zaslána
+												doporučenou poštou na adresu ZC).</p>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-ul">
+									<h4>Ukončení smlouvy s okamžitou účinností je možno z těchto důvodů:</h4>
+									<ul>
+										<li class="sub-ul">
+											<p>V případě opakovaného nebo závažného neplnění smluvních podmínek ze strany objednatele.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Při prodlení objednatele s uhrazením ceny za služby delším než 2 měsíce.</p>
+										</li>
+										<li class="sub-ul">
+											<p>V případě existence důvodného podezření, že objednatel zneužívá síť elektronických komunikací
+												nebo užívá služby v rozporu se závaznými právními předpisy, zejména podporuje nebo umožňuje
+												jakékoliv nelegální činnosti, nebo se do nich zapojuje, zasahuje do služeb poskytovaných jiným
+												objednatelům, do sítě poskytovatele nebo do jiných sítí, nebo provozuje obtěžující činnost jako
+												je rozesíláním spamů a podobně.</p>
+										</li>
+										<li class="sub-ul">
+											<p>Při zřizování nebo změně služeb se zjistí, že služby nelze z objektivních příčin (technických
+												důvodů) zřídit nebo při zřízení služeb, provádění změny služeb nebo při odstraňování poruch
+												objednatel neposkytuje dostatečnou součinnost poskytovateli v souladu se smlouvou nebo se při
+												poskytování služeb zjistí, že služby není možné řádně v souladu se smlouvou a VOP poskytovat.
+											</p>
+										</li>
+										<li class="sub-ul">
+											<p>V případě, že mu toto bude uloženo závazným rozhodnutím orgánu veřejné moci.</p>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-ul">
+									<h4>Ukončení smlouvy ze strany objednatele</h4>
+									<p>V případě, že dojde k ukončení smlouvy z důvodů na straně objednatele, je objednatel povinen
+										uhradit poskytovateli ukončovací poplatek ve výši dosud neuhrazeného poplatku za služby v počtu
+										měsíců zbývajících do konce sjednané doby trvání smlouvy, případně další poplatky stanovené v
+										ceníku.</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Zastavení poskytování služeb</h4>
+									<p>Objednatel bere na vědomí, že poskytovatel po zániku smlouvy zastaví poskytování služeb.</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Vztahy práv a povinností před ukončením smluvního vztahu při vypovězení smlouvy</h4>
+									<p>Vypovězením smlouvy nejsou dotčena práva a povinnosti stran vzniklá před ukončením smluvního
+										vztahu, zejména právo poskytovatele na řádné uhrazení částek vyúčtovaných za poskytnuté služby,
+										smluvních pokut, případného úroku z prodlení a nároku z náhrady škody způsobené poskytovateli
+										objednatelem a povinnost objednatele dlužné částky řádně uhradit. Obnovení služby po jejím ukončení
+										je možné, a to po vzájemné dohodě objednatele a poskytovatele.</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Ukončení smlouvy bez uvedení důvodu v 14 denní lhůtě od uzavření smlouvy</h4>
+									<p>Od smlouvy uzavřené prostřednictvím prostředku komunikace na dálku má objednatel – spotřebitel
+										právo dle ust. § 1829 a násl. občanského zákoníku ve lhůtě 14 dnů odstoupit, a to bez uvedení důvodu
+										a bez jakékoliv sankce. Lhůta pro odstoupení od smlouvy začíná běžet uzavřením smlouvy. Nedílnou
+										součástí VOP je poučení o možnosti odstoupení od smlouvy, ze kterého získá spotřebitel další
+										informace o jeho právech v souvislosti s odstoupením od smlouvy.</p>
+								</li>
+								<li class="sub-ul">
+									<h4>Poskytování služeb již ve lhůtě pro odstoupení</h4>
+									<p>Začne-li poskytovatel dle smlouvy poskytovat objednateli služby ve lhůtě pro odstoupení, činí tak
+										na základě výslovné žádosti objednatele a objednatel s tímto uzavřením smlouvy vyslovuje souhlas.
+										Odstoupí-li objednatel od smlouvy a poskytovatel s plněním na základě výslovné žádosti objednatele
+										učiněného při uzavření smlouvy začal před uplynutím lhůty pro odstoupení od smlouvy, uhradí
+										objednatel poskytovateli poměrnou část sjednané ceny za plnění poskytnuté do okamžiku odstoupení od
+										smlouvy.</p>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li id="prava-a-povinnost">
+					<h2>Všestranná práva a povinnosti</h2>
+					<ol>
+						<li>
+							<p>Objednatel je oprávněn užívat služby poskytovatele pouze při zachování povinností stanovených VOP.</p>
+						</li>
+						<li>
+							<h3>Povinnosti objednatele při používání služeb poskytovatele</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Objednatel je oprávněn užívat služby poskytovatele pouze při zachování povinností stanovených ve
+										VOP.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel prohlašuje a zaručuje, že jeho svéprávnost nebyla a není omezena v rozsahu znemožňujícím
+										mu uzavření smlouvy a vyslovení souhlasu s VOP a užívání služeb poskytovatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel prohlašuje a zaručuje, že veškeré údaje, které o sobě při uzavírání smlouvy sdělil, jsou
+										pravdivé, úplné, přesné a správné.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel prohlašuje a zaručuje, že používáním služeb poskytovatele ze strany objednatele za
+										podmínek uvedených ve VOP nedojde k porušení platných právních předpisů.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel prohlašuje a zaručuje, že se před zahájením užívání služeb poskytovatele důkladně
+										seznámil s VOP, že VOP zcela rozumí a souhlasí s nimi.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Závazky objednatele při používání služeb poskytovatele</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Objednatel, bez ohledu na jiná ustanovení VOP, se zavazuje, že nebude využívat služeb
+										poskytovatele, pokud by jejich použitím ze strany objednatele došlo k porušení platných právních
+										předpisů.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel, bez ohledu na jiná ustanovení VOP, se zavazuje, že bude využívat služeb poskytovatele
+										pouze k účelu, k němuž jsou určeny, a nebude služeb zneužívat k nelegálním aktivitám.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel, bez ohledu na jiná ustanovení VOP, se zavazuje, že bez předchozího písemného souhlasu
+										poskytovatele neumožní užití služeb třetím osobám. V případě, že objednatel poruší tuto povinnost a
+										třetí osoba způsobí poskytovateli škodu, zavazuje se objednatel tuto škodu poskytovateli nahradit.
+									</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel, bez ohledu na jiná ustanovení VOP, se zavazuje, že pro přístup ke službám nebude
+										využívat (ani se nebude snažit využívat) jiné rozhraní než rozhraní poskytnuté poskytovatelem.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel, bez ohledu na jiná ustanovení VOP, se zavazuje, že zajistí důvěrnost veškerých
+										identifikačních údajů a hesel nezbytných pro přihlášení objednatele a pro přístup ke službám
+										poskytovatele, zejména tyto identifikační údaje a hesla nesdělí žádné třetí osobě, a pokud zjistí
+										zneužití svých identifikačních údajů a hesel jakoukoli třetí osobou, okamžitě to sdělí
+										poskytovateli.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel, bez ohledu na jiná ustanovení VOP, se zavazuje, že bude řádně a včas platit cenu za
+										poskytované služby.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Objednatel nesmí</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Objednatel nesmí činit nic, co by porušovalo nebo poškozovalo služby poskytovatele (nebo sítě a
+										servery připojené k poskytovaným službám).</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel nesmí užívat služby poskytovatele způsobem, který by nepřiměřeně omezoval v užívání
+										služeb poskytovatele další objednatele či poskytovatele. Objednatel zejména nesmí služby
+										poskytovatele využívat tím způsobem, který by mohl vést k přetížení internetu nebo datové sítě
+										poskytovatele, mající za následek snížení rychlosti přenosu dat nebo částečný nebo úplný výpadek
+										těchto sítí. Internetové stránky poskytovatele služby poskytovatele je možné využívat jen v souladu
+										s jejich určením a v rozsahu, který je smluvený a který není na úkor práv ostatních objednatelů a
+										poskytovatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel nesmí v souvislosti s užíváním služeb poskytovatele se dopouštět protiprávního či
+										neetického jednání či využívat služby poskytovatele k činnostem, které jsou v rozporu s dobrými
+										mravy.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel nesmí v souvislosti se službami poskytovatele ukládat data a informace nebo umožnit
+										přenos dat a informací, jejichž obsah je v rozporu s obecně závaznými právními předpisy, a to
+										zejména obsah, jehož zpřístupnění veřejnosti zasahuje do autorských práv či práv souvisejících s
+										právem autorským třetích osob, porušuje právní normy směřujících k ochraně proti nenávisti k
+										některému národu, etnické skupině, rase, náboženství, třídě nebo jiné skupině osob nebo k omezování
+										práv a svobod jejich příslušníků nebo které porušuje právní normy upravující nakládání s
+										pornografickými materiály.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel nesmí služby poskytovatele používat k rozesílání nevyžádaných obchodních sdělení (spamu)
+										nebo nevyžádaných sdělení obecně.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel nesmí šířit v rámci služeb poskytovatele šířit počítačové viry.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Objednatel nesmí v rámci služeb poskytovatele umísťovat informace, které poškozují dobré jméno či
+										oprávněné zájmy poskytovatele.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Poskytovatel je oprávněn</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn požadovat po zájemci o uzavření smlouvy doložení údajů nezbytných pro
+										uzavření smlouvy.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn měnit VOP, ceník, technickou specifikaci poskytovaných služeb, a to v
+										celém jejich rozsahu.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn, při porušení VOP nebo porušení smluvních podmínek, s okamžitou účinností
+										znemožnit či omezit objednateli užívat služby poskytovatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn objednateli dočasně, a to v nejnutnějším rozsahu, omezit užívání služeb
+										poskytovatele, hrozí-li škoda poskytovateli, objednateli či třetí osobě, zejména v důsledku
+										nelegálních aktivit třetích osob, hackerů apod., a pokud nelze-li vzniku této škody zabránit jinak.
+									</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn nezřídit služby poskytovatele nebo nerealizovat změnu služeb poskytovatele
+										požadovanou objednatelem v případech, kdy objednatel úmyslně uvedl nesprávné osobní nebo
+										identifikační údaje nebo soustavně opožděně platí nebo soustavně neplatí vyúčtovanou cenu za služby
+										poskytovatele nebo opakovaně porušuje smluvní podmínky a VOP.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn je-li objednatel právnickou osobou, použít údaje o objednateli v nezbytném
+										rozsahu pro potřeby reference a v případě, že objednatel je fyzickou osobou, je oprávněn tyto
+										nezbytné údaje užít jen se souhlasem objednatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn monitorovat obsah informací ukládaných objednatelem v souvislosti s
+										webhostingovou službou (včetně obsahu jednotlivých databází) a monitorovat počet a datový objem
+										zpráv elektronické pošty zaslaných v souvislosti se službami poskytovatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn poskytování služeb poskytovatele zajišťovat také prostřednictvím třetích
+										osob.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel je oprávněn v případě ukončení smlouvy odstranit veškerá data objednatele umístěná na
+										serverech poskytovatele nebo na jiném cloudovém prostoru.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Závazky poskytovatele</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje za sjednanou cenu poskytovat objednateli služby poskytovatele za podmínek
+										v rozsahu sjednaných smlouvou a VOP.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje umožnit objednateli seznámit se s platným zněním VOP, popisem smlouvy a
+										ceníkem.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje informovat objednatele o podstatných změnách smlouvy, VOP, ceníku a popisu
+										poskytovaných služeb.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje odstranit vzniklé závady v poskytování služeb poskytovatele, které jsou na
+										straně poskytovatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje udržovat své technické zařízení a technickou infrastrukturu elektronických
+										komunikací v takovém technickém a provozním stavu, aby byly služby poskytovatele poskytovány v
+										souladu s VOP a parametry uvedenými ve smlouvě a v příslušných právních předpisech.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje informovat objednatele o veškerých omezeních, přerušeních, změnách nebo
+										nepravidelnostech v poskytování služeb poskytovatele, které jsou poskytovateli v dostatečném
+										předstihu známy.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Povinnost zachování mlčenlivosti o všech důvěrných informacích poskytnutých poskytovatelem</h3>
+							<p>Objednatel prohlašuje, že si je vědom toho, že v rámci poskytování služeb poskytovatele či jiného
+								plnění dle smlouvy může obdržet informace, které jsou považovány za důvěrné. Za důvěrné se považují
+								zejména veškeré informace ohledně systému správy obsahu sloužícího k provozu služeb provozovatele.
+								Objednatel se zavazuje zachovávat mlčenlivost ohledně důvěrných informací a dále se zavazuje zajistit
+								zachování mlčenlivosti ohledně důvěrných informací také ze strany svých zaměstnanců, pracovníků,
+								zmocněnců, statutárních orgánů, dalších osob, které budou mít k důvěrným informacím přístup. Objednatel
+								nesmí bez písemného souhlasu poskytovatele důvěrné informace využít pro sebe nebo třetí osoby.
+								Ustanovení tohoto článku nejsou dotčena ukončením smlouvy.</p>
+						</li>
+						<li>
+							<h3>Závazek poskytovatele provádět opatření k zamezení snížení kvality služeb poskytovatele</h3>
+							<p>
+								Poskytovatel se zavazuje nepravidelně a dle svého uvážení provádět opatření směřující k zamezení
+								výpadků, omezení, přerušení nebo snížení kvality služeb poskytovatele. V souvislosti s plněním této své
+								povinnosti může poskytovatel provádět plánované odstávky těchto služeb za účelem kontroly, údržby, popř.
+								nastavení či upgrade softwaru na serveru (dále jen „odstávka služeb"). V případě plánované odstávky
+								služeb oznámí poskytovatel tuto odstávku nejméně deset hodin před započetím odstávky služeb
+								poskytovatele. Provozovatel si dále vyhrazuje právo provoz služeb poskytovatele omezit pro opravy a
+								upgrady.
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li id="platebni-podminky">
+					<h2>Platební podmínky a transakce</h2>
+					<ol>
+						<li>
+							<p>Objednatel bere na vědomí, že poskytovatelem poskytované služby jsou placené (vyjma zkušební doby).
+								Uhrazení sjednaných cen a poplatků je podmínkou pro užívání služeb objednatelem a po uplynutí zkušební
+								doby a do úplného zaplacení není poskytovatel povinen službu objednateli poskytovat.</p>
+						</li>
+						<li>
+							<h3>Možnosti plateb</h3>
+							<p>Veškeré platby předpokládané VOP budou realizovány bezhotovostním bankovním převodem na bankovní účet
+								poskytovatele s uvedením příslušného variabilního symbolu, bezhotovostně platební kartou, službou
+								paypal, službou apple pay, kryptoměnou bitcoin (BTC) nebo ethereum (ETH). Prodávající nepožaduje od
+								kupujícího zálohu či jinou obdobnou platbu.</p>
+						</li>
+						<li>
+							<p>Veškeré zálohové faktury a daňové doklady bude poskytovatel objednateli zasílat e-mailem. Všechny
+								faktury jsou splatné do 10 kalendářních dnů po datu jejich vystavení, přičemž platba bude považována za
+								uhrazenou po připsání příslušné částky na bankovní účet poskytovatele.</p>
+						</li>
+						<li>
+							<h3>Případ odstoupení od smlouvy z důvodu nesouhlasu s novým nastavením ceníku</h3>
+							<p>Výše cen a poplatků za užívání služeb poskytovale je stanovena aktuálním ceníkem zveřejněným na
+								internetových stránkách poskytovatele. Poskytovatel je oprávněn změnit výše poplatků změnou ceníku. Tuto
+								změnu je povinen oznámit objednateli minimálně 30 dnů přede dnem nabytí účinnosti nového ceníku, a to
+								oznámením na svých webových stránkách nebo odesláním e-mailu objednateli. V případě, že objednatel
+								nesouhlasí se změnou ceníku, je oprávněn vypovědět smlouvu. Výpovědní lhůta v tomto případě činí 1 měsíc
+								ode dne doručení výpovědi poskytovateli. Tuto skutečnost je povinen oznámit poskytovateli písemně
+								nejméně 10 dnů přede dnem nabytí účinnosti nového ceníku, v opačném případě se má za to, že změnu ceníku
+								akceptuje.</p>
+						</li>
+						<li>
+							<h3>Případ prodlení objednatele s úhradou platby</h3>
+							<p>V případě prodlení objednatele s úhradou platby poskytovatel objednatele na prodlení s platbou
+								upozorní, a to písemně nebo elektronicky, a stanoví mu náhradní lhůtu plnění, která nesmí být kratší než
+								10 dní ode dne doručení upozornění. Po marném uplynutí náhradní lhůty je poskytovatel oprávněn účtovat
+								smluvní pokutu ve výši 0,1 % z dlužné částky za každý i započatý den prodlení, přičemž prodlení se
+								počítá ode dne původního data splatnosti. Zároveň je poskytovatel oprávněn omezit objednateli rozsah
+								poskytovaných služeb poskytovatele. O těchto skutečnostech poskytovatel objednatele písemně nebo
+								elektronicky informuje společně s opětovnou výzvou k úhradě dlužné částky, smluvní pokuty, a výstrahou
+								před ukončením poskytování služeb poskytovatele v případě pokračování v prodlení s hrazením dlužných
+								částek.</p>
+						</li>
+						<li>
+							<h3>Vypovězení smlouvy z důvodu prodlení s uhrazením ceny delším než 2 měsíce</h3>
+							<p>V případě prodlení s uhrazením ceny za poskytované služby poskytovatele delším než 2 měsíce je
+								poskytovatel oprávněn vypovědět smlouvu s okamžitou účinností a ukončit poskytování služeb poskytovatele
+								a odstranit data objednatele uložené na serveru poskytovatele nebo na jiném cloudovém prostoru.</p>
+						</li>
+						<li>
+							<p>Poskytovatel je oprávněn započítat své pohledávky vůči objednateli oproti jakýmkoli pohledávkám
+								objednatele za poskytovatelem. Objednatel je oprávněn vůči poskytovateli jednostranně započíst pouze své
+								pravomocně přiznané pohledávky. Jiné pohledávky je objednatel oprávněn započíst pouze na základě
+								předchozího písemného souhlasu poskytovatele.</p>
+						</li>
+						<li>
+							<p>V souvislosti s dodáním služeb poskytovatele neúčtuje poskytovatel žádné náklady, pokud není výslovně s
+								objednatelem dohodnuto jinak.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="reklamace">
+					<h2>Reklamace</h2>
+					<ol>
+						<li>
+							<p>Práva a povinnosti stran ohledně práv z vadného plnění se řídí příslušnými obecně závaznými právními
+								předpisy (zejména ustanoveními § 1914 až § 1925 občanského zákoníku a zákonem č. 634/1992 Sb., o ochraně
+								spotřebitele, ve znění pozdějších předpisů).</p>
+						</li>
+						<li>
+							<p>Poskytovatel je povinen poskytovat služby poskytovatele v souladu se smlouvou, a to bez vad s
+								dohodnutými vlastnostmi.</p>
+						</li>
+						<li>
+							<p>Objednatel je povinen vytknout vadu služeb poskytovatele bez zbytečného odkladu poté, kdy měl možnost
+								vadu zjistit, a to buďto označením vady, nebo oznámením, jak se projevuje. Objednatel je oprávněn práva
+								z vadného plnění uplatnit u poskytovatele e-mailem na adrese <a href="mailto:podpora@orexin.cz"
+									class="in-text-link">podpora@orexin.cz</a>. V rámci reklamace je
+								objednatel povinen uvést identifikaci objednatele, číslo objednávky a doménu webu. Objednatel není
+								oprávněn uplatnit práva z vadného plnění, pokud nejsou splněny zákonné náležitosti.</p>
+						</li>
+						<li>
+							<p>Objednatel bude ohledně průběhu a následného vyřízení reklamace kontaktován e-mailem poskytovatele.</p>
+						</li>
+						<li>
+							<h3>Právo objednatele odstoupit od smlouvy pokud nebude reklamace vyřízena ve 30denní lhůtě</h3>
+							<p>V případě objednatele – spotřebitele se uplatní po vyřízení reklamace zákon č. 634/1992 Sb., o ochraně
+								spotřebitele; lhůta pro vyřízení reklamace je 30 dnů ode dne uplatnění reklamace. Marné uplynutí této
+								lhůty se považuje za podstatné porušení smlouvy a zakládá objednateli právo od smlouvy odstoupit.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="odpovednost-za-ujmu">
+					<h2>Odpovědnost za újmu</h2>
+					<ol>
+						<li>
+							<h3>Odpovědnost poskytovatele za obsah informací ukládaných objednatelem</h3>
+							<p>Objednatel bere na vědomí, že poskytovatel nenese v souladu s ust. § 5 zákona č. 480/2004 Sb., o
+								některých službách informační společnosti, ve znění pozdějších předpisů (dále jen „zákon o některých
+								službách informační společnosti"), odpovědnost za obsah informací ukládaných objednatelem v souvislosti
+								se službami poskytovatele. Objednatel bere dále na vědomí, že poskytovatel neodpovídá za protiprávní
+								úkony objednatele v souvislosti se službami poskytovatele (porušení práv k ochranným známkám, práv k
+								obchodní firmě, autorských práv) a že poskytovatel je případně povinen odstranit protiprávní informace
+								uložené objednatelem či jinými osobami v souvislosti se službami poskytovatele, dozví-li se o jejich
+								protiprávnosti.</p>
+						</li>
+						<li>
+							<p>Objednatel bere na vědomí, že poskytovatel nenese jakoukoliv odpovědnost za nefunkčnost služeb
+								poskytovatele způsobené výpadky v dodávce elektrické energie, výpadky datové sítě na serveru nebo jiném
+								cloudovém prostoru a jiné poruchy způsobené třetími osobami nebo zásahy vyšší moci.</p>
+						</li>
+						<li>
+							<p>Smluvní strany se dohodly, že poskytovatel neodpovídá objednateli za jakoukoliv újmu, která vznikne
+								objednateli, vyjma té, kterou poskytovatel způsobí úmyslně nebo z hrubé nedbalosti. Objednatel zejména
+								není odpovědný za újmu způsobenou objednateli nebo třetí straně, nebo jejich újmu na jejich hardware, ke
+								které došlo v přímé, nepřímé nebo náhodné souvislosti s použitím služeb poskytovatele, a to včetně skrze
+								stažené materiály, nebo za újmu, která vznikla objednateli nebo třetí straně jako důsledek nemožnosti
+								používat služby poskytovatele a/nebo internetové stránky poskytovatele, ani za újmu způsobenou ztrátou
+								nebo poškozením uložených dat. Poskytovatel není odpovědný za dostupnost a/nebo funkčnost jakékoliv
+								části, kterou poskytuje některá ze třetích stran a které jsou přístupné skrze internetové stránky
+								poskytovatele. V případě objednatelů, kteří jsou slabší stranou v souladu s příslušnými právními
+								předpisy, poskytovatel odpovídá za újmu maximálně do výše odměny zaplacené objednatelem poskytovateli.
+							</p>
+						</li>
+						<li>
+							<p>Objednatel bere na vědomí, že může docházet k výpadkům služeb poskytovatele, k její dočasné
+								nedostupnosti či k jejímu omezení, za což poskytovatel nenese jakoukoliv odpovědnost.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="dusevni-vlastnictvi">
+					<h2>Duševní vlastnictví</h2>
+					<ol>
+						<li>
+							<p>Objednatel bere na vědomí, že služby poskytovatele, případně jejich části, jsou ze zákona chráněny, a
+								to zejména autorským právem. Vykonavatelem autorských majetkových práv k službám poskytovatele, resp. k
+								jejich jednotlivým částem, je poskytovatel. Veškerá autorská díla, materiály, ochranné známky a další
+								součásti internetových stránek poskytovatele zůstávají za všech okolností ve vlastnictví poskytovatele.
+								Objednatel není oprávněn používat chráněný obsah nebo materiály, aniž k tomu má svolení poskytovatele.
+								Povolení se vždy vztahuje pouze na způsob využití, který je popsán ve VOP. Objednatel není oprávněn
+								kopírovat, reprodukovat či jinak distribuovat obsah internetových stránek poskytovatele bez jeho
+								souhlasu.</p>
+						</li>
+						<li>
+							<p>Poskytovatel poskytuje objednateli licenci ke službám poskytovatele, přičemž tato licence se poskytuje
+								jako nevýhradní. Licence ke službám poskytovatele je poskytována bez územního omezení, avšak objednatel
+								je oprávněn užívat služeb poskytovatele výhradně na serveru poskytovatele nebo na jiném cloudovém
+								prostoru. Licence je poskytnuta na dobu trvání smlouvy a zaniká zároveň se zánikem smlouvy samotné.</p>
+						</li>
+						<li>
+							<p>Objednatel je oprávněn služeb poskytovatele využít pouze k účelu vyplývajícímu ze smlouvy a v souladu s
+								určením služeb poskytovatele. Objednatel není oprávněn služby poskytovatele měnit ani do nich jinak
+								zasahovat.</p>
+						</li>
+						<li>
+							<p>Objednatel nemůže poskytovat podlicence, tedy není oprávněn práva tvořící součást licence, ať zcela
+								nebo zčásti, poskytnout třetí osobě bez předchozího písemného souhlasu poskytovatele. Objednatel nemůže
+								práva a povinnosti z této licence postoupit třetí osobě bez předchozího písemného souhlasu
+								poskytovatele.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="obchodni-sdeleni">
+					<h2>Obchodní sdělení</h2>
+					<ol>
+						<li>
+							<h3>Souhlas uživatele</h3>
+							<p>Objednatel souhlasí se zasíláním informací souvisejících se službami poskytovatele na elektronickou
+								adresu objednatele a dále souhlasí se zasíláním obchodních sdělení poskytovatele na elektronickou adresu
+								objednatele.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="ochrana-osobnich-udaju">
+					<h2>Ochrana osobních údajů a související ustanovení</h2>
+					<ol>
+						<li>
+							<p>Ochrana osobních údajů objednatele se řídí <a href="./privacy.html">zásadami ochrany osobních
+									údajů</a>.</p>
+						</li>
+						<li>
+							<p>Při poskytování služeb poskytovatele též může objednatel pro poskytovatele zpracovávat osobní údaje ve
+								smyslu Nařízení Evropského parlamentu a Rady (EU) č. 2016/679 o ochraně fyzických osob v souvislosti se
+								zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/ES (obecné nařízení
+								o ochraně osobních údajů) (dále „Nařízení“), přičemž podmínky zpracování osobních údajů poskytovatelem
+								pro objednatele bude probíhat za podmínek níže uvedených.</p>
+						</li>
+						<li>
+							<p>V případě, že nastane rozpor mezi ustanoveními uvedenými v tomto článku a ostatními ustanoveními,
+								použije se takové ustanovení, které stanoví vyšší standard pro ochranu osobních údajů.</p>
+						</li>
+						<li>
+							<p>Smluvní strany jsou si vědomi svých rolí při zpracování osobních údajů, přičemž uvádějí, že při
+								poskytování služeb poskytovatele je objednatel správcem a poskytovatel zpracovatelem.</p>
+						</li>
+						<li>
+							<p>Účelem zpracování osobních údajů je poskytování služeb poskytovatele a poskytování podpory pro správné
+								fungování internetové stránky objednatele.</p>
+						</li>
+						<li>
+							<p>Poskytovatel v rámci služeb poskytovatele může zpracovávat osobní údaje následujících subjektů údajů:
+							</p>
+							<ul>
+								<li class="sub-ul">
+									<p>Subjekty údajů přihlášení k odběru obchodních sdělení.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Zákazníci objednatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Pokud má objednatel ecommerce, pak zákazníci ecommerce objednatele.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Případně dalších subjektů, které objednatel určí.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Poskytovatel se zavazuje v rámci služeb poskytovatele zpracovávat pro objednatele běžné osobní
+										údaje.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>Objednatel ve smyslu článku 28. Nařízení uděluje poskytovateli povolení k zapojení dalšího
+								zpracovatele, kterým je provozovatel serverů, na které se ukládají data z internetové stránky
+								objednatele vytvořených pomocí služeb poskytovatele, pakliže objednatel neukládá data jinam. Objednatel
+								rovněž prohlašuje, že souhlasí se zapojením dalších zpracovatelů, avšak o jejich zapojení jej
+								poskytovatel musí předem informovat na email objednatele a zároveň mu musí umožnit vznést proti zapojení
+								dalšího zpracovatele námitku. Poskytovatel je povinen zavázat další zpracovatele(subdodavatele) k
+								ochraně osobních údajů alespoň ve stejném rozsahu, v jakém je k ní povinen sám.</p>
+						</li>
+						<li>
+							<p>Smluvní strany se dohodly, že osobní údaje budou zpracovávány po dobu platnosti smlouvy s tím, že s
+								ukončením smlouvy je poskytovatel povinen ukončit též zpracování osobních údajů, nedohodnou-li se
+								smluvní strany jinak.</p>
+						</li>
+						<li>
+							<h3>Objednatel je povinen:</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Zajistit, že osobní údaje budou zpracovány vždy v souladu s Nařízením a příslušnými právními
+										předpisy, že tyto údaje budou aktuální, přesné a pravdivé, jakož i to, že tyto údaje budou odpovídat
+										stanovenému účelu zpracování.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Přijmout vhodná opatření, aby poskytl subjektům údajů stručným, transparentním, srozumitelným a
+										snadno přístupným způsobem za použití jasných a jednoduchých jazykových prostředků veškeré informace
+										a učinil veškerá sdělení požadovaná Nařízením a příslušnými právními předpisy.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Poskytovatel je povinen:</h3>
+							<ul>
+								<li class="sub-ul">
+									<p>Zpracovávat osobní údaje pouze na základě pokynů objednatele, včetně otázek předání osobních údajů
+										do třetí země nebo mezinárodní organizaci.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Zohledňovat povahu zpracování osobních údajů a být objednateli nápomocen pro splnění správcovy
+										povinnosti reagovat na žádosti o výkon práv subjektu údajů, jakož i pro splnění dalších povinností
+										ve smyslu nařízení.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Zajistit, aby ke zpracovávaným osobním údajům měly přístup pouze oprávněné osoby, které budou mít
+										přístup pouze k takovým osobním údajům, které odpovídající oprávnění těchto osob, a to na základě
+										zvláštních uživatelských oprávnění zřízených výlučně pro tyto osoby.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Zajistit, že jeho zaměstnanci budou zpracovávat osobní údaje pouze za splnění VOP a v rozsahu touto
+										se smlouvou.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Na žádost objednatele poskytnout informace o způsobu zabezpečení a zpracování osobních údajů.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Po skončení smlouvy odevzdat objednateli nebo nově pověřenému zpracovateli všechny osobní údaje
+										zpracované po dobu poskytování služeb poskytovatele případně takové údaje smazat či zničit, s
+										výjimkou osobních údajů, které je poskytovatel povinen zpracovávat na základě právní povinnosti
+										případě jiného oprávněného právního titulu.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Bez zbytečného odkladu informovat objednatele o narušení bezpečnosti, případně o způsobu nápravy
+										takového narušení. Poskytovatel není povinen takové porušení hlásit úřadu pro ochranu osobních
+										údajů, aniž by k tomu dostal předchozí pokyn od objednatele.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Smluvní strany jsou při plnění smlouvy povinny:</h3>
+							<p>Zavést technická, organizační, personální a jiná vhodná opatření ve smyslu Nařízení, aby zajistili a
+								byly schopny kdykoliv doložit, že zpracování osobních údajů je prováděno v souladu s nařízením a
+								příslušnými právními předpisy tak, aby nemohlo dojít k neoprávněnému nebo nahodilému přístupu k osobním
+								údajům a k datovým nosičům, které tyto údaje obsahují, k jejich změně, zničení či ztrátě, neoprávněným
+								přenosům, k jejich jinému neoprávněnému zpracování, jakož i k jinému zneužití, a tato opatření podle
+								potřeby průběžné revidovat a aktualizovat.</p>
+						</li>
+					</ol>
+				</li>
+				<li id="zaverecna-ustanoveni">
+					<h2>Závěrečná ustanovení a odkazy</h2>
+					<ol>
+						<li>
+							<h3>Právo poskytovatele na změnu ve VOP</h3>
+							<p>Poskytovatel je oprávněn změnit (vydat nové) VOP. Ke změně ve VOP může dojít v celém jejich rozsahu,
+								zejména (nikoliv však výlučně) v ujednáních týkajících se práv a povinností stran, uzavření, trvání a
+								ukončení smlouvy, zkušební doby a platebních podmínek. Tuto změnu je povinen oznámit objednateli na
+								svých internetových stránkách nebo odesláním e-mailu objednateli alespoň 30 dnů přede dnem účinnosti
+								nových VOP. V případě, že objednatel nesouhlasí s novým zněním VOP, které pro objednatele představují
+								jejich zhoršení, je oprávněn vypovědět smlouvu, a to bez sankce a s výpovědní lhůtou 1 měsíc ode dne
+								doručení výpovědi poskytovateli. Tuto skutečnost je povinen oznámit poskytovateli písemně nejméně 10 dní
+								přede dnem nabytí účinnosti nových VOP. Smluvní vztah se během výpovědní lhůty řídí VOP v původním
+								znění. V případě, že objednatel v uvedené lhůtě smlouvu nevypoví, má se zato, že souhlasí s tím, aby se
+								smlouva řídila novými VOP ode dne jejich účinnosti. Aktuální znění VOP je vždy k dispozici na
+								internetových stránkách poskytovatele. Toto ustanovení platí přiměřeně i na změnu specifikace služeb
+								poskytovatele.</p>
+						</li>
+						<li>
+							<p>Bude-li některé ustanovení VOP či smluvních podmínkách shledáno neplatným, nezákonným nebo
+								nevynutitelným, nebude tím dotčena platnost, zákonnost a vynutitelnost ostatních ustanovení VOP či
+								smluvních podmínek. V případě rozporu mezi smluvními podmínkami a VOP mají přednost ustanovení ve
+								smluvních podmínkách.</p>
+						</li>
+						<li>
+							<h3>Prohlášení uživatele o seznámení s VOP</h3>
+							<p>Objednatel prohlašuje, že se s VOP seznámil a že s nimi souhlasí, a stejně tak, že se seznámil a
+								souhlasí s příslušným ceníkem poskytovatele a specifikacemi služeb poskytovatele.</p>
+						</li>
+						<li>
+							<h3>Změna e-mailové adresy objednatele</h3>
+							<p>Objednatel určí svou kontaktní e-mailovou adresu. Pokud objednatel neoznámí poskytovateli změnu
+								e-mailové adresy, má se za to, že bylo doručeno řádně, bylo-li doručeno na naposledy evidovanou
+								e-mailovou adresu objednatele.</p>
+						</li>
+						<li>
+							<p>Smluvní strany se dohodly, že komunikace mezi nimi bude probíhat přednostně elektronicky
+								prostřednictvím e-mailu. Kontaktní e-mailovou adresou poskytovatele je <a
+									href="mailto:kontakt@orexin.cz" class="in-text-link">kontakt@orexin.cz</a>.</p>
+						</li>
+						<li>
+							<h3>Zasílání písemností poskytovatele</h3>
+							<p>Písemnosti poskytovatele, které jsou doručovány prostřednictvím provozovatele poštovních služeb, jsou
+								zasílány na adresu bydliště/místa podnikání/sídla objednatele, která je uvedena ve smlouvě, nebo na
+								jinou adresu, kterou si objednatel k tomuto účelu zvolí.</p>
+						</li>
+						<li>
+							<h3>Závazek objednatele informovat poskytovatele o změně svých identifikačních údajů a dalších informací
+							</h3>
+							<p>Objednatel se zavazuje informovat poskytovatele o změně svých identifikačních údajů, zejména o změně
+								názvu, jména, sídla, bydliště či korespondenčních údajů, a to písemným nebo elektronickým oznámením
+								doručeným poskytovateli nejpozději do 14 dnů ode dne, kdy změny nastaly.</p>
+						</li>
+						<li>
+							<p>Smlouva se řídí těmito VOP a právními předpisy ČR a veškeré spory mezi smluvními stranami náleží do
+								výhradní pravomoci soudů a orgánů v ČR. Smlouva je uzavírána v češtině. Smlouva včetně VOP je
+								archivována poskytovatelem v elektronické podobě.</p>
+						</li>
+						<li>
+							<h3>Vznik spotřebitelského sporu</h3>
+							<p>V případě, že dojde mezi poskytovatelem a objednatelem ke vzniku spotřebitelského sporu ze smlouvy,
+								který se nepodaří vyřešit vzájemnou dohodou, může spotřebitel podat návrh na mimosoudní řešení takového
+								sporu určenému subjektu mimosoudního řešení spotřebitelských sporů, kterým je Česká obchodní inspekce,
+								Ústřední inspektorát – oddělení ADR, Štěpánská 15, 120 00 Praha 2, email: adr@coi.cz, web: adr.coi.cz.
+								Spotřebitel může využít rovněž platformu pro řešení sporů online, která je zřízena Evropskou komisí.</p>
+						</li>
+						<li>
+							<ul>
+								<li class="sub-ul">
+									<p>Informace o jednotlivých technických krocích vedoucích k uzavření smlouvy najdete <a
+											href="./contact.html#postup-vyroby" class="in-text-link">zde</a>. </p>
+								</li>
+								<li class="sub-ul">
+									<p>Zásady ochrany osobních údajů najdete <a href="./privacy.html" class="in-text-link">zde</a>.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Pro odstoupení od smlouvy můžete využít <a href="#" class="in-text-link">vzorový
+											formulář</a>.</p>
+								</li>
+								<li class="sub-ul">
+									<p>Splňujeme <a href="https://strapi.io/terms" class="in-text-link">podmínky</a> užívání systému pro
+										správu obsahu "Strapi".</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>Tyto VOP jsou účinné od DD.MM.YYYY.</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<div>
+			<h2>Ke stažení:</h2> <br>
+			<a href="./downloads/VOP.pdf" download>
+				<img src="<%= require('./img/icons/pdf.png') %>" alt="soubor pdf">
+				<p>VOP platné do DD.MM.YYYY</p>
+			</a>
+			<a href="./downloads/cenik.pdf" download>
+				<img src="<%= require('./img/icons/pdf.png') %>" alt="soubor pdf">
+				<p>Ceník</p>
+			</a>
+			<a href="./downloads/ochrana-osobnich-udaju.pdf" download>
+				<img src="<%= require('./img/icons/pdf.png') %>" alt="soubor pdf">
+				<p>Zásady ochrany osobních údajů</p>
 			</a>
 		</div>
-		<div class="footer-tel columns">
-			<div class="column is-size-1">
-				<img src="<%= require('./img/Inline_white-sm.png') %>" alt="" />
-			</div>
-			<div class="column is-offset-5 is-size-1">
-				<i class="fa fa-mobile is-inline"></i>
-				<a href="tel:+420-666-666-666">
-					<h3 class="is-size-1 is-inline">+420 666 666 666</h3>
-				</a>
-			</div>
-		</div>
-		<div class="columns footer-links">
-			<div class="column">
-				<h3 class="is-size-3">O společnosti</h3>
-				<div></div>
-				<a href="./about.html">
-					<h4 class="is-size-6">O nás</h4>
-				</a>
-				<a href="./services.html">
-					<h4 class="is-size-6">Služby</h4>
-				</a>
-				<a href="./contact.html">
-					<h4 class="is-size-6">Kontaktní formulář</h4>
-				</a>
-				<!-- 					<a href="#">
-						<h4>Volná místa</h4>
-					</a> -->
-			</div>
-			<div class="column">
-				<h3 class="is-size-3">FAQ</h3>
-				<div></div>
-				<a href="./faq/faq.html">
-					<h4 class="is-size-6">Nejčastější dotazy</h4>
-				</a>
-				<a href="./privacy.html">
-					<h4 class="is-size-6">Ochrana osobních údajů</h4>
-				</a>
-				<a href="./faq/web-rights-transfer.html">
-					<h4 class="is-size-6">Předání webu</h4>
-				</a>
-				<a href="./faq/annual-payment.html">
-					<h4 class="is-size-6">Roční platba</h4>
-				</a>
-			</div>
-			<div class="column">
-				<h3 class="is-size-3">Naše služby</h3>
-				<div></div>
-				<a href="./services.html">
-					<h4 class="is-size-6">Web-development</h4>
-				</a>
-				<a href="./terms-and-conditions.html">
-					<h4 class="is-size-6">Obchodní podmínky</h4>
-				</a>
-			</div>
-			<div class="column">
-				<h3 class="is-size-3">Sledujte nás</h3>
-				<div></div>
-			</div>
-		</div>
-		<div class="columns is-centered">
-			<div class="column is-half is-size-6" style="text-align: center">&copy; Orexin Solutions | 2021</div>
-		</div>
-	</footer>
+	</section>
+
+	<!-- FOOTER -->
+	<footer-wrapper></footer-wrapper>
 </body>
 
 </html>

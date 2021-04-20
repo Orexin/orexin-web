@@ -8,7 +8,7 @@
 	<meta name="description" content="Komplexní řešení pro vaši webovou aplikaci" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./../img/emblem-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('./../img/logos/logo-gradient.png') %>" type="image/x-icon" />
 </head>
 
 <body>
@@ -127,48 +127,104 @@
 	<navbar-wrapper></navbar-wrapper>
 
 	<!-- HERO SUBPAGES -->
-	<section class="uvod-sub-pages">
-		<img src="<%= require('./../img/uvod-bg-blur-sm.png') %>" alt="" />
+	<section class="uvod-subpages uvod-subpages-faq">
+		<div class="uvod-subpages uvod-subpages-faq text container">
+			<div class="column">
+				<h1>Webová aplikace</h1>
+				<h2>velmi popiči</h2>
+			</div>
+		</div>
 	</section>
 
 	<!-- CONTENT -->
-	<section id="sluzby-web-app">
-		<div id="svg-web-pres" class="columns is-centered is-narrow bg-violet-dark">
-			<div class="column is-6 is-narrow">
-				<object data="<%= require('./../img/svg-services/svg-web-app.svg') %>" type="image/svg+xml">Váš prohlížeč
-					nepodporuje
-					SVG.</object>
+	<div class="services-app">
+		<section id="app">
+			<div class="container two-columns">
+				<div id="svg-app">
+					<!-- svg -->
+				</div>
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-violet">
+						<h2>Webová aplikace</h2>
+						<p>Potřebujete rozsáhlé technické řešení pro business management, správu databáze, rezervační systém či jiný
+							náročnější proces? Webová aplikace vám zaručí rychlý přístup, jednoduché uživatelské rozhraní, bezpečnost,
+							a
+							cenově výhodné řešení pro vaše podnikání.</p>
+					</div>
+				</div>
 			</div>
-			<div class="column is-6 is-narrow sluzby-content-text txt-white">
-				<h2>Webová aplikace</h2>
-				<p>Potřebujete rozsáhlé technické řešení pro business management, správu databáze, rezervační systém či jiný
-					náročnější proces? Webová aplikace vám zaručí rychlý přístup, jednoduché uživatelské rozhraní, bezpečnost, a
-					cenově výhodné řešení pro vaše podnikání.</p>
+		</section>
+		<section id="easy" class="bg-violet-dark">
+			<div class="container two-columns">
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-white">
+						<h2>Inteligentní a jednoduchá</h2>
+						<p>Jednoduchá interakce a velká funkcionalita. Naše řešení spojují tyto dvě vlastnosti a dávají vám do rukou
+							nástroj, s kterým budete mít plnou kontrolu nad vašim projektem.</p>
+					</div>
+				</div>
+				<div id="svg-easy">
+					<!-- svg -->
+				</div>
 			</div>
-		</div>
-		<div id="svg-reprezentace" class="columns is-centered">
-			<div class="column is-6 ml-6 sluzby-content-text txt-violet">
-				<h2>Inteligentní a jednoduchá</h2>
-				<p>Jednoduchá interakce a velká funkcionalita. Naše řešení spojují tyto dvě vlastnosti a dávají vám do rukou
-					nástroj, s kterým budete mít plnou kontrolu nad vašim projektem.</p>
+		</section>
+		<section id="fast">
+			<div class="container two-columns">
+				<div id="svg-fast">
+					<!-- svg -->
+				</div>
+				<div class="sluzby-content-text flex-center flex-d-column">
+					<div class="txt-violet">
+						<h2>Rychlá reaktivita</h2>
+						<p>Neztrácejte čas při načítání dat nebo pomalé reaktivitě. Naše řešení jsou neustále optimalizovány a
+							dynamicky
+							se přizpůsobují vašim potřebám.</p>
+					</div>
+				</div>
 			</div>
-			<object data="<%= require('./../img/svg-services/svg-inteligentni-a-jednoducha.svg') %>" type="image/svg+xml">Váš
-				prohlížeč
-				nepodporuje SVG.</object>
-		</div>
-		<div id="svg-vyroba" class="columns is-centered is-narrow bg-violet-dark">
-			<div class="column is-6 is-narrow">
-				<object data="<%= require('./../img/svg-services/svg-reaktivita.svg') %>" type="image/svg+xml">Váš prohlížeč
-					nepodporuje
-					SVG.</object>
+		</section>
+		<section class="services-contact-wrap container">
+			<div class="services-contact">
+				<div class="services-contact-grid">
+					<div class="form-group">
+						<label for="jmeno">Vaše jméno a příjmení</label>
+						<div class="input-icon-wrap">
+							<input id="jmeno" type="text" tabindex="1" placeholder="Jan Novák" />
+							<span class="typcn typcn-user-outline"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Váš e-mail</label>
+						<div class="input-icon-wrap">
+							<input id="email" type="text" tabindex="2" placeholder="jnovak@orexin.cz" />
+							<span class="typcn typcn-mail"></span>
+						</div>
+					</div>
+					<div id="selectBoxes">
+						<label for="selectBoxes">Služby</label>
+						<div class="select-boxes">
+							<div class="select-box">
+								<input id="web" type="checkbox" />
+								<label for="web" tabindex="5">Webová prezentace</label>
+							</div>
+							<div class="select-box">
+								<input id="shop" type="checkbox" />
+								<label for="shop" tabindex="6">E-commerence</label>
+							</div>
+							<div class="select-box">
+								<input id="mark" type="checkbox" checked />
+								<label for="mark" tabindex="7">Webová aplikace</label>
+							</div>
+						</div>
+					</div>
+					<div class="send-button form-group flex-center">
+						<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+					</div>
+				</div>
+				<p>Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.</p>
 			</div>
-			<div class="column is-6 is-narrow sluzby-content-text txt-white">
-				<h2>Rychlá reaktivita</h2>
-				<p>Neztrácejte čas při načítání dat nebo pomalé reaktivitě. Naše řešení jsou neustále optimalizovány a dynamicky
-					se přizpůsobují vašim potřebám.</p>
-			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<!-- FOOTER -->
 	<footer-wrapper></footer-wrapper>

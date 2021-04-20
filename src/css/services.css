@@ -1,4 +1,10 @@
 /* DEFAULTS */
+/* mono font for real time clock */
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+
+.sluzby-content-text {
+	margin-left: 45px;
+}
 
 .sluzby-content-text p {
 	font-size: 25px;
@@ -13,12 +19,475 @@ svg {
 	height: 100%;
 }
 
+.in-text-link {
+	transition: all 0.3s ease-in-out;
+}
+
+.in-text-link:visited {
+	color: #fff;
+}
+
+.in-text-link:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
 /* DEFAULTS END */
 
-#svg-grafika div p {
+.skip-button {
+	margin-top: -40px !important;
+	position: relative;
+	z-index: 2;
+}
+
+.skip-button a {
+	width: fit-content !important;
+}
+
+.skip-button a div {
+	background: var(--violet);
+	border-radius: 35px;
+	font-size: 30px;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	overflow: hidden;
+}
+
+.skip-text {
+	padding: 20px 40px 20px 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.skip-arrow {
+	padding: 15px 5px 15px 0;
+	display: inline;
+	position: relative;
+	transition: all 0.75s ease-in-out;
+	top: 50px;
+}
+
+.skip-button a:hover div {
+	background: var(--violet-light);
+}
+
+.skip-button a:hover div .skip-text {
+	padding: 20px 15px 20px 20px;
+}
+
+.skip-button a:hover div .skip-arrow {
+	display: inline;
+	transform: translateY(0);
+	top: 0;
+	padding: 15px 5px 15px 5px;
+}
+
+/* ROZCESTNIK */
+
+#svg-sluzby-rozcestnik-web-pres {
+	transition: all 0.5s 0.25s ease-in-out;
+	transform: translate(-25px, 200px);
+	opacity: 0;
+}
+
+#svg-sluzby-rozcestnik-web-app {
+	transition: all 0.5s 0.5s ease-in-out;
+	transform: translateY(200px);
+	opacity: 0;
+}
+
+#svg-sluzby-rozcestnik-ecommerce {
+	transition: all 0.75s ease-in-out;
+	transform: translate(25px, 200px);
+	opacity: 0;
+}
+
+#svg-sluzby-rozcestnik-web-pres-nav,
+#svg-sluzby-rozcestnik-ecommerce-nav {
+	transition: all 0.75s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-left-column,
+#svg-sluzby-rozcestnik-web-app-left-column,
+#svg-sluzby-rozcestnik-web-app-status-top {
+	transition: all 1s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-card-top-left,
+#svg-sluzby-rozcestnik-web-pres-card-top-right,
+#svg-sluzby-rozcestnik-web-app-values,
+#svg-sluzby-rozcestnik-web-app-status-middle,
+#svg-sluzby-rozcestnik-ecommerce-left-column,
+#svg-sluzby-rozcestnik-ecommerce-filters-search,
+#svg-sluzby-rozcestnik-ecommerce-card-top-left {
+	transition: all 1.1s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres-card-bottom-left,
+#svg-sluzby-rozcestnik-web-pres-card-bottom-right,
+#svg-sluzby-rozcestnik-web-app-status-bottom,
+#svg-sluzby-rozcestnik-ecommerce-card-top-middle {
+	transition: all 1.2s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-top-right {
+	transition: all 1.3s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-bottom-left {
+	transition: all 1.4s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-bottom-middle {
+	transition: all 1.5s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-ecommerce-card-bottom-right {
+	transition: all 1.6s ease-in-out;
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover {
+	transform: translate(-15px, 50px);
+	cursor: pointer;
+}
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-nav {
+	transform: translate(-5px, 20px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-left-column {
+	transform: translate(-15px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-bottom-left {
+	transform: translate(-10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-top-left {
+	transform: translate(-10px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-bottom-right {
+	transform: translate(-5px, 30px);
+}
+
+#svg-sluzby-rozcestnik-web-pres:hover > #svg-sluzby-rozcestnik-web-pres-card-top-right {
+	transform: translate(-5px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover {
+	transform: translateY(50px);
+	cursor: pointer;
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-left-column {
+	transform: translate(-10px, 25px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-status-top {
+	transform: translateY(25px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-values {
+	transform: translateY(30px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-status-middle {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-web-app:hover > #svg-sluzby-rozcestnik-web-app-status-bottom {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover {
+	transform: translate(15px, 50px);
+	cursor: pointer;
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-nav {
+	transform: translate(5px, 20px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-nav {
+	transform: translate(5px, 20px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-left-column {
+	transform: translate(15px, 25px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-filters-search {
+	transform: translate(10px, 25px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-top-left {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-top-middle {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-top-right {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-bottom-left {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-bottom-middle {
+	transform: translate(10px, 30px);
+}
+
+#svg-sluzby-rozcestnik-ecommerce:hover > #svg-sluzby-rozcestnik-ecommerce-card-bottom-right {
+	transform: translate(10px, 30px);
+}
+
+/* ROZCESTNIK END*/
+
+/* defaults for waypoints */
+#svg-sluzby-grafika-na-miru-blueprint,
+#svg-sluzby-grafika-na-miru-web,
+#svg-sluzby-bezpeci-content,
+#svg-sluzby-sprava-content,
+#svg-sluzby-podpora-content,
+#svg-sluzby-podpora-calendar,
+#svg-sluzby-podpora-clock,
+#svg-sluzby-plneni-content,
+#svg-sluzby-fotky-content,
+#svg-sluzby-customs-content {
+	transform: translateY(100px);
+	transition: all 0.75s ease-in-out;
+	opacity: 0;
+}
+
+#grafika div div div p {
 	width: 55%;
 }
 
-#svg-bezpeci div p {
+#svg-sluzby-grafika-na-miru-web {
+	transition-delay: 0.25s;
+}
+
+#bezpeci div div div p {
 	width: 70%;
+}
+
+#sprava div div div p {
+	width: 70%;
+}
+
+#podpora div div div p {
+	width: 65%;
+}
+
+#plneni div div div p {
+	width: 70%;
+}
+
+#fotky div div div p {
+	width: 70%;
+}
+
+#customs div div div p {
+	width: 70%;
+}
+
+/* #svg-sluzby-sprava-cog-1 {
+	transform-origin: center;
+	transform-box: fill-box;
+	animation: rotate3D 5s linear infinite;
+}
+
+#svg-sluzby-sprava-cog-2 {
+	transform-origin: center;
+	transform-box: fill-box;
+	animation: emblemPath2 5s linear infinite;
+} */
+
+#svg-sluzby-podpora-calendar {
+	transition-delay: 0.25s;
+}
+
+#svg-sluzby-podpora-clock {
+	transition-delay: 0.5s;
+}
+
+/* CENIK */
+
+#cenik * {
+	color: var(--violet);
+}
+
+#cenik {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 50px 0 150px 0;
+	width: 99%;
+}
+#cenik > div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#cenik h2 {
+	text-align: center;
+}
+
+#cenik > div > h2 {
+	color: #fff;
+}
+
+#cenik-title-first-box {
+	padding-top: 15px;
+}
+
+#cenik > div {
+	background: var(--violet-dark);
+	margin: 0 100px 0 100px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 45px 3px rgba(2, 4, 74, 0.25);
+}
+
+#cenik > div > div {
+	background: #fff;
+	border-radius: 10px;
+}
+
+.cenik-col-1:not(:first-child) {
+	background: var(--violet);
+	border-radius: 5px;
+}
+
+.cenik-col-1:first-child {
+	padding: 25px !important;
+}
+
+.cenik-col-1 h3 {
+	font-size: 25px;
+	color: white !important;
+}
+
+.cenik-box div div {
+	margin: 25px !important;
+	padding: 10px;
+}
+
+.cenik-box div div h3 {
+	font-size: 25px;
+}
+
+.cenik-box div div {
+	font-size: 20px;
+}
+
+/* CENIK END*/
+
+/* POSTUP VYROBY*/
+.contact-left {
+	background: var(--violet-light);
+	padding-bottom: 20%;
+}
+
+.contact-left * {
+	color: white;
+}
+
+.contact-left-text {
+	margin-top: 20px;
+}
+
+.contact-left-text h2 {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0 0 20px 50px;
+	line-height: 1.3;
+}
+
+.contact-left-text p {
+	margin-left: 50px;
+}
+
+.timeline {
+	list-style-type: none;
+	position: relative;
+	margin-right: 45px;
+	margin-top: 40px;
+}
+
+.timeline:before {
+	content: ' ';
+	background: white;
+	display: inline-block;
+	position: absolute;
+	left: 24px;
+	width: 4px;
+	height: 87%;
+	z-index: 1;
+}
+
+.timeline > li {
+	margin: 0;
+	padding: 0 0 35px;
+}
+
+.timeline > li:before {
+	background: var(--violet-light);
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	z-index: 2;
+	font-size: 28px;
+	padding: 10px 0;
+	margin-top: -15px;
+}
+
+.timeline > li:nth-child(1):before {
+	content: '📝';
+	margin-top: -20px;
+}
+.timeline > li:nth-child(2):before {
+	content: '📐';
+	margin-top: -18px;
+}
+.timeline > li:nth-child(3):before {
+	content: '💬';
+}
+.timeline > li:nth-child(4):before {
+	content: '🧑‍💻';
+	margin-top: -18px;
+}
+.timeline > li:nth-child(5):before {
+	content: '🚀';
+	margin-top: -16px;
+}
+
+.timeline h5 {
+	font-weight: 600;
+	margin-left: 55px;
+	font-size: 18px;
+}
+
+.timeline p {
+	font-size: 14px;
+	margin-left: 55px;
+}
+
+.timeline b {
+	font-weight: 600;
+	padding-left: 5px;
+}
+/* POSTUP VYROBY END */
+/* real time clock */
+
+#svg-sluzby-clock-1 {
+	transform: translate(300px, 600px) skewY(-20deg);
+}
+#svg-sluzby-clock-2 {
+	transform: translate(530px, 515px) skewY(-20deg);
+}
+#svg-sluzby-colon {
+	transform: translate(425px, 415px) skewY(-20deg);
 }

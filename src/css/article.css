@@ -1,7 +1,134 @@
-.article * {
-	color: black;
+.article *,
+a:not(.footer-a):visited {
+	color: var(--violet-dark);
+}
+
+.article {
+	margin-bottom: 150px;
+}
+
+li:not(.nav-li),
+a:not(.footer-a),
+h3 {
+	transition: all 0.3s ease-in-out;
+}
+
+a:not(.footer-a):hover h3 {
+	color: var(--violet-light);
+	text-decoration: underline;
+}
+
+.in-text-link:not(.footer-a),
+.in-text-link:not(.footer-a):visited {
+	text-decoration: underline;
+	color: var(--violet-light);
+}
+
+.in-text-link:not(.footer-a):hover {
+	color: var(--violet);
 }
 
 ol {
-	list-style: upper-roman;
+	counter-reset: item;
+}
+
+li:not(.nav-li) {
+	list-style: decimal;
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+li:not(.sub-ul):not(.nav-li):before {
+	content: counters(item, '.') '.';
+	counter-increment: item;
+}
+
+.article h1 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.article div:nth-child(2) {
+	margin: 70px 0 70px 0;
+}
+
+.article div:nth-child(2) ol li,
+.article div:nth-child(2) ol li * {
+	font-size: 30px;
+}
+
+.article div:nth-child(2) ol li:hover,
+.article div:nth-child(2) ol li:hover *,
+.article div:nth-child(4) a:hover p {
+	color: var(--violet-light);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.article div ol li ol li ul li {
+	display: list-item;
+	list-style-type: disc;
+}
+
+.article div ol li ol li ul li ul li {
+	display: list-item;
+	list-style-type: circle;
+}
+
+.article div ol li ol li {
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.article div ol li ol li h3 {
+	font-weight: 500;
+}
+
+.article div ol li ol li * {
+	font-weight: 400;
+	list-style: none;
+}
+
+.article div ol li ol li {
+	margin-left: 15px;
+}
+
+.article div ol li ol li p {
+	margin-left: 25px;
+}
+
+.article div:nth-child(3) {
+	margin-bottom: 70px;
+}
+
+.article div:nth-child(4) a {
+	display: block;
+	margin-left: 15px;
+}
+
+.article div:nth-child(4) a img {
+	max-height: 30px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.article div:nth-child(4) a p {
+	display: inline-block;
+	font-size: 20px;
+	transform: translateY(-25%);
+	transition: all 0.3s ease-in-out;
+}
+
+ul {
+	margin-left: 40px;
+}
+
+h2,
+h3 {
+	display: inline-block;
+}
+
+p {
+	font-size: 20px;
 }

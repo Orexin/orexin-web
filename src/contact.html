@@ -8,7 +8,7 @@
 	<meta name="description" content="Kontakt a odkazy" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./img/emblem-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('./img/logos/logo-gradient.png') %>" type="image/x-icon" />
 </head>
 
 <body id="contact">
@@ -147,7 +147,8 @@
 	<!-- CONTACT FORM -->
 	<section class="contact">
 		<div class="container columns">
-			<div class="contact-left column is-two-fifths">
+			<!-- Attention! intruder has added id attribute to your tag, be aware of that, as he had good reason for doing so -->
+			<div id="postup-vyroby" class="contact-left column is-two-fifths">
 				<div class="contact-left-text">
 					<h2>What will be<br />the next step?</h2>
 					<p>Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.</p>
@@ -186,11 +187,8 @@
 				TODO:
 				---------------------
 				* form validation
-				* button
-				* telefon spacing
-				* respo ofc
-				* tiles s adresou atd. pod form
-				* levý sloubec - blob
+				* telefon format mask
+				* contact form autofill
 			-->
 			<div class="contact-right column is-three-fifths">
 				<div class="contact-form block-center">
@@ -239,7 +237,7 @@
 							<label for="selectBoxes">Služby</label>
 							<div id="selectBoxes" class="select-boxes is-width-100">
 								<div class="select-box">
-									<input id="web" type="checkbox">
+									<input id="web" type="checkbox" />
 									<label for="web" tabindex="5">Webová prezentace</label>
 								</div>
 								<div class="select-box">
@@ -252,7 +250,7 @@
 								</div>
 							</div>
 							<div class="send-button form-group flex-center">
-								<input class="btn btn-violet w-100" type="button" tabindex="8" value="Odeslat" />
+								<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
 							</div>
 							<p>Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.</p>
 						</form>

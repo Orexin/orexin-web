@@ -1,7 +1,7 @@
 import './../css/components/navbar.css';
 
-const logoWhite = require('../img/Emblem_white.svg');
-const logoGrad = require('../img/Emblem_gradient.svg');
+const logoWhite = require('./../img/logos/logo-white.png');
+const logoGrad = require('./../img/logos/logo-gradient.png');
 
 class Navbar extends HTMLElement {
 	constructor() {
@@ -26,17 +26,17 @@ class Navbar extends HTMLElement {
 <div class="nav-set">
 	<div class="nav-links">
 		<ul>
-			<li>
-				<a href="./index.html">Úvod</a>
+			<li class="nav-li">
+				<a href="/index.html">Úvod</a>
 			</li>
-			<li>
-				<a href="./about.html">O&nbsp;nás</a>
+			<li class="nav-li">
+				<a href="/about.html">O&nbsp;nás</a>
 			</li>
-			<li>
-				<a href="./services.html">Služby</a>
+			<li class="nav-li">
+				<a href="/services.html">Služby</a>
 			</li>
-			<li>
-				<a href="./faq.html">FAQ</a>
+			<li class="nav-li">
+				<a href="/faq.html">FAQ</a>
 			</li>
 		</ul>
 	</div>

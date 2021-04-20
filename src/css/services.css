@@ -83,6 +83,24 @@ svg {
 
 /* ROZCESTNIK */
 
+.rozcestnik {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.rozcestnik-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.rozcestnik-content svg{
+	display: inline-block;
+}
+
 #svg-sluzby-rozcestnik-web-pres {
 	transition: all 0.5s 0.25s ease-in-out;
 	transform: translate(-25px, 200px);

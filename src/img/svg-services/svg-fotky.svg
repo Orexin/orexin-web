@@ -1,78 +1,253 @@
-<svg width="771" height="1186" viewBox="0 0 771 1186" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path
-		id="svg-sluzby-fotky-bg-shape"
-		d="M726.74 209.555C873.909 457.147 612.734 936.084 507.875 942.803C276.609 957.621 412.031 847.532 317.509 805.999C285.799 792.066 74.3453 664.623 30.5574 568.303C-13.2304 471.982 -7.02317 315.054 30.5575 209.555C139.912 -97.4338 579.571 -38.0381 726.74 209.555Z"
-		fill="#5C09FF" />
-	<g 
-	id="svg-sluzby-fotky-content">
-		<path
-		d="M574 198.266L580.702 200.398C582.042 200.824 582.851 202.108 582.851 203.807V250.874C582.851 253.485 580.967 256.352 578.525 257.455L574 259.5V198.266Z"
-		fill="#A094E2" />
-	<path
-		d="M575 290.266L581.702 292.398C583.042 292.824 583.851 294.108 583.851 295.807V342.874C583.851 345.485 581.967 348.352 579.525 349.455L575 351.5V290.266Z"
-		fill="#A094E2" />
-	<path
-		d="M574.673 202.338L578.834 200.803C581.424 199.847 583.525 201.311 583.525 204.072V254.432C583.525 257.194 581.424 260.207 578.834 261.163L574.673 262.698V202.338Z"
-		fill="#EBEBEB" />
-	<path
-		d="M575 294.266L579.16 292.731C581.751 291.775 583.851 293.239 583.851 296V403.117C583.851 405.878 581.751 408.891 579.16 409.847L575 411.382V294.266Z"
-		fill="#E1E1E1" />
-	<g>
-		<path
-			d="M116 304.039C116 276.182 137.359 245.817 163.492 236.522L500.737 116.573C510.035 113.266 519.09 112.992 526.75 115.785L557.5 127L540.951 921.426C540.402 947.786 521.026 976.218 496.512 986.633L168.5 1126L136.382 1114.38C123.625 1109.76 116 1097.15 116 1080.66V304.039Z"
-			fill="#A094E2" filter="url(#shadow-1)" />
-	</g>
-	<rect width="461.502" height="871.165" rx="50" transform="matrix(0.938191 -0.346117 0 1 143.845 269.999)"
-		fill="white" />
-	<rect width="438.736" height="846.841" rx="40" transform="matrix(0.938191 -0.346117 0 1 154.833 277.657)"
-		fill="#4508BD" />
-	<path
-		d="M380.768 222.477C385.633 203.931 400.166 187.149 416.617 181.08L528.923 139.648C549.649 132.002 566.451 143.712 566.451 165.803V932.644C566.451 954.736 549.649 978.843 528.923 986.489L193.902 1110.08C168.626 1119.41 150.578 1099.97 158.053 1071.48L380.768 222.477Z"
-		fill="#310686" />
-	<line y1="-1" x2="342.34" y2="-1" transform="matrix(0.938191 -0.346117 0 1 198.784 986.663)" stroke="white"
-		stroke-width="2" />
-	<path
-		d="M278.091 232.185L443.315 171.23L438.651 199.037C436.965 209.091 429.228 218.77 420.219 222.093L301.594 265.856C292.698 269.138 285.025 265.31 283.221 256.691L278.091 232.185Z"
-		fill="white" />
-	<circle r="11.7116" transform="matrix(0.938191 -0.346117 0 1 414.02 203.66)" fill="#310686" />
-	<circle r="11.7116" transform="matrix(0.938191 -0.346117 0 1 414.02 203.66)" fill="#310686" />
-	<circle r="11.7116" transform="matrix(0.938191 -0.346117 0 1 414.02 203.66)" fill="#310686" />
-	<circle r="11.7116" transform="matrix(0.938191 -0.346117 0 1 383.04 215.088)" fill="#310686" />
-	<circle r="11.7116" transform="matrix(0.938191 -0.346117 0 1 383.04 215.088)" fill="#310686" />
-	<circle r="11.7116" transform="matrix(0.938191 -0.346117 0 1 383.04 215.088)" fill="#310686" />
-	<circle r="14.8648" transform="matrix(0.938191 -0.346117 0 1 314.155 240.051)" fill="#310686" />
-	<circle r="14.8648" transform="matrix(0.938191 -0.346117 0 1 314.155 240.051)" fill="#310686" />
-	<circle r="14.8648" transform="matrix(0.938191 -0.346117 0 1 314.155 240.051)" fill="#4508BD" />
-	<circle r="49.851" transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)" stroke="white"
-		stroke-width="3" />
-	<circle r="49.851" transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)" stroke="white"
-		stroke-width="3" />
-	<circle r="49.851" transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)" stroke="white"
-		stroke-width="3" />
-	<circle r="49.851" transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)" stroke="white"
-		stroke-width="3" />
-	<circle r="11.9472" transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)" stroke="white"
-		stroke-width="4" />
-	<circle r="11.9472" transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)" stroke="white"
-		stroke-width="4" />
-	<circle r="11.9472" transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)" stroke="white"
-		stroke-width="4" />
-	<circle r="11.9472" transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)" stroke="white"
-		stroke-width="4" />
-	<circle r="39.1889" transform="matrix(0.938191 -0.346117 0 1 359.797 983.567)" fill="white" />
-	<circle r="34.5853" transform="matrix(0.938191 -0.346117 0 1 359.797 983.567)" fill="white" stroke="#4508BD"
-		stroke-width="2" />
-	</g>
-	<defs>
-		<filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-			<feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1" />
-			<feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-			<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" type="matrix"
-				result="shadowMatrixOuter1" />
-			<feMerge>
-				<feMergeNode in="shadowMatrixOuter1" />
-				<feMergeNode in="SourceGraphic" />
-			</feMerge>
-		</filter>
-	</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="771"
+   height="1186"
+   viewBox="0 0 771 1186"
+   fill="none"
+   version="1.1"
+   id="svg2182"
+   sodipodi:docname="svg-fotky.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata2186">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1900"
+     inkscape:window-height="1025"
+     id="namedview2184"
+     showgrid="false"
+     inkscape:zoom="1.0529094"
+     inkscape:cx="293.92133"
+     inkscape:cy="426.06568"
+     inkscape:window-x="10"
+     inkscape:window-y="45"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg-sluzby-fotky-content" />
+  <path
+     id="svg-sluzby-fotky-bg-shape"
+     d="M726.74 209.555C873.909 457.147 612.734 936.084 507.875 942.803C276.609 957.621 412.031 847.532 317.509 805.999C285.799 792.066 74.3453 664.623 30.5574 568.303C-13.2304 471.982 -7.02317 315.054 30.5575 209.555C139.912 -97.4338 579.571 -38.0381 726.74 209.555Z"
+     fill="#5C09FF" />
+  <g
+     id="svg-sluzby-fotky-content">
+    <path
+       d="M574 198.266L580.702 200.398C582.042 200.824 582.851 202.108 582.851 203.807V250.874C582.851 253.485 580.967 256.352 578.525 257.455L574 259.5V198.266Z"
+       fill="#A094E2"
+       id="path2106" />
+    <path
+       d="M575 290.266L581.702 292.398C583.042 292.824 583.851 294.108 583.851 295.807V342.874C583.851 345.485 581.967 348.352 579.525 349.455L575 351.5V290.266Z"
+       fill="#A094E2"
+       id="path2108" />
+    <path
+       d="M574.673 202.338L578.834 200.803C581.424 199.847 583.525 201.311 583.525 204.072V254.432C583.525 257.194 581.424 260.207 578.834 261.163L574.673 262.698V202.338Z"
+       fill="#EBEBEB"
+       id="path2110" />
+    <path
+       d="M575 294.266L579.16 292.731C581.751 291.775 583.851 293.239 583.851 296V403.117C583.851 405.878 581.751 408.891 579.16 409.847L575 411.382V294.266Z"
+       fill="#E1E1E1"
+       id="path2112" />
+    <g
+       id="g2116">
+      <path
+         d="M116 304.039C116 276.182 137.359 245.817 163.492 236.522L500.737 116.573C510.035 113.266 519.09 112.992 526.75 115.785L557.5 127L540.951 921.426C540.402 947.786 521.026 976.218 496.512 986.633L168.5 1126L136.382 1114.38C123.625 1109.76 116 1097.15 116 1080.66V304.039Z"
+         fill="#A094E2"
+         filter="url(#shadow-1)"
+         id="path2114" />
+    </g>
+    <rect
+       width="461.502"
+       height="871.165"
+       rx="50"
+       transform="matrix(0.938191 -0.346117 0 1 143.845 269.999)"
+       fill="white"
+       id="rect2118" />
+    <rect
+       width="438.736"
+       height="846.841"
+       rx="40"
+       transform="matrix(0.938191 -0.346117 0 1 154.833 277.657)"
+       fill="#4508BD"
+       id="rect2120" />
+    <path
+       d="M380.768 222.477C385.633 203.931 400.166 187.149 416.617 181.08L528.923 139.648C549.649 132.002 566.451 143.712 566.451 165.803V932.644C566.451 954.736 549.649 978.843 528.923 986.489L193.902 1110.08C168.626 1119.41 150.578 1099.97 158.053 1071.48L380.768 222.477Z"
+       fill="#310686"
+       id="path2122" />
+    <line
+       y1="-1"
+       x2="342.34"
+       y2="-1"
+       transform="matrix(0.938191 -0.346117 0 1 198.784 986.663)"
+       stroke="white"
+       stroke-width="2"
+       id="line2124" />
+    <path
+       d="M 277.88503,231.53561 443.21405,170.28856 438.651,199.037 c -1.686,10.054 -9.423,19.733 -18.432,23.056 l -118.625,43.763 c -8.896,3.282 -16.569,-0.546 -18.373,-9.165 z"
+       fill="#ffffff"
+       id="path2126"
+       sodipodi:nodetypes="ccccccc" />
+    <circle
+       r="11.7116"
+       transform="matrix(0.938191 -0.346117 0 1 414.02 203.66)"
+       fill="#310686"
+       id="circle2128" />
+    <circle
+       r="11.7116"
+       transform="matrix(0.938191 -0.346117 0 1 414.02 203.66)"
+       fill="#310686"
+       id="circle2130" />
+    <circle
+       r="11.7116"
+       transform="matrix(0.938191 -0.346117 0 1 414.02 203.66)"
+       fill="#310686"
+       id="circle2132" />
+    <circle
+       r="11.7116"
+       transform="matrix(0.938191 -0.346117 0 1 383.04 215.088)"
+       fill="#310686"
+       id="circle2134" />
+    <circle
+       r="11.7116"
+       transform="matrix(0.938191 -0.346117 0 1 383.04 215.088)"
+       fill="#310686"
+       id="circle2136" />
+    <circle
+       r="11.7116"
+       transform="matrix(0.938191 -0.346117 0 1 383.04 215.088)"
+       fill="#310686"
+       id="circle2138" />
+    <circle
+       r="14.8648"
+       transform="matrix(0.938191 -0.346117 0 1 314.155 240.051)"
+       fill="#310686"
+       id="circle2140" />
+    <circle
+       r="14.8648"
+       transform="matrix(0.938191 -0.346117 0 1 314.155 240.051)"
+       fill="#310686"
+       id="circle2142" />
+    <circle
+       r="14.8648"
+       transform="matrix(0.938191 -0.346117 0 1 314.155 240.051)"
+       fill="#4508BD"
+       id="circle2144" />
+    <circle
+       r="49.851"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)"
+       stroke="white"
+       stroke-width="3"
+       id="circle2146" />
+    <circle
+       r="49.851"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)"
+       stroke="white"
+       stroke-width="3"
+       id="circle2148" />
+    <circle
+       r="49.851"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)"
+       stroke="white"
+       stroke-width="3"
+       id="circle2150" />
+    <circle
+       r="49.851"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.073)"
+       stroke="white"
+       stroke-width="3"
+       id="circle2152" />
+    <circle
+       r="11.9472"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)"
+       stroke="white"
+       stroke-width="4"
+       id="circle2154" />
+    <circle
+       r="11.9472"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)"
+       stroke="white"
+       stroke-width="4"
+       id="circle2156" />
+    <circle
+       r="11.9472"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)"
+       stroke="white"
+       stroke-width="4"
+       id="circle2158" />
+    <circle
+       r="11.9472"
+       transform="matrix(0.938191 -0.346117 0 1 360.22 591.072)"
+       stroke="white"
+       stroke-width="4"
+       id="circle2160" />
+    <circle
+       r="39.1889"
+       transform="matrix(0.938191 -0.346117 0 1 359.797 983.567)"
+       fill="white"
+       id="circle2162" />
+    <circle
+       r="34.5853"
+       transform="matrix(0.938191 -0.346117 0 1 359.797 983.567)"
+       fill="white"
+       stroke="#4508BD"
+       stroke-width="2"
+       id="circle2164" />
+  </g>
+  <defs
+     id="defs2180">
+    <filter
+       id="shadow-1"
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="0"
+         dy="4"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset2167" />
+      <feGaussianBlur
+         stdDeviation="10"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur2169" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+         in="shadowBlurOuter1"
+         type="matrix"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix2171" />
+      <feMerge
+         id="feMerge2177">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode2173" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2175" />
+      </feMerge>
+    </filter>
+  </defs>
 </svg>

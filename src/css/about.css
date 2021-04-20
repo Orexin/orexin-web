@@ -110,7 +110,7 @@
 	border-bottom: solid red 1px;
 }
 .we-are-orexin > h2 {
-	font-size: 40px;
+	font-size: 30px;
 	color: var(--violet);
 	margin: 0;
 }
@@ -128,7 +128,7 @@
 	text-align: center;
 }
 .techstack > .header > h2 {
-	font-size: 40px;
+	font-size: 30px;
 	color: var(--violet);
 	margin: 0;
 }

@@ -23,6 +23,42 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* ! Fancy buttons ! */
+.fancy-btn {
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	border: solid var(--violet) 2px;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	color: white;
+	padding: 8px 15px;
+	background: var(--violet);
+	margin: 5px;
+}
+.fancy-btn:hover {
+	background-color: var(--violet-light);
+	border-color: var(--violet-light);
+	color: white;
+}
+
+.fancy-btn-trans {
+	font-size: 14px;
+	font-weight: 500;
+	border: solid white 2px;
+	padding: 8px 15px;
+	border-radius: 10px;
+	color: var(--violet-light);
+	background-color: white;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin: 5px;
+}
+.fancy-btn-trans:hover {
+	color: white;
+	background-color: transparent;
+}
 /* style classes */
 .bg-white {
 	background-color: #fff;

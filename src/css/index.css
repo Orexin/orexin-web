@@ -1,7 +1,43 @@
 /* UVOD */
+#mainArrow {
+	font-size: 30px;
+	border-radius: 35px;
+	background-color: var(--violet);
+	position: relative;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+}
+#mainArrow:hover {
+	background-color: var(--violet-light);
+}
 
-.main-arrow {
-	padding: 15px 15px 15px 15px;
+#mainArrow > span {
+	z-index: 1;
+	color: white !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px 15px 5px 15px;
+}
+#mainArrow:hover > span {
+	animation-name: arrowGoBrr;
+	animation-duration: 0.6s;
+}
+@keyframes arrowGoBrr {
+	45% {
+		transform: translate(-50%, 60%);
+	}
+	50% {
+		transform: translateY(-175px);
+	}
+	55% {
+		transform: translate(-50%, -175px);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
 }
 
 #uvod {
@@ -46,22 +82,6 @@
 
 #get-started-button {
 	margin-top: -40px !important;
-}
-
-#get-started-button a {
-	width: fit-content !important;
-}
-
-#get-started-button a div {
-	background: var(--violet);
-	border-radius: 35px;
-	font-size: 30px;
-	transition: all 0.3s ease-in-out;
-	text-align: center;
-}
-
-#get-started-button div:hover {
-	background: var(--violet-light);
 }
 
 .uvod-sub-pages img {

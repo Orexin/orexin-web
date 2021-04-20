@@ -6,13 +6,12 @@ navbar-wrapper {
 	position: fixed !important;
 	display: flex;
 	flex-direction: row !important;
-	justify-content: left !important;
-	padding: 0px 0% 0px 40px;
+	justify-content: space-between !important;
+	padding: 0px 100px 0px 100px;
 	align-items: center;
 	background-color: transparent;
 	height: 80px;
-	border-radius: 10px;
-	width: calc(100vw - 45px) !important;
+	width: 100vw;
 	transition-duration: 0.3s;
 	margin-bottom: 85px;
 }
@@ -20,8 +19,9 @@ navbar-wrapper {
 .nav-set {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 .nav-links li {
 	display: inline;
@@ -34,57 +34,40 @@ navbar-wrapper {
 	font-weight: 600;
 }
 
-.nav-actions {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	padding-left: 15px;
-}
-
-/* not done down there*/
-
-.burger-menu {
-	display: none;
-	cursor: pointer;
-}
-.slider {
-	display: block;
-	position: absolute;
-	right: -50px;
-	top: 85px;
-}
-.burger-menu > .line {
-	height: 2px;
-	width: 25px;
-	background-color: white;
-	margin: 5px;
-}
-.nav-links-slider {
-	display: none;
-}
-.nav-links-slider > ul > li {
-	list-style: none;
-}
 .logo {
 	padding: 5px;
+	width: 200px;
 }
 
 .logo > img {
-	height: 40px;
-	width: auto;
+	height: auto;
+	width: 40px;
 }
 
 .whited {
 	background-color: white !important;
 	filter: drop-shadow(0px 10px 10px #0000004b);
-	border-radius: 10px;
-	margin: 15px;
 }
 .whited > .nav-set > .nav-links > ul > li > a {
 	color: var(--violet) !important;
+}
+.whited > .nav-actions > .nav-login-btn {
+	color: var(--violet) !important;
+}
+.nav-actions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+}
+.nav-login-btn {
+	color: white !important;
+	transition-duration: 0.3s;
+	font-weight: 600;
+	margin-right: 10px;
+}
+#fancy-nav-btn {
+	font-size: 1em !important;
 }
 
 /*! NAV END!*/

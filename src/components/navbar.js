@@ -22,7 +22,7 @@ class Navbar extends HTMLElement {
 		this.innerHTML = `
 		<div class="logo">
 	<img src=${logoWhite} class="nav-logo"></img>
-	</div>
+</div>
 <div class="nav-set">
 	<div class="nav-links">
 		<ul>
@@ -40,31 +40,10 @@ class Navbar extends HTMLElement {
 			</li>
 		</ul>
 	</div>
-	<div class="nav-actions">
-		<div class="burger-menu">
-			<div class="line" id="line1"></div>
-			<div class="line" id="line2"></div>
-			<div class="line" id="line3"></div>
-		</div>
-	</div>
 </div>
-<div class="slider">
-	<div class="nav-links-slider">
-		<ul>
-			<li>
-				<a href="./index.html">Úvod</a>
-			</li>
-			<li>
-				<a href="./about.html">O&nbsp;nás</a>
-			</li>
-			<li>
-				<a href="./services.html">Služby</a>
-			</li>
-			<li>
-				<a href="./faq.html">FAQ</a>
-			</li>
-		</ul>
-	</div>
+<div class="nav-actions">
+	<a href="#" class="nav-login-btn">Login</a>
+	<a href="./contact.html" class="fancy-btn" id="fancy-nav-btn">Kontakt</a>
 </div>
 		`;
 

@@ -22,3 +22,40 @@ const refreshTime = async () => {
 	document.getElementById('svg-sluzby-clock-2').textContent = minutes;
 };
 setInterval(refreshTime, 1000);
+
+var webPres = new Waypoint({
+	element: document.getElementById('web-pres'),
+	offset: '90%',
+	handler: function () {
+		document.getElementById('svg-sluzby-web-pres-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-web-pres-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var reprezentace = new Waypoint({
+	element: document.getElementById('reprezentace'),
+	offset: '80%',
+	handler: function () {
+		document.getElementById('svg-sluzby-reprezentace-banner').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-reprezentace-banner').style.opacity = 1;
+		document.getElementById('svg-sluzby-reprezentace-sun').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-reprezentace-sun').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var rychlaVyroba = new Waypoint({
+	element: document.getElementById('fast'),
+	offset: '80%',
+	handler: function () {
+		document.getElementById('svg-sluzby-fast-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-fast-content').style.opacity = 1;
+		document.getElementById('svg-sluzby-fast-calendar').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-fast-calendar').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});

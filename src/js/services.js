@@ -55,7 +55,7 @@ var rozcestnikWebPres = new Waypoint({
 	},
 });
 
-var rozcestnikWebPres = new Waypoint({
+var rozcestnikWebApp = new Waypoint({
 	element: document.getElementById('svg-sluzby-rozcestnik-web-app'),
 	offset: '90%',
 	handler: function () {
@@ -66,7 +66,7 @@ var rozcestnikWebPres = new Waypoint({
 	},
 });
 
-var rozcestnikWebPres = new Waypoint({
+var rozcestnikEcommerce = new Waypoint({
 	element: document.getElementById('svg-sluzby-rozcestnik-ecommerce'),
 	offset: '90%',
 	handler: function () {
@@ -79,7 +79,7 @@ var rozcestnikWebPres = new Waypoint({
 
 var grafika = new Waypoint({
 	element: document.getElementById('grafika'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.opacity = 1;
@@ -92,7 +92,7 @@ var grafika = new Waypoint({
 
 var bezpeci = new Waypoint({
 	element: document.getElementById('bezpeci'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-bezpeci-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-bezpeci-content').style.opacity = 1;
@@ -103,7 +103,7 @@ var bezpeci = new Waypoint({
 
 var sprava = new Waypoint({
 	element: document.getElementById('sprava'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-sprava-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-sprava-content').style.opacity = 1;
@@ -112,9 +112,31 @@ var sprava = new Waypoint({
 	},
 });
 
+var traffic = new Waypoint({
+	element: document.getElementById('traffic'),
+	offset: '80%',
+	handler: function () {
+		document.getElementById('svg-sluzby-traffic-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-traffic-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var dynamika = new Waypoint({
+	element: document.getElementById('dynamika'),
+	offset: '80%',
+	handler: function () {
+		document.getElementById('svg-sluzby-dynamika-content').style.transform = 'translateY(0)';
+		document.getElementById('svg-sluzby-dynamika-content').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
 var podpora = new Waypoint({
 	element: document.getElementById('podpora'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-podpora-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-podpora-content').style.opacity = 1;
@@ -129,7 +151,7 @@ var podpora = new Waypoint({
 
 var plneni = new Waypoint({
 	element: document.getElementById('plneni'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-plneni-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-plneni-content').style.opacity = 1;
@@ -140,7 +162,7 @@ var plneni = new Waypoint({
 
 var fotky = new Waypoint({
 	element: document.getElementById('fotky'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-fotky-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-fotky-content').style.opacity = 1;
@@ -151,7 +173,7 @@ var fotky = new Waypoint({
 
 var customs = new Waypoint({
 	element: document.getElementById('customs'),
-	offset: '90%',
+	offset: '80%',
 	handler: function () {
 		document.getElementById('svg-sluzby-customs-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-customs-content').style.opacity = 1;

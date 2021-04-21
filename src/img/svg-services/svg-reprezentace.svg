@@ -8,28 +8,33 @@
   <path
      d="M892.18 682.297C892.18 900.907 759.686 919.908 666.441 901.225C543.686 876.629 306.561 751.078 221.842 678.429C127.085 597.172 60.0039 467.541 60.0039 309.724C60.0039 179.195 332.504 152.196 460.504 179.195C814.811 253.931 892.18 451.742 892.18 682.297Z"
      fill="#310686"
-     id="path1709"
+     id="svg-sluzby-reprezentace-bg-shape"
      style="fill:#262461;fill-opacity:1" />
+   <g id="svg-sluzby-reprezentace-sun">
+     <circle
+     r="80.36"
+     transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
+     fill="white"
+     id="circle1735" />
+      <ellipse
+     transform="matrix(0.93143156,0.36391654,-0.01907018,0.99981815,0,0)"
+     fill="#ffffff"
+     id="circle173"
+     cx="761.4151"
+     cy="190.22278"
+     rx="93.866142"
+     ry="93.85907"
+     style="stroke-width:1.16802;opacity:0.53262798" />
   <g
      opacity="0.25"
-     id="g1717">
+     id="g1733">
     <circle
-       r="95.94"
-       transform="matrix(0.938191 0.346117 0 1 705.404 465.771)"
+       r="123"
+       transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
        fill="white"
-       id="circle1711" />
-    <circle
-       r="95.94"
-       transform="matrix(0.938191 0.346117 0 1 705.404 465.771)"
-       fill="#EBEBEB"
-       id="circle1713" />
-    <circle
-       r="95.94"
-       transform="matrix(0.938191 0.346117 0 1 705.404 465.771)"
-       fill="#EBEBEB"
-       id="circle1715" />
+       id="circle1727" />
   </g>
-  <g
+    <g
      opacity="0.25"
      id="g1725">
     <circle
@@ -48,35 +53,9 @@
        fill="#EBEBEB"
        id="circle1723" />
   </g>
-  <g
-     opacity="0.25"
-     id="g1733">
-    <circle
-       r="123"
-       transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
-       fill="white"
-       id="circle1727" />
-    <circle
-       r="123"
-       transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
-       fill="#EBEBEB"
-       id="circle1729" />
-    <circle
-       r="123"
-       transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
-       fill="#EBEBEB"
-       id="circle1731" />
   </g>
-  <circle
-     r="80.36"
-     transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
-     fill="white"
-     id="circle1735" />
-  <circle
-     r="80.36"
-     transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
-     fill="white"
-     id="circle1737" />
+
+
   <path
      fill-rule="evenodd"
      clip-rule="evenodd"
@@ -133,7 +112,7 @@
      id="path1755"
      style="stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none" />
   <g
-     id="g1881">
+     id="svg-sluzby-reprezentace-banner">
     <rect
        width="49"
        height="218"
@@ -528,12 +507,13 @@
        fill="url(#paint2_linear)"
        id="path1879" />
   </g>
+
   <g
      id="g1885">
     <path
        d="M497.505 676.618L716.005 752.195L716.005 757.695L291.005 911.619L68.5046 832.195L68.5046 827.195L497.505 676.618Z"
        fill="#A195E4"
-	   filter="url(#shadow-1)"
+       filter="url(#shadow-1)"
        id="path1883" />
   </g>
   <g
@@ -748,15 +728,40 @@
      id="circle1973" />
   <defs
      id="defs1994">
-	 <filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-      <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
-      <feMerge>
-         <feMergeNode in="shadowMatrixOuter1"/>
-         <feMergeNode in="SourceGraphic"/>
+    <filter
+       id="shadow-1"
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="0"
+         dy="4"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset139" />
+      <feGaussianBlur
+         stdDeviation="10"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur141" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+         in="shadowBlurOuter1"
+         type="matrix"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix143" />
+      <feMerge
+         id="feMerge149">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode145" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode147" />
       </feMerge>
-   </filter>
+    </filter>
     <pattern
        id="pattern0"
        patternContentUnits="objectBoundingBox"

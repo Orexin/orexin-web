@@ -19,6 +19,7 @@
            height="564"
            rx="50"
            fill="#4508bd"
+           filter="url(#shadow-1)"
            id="rect2220" />
       </g>
       <rect

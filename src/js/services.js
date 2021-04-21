@@ -9,6 +9,8 @@ import svgRozcestnikEcommerce from './../img/svg-services/svg-rozcestnik-ecommer
 import svgGrafika from './../img/svg-services/svg-grafika-na-miru.svg';
 import svgBezpeci from './../img/svg-services/svg-bezpeci.svg';
 import svgSprava from './../img/svg-services/svg-sprava.svg';
+import svgTraffic from './../img/svg-services/svg-platba-podle-navstevnosti.svg';
+import svgDynamika from './../img/svg-services/svg-dynamika.svg';
 import svgPodpora from './../img/svg-services/svg-technicka-podpora.svg';
 import svgPlneni from './../img/svg-services/svg-plneni-obsahu.svg';
 import svgFotky from './../img/svg-services/svg-fotky.svg';
@@ -21,6 +23,8 @@ document.getElementById('svg-rozcestnik-ecommerce').innerHTML = svgRozcestnikEco
 document.getElementById('svg-grafika').innerHTML = svgGrafika;
 document.getElementById('svg-bezpeci').innerHTML = svgBezpeci;
 document.getElementById('svg-sprava').innerHTML = svgSprava;
+document.getElementById('svg-traffic').innerHTML = svgTraffic;
+document.getElementById('svg-dynamika').innerHTML = svgDynamika;
 document.getElementById('svg-podpora').innerHTML = svgPodpora;
 document.getElementById('svg-plneni').innerHTML = svgPlneni;
 document.getElementById('svg-fotky').innerHTML = svgFotky;

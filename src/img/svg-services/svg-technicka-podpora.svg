@@ -1,53 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1032"
    height="1150"
    viewBox="0 0 1032 1150"
-   fill="none"
-   version="1.1"
-   id="svg2389"
-   sodipodi:docname="svg-technicka-podpora.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
-  <metadata
-     id="metadata1012">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     id="namedview2391"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     objecttolerance="10.0"
-     gridtolerance="10.0"
-     guidetolerance="10.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="0.35347826"
-     inkscape:cx="780.11638"
-     inkscape:cy="544.56401"
-     inkscape:window-width="1900"
-     inkscape:window-height="1025"
-     inkscape:window-x="10"
-     inkscape:window-y="45"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2389"
-     inkscape:document-rotation="0" />
+   fill="none">
   <path
      id="svg-sluzby-podpora-bg-shape"
      d="M 854.284,707.585 C 1027.03,936.915 829.241,1090.98 552.241,1090.98 427.862,1090.98 110.95266,966.28075 53.733178,840.17624 14.845241,754.47214 44.01558,585.84669 78.703091,527.26433 218.28886,291.52345 697.213,499.061 854.284,707.585 Z"
@@ -1297,15 +1254,17 @@
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"
-       d="M456.095 997.363L457.173 972.839L479.808 964.488C490.542 968.571 504.554 969.911 521.846 968.511L521.846 973.106L480.886 988.217L466.874 991.089L466.874 993.387L456.095 997.363Z"
+       d="m 456.00007,997.82614 1.17293,-24.98714 22.635,-8.351 c 10.734,4.083 24.746,5.423 42.038,4.023 v 6.00995 l -40.15691,14.54392 -14.81509,2.02413 0.17171,2.79964 z"
        fill="#191847"
-       id="path2257" />
+       id="path2257"
+       sodipodi:nodetypes="ccccccccc" />
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"
-       d="M607.521 941.475L608.599 916.95L631.234 908.6C641.968 912.682 655.98 914.023 673.272 912.623V917.218L632.312 932.329L618.3 935.201V937.499L607.521 941.475Z"
+       d="M 607.36472,942.45502 608.599,916.95 631.234,908.6 c 10.734,4.082 24.746,5.423 42.038,4.023 l 0.34364,5.73947 -40.74701,14.89267 -14.56863,1.94586 0.17449,2.96933 z"
        fill="#191847"
-       id="path2259" />
+       id="path2259"
+       sodipodi:nodetypes="ccccccccc" />
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"
@@ -1370,15 +1329,17 @@
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"
-       d="M914.45 824.858L913.283 806.486C906.448 811.005 897.887 813.379 887.6 813.611C876.539 825.518 862.615 836 845.828 845.055C844.547 845.746 843.686 847.278 843.904 848.477C843.918 848.554 843.937 848.63 843.96 848.702L845.574 853.793L887.6 838.288L912.115 829.244L914.45 824.858Z"
+       d="m 914.45,824.858 -1.167,-18.372 c -6.835,4.519 -15.396,6.893 -25.683,7.125 -11.061,11.907 -24.985,22.389 -41.772,31.444 -1.281,0.691 -2.142,2.223 -1.924,3.422 0.014,0.077 0.033,0.153 0.056,0.225 l 2.8145,7.13256 41.6741,-15.98325 23.84925,-8.97173 z"
        fill="#191847"
-       id="path2281" />
+       id="path2281"
+       sodipodi:nodetypes="cccssccccc" />
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"
-       d="M803.877 865.65L802.71 847.279C795.875 851.798 787.314 854.172 777.027 854.404C765.967 866.311 752.042 876.793 735.255 885.848C733.974 886.539 733.113 888.071 733.332 889.27C733.346 889.347 733.364 889.423 733.387 889.495L735.001 894.586L777.027 879.081L801.543 870.037L803.877 865.65Z"
+       d="m 803.877,865.65 -1.167,-18.371 c -6.835,4.519 -15.396,6.893 -25.683,7.125 -11.06,11.907 -24.985,22.389 -41.772,31.444 -1.281,0.691 -2.142,2.223 -1.923,3.422 0.014,0.077 0.032,0.153 0.055,0.225 l 2.51659,6.46532 42.54978,-15.66179 22.77245,-8.22954 z"
        fill="#191847"
-       id="path2283" />
+       id="path2283"
+       sodipodi:nodetypes="cccssccccc" />
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"
@@ -1427,197 +1388,6 @@
            in="SourceGraphic"
            id="feMergeNode2297" />
       </feMerge>
-    </filter>
-    <filter
-       id="filter0_d"
-       x="104"
-       y="0.701172"
-       width="891.5"
-       height="1140.55"
-       filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         flood-opacity="0"
-         result="BackgroundImageFix"
-         id="feFlood2302" />
-      <feColorMatrix
-         in="SourceAlpha"
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix2304" />
-      <feOffset
-         id="feOffset2306" />
-      <feGaussianBlur
-         stdDeviation="30"
-         id="feGaussianBlur2308" />
-      <feColorMatrix
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-         id="feColorMatrix2310" />
-      <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
-         result="effect1_dropShadow"
-         id="feBlend2312" />
-      <feBlend
-         mode="normal"
-         in="SourceGraphic"
-         in2="effect1_dropShadow"
-         result="shape"
-         id="feBlend2314" />
-    </filter>
-    <filter
-       id="filter1_d"
-       x="378"
-       y="178.876"
-       width="447.85"
-       height="456.714"
-       filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         flood-opacity="0"
-         result="BackgroundImageFix"
-         id="feFlood2317" />
-      <feColorMatrix
-         in="SourceAlpha"
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix2319" />
-      <feOffset
-         id="feOffset2321" />
-      <feGaussianBlur
-         stdDeviation="10"
-         id="feGaussianBlur2323" />
-      <feColorMatrix
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
-         id="feColorMatrix2325" />
-      <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
-         result="effect1_dropShadow"
-         id="feBlend2327" />
-      <feBlend
-         mode="normal"
-         in="SourceGraphic"
-         in2="effect1_dropShadow"
-         result="shape"
-         id="feBlend2329" />
-    </filter>
-    <filter
-       id="filter2_d"
-       x="385.097"
-       y="181.777"
-       width="447.85"
-       height="456.714"
-       filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         flood-opacity="0"
-         result="BackgroundImageFix"
-         id="feFlood2332" />
-      <feColorMatrix
-         in="SourceAlpha"
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix2334" />
-      <feOffset
-         dx="1"
-         id="feOffset2336" />
-      <feGaussianBlur
-         stdDeviation="10"
-         id="feGaussianBlur2338" />
-      <feColorMatrix
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
-         id="feColorMatrix2340" />
-      <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
-         result="effect1_dropShadow"
-         id="feBlend2342" />
-      <feBlend
-         mode="normal"
-         in="SourceGraphic"
-         in2="effect1_dropShadow"
-         result="shape"
-         id="feBlend2344" />
-    </filter>
-    <filter
-       id="filter3_d"
-       x="409.228"
-       y="490.84"
-       width="278.166"
-       height="265.721"
-       filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         flood-opacity="0"
-         result="BackgroundImageFix"
-         id="feFlood2347" />
-      <feColorMatrix
-         in="SourceAlpha"
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix2349" />
-      <feOffset
-         id="feOffset2351" />
-      <feGaussianBlur
-         stdDeviation="15"
-         id="feGaussianBlur2353" />
-      <feColorMatrix
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-         id="feColorMatrix2355" />
-      <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
-         result="effect1_dropShadow"
-         id="feBlend2357" />
-      <feBlend
-         mode="normal"
-         in="SourceGraphic"
-         in2="effect1_dropShadow"
-         result="shape"
-         id="feBlend2359" />
-    </filter>
-    <filter
-       id="filter4_d"
-       x="178"
-       y="572.157"
-       width="283.094"
-       height="267.687"
-       filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB">
-      <feFlood
-         flood-opacity="0"
-         result="BackgroundImageFix"
-         id="feFlood2362" />
-      <feColorMatrix
-         in="SourceAlpha"
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix2364" />
-      <feOffset
-         id="feOffset2366" />
-      <feGaussianBlur
-         stdDeviation="15"
-         id="feGaussianBlur2368" />
-      <feColorMatrix
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-         id="feColorMatrix2370" />
-      <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
-         result="effect1_dropShadow"
-         id="feBlend2372" />
-      <feBlend
-         mode="normal"
-         in="SourceGraphic"
-         in2="effect1_dropShadow"
-         result="shape"
-         id="feBlend2374" />
     </filter>
     <linearGradient
        id="paint0_linear"

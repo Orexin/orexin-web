@@ -533,10 +533,6 @@ svg {
 	width: 75%;
 }
 
-#web-app {
-	margin: 50px 0 150px 0;
-}
-
 #svg-sluzby-clock-1 {
 	transform: translate(300px, 600px) skewY(-20deg);
 }
@@ -548,3 +544,51 @@ svg {
 }
 
 /* WEB-PRES END*/
+
+/* WEB-APP*/
+
+#web-app {
+	margin: 50px 0 150px 0;
+}
+
+#web-app p {
+	width: 70%;
+}
+
+#inteligentni {
+	margin: 0px 0 300px 0;
+}
+
+#inteligentni p {
+	width: 75%;
+}
+
+#reaktivita p {
+	width: 80%;
+}
+
+/* WEB-APP END*/
+
+/* ECOMMMERCE */
+
+#ecommerce {
+	margin: 50px 0 150px 0;
+}
+
+#ecommerce p {
+	width: 70%;
+}
+
+#seo p {
+	width: 65%;
+}
+
+#platby p {
+	width: 80%;
+}
+
+#objednavky p {
+	width: 70%;
+}
+
+/* ECOMMERCE END*/

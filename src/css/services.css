@@ -279,7 +279,7 @@ svg {
 	opacity: 0;
 }
 
-#grafika div div div p {
+#grafika p {
 	width: 55%;
 }
 
@@ -287,27 +287,27 @@ svg {
 	transition-delay: 0.25s;
 }
 
-#bezpeci div div div p {
+#bezpeci p {
 	width: 70%;
 }
 
-#sprava div div div p {
+#sprava p {
 	width: 70%;
 }
 
-#podpora div div div p {
+#podpora p {
 	width: 65%;
 }
 
-#plneni div div div p {
+#plneni p {
 	width: 70%;
 }
 
-#fotky div div div p {
+#fotky p {
 	width: 70%;
 }
 
-#customs div div div p {
+#customs p {
 	width: 70%;
 }
 
@@ -515,7 +515,27 @@ svg {
 	padding-left: 5px;
 }
 /* POSTUP VYROBY END */
+
+/* WEB-PRES */
+
 /* real time clock */
+
+#web-pres p {
+	width: 75%;
+}
+
+#web-pres {
+	margin: -200px 0px -100px 0px;
+	width: fit-content;
+}
+
+#reprezentace p {
+	width: 75%;
+}
+
+#web-app {
+	margin: 50px 0 150px 0;
+}
 
 #svg-sluzby-clock-1 {
 	transform: translate(300px, 600px) skewY(-20deg);
@@ -526,3 +546,5 @@ svg {
 #svg-sluzby-colon {
 	transform: translate(425px, 415px) skewY(-20deg);
 }
+
+/* WEB-PRES END*/

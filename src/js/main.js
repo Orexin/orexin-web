@@ -32,7 +32,6 @@ window.addEventListener('scroll', function(){
 	var value = window.scrollY;
 	for (var i = 0; i < container.length; i++) {
 		container[i].style.marginTop = `-${value + 0.5}px`;
-		console.log(value)
 		title[i].style.marginTop = `+${value + 0.15}px`;
 	}
 })

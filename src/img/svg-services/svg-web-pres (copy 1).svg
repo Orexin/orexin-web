@@ -13,7 +13,7 @@
    fill="none"
    version="1.1"
    id="svg1087"
-   sodipodi:docname="svg-web-pres.svg"
+   sodipodi:docname="svg-web-pres (copy 1).svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <metadata
      id="metadata1091">
@@ -39,13 +39,13 @@
      inkscape:window-height="1025"
      id="namedview1089"
      showgrid="false"
-     inkscape:zoom="2.5483544"
-     inkscape:cx="353.85271"
-     inkscape:cy="862.83256"
+     inkscape:zoom="1.8019586"
+     inkscape:cx="465.12038"
+     inkscape:cy="768.44611"
      inkscape:window-x="10"
      inkscape:window-y="45"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg-sluzby-web-pres-content" />
+     inkscape:current-layer="svg1087" />
   <path
      d="M1017 919C1017 1185.2 740.76 1401 400 1401C247.385 1401 107.711 1357.71 -0.000976562 1286V552C107.711 480.286 247.385 437 400 437C740.76 437 1017 652.799 1017 919Z"
      fill="#262461"
@@ -88,8 +88,8 @@
        transform="matrix(0.938191 -0.346117 0 1 596.751 816.759)"
        fill="#6455C1"
        id="rect1203" />
-   <g id="svg-sluzby-web-pres-card-bottom-right">
-       <g
+    <g
+       id="svg-sluzby-web-pres-card-bottom-right"
        transform="translate(-130.479,-71.449)">
       <g
          id="g1207">
@@ -121,7 +121,6 @@
          id="path1211"
          sodipodi:nodetypes="cccsccccscccsccc" />
     </g>
-   </g>
     <rect
        width="161.463"
        height="130.068"
@@ -129,8 +128,8 @@
        transform="matrix(0.938191 -0.346117 0 1 395.91 976.485)"
        fill="#6455C1"
        id="rect1213" />
-   <g id="svg-sluzby-web-pres-card-bottom-left">
-       <g
+    <g
+       id="svg-sluzby-web-pres-card-bottom-left"
        transform="translate(-124.79001,-31.985207)">
       <g
          id="g995">
@@ -179,7 +178,6 @@
          id="path1225"
          sodipodi:nodetypes="cccccccccc" />
     </g>
-   </g>
     <rect
        width="161.463"
        height="130.068"
@@ -187,8 +185,8 @@
        transform="matrix(0.938191 -0.346117 0 1 600.768 645.848)"
        fill="#6455C1"
        id="rect1227" />
-   <g id="svg-sluzby-web-pres-card-top-right">
-       <g
+    <g
+       id="svg-sluzby-web-pres-card-top-right"
        transform="translate(-81.886,-43.191)">
       <g
          id="g1004">
@@ -228,7 +226,6 @@
          id="path1237"
          sodipodi:nodetypes="cccsscccccccccccscc" />
     </g>
-   </g>
     <rect
        width="161.46294"
        height="218.274"
@@ -238,8 +235,8 @@
        id="rect1239"
        x="421.99283"
        y="863.89795" />
-   <g id="svg-sluzby-web-pres-card-top-left">
-       <g
+    <g
+       id="svg-sluzby-web-pres-card-top-left"
        transform="translate(-92.886007,-36.103995)">
       <rect
          width="161.46294"
@@ -273,7 +270,6 @@
          id="path1247"
          sodipodi:nodetypes="ccssccsscsc" />
     </g>
-   </g>
     <ellipse
        rx="3.34993"
        ry="3.41388"
@@ -334,8 +330,8 @@
        x="0"
        y="0"
        style="fill:#6455c1;fill-opacity:1" />
-   <g id="svg-sluzby-web-pres-left-column">
-       <g
+    <g
+       id="svg-sluzby-web-pres-left-column"
        transform="translate(-54.0205,-55.23195)">
       <rect
          width="146.46201"
@@ -613,10 +609,8 @@
            id="path1349" />
       </g>
     </g>
-   </g>
-   <g id="svg-sluzby-web-pres-nav">
-       <g
-       
+    <g
+       id="svg-sluzby-web-pres-nav"
        transform="translate(-42.177,-24.605)">
       <rect
          width="565.86902"
@@ -669,7 +663,6 @@
            id="path1367" />
       </g>
     </g>
-   </g>
   </g>
   <defs
      id="defs1503">

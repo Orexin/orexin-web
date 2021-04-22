@@ -9,9 +9,9 @@ document.getElementById('svg-web').innerHTML = svgWeb;
 document.getElementById('svg-pres').innerHTML = svgPres;
 document.getElementById('svg-fast').innerHTML = svgFast;
 
+// realtime clock
 const regeneratorRuntime = require('regenerator-runtime');
 
-// realtime clock
 const refreshTime = async () => {
 	var time = new Date();
 	var hours = time.getHours();
@@ -23,6 +23,7 @@ const refreshTime = async () => {
 };
 setInterval(refreshTime, 1000);
 
+// waypoints
 var webPres = new Waypoint({
 	element: document.getElementById('web-pres'),
 	offset: '90%',

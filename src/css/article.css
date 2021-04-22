@@ -58,9 +58,9 @@ li:not(.sub-ul):not(.nav-li):before {
 	font-size: 30px;
 }
 
-.article div:nth-child(2) ol li:hover,
-.article div:nth-child(2) ol li:hover *,
-.article div:nth-child(4) a:hover p {
+.article div:nth-child(1) ol li:hover,
+.article div:nth-child(1) ol li:hover *,
+.article div:nth-child(3) a:hover p {
 	color: var(--violet-light);
 	text-decoration: underline;
 	cursor: pointer;

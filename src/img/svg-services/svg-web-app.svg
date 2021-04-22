@@ -48,8 +48,8 @@
        d="m 30,0 h 294.48621 v 0 0 c 0,0 0.75861,100.01715 0.42331,146.27286 -0.33594,46.34264 -46.31084,48.58824 -46.31084,48.58824 L 0.46174705,194.85955 0.09122458,176.77551 0,30 C -0.01033196,13.376426 13.38,0 30,0 Z"
        sodipodi:nodetypes="scccscccss" />
   </g>
-  <g
-     id="g1187"
+   <g id="svg-sluzby-web-app-graph-right-bottom">
+     <g
      transform="translate(0.16703399,-0.10822976)">
     <g
        id="g1135">
@@ -158,6 +158,7 @@
        fill="#4508bd"
        id="path1167" />
   </g>
+   </g>
   <g
      id="g1480"
      style="fill:#6455c1;fill-opacity:1">
@@ -168,8 +169,8 @@
        d="m 30,0 509.26241,0.04448448 v 0 C 542.66196,6.7658552 544.66267,14.668497 544.968,22.493951 L 544.35996,137.608 v 0 0 H 30 c -16.62,0 -30,-13.38 -30,-30 V 30 C 0,13.38 13.38,0 30,0 Z"
        sodipodi:nodetypes="sccccccssss" />
   </g>
-  <g
-     id="g1488"
+   <g id="svg-sluzby-web-app-graph-top">
+     <g
      transform="translate(-0.5956965,-0.55228207)">
     <g
        id="g1171">
@@ -218,6 +219,7 @@
        id="path1179"
        style="fill:url(#paint7_linear)" />
   </g>
+   </g>
   <g
      filter="url(#shadow-1)"
      id="g1191"
@@ -232,7 +234,7 @@
        style="fill:#6455c1;fill-opacity:1" />
   </g>
   <g
-     id="g1243">
+     id="svg-sluzby-web-app-values">
     <g
        filter="url(#shadow-1)"
        id="g1183">
@@ -354,7 +356,7 @@
        sodipodi:nodetypes="scccssccccsss" />
   </g>
   <g
-     id="g1476">
+     id="svg-sluzby-web-app-left-column">
     <g
        id="g1233">
       <path
@@ -450,8 +452,8 @@
       </g>
     </g>
   </g>
-  <g
-     id="g1264"
+   <g id="svg-sluzby-web-app-graph-right-top">
+     <g
      transform="translate(-44.567,-16.083)">
     <g
        filter="url(#shadow-1)"
@@ -584,6 +586,7 @@
        x="0"
        y="0" />
   </g>
+   </g>
   </g>
   <defs
      id="defs1367">

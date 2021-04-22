@@ -61,45 +61,44 @@ var rychlaVyroba = new Waypoint({
 	},
 });
 
+// onscroll elements 20 degrees translate
 window.addEventListener('scroll', function(){
 	// if there is already transform attr in <g> tag create another group inside it, put everything there and then move the transform attr to the lower group
 	// defaults
-	var scroll = window.scrollY
+	var scroll=window.scrollY
 	var length=scroll
 	var translateRatioX=0, translateRatioY=0, degrees=20
 
 	if(scroll <= 500) {
-			// nav
-	translateRatioX = Math.sin(degrees) * length*0.05;
-	translateRatioY = Math.sqrt(((length*0.05)*(length*0.05))+(translateRatioX*translateRatioX))
-	document.getElementById('svg-sluzby-web-pres-nav').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
+		// nav
+		translateRatioX = Math.sin(degrees) * length*0.05;
+		translateRatioY = Math.sqrt(((length*0.05)*(length*0.05))+(translateRatioX*translateRatioX))
+		document.getElementById('svg-sluzby-web-pres-nav').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
 
-	// left column
-	translateRatioX = Math.sin(degrees) * length*0.075;
-	translateRatioY = Math.sqrt(((length*0.075)*(length*0.075))+(translateRatioX*translateRatioX))
-	document.getElementById('svg-sluzby-web-pres-left-column').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
+		// left column
+		translateRatioX = Math.sin(degrees) * length*0.075;
+		translateRatioY = Math.sqrt(((length*0.075)*(length*0.075))+(translateRatioX*translateRatioX))
+		document.getElementById('svg-sluzby-web-pres-left-column').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
 
-	// card top left
-	translateRatioX = Math.sin(degrees) * length*0.1;
-	translateRatioY = Math.sqrt(((length*0.1)*(length*0.1))+(translateRatioX*translateRatioX))
-	document.getElementById('svg-sluzby-web-pres-card-top-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
+		// card top left
+		translateRatioX = Math.sin(degrees) * length*0.1;
+		translateRatioY = Math.sqrt(((length*0.1)*(length*0.1))+(translateRatioX*translateRatioX))
+		document.getElementById('svg-sluzby-web-pres-card-top-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
 
-	// card top right
-	translateRatioX = Math.sin(degrees) * length*0.125;
-	translateRatioY = Math.sqrt(((length*0.125)*(length*0.125))+(translateRatioX*translateRatioX))
-	document.getElementById('svg-sluzby-web-pres-card-top-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
+		// card top right
+		translateRatioX = Math.sin(degrees) * length*0.125;
+		translateRatioY = Math.sqrt(((length*0.125)*(length*0.125))+(translateRatioX*translateRatioX))
+		document.getElementById('svg-sluzby-web-pres-card-top-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
 
-	// card bottom left
-	translateRatioX = Math.sin(degrees) * length*0.15;
-	translateRatioY = Math.sqrt(((length*0.15)*(length*0.15))+(translateRatioX*translateRatioX))
-	document.getElementById('svg-sluzby-web-pres-card-bottom-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
+		// card bottom left
+		translateRatioX = Math.sin(degrees) * length*0.15;
+		translateRatioY = Math.sqrt(((length*0.15)*(length*0.15))+(translateRatioX*translateRatioX))
+		document.getElementById('svg-sluzby-web-pres-card-bottom-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
 
-	// card bottom right
-	translateRatioX = Math.sin(degrees) * length*0.175;
-	translateRatioY = Math.sqrt(((length*0.175)*(length*0.175))+(translateRatioX*translateRatioX))
-	document.getElementById('svg-sluzby-web-pres-card-bottom-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
-
+		// card bottom right
+		translateRatioX = Math.sin(degrees) * length*0.175;
+		translateRatioY = Math.sqrt(((length*0.175)*(length*0.175))+(translateRatioX*translateRatioX))
+		document.getElementById('svg-sluzby-web-pres-card-bottom-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`
 	}
-	console.log(scroll)
 });
 

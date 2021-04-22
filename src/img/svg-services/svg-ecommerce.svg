@@ -43,8 +43,8 @@
        d="m 30,0 88.008,0 c 16.62,0 30,13.38 30,30 l 0.42589,142.34423 v 0 L 0.14341482,171.48908 v 0 L 0,30 C -0.01685211,13.374175 13.38,0 30,0 Z"
        sodipodi:nodetypes="sssccccss" />
   </g>
-  <g
-     id="svg-sluzby-ecommerce-card-bottom-right"
+   <g id="svg-sluzby-ecommerce-card-bottom-right">
+     <g
      transform="translate(-0.39473512,0.18385085)">
     <g
        id="g1585">
@@ -84,6 +84,7 @@
        fill="#ffffff"
        id="path1595" />
   </g>
+   </g>
   <g
      id="g1423"
      style="fill:#5d4eb6;fill-opacity:1">
@@ -94,8 +95,8 @@
        d="m 30,0 88.008,0 c 16.62,0 30,13.38 30,30 v 133.05299 l -0.22675,8.4665 -147.94612647,0.54006 v 0 L 0,30 C 0.01928167,13.386684 13.38,0 30,0 Z"
        sodipodi:nodetypes="sssccccss" />
   </g>
-  <g
-     id="svg-sluzby-ecommerce-card-bottom-middle"
+   <g id="svg-sluzby-ecommerce-card-bottom-middle">
+     <g
      transform="translate(-0.3423834,0.07059929)">
     <g
        id="g1599">
@@ -135,6 +136,7 @@
        fill="#ffffff"
        id="path1609" />
   </g>
+   </g>
   <g
      id="g1410"
      style="fill:#5e4fb7;fill-opacity:1">
@@ -145,8 +147,8 @@
        d="m 30,0 h 88.008 c 16.62,0 30.00065,13.380224 30,30 l -0.006,141.3151 v 0 l -148.1421006,0.1484 v 0 L 0,30 C 0.01639553,13.385682 13.38,0 30,0 Z"
        sodipodi:nodetypes="sssccccss" />
   </g>
-  <g
-     id="svg-sluzby-ecommerce-card-bottom-left"
+   <g id="svg-sluzby-ecommerce-card-bottom-left">
+     <g
      transform="translate(0.00978546,0.01434663)">
     <g
        id="g1613">
@@ -186,6 +188,7 @@
        fill="#ffffff"
        id="path1623" />
   </g>
+   </g>
   <g
      filter="url(#shadow-1)"
      id="g1397"

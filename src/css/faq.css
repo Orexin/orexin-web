@@ -149,12 +149,16 @@
 	font-size: 25px;
 }
 
+.faq-form-container div form div {
+	margin-bottom: 10px !important;
+}
+
 .faq-form-container div form input,
 .faq-form-container div form textarea {
 	color: var(--text-dark);
 	background-color: #f8f4fe;
 	border: none;
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 6px 7px 6px 7px;
 	transition: all 0.3s ease-in-out;
 	outline: none;

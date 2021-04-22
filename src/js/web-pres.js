@@ -36,7 +36,7 @@ var webPres = new Waypoint({
 
 var reprezentace = new Waypoint({
 	element: document.getElementById('reprezentace'),
-	offset: '80%',
+	offset: '60%',
 	handler: function () {
 		document.getElementById('svg-sluzby-reprezentace-banner').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-reprezentace-banner').style.opacity = 1;
@@ -49,7 +49,7 @@ var reprezentace = new Waypoint({
 
 var rychlaVyroba = new Waypoint({
 	element: document.getElementById('fast'),
-	offset: '80%',
+	offset: '70%',
 	handler: function () {
 		document.getElementById('svg-sluzby-fast-content').style.transform = 'translateY(0)';
 		document.getElementById('svg-sluzby-fast-content').style.opacity = 1;

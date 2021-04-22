@@ -8,8 +8,9 @@
   <path
      d="M854.284 643.602C1027.03 872.932 826.917 1062.81 552.241 1027C395 1006.5 157.294 821 0.000110626 821L0 396C0 396 697.213 435.077 854.284 643.602Z"
      fill="#262461"
-     id="path1910" />
-  <g
+     id="svg-sluzby-platby-bg-shape" />
+   <g id="svg-sluzby-platby-content">
+     <g
      id="g1914">
     <rect
        width="655.441"
@@ -1153,6 +1154,7 @@
      fill="#ffffff"
      id="path2444"
      sodipodi:nodetypes="ccccccccccsccccsccccccc" />
+   </g>
   <defs
      id="defs2454">
 	 <filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">

@@ -403,12 +403,12 @@ textarea:focus {
 }
 
 .services-contact {
-	border: 2px rgba(0, 0, 0, 0.1) solid;
+	border: 1px rgba(0, 0, 0, 0.1) solid;
 	width: 45%;
 	margin: 0 auto;
 	padding: 30px;
 	border-radius: 12px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: 0px 0px 30px #d6d6d6;
 }
 
 .services-contact p {

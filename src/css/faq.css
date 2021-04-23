@@ -2,11 +2,13 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 150px;
 }
 
 .faq-questions-container {
 	display: flex;
 	flex-direction: column;
+	margin-top: 60px;
 }
 
 .faq-questions {
@@ -17,9 +19,9 @@
 .faq-question {
 	display: flex;
 	flex-direction: column;
-	border-radius: 5px;
-	border: 2px RGBA(0, 0, 0, 0.1) solid;
-	box-shadow: 0px 0px 50px #35353538 !important;
+	border-radius: 12px;
+	border: 1px RGBA(0, 0, 0, 0.1) solid;
+	box-shadow: 0px 0px 30px #d6d6d6;
 }
 
 .faq-question h3 {
@@ -146,7 +148,7 @@
 }
 
 .faq-form-title div h2 {
-	font-size: 25px;
+	font-size: 35px;
 }
 
 .faq-form-container div form div {
@@ -159,10 +161,11 @@
 	background-color: #f8f4fe;
 	border: none;
 	border-radius: 10px;
-	padding: 6px 7px 6px 7px;
+	padding: 10px 7px 10px 7px;
 	transition: all 0.3s ease-in-out;
 	outline: none;
 	z-index: 3;
+	font-size: 14px;
 }
 
 .faq-form-container div form textarea {
@@ -170,11 +173,14 @@
 	border-radius: 15px;
 }
 
-.faq-form-button-contaner {
+.faq-form-button-container {
 	border-radius: 15px;
-	padding: 30px;
 	transition: all 0.3s ease-in-out;
 	z-index: 3;
+}
+
+.faq-form-button-container input {
+	margin: 20px !important;
 }
 
 .faq-form-button-container input:hover {
@@ -224,4 +230,22 @@
 .faq-form-container div .faq-form-question-mark-6 {
 	animation: questionMark 5s 1.9s ease-in-out infinite;
 	margin-left: 90px;
+}
+
+.input-icon-wrap {
+	position: relative;
+}
+
+.input-icon-wrap:hover + span {
+	color: var(--violet);
+}
+
+.input-icon-wrap span {
+	position: absolute;
+	top: auto;
+	bottom: auto;
+	left: 10px;
+	color: #aeafc5;
+	opacity: 0.6;
+	font-size: 30px;
 }

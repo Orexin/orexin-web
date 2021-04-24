@@ -36,8 +36,23 @@
 }
 
 .contact-hero a > span:hover {
-	color: var(--violet-light);
 	transition: all 0.5s ease;
+}
+
+.contact-hero a:nth-child(1) > span:hover {
+	color: #4267B2;
+}
+
+.contact-hero a:nth-child(2) > span:hover {
+	color: #e4405f;
+}
+
+.contact-hero a:nth-child(3) > span:hover {
+	color: #55acee;
+}
+
+.contact-hero a:nth-child(4) > span:hover {
+	color: #24292e;
 }
 
 /*

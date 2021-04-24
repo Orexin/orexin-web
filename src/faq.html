@@ -241,7 +241,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="column is-offset-1 is-3">
+		<div class="column is-offset-1 is-4 ml-7">
 			<div class="columns ml-10 mr-10 faq-form-container">
 				<div class="column">
 					<div class="columns is-centered faq-form-title">
@@ -250,42 +250,33 @@
 						</div>
 					</div>
 					<form action="POST">
-						<div class="columns is-centered input-icon-wrap">
-							<input id="frmNameA" type="text" tabindex="1" placeholder="Jan Novák" required />
-							<span class="typcn typcn-user-outline"></span>
+						<div class="input-icon-wrap">
+							<div>
+								<input id="frmNameA" type="name" tabindex="1" placeholder="Jan Novák" required />
+								<span class="typcn typcn-user-outline"></span>
+							</div>
 						</div>
-						<div class="columns is-centered input-icon-wrap">
-							<input type="email" name="email" id="frmEmailA" placeholder="Váš@email.cz" required
-								autocomplete="email">
-							<span class="typcn typcn-mail"></span>
+						<div class="input-icon-wrap">
+							<div>
+								<input type="email" name="email" id="frmEmailA" placeholder="jnovak@orexin.cz" required
+									autocomplete="email">
+								<span class="typcn typcn-mail"></span>
+							</div>
 						</div>
 						<div class="columns is-centered">
-							<textarea name="message" id="frmMessageA" placeholder="Vaše zpráva" required></textarea>
+							<div>
+								<textarea name="message" id="frmMessageA" placeholder="Vaše zpráva" required></textarea>
+							</div>
 						</div>
 						<div class="columns is-centered">
 							<div class="faq-form-button-container">
-								<input id="faq-form-button" type="submit" value="Odeslat">
+								<input class="fancy-btn-trans" type="submit" value="Odeslat">
 							</div>
 						</div>
 					</form>
-					<div class="faq-question-mark-container">
-						<img src="<%= require('./img/icons/question-mark.png') %>" alt=""
-							class="faq-form-question-mark faq-form-question-mark-1">
-						<img src="<%= require('./img/icons/question-mark.png') %>" alt=""
-							class="faq-form-question-mark faq-form-question-mark-3">
-						<img src="<%= require('./img/icons/question-mark.png') %>" alt=""
-							class="faq-form-question-mark faq-form-question-mark-2">
-						<img src="<%= require('./img/icons/question-mark.png') %>" alt=""
-							class="faq-form-question-mark faq-form-question-mark-4">
-						<img src="<%= require('./img/icons/question-mark.png') %>" alt=""
-							class="faq-form-question-mark faq-form-question-mark-5">
-						<img src="<%= require('./img/icons/question-mark.png') %>" alt=""
-							class="faq-form-question-mark faq-form-question-mark-5">
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="column is-1"></div>
 	</section>
 
 	<!-- FOOTER -->

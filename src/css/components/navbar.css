@@ -66,14 +66,33 @@ navbar-wrapper {
 	align-items: center;
 	width: 200px;
 }
+
 .nav-login-btn {
 	color: white !important;
 	transition-duration: 0.3s;
 	font-weight: 600;
 	margin-right: 10px;
 }
+
 #fancy-nav-btn {
 	font-size: 1em !important;
+}
+
+.fancy-btn-trans {
+	color: #fff;
+	background-color: var(--violet-dark);
+	border-color: var(--violet-dark);
+}
+
+.fancy-btn-trans:hover {
+	color: #fff;
+	background-color: none;
+	border-color: #fff;
+}
+
+.fancy-btn-trans-whited:hover {
+	color: var(--violet-dark);
+	border-color: var(--violet-dark);
 }
 
 /*! NAV END!*/

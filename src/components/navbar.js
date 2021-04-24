@@ -45,13 +45,14 @@ class Navbar extends HTMLElement {
 </div>
 <div class="nav-actions">
 	<a href="#" class="nav-login-btn">Login</a>
-	<a href="./contact.html" class="fancy-btn" id="fancy-nav-btn">Kontakt</a>
+	<a href="./contact.html" class="fancy-btn-trans" id="fancy-nav-btn">Kontakt</a>
 </div>
 		`;
 
 		// Hide on scroll anim
 		const nav = document.querySelector('navbar-wrapper');
 		const navLogo = document.querySelector('#nav-logo');
+		const kontaktBtn = document.querySelector('#fancy-nav-btn');
 
 		var prevScrollpos = window.pageYOffset;
 		var currentScrollPos = 0;
@@ -70,9 +71,11 @@ class Navbar extends HTMLElement {
 			if (document.documentElement.scrollTop >= 150) {
 				nav.classList.add('whited');
 				navLogo.style.content = `url(${logoGrad})`
+				kontaktBtn.classList.add('fancy-btn-trans-whited')
 			} else {
 				nav.classList.remove('whited');
 				navLogo.style.content = `url(${logoWhite})`
+				kontaktBtn.classList.remove('fancy-btn-trans-whited')
 			}
 		};
 	}

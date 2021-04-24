@@ -155,9 +155,9 @@
 	margin-bottom: 10px !important;
 }
 
-.faq-form-container div form input,
+.faq-form-container div form input:not(:last-child),
 .faq-form-container div form textarea {
-	color: var(--text-dark);
+	color: var(--violet-dark);
 	background-color: #f8f4fe;
 	border: none;
 	border-radius: 10px;
@@ -168,83 +168,59 @@
 	font-size: 14px;
 }
 
+.faq-form-container div form div:not(:last-child){
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.faq-form-container div form div:not(:last-child) div{
+	display: flex;
+	flex-direction: column;
+}
+
 .faq-form-container div form textarea {
 	resize: none;
 	border-radius: 15px;
+	height: 100px;
+	width: 250px;
 }
 
 .faq-form-button-container {
-	border-radius: 15px;
-	transition: all 0.3s ease-in-out;
 	z-index: 3;
 }
 
 .faq-form-button-container input {
 	margin: 20px !important;
+	border: solid white 2px;
+	color: var(--violet-dark);
+	background-color: #fff;
+	padding-top: 10px;
 }
 
 .faq-form-button-container input:hover {
-	transform: scale(1.1);
 	cursor: pointer;
 }
 
-.faq-question-mark-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.faq-form-question-mark {
-	position: absolute;
-	z-index: -1;
-	margin-top: 50px;
-	transition: all 0.3s ease;
-	text-align: center;
-}
-
-.faq-form-container div .faq-form-question-mark-1 {
-	animation: questionMark 5s ease-in-out infinite;
-	margin-left: -220px;
-}
-
-.faq-form-container div .faq-form-question-mark-2 {
-	margin-left: -90px;
-	animation: questionMark 5s 1s ease-in-out infinite;
-}
-
-.faq-form-container div .faq-form-question-mark-3 {
-	animation: questionMark 4s 1.5s ease-in-out infinite;
-	margin-left: 90px;
-}
-
-.faq-form-container div .faq-form-question-mark-4 {
-	animation: questionMark 5s 0.6s ease-in-out infinite;
-	margin-left: 220px;
-}
-
-.faq-form-container div .faq-form-question-mark-5 {
-	animation: questionMark 5s 1.9s ease-in-out infinite;
-	margin-left: -220px;
-}
-
-.faq-form-container div .faq-form-question-mark-6 {
-	animation: questionMark 5s 1.9s ease-in-out infinite;
-	margin-left: 90px;
-}
-
 .input-icon-wrap {
-	position: relative;
+	background-color: #f8f4fe;
+	border-radius: 12px;
+}
+
+.input-icon-wrap > div{
+
 }
 
 .input-icon-wrap:hover + span {
 	color: var(--violet);
 }
 
-.input-icon-wrap span {
+.input-icon-wrap div span {
 	position: absolute;
 	top: auto;
 	bottom: auto;
-	left: 10px;
+	left: 50px;
 	color: #aeafc5;
 	opacity: 0.6;
 	font-size: 30px;

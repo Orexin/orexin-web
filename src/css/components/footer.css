@@ -129,8 +129,21 @@ footer-wrapper > .footer-content > .upper > img {
 .socials > a span {
 	transition-duration: 0.3s;
 }
-.socials > a:hover span {
-	transform: translateY(-5px);
+
+.socials > a:hover:nth-child(1) span {
+	color: #4267B2;
+}
+
+.socials > a:hover:nth-child(2) span {
+	color: #e4405f;
+}
+
+.socials > a:hover:nth-child(3) span {
+	color: #55acee;
+}
+
+.socials > a:hover:nth-child(4) span {
+	color: #24292e;
 }
 .nobody-cares {
 	display: flex;

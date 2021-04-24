@@ -27,24 +27,6 @@
 	}
 }
 
-/* @keyframes innerCircle {
-	from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(1);
-	}
-} */
-
-@keyframes questionMark {
-	from {
-		margin-top: 50px;
-	}
-	to {
-		margin-top: -500px;
-	}
-}
-
 @keyframes rotate3D {
 	from {
 		transform: rotate3d(0, 0, 0, 0deg);

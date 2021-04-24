@@ -1,7 +1,7 @@
 import './../css/components/navbar.css';
 
-const logoWhite = require('./../img/logos/logo-white.png');
-const logoGrad = require('./../img/logos/logo-gradient.png');
+const logoWhite = require('./../img/logos/logo-white-sm.png');
+const logoGrad = require('./../img/logos/logo-gradient-sm.png');
 
 class Navbar extends HTMLElement {
 	constructor() {
@@ -21,7 +21,9 @@ class Navbar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<div class="logo">
-	<img src=${logoWhite} class="nav-logo"></img>
+	<a href="index.html">
+		<div id="nav-logo"></div>
+	</a>
 </div>
 <div class="nav-set">
 	<div class="nav-links">
@@ -49,7 +51,7 @@ class Navbar extends HTMLElement {
 
 		// Hide on scroll anim
 		const nav = document.querySelector('navbar-wrapper');
-		const navLogo = document.querySelector('.nav-logo');
+		const navLogo = document.querySelector('#nav-logo');
 
 		var prevScrollpos = window.pageYOffset;
 		var currentScrollPos = 0;
@@ -67,10 +69,10 @@ class Navbar extends HTMLElement {
 			//White nav out
 			if (document.documentElement.scrollTop >= 150) {
 				nav.classList.add('whited');
-				navLogo.setAttribute('src', logoGrad);
+				navLogo.style.content = `url(${logoGrad})`
 			} else {
 				nav.classList.remove('whited');
-				navLogo.setAttribute('src', logoWhite);
+				navLogo.style.content = `url(${logoWhite})`
 			}
 		};
 	}

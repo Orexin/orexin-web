@@ -140,6 +140,8 @@ li {
 
 body {
 	background-color: #f0f2fd;
+	overflow: hidden;
+	height: 100%;
 }
 
 .two-columns {
@@ -218,12 +220,6 @@ body {
 
 #preloader svg {
 	position: relative;
-}
-
-#inner-circle {
-	animation: innerCircle 1s ease;
-	transform-origin: center;
-	transform-box: fill-box;
 }
 
 #emblem-path-1 {

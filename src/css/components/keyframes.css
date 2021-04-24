@@ -27,14 +27,14 @@
 	}
 }
 
-@keyframes innerCircle {
+/* @keyframes innerCircle {
 	from {
 		transform: scale(0);
 	}
 	to {
 		transform: scale(1);
 	}
-}
+} */
 
 @keyframes questionMark {
 	from {

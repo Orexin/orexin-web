@@ -34,16 +34,22 @@ navbar-wrapper {
 	font-weight: 600;
 }
 
-.logo {
-	padding: 5px;
-	width: 200px;
-}
-
-.logo > img {
+#nav-logo {
+	content: url('../../img/logos/logo-white-sm.png');
 	height: auto;
 	width: 40px;
 }
 
+.logo {
+	padding: 5px;
+	width: 200px;
+}
+/* 
+.logo > img {
+	height: auto;
+	width: 40px;
+}
+ */
 .whited {
 	background-color: white !important;
 	filter: drop-shadow(0px 10px 10px #0000004b);

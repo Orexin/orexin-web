@@ -43,7 +43,7 @@ html {
 	color: white;
 }
 
-.fancy-btn-trans {
+.fancy-btn-trans, .fancy-btn-trans-violet {
 	font-size: 14px;
 	font-weight: 500;
 	border: solid white 2px;
@@ -55,10 +55,25 @@ html {
 	cursor: pointer;
 	margin: 5px;
 }
+
+.fancy-btn-trans-violet {
+	padding: 10px 10px 10px 10px;
+	border: solid var(--violet-dark) 2px;
+	color: #fff;
+	background-color: var(--violet-dark);
+}
+
 .fancy-btn-trans:hover {
 	color: white;
 	background-color: transparent;
 }
+
+.fancy-btn-trans-violet:hover {
+	color: var(--violet-dark);
+	border-color: var(--violet-dark);
+	background-color: transparent;
+}
+
 /* style classes */
 .bg-white {
 	background-color: #fff;

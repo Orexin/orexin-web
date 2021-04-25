@@ -2,6 +2,7 @@ const path = require('path');
 const buildPath = path.resolve(__dirname, 'dist');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = {
 
@@ -171,5 +172,61 @@ module.exports = {
 				removeRedundantAttributes: false,
 			}
 		}),
+/* 		new WebpackPwaManifest({
+			filename: "manifest.json",
+			name: 'Orexin Solutions s.r.o.',
+			short_name: 'Orexin',
+			start_url: '/src/index.html',
+			description: 'Orexin Solutions progressive web app',
+			background_color: '#310686',
+			theme_color: '#4508bd',
+			display: 'standalone',
+			crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+			icons: [
+			  {
+				src: path.resolve('src/img/AppIcon/icon-72x72.png'),
+				size: '72x72'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-92x92.png'),
+				size: '92x92'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-92x92.png'),
+				size: '92x92',
+				destination: path.join('icons', 'ios'),
+				ios: 'startup'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-128x128.png'),
+				size: '128x128'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-144x144.png'),
+				size: '144x144'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-152x152.png'),
+				size: '152x152'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-192x192.png'),
+				size: '192x192',
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-192x192.png'),
+				size: '192x192',
+				purpose: 'any maskable' // default
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-384x384.png'),
+				size: '384x384'
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-512x512.png'),
+				size: '512x512'
+			  }
+			]
+		  }) */
 	],
 };

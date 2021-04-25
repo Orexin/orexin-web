@@ -39,7 +39,8 @@
 		"style-loader": "^2.0.0",
 		"webpack": "^5.16.0",
 		"webpack-cli": "^4.2.0",
-		"webpack-dev-server": "^3.11.2"
+		"webpack-dev-server": "^3.11.2",
+		"webpack-pwa-manifest": "^4.3.0"
 	},
 	"dependencies": {
 		"@splidejs/splide": "^2.4.21",

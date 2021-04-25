@@ -83,21 +83,13 @@ svg {
 
 /* ROZCESTNIK */
 
-.rozcestnik {
+#rozcestnik {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	text-align: center;
 }
 
-
-.rozcestnik-content {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.rozcestnik-content svg{
+.rozcestnik-content svg {
 	display: inline-block;
 }
 

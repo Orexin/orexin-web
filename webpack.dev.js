@@ -125,19 +125,19 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: '/src/services/ecommerce.html',
 			inject: true,
-			chunks: ['main', 'services', 'ecommerce'],
+			chunks: ['main', 'ecommerce'],
 			filename: 'services/ecommerce.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: '/src/services/web-app.html',
 			inject: true,
-			chunks: ['main', 'services', 'webapp'],
+			chunks: ['main', 'webapp'],
 			filename: 'services/web-app.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: '/src/services/web-pres.html',
 			inject: true,
-			chunks: ['main', 'services', 'webpres'],
+			chunks: ['main', 'webpres'],
 			filename: 'services/web-pres.html'
 		}),
 		new WorkboxPlugin.GenerateSW({

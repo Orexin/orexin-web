@@ -1,4 +1,6 @@
-import './../components/mini-contact';
+// import './../components/mini-contact.js';
+import '../css/services.css';
+import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
 import svgWeb from './../img/svg-services/svg-web-pres.svg';

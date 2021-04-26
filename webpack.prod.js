@@ -149,7 +149,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: '/src/services/ecommerce.html',
 			inject: true,
-			chunks: ['main', 'services', 'ecommerce'],
+			chunks: ['main', 'ecommerce'],
 			filename: 'services/ecommerce.html',
 			minify: {
 				removeRedundantAttributes: false,
@@ -158,7 +158,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: '/src/services/web-app.html',
 			inject: true,
-			chunks: ['main', 'services', 'webapp'],
+			chunks: ['main', 'webapp'],
 			filename: 'services/web-app.html',
 			minify: {
 				removeRedundantAttributes: false,
@@ -167,7 +167,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: '/src/services/web-pres.html',
 			inject: true,
-			chunks: ['main', 'services', 'webpres'],
+			chunks: ['main', 'webpres'],
 			filename: 'services/web-pres.html',
 			minify: {
 				removeRedundantAttributes: false,

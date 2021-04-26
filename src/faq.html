@@ -233,50 +233,45 @@
 							</p>
 						</div>
 						<div class="column faq-question-button">
-							<a href="./terms-and-conditions.html#platebni-podminky"
-								class="fancy-btn-trans-violet">Dozvědět se více</a>
+							<a href="./terms-and-conditions.html#platebni-podminky" class="fancy-btn-trans-violet">Dozvědět se
+								více</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column is-offset-1 is-4 ml-7">
-			<div class="columns ml-10 mr-10 faq-form-container">
-				<div class="column">
-					<div class="columns is-centered faq-form-title">
-						<div class="column">
-							<h2>Zeptejte se nás</h2>
+			<div class="contact-wrapper">
+				<div class="contact-header">
+					<h2>Zeptejte se nás</h2>
+				</div>
+				<form class="contact-body">
+					<div class="form-group">
+						<label for="jmeno">Vaše jméno a příjmení</label>
+						<div class="input-icon-wrap">
+							<input id="jmeno" type="text" tabindex="1" placeholder="Jan Novák" />
+							<span class="typcn typcn-user-outline"></span>
 						</div>
 					</div>
-					<form action="POST">
+					<div class="form-group">
+						<label for="email">Váš e-mail</label>
 						<div class="input-icon-wrap">
-							<div>
-								<input id="frmNameA" type="name" tabindex="1" placeholder="Jan Novák" required />
-								<span class="typcn typcn-user-outline"></span>
-							</div>
+							<input id="email" type="text" tabindex="2" placeholder="jnovak@orexin.cz" />
+							<span class="typcn typcn-mail"></span>
 						</div>
-						<div class="input-icon-wrap">
-							<div>
-								<input type="email" name="email" id="frmEmailA" placeholder="jnovak@orexin.cz" required
-									autocomplete="email">
-								<span class="typcn typcn-mail"></span>
-							</div>
-						</div>
-						<div>
-							<div>
-								<textarea name="message" id="frmMessageA" placeholder="Vaše zpráva..."
-									required></textarea>
-							</div>
-						</div>
-						<div class="columns is-centered">
-							<div class="faq-form-button-container">
-								<input class="fancy-btn-trans" type="submit" value="Odeslat">
-							</div>
-						</div>
-					</form>
-				</div>
+					</div>
+					<div class="form-group txtarea-cont">
+						<label for="msg">Detaily projektu</label>
+						<textarea id="msg" class="is-width-100 is-height-100" tabindex="4" maxlength="5000"
+							placeholder="Detaily projektu"></textarea>
+					</div>
+					<div class="send-button form-group flex-center">
+						<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+					</div>
+					<p class="gdpr-notice">Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.
+					</p>
+				</form>
 			</div>
-		</div>
 	</section>
 
 	<!-- FOOTER -->

@@ -78,103 +78,24 @@
 	color: var(--violet-dark);
 }
 
-.faq-form-container {
-	position: relative;
-	margin-top: -10vh !important;
-	background: var(--violet-dark);
-	border-radius: 20px;
-	padding: 30px;
-	box-shadow: 0px 0px 40px RGBA(0, 0, 0, 0.45);
-}
-
-.faq-form-title {
-	margin-top: -2vh !important;
-	z-index: 3;
-}
-
-.faq-form-title {
-	z-index: 3;
-}
-
-.faq-form-title div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-
-.faq-form-title div h2 {
-	font-size: 35px;
-}
-
-.faq-form-container div form input:not(:last-child),
-.faq-form-container div form textarea {
-	color: var(--violet-dark);
-	background-color: #f8f4fe;
-	border: none;
-	border-radius: 10px;
-	padding: 10px 7px 10px 7px;
-	transition: all 0.3s ease-in-out;
-	outline: none;
-	font-size: 14px;
-	margin-top: 7px;
-	margin-left: 40px;
-}
-
-.faq-form-container div form div:not(:last-child){
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.faq-form-container div form div:not(:last-child) div{
-	display: flex;
-	flex-direction: column;
-}
-
-.faq-form-container div form div {
-	margin-bottom: 10px !important;
-	width: 300px;
-}
-
-.faq-form-container div form textarea {
-	resize: none;
-	border-radius: 15px;
-	height: 100px;
-	width: 300px;
-}
-
-.faq-form-button-container input {
-	margin: 20px !important;
-	border: solid white 2px;
-	color: var(--violet-dark);
-	background-color: #fff;
-	padding-top: 10px;
-}
-
-.faq-form-button-container input:hover {
-	cursor: pointer;
-}
-
-.input-icon-wrap {
-	background-color: #f8f4fe;
+.contact-wrapper {
+	border: 1px rgba(0, 0, 0, 0.1) solid;
+	box-shadow: 0px 0px 30px rgba(100, 100, 111, 0.2);
 	border-radius: 12px;
+	margin-top: -88px;
 }
 
-.input-icon-wrap > div{
-
+.contact-header {
+	background-color: var(--violet);
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	text-align: center;
+	padding: 15px;
 }
 
-.input-icon-wrap:hover + span {
-	color: var(--violet);
-}
-
-.input-icon-wrap div span {
-	position: absolute;
-	top: auto;
-	bottom: auto;
-	left: 50px;
-	color: #aeafc5;
-	opacity: 0.6;
-	font-size: 30px;
+.contact-body {
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	padding: 30px;
+	background: #f0f2fd;
 }

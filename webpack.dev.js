@@ -3,6 +3,7 @@ const buildPath = path.resolve(__dirname, 'dist');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const AppleTouchIconsPlugin = require('apple-touch-icons-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
@@ -148,12 +149,14 @@ module.exports = {
 		}),
 		new WebpackPwaManifest({
 			filename: "manifest.json",
+			publicPath: '/' ,
 			name: 'Orexin Solutions s.r.o.',
 			short_name: 'Orexin',
-			start_url: '/src/index.html',
+			start_url: '/index.html',
 			description: 'Orexin Solutions App',
 			background_color: '#310686',
 			theme_color: '#4508bd',
+			'theme-color': '#4508bd',
 			display: 'standalone',
 			crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
 			icons: [
@@ -201,6 +204,11 @@ module.exports = {
 				size: '512x512'
 			  }
 			]
+		}),
+		new AppleTouchIconsPlugin({
+			icon: "src/img/AppIcon/icon-92x92.png",
+			ipad: "src/img/AppIcon/icon-92x92.png",
+			resize: "crop"
 		})
 /* 		new WebpackManifestPlugin({
 			"name": "Orexin Solutions s.r.o.",

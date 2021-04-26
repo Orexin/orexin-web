@@ -45,6 +45,7 @@
 	"dependencies": {
 		"@splidejs/splide": "^2.4.21",
 		"aos": "^2.3.4",
+		"apple-touch-icons-webpack-plugin": "^1.2.0",
 		"bulma": "^0.9.1",
 		"normalize.css": "^8.0.1",
 		"npx": "^10.2.2",

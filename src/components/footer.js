@@ -19,13 +19,13 @@ class Footer extends HTMLElement {
 			<img src=${logoWhite} alt="Orexin White Logo" </div>
 			<h3>Orexin Solutions 2021</h3>
 			<div class="socials">
-				<a href="https://www.facebook.com/OrexinEcontech" target="_blank"><span
+				<a href="https://www.facebook.com/OrexinEcontech" target="_blank" rel="noopener"><span
 						class="typcn typcn-social-facebook-circular"></span></a>
-				<a href="https://www.instagram.com/orexin_econtech" target="_blank"><span
+				<a href="https://www.instagram.com/orexin_econtech" target="_blank" rel="noopener"><span
 						class="typcn typcn-social-instagram-circular"></span></a>
-				<a href="https://twitter.com/EcontechOrexin" target="_blank"><span
+				<a href="https://twitter.com/EcontechOrexin" target="_blank" rel="noopener"><span
 						class="typcn typcn-social-twitter-circular"></span></a>
-				<a href="https://github.com/Orexin" target="_blank"><span class="typcn typcn-social-github-circular"></span></a>
+				<a href="https://github.com/Orexin" target="_blank" rel="noopener"><span class="typcn typcn-social-github-circular"></span></a>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,23 @@
+.mini-contact {
+	border: 1px rgba(0, 0, 0, 0.1) solid;
+	width: 45%;
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 30px #d6d6d6;
+	background: #f0f2fd;
+}
+
+.mini-contact a {
+	color: var(--violet);
+	transition: all 0.3s ease;
+}
+
+.mini-contact a:hover {
+	color: var(--violet-darker);
+}
+
+.mini-contact label {
+	display: block;
+	margin-bottom: 5px;
+}

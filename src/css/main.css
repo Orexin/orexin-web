@@ -43,7 +43,8 @@ html {
 	color: white;
 }
 
-.fancy-btn-trans, .fancy-btn-trans-violet {
+.fancy-btn-trans,
+.fancy-btn-trans-violet {
 	font-size: 14px;
 	font-weight: 500;
 	border: solid white 2px;
@@ -281,6 +282,129 @@ body {
 	text-align: center;
 	margin-bottom: 11vh;
 	font-weight: 600;
+}
+
+/** FROMS */
+
+textarea,
+.txtarea-cont {
+	height: calc(100% - 13px);
+}
+
+input[type='text'],
+textarea {
+	color: #333333;
+	background-color: #f9f9fb; /*#f5f1ff */
+	border: 2px solid hsla(0, 0%, 100%, 0);
+	border-radius: 10px;
+	padding: 15px;
+	transition: all 0.3s ease;
+	outline: none;
+	font-weight: 500;
+	width: 100%;
+	resize: none;
+}
+
+input[type='text'] {
+	padding: 15px 15px 15px 45px;
+}
+
+input[type='text']::placeholder,
+textarea::placeholder {
+	color: #aeafc5;
+	font-size: 14px;
+}
+
+input[type='text']:hover,
+textarea:hover {
+	border-color: #dfdfe8;
+	background: white;
+	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
+}
+input[type='text']:focus,
+textarea:focus {
+	border-color: var(--violet);
+	background: white;
+}
+
+.form-group {
+	padding-bottom: 24px;
+}
+
+.form-group label {
+	color: #02044a;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+form p.gdpr-notice {
+	text-align: center;
+	color: #02044a;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.input-icon-wrap {
+	position: relative;
+}
+
+.input-icon-wrap:hover + span {
+	color: var(--violet);
+}
+
+.input-icon-wrap span {
+	position: absolute;
+	top: auto;
+	bottom: auto;
+	left: 10px;
+	color: #aeafc5;
+	opacity: 0.6;
+	font-size: 30px;
+}
+
+#select-boxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 16px;
+}
+
+.select-box {
+	width: 100%;
+}
+
+.select-box > input {
+	display: none;
+}
+
+.select-box > label {
+	background: #fafbfc;
+	color: #494a7d;
+	border: 2px solid hsla(0, 0%, 100%, 0);
+	text-align: center;
+	border-radius: 10px;
+	padding: 15px 0;
+	margin: 0;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	user-select: none;
+}
+
+.select-box input:hover + label {
+	border-color: #dfdfe8;
+	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
+}
+
+.select-box input + label:focus {
+	border-color: #dfdfe8;
+	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
+	outline: none;
+}
+
+.select-box input:checked + label {
+	border-color: var(--violet);
+	background: #f5f1ff;
+	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
 }
 
 /** RESPO */

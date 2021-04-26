@@ -26,7 +26,7 @@ window.onload = function () {
 // underline.shiftingUnderline();
 
 // sub-pages-paralax
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
 	let container = document.getElementsByClassName('uvod-subpages-container');
 	let title = document.getElementsByClassName('uvod-subpages-title');
 	var value = window.scrollY;
@@ -34,4 +34,4 @@ window.addEventListener('scroll', function(){
 		container[i].style.marginTop = `-${value + 0.5}px`;
 		title[i].style.marginTop = `+${value + 0.15}px`;
 	}
-})
+});

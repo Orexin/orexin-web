@@ -83,21 +83,13 @@ svg {
 
 /* ROZCESTNIK */
 
-.rozcestnik {
+#rozcestnik {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	text-align: center;
 }
 
-
-.rozcestnik-content {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.rozcestnik-content svg{
+.rozcestnik-content svg {
 	display: inline-block;
 }
 
@@ -447,7 +439,12 @@ svg {
 
 /* CENIK END*/
 
-/* POSTUP VYROBY*/
+/* CONTACT */
+
+.services-contact-wrap {
+	padding: 80px 0;
+}
+
 .contact-left {
 	background: var(--violet-light);
 	padding-bottom: 20%;
@@ -471,6 +468,8 @@ svg {
 .contact-left-text p {
 	margin-left: 50px;
 }
+
+/* TIMELINE */
 
 .timeline {
 	list-style-type: none;

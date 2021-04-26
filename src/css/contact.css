@@ -40,7 +40,7 @@
 }
 
 .contact-hero a:nth-child(1) > span:hover {
-	color: #4267B2;
+	color: #4267b2;
 }
 
 .contact-hero a:nth-child(2) > span:hover {
@@ -165,6 +165,7 @@
 .contact-form {
 	width: 85%;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 12px;
 	transition: all 0.5s;
 	margin-top: -154px;
 }
@@ -174,7 +175,7 @@
 }
 
 .contact-form-header {
-	background-color: #f9f9fb;
+	background: #f0f2fd;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	padding: 30px;
@@ -216,33 +217,17 @@
 	padding: 30px;
 }
 
-.contact-form-body label,
-.contact-form-body p,
-.services-contact label,
-.services-contact p {
-	color: #02044a;
-	background: rgba(0, 0, 0, 0);
-	font-size: 14px;
-	font-weight: 500;
-}
-
 .contact-form-body p {
 	text-align: center;
 }
 
-.contact-form-body a,
-.services-contact a {
+.contact-form-body a {
 	color: var(--violet);
 	transition: all 0.3s ease;
 }
 
-.contact-form-body a:hover,
-.services-contact a:hover {
+.contact-form-body a:hover {
 	color: var(--violet-darker);
-}
-
-.form-group {
-	padding-bottom: 24px;
 }
 
 .form-inputs > .column:nth-child(1) {
@@ -257,7 +242,6 @@
 	margin-bottom: 0;
 }
 
-.services-contact label,
 .contact-form-body label {
 	display: block;
 	margin-bottom: 5px;
@@ -268,110 +252,6 @@
 }
 
 /* gud shadow box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);*/
-textarea,
-.txtarea-cont {
-	height: calc(100% - 13px);
-}
-
-input[type='text'],
-textarea {
-	color: #333333;
-	background-color: #f9f9fb; /*#f5f1ff */
-	border: 2px solid hsla(0, 0%, 100%, 0);
-	border-radius: 10px;
-	padding: 15px;
-	transition: all 0.3s ease;
-	outline: none;
-	font-weight: 500;
-	width: 100%;
-	resize: none;
-}
-
-input[type='text'] {
-	padding: 15px 15px 15px 45px;
-}
-
-input[type='text']::placeholder,
-textarea::placeholder {
-	color: #aeafc5;
-	font-size: 14px;
-}
-
-input[type='text']:hover,
-textarea:hover {
-	border-color: #dfdfe8;
-	background: white;
-	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
-}
-input[type='text']:focus,
-textarea:focus {
-	border-color: var(--violet);
-	background: white;
-}
-
-.input-icon-wrap {
-	position: relative;
-}
-
-.input-icon-wrap:hover + span {
-	color: var(--violet);
-}
-
-.input-icon-wrap span {
-	position: absolute;
-	top: auto;
-	bottom: auto;
-	left: 10px;
-	color: #aeafc5;
-	opacity: 0.6;
-	font-size: 30px;
-}
-
-.select-boxes {
-	margin: 0 0 24px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 16px;
-}
-
-.select-box {
-	width: 100%;
-}
-
-.select-box > input {
-	display: none;
-}
-
-.select-box > label {
-	background: #fafbfc;
-	color: #494a7d;
-	border: 2px solid hsla(0, 0%, 100%, 0);
-	text-align: center;
-	border-radius: 10px;
-	padding: 15px 0;
-	margin: 0;
-	font-weight: 500;
-	transition: all 0.3s ease;
-	cursor: pointer;
-	user-select: none;
-}
-
-.select-box input:hover + label {
-	border-color: #dfdfe8;
-	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
-}
-
-.select-box input + label:focus {
-	border-color: #dfdfe8;
-	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
-	outline: none;
-}
-
-.select-box input:checked + label {
-	border-color: var(--violet);
-	background: #f5f1ff;
-	box-shadow: 1px 1px 4px 0 rgba(2, 4, 74, 0.04);
-}
 
 /* korekce poslední ikony, bcs typicons nemůžou být všechny stejně velké že :))))) */
 .form-group:nth-child(3) > .input-icon-wrap {
@@ -409,23 +289,4 @@ textarea:focus {
 	font-size: 40px;
 	text-align: center;
 	color: var(--violet);
-}
-
-/* SERVICE - CONTACT */
-
-.services-contact-wrap {
-	padding: 80px 0;
-}
-
-.services-contact {
-	border: 1px rgba(0, 0, 0, 0.1) solid;
-	width: 45%;
-	margin: 0 auto;
-	padding: 30px;
-	border-radius: 12px;
-	box-shadow: 0px 0px 30px #d6d6d6;
-}
-
-.services-contact p {
-	text-align: center;
 }

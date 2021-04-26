@@ -1,5 +1,6 @@
 const path = require('path');
 const buildPath = path.resolve(__dirname, 'dist');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
@@ -74,6 +75,9 @@ module.exports = {
 	},
 
 	plugins: [
+		new CleanWebpackPlugin({
+			verbose: true,
+		}),
 		/* INDEX */
 		new HtmlWebpackPlugin({
 			template: '/src/index.html',
@@ -209,7 +213,7 @@ module.exports = {
 			icon: "src/img/AppIcon/icon-92x92.png",
 			ipad: "src/img/AppIcon/icon-92x92.png",
 			resize: "crop"
-		})
+		}),
 /* 		new WebpackManifestPlugin({
 			"name": "Orexin Solutions s.r.o.",
 			"short_name": "Orexin",
@@ -268,5 +272,9 @@ module.exports = {
 			  }
 			]
 		}), */
-	]
+	],
+	output: {
+		filename: '[name].[contenthash].js',
+		 path: path.resolve(__dirname, 'dist'),
+	},
 };

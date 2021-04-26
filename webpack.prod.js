@@ -77,6 +77,9 @@ module.exports = {
 
 
 	plugins: [
+		new CleanWebpackPlugin({
+			verbose: true,
+		}),
 		/* INDEX */
 		new HtmlWebpackPlugin({
 			template: '/src/index.html',
@@ -248,6 +251,10 @@ module.exports = {
 			icon: "src/img/AppIcon/icon-92x92.png",
 			ipad: "src/img/AppIcon/icon-92x92.png",
 			resize: "crop"
-		})
+		}),
 	],
+	output: {
+		filename: '[name].[contenthash].js',
+		 path: path.resolve(__dirname, 'dist'),
+	},
 };

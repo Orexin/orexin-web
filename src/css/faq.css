@@ -99,3 +99,7 @@
 	padding: 30px;
 	background: #f0f2fd;
 }
+
+.contact-body textarea {
+	height: 130px;
+}

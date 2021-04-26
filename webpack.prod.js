@@ -3,23 +3,24 @@ const buildPath = path.resolve(__dirname, 'dist');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
 
 	devtool: 'source-map',
 
 	entry: {
-		main: './src/js/main.js',
-		article: './src/js/article.js',
+		main: '/src/js/main.js',
+		article: '/src/js/article.js',
 		// pages
-		index: './src/js/index.js',
-		about: './src/js/about.js',
-		contact: './src/js/contact.js',
-		faq: './src/js/faq.js',
-		services: './src/js/services.js',
-		webpres: './src/js/web-pres.js',
-		webapp: './src/js/web-app.js',
-		ecommerence: './src/js/ecommerce.js'
+		index: '/src/js/index.js',
+		about: '/src/js/about.js',
+		contact: '/src/js/contact.js',
+		faq: '/src/js/faq.js',
+		services: '/src/js/services.js',
+		webpres: '/src/js/web-pres.js',
+		webapp: '/src/js/web-app.js',
+		ecommerence: '/src/js/ecommerce.js'
 	},
 
 	output: {
@@ -77,7 +78,7 @@ module.exports = {
 	plugins: [
 		/* INDEX */
 		new HtmlWebpackPlugin({
-			template: './src/index.html',
+			template: '/src/index.html',
 			inject: true,
 			chunks: ['main', 'index'],
 			filename: 'index.html',
@@ -87,7 +88,7 @@ module.exports = {
 		}),
 		/* ABOUT */
 		new HtmlWebpackPlugin({
-			template: './src/about.html',
+			template: '/src/about.html',
 			inject: true,
 			chunks: ['main', 'about'],
 			filename: 'about.html',
@@ -97,7 +98,7 @@ module.exports = {
 		}),
 		/* CONTACT */
 		new HtmlWebpackPlugin({
-			template: './src/contact.html',
+			template: '/src/contact.html',
 			inject: true,
 			chunks: ['main', 'contact'],
 			filename: 'contact.html',
@@ -107,7 +108,7 @@ module.exports = {
 		}),
 		/* FAQ */
 		new HtmlWebpackPlugin({
-			template: './src/faq.html',
+			template: '/src/faq.html',
 			inject: true,
 			chunks: ['main', 'faq'],
 			filename: 'faq.html',
@@ -117,7 +118,7 @@ module.exports = {
 		}),
 		/* PRIVACY */
 		new HtmlWebpackPlugin({
-			template: './src/privacy.html',
+			template: '/src/privacy.html',
 			inject: true,
 			chunks: ['main', 'article'],
 			filename: 'privacy.html',
@@ -127,7 +128,7 @@ module.exports = {
 		}),
 		/* TER.MS AND CONDITIONS */
 		new HtmlWebpackPlugin({
-			template: './src/terms-and-conditions.html',
+			template: '/src/terms-and-conditions.html',
 			inject: true,
 			chunks: ['main', 'article'],
 			filename: 'terms-and-conditions.html',
@@ -137,7 +138,7 @@ module.exports = {
 		}),
 		/* SERVICES */
 		new HtmlWebpackPlugin({
-			template: './src/services.html',
+			template: '/src/services.html',
 			inject: true,
 			chunks: ['main', 'services'],
 			filename: 'services.html',
@@ -146,7 +147,7 @@ module.exports = {
 			}
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/services/ecommerce.html',
+			template: '/src/services/ecommerce.html',
 			inject: true,
 			chunks: ['main', 'services', 'ecommerce'],
 			filename: 'services/ecommerce.html',
@@ -155,7 +156,7 @@ module.exports = {
 			}
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/services/web-app.html',
+			template: '/src/services/web-app.html',
 			inject: true,
 			chunks: ['main', 'services', 'webapp'],
 			filename: 'services/web-app.html',
@@ -164,7 +165,7 @@ module.exports = {
 			}
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/services/web-pres.html',
+			template: '/src/services/web-pres.html',
 			inject: true,
 			chunks: ['main', 'services', 'webpres'],
 			filename: 'services/web-pres.html',
@@ -172,7 +173,13 @@ module.exports = {
 				removeRedundantAttributes: false,
 			}
 		}),
-/* 		new WebpackPwaManifest({
+		new WorkboxPlugin.GenerateSW({
+			// these options encourage the ServiceWorkers to get in there fast
+			// and not allow any straggling "old" SWs to hang around
+			clientsClaim: true,
+			skipWaiting: true,
+		}),
+		new WebpackPwaManifest({
 			filename: "manifest.json",
 			name: 'Orexin Solutions s.r.o.',
 			short_name: 'Orexin',
@@ -195,7 +202,13 @@ module.exports = {
 				src: path.resolve('src/img/AppIcon/icon-92x92.png'),
 				size: '92x92',
 				destination: path.join('icons', 'ios'),
-				ios: 'startup'
+				ios: true //ios support
+			  },
+			  {
+				src: path.resolve('src/img/AppIcon/icon-92x92.png'),
+				size: '92x92',
+				destination: path.join('icons', 'ios'),
+				ios: 'startup' //ios support
 			  },
 			  {
 				src: path.resolve('src/img/AppIcon/icon-128x128.png'),
@@ -227,6 +240,6 @@ module.exports = {
 				size: '512x512'
 			  }
 			]
-		  }) */
+		  })
 	],
 };

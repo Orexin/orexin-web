@@ -45,7 +45,7 @@ class MiniContact extends HTMLElement {
 				<div class="send-button form-group flex-center">
 					<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
 				</div>
-				<p class="gdpr-notice">Odesláním souhlasíte se <a href="#" tabindex="9">zpracováním osobních údajů</a>.</p>
+				<p class="gdpr-notice">Odesláním souhlasíte se <a href="/privacy.html" tabindex="9">zpracováním osobních údajů</a>.</p>
 			</form>
 		</div>
 		`;

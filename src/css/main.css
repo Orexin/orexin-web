@@ -160,6 +160,23 @@ body {
 	height: 100%;
 }
 
+.quick-desc {
+	text-align: left !important;
+	position: relative;
+}
+
+.quick-desc h2{
+	font-size: 30px;
+	color: var(--violet);
+	margin: 0;
+	position: relative;
+}
+
+.quick-desc p {
+	font-size: 16px;
+	color: var(--text-gray);
+}
+
 .two-columns {
 	display: grid;
 	gap: 1rem;

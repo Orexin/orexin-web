@@ -55,6 +55,10 @@
 	color: #24292e;
 }
 
+.contact-hero a:nth-child(5) > span:hover {
+	color: #2867B2;
+}
+
 /*
 .contact-hero.socials {
 	background: none;

@@ -93,6 +93,14 @@ svg {
 	display: inline-block;
 }
 
+.quick-desc {
+	margin-top: 50px !important;
+}
+
+.quick-desc h2{
+	font-size: 40px;
+}
+
 #svg-sluzby-rozcestnik-web-pres {
 	transition: all 0.5s 0.25s ease-in-out;
 	transform: translate(-25px, 200px);
@@ -296,6 +304,10 @@ svg {
 	transform: translateY(100px);
 	transition: all 0.75s ease-in-out;
 	opacity: 0;
+}
+
+#grafika {
+	margin-top: -100px;
 }
 
 #grafika p {

@@ -145,6 +145,11 @@ footer-wrapper > .footer-content > .upper > img {
 .socials > a:hover:nth-child(4) span {
 	color: #24292e;
 }
+
+.socials > a:hover:nth-child(5) span {
+	color: #2867B2;
+}
+
 .nobody-cares {
 	display: flex;
 	flex-direction: row;

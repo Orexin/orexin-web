@@ -107,20 +107,6 @@
 	position: relative;
 	z-index: 1;
 }
-.quick-desc {
-	text-align: left !important;
-}
-
-.quick-desc h2 {
-	font-size: 30px;
-	color: var(--violet);
-	margin: 0;
-}
-
-.quick-desc p {
-	font-size: 16px;
-	color: var(--text-gray);
-}
 
 .cards {
 	display: flex;

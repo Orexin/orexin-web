@@ -239,15 +239,14 @@ body {
 
 #preloader {
 	background: var(--violet-dark);
+	position: fixed;
 	margin: auto;
 	width: 100%;
 	height: 100%;
 	display: block;
 	box-sizing: border-box;
 	text-align: center;
-	position: absolute;
 	z-index: 1000000;
-	padding-top: 20%;
 	padding-left: 3%;
 }
 
@@ -267,6 +266,11 @@ body {
 	transform-box: fill-box;
 	-webkit-animation: moveClockwise 6.5s linear infinite;
 	animation: emblemPath2 6.5s linear infinite;
+}
+
+.loading {
+	overflow-y: hidden;
+	height: 100%;
 }
 
 /*! PRELAODER  END!*/

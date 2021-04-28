@@ -14,13 +14,16 @@ import '../components/footer';
 import AOS from 'aos';
 // import * as underline from './shifting-underline';
 
+const preloader = document.getElementById('preloader')
+
 window.onload = function () {
 	// AOS
 	AOS.init({ once: true });
 	// ✨ aestetic title ✨
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
 	// yeet out preloader
-	document.getElementById('preloader').style.display = 'none';
+	//preloader.style.display = 'none';
+	preloader.classList.remove('loading')
 };
 
 // underline.shiftingUnderline();

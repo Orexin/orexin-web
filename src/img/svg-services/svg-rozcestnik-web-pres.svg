@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="678"
    height="690"
    viewBox="0 0 678 690"
    fill="none"
-   xmlns="http://www.w3.org/2000/svg">
+   version="1.1"
+   id="svg1055"
+   sodipodi:docname="svg-rozcestnik-web-pres.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata1059">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1900"
+     inkscape:window-height="1025"
+     id="namedview1057"
+     showgrid="false"
+     inkscape:zoom="1.2"
+     inkscape:cx="480.66746"
+     inkscape:cy="324.04597"
+     inkscape:window-x="10"
+     inkscape:window-y="45"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg-sluzby-rozcestnik-web-pres" />
   <g
      id="svg-sluzby-rozcestnik-web-pres"
      transform="translate(7)">
@@ -39,7 +80,8 @@
        id="svg-sluzby-rozcestnik-web-pres-nav">
       <g
          filter="url(#shadow-1)"
-         id="g2230">
+         id="g2230"
+         style="fill:#ffffff;fill-opacity:1;opacity:1;filter:url(#filter1073)">
         <rect
            x="103"
            y="201"
@@ -47,7 +89,8 @@
            height="26.2857"
            rx="13.1429"
            fill="#ffffff"
-           id="rect2228" />
+           id="rect2228"
+           style="fill:#ffffff;fill-opacity:1" />
       </g>
       <path
          d="m 130.752,219.072 c -1.088,0 -1.936,-0.312 -2.544,-0.936 -0.608,-0.624 -0.912,-1.532 -0.912,-2.724 V 210.6 h 0.888 v 4.776 c 0,0.976 0.22,1.704 0.66,2.184 0.44,0.48 1.076,0.72 1.908,0.72 0.84,0 1.48,-0.24 1.92,-0.72 0.44,-0.48 0.66,-1.208 0.66,-2.184 V 210.6 h 0.864 v 4.812 c 0,1.192 -0.304,2.1 -0.912,2.724 -0.6,0.624 -1.444,0.936 -2.532,0.936 z m 0.864,-10.644 h 1.14 l -1.944,1.488 h -0.84 z m 10.38,4.26 -2.808,6.312 h -0.876 l -2.796,-6.312 h 0.888 l 2.364,5.376 2.388,-5.376 z m 3.604,6.372 c -0.608,0 -1.156,-0.136 -1.644,-0.408 -0.488,-0.28 -0.872,-0.664 -1.152,-1.152 -0.28,-0.488 -0.42,-1.04 -0.42,-1.656 0,-0.616 0.14,-1.168 0.42,-1.656 0.28,-0.488 0.664,-0.868 1.152,-1.14 0.488,-0.272 1.036,-0.408 1.644,-0.408 0.608,0 1.156,0.136 1.644,0.408 0.488,0.272 0.868,0.652 1.14,1.14 0.28,0.488 0.42,1.04 0.42,1.656 0,0.616 -0.14,1.168 -0.42,1.656 -0.272,0.488 -0.652,0.872 -1.14,1.152 -0.488,0.272 -1.036,0.408 -1.644,0.408 z m 0,-0.756 c 0.448,0 0.848,-0.1 1.2,-0.3 0.36,-0.208 0.64,-0.5 0.84,-0.876 0.2,-0.376 0.3,-0.804 0.3,-1.284 0,-0.48 -0.1,-0.908 -0.3,-1.284 -0.2,-0.376 -0.48,-0.664 -0.84,-0.864 -0.352,-0.208 -0.752,-0.312 -1.2,-0.312 -0.448,0 -0.852,0.104 -1.212,0.312 -0.352,0.2 -0.632,0.488 -0.84,0.864 -0.2,0.376 -0.3,0.804 -0.3,1.284 0,0.48 0.1,0.908 0.3,1.284 0.208,0.376 0.488,0.668 0.84,0.876 0.36,0.2 0.764,0.3 1.212,0.3 z m 10.703,-8.208 V 219 h -0.816 v -1.248 c -0.256,0.424 -0.596,0.748 -1.02,0.972 -0.416,0.224 -0.888,0.336 -1.416,0.336 -0.592,0 -1.128,-0.136 -1.608,-0.408 -0.48,-0.272 -0.856,-0.652 -1.128,-1.14 -0.272,-0.488 -0.408,-1.044 -0.408,-1.668 0,-0.624 0.136,-1.18 0.408,-1.668 0.272,-0.488 0.648,-0.864 1.128,-1.128 0.48,-0.272 1.016,-0.408 1.608,-0.408 0.512,0 0.972,0.108 1.38,0.324 0.416,0.208 0.756,0.516 1.02,0.924 v -3.792 z m -3.18,8.208 c 0.44,0 0.836,-0.1 1.188,-0.3 0.36,-0.208 0.64,-0.5 0.84,-0.876 0.208,-0.376 0.312,-0.804 0.312,-1.284 0,-0.48 -0.104,-0.908 -0.312,-1.284 -0.2,-0.376 -0.48,-0.664 -0.84,-0.864 -0.352,-0.208 -0.748,-0.312 -1.188,-0.312 -0.448,0 -0.852,0.104 -1.212,0.312 -0.352,0.2 -0.632,0.488 -0.84,0.864 -0.2,0.376 -0.3,0.804 -0.3,1.284 0,0.48 0.1,0.908 0.3,1.284 0.208,0.376 0.488,0.668 0.84,0.876 0.36,0.2 0.764,0.3 1.212,0.3 z"
@@ -314,7 +357,8 @@
        id="svg-sluzby-rozcestnik-web-pres-card-bottom-left">
       <g
          filter="url(#shadow-1)"
-         id="g2340">
+         id="g2340"
+         style="filter:url(#filter1087)">
         <rect
            x="255"
            y="465"
@@ -362,9 +406,10 @@
       <path
          fill-rule="evenodd"
          clip-rule="evenodd"
-         d="m 455.151,568.996 c 1.349,-25.374 2.577,-37.135 14.986,-60.829 10.34,-23.695 28.954,-47.389 37.227,-71.084 10.341,-23.694 10.341,-47.388 10.341,-59.236 V 366 c 0,0 18.048,0 19.735,0 1.686,0 6.12,0.806 9.442,2.781 3.55,2.111 5.374,3.988 7.42,7.647 2.041,3.652 2.698,8.342 2.698,10.428 0,2.086 0,26.533 0,50.227 0,23.695 0,47.389 0,71.084 0,23.694 0,16.279 0,39.974 0,0 0,4.866 -2.024,9.037 -2.023,4.171 -4.543,6.929 -8.094,9.037 -5.058,3.005 -10.117,2.781 -10.117,2.781 z"
+         d="m 455.151,568.996 c 1.349,-25.374 2.577,-37.135 14.986,-60.829 10.34,-23.695 28.954,-47.389 37.227,-71.084 10.341,-23.694 10.341,-47.388 10.341,-59.236 V 366 h 19.735 c 1.686,0 6.10759,0.6197 9.42959,2.5947 3.55,2.111 5.57246,3.76958 7.61846,7.42858 2.041,3.652 2.70566,8.34201 2.698,10.428 L 557,437.083 v 71.084 39.974 c 0,0 -0.003,5.19263 -2.0274,9.36363 -2.023,4.171 -3.88875,7.04868 -7.43975,9.15668 -5.058,3.005 -10.76785,2.33469 -10.76785,2.33469 z"
          fill="#6a1eff"
-         id="path2352" />
+         id="path2352"
+         sodipodi:nodetypes="cccscsccsccccccc" />
     </g>
     <g
        id="svg-sluzby-rozcestnik-web-pres-card-top-left">
@@ -387,9 +432,10 @@
          fill="#4508bd"
          id="path2358" />
       <path
-         d="m 254,415.6 h 145.371 c 0,0 0,16.534 0,18.996 0,2.463 -0.78,6.385 -2.692,9.85 -2.043,3.703 -3.861,5.606 -7.403,7.74 -3.535,2.129 -7.403,2.814 -10.095,2.814 -2.692,0 -101.784,0 -103.644,0 -1.861,0 -7.909,-0.68 -11.442,-2.814 -4.025,-2.433 -6.053,-4.77 -8.076,-9.147 -1.414,-3.06 -2.019,-6.332 -2.019,-8.443 0,-2.111 0,-18.996 0,-18.996 z"
+         d="m 254,415.6 h 145.371 v 18.996 c 0,2.463 -0.78,6.385 -2.692,9.85 -2.043,3.703 -3.861,5.606 -7.403,7.74 -3.535,2.129 -7.403,2.814 -10.095,2.814 H 275.537 c -1.861,0 -8.02259,-0.21641 -11.55559,-2.35041 -4.025,-2.433 -6.49716,-4.64975 -8.52016,-9.02675 C 254.04725,440.56284 254,436.707 254,434.596 Z"
          fill="#4508bd"
-         id="path2360" />
+         id="path2360"
+         sodipodi:nodetypes="ccsccssccsc" />
     </g>
     <g
        id="svg-sluzby-rozcestnik-web-pres-card-top-right">
@@ -408,27 +454,122 @@
       <path
          fill-rule="evenodd"
          clip-rule="evenodd"
-         d="m 557,267 c 0,3.5 0,14.549 0,14.549 v 50.879 c 0,0 -7.708,-31.123 -14.473,-44.925 -6.765,-13.802 -15.616,-19.756 -29.853,-28.552 l -14.237,-8.795 h 38.369 c 0,0 6.826,0 12.396,3.844 5.57,3.844 7.798,9.5 7.798,13 z"
+         d="m 557,267 v 14.549 50.879 c 0,0 -7.708,-31.123 -14.473,-44.925 -6.765,-13.802 -15.616,-19.756 -29.853,-28.552 l -14.237,-8.795 h 38.369 c 0,0 6.90689,-0.83461 12.59697,2.82929 C 555.70356,257.04231 557,263.5 557,267 Z"
          fill="#4508bd"
-         id="path2366" />
+         id="path2366"
+         sodipodi:nodetypes="sccscccss" />
       <path
          fill-rule="evenodd"
          clip-rule="evenodd"
-         d="m 449.549,250.153 -3.14,4.38 c -3.14,4.381 -9.421,13.142 -1.57,21.903 7.851,8.761 23.385,17.522 21.815,26.283 -1.57,8.761 -20.245,17.523 -18.675,26.284 1.57,8.761 29.833,17.522 43.965,21.902 l 14.131,4.381 H 431.91 c 0,0 -4.009,0 -8.686,-1.813 -4.677,-1.812 -6.682,-4.229 -9.02,-7.855 -2.339,-3.625 -2.339,-7.854 -2.339,-7.854 0,-4.381 0,-0.605 0,-8.761 0,-8.157 0,-17.523 0,-26.284 0,-8.761 0,-18.126 0,-26.283 0,-8.157 0,-3.776 0,-8.157 0,0 0,-3.625 1.337,-6.646 1.336,-3.021 4.009,-6.344 8.686,-9.063 4.677,-2.719 10.913,-2.417 10.913,-2.417 z"
+         d="m 449.549,250.153 -3.14,4.38 c -3.14,4.381 -9.421,13.142 -1.57,21.903 7.851,8.761 23.385,17.522 21.815,26.283 -1.57,8.761 -20.245,17.523 -18.675,26.284 1.57,8.761 29.833,17.522 43.965,21.902 l 14.131,4.381 H 431.91 c 0,0 -4.36438,0.59029 -9.04138,-1.22271 -4.677,-1.812 -6.61798,-4.37354 -8.86085,-8.17651 -2.339,-3.625 -2.14277,-8.12278 -2.14277,-8.12278 v -8.761 -26.284 -26.283 -8.157 c 0,0 0.0211,-4.32903 1.35808,-7.35003 1.336,-3.021 2.4241,-5.47352 7.0862,-8.21799 5.30254,-3.12148 12.49172,-2.55798 12.49172,-2.55798 z"
          fill="#5c09ff"
-         id="path2368" />
+         id="path2368"
+         sodipodi:nodetypes="ccssscccccccccccscc" />
     </g>
   </g>
   <defs
      id="defs3206">
-     <filter id="shadow-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-         <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
-         <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
-         <feMerge>
-            <feMergeNode in="shadowMatrixOuter1"/>
-            <feMergeNode in="SourceGraphic"/>
-         </feMerge>
-   </filter>
+    <filter
+       id="shadow-1"
+       x="-0.13388924"
+       y="-0.18588506"
+       width="1.2677785"
+       height="1.3717701"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="0"
+         dy="4"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset1041" />
+      <feGaussianBlur
+         stdDeviation="7.9775673"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur1043" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+         in="shadowBlurOuter1"
+         type="matrix"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix1045" />
+      <feMerge
+         id="feMerge1051">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode1047" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode1049" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter1073"
+       x="-0.04359701"
+       y="-0.75820954"
+       width="1.087194"
+       height="2.5164191"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="0"
+         dy="4"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset1061" />
+      <feGaussianBlur
+         stdDeviation="8.3041952"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur1063" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+         in="shadowBlurOuter1"
+         type="matrix"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix1065" />
+      <feMerge
+         id="feMerge1071">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode1067" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode1069" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filter1087"
+       x="-0.36775863"
+       y="-0.51057751"
+       width="1.7355173"
+       height="2.021155"
+       filterUnits="objectBoundingBox">
+      <feOffset
+         dx="0"
+         dy="4"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset1075" />
+      <feGaussianBlur
+         stdDeviation="21.912285"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur1077" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+         in="shadowBlurOuter1"
+         type="matrix"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix1079" />
+      <feMerge
+         id="feMerge1085">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode1081" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode1083" />
+      </feMerge>
+    </filter>
   </defs>
 </svg>

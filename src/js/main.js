@@ -22,11 +22,10 @@ window.onload = function () {
 	// ✨ aestetic title ✨
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
 	// yeet out preloader
-	//preloader.style.display = 'none';
+	preloader.style.display = 'none';
 	preloader.classList.remove('loading')
+	console.log("kokot")
 };
-
-// underline.shiftingUnderline();
 
 // sub-pages-paralax
 window.addEventListener('scroll', function () {

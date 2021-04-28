@@ -79,14 +79,15 @@
 }
 
 .contact-wrapper {
-	border: 1px rgba(0, 0, 0, 0.1) solid;
+
 	box-shadow: 0px 0px 30px rgba(100, 100, 111, 0.2);
 	border-radius: 12px;
 	margin-top: -88px;
+	background-color: var(--violet);
 }
 
 .contact-header {
-	background-color: var(--violet);
+
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	text-align: center;
@@ -94,10 +95,12 @@
 }
 
 .contact-body {
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
+	border-radius: 9px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 	padding: 30px;
 	background: #f0f2fd;
+	border: 0.5px #e8e8e8 solid;
 }
 
 .contact-body textarea {

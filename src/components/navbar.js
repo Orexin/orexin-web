@@ -38,6 +38,9 @@ class Navbar extends HTMLElement {
 				<a href="/services.html">Služby</a>
 			</li>
 			<li class="nav-li">
+				<a href="/blog.html">Blog</a>
+			</li>
+			<li class="nav-li">
 				<a href="/partnership.html">Partnerství</a>
 			</li>
 		</ul>

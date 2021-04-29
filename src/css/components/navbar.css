@@ -79,19 +79,19 @@ navbar-wrapper {
 }
 
 .fancy-btn-trans {
-	color: #fff;
+	color: #fff !important;
 	background-color: var(--violet-dark);
 	border-color: var(--violet-dark);
 }
 
 .fancy-btn-trans:hover {
-	color: #fff;
+	color: #fff !important;
 	background-color: none;
 	border-color: #fff;
 }
 
 .fancy-btn-trans-whited:hover {
-	color: var(--violet-dark);
+	color: var(--violet-dark) !important;
 	border-color: var(--violet-dark);
 }
 

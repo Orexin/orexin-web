@@ -1,5 +1,5 @@
 .article *,
-a:not(.footer-a):visited {
+a:not(.footer-a.fancy-btn-trans):visited {
 	color: var(--violet-dark);
 }
 
@@ -24,7 +24,7 @@ a:not(.footer-a):hover h3 {
 	color: var(--violet-light);
 }
 
-.in-text-link:not(.footer-a):hover {
+.in-text-link:not(.footer-a.fancy-btn-trans):hover {
 	color: var(--violet);
 }
 
@@ -55,7 +55,7 @@ li:not(.sub-ul):not(.nav-li):before {
 
 .article div:nth-child(2) ol li,
 .article div:nth-child(2) ol li * {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .article div:nth-child(1) ol li:hover,
@@ -102,18 +102,20 @@ li:not(.sub-ul):not(.nav-li):before {
 	margin-bottom: 70px;
 }
 
-.article div:nth-child(4) a {
+.article div:nth-child(3) a {
 	display: block;
 	margin-left: 15px;
 }
 
-.article div:nth-child(4) a img {
-	max-height: 30px;
+.article div:nth-child(3) a img {
+	height: 20px;
+	max-width: 100%;
 	margin-top: 10px;
 	margin-right: 10px;
+	display: inline-block;
 }
 
-.article div:nth-child(4) a p {
+.article div:nth-child(3) a p {
 	display: inline-block;
 	font-size: 20px;
 	transform: translateY(-25%);

@@ -38,9 +38,9 @@ class Footer extends HTMLElement {
 		</div>
 	</div>
 	<div class="nobody-cares">
-		<a href="./faq.html" class="footer-a">Nejčastější dotazy</a>
-		<a href="./privacy.html" class="footer-a">Ochrana osobních údajů</a>
-		<a href="./terms-and-conditions.html" class="footer-a">Obchodní podmínky</a>
+		<a href="/faq.html" class="footer-a">Nejčastější dotazy</a>
+		<a href="/privacy.html" class="footer-a">Ochrana osobních údajů</a>
+		<a href="/terms-and-conditions.html" class="footer-a">Obchodní podmínky</a>
 	</div>
 		`;
 	}

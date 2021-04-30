@@ -1,4 +1,93 @@
 import '../css/about.css';
+import svgTechstack from './../img/about-technologies.svg';
+
+// inject SVG
+document.getElementById('svg-techstack').innerHTML = svgTechstack;
+
+// redirect to pages
+document.getElementById('svg-techstack-html').addEventListener('click', (event) => {
+	window.open('https://www.w3schools.com/html/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-python').addEventListener('click', (event) => {
+	window.open('https://www.python.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-css').addEventListener('click', (event) => {
+	window.open('https://www.w3schools.com/css/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-typescript').addEventListener('click', (event) => {
+	window.open('https://www.typescriptlang.org', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-javascript').addEventListener('click', (event) => {
+	window.open('https://www.javascript.com/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-webpack').addEventListener('click', (event) => {
+	window.open('https://webpack.js.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-jwt').addEventListener('click', (event) => {
+	window.open('https://jwt.io/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-express').addEventListener('click', (event) => {
+	window.open('https://expressjs.com/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-nodejs').addEventListener('click', (event) => {
+	window.open('https://nodejs.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-firebase').addEventListener('click', (event) => {
+	window.open('https://firebase.google.com/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-linux').addEventListener('click', (event) => {
+	window.open('https://www.linux.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-mongodb').addEventListener('click', (event) => {
+	window.open('https://www.mongodb.com/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-graphql').addEventListener('click', (event) => {
+	window.open('https://graphql.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-docker').addEventListener('click', (event) => {
+	window.open('https://www.docker.com/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-git').addEventListener('click', (event) => {
+	window.open('https://git-scm.com/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-svg').addEventListener('click', (event) => {
+	window.open('https://cs.wikipedia.org/wiki/Scalable_Vector_Graphics', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-react').addEventListener('click', (event) => {
+	window.open('https://reactjs.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-vuejs').addEventListener('click', (event) => {
+	window.open('https://vuejs.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-illustrator').addEventListener('click', (event) => {
+	window.open('https://www.adobe.com/products/illustrator.html', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-inkscape').addEventListener('click', (event) => {
+	window.open('https://inkscape.org/', '_blank', 'noopener');
+});
+
+document.getElementById('svg-techstack-figma').addEventListener('click', (event) => {
+	window.open('https://www.figma.com/', '_blank', 'noopener');
+});
 
 /*  OLD VANTYHO CODE
 const regeneratorRuntime = require('regenerator-runtime');

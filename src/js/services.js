@@ -34,7 +34,6 @@ document.getElementById('svg-customs').innerHTML = svgCustoms;
 // rozcestnik linky
 document.getElementById('svg-sluzby-rozcestnik-web-pres').addEventListener('click', (event) => {
 	window.location.href = `${window.location.origin}/services/web-pres.html`;
-
 });
 
 document.getElementById('svg-sluzby-rozcestnik-web-app').addEventListener('click', (event) => {

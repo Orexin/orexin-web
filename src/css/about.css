@@ -1,5 +1,11 @@
 /*! ABOUT! */
 
+svg {
+	position: relative;
+	max-width: 100%;
+	height: 100%;
+}
+
 .abt-landing {
 	display: flex;
 	flex-direction: column;
@@ -82,33 +88,41 @@
 	/*debug*/
 	border-bottom: solid red 1px;
 }
-.we-are-orexin > h2 {
+.we-are-orexin > .header {
+	text-align: center;
+}
+.we-are-orexin > .header > h2 {
 	font-size: 30px;
 	color: var(--violet);
 	margin: 0;
 }
-.we-are-orexin > p {
+.we-are-orexin > .header > p {
 	color: var(--text-gray);
 }
 
+.svg-techstack-elements:hover {
+	cursor: pointer;
+}
+
 .techstack {
-	height: 100vh;
+	height: 130vh;
 	padding: 50px;
-	/*debug*/
-	border-bottom: solid red 1px;
+	background: var(--violet-dark);
 }
-.techstack > .header {
-	text-align: center;
+
+.techstack > div > .header {
+	margin-bottom: 50px !important;
 }
+
 .techstack > .header > h2 {
 	font-size: 30px;
-	color: var(--violet);
 	margin: 0;
 }
 
 .techstack > .header > p {
 	color: var(--text-gray);
 }
+
 #scnd {
 	font-weight: 700;
 }

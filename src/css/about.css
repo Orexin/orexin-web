@@ -107,7 +107,7 @@ svg {
 .techstack {
 	height: 130vh;
 	padding: 50px;
-	background: var(--violet-dark);
+	background: var(--violet-darker);
 }
 
 .techstack > div > .header {

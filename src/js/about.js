@@ -1,7 +1,10 @@
 import '../css/about.css';
 import svgTechstack from './../img/about-technologies.svg';
+import svgEducation from './../img/about-education.svg';
 
 // inject SVG
+
+document.getElementById('svg-education').innerHTML = svgEducation;
 document.getElementById('svg-techstack').innerHTML = svgTechstack;
 
 // redirect to pages

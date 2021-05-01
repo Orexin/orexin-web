@@ -6,6 +6,10 @@ svg {
 	height: 100%;
 }
 
+.text p, .m-box p {
+	font-size: 20px !important;
+}
+
 /* ABT-LANDING */
 
 .abt-landing {
@@ -54,7 +58,7 @@ svg {
 /* BRAIN */
 
 #brain {
-	height: 50vh;
+	position: relative;
 	padding-top: 30px;
 }
 
@@ -128,7 +132,7 @@ svg {
 /* EDUCATION */
 
 #education {
-	height: 80vh;
+	position: relative;
 	padding: 50px;
 }
 
@@ -146,8 +150,20 @@ svg {
 	color: var(--text-gray);
 }
 
-#education > div > .text > p {
+#education > div > .text > div > p {
 	color: var(--violet);
+	margin-left: 15px;
+}
+
+#education > div > .text > div {
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#svg-education {
+	max-height: 750px;
+	width: 100%;
 }
 
 /* EDUCATION END */
@@ -159,7 +175,7 @@ svg {
 }
 
 #techstack {
-	height: 130vh;
+	position: relative;
 	padding: 50px;
 	background: var(--violet-darker);
 }

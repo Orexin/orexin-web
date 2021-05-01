@@ -6,6 +6,8 @@ svg {
 	height: 100%;
 }
 
+/* ABT-LANDING */
+
 .abt-landing {
 	display: flex;
 	flex-direction: column;
@@ -47,20 +49,39 @@ svg {
 	font-weight: 800;
 }
 
-.mission {
+/* ABT-LANDING END*/
+
+/* BRAIN */
+
+#brain {
 	height: 50vh;
+	padding-top: 30px;
 }
 
-.mission {
+#brain > .brain-row  {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+}
+
+#brain > .brain-row:nth-child(2) {
 	justify-content: center;
 	align-items: center;
-
-	/*debug*/
-	border-bottom: solid red 1px;
 }
+
+#brain > .brain-row  > div {
+	display: flex;
+	flex-direction: column;
+}
+
+#brain > .brain-row:nth-child(2) > div {
+	justify-content: center;
+	align-items: center;
+}
+
+#brain > .brain-row  > .header > h2 {
+	color: var(--violet);
+}
+
 .m-box {
 	width: 400px !important;
 	margin: 25px;
@@ -71,57 +92,112 @@ svg {
 	font-size: 25px;
 	font-weight: 800;
 }
+
 #longerBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 .m-box p {
-	color: black;
+	color: var(--violet);
 	margin: 10px;
 }
 
-.we-are-orexin {
+/* BRAIN END */
+
+/* WE-ARE-OREXIN */
+
+#we-are-orexin {
 	height: 100vh !important;
 	padding: 50px;
-
-	/*debug*/
-	border-bottom: solid red 1px;
+	background: var(--violet-dark);
 }
-.we-are-orexin > .header {
+#we-are-orexin div > .header {
 	text-align: center;
 }
-.we-are-orexin > .header > h2 {
+#we-are-orexin div > .header > h2 {
+	font-size: 30px;
+	margin: 0;
+}
+#we-are-orexin div > .header > p {
+	color: var(--text-gray);
+}
+
+/* WE-ARE-OREXIN END */
+
+/* EDUCATION */
+
+#education {
+	height: 80vh;
+	padding: 50px;
+}
+
+#education > .header {
+	text-align: center;
+}
+
+#education > .header > h2 {
 	font-size: 30px;
 	color: var(--violet);
 	margin: 0;
 }
-.we-are-orexin > .header > p {
+
+#education > .header > p {
 	color: var(--text-gray);
 }
+
+#education > div > .text > p {
+	color: var(--violet);
+}
+
+/* EDUCATION END */
+
+/* TECHSTACK */
 
 .svg-techstack-elements:hover {
 	cursor: pointer;
 }
 
-.techstack {
+#techstack {
 	height: 130vh;
 	padding: 50px;
 	background: var(--violet-darker);
 }
 
-.techstack > div > .header {
+#techstack > div > .header {
 	margin-bottom: 50px !important;
 }
 
-.techstack > .header > h2 {
+#techstack > .header > h2 {
 	font-size: 30px;
 	margin: 0;
 }
 
-.techstack > .header > p {
+#techstack > .header > p {
 	color: var(--text-gray);
 }
+
+/* TECHSTACK END */
+
+/* CLIENTS */
+
+#clients {
+	height: 60vh;
+	padding: 50px;
+}
+#clients > .header {
+	text-align: center;
+}
+#clients > .header > h2 {
+	font-size: 30px;
+	color: var(--violet);
+	margin: 0;
+}
+#clients > .header > p {
+	color: var(--text-gray);
+}
+
+/* CLIENTS END */
 
 #scnd {
 	font-weight: 700;

@@ -123,32 +123,65 @@
 			</div>
 		</div>
 		<div class="abt-action">
-			<a href="#orx" class="fancy-btn-trans">Poznejme se!</a>
+			<a href="#brain" class="fancy-btn-trans">Poznejme se!</a>
 		</div>
 	</div>
-	<div class="mission">
-		<!--mission, what a cliche-->
-		<div class="m-box">
-			<img src="<%= require('./img/about-brain.png') %>" alt="brain">
+	<div id="brain" class="container">
+		<div class="brain-row">
+			<div class="header">
+				<h2>Co je to orexin?</h2>
+			</div>
 		</div>
-		<div class="m-box" id="longerBox">
-			<p> Orexin je neuropeptid, vytvořen v části mozku zvané hypotalamus. Orexin má více funkcí, ale ta, která
-				zaujala nás je stimulace neuronů k podpoře bdělosti. A tak po vzoru orexinu, my jsme vždy bdělí v
-				oblasti modernizace a inovace webových řešení. Naše řešení jsou dělané na míru, přesně na žádost a
-				potřebu našich zákazníků. </p>
+		<div class="brain-row">
+			<div class="m-box">
+				<img src="<%= require('./img/about-brain.png') %>" alt="brain">
+			</div>
+			<div class="m-box" id="longerBox">
+				<p> Orexin je neuropeptid, vytvořen v části mozku zvané hypotalamus. Orexin má více funkcí, ale ta,
+					která
+					zaujala nás je stimulace neuronů k podpoře bdělosti. A tak po vzoru orexinu, my jsme vždy bdělí
+					v
+					oblasti modernizace a inovace webových řešení. </p>
+			</div>
 		</div>
 	</div>
 	<!-- buď časová mapa, naše vize, svg lidí co staví stránku dohromady komplexní maybe nějaká hlava s myšlenkou silueta -->
-	<div class="we-are-orexin" id="orx">
-		<div class="header">
-			<h2>Jsme Orexin Solutions.</h2>
-			<p>Established @2021</p>
-		</div>
-		<div class="text">
+	<div id="we-are-orexin">
+		<div class="container">
+			<div class="header">
+				<h2>Jsme Orexin Solutions</h2>
+				<p>Established @2021</p>
+			</div>
+			<div class="columns">
+				<div class="column is-4">IMG</div>
+				<div class="column is-4">IMG</div>
+				<div class="column is-4">IMG</div>
+			</div>
 
+			<div class="text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi illo, nesciunt voluptatum,
+				possimus
+				iusto quibusdam incidunt veniam asperiores ab necessitatibus. Repellat, laudantium sit! Labore
+				temporibus
+				illo quam earum quasi.
+			</div>
 		</div>
 	</div>
-	<div class="techstack">
+	<div id="education" class="container">
+		<div class="header">
+			<h2>Podporujeme vzdělávání v oblasti web developmentu</h2>
+			<p>Pomáhát patří k naší práci</p>
+		</div>
+		<div class="columns">
+			<div class="column is-6">IMG phone with instagram open</div>
+			<div class="column is-6 text">
+				<p>Na našem blogu a sociálních sítích zveřejňujeme tipy a rady jak dosáhnout lepšího kódu a lepšího
+					vzhledu
+					webové stránky.</p>
+			</div>
+		</div>
+	</div>
+	<div id="techstack">
 		<div class="container">
 			<div class="header">
 				<h2>Na čem běží náš software?</h2>
@@ -160,13 +193,10 @@
 		</div>
 	</div>
 	<!-- change to clients class atd. -->
-	<div class="mission">
-		<!--mission, what a cliche-->
-		<div class="m-box">
-			<h6>Naši klienti</h6>
-		</div>
-		<div class="m-box" id="longerBox">
-			<p>Carousel log našich klientů</p>
+	<div id="clients" class="container">
+		<div class="header">
+			<h2>Naši klienti</h2>
+			<p>loga našich klientů</p>
 		</div>
 	</div>
 

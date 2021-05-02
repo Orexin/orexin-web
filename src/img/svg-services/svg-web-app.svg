@@ -9,7 +9,8 @@
      d="M1017 576C1017 842.201 740.761 1058 400.001 1058C247.386 1058 107.712 1014.71 0 943V209C107.712 137.286 247.386 93.9999 400.001 93.9999C740.761 93.9999 1017 309.799 1017 576Z"
      fill="#262461"
      id="svg-sluzby-web-app-bg-shape" />
-  <g id="svg-sluzby-web-app-content">
+  <g id="svg-sluzby-web-app-content"
+      class="svg-sluzby-content">
     <g
      id="g1125">
     <rect

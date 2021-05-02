@@ -9,7 +9,8 @@
      d="M808 823.889C808 961.844 686.922 994.751 595.378 1004.67C474.861 1017.73 239.603 971.224 154.458 952.501C58.958 931.501 0 872.176 0 772.585C0 627.094 153 619.654 217.66 640.253C419 704.388 808 673.389 808 823.889Z"
      fill="#4508BD"
      id="svg-sluzby-traffic-bg-shape" />
-<g id="svg-sluzby-traffic-content">
+<g id="svg-sluzby-traffic-content"
+   class="svg-sluzby-content">
   <g
      id="g1599">
     <path

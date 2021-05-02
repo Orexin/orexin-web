@@ -9,7 +9,8 @@
      d="M1050.66 813.64C1143.71 1073.91 692.932 1029.11 460.817 973.58C230.47 918.471 -51.0009 736 8.99949 569C68.9999 402 225.601 351.894 405.08 328C717.805 286.367 986.506 634.215 1050.66 813.64Z"
      fill="#5C09FF"
      id="svg-sluzby-objednavky-bg-shape" />
-   <g id="svg-sluzby-objednavky-content-2">
+   <g id="svg-sluzby-objednavky-content-2"
+      class="svg-sluzby-content">
        <path
        d="M189 96C189 68.3858 210.002 53.7481 235.91 63.3059L524.049 169.606C549.957 179.164 570.959 209.298 570.959 236.912V761.841C570.959 778.227 563.427 790.794 550.798 795.478L544 798L236.309 687.279C210.246 677.9 189 647.608 189 619.827V96Z"
        fill="#9F94E2"
@@ -129,7 +130,8 @@
      fill="#4508BD"
      id="path3044" />
    </g>
-   <g id="svg-sluzby-objednavky-content-1">
+   <g id="svg-sluzby-objednavky-content-1"
+      class="svg-sluzby-content">
      <g
      id="g3048">
     <rect

@@ -9,7 +9,8 @@
      d="M1017 594.001C1017 860.202 740.761 1076 400.001 1076C247.386 1076 107.712 1032.71 0 961.001V227.001C107.712 155.287 247.386 112.001 400.001 112.001C740.761 112.001 1017 327.799 1017 594.001Z"
      fill="#262461"
      id="svg-sluzby-ecommerce-bg-shape" />
-     <g id="svg-sluzby-ecommerce-content">
+     <g id="svg-sluzby-ecommerce-content"
+         class="svg-sluzby-content">
        <g
      filter="url(#shadow-1)"
      id="g2550"

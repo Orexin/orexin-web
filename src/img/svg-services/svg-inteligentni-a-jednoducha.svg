@@ -15,9 +15,11 @@
      fill="#570FE3"
      id="path693" />
 </g>
-<g id="svg-sluzby-easy-content">
+<g id="svg-sluzby-easy-content"
+   class="svg-sluzby-content">
   <g
-     id="svg-sluzby-easy-computer">
+     id="svg-sluzby-easy-computer"
+     class="svg-sluzby-content">
     <path
        d="m 923.82443,884.75021 c -2.591,-0.956 -9.17433,-20.87069 -9.17433,-23.63169 v -139.579 l 23.776,8.772 v 139.578 c 0,2.761 0.24399,6.72549 -2.12237,8.226 z"
        fill="#A59AEA"
@@ -243,7 +245,8 @@
        fill="#1E005A"
        id="circle763" />
     <g
-       id="svg-sluzby-easy-card-top-left-left">
+       id="svg-sluzby-easy-card-top-left-left"
+       class="svg-sluzby-content">
       <rect
          width="132.051"
          height="132.051"
@@ -266,7 +269,8 @@
     </g>
 
     <g
-       id="svg-sluzby-easy-card-top-left">
+       id="svg-sluzby-easy-card-top-left"
+       class="svg-sluzby-content">
       <rect
        width="132.807"
        height="132.051"
@@ -288,7 +292,8 @@
        id="path779" />
     </g>
     <g
-       id="svg-sluzby-easy-card-top-right">
+       id="svg-sluzby-easy-card-top-right"
+       class="svg-sluzby-content">
            <rect
        width="132.051"
        height="132.051"
@@ -309,7 +314,8 @@
        id="path787" />
     </g>
     <g
-       id="svg-sluzby-easy-card-bottom-right">
+       id="svg-sluzby-easy-card-bottom-right"
+       class="svg-sluzby-content">
       <rect
          width="132.051"
          height="132.051"
@@ -331,7 +337,8 @@
          id="path793" />
     </g>
     <g
-       id="svg-sluzby-easy-card-top-right-right">
+       id="svg-sluzby-easy-card-top-right-right"
+       class="svg-sluzby-content">
       <rect
          width="132.051"
          height="132.051"
@@ -353,7 +360,8 @@
          id="path801" />
     </g>
     <g
-       id="svg-sluzby-easy-card-bottom-right-right">
+       id="svg-sluzby-easy-card-bottom-right-right"
+       class="svg-sluzby-content">
       <rect
          width="133.471"
          height="133.471"
@@ -375,7 +383,8 @@
          id="path809" />
     </g>
     <g
-       id="svg-sluzby-easy-card-bottom-left">
+       id="svg-sluzby-easy-card-bottom-left"
+       class="svg-sluzby-content">
            <rect
        width="132.051"
        height="132.051"
@@ -398,7 +407,8 @@
     </g>
 
     <g
-       id="svg-sluzby-easy-card-bottom-left-left">
+       id="svg-sluzby-easy-card-bottom-left-left"
+       class="svg-sluzby-content">
       <rect
          width="132.051"
          height="132.051"
@@ -419,7 +429,8 @@
          fill="#5C09FF"
          id="path825" />
     </g>
-   <g id="svg-sluzby-easy-graph-bg">
+   <g id="svg-sluzby-easy-graph-bg"
+   class="svg-sluzby-content">
        <path
        d="M184.458 550.265C184.458 541.98 190.759 537.589 198.531 540.457L449.59 633.077C457.362 635.945 463.663 644.985 463.663 653.269V720.287C463.663 728.571 457.362 732.962 449.59 730.095L198.531 637.474C190.759 634.607 184.458 625.567 184.458 617.282V550.265Z"
        fill="#A59AEA"
@@ -429,7 +440,8 @@
        fill="#310686"
        id="path831" />
    </g>
-   <g id="svg-sluzby-easy-graph">
+   <g id="svg-sluzby-easy-graph"
+   class="svg-sluzby-content">
        <path
        d="M154.997 652.089L180.497 648.589L179.997 667.589L154.997 658.428V652.089Z"
        fill="#4508BD"

@@ -10,7 +10,8 @@
      fill="#310686"
      id="svg-sluzby-reprezentace-bg-shape"
      style="fill:#262461;fill-opacity:1" />
-   <g id="svg-sluzby-reprezentace-sun">
+   <g id="svg-sluzby-reprezentace-sun"
+      class="svg-sluzby-content">
      <circle
      r="80.36"
      transform="matrix(0.938191 0.346117 0 1 705.403 465.771)"
@@ -112,7 +113,8 @@
      id="path1755"
      style="stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none" />
   <g
-     id="svg-sluzby-reprezentace-banner">
+     id="svg-sluzby-reprezentace-banner"
+     class="svg-sluzby-content">
     <rect
        width="49"
        height="218"

@@ -1,14 +1,42 @@
 import '../css/about.css';
+import 'waypoints/lib/noframework.waypoints.min.js';
+
+// SVGs
 import svgBrain from './../img/about-brain.svg';
 import svgTechstack from './../img/about-technologies.svg';
 import svgEducation from './../img/about-education.svg';
 
-// inject SVG
-
+// inject SVGs
 document.getElementById('svg-brain').innerHTML = svgBrain;
 document.getElementById('svg-techstack').innerHTML = svgTechstack;
 document.getElementById('svg-education').innerHTML = svgEducation;
 
+// Waypoints
+var brain = new Waypoint({
+	element: document.getElementById('brain'),
+	offset: '70%',
+	handler: function () {
+		document.getElementById('svg-brain').style.transform = 'translateY(0)';
+		document.getElementById('svg-brain').style.opacity = 1;
+		document.getElementById('text-card-brain').style.transform = 'translateY(0)';
+		document.getElementById('text-card-brain').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
+
+var education = new Waypoint({
+	element: document.getElementById('education'),
+	offset: '70%',
+	handler: function () {
+		document.getElementById('svg-education').style.transform = 'translateY(0)';
+		document.getElementById('svg-education').style.opacity = 1;
+		document.getElementById('text-card-education').style.transform = 'translateY(0)';
+		document.getElementById('text-card-education').style.opacity = 1;
+		// animation happens only once
+		this.destroy();
+	},
+});
 
 // redirect to pages
 document.getElementById('svg-techstack-html').addEventListener('click', (event) => {

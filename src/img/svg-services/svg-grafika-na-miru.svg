@@ -18,7 +18,8 @@
   </g>
 
   <g
-     id="svg-sluzby-grafika-na-miru-blueprint">
+     id="svg-sluzby-grafika-na-miru-blueprint"
+     class="svg-sluzby-content">
     <g
        id="g1439">
       <path
@@ -259,7 +260,8 @@
     </g>
   </g>
   <g
-     id="svg-sluzby-grafika-na-miru-web">
+     id="svg-sluzby-grafika-na-miru-web"
+     class="svg-sluzby-content">
     <g
        id="g2513">
       <path

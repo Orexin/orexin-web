@@ -264,43 +264,7 @@ svg {
 /* ROZCESTNIK END*/
 
 /* defaults for waypoints */
-#svg-sluzby-grafika-na-miru-blueprint,
-#svg-sluzby-grafika-na-miru-web,
-#svg-sluzby-bezpeci-content,
-#svg-sluzby-sprava-content,
-#svg-sluzby-traffic-content,
-#svg-sluzby-dynamika-content,
-#svg-sluzby-podpora-content,
-#svg-sluzby-podpora-calendar,
-#svg-sluzby-podpora-clock,
-#svg-sluzby-plneni-content,
-#svg-sluzby-fotky-content,
-#svg-sluzby-customs-content,
-#svg-sluzby-web-pres-content,
-#svg-sluzby-reprezentace-banner,
-#svg-sluzby-reprezentace-sun,
-#svg-sluzby-fast-content,
-#svg-sluzby-fast-calendar,
-#svg-sluzby-web-app-content,
-#svg-sluzby-easy-content,
-#svg-sluzby-easy-card-top-left-left,
-#svg-sluzby-easy-card-top-left,
-#svg-sluzby-easy-card-top-right,
-#svg-sluzby-easy-card-top-right-right,
-#svg-sluzby-easy-card-bottom-left-left,
-#svg-sluzby-easy-card-bottom-left,
-#svg-sluzby-easy-card-bottom-right,
-#svg-sluzby-easy-card-bottom-right-right,
-#svg-sluzby-easy-computer,
-#svg-sluzby-easy-graph-bg,
-#svg-sluzby-easy-graph,
-#svg-sluzby-reaktivita-content,
-#svg-sluzby-ecommerce-content,
-#svg-sluzby-seo-content,
-#svg-sluzby-seo-human,
-#svg-sluzby-platby-content,
-#svg-sluzby-objednavky-content-1,
-#svg-sluzby-objednavky-content-2 {
+.svg-sluzby-content {
 	transform: translateY(100px);
 	transition: all 0.75s ease-in-out;
 	opacity: 0;

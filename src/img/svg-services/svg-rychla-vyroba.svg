@@ -10,7 +10,8 @@
      fill="#5C09FF"
      id="svg-sluzby-fast-bg-shape" />
 
-<g id="svg-sluzby-fast-content">
+<g id="svg-sluzby-fast-content"
+   class="svg-sluzby-content">
    <g>
      <g
      id="g3384">
@@ -161,7 +162,8 @@
 	</text>
    </g>
 </g>
-   <g id="svg-sluzby-fast-calendar">
+   <g id="svg-sluzby-fast-calendar"
+      class="svg-sluzby-content">
          <path
          d="M32 408.869C32 401.137 37.8806 392.7 45.1347 390.024L166.617 345.206C173.871 342.53 179.752 346.629 179.752 354.361V385.455V484.716C179.752 492.448 173.871 500.886 166.617 503.562L45.1347 548.379C37.8806 551.055 32 546.957 32 539.225V408.869Z"
          fill="#A094E3"

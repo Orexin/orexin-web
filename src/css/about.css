@@ -6,8 +6,26 @@ svg {
 	height: 100%;
 }
 
+.flex-container > .flex-row  {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container > .flex-row > .flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
 .text p, .m-box p {
 	font-size: 20px !important;
+}
+
+.text-card {
+	transform: translateY(100px);
+	transition: all 0.75s ease-in-out;
+	opacity: 0;
 }
 
 /* ABT-LANDING */
@@ -61,18 +79,6 @@ svg {
 	position: relative;
 	padding-top: 30px;
 	padding-bottom: 60px;
-}
-
-.flex-container > .flex-row  {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.flex-container > .flex-row > .flex-col {
-	display: flex;
-	flex-direction: column;
 }
 
 #brain > .brain-row {

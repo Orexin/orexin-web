@@ -10,7 +10,8 @@
      fill="#262461"
      id="svg-sluzby-web-pres-bg-shape" />
   <g
-     id="svg-sluzby-web-pres-content">
+     id="svg-sluzby-web-pres-content"
+     class="svg-sluzby-content">
     <g
        id="g1193">
       <rect

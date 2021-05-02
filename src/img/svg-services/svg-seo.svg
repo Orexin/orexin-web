@@ -22,7 +22,8 @@
        sodipodi:nodetypes="sssss" />
   </g>
   <g
-     id="svg-sluzby-seo-content">
+     id="svg-sluzby-seo-content"
+     class="svg-sluzby-content">
     <g
        id="g1041">
       <rect
@@ -223,7 +224,8 @@
        id="path1121" />
   </g>
   <g
-     id="svg-sluzby-seo-human">
+     id="svg-sluzby-seo-human"
+     class="svg-sluzby-content">
     <path
        fill-rule="evenodd"
        clip-rule="evenodd"

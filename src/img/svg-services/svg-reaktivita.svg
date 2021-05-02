@@ -9,7 +9,8 @@
      d="M850 978.756C850 1145.25 719.999 1196.95 628.508 1208.92C508.063 1224.68 294.43 1146.55 211.305 1115.03C183.419 1104.45 0 1040.06 0 919.866C0 744.271 95.9436 598.229 344.797 514.923C662.61 408.532 850 803.161 850 978.756Z"
      fill="#262461"
      id="svg-sluzby-reaktivita-bg-shape" />
-   <g id="svg-sluzby-reaktivita-content">
+   <g id="svg-sluzby-reaktivita-content"
+      class="svg-sluzby-content">
      <g
      id="g688">
     <rect

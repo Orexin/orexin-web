@@ -11,7 +11,8 @@
      fill="#5c09ff"
      sodipodi:nodetypes="csssc" />
   <g
-     id="svg-sluzby-podpora-content">
+     id="svg-sluzby-podpora-content"
+     class="svg-sluzby-content">
     <g
        id="g1815">
       <path
@@ -669,7 +670,8 @@
        stroke-linejoin="round"
        id="path2049" />
     <g
-       id="svg-sluzby-podpora-calendar">
+       id="svg-sluzby-podpora-calendar"
+       class="svg-sluzby-content">
       <path
          d="M140.898 417.514C140.9 409.146 147.327 399.938 155.179 397.054L298.709 344.345C301.641 343.268 304.487 343.2 306.848 344.149L313.989 347.019L311.732 512.99C311.62 521.231 305.351 530.214 297.656 533.158L153.549 588.296L146.675 585.613C143.025 584.189 140.865 580.501 140.866 575.695L140.898 417.514Z"
          fill="#A094E2"
@@ -768,7 +770,8 @@
       </g>
     </g>
     <g
-       id="svg-sluzby-podpora-clock">
+       id="svg-sluzby-podpora-clock"
+       class="svg-sluzby-content">
       <circle
          r="69.0637"
          transform="matrix(0.938191 -0.346117 0 1 959.795 173.967)"

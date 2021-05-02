@@ -294,3 +294,7 @@
 	text-align: center;
 	color: var(--violet);
 }
+
+#scrollup-btn {
+	background-color: var(--violet-darker);
+}

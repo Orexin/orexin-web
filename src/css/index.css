@@ -211,7 +211,7 @@
 	position: absolute;
 	top: 50%;
 	z-index: -99999;
-	background-color: var(--violet);
+	background-color: var(--violet-dark);
 	width: 100%;
 	height: 100%;
 	transform: skewY(-5deg);
@@ -222,7 +222,7 @@
 /*! SOLUTIONS SELECT! */
 .solutions {
 	width: 100%;
-	background-color: var(--violet);
+	background-color: var(--violet-dark);
 	padding: 50px 0px 50px 0px;
 }
 .sol-text > h2 {

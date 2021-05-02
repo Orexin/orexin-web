@@ -41,6 +41,11 @@ html {
 	display: none;
 }
 
+#scrollup-btn > span:after {
+	color: black !important;
+	mix-blend-mode: difference;
+}
+
 #scrollup-btn:hover {
 	background-color: var(--violet-light);
 	cursor: pointer;

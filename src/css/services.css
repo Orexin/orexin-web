@@ -386,7 +386,6 @@ svg {
 	flex-direction: row;
 	align-items: center;
 	margin: 50px 0 150px 0;
-	width: 99%;
 }
 #cenik > div {
 	display: flex;
@@ -421,22 +420,12 @@ svg {
 	padding-bottom: 15px;
 }
 
-.cenik-col-1:not(:first-child) {
-	background: var(--violet);
-	border-radius: 5px;
-}
-
 .cenik-col-1:first-child {
 	padding: 25px !important;
 }
 
-.cenik-col-1 h3 {
-	font-size: 25px;
-	color: white !important;
-}
-
 .cenik-box div div {
-	margin: 25px !important;
+	margin: 10px !important;
 	padding: 10px;
 }
 
@@ -446,6 +435,7 @@ svg {
 
 .cenik-box div div {
 	font-size: 20px;
+	line-height: 30px;
 }
 
 .cenik-explanations * {
@@ -460,6 +450,15 @@ svg {
 
 .cenik-explanations div ul {
 	margin-left: 55px;
+}
+
+.cenik-kontakt {
+	justify-content: center;
+	margin-top: 20px !important;
+}
+
+.cenik-kontakt * {
+	display: block;
 }
 
 /* CENIK END*/

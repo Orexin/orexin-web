@@ -1,7 +1,10 @@
 import './../css/components/navbar.css';
 
-const logoWhite = require('./../img/logos/logo-white-sm.png');
-const logoGrad = require('./../img/logos/logo-gradient-sm.png');
+//const logoWhite = require('./../img/logos/logo-white-sm.png');
+//const logoGrad = require('./../img/logos/logo-gradient-sm.png');
+const svgLogoWhite = require('./../img/logos/logo-white-sm.svg');
+const svgLogoGrad = require('./../img/logos/logo-gradient-sm.svg');
+
 
 class Navbar extends HTMLElement {
 	constructor() {
@@ -60,6 +63,8 @@ class Navbar extends HTMLElement {
 		var prevScrollpos = window.pageYOffset;
 		var currentScrollPos = 0;
 
+		document.getElementById('nav-logo').innerHTML = svgLogoWhite;
+
 		document.onscroll = function () {
 			// Hide navbar
 			currentScrollPos = window.pageYOffset;
@@ -73,14 +78,47 @@ class Navbar extends HTMLElement {
 			//White nav out
 			if (document.documentElement.scrollTop >= 150) {
 				nav.classList.add('whited');
-				navLogo.style.content = `url(${logoGrad})`
+				navLogo.innerHTML = svgLogoGrad;
+				//navLogo.style.content = `url(${logoGrad})`
 				kontaktBtn.classList.add('fancy-btn-trans-whited')
 			} else {
 				nav.classList.remove('whited');
-				navLogo.style.content = `url(${logoWhite})`
+				navLogo.innerHTML = svgLogoWhite;
+				//navLogo.style.content = `url(${logoWhite})`
 				kontaktBtn.classList.remove('fancy-btn-trans-whited')
 			}
 		};
+/* 		var degrees1 = 0, degrees2 = 0;
+		const navPath1 = document.querySelector('#nav-emblem-path-1');
+		const navPath2 = document.querySelector('#nav-emblem-path-2');
+
+		navLogo.addEventListener('mouseover', () => {
+			for(var i = 0; i < 361; i++) {
+				navPath1.style.transform = `rotateZ(${i}deg)`;
+				degrees1 = i;
+				if  (i >= 360) {
+					i = 0;
+				}
+			}
+			for(var i = 360; i > 0; i--) {
+				navPath2.style.transform = `rotateZ(${i}deg)`;
+				degrees2 = i;
+				if  (i >= 360) {
+					i = 0;
+				}
+			}
+		});
+
+		// spin that fella back
+		navLogo.addEventListener('mouseout', () => {
+
+		}); */
+		window.addEventListener('scroll', function () {
+			const navPath1 = document.querySelector('#nav-emblem-path-1');
+			const navPath2 = document.querySelector('#nav-emblem-path-2');
+			navPath1.style.animationPlayState = "running"
+			navPath2.style.animationPlayState = "running"
+		})
 	}
 }
 

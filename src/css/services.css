@@ -314,6 +314,11 @@ svg {
 	width: 75%;
 }
 
+/* #grafika .text-card {
+	width: 90%;
+	margin-right: 100px;
+} */
+
 #svg-sluzby-grafika-na-miru-web {
 	transition-delay: 0.25s;
 }

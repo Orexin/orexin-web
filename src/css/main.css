@@ -23,6 +23,46 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* SCROLLUP BTN */
+
+#scrollup-btn {
+	font-size: 30px;
+	padding: 0 5px 0 5px;
+	border-radius: 40px;
+	background-color: var(--violet);
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+	z-index: 1000;
+	display: none;
+}
+
+#scrollup-btn:hover {
+	background-color: var(--violet-light);
+	cursor: pointer;
+}
+
+#scrollup-btn > span {
+	z-index: 1;
+	color: white !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px 15px 5px 15px;
+}
+
+#scrollup-btn:hover > span {
+	animation-name: arrowGoBrrBackwards;
+	animation-duration: 0.4s;
+}
+
+/* SCROLLUP BTN */
+
 /* ! Fancy buttons ! */
 .fancy-btn {
 	font-size: 14px;

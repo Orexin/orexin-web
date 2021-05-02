@@ -1,13 +1,4 @@
-@keyframes kontaktButtonIcon {
-	from {
-		display: none;
-		left: -50px;
-	}
-	to {
-		display: block;
-		left: 0;
-	}
-}
+/* PRELOADER */
 
 @keyframes emblemPath1 {
 	from {
@@ -27,11 +18,59 @@
 	}
 }
 
-@keyframes rotate3D {
+/* PRELOADER END */
+
+/* scrollup btn */
+@keyframes arrowGoBrrBackwards {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	40% {
+		transform: translate(-50%, -150%);
+	}
+	45% {
+		transform: translate(-150%, -150%);
+	}
+	50% {
+		transform: translate(-150%, 150%);
+	}
+	60% {
+		transform: translate(-50%, 150%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+/* index skip btn */
+@keyframes arrowGoBrr {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	40% {
+		transform: translate(-50%, 150%);
+	}
+	45% {
+		transform: translate(-150%, 150%);
+	}
+	50% {
+		transform: translate(-150%, -150%);
+	}
+	60% {
+		transform: translate(-50%, -150%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes kontaktButtonIcon {
 	from {
-		transform: rotate3d(0, 0, 0, 0deg);
+		display: none;
+		left: -50px;
 	}
 	to {
-		transform: rotate3d(0, 0, 20, 360deg);
+		display: block;
+		left: 0;
 	}
 }

@@ -24,16 +24,32 @@ window.onload = function () {
 	// yeet out preloader
 	preloader.style.display = 'none';
 	preloader.classList.remove('loading')
-	console.log("kokot")
-};
 
-// sub-pages-paralax
-window.addEventListener('scroll', function () {
-	let container = document.getElementsByClassName('uvod-subpages-container');
-	let title = document.getElementsByClassName('uvod-subpages-title');
-	var value = window.scrollY;
-	for (var i = 0; i < container.length; i++) {
-		container[i].style.marginTop = `-${value + 0.5}px`;
-		title[i].style.marginTop = `+${value + 0.15}px`;
+	// sub-pages-paralax
+	window.addEventListener('scroll', function () {
+		let container = document.getElementsByClassName('uvod-subpages-container');
+		let title = document.getElementsByClassName('uvod-subpages-title');
+		var value = window.scrollY;
+		for (var i = 0; i < container.length; i++) {
+			container[i].style.marginTop = `-${value + 0.5}px`;
+			title[i].style.marginTop = `+${value + 0.15}px`;
+		}
+	});
+
+	// scroll to top btn
+	window.onscroll = function() {scrollFunction()};
+	var scrollupBtn = document.getElementById('scrollup-btn');
+
+	function scrollFunction() {
+		if (window.scrollY > 20) {
+			scrollupBtn.style.display = "block";
+		} else {
+			scrollupBtn.style.display = "none";
+		}
 	}
-});
+
+	scrollupBtn.addEventListener('click', () => {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	})
+};

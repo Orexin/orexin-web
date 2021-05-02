@@ -1,6 +1,7 @@
 /* UVOD */
 #mainArrow {
 	font-size: 30px;
+	padding: 0 5px 0 5px;
 	border-radius: 35px;
 	background-color: var(--violet);
 	position: relative;
@@ -23,21 +24,7 @@
 }
 #mainArrow:hover > span {
 	animation-name: arrowGoBrr;
-	animation-duration: 0.6s;
-}
-@keyframes arrowGoBrr {
-	45% {
-		transform: translate(-50%, 60%);
-	}
-	50% {
-		transform: translateY(-175px);
-	}
-	55% {
-		transform: translate(-50%, -175px);
-	}
-	100% {
-		transform: translate(-50%, -50%);
-	}
+	animation-duration: 0.5s;
 }
 
 #uvod {

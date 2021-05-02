@@ -1,11 +1,14 @@
 import '../css/about.css';
+import svgBrain from './../img/about-brain.svg';
 import svgTechstack from './../img/about-technologies.svg';
 import svgEducation from './../img/about-education.svg';
 
 // inject SVG
 
-document.getElementById('svg-education').innerHTML = svgEducation;
+document.getElementById('svg-brain').innerHTML = svgBrain;
 document.getElementById('svg-techstack').innerHTML = svgTechstack;
+document.getElementById('svg-education').innerHTML = svgEducation;
+
 
 // redirect to pages
 document.getElementById('svg-techstack-html').addEventListener('click', (event) => {

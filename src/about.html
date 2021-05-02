@@ -126,17 +126,13 @@
 			<a href="#brain" class="fancy-btn-trans">Poznejme se!</a>
 		</div>
 	</div>
-	<div id="brain" class="container">
-		<div class="brain-row">
-			<div class="header">
+	<div id="brain" class="container flex-container">
+		<div class="flex-row brain-row">
+			<div id="svg-brain" class="flex-col">
+				<!-- svg -->
+			</div>
+			<div class="flex-col text-card m-box">
 				<h2>Co je to orexin?</h2>
-			</div>
-		</div>
-		<div class="brain-row">
-			<div class="m-box">
-				<img src="<%= require('./img/about-brain.png') %>" alt="brain">
-			</div>
-			<div class="m-box" id="longerBox">
 				<p> Orexin je neuropeptid, vytvořen v části mozku zvané hypotalamus. Orexin má více funkcí, ale ta,
 					která
 					zaujala nás je stimulace neuronů k podpoře bdělosti. A tak po vzoru orexinu, my jsme vždy bdělí
@@ -167,21 +163,16 @@
 			</div>
 		</div>
 	</div>
-	<div id="education" class="container">
-		<div class="header">
-			<h2>Podporujeme vzdělávání v oblasti web developmentu</h2>
-			<p>Pomáhát patří k naší práci</p>
-		</div>
-		<div class="two-columns">
-			<div id="svg-education">
+	<div id="education" class="container flex-container">
+		<div class="flex-row">
+			<div id="svg-education" class="flex-col">
 				<!-- svg -->
 			</div>
-			<div class="text flex-center flex-d-column">
-				<div>
-					<p>Na našem blogu a sociálních sítích zveřejňujeme tipy a rady jak dosáhnout lepšího kódu a lepšího
-						vzhledu
-						webové stránky.</p>
-				</div>
+			<div class="flex-col text-card">
+				<h2>Podporujeme vzdělávání</h2>
+				<p>Na našem blogu a sociálních sítích zveřejňujeme tipy a rady jak dosáhnout lepšího kódu a lepšího
+					vzhledu
+					webové stránky.</p>
 			</div>
 		</div>
 	</div>

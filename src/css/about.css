@@ -60,49 +60,45 @@ svg {
 #brain {
 	position: relative;
 	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
-#brain > .brain-row  {
+.flex-container > .flex-row  {
 	display: flex;
 	flex-direction: row;
-}
-
-#brain > .brain-row:nth-child(2) {
 	justify-content: center;
 	align-items: center;
 }
 
-#brain > .brain-row  > div {
+.flex-container > .flex-row > .flex-col {
 	display: flex;
 	flex-direction: column;
 }
 
-#brain > .brain-row:nth-child(2) > div {
-	justify-content: center;
-	align-items: center;
+#brain > .brain-row {
+	margin-top: 45px;
 }
 
-#brain > .brain-row  > .header > h2 {
+#brain > .brain-row > div:nth-child(1) {
+	width: 700px;
+	margin-right: 80px;
+}
+
+#brain > .brain-row > div:nth-child(2) > h2 {
 	color: var(--violet);
+}
+
+#svg-brain {
+	max-height: 650px;
+	width: 100%;
 }
 
 .m-box {
 	width: 400px !important;
 	margin: 25px;
-	text-align: justify;
-}
-.m-box h6 {
-	color: var(--violet);
-	font-size: 25px;
-	font-weight: 800;
 }
 
-#longerBox {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.m-box p {
+.m-box * {
 	color: var(--violet);
 	margin: 10px;
 }
@@ -150,19 +146,12 @@ svg {
 	color: var(--text-gray);
 }
 
-#education > div > .text > div > p {
+#education > .flex-row > .flex-col:nth-child(2) * {
 	color: var(--violet);
-	margin-left: 15px;
-}
-
-#education > div > .text > div {
-	padding: 30px;
-	border-radius: 15px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #svg-education {
-	max-height: 750px;
+	max-height: 800px;
 	width: 100%;
 }
 

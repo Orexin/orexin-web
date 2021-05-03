@@ -162,6 +162,7 @@ module.exports = {
 			// and not allow any straggling "old" SWs to hang around
 			clientsClaim: true,
 			skipWaiting: true,
+			maximumFileSizeToCacheInBytes: 5000000,
 		}),
 		new WebpackPwaManifest({
 			filename: "manifest.json",
@@ -278,7 +279,7 @@ module.exports = {
 				"sizes": "384x384"
 			  },
 			  {
-				"src": "./src/img/icons/icon-512x512.png",
+				"src": "/src/img/icons/icon-512x512.png",
 				"type": "image/png",
 				"sizes": "512x512"
 			  }

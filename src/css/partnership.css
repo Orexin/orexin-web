@@ -1,0 +1,78 @@
+svg {
+	max-width: 100%;
+	height: 100%;
+}
+
+/* NASI PARTNERI */
+
+#nasi-partneri * {
+	color: var(--violet);
+}
+
+#nasi-partneri h2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* NASI PARTNERI END */
+
+/* PARTNERSTVI PROC */
+
+#partnerstvi-proc {
+
+}
+
+#partnerstvi-proc * {
+	color: var(--violet);
+}
+
+#partnerstvi-proc > .row {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 30px 0px 30px 0px;
+}
+
+#partnerstvi-proc > .row > .col {
+	position: relative;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border: 2px solid hsla(0, 0%, 100%, 0);
+	border-radius: 12px;
+	margin: 20px;
+	padding: 30px;
+	opacity: 0;
+	transform: translateY(200px);
+}
+
+#partnerstvi-proc-card-1 {
+	transition: all .4s ease-in-out;
+}
+
+#partnerstvi-proc-card-2 {
+	transition: all .6s ease-in-out;
+}
+
+#partnerstvi-proc-card-3 {
+	transition: all .8s ease-in-out;
+}
+
+#partnerstvi-proc-card-4 {
+	transition: all 1s ease-in-out;
+}
+
+#partnerstvi-proc > .row > .col > div {
+	max-height: 100%;
+	width: 250px;
+}
+
+#partnerstvi-proc > .row > .col > h2 {
+	text-align: center;
+}
+
+/* PARTNERSTVI PROC END */

@@ -79,9 +79,7 @@ module.exports = {
 
 
 	plugins: [
-		new CleanWebpackPlugin({
-			verbose: true,
-		}),
+		new CleanWebpackPlugin({}),
 		/* INDEX */
 		new HtmlWebpackPlugin({
 			template: '/src/index.html',

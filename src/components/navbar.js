@@ -113,12 +113,12 @@ class Navbar extends HTMLElement {
 		navLogo.addEventListener('mouseout', () => {
 
 		}); */
-		window.addEventListener('scroll', function () {
+/* 		window.addEventListener('scroll', function () {
 			const navPath1 = document.querySelector('#nav-emblem-path-1');
 			const navPath2 = document.querySelector('#nav-emblem-path-2');
 			navPath1.style.animationPlayState = "running"
 			navPath2.style.animationPlayState = "running"
-		})
+		}) */
 	}
 }
 

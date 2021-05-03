@@ -26,11 +26,6 @@ module.exports = {
 		blog: '/src/js/blog.js',
 	},
 
-	output: {
-		filename: '[name].[hash:20].js',
-		path: buildPath
-	},
-
 	module: {
 		rules: [
 			// load JS

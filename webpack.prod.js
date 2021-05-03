@@ -21,7 +21,7 @@ module.exports = {
 		services: '/src/js/services.js',
 		webpres: '/src/js/web-pres.js',
 		webapp: '/src/js/web-app.js',
-		ecommerence: '/src/js/ecommerce.js',
+		ecommerce: '/src/js/ecommerce.js',
 		partnership: '/src/js/partnership.js',
 		blog: '/src/js/blog.js',
 	},

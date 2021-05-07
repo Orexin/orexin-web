@@ -17,6 +17,28 @@ svg {
 
 /* NASI PARTNERI END */
 
+/* PARTNERI TEAM */
+
+#partnerstvi-team div {
+	margin: 30px 0px 30px 0px;
+}
+
+#partnerstvi-team p {
+	width: 70%;
+}
+
+#partnerstvi-team svg {
+	max-height: 100%;
+	width: 500px;
+}
+
+#svg-team {
+	transform: translateY(100px);
+	opacity: 0;
+}
+
+/* PARTNERI TEAM END */
+
 /* PARTNERSTVI PROC */
 
 #partnerstvi-proc {

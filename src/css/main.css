@@ -551,6 +551,23 @@ form p.gdpr-notice {
 @media only screen and (min-width: 1140px) {
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+	border-radius: 5px;
+}
+
 /* Waves SVG*/
 
 .custom-shape-divider-bottom-1610843841 {

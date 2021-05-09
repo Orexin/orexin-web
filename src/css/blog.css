@@ -1,0 +1,14 @@
+#blog-content div div .row {
+	justify-content: left;
+}
+
+#blog-content div div div span {
+	font-size: 16px;
+	color: var(--text-gray);
+
+}
+
+#blog-content div div img,  #blog-content div div video {
+	max-height: 100%;
+	width: 500px;
+}

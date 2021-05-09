@@ -18,7 +18,7 @@ class Footer extends HTMLElement {
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>
 			<h3>Orexin Solutions 2021</h3>
-			<div class="socials">
+			<div class="socials socials-hover">
 				<a href="https://www.facebook.com/OrexinEcontech" target="_blank" rel="noopener">
 					<span class="typcn typcn-social-facebook-circular"></span>
 				</a>
@@ -27,6 +27,9 @@ class Footer extends HTMLElement {
 				</a>
 				<a href="https://twitter.com/EcontechOrexin" target="_blank" rel="noopener">
 					<span class="typcn typcn-social-twitter-circular"></span>
+				</a>
+				<a href="https://www.youtube.com/channel/UCv5YedhtfaqJZhJHBlPr5cg" target="_blank" rel="noopener">
+					<span class="typcn typcn-social-youtube-circular"></span>
 				</a>
 				<a href="https://github.com/Orexin" target="_blank" rel="noopener">
 					<span class="typcn typcn-social-github-circular"></span>

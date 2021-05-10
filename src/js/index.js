@@ -1,4 +1,5 @@
 import '../css/index.css';
+import './../components/mini-contact';
 import '@splidejs/splide/dist/css/splide.min.css';
 import Splide from '@splidejs/splide';
 

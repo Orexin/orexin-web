@@ -307,25 +307,51 @@
 /*! PARTNERI !*/
 
 #partneri {
-	height: 15vh;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: space-evenly;
+	padding:50px 0 50px 0;
+	height: 500px;
 }
-#partneri > img {
+
+#partneri > .quick-desc {
+	justify-content: left;
+}
+
+#partneri > .row {
+	gap: 25px;
+}
+
+#partneri > .row > img {
 	height: 25px;
 	/*width: auto;*/
 	/*debug*/
-	width: auto;
+	max-width: 100%;
 	cursor: pointer;
 }
 /*! PARTNERI END!*/
 
+/*! BLOG !*/
+
+#blog {
+	height: 500px;
+	background: var(--violet-dark);
+}
+
+#blog > .container {
+	padding-top: 20px;
+}
+
+#blog > .container > .quick-desc *{
+	text-align: center;
+}
+
+#blog > .container > .quick-desc > h2 {
+	color: #fff;
+}
+
+/*! BLOG END !*/
+
 /*! QUOTE !*/
 #quote {
-	padding: 0px 20vw 0px 20vw;
+	padding: 50px 20vw 0px 20vw;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;

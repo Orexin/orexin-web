@@ -114,6 +114,20 @@
 	border-radius: 12px;
 	background-color: white;
 	box-shadow: 0px 0px 50px #35353538 !important;
+	opacity: 0;
+	transform: translateY(200px);
+}
+
+#card-1 {
+	transition: all 0.3s ease-in-out;
+}
+
+#card-2 {
+	transition: all 0.6s ease-in-out;
+}
+
+#card-3 {
+	transition: all 0.9s ease-in-out;
 }
 
 .card-el:hover {

@@ -4,21 +4,17 @@
    width="832"
    height="893"
    viewBox="0 0 832 893"
-   fill="none"
-   id="svg1239">
+   fill="none">
   <g
-     id="g1058">
-    <rect
-       width="705.508"
-       height="534.473"
-       rx="50"
-       transform="matrix(0.975461 0.35441 0 1 80.0708 49.2021)"
-       fill="#B4A7FF"
-       id="rect1056" />
-  </g>
-  <g
-     id="g1064"
-     style="fill:#ffffff">
+     id="svg-index-web-pres-bg"
+     class="svg-index-content"
+     filter="url(#shadow-1)">
+    <path
+       id="rect1056"
+       transform="matrix(0.975461,0.35441,0,1,80.0708,49.2021)"
+       style="fill:#b4a7ff"
+       d="M 53.21825,-0.11138026 655.508,0 c 27.69831,0.00512219 50,22.3 50,50 v 434.47302 c 0,27.7 -5.91196,40.57926 -35.07195,55.08349 l -16.91658,8.41434 C 624.35949,562.47508 0.79937224,511.87874 0,484.47302 L -12.434172,58.17925 C -13.233544,30.773533 19.563308,-0.117604 53.21825,-0.11138026 Z"
+       sodipodi:nodetypes="sssssssss" />
     <rect
        width="705.508"
        height="534.473"
@@ -27,14 +23,55 @@
        fill="white"
        id="rect1062"
        style="fill:#ffffff" />
-  </g>
-  <rect
+     <rect
      width="180.343"
      height="218.274"
      rx="30"
      transform="matrix(0.975461 0.353887 0 1 536.591 525.781)"
      fill="#6455C1"
      id="rect1066" />
+       <rect
+       width="180.343"
+       height="130.06799"
+       rx="30"
+       transform="matrix(0.975461,0.353887,0,1,298.748,524.542)"
+       fill="#b4a7ff"
+       id="rect1081"
+       x="0"
+       y="0"
+       style="fill:#6455c1;fill-opacity:1" />
+         <rect
+     width="180.343"
+     height="130.068"
+     rx="25"
+     transform="matrix(0.975461 0.353887 0 1 536.826 355.372)"
+     fill="#6455C1"
+     id="rect1088" />
+       <rect
+     width="187.13663"
+     height="218.274"
+     rx="31.130117"
+     transform="matrix(0.94004884,0.34103984,0,1,0,0)"
+     fill="#6455c1"
+     id="rect1100"
+     x="317.74838"
+     y="156.71814"
+     style="stroke-width:1.01866" />
+       <rect
+     width="163.588"
+     height="387.285"
+     rx="20"
+     transform="matrix(0.975461 0.353887 0 1 100.962 193.713)"
+     fill="#6455C1"
+     id="rect1112" />
+       <rect
+     width="632.035"
+     height="32.1432"
+     rx="16.0716"
+     transform="matrix(0.975461 0.353887 0 1 99.5576 101.412)"
+     fill="#6455C1"
+     id="rect1212" />
+  </g>
   <g
      id="svg-index-web-pres-card-bottom-right"
      class="svg-index-content"
@@ -62,20 +99,6 @@
        d="M583.354 767.248C584.983 740.555 586.465 728.446 601.448 708.405C613.935 687.457 636.41 670.133 646.399 648.279C658.885 627.331 658.885 601.853 658.885 589.114V576.375C658.885 576.375 680.679 584.281 682.715 585.02C684.751 585.759 690.106 588.568 694.117 592.147C698.402 595.971 700.605 598.789 703.076 603.62C705.541 608.441 706.333 613.772 706.333 616.014C706.333 618.257 706.334 644.545 706.334 670.022C706.334 695.5 706.334 720.978 706.334 746.456C706.334 771.934 706.334 763.96 706.334 789.438C706.334 789.438 706.333 794.671 703.89 798.269C701.447 801.868 698.404 803.73 694.117 804.441C688.009 805.456 681.9 803 681.9 803L583.354 767.248Z"
        fill="#6A1EFF"
        id="path1074" />
-  </g>
-  <g
-     id="g1083"
-     style="fill:#6455c1;fill-opacity:1">
-    <rect
-       width="180.343"
-       height="130.06799"
-       rx="30"
-       transform="matrix(0.975461,0.353887,0,1,298.748,524.542)"
-       fill="#b4a7ff"
-       id="rect1081"
-       x="0"
-       y="0"
-       style="fill:#6455c1;fill-opacity:1" />
   </g>
   <g
      id="svg-index-web-pres-card-bottom-left"
@@ -126,13 +149,6 @@
        fill="#ffffff"
        id="path1086" />
   </g>
-  <rect
-     width="180.343"
-     height="130.068"
-     rx="25"
-     transform="matrix(0.975461 0.353887 0 1 536.826 355.372)"
-     fill="#6455C1"
-     id="rect1088" />
   <g
      id="svg-index-web-pres-card-top-right"
      class="svg-index-content"
@@ -167,16 +183,6 @@
        fill="#5C09FF"
        id="path1098" />
   </g>
-  <rect
-     width="187.13663"
-     height="218.274"
-     rx="31.130117"
-     transform="matrix(0.94004884,0.34103984,0,1,0,0)"
-     fill="#6455c1"
-     id="rect1100"
-     x="317.74838"
-     y="156.71814"
-     style="stroke-width:1.01866" />
   <g
      id="svg-index-web-pres-card-top-left"
      class="svg-index-content"
@@ -212,13 +218,6 @@
        fill="#4508bd"
        id="path1108" />
   </g>
-  <rect
-     width="163.588"
-     height="387.285"
-     rx="20"
-     transform="matrix(0.975461 0.353887 0 1 100.962 193.713)"
-     fill="#6455C1"
-     id="rect1112" />
   <g
      id="svg-index-web-pres-left-column"
      class="svg-index-content"
@@ -495,13 +494,6 @@
          id="path1210" />
     </g>
   </g>
-  <rect
-     width="632.035"
-     height="32.1432"
-     rx="16.0716"
-     transform="matrix(0.975461 0.353887 0 1 99.5576 101.412)"
-     fill="#6455C1"
-     id="rect1212" />
   <g
      id="svg-index-web-pres-nav"
      class="svg-index-content"
@@ -554,36 +546,36 @@
      id="defs1237">
     <filter
        id="shadow-1"
-       x="-0.042005702"
-       y="-0.029529668"
-       width="1.0840114"
-       height="1.0639809"
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"
        filterUnits="objectBoundingBox">
       <feOffset
          dx="0"
          dy="4"
          in="SourceAlpha"
          result="shadowOffsetOuter1"
-         id="feOffset1648" />
+         id="feOffset2391" />
       <feGaussianBlur
          stdDeviation="10"
          in="shadowOffsetOuter1"
          result="shadowBlurOuter1"
-         id="feGaussianBlur1650" />
+         id="feGaussianBlur2393" />
       <feColorMatrix
-         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
          in="shadowBlurOuter1"
          type="matrix"
          result="shadowMatrixOuter1"
-         id="feColorMatrix1652" />
+         id="feColorMatrix2395" />
       <feMerge
-         id="feMerge1658">
+         id="feMerge2401">
         <feMergeNode
            in="shadowMatrixOuter1"
-           id="feMergeNode1654" />
+           id="feMergeNode2397" />
         <feMergeNode
            in="SourceGraphic"
-           id="feMergeNode1656" />
+           id="feMergeNode2399" />
       </feMerge>
     </filter>
   </defs>

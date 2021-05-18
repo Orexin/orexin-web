@@ -40,8 +40,78 @@ var nabidka = new Waypoint({
 	},
 });
 
+// Solutions hover effect
+const webPresBtn = document.getElementById('solutions-web-pres-btn');
+const webAppBtn = document.getElementById('solutions-web-app-btn');
+const ecommerceBtn = document.getElementById('solutions-ecommerce-btn');
+
+webPresBtn.addEventListener('mouseover', event => {
+	document.getElementById("svg-index-web-pres-bg").style.transform = "translateX(20px)"
+	document.getElementById("svg-index-web-pres-nav").style.transform = "translateX(-20px)"
+	document.getElementById("svg-index-web-pres-card-top-right").style.transform = "translateX(-25px)"
+	document.getElementById("svg-index-web-pres-card-bottom-right").style.transform = "translateX(-30px)"
+	document.getElementById("svg-index-web-pres-card-top-left").style.transform = "translateX(-35px)"
+	document.getElementById("svg-index-web-pres-card-bottom-left").style.transform = "translateX(-35px)"
+	document.getElementById("svg-index-web-pres-left-column").style.transform = "translateX(-40px)"
+})
+
+webPresBtn.addEventListener('mouseout', event => {
+	document.getElementById("svg-index-web-pres-bg").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-pres-nav").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-pres-card-top-right").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-pres-card-bottom-right").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-pres-card-top-left").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-pres-card-bottom-left").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-pres-left-column").style.transform = "translateX(0)"
+})
+
+webAppBtn.addEventListener('mouseover', event => {
+	document.getElementById("svg-index-web-app-bg").style.transform = "translateX(-20px)"
+	document.getElementById("svg-index-web-app-left-column").style.transform = "translateX(15px)"
+	document.getElementById("svg-index-web-app-graph-top").style.transform = "translateX(20px)"
+	document.getElementById("svg-index-web-app-values").style.transform = "translateX(25px)"
+	document.getElementById("svg-index-web-app-graph-middle").style.transform = "translateX(30px)"
+	document.getElementById("svg-index-web-app-graph-bottom").style.transform = "translateX(30px)"
+
+})
+
+webAppBtn.addEventListener('mouseout', event => {
+	document.getElementById("svg-index-web-app-bg").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-app-left-column").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-app-graph-top").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-app-values").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-app-graph-middle").style.transform = "translateX(0)"
+	document.getElementById("svg-index-web-app-graph-bottom").style.transform = "translateX(0)"
+})
+
+ecommerceBtn.addEventListener('mouseover', event => {
+	document.getElementById("svg-index-ecommerce-bg").style.transform = "translateX(20px)"
+	document.getElementById("svg-index-ecommerce-nav").style.transform = "translateX(-20px)"
+	document.getElementById("svg-index-ecommerce-left-column").style.transform = "translateX(-20px)"
+	document.getElementById("svg-index-ecommerce-search").style.transform = "translateX(-25px)"
+	document.getElementById("svg-index-ecommerce-card-top-left").style.transform = "translateX(-30px)"
+	document.getElementById("svg-index-ecommerce-card-bottom-left").style.transform = "translateX(-30px)"
+	document.getElementById("svg-index-ecommerce-card-top-middle").style.transform = "translateX(-30px)"
+	document.getElementById("svg-index-ecommerce-card-bottom-middle").style.transform = "translateX(-30px)"
+	document.getElementById("svg-index-ecommerce-card-top-right").style.transform = "translateX(-30px)"
+	document.getElementById("svg-index-ecommerce-card-bottom-right").style.transform = "translateX(-30px)"
+})
+
+ecommerceBtn.addEventListener('mouseout', event => {
+	document.getElementById("svg-index-ecommerce-bg").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-nav").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-left-column").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-search").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-card-top-left").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-card-bottom-left").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-card-top-middle").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-card-bottom-middle").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-card-top-right").style.transform = "translateX(0)"
+	document.getElementById("svg-index-ecommerce-card-bottom-right").style.transform = "translateX(0)"
+})
+
 // onscroll elements 20 degrees translate
-window.addEventListener('scroll', function () {
+/* window.addEventListener('scroll', function () {
 	// if there is already transform attr in <g> tag create another group inside it, put everything there and then move the transform attr to the lower group
 	// defaults
 	var scroll = window.scrollY;
@@ -139,4 +209,4 @@ window.addEventListener('scroll', function () {
 		document.getElementById('svg-index-ecommerce-nav').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
 
 	}
-});
+}); */

@@ -246,14 +246,23 @@
 }
 
 .svg-index-content {
-	transform: translateY(100px);
-	transition: all 0.75s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.solutions a:hover .solutions div div div svg #svg-index-web-pres-bg {
+	transform: translateX(100px);
+}
+
+.solutions p {
+	margin: 5px 0 30px 0;
 }
 
 .solutions a {
 	background: #fff;
+	border-color: #fff;
 	color: var(--violet) !important;
 	margin: 5px 0;
+
 }
 /*! SOLUTIONS SELECT! END */
 

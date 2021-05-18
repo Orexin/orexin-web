@@ -244,6 +244,17 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 }
+
+.svg-index-content {
+	transform: translateY(100px);
+	transition: all 0.75s ease-in-out;
+}
+
+.solutions a {
+	background: #fff;
+	color: var(--violet) !important;
+	margin: 5px 0;
+}
 /*! SOLUTIONS SELECT! END */
 
 /*! PORTFOLIO !*/

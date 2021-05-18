@@ -30,6 +30,7 @@
      id="path1535" />
   <g
      id="svg-index-web-app-graph-bottom"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <path
        d="M662.221 351.521L371.55 458.755C356.005 464.49 343.404 482.57 343.404 499.139V662.752C343.404 679.32 356.005 688.103 371.55 682.368L662.221 575.134C677.766 569.399 690.367 551.319 690.367 534.75V371.137C690.367 354.569 677.766 345.786 662.221 351.521Z"
@@ -109,6 +110,7 @@
      id="path1571" />
   <g
      id="svg-index-web-app-graph-top"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <path
        d="M672.174 25.8229L164.376 213.159C148.831 218.894 136.23 236.974 136.23 253.543V331.151C136.23 347.72 148.831 356.502 164.376 350.767L672.174 163.431C687.718 157.696 700.319 139.616 700.319 123.047V45.4394C700.319 28.8709 687.718 20.0883 672.174 25.8229Z"
@@ -145,6 +147,7 @@
   </g>
   <g
      id="svg-index-web-app-values"
+     class="svg-index-content"
      filter="url(#shadow-1)"
      transform="translate(-0.14733458,0.09807399)">
     <g
@@ -256,6 +259,7 @@
      id="path1639" />
   <g
      id="svg-index-web-app-left-column"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <path
        d="M0 304.391C0 287.823 12.601 269.742 28.146 264.008L105.204 235.579C115.567 231.756 123.968 237.611 123.968 248.657V678.72C123.968 695.289 111.366 713.369 95.822 719.104L28.146 744.071C12.601 749.806 0 741.023 0 724.454V304.391Z"
@@ -335,6 +339,7 @@
   </g>
   <g
      id="svg-index-web-app-graph-middle"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1679">

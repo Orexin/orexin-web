@@ -33,6 +33,7 @@
      id="rect1234" />
   <g
      id="svg-index-ecommerce-card-bottom-right"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1238">
@@ -77,6 +78,7 @@
      id="rect1250" />
   <g
      id="svg-index-ecommerce-card-bottom-middle"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1254"
@@ -122,6 +124,7 @@
      id="rect1266" />
   <g
      id="svg-index-ecommerce-card-bottom-left"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1270">
@@ -166,6 +169,7 @@
      id="rect1282" />
   <g
      id="svg-index-ecommerce-card-top-right"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1286">
@@ -210,6 +214,7 @@
      id="rect1298" />
   <g
      id="svg-index-ecommerce-card-top-middle"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1302">
@@ -268,6 +273,7 @@
      id="rect1318" />
   <g
      id="svg-index-ecommerce-card-top-left"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1326">
@@ -326,6 +332,7 @@
      id="rect1338" />
   <g
      id="svg-index-ecommerce-search"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1342">
@@ -392,6 +399,7 @@
      id="rect1358" />
   <g
      id="svg-index-ecommerce-left-column"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1362"
@@ -866,6 +874,7 @@
      id="rect1524" />
   <g
      id="svg-index-ecommerce-nav"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1532">

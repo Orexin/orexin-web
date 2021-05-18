@@ -37,6 +37,7 @@
      id="rect1066" />
   <g
      id="svg-index-web-pres-card-bottom-right"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1070">
@@ -78,6 +79,7 @@
   </g>
   <g
      id="svg-index-web-pres-card-bottom-left"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1078">
@@ -133,6 +135,7 @@
      id="rect1088" />
   <g
      id="svg-index-web-pres-card-top-right"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1092">
@@ -176,6 +179,7 @@
      style="stroke-width:1.01866" />
   <g
      id="svg-index-web-pres-card-top-left"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <rect
        width="187.13663"
@@ -217,6 +221,7 @@
      id="rect1112" />
   <g
      id="svg-index-web-pres-left-column"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <g
        id="g1116">
@@ -499,6 +504,7 @@
      id="rect1212" />
   <g
      id="svg-index-web-pres-nav"
+     class="svg-index-content"
      filter="url(#shadow-1)">
     <rect
        width="632.035"

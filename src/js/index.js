@@ -40,14 +40,103 @@ var nabidka = new Waypoint({
 	},
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-	var elms = document.getElementsByClassName('splide');
-	for (var i = 0, len = elms.length; i < len; i++) {
-		new Splide(elms[i], {
-			type: 'loop',
-			autoplay: true,
-			interval: 6000,
-			speed: 1500,
-		}).mount();
+// onscroll elements 20 degrees translate
+window.addEventListener('scroll', function () {
+	// if there is already transform attr in <g> tag create another group inside it, put everything there and then move the transform attr to the lower group
+	// defaults
+	var scroll = window.scrollY;
+	var length = scroll;
+	var translateRatioX = 0,
+		translateRatioY = 0,
+		degrees = 20;
+		console.log(scroll)
+	// web-pres
+	if (scroll <= 1000) {
+		translateRatioX = Math.sin(degrees) * length * 0.05;
+		translateRatioY = Math.sqrt(length * 0.05 * (length * 0.05) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-pres-left-column').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.075;
+		translateRatioY = Math.sqrt(length * 0.075 * (length * 0.075) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-pres-card-top-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.1;
+		translateRatioY = Math.sqrt(length * 0.1 * (length * 0.1) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-pres-card-bottom-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.125;
+		translateRatioY = Math.sqrt(length * 0.125 * (length * 0.125) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-pres-card-bottom-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.15;
+		translateRatioY = Math.sqrt(length * 0.15 * (length * 0.15) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-pres-card-top-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.175;
+		translateRatioY = Math.sqrt(length * 0.175 * (length * 0.175) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-pres-nav').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+	}
+
+	// web-app
+	if (scroll <= 1500) {
+		translateRatioX = Math.sin(degrees) * length * 0.05;
+		translateRatioY = Math.sqrt(length * 0.05 * (length * 0.05) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-app-graph-bottom').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.075;
+		translateRatioY = Math.sqrt(length * 0.075 * (length * 0.075) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-app-graph-middle').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.1;
+		translateRatioY = Math.sqrt(length * 0.1 * (length * 0.1) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-app-values').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.125;
+		translateRatioY = Math.sqrt(length * 0.125 * (length * 0.125) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-app-graph-top').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.15;
+		translateRatioY = Math.sqrt(length * 0.15 * (length * 0.15) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-web-app-left-column').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+	}
+
+	// ecommerce
+	if (scroll <= 2000) {
+		translateRatioX = Math.sin(degrees) * length * 0.05;
+		translateRatioY = Math.sqrt(length * 0.05 * (length * 0.05) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-left-column').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.075;
+		translateRatioY = Math.sqrt(length * 0.075 * (length * 0.075) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-card-top-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.1;
+		translateRatioY = Math.sqrt(length * 0.1 * (length * 0.1) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-card-bottom-left').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.125;
+		translateRatioY = Math.sqrt(length * 0.125 * (length * 0.125) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-card-top-middle').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.15;
+		translateRatioY = Math.sqrt(length * 0.15 * (length * 0.15) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-card-bottom-middle').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.175;
+		translateRatioY = Math.sqrt(length * 0.175 * (length * 0.175) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-card-top-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+	
+		translateRatioX = Math.sin(degrees) * length * 0.175;
+		translateRatioY = Math.sqrt(length * 0.175 * (length * 0.175) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-card-bottom-right').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.175;
+		translateRatioY = Math.sqrt(length * 0.175 * (length * 0.175) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-search').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
+		translateRatioX = Math.sin(degrees) * length * 0.175;
+		translateRatioY = Math.sqrt(length * 0.175 * (length * 0.175) + translateRatioX * translateRatioX);
+		document.getElementById('svg-index-ecommerce-nav').style.transform = `translate(${translateRatioY}px, ${translateRatioX}px)`;
+
 	}
 });

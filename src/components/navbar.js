@@ -23,7 +23,7 @@ class Navbar extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
-		<div class="logo">
+<div class="logo">
 	<a href="index.html">
 		<div id="nav-logo"></div>
 	</a>
@@ -51,7 +51,7 @@ class Navbar extends HTMLElement {
 </div>
 <div class="nav-actions">
 	<a href="#" class="nav-login-btn">Login</a>
-	<a href="./contact.html" class="fancy-btn-trans" id="fancy-nav-btn">Kontakt</a>
+	<a href="/contact.html" id="fancy-nav-btn" class="fancy-btn-trans">Kontakt</a>
 </div>
 		`;
 
@@ -59,6 +59,7 @@ class Navbar extends HTMLElement {
 		const nav = document.querySelector('navbar-wrapper');
 		const navLogo = document.querySelector('#nav-logo');
 		const kontaktBtn = document.querySelector('#fancy-nav-btn');
+		const navLi = document.getElementsByClassName('nav-li');
 
 		var prevScrollpos = window.pageYOffset;
 		var currentScrollPos = 0;
@@ -81,11 +82,20 @@ class Navbar extends HTMLElement {
 				navLogo.innerHTML = svgLogoGrad;
 				//navLogo.style.content = `url(${logoGrad})`
 				kontaktBtn.classList.add('fancy-btn-trans-whited')
+				console.log('kokoti')
+				for (var i = 0; i < navLi.length; i++) {
+					navLi[i].classList.remove('nav-li-white-hover')
+					navLi[i].classList.add('nav-li-violet-hover')
+				}
 			} else {
 				nav.classList.remove('whited');
 				navLogo.innerHTML = svgLogoWhite;
 				//navLogo.style.content = `url(${logoWhite})`
 				kontaktBtn.classList.remove('fancy-btn-trans-whited')
+				for (var i = 0; i < navLi.length; i++) {
+					navLi[i].classList.add('nav-li-white-hover')
+					navLi[i].classList.remove('nav-li-violet-hover')
+				}
 			}
 		};
 /* 		var degrees1 = 0, degrees2 = 0;

@@ -31,20 +31,30 @@ class Navbar extends HTMLElement {
 <div class="nav-set">
 	<div class="nav-links">
 		<ul>
-			<li class="nav-li">
-				<a href="/index.html">Úvod</a>
+			<li class="nav-li nav-li-white-hover">
+				<a href="/index.html">
+					<span>Úvod</span>
+				</a>
 			</li>
-			<li class="nav-li">
-				<a href="/about.html">O&nbsp;nás</a>
+			<li class="nav-li nav-li-white-hover">
+				<a href="/about.html">
+					<span>O&nbsp;nás</span>
+				</a>
 			</li>
-			<li class="nav-li">
-				<a href="/services.html">Služby</a>
+			<li class="nav-li nav-li-white-hover">
+				<a href="/services.html">
+					<span>Služby</span>
+				</a>
 			</li>
-			<li class="nav-li">
-				<a href="/blog.html">Blog</a>
+			<li class="nav-li nav-li-white-hover">
+				<a href="/blog.html">
+					<span>Blog</span>
+				</a>
 			</li>
-			<li class="nav-li">
-				<a href="/partnership.html">Partnerství</a>
+			<li class="nav-li nav-li-white-hover">
+				<a href="/partnership.html">
+					<span>Partnerství</span>
+				</a>
 			</li>
 		</ul>
 	</div>

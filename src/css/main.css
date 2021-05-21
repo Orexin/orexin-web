@@ -169,6 +169,10 @@ a:active {
 	color: #fff;
 }*/
 
+a {
+	transition: all 0.3s ease;
+}
+
 /* nadpisy v hero */
 h1 {
 	font-size: 45px;
@@ -195,10 +199,6 @@ h4 {
 	font-weight: 500;
 }
 
-li {
-	list-style: none;
-}
-
 body {
 	background-color: #f0f2fd;
 	height: 100%;
@@ -209,7 +209,7 @@ body {
 	position: relative;
 }
 
-.quick-desc h2{
+.quick-desc h2 {
 	font-size: 30px;
 	color: var(--violet);
 	margin: 0;
@@ -518,7 +518,7 @@ form p.gdpr-notice {
 }
 
 .socials-hover a:nth-child(4) > span:hover {
-	color: #FF0000;
+	color: #ff0000;
 }
 
 .socials-hover a:nth-child(5) > span:hover {
@@ -526,7 +526,7 @@ form p.gdpr-notice {
 }
 
 .socials-hover a:nth-child(6) > span:hover {
-	color: #2867B2;
+	color: #2867b2;
 }
 
 /** RESPO */
@@ -553,18 +553,19 @@ form p.gdpr-notice {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 	background: var(--violet-darker);
 }
 
 /* Track */
-::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
 	background: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4c516b;
+	background: #4c516b;
 	border-radius: 4px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -572,7 +573,7 @@ form p.gdpr-notice {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #727897;
+	background: #727897;
 }
 
 /* Waves SVG*/

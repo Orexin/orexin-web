@@ -70,7 +70,7 @@ window.addEventListener('scroll', function () {
 	// if there is already transform attr in <g> tag create another group inside it, put everything there and then move the transform attr to the lower group
 	// defaults
 	var scroll = window.scrollY;
-	var length = scroll;
+	var length = scroll/3;
 	var translateRatioX = 0,
 		translateRatioY = 0,
 		degrees = 20;

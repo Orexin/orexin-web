@@ -24,7 +24,7 @@ class Navbar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 <div class="logo">
-	<a href="index.html">
+	<a href="/index.html">
 		<div id="nav-logo"></div>
 	</a>
 </div>
@@ -108,37 +108,66 @@ class Navbar extends HTMLElement {
 				}
 			}
 		};
+
+		// hover logo animation
 /* 		var degrees1 = 0, degrees2 = 0;
-		const navPath1 = document.querySelector('#nav-emblem-path-1');
-		const navPath2 = document.querySelector('#nav-emblem-path-2');
+		const navPath1 = document.querySelector('.nav-emblem-path-1');
+		const navPath2 = document.querySelector('.nav-emblem-path-2');
+		const regeneratorRuntime = require('regenerator-runtime');
+
+		const sleep = (time) => {
+			return new Promise((resolve) => setTimeout(resolve, time));
+		};
 
 		navLogo.addEventListener('mouseover', () => {
-			for(var i = 0; i < 361; i++) {
-				navPath1.style.transform = `rotateZ(${i}deg)`;
-				degrees1 = i;
-				if  (i >= 360) {
-					i = 0;
+			const logoHover1 = async () => {
+				for(var i = 0; i < 361; i++) {
+					navPath1.style.transform = `rotateZ(${i}deg)`;
+					degrees1 = i;
+					if  (i >= 360) {
+						i = 0;
+					}
+					console.log(i)
+					await sleep(150);
 				}
 			}
-			for(var i = 360; i > 0; i--) {
-				navPath2.style.transform = `rotateZ(${i}deg)`;
-				degrees2 = i;
-				if  (i >= 360) {
-					i = 0;
+			const logoHover2 = async () => {
+				for(var i = 360; i > -1; i--) {
+					navPath2.style.transform = `rotateZ(${i}deg)`;
+					degrees2 = i;
+					if  (i <= 0) {
+						i = 360;
+					}
+					console.log(i)
+					await sleep(150);
 				}
 			}
-		});
+			logoHover1()
+			logoHover2()
+		}); */
 
 		// spin that fella back
-		navLogo.addEventListener('mouseout', () => {
-
+/* 		navLogo.addEventListener('mouseout', () => {
+			const logoHover = async () => {
+				for(var i = 0; i < 361; i++) {
+					navPath2.style.transform = `rotateZ(${i}deg)`;
+					degrees2 = i;
+					if  (i >= 360) {
+						i = 0;
+					}
+					await sleep(5);
+				}
+				for(var i = 360; i > 0; i--) {
+					navPath1.style.transform = `rotateZ(${i}deg)`;
+					degrees1 = i;
+					if  (i >= 360) {
+						i = 0;
+					}
+					await sleep(5);
+				}
+			}
+			logoHover()
 		}); */
-/* 		window.addEventListener('scroll', function () {
-			const navPath1 = document.querySelector('#nav-emblem-path-1');
-			const navPath2 = document.querySelector('#nav-emblem-path-2');
-			navPath1.style.animationPlayState = "running"
-			navPath2.style.animationPlayState = "running"
-		}) */
 	}
 }
 

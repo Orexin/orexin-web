@@ -110,7 +110,7 @@ svg {
 	transform-box: fill-box;
 	-webkit-animation: moveCounterClockwise 5.5s linear infinite;
 	animation: emblemPath1 5.5s linear infinite;
-	animation-play-state: paused;
+	animation-play-state: running;
 }
 
 .nav-emblem-path-2 {
@@ -118,15 +118,15 @@ svg {
 	transform-box: fill-box;
 	-webkit-animation: moveClockwise 4s linear infinite;
 	animation: emblemPath2 4s linear infinite;
-	animation-play-state: paused;
+	animation-play-state: running;
 }
 
 #nav-logo:hover .nav-emblem-path-1 {
-	animation-play-state: running;
+	animation-play-state: paused;
 }
 
 #nav-logo:hover .nav-emblem-path-2 {
-	animation-play-state: running;
+	animation-play-state: paused;
 }
 
 #nav-logo:hover {

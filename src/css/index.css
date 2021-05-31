@@ -270,6 +270,15 @@
 #portfolio {
 	padding: 50px 0px 0px 0px;
 }
+
+#portfolio .sol-text h2 {
+	color: var(--violet);
+}
+
+#portfolio .sol-text {
+	margin-bottom: 20px;
+}
+
 .portfolio-rows {
 	display: flex;
 	flex-direction: column;
@@ -343,17 +352,22 @@
 #partneri {
 	padding:50px 0 50px 0;
 	height: 500px;
+	background: var(--violet-darker);
 }
 
-#partneri > .quick-desc {
+#partneri > .container > .quick-desc {
 	justify-content: left;
 }
 
-#partneri > .row {
+#partneri > .container > .quick-desc > h2 {
+	color: #fff;
+}
+
+#partneri > .container > .row {
 	gap: 25px;
 }
 
-#partneri > .row > img {
+#partneri > .container > .row > img {
 	height: 25px;
 	/*width: auto;*/
 	/*debug*/

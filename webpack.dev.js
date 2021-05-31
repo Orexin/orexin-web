@@ -22,7 +22,6 @@ module.exports = {
 		webapp: '/src/js/web-app.js',
 		ecommerce: '/src/js/ecommerce.js',
 		partnership: '/src/js/partnership.js',
-		blog: '/src/js/blog.js',
 	},
 
 	devServer: {
@@ -150,12 +149,6 @@ module.exports = {
 			inject: true,
 			chunks: ['main', 'partnership'],
 			filename: 'partnership.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: '/src/blog.html',
-			inject: true,
-			chunks: ['main', 'blog'],
-			filename: 'blog.html'
 		}),
 		new WorkboxPlugin.GenerateSW({
 			// these options encourage the ServiceWorkers to get in there fast

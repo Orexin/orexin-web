@@ -143,10 +143,7 @@ svg {
 	background-color: white !important;
 	filter: drop-shadow(0px 10px 10px #0000004b);
 }
-.whited > .nav-set > .nav-links > ul > li > a > span {
-	color: var(--violet) !important;
-}
-.whited > .nav-actions > .nav-login-btn {
+.whited > .nav-set > .nav-links > ul > li > a > span, .whited > .nav-actions > ul > .nav-contact-btn > a > span {
 	color: var(--violet) !important;
 }
 .nav-actions {
@@ -156,11 +153,18 @@ svg {
 	width: 200px;
 }
 
-.nav-login-btn {
-	color: white !important;
+.nav-actions, .nav-actions > ul, .nav-actions > ul > li {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-contact-btn {
 	transition-duration: 0.3s;
 	font-weight: 600;
 	margin-right: 10px;
+	border-top: 4px rgba(0, 0, 0, 0) solid;
 }
 
 #fancy-nav-btn {

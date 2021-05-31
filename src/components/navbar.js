@@ -47,11 +47,6 @@ class Navbar extends HTMLElement {
 				</a>
 			</li>
 			<li class="nav-li nav-li-white-hover">
-				<a href="/blog.html">
-					<span>Blog</span>
-				</a>
-			</li>
-			<li class="nav-li nav-li-white-hover">
 				<a href="/partnership.html">
 					<span>Partnerství</span>
 				</a>
@@ -60,8 +55,14 @@ class Navbar extends HTMLElement {
 	</div>
 </div>
 <div class="nav-actions">
-	<a href="#" class="nav-login-btn">Login</a>
-	<a href="/contact.html" id="fancy-nav-btn" class="fancy-btn-trans">Kontakt</a>
+	<ul>
+		<li class="nav-contact-btn nav-li nav-li-white-hover">
+			<a href="/contact.html">
+				<span>Kontakt</span>
+			</a>
+		</li>
+	</ul>
+	<a href="https://www.orexin.console.cz/login" id="fancy-nav-btn" class="fancy-btn-trans">Login</a>
 </div>
 		`;
 

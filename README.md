@@ -1,5 +1,5 @@
 # 🚀 Orexin web
-**Current project manager**:  @TasssiloBalbo   
+**Current project manager**:  @TassiloBalbo   
 **Expire date**: 15.06.2020
 
 Webová stránka Orexinu 😍

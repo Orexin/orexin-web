@@ -62,7 +62,7 @@ class Navbar extends HTMLElement {
 			</a>
 		</li>
 	</ul>
-	<a href="https://www.orexin.console.cz/login" id="fancy-nav-btn" class="fancy-btn-trans">Login</a>
+	<a href="https://www.console.orexin.cz/login" id="fancy-nav-btn" class="fancy-btn-trans">Login</a>
 </div>
 		`;
 
@@ -93,7 +93,6 @@ class Navbar extends HTMLElement {
 				navLogo.innerHTML = svgLogoGrad;
 				//navLogo.style.content = `url(${logoGrad})`
 				kontaktBtn.classList.add('fancy-btn-trans-whited')
-				console.log('kokoti')
 				for (var i = 0; i < navLi.length; i++) {
 					navLi[i].classList.remove('nav-li-white-hover')
 					navLi[i].classList.add('nav-li-violet-hover')

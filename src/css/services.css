@@ -395,7 +395,7 @@ svg {
 }
 
 .cenik-box div div h3 {
-	font-size: 25px;
+	font-weight: 600;
 }
 
 .cenik-box div div {
@@ -410,7 +410,7 @@ svg {
 
 .cenik-explanations div h3 {
 	margin-left: 35px;
-	font-size: 25px;
+	font-weight: 600;
 }
 
 .cenik-explanations div ul {

@@ -66,7 +66,7 @@ svg {
 	font-weight: 800;
 	font-size: 20px;
 }
-.abt-text > h3 {
+.abt-text > span {
 	font-size: 40px;
 	font-weight: 800;
 }
@@ -114,19 +114,36 @@ svg {
 /* WE-ARE-OREXIN */
 
 #we-are-orexin {
-	height: 100vh !important;
-	padding: 50px;
+	padding: 60px;
 	background: var(--violet-dark);
 }
 #we-are-orexin div > .header {
 	text-align: center;
 }
-#we-are-orexin div > .header > h2 {
-	font-size: 30px;
-	margin: 0;
+#we-are-orexin div > .header > h1 {
+	text-align: center;
 }
+
 #we-are-orexin div > .header > p {
 	color: var(--text-gray);
+}
+
+#we-are-orexin > .container > .row > {
+	margin: 20px;
+}
+
+#we-are-orexin > .container > .row > .col {
+	margin: 20px;
+}
+
+#we-are-orexin > .container > .row > .col > p {
+
+}
+
+#we-are-orexin > .container > .row > .col > div {
+	height: 350px;
+	max-width: 100%;
+	margin: 30px auto;
 }
 
 /* WE-ARE-OREXIN END */

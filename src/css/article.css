@@ -37,6 +37,11 @@
 	font-weight: 700;
 }
 
+.article h3 {
+	font-size: 25px;
+	font-weight: 600;
+}
+
 .article h3,
 .ol-lvl-2 li::before {
 	font-size: 22px;
@@ -45,7 +50,6 @@
 
 .article h4 {
 	font-size: 16px;
-	font-weight: 400;
 }
 
 .article ol {

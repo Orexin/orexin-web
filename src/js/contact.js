@@ -1,7 +1,6 @@
 import './../css/contact.css';
 
 // selecting služby
-
 const checkLabels = document.querySelectorAll('.selectBox > label');
 Array.from(checkLabels).forEach((item) => {
 	item.addEventListener('click', (event) => {
@@ -14,6 +13,19 @@ Array.from(checkLabels).forEach((item) => {
 		}
 		console.log(checkbox.checked);
 	});
+});
+
+// ask if you really wanna close the page, when form is filled
+window.addEventListener('beforeunload', function (e) {
+	let name = document.getElementById('name').value;
+	let email = document.getElementById('email').value;
+	let phone = document.getElementById('phone').value;
+	let msg = document.getElementById('msg').value;
+
+	if (name != '' || email != '' || phone != '' || msg != '') {
+		e.preventDefault();
+		e.returnValue = '';
+	}
 });
 
 // phone mask

@@ -385,7 +385,6 @@
 
 @media screen and (max-width: 1408px) {
 	.ref-container {
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-areas: 
@@ -402,7 +401,6 @@
 
 @media screen and (max-width: 1024px) {
 	.ref-container {
-		display: grid;
 		grid-template-columns: 2fr 2fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-template-areas: 

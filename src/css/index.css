@@ -398,11 +398,6 @@
 	.ref-col:last-child {
 		display: grid;
 	}
-
-	.ref:hover > .caption {
-		transform: translateY(-85px);
-		opacity: 1;
-	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -421,13 +416,7 @@
 	.ref-col:last-child {
 		display: none;
 	}
-
-	.ref:hover > .caption {
-		transform: translateY(-85px);
-		opacity: 1;
-	}
 }
-
 
 /*! REFERENCE END !*/
 

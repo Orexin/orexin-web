@@ -221,6 +221,8 @@ body {
 	color: var(--text-gray);
 }
 
+/* REX */
+
 .two-columns {
 	display: grid;
 	gap: 1rem;
@@ -258,11 +260,52 @@ body {
 	justify-content: center;
 }
 
+.row::after {
+  clear: both;
+  display: table;
+}
+
 .col {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 }
+
+[class*="col-"] {
+  float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container {
+	flex-grow: 1;
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+}
+
+/* @media screen and (min-width: 1408px) {.container {max-width: 1344px !important;}}
+@media screen and (min-width: 1216px) {.container {max-width: 1152px !important;}}
+@media screen and (min-width: 1024px) {.container {max-width: 960px !important;}}
+ @media screen and (min-width: 960px) {.container {max-width: 768px !important;}}
+@media screen and (min-width: 768px) {.container {max-width: 576px !important;}}
+@media screen and (min-width: 576px) {.container {max-width: 414px !important;}}
+@media screen and (max-width: 576px) {.container {max-width: 375px !important;}} */
+
+/* https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries */
+
+/* REX END */
 
 .btn {
 	font-size: 14px;

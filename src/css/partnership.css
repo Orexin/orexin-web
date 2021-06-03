@@ -58,46 +58,104 @@ svg {
 	color: var(--violet);
 }
 
-#partnerstvi-proc > .row {
-	margin: 30px 0px 30px 0px;
-}
-
-#partnerstvi-proc > .row > .col {
+.partnerstvi-proc-card-content {
 	background: #fff;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	border: 2px solid hsla(0, 0%, 100%, 0);
 	border-radius: 12px;
 	margin: 20px;
 	padding: 30px;
+	height: 305px;
+}
+
+.partnerstvi-proc-cards-container > div {
 	opacity: 0;
-	width: 270px;
 	transform: translateY(200px);
+}
+
+.partnerstvi-proc-cards-container {
+	margin: 30px 0px 30px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 4fr;
+	grid-template-areas: 
+	"card1 card2 card3 card4";
+	grid-gap: 1rem;
 }
 
 #partnerstvi-proc-card-1 {
 	transition: all .4s ease-in-out;
+	grid-area: card1;
 }
 
 #partnerstvi-proc-card-2 {
 	transition: all .6s ease-in-out;
+	grid-area: card2;
 }
 
 #partnerstvi-proc-card-3 {
 	transition: all .8s ease-in-out;
+	grid-area: card3;
 }
 
 #partnerstvi-proc-card-4 {
 	transition: all 1s ease-in-out;
+	grid-area: card4;
 }
 
-#partnerstvi-proc > .row > .col > div {
-	max-height: 100%;
-	width: 220px;
-}
-
-#partnerstvi-proc > .row > .col > h3 {
+.partnerstvi-proc-cards-container > div h3 {
 	text-align: center;
 }
+
+@media screen and (max-width: 1216px) {
+	.partnerstvi-proc-cards-container {
+		grid-template-columns: 2fr 2fr;
+		grid-template-rows: 2fr 2fr;
+		grid-template-areas: 
+		"card1 card2"
+		"card3 card4";
+		grid-gap: 2rem;
+	}
+
+	.partnerstvi-proc-cards-container > div h3 {
+		font-size: 35px;
+	}
+
+	.partnerstvi-proc-card-content {
+		height: 525px;
+	}
+	
+}
+
+@media screen and (max-width: 960px) {
+	.partnerstvi-proc-cards-container {
+		grid-gap: 1rem;
+	}
+
+	.partnerstvi-proc-cards-container > div h3 {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.partnerstvi-proc-cards-container {
+		grid-template-columns: 4fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		"card1"
+		"card2"
+		"card3" 
+		"card4";
+		grid-gap: 2rem;
+	}
+
+	.partnerstvi-proc-card-content {
+		max-width: 450px !important;
+		height: 535px;
+		margin: 20px auto;
+	}
+}
+
 
 /* PARTNERSTVI PROC END */
 

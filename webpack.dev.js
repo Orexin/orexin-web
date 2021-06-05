@@ -22,6 +22,7 @@ module.exports = {
 		webapp: '/src/js/web-app.js',
 		ecommerce: '/src/js/ecommerce.js',
 		partnership: '/src/js/partnership.js',
+		js404: '/src/js/404.js',
 	},
 
 	devServer: {
@@ -149,6 +150,12 @@ module.exports = {
 			inject: true,
 			chunks: ['main', 'partnership'],
 			filename: 'partnership.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: '/src/404/404.html',
+			inject: true,
+			chunks: ['main', 'js404'],
+			filename: '404.html'
 		}),
 		new WorkboxPlugin.GenerateSW({
 			// these options encourage the ServiceWorkers to get in there fast

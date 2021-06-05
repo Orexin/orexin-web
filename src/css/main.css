@@ -548,6 +548,10 @@ form p.gdpr-notice {
 
 /* TEXT END */
 
+.floatingElmAnimation {
+	animation: floatingElm 7s linear infinite;
+}
+
 .socials-hover a:nth-child(1) > span:hover {
 	color: #4267b2;
 }
@@ -618,28 +622,4 @@ form p.gdpr-notice {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #727897;
-}
-
-/* Waves SVG*/
-
-.custom-shape-divider-bottom-1610843841 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
-	margin-bottom: 13px;
-}
-
-.custom-shape-divider-bottom-1610843841 svg {
-	position: relative;
-	display: block;
-	width: calc(274% + 1.3px);
-	height: 69px;
-}
-
-.custom-shape-divider-bottom-1610843841 .shape-fill {
-	fill: #fff;
 }

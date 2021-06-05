@@ -78,16 +78,36 @@ var rozcestnikEcommerce = new Waypoint({
 	},
 });
 
+const grafikaBlueprint = document.getElementById('svg-sluzby-grafika-na-miru-blueprint')
+const grafikaContent = document.getElementById('svg-sluzby-grafika-na-miru-web')
+const bezpeciContent = document.getElementById('svg-sluzby-bezpeci-content')
+const spravaContent = document.getElementById('svg-sluzby-sprava-content')
+const trafficContent = document.getElementById('svg-sluzby-traffic-content')
+const dynamikaContent = document.getElementById('svg-sluzby-dynamika-content')
+const podporaContent = document.getElementById('svg-sluzby-podpora-content')
+const podporaCalendar = document.getElementById('svg-sluzby-podpora-calendar')
+const podporaClock = document.getElementById('svg-sluzby-podpora-clock')
+const plneniContent = document.getElementById('svg-sluzby-plneni-content')
+const fotkyContent = document.getElementById('svg-sluzby-fotky-content')
+const customsContent = document.getElementById('svg-sluzby-customs-content')
+
 var grafika = new Waypoint({
 	element: document.getElementById('grafika'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-grafika-na-miru-blueprint').style.opacity = 1;
-		document.getElementById('svg-sluzby-grafika-na-miru-web').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-grafika-na-miru-web').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		grafikaBlueprint.style.transform = 'translateY(0)';
+		grafikaBlueprint.style.opacity = 1;
+		grafikaContent.style.transform = 'translateY(0)';
+		grafikaContent.style.opacity = 1;
+		
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				grafikaBlueprint.classList.add('floatingElmAnimation')
+			}, 750)
+			setTimeout(() => {
+				grafikaContent.classList.add('floatingElmAnimation')
+			}, 1000)
+		} */
 	},
 });
 
@@ -95,10 +115,17 @@ var bezpeci = new Waypoint({
 	element: document.getElementById('bezpeci'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-bezpeci-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-bezpeci-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		bezpeciContent.style.transform = 'translateY(0)';
+		bezpeciContent.style.opacity = 1;
+		
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				bezpeciContent.classList.add('floatingElmAnimation')
+			}, 750)
+			
+			grafikaBlueprint.classList.remove('floatingElmAnimation')
+			grafikaContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -106,10 +133,16 @@ var sprava = new Waypoint({
 	element: document.getElementById('sprava'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-sprava-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-sprava-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		spravaContent.style.transform = 'translateY(0)';
+		spravaContent.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				spravaContent.classList.add('floatingElmAnimation')
+			}, 750)
+			
+			bezpeciContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -117,10 +150,16 @@ var traffic = new Waypoint({
 	element: document.getElementById('traffic'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-traffic-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-traffic-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		trafficContent.style.transform = 'translateY(0)';
+		trafficContent.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				trafficContent.classList.add('floatingElmAnimation')
+			}, 750)
+	
+			spravaContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -128,10 +167,16 @@ var dynamika = new Waypoint({
 	element: document.getElementById('dynamika'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-dynamika-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-dynamika-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		dynamikaContent.style.transform = 'translateY(0)';
+		dynamikaContent.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				dynamikaContent.classList.add('floatingElmAnimation')
+			}, 750)
+			
+			trafficContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -139,14 +184,26 @@ var podpora = new Waypoint({
 	element: document.getElementById('podpora'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-podpora-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-podpora-content').style.opacity = 1;
-		document.getElementById('svg-sluzby-podpora-calendar').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-podpora-calendar').style.opacity = 1;
-		document.getElementById('svg-sluzby-podpora-clock').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-podpora-clock').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		podporaContent.style.transform = 'translateY(0)';
+		podporaContent.style.opacity = 1;
+		podporaCalendar.style.transform = 'translateY(0)';
+		podporaCalendar.style.opacity = 1;
+		podporaClock.style.transform = 'translateY(0)';
+		podporaClock.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				podporaContent.classList.add('floatingElmAnimation')
+			}, 750)
+			setTimeout(() => {
+				podporaCalendar.classList.add('floatingElmAnimation')
+			}, 1000)
+			setTimeout(() => {
+				podporaClock.classList.add('floatingElmAnimation')
+			}, 1250)
+	
+			dynamikaContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -154,10 +211,18 @@ var plneni = new Waypoint({
 	element: document.getElementById('plneni'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-plneni-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-plneni-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		plneniContent.style.transform = 'translateY(0)';
+		plneniContent.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				plneniContent.classList.add('floatingElmAnimation')
+			}, 750)
+	
+			podporaContent.classList.remove('floatingElmAnimation')
+			podporaCalendar.classList.remove('floatingElmAnimation')
+			podporaClock.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -165,10 +230,16 @@ var fotky = new Waypoint({
 	element: document.getElementById('fotky'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-fotky-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-fotky-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		fotkyContent.style.transform = 'translateY(0)';
+		fotkyContent.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				fotkyContent.classList.add('floatingElmAnimation')
+			}, 750)
+	
+			plneniContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });
 
@@ -176,9 +247,15 @@ var customs = new Waypoint({
 	element: document.getElementById('customs'),
 	offset: '70%',
 	handler: function () {
-		document.getElementById('svg-sluzby-customs-content').style.transform = 'translateY(0)';
-		document.getElementById('svg-sluzby-customs-content').style.opacity = 1;
-		// animation happens only once
-		this.destroy();
+		customsContent.style.transform = 'translateY(0)';
+		customsContent.style.opacity = 1;
+
+/* 		if (screen.width>576&&screen.height>576) {
+			setTimeout(() => {
+				customsContent.classList.add('floatingElmAnimation')
+			}, 750)
+	
+			fotkyContent.classList.remove('floatingElmAnimation')
+		} */
 	},
 });

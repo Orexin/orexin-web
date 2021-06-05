@@ -10,20 +10,15 @@ import 'typicons.font/src/font/typicons.css';
 import '../components/navbar';
 import '../components/footer';
 
-//JS
-import AOS from 'aos';
-// import * as underline from './shifting-underline';
-
-const preloader = document.getElementById('preloader');
-
 window.onload = function () {
-	// AOS
-	AOS.init({ once: true });
 	// ✨ aestetic title ✨
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
-	// yeet out preloader
-	preloader.style.display = 'none';
-	preloader.classList.remove('loading');
+
+	// if preloader exists yeet out preloader
+	if(document.getElementById('preloader')) {
+		document.getElementById('preloader').style.display = 'none';
+		document.getElementById('preloader').classList.remove('loading');
+	}
 
 	// sub-pages-paralax
 	window.addEventListener('scroll', function () {
@@ -37,21 +32,31 @@ window.onload = function () {
 	});
 
 	// scroll to top btn
-	window.onscroll = function () {
-		scrollFunction();
-	};
-	var scrollupBtn = document.getElementById('scrollup-btn');
+	if(document.getElementById('scrollup-btn')) {
+		var scrollupBtn = document.getElementById('scrollup-btn');
 
-	function scrollFunction() {
-		if (window.scrollY > 20) {
-			scrollupBtn.style.display = 'block';
-		} else {
-			scrollupBtn.style.display = 'none';
+		window.onscroll = function () {
+			scrollFunction();
+		};
+	
+		function scrollFunction() {
+			if (window.scrollY > 20) {
+				scrollupBtn.style.display = 'block';
+			} else {
+				scrollupBtn.style.display = 'none';
+			}
 		}
+	
+		scrollupBtn.addEventListener('click', () => {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		});
 	}
-
-	scrollupBtn.addEventListener('click', () => {
-		document.body.scrollTop = 0; // For Safari
-		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-	});
 };
+
+// offline
+window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/src/404/offline.js");
+  }
+});

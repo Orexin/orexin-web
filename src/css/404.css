@@ -9,12 +9,37 @@ svg {
 	margin-top: 5vh;
 }
 
+@media screen and (max-height: 685px) {
+	svg {
+		height: 400px;
+	}
+
+	#get-back {
+		margin-bottom: 30px;
+	}
+}
+
 h2 {
 	color: var(--violet-dark);
 	margin: 30px auto 15px auto;
 }
 
-.row, .col {
-	align-items: center;
-	justify-content: center;
+#404 {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#404 > div {
+	display: table-cell;
+  vertical-align: middle;
+}
+
+#404 > div > div {
+	margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }

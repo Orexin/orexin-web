@@ -53,10 +53,3 @@ window.onload = function () {
 		});
 	}
 };
-
-// offline
-window.addEventListener("load", () => {
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/src/404/offline.js");
-  }
-});

@@ -152,7 +152,7 @@ module.exports = {
 			filename: 'partnership.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: '/src/404/404.html',
+			template: '/src/404.html',
 			inject: true,
 			chunks: ['main', 'js404'],
 			filename: '404.html'

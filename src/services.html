@@ -118,27 +118,27 @@
 	<!-- UVOD SUBPAGES -->
 	<section class="uvod-subpages">
 		<div class="uvod-subpages text container">
-			<div class="column">
+			<div class="col">
 				<h1>Služby</h1>
 				<h2>Zde si vyberete to své</h2>
 			</div>
 		</div>
 	</section>
 
-	<div class="columns is-centered skip-button">
-		<a href="./services.html#rozcestnik" class="column is-1">
+	<div class="row flex-center skip-button">
+		<a href="./services.html#rozcestnik" class="col-1">
 			<div>
 				<span class="typcn typcn-arrow-down-thick skip-arrow"></span>
 				<span class="skip-text">Rozcestník</span>
 			</div>
 		</a>
-		<a href="./services.html#cenik" class="column is-1">
+		<a href="./services.html#cenik" class="col-1">
 			<div>
 				<span class="typcn typcn-arrow-down-thick skip-arrow"></span>
 				<span class="skip-text">Ceník</span>
 			</div>
 		</a>
-		<a href="./services.html#postup-vyroby" class="column is-1">
+		<a href="./services.html#postup-vyroby" class="col-1">
 			<div>
 				<span class="typcn typcn-arrow-down-thick skip-arrow"></span>
 				<span class="skip-text">Postup výroby</span>
@@ -147,7 +147,7 @@
 	</div>
 	<!-- CONTENT -->
 	<div id="services-index">
-		<section id="rozcestnik">
+		<section id="rozcestnik" class="row">
 			<div id="svg-rozcestnik-web-pres" class="rozcestnik-content">
 				<!-- svg -->
 			</div>
@@ -164,7 +164,7 @@
 		</div>
 		<section id="grafika">
 			<div class="container two-columns">
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-violet">
 						<h2>Design i grafika na míru</h2>
 						<p>Záleží nám na tom, aby byl váš web jedinečný. Design i grafiku si děláme sami a rádi se s
@@ -181,7 +181,7 @@
 				<div id="svg-bezpeci">
 					<!-- svg -->
 				</div>
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-white">
 						<h2>Bezpečí a spolehlivost</h2>
 						<p>Informace vás i vašich zákazníků jsou u nás v bezpečí. K zabezpečení využíváme
@@ -194,7 +194,7 @@
 		</section>
 		<section id="sprava">
 			<div class="container two-columns">
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-violet">
 						<h2>Jednoduchá správa</h2>
 						<p>Každý není IT specialista, proto vám vytvoříme prostředí, ve kterém se jednoduše
@@ -213,7 +213,7 @@
 				<div id="svg-traffic">
 					<!-- svg -->
 				</div>
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-white">
 						<h2>Platba podle návštěvnosti</h2>
 						<p>Neplaťte zbytečně za web traffic a místo, které nevyužijete. U nás platíte jen za data, která
@@ -224,7 +224,7 @@
 		</section>
 		<section id="dynamika">
 			<div class="container two-columns">
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-violet">
 						<h2>Dynamická a škálovatelná</h2>
 						<p>Plaťte jen za místo které opravdu využijete. Všechna naše řešení jsou škálovatelné a
@@ -241,7 +241,7 @@
 				<div id="svg-podpora">
 					<!-- svg -->
 				</div>
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-white">
 						<h2>Technická podpora</h2>
 						<p>Naši technici jsou tady pro vás. Technická podpora je k dispozici každý pracovní den od 9:00
@@ -254,7 +254,7 @@
 		</section>
 		<section id="plneni">
 			<div class="container two-columns">
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-violet">
 						<h2>Plnění obsahu</h2>
 						<p>Pokud počítače a internet nejsou zrovna vaše věc nebo potřebujete šetřit čas vyplníme obsah
@@ -273,7 +273,7 @@
 				<div id="svg-fotky">
 					<!-- svg -->
 				</div>
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-white">
 						<h2>O fotky se postaráme</h2>
 						<p>Díky našemu partnerství se SkyDive s.r.o. propojíme reálný svět s tím internetovým.</p>
@@ -283,7 +283,7 @@
 		</section>
 		<section id="customs">
 			<div class="container two-columns">
-				<div class="sluzby-content-text flex-center flex-d-column">
+				<div class="sluzby-content-text flex-center col">
 					<div class="txt-violet">
 						<h2>Tvorba SVGs na přání</h2>
 						<p>Pokud počítače a internet nejsou zrovna vaše věc nebo potřebujete šetřit čas vyplníme obsah
@@ -303,57 +303,58 @@
 				<div>
 					<h2 id="cenik-title-first-box">Hlavní služby</h2>
 					<div>
-						<div id="cenik-first-box" class="columns cenik-box">
-							<div class="column is-4">
-								<div class="columns cenik-col-1"></div>
-								<div class="columns cenik-col-1">
+						<div id="cenik-first-box" class="row cenik-box">
+							<div class="col-4">
+								<div class="row cenik-col-1"></div>
+								<div class="row cenik-col-1">
 									<h3>Webová prezentace</h3>
 								</div>
-								<div class="columns cenik-col-1">
+								<div class="row cenik-col-1">
 									<h3>Webová aplikace</h3>
 								</div>
-								<div class="columns cenik-col-1">
+								<div class="row cenik-col-1">
 									<h3>Ecommerce</h3>
 								</div>
 							</div>
-							<div class="column is-4">
-								<div class="columns">
+							<div class="col-4">
+								<div class="row">
 									<h3>Jednorázová cena</h3>
 								</div>
-								<div class="columns">5000 - 100 000 Kč</div>
-								<div class="columns">15 000 - 200 000 Kč</div>
-								<div class="columns">10 000 - 150 000 Kč</div>
+								<div class="row">5000 - 100 000 Kč</div>
+								<div class="row">15 000 - 200 000 Kč</div>
+								<div class="row">10 000 - 150 000 Kč</div>
 							</div>
-							<div class="column is-4">
-								<div class="columns">
+							<div class="col-4">
+								<div class="row">
 									<h3>Roční poplatky</h3>
 								</div>
-								<div class="columns">500 - 5000 Kč</div>
-								<div class="columns">500 - 5000 Kč</div>
-								<div class="columns">500 - 5000 Kč</div>
+								<div class="row">500 - 5000 Kč</div>
+								<div class="row">500 - 5000 Kč</div>
+								<div class="row">500 - 5000 Kč</div>
 							</div>
 						</div>
 						<h2>Doplňkové služby</h2>
-						<div id="cenik-second-box" class="columns cenik-box">
-							<div class="column is-6">
-								<div class="columns">
+						<div id="cenik-second-box" class="row cenik-box">
+							<div class="col-6">
+								<div class="row">
 									<h3>Tvorba grafiky a SVGs na přání</h3>
 								</div>
-								<div class="columns">
+								<div class="row">
 									<h3>Plnění obsahu</h3>
 								</div>
-								<div class="columns">
+								<div class="row">
 									<h3>Focení</h3>
 								</div>
 							</div>
-							<div id="kokot" class="column is-6 is-offset-2">
-								<div class="columns">500 Kč/svg</div>
-								<div class="columns">150 Kč/h</div>
-								<div class="columns">1500 Kč/h</div>
+							<div class="col-2"></div>
+							<div class="col-4">
+								<div class="row">500 Kč/svg</div>
+								<div class="row">150 Kč/h</div>
+								<div class="row">1500 Kč/h</div>
 							</div>
 						</div>
-						<div class="columns cenik-explanations">
-							<div class="column">
+						<div class="row cenik-explanations">
+							<div class="col">
 								<h3>Roční poplatky se skládají z:</h3>
 								<ul>
 									<li>Ceny za pronájem serverového prostoru pro web</li>
@@ -362,12 +363,10 @@
 								</ul>
 							</div>
 						</div>
-						<div class="columns cenik-kontakt">
-							<div class="col">
-								<span>Na požádání vám sestavíme přesný cenový odhad.</span>
-								<div class="columns is-centered">
-									<a href="./services.html#kontakt" class="fancy-btn-trans fancy-btn-trans-whited">Kontaktovat</a>
-								</div>
+						<div class="row cenik-kontakt flex-center">
+							<div class="col flex-center">
+								<span class="row">Na požádání vám sestavíme přesný cenový odhad.</span>
+								<a href="./services.html#kontakt" class="fancy-btn-trans fancy-btn-trans-whited row">Kontaktovat</a>
 							</div>
 						</div>
 					</div>

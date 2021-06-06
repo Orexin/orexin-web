@@ -1,8 +1,6 @@
 import '../css/index.css';
 import './../components/mini-contact';
 import 'waypoints/lib/noframework.waypoints.min.js';
-import '@splidejs/splide/dist/css/splide.min.css';
-import Splide from '@splidejs/splide';
 
 // SVGs
 import svgWebPres from './../img/index-web-pres.svg';

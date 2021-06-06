@@ -68,7 +68,7 @@
 }
 
 #get-started-button {
-	margin-top: -40px !important;
+	margin-top: -33px !important;
 }
 
 .uvod-sub-pages img {
@@ -96,14 +96,11 @@
 }
 
 .cards {
-	display: flex;
-	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
 	margin-top: 75px;
 	margin-bottom: 75px;
 }
+
 .card-el {
 	height: 450px;
 	width: 450px;
@@ -153,9 +150,6 @@
 .see-also {
 	text-align: center;
 	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 15px;
 }
 .see-also a {
@@ -212,10 +206,6 @@
 }
 .card-img {
 	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
 	transition-duration: 0.5s;
 }

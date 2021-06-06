@@ -8,6 +8,11 @@
 	font-family: 'Montserrat', sans-serif !important; /*! Bulma to přemrdává v contact buttonu je to mrdka */
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
 :root {
 	--violet: #4508bd;
 	--violet-light: #5c09ff;
@@ -21,6 +26,16 @@
 
 html {
 	scroll-behavior: smooth;
+	box-sizing: border-box;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+					
 }
 
 /* SCROLLUP BTN */
@@ -173,12 +188,22 @@ a {
 	transition: all 0.3s ease;
 }
 
+a, a:hover, a:visited, a:active, a:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:active, a:focus {
+	color: currentColor;
+}
+
 /* nadpisy v hero */
 h1 {
 	font-size: 45px;
 	color: #fff;
 	text-align: left;
 	font-weight: 700;
+	margin: 0;
 }
 
 /* nadpisy ve stránce */
@@ -245,19 +270,10 @@ body {
 	justify-content: center;
 }
 
-.flex-d-row {
-	flex-direction: row;
-}
-
-.flex-d-column {
-	flex-direction: column;
-}
-
 .row {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 }
 
 .row::after {
@@ -271,9 +287,9 @@ body {
 	flex-direction: column;
 }
 
-[class*="col-"] {
+/* [class*="col-"] {
   float: left;
-}
+} */
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -288,12 +304,19 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.col-two-fifths {width: 40%;}
+.col-three-fifths {width: 60%;}
+
 .container {
 	flex-grow: 1;
 	margin: 0 auto;
 	position: relative;
 	width: auto;
 }
+
+@media screen and (min-width: 1024px) {.container {max-width: 960px;}}
+@media screen and (min-width: 1216px) {.container {max-width: 1152px;}}
+@media screen and (min-width: 1408px) {.container {max-width: 1344px;}}
 
 /* @media screen and (min-width: 1408px) {.container {max-width: 1344px !important;}}
 @media screen and (min-width: 1216px) {.container {max-width: 1152px !important;}}
@@ -391,19 +414,17 @@ body {
 .uvod-subpages.text h1 {
 	font-size: 80px;
 	font-weight: 500;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
 	margin-bottom: 0;
 }
 
 .uvod-subpages.text h2 {
 	font-size: 25px;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
 	margin-bottom: 11vh;
 	font-weight: 600;
+}
+
+.uvod-subpages.text * {
+	margin: 0 auto;
 }
 
 /** FORMS */

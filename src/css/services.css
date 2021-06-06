@@ -82,11 +82,13 @@ svg {
 	padding: 25px 0 25px 10px;
 }
 
+.subservices-nav-button > [class*="col-"], .skip-button > [class*="col-"]  {
+	padding: .75rem;
+}
+
 /* ROZCESTNIK */
 
 #rozcestnik {
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
@@ -350,7 +352,7 @@ svg {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 50px 0 150px 0;
+	margin-top: 50px;
 }
 #cenik > div {
 	display: flex;
@@ -381,6 +383,7 @@ svg {
 #cenik > div > div {
 	background: #fff;
 	border-radius: 10px;
+	padding: 5px 15px 15px 15px;
 	padding-top: 5px;
 	padding-bottom: 15px;
 }
@@ -409,7 +412,7 @@ svg {
 }
 
 .cenik-explanations div h3 {
-	margin-left: 35px;
+	margin-left: 20px;
 	font-weight: 600;
 }
 
@@ -418,8 +421,12 @@ svg {
 }
 
 .cenik-kontakt {
-	justify-content: center;
 	margin-top: 20px !important;
+}
+
+.cenik-kontakt a {
+	margin: 15px auto;
+	text-align: center;
 }
 
 .cenik-kontakt * {

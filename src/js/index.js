@@ -1,5 +1,5 @@
 import '../css/index.css';
-import './../components/mini-contact';
+import './../components/mini-contact.js';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs

@@ -23,7 +23,7 @@ module.exports = {
 		webapp: '/src/js/web-app.js',
 		ecommerce: '/src/js/ecommerce.js',
 		partnership: '/src/js/partnership.js',
-		js404: '/src/js/404.js',
+		//js404: '/src/js/404.js',
 	},
 
 	module: {
@@ -181,7 +181,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: '/src/404.html',
 			inject: true,
-			chunks: ['main', 'js404'],
+			chunks: ['main'],
 			filename: '404.html'
 		}),
 		new WorkboxPlugin.GenerateSW({

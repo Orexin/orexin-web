@@ -254,10 +254,6 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.columns {
-	margin: 0 !important;
-}
-
 .block-center {
 	display: block;
 	margin-left: auto;

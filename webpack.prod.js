@@ -23,7 +23,7 @@ module.exports = {
 		webapp: '/src/js/web-app.js',
 		ecommerce: '/src/js/ecommerce.js',
 		partnership: '/src/js/partnership.js',
-		//js404: '/src/js/404.js',
+		console: '/src/js/console.js',
 	},
 
 	module: {
@@ -177,6 +177,12 @@ module.exports = {
 			inject: true,
 			chunks: ['main', 'partnership'],
 			filename: 'partnership.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: '/src/console.html',
+			inject: true,
+			chunks: ['main', 'console'],
+			filename: 'console.html'
 		}),
 		new HtmlWebpackPlugin({
 			template: '/src/404.html',

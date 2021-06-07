@@ -146,13 +146,14 @@
 }
 .card-text p {
 	text-align: center;
+	margin: 0 15px;
 }
 .see-also {
 	text-align: center;
-	height: 50px;
 	gap: 15px;
 }
 .see-also a {
+	margin: 20px 0;
 	font-size: 14px;
 	font-weight: 500;
 	border: solid white 2px;
@@ -172,7 +173,7 @@
 	content: 'Pay-as-you-go';
 }
 #pay:hover:after {
-	content: 'Jak to přeložit??';
+	content: 'Platba za pochodu';
 }
 #oldMan:after {
 	content: 'The future is now, old man.';
@@ -202,12 +203,16 @@
 	color: white;
 }
 .card-el:hover > .card-img {
-	height: 75%;
+	height: 65%;
 }
 .card-img {
 	margin: auto;
 	height: 100%;
 	transition-duration: 0.5s;
+}
+
+.card-img * {
+	transition: all .3s ease;
 }
 
 /*SKEW*/

@@ -51,14 +51,19 @@ class Navbar extends HTMLElement {
 					<span>Partnerství</span>
 				</a>
 			</li>
+			<li class="nav-li nav-li-white-hover">
+			<a href="/contact.html">
+				<span>Kontakt</span>
+			</a>
+		</li>
 		</ul>
 	</div>
 </div>
 <div class="nav-actions">
 	<ul>
-		<li class="nav-contact-btn nav-li nav-li-white-hover">
-			<a href="/contact.html">
-				<span>Kontakt</span>
+		<li class="nav-console-btn nav-li nav-li-white-hover">
+			<a href="/console.html">
+				<span>Console</span>
 			</a>
 		</li>
 	</ul>

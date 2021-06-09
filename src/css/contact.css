@@ -222,6 +222,11 @@
 	padding-left: 15px;
 }
 
+/* honeypot */
+.form-group:nth-child(2) {
+	display: none;
+}
+
 .form-group:last-child {
 	margin-bottom: 0;
 }

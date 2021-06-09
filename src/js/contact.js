@@ -33,3 +33,12 @@ window.addEventListener('beforeunload', function (e) {
 	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,3})/);
 	e.target.value = !x[2] ? x[1] : '+420' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
 });*/
+
+// honeyPot
+document.getElementById('submit').addEventListener('click', (e) => {
+	e.preventDefault()
+	if(document.getElementById('username').value !== "") {
+		alert('jsi hnusný bot!')
+		e.preventDefault()
+	}
+})

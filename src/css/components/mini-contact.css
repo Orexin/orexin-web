@@ -21,3 +21,8 @@
 	display: block;
 	margin-bottom: 5px;
 }
+
+/* honeypot */
+.form-group:nth-child(2) {
+	display: none;
+}

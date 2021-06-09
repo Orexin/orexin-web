@@ -20,6 +20,13 @@ class MiniContact extends HTMLElement {
 					</div>
 				</div>
 				<div class="form-group">
+					<label for="jmeno">Username</label>
+					<div class="input-icon-wrap">
+						<input name="username" id="username" type="text" tabindex="1" />
+						<span class="typcn typcn-user-outline"></span>
+					</div>
+				</div>
+				<div class="form-group">
 					<label for="email">Váš e-mail</label>
 					<div class="input-icon-wrap">
 						<input id="email" type="text" tabindex="2" placeholder="jnovak@orexin.cz" />
@@ -44,7 +51,7 @@ class MiniContact extends HTMLElement {
 					</div>
 				</div>
 				<div class="send-button form-group flex-center">
-					<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+					<input id="submit" class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
 				</div>
 				<p class="gdpr-notice">Odesláním souhlasíte se <a href="/privacy.html" tabindex="9">zpracováním osobních údajů</a>.</p>
 			</form>
@@ -60,3 +67,12 @@ if (window.location.pathname == '/services/ecommerce.html') checkedState2 = 'che
 console.log(window.location.pathname)
 
 customElements.define('mini-contact', MiniContact);
+
+// honeyPot
+document.getElementById('submit').addEventListener('click', (e) => {
+	e.preventDefault()
+	if(document.getElementById('username').value !== "") {
+		alert('jsi hnusný bot!')
+		e.preventDefault()
+	}
+})

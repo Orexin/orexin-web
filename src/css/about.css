@@ -8,6 +8,18 @@ svg {
 
 /* ABT-LANDING */
 
+#svg-assembly {
+	max-height: 700px;
+	width: 100%;
+}
+
+@media only screen and (max-height: 768px) {
+	#svg-assembly {
+		max-height: 500px;
+		width: 100%;
+	}
+}
+
 .abt-landing {
 	display: flex;
 	flex-direction: column;

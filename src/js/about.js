@@ -2,6 +2,7 @@ import '../css/about.css';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
+import svgAssembly from './../img/about/assembly.svg';
 import svgBrain from './../img/about/brain.svg';
 import svgTechstack from './../img/about/technologies.svg';
 import svgEducation from './../img/about/education.svg';
@@ -10,12 +11,14 @@ import svgNaseSluzby from './../img/about/nase-sluzby.svg';
 import svgKamSmerujeme from './../img/about/kam-smerujeme.svg';
 
 // inject SVGs
+document.getElementById('svg-assembly').innerHTML = svgAssembly;
 document.getElementById('svg-brain').innerHTML = svgBrain;
 document.getElementById('svg-techstack').innerHTML = svgTechstack;
 document.getElementById('svg-education').innerHTML = svgEducation;
 document.getElementById('svg-kdo-jsme').innerHTML = svgKdoJsme;
 document.getElementById('svg-nase-sluzby').innerHTML = svgNaseSluzby;
 document.getElementById('svg-kam-smerujeme').innerHTML = svgKamSmerujeme
+
 // Waypoints
 var brain = new Waypoint({
 	element: document.getElementById('brain'),

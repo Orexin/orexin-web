@@ -38,7 +38,6 @@
 }
 
 #uvod-text {
-	top: 125px;
 	position: absolute;
 	margin-left: 3vh;
 	display: grid;
@@ -139,7 +138,7 @@
 	transform: translateY(450px);
 }
 .card-img h2 {
-	font-family: 'Montserrat', sans-serif;
+	
 	color: var(--violet);
 	font-size: 25px;
 	text-align: center;
@@ -236,7 +235,7 @@
 }
 .sol-text > h2 {
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	
 	font-size: 40px;
 }
 
@@ -355,7 +354,7 @@
 }
 .caption > a {
 	color: white;
-	font-family: 'Montserrat', sans-serif;
+	
 	font-weight: 600;
 }
 .caption > a > span {

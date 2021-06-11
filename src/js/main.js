@@ -6,6 +6,7 @@ import 'typicons.font/src/font/typicons.css';
 
 // COMPONENTS
 import '../components/navbar';
+import '../components/navbar-mobile';
 import '../components/footer';
 
 window.onload = function () {
@@ -29,14 +30,21 @@ window.onload = function () {
 		}
 	});
 
-	// scroll to top btn
-	if(document.getElementById('scrollup-btn')) {
-		var scrollupBtn = document.getElementById('scrollup-btn');
+	// scroll to top btn, not sure right
+	function displayWindowSize() {
+		return screen.width
+	}
 
+	window.onresize = displayWindowSize()
+	window.onload = displayWindowSize()
+
+	if(document.getElementById('scrollup-btn')&&displayWindowSize()>885) {
+		var scrollupBtn = document.getElementById('scrollup-btn');
+		console.log(screen.width)
 		window.onscroll = function () {
 			scrollFunction();
 		};
-	
+
 		function scrollFunction() {
 			if (window.scrollY > 20) {
 				scrollupBtn.style.display = 'block';
@@ -44,10 +52,12 @@ window.onload = function () {
 				scrollupBtn.style.display = 'none';
 			}
 		}
-	
+
 		scrollupBtn.addEventListener('click', () => {
 			document.body.scrollTop = 0; // For Safari
 			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		});
 	}
 };
+
+

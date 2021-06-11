@@ -4,7 +4,6 @@ navbar-wrapper {
 	top: 0px;
 	z-index: 99999;
 	position: fixed !important;
-	display: flex;
 	flex-direction: row !important;
 	justify-content: space-between !important;
 	padding: 0px 100px 0px 100px;

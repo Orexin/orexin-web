@@ -30,27 +30,50 @@ footer-wrapper > .footer-content > .upper > img {
 	z-index: 5;
 }
 
-.top-banner > h2 {
-	color: white !important;
+.top-banner * {
+	color: #fff !important;
+}
+
+.top-banner > div > h2 {
 	font-weight: 800;
 	letter-spacing: 1px;
 	font-size: 25px;
 }
 
-.top-banner > p {
-	color: white !important;
+.top-banner > div > p {
 	text-align: center;
-	margin: 0px 10% 0px 10%;
+	margin: 0px 10%;
 }
 
-.top-banner > p > strong {
-	color: white !important;
+@media screen and (max-width: 850px) {
+	.top-banner {
+		flex-direction: unset;
+		flex-wrap: unset;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* idk bruh nepobírám vertickou a horizontskou alignmentaci */
+	.top-banner > div:nth-child(1) {
+		float: left;
+		align-self: flex-start;
+		justify-content: center;
+	}
+	
+	.top-banner > div:nth-child(2) {
+		display: none;
+	}
+	
+	.top-banner > div:nth-child(3) {
+		float: right;
+		align-self: flex-end;
+		justify-content: center;
+	}
 }
 
 .top-banner > a {
 	font-size: 14px;
 	font-weight: 500;
-	color: white;
 	padding: 8px 15px;
 	border: solid var(--violet) 2px;
 	border-radius: 10px;

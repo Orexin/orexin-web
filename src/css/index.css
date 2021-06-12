@@ -9,6 +9,7 @@
 	width: 50px;
 	overflow: hidden;
 }
+
 #mainArrow:hover {
 	background-color: var(--violet-light);
 }
@@ -22,6 +23,7 @@
 	transform: translate(-50%, -50%);
 	padding: 5px 15px 5px 15px;
 }
+
 #mainArrow:hover > span {
 	animation-name: arrowGoBrr;
 	animation-duration: 0.5s;
@@ -58,10 +60,12 @@
 	text-align: left;
 	font-size: 50px;
 	resize: horizontal;
+	margin-right: 15px;
 }
+
 #uvod-text div h2 {
 	text-align: left;
-	font-size: 35px;
+	font-size: 30px;
 	resize: horizontal;
 	font-weight: 400;
 }

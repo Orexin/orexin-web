@@ -44,6 +44,7 @@
 		"workbox-webpack-plugin": "^6.1.5"
 	},
 	"dependencies": {
+		"agent-base": "^6.0.2",
 		"apple-touch-icons-webpack-plugin": "^1.2.0",
 		"normalize.css": "^8.0.1",
 		"npx": "^10.2.2",

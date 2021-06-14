@@ -9,6 +9,16 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
 
+	resolve: {
+		// global vars for relative paths
+		alias: {
+			"@": path.resolve(__dirname, './src/'),
+			"@components": path.resolve(__dirname, './src/components/'),
+			"@img": path.resolve(__dirname, './src/img/'),
+			"@css": path.resolve(__dirname, './src/css/'),
+		}
+	},
+
 	entry: {
 		main: '/src/js/main.js',
 		article: '/src/js/article.js',
@@ -73,7 +83,7 @@ module.exports = {
 				test: /\.svg$/,
 				use: 'html-loader'
 			}
-		]
+		],
 	},
 
 	plugins: [

@@ -10,6 +10,15 @@ module.exports = {
 
 	devtool: 'source-map',
 
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, './src/'),
+			"@components": path.resolve(__dirname, './src/components/'),
+			"@img": path.resolve(__dirname, './src/img/'),
+			"@css": path.resolve(__dirname, './src/css/'),
+		}
+	},
+
 	entry: {
 		main: '/src/js/main.js',
 		article: '/src/js/article.js',
@@ -69,9 +78,8 @@ module.exports = {
 				test: /\.svg$/,
 				use: 'html-loader'
 			}
-		]
+		],
 	},
-
 
 	plugins: [
 		new CleanWebpackPlugin({}),
@@ -189,6 +197,10 @@ module.exports = {
 			inject: true,
 			chunks: ['main'],
 			filename: '404.html'
+		}),
+		// custom vars for relative paths
+		new JsConfigPathsPlugin({
+			configFileName: "jsconfig.json" 
 		}),
 		new WorkboxPlugin.GenerateSW({
 			// these options encourage the ServiceWorkers to get in there fast

@@ -1,14 +1,14 @@
-import '../css/about.css';
+import '@css/about.css';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-import svgAssembly from './../img/about/assembly.svg';
-import svgBrain from './../img/about/brain.svg';
-import svgTechstack from './../img/about/technologies.svg';
-import svgEducation from './../img/about/education.svg';
-import svgKdoJsme from './../img/about/kdo-jsme.svg';
-import svgNaseSluzby from './../img/about/nase-sluzby.svg';
-import svgKamSmerujeme from './../img/about/kam-smerujeme.svg';
+import svgAssembly from '@img/about/assembly.svg';
+import svgBrain from '@img/about/brain.svg';
+import svgTechstack from '@img/about/technologies.svg';
+import svgEducation from '@img/about/education.svg';
+import svgKdoJsme from '@img/about/kdo-jsme.svg';
+import svgNaseSluzby from '@img/about/nase-sluzby.svg';
+import svgKamSmerujeme from '@img/about/kam-smerujeme.svg';
 
 // inject SVGs
 document.getElementById('svg-assembly').innerHTML = svgAssembly;

@@ -1,21 +1,21 @@
-import '../css/services.css';
-import './../components/mini-contact';
+import '@css/services.css';
+import '@components/mini-contact';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-//import svgRozcestnik from './../img/svg-services/svg-rozcestnik.svg';
-import svgRozcestnikWebPres from './../img/svg-services/svg-rozcestnik-web-pres.svg';
-import svgRozcestnikWebApp from './../img/svg-services/svg-rozcestnik-web-app.svg';
-import svgRozcestnikEcommerce from './../img/svg-services/svg-rozcestnik-ecommerce.svg';
-import svgGrafika from './../img/svg-services/svg-grafika-na-miru.svg';
-import svgBezpeci from './../img/svg-services/svg-bezpeci.svg';
-import svgSprava from './../img/svg-services/svg-sprava.svg';
-import svgTraffic from './../img/svg-services/svg-platba-podle-navstevnosti.svg';
-import svgDynamika from './../img/svg-services/svg-dynamika.svg';
-import svgPodpora from './../img/svg-services/svg-technicka-podpora.svg';
-import svgPlneni from './../img/svg-services/svg-plneni-obsahu.svg';
-import svgFotky from './../img/svg-services/svg-fotky.svg';
-import svgCustoms from './../img/svg-services/svg-tvorba-grafiky.svg';
+//import svgRozcestnik from '@img/svg-services/svg-rozcestnik.svg';
+import svgRozcestnikWebPres from '@img/svg-services/svg-rozcestnik-web-pres.svg';
+import svgRozcestnikWebApp from '@img/svg-services/svg-rozcestnik-web-app.svg';
+import svgRozcestnikEcommerce from '@img/svg-services/svg-rozcestnik-ecommerce.svg';
+import svgGrafika from '@img/svg-services/svg-grafika-na-miru.svg';
+import svgBezpeci from '@img/svg-services/svg-bezpeci.svg';
+import svgSprava from '@img/svg-services/svg-sprava.svg';
+import svgTraffic from '@img/svg-services/svg-platba-podle-navstevnosti.svg';
+import svgDynamika from '@img/svg-services/svg-dynamika.svg';
+import svgPodpora from '@img/svg-services/svg-technicka-podpora.svg';
+import svgPlneni from '@img/svg-services/svg-plneni-obsahu.svg';
+import svgFotky from '@img/svg-services/svg-fotky.svg';
+import svgCustoms from '@img/svg-services/svg-tvorba-grafiky.svg';
 
 // inject SVGs
 document.getElementById('svg-rozcestnik-web-pres').innerHTML = svgRozcestnikWebPres;

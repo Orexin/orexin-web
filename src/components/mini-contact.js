@@ -1,6 +1,6 @@
-import './../css/components/mini-contact.css';
+import '@css/components/mini-contact.css';
 
-const logoWhite = require('./../img/logos/logo-white.png');
+const logoWhite = require('@img/logos/logo-white.png');
 var checkedState1, checkedState2, checkedState3;
 
 class MiniContact extends HTMLElement {

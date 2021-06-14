@@ -1,4 +1,4 @@
-import './../css/contact.css';
+import '@css/contact.css';
 
 // selecting služby
 const checkLabels = document.querySelectorAll('.selectBox > label');

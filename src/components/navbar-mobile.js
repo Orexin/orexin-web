@@ -1,8 +1,8 @@
-import './../css/components/navbar-mobile.css';
+import '@css/components/navbar-mobile.css';
 
 //const logoWhite = require('./../img/logos/logo-white-sm.png');
 //const logoGrad = require('./../img/logos/logo-gradient-sm.png');
-const svgLogoWhite = require('./../img/logos/logo-white-sm.svg');
+const svgLogoWhite = require('@img/logos/logo-white-sm.svg');
 
 class NavbarMobile extends HTMLElement {
 	constructor() {
@@ -21,41 +21,41 @@ class NavbarMobile extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
-		<div class="nav-link">
-		<a href="/index.html">
-			<span>Úvod</span>
-		</a>
-	</div>
-	<div class="nav-link">
-		<a href="/about.html">
-			<span>O nás</span>
-		</a>
-	</div>
-	<div class="nav-link">
-		<a href="/services.html">
-			<span>Služby</span>
-		</a>
-	</div>
-	<div class="nav-link">
-		<a href="/partnership.html">
-			<span>Partnerství</span>
-		</a>
-	</div>
-	<div class="nav-link">
-		<a href="/contact.html">
-			<span>Kontakt</span>
-		</a>
-	</div>
-	<div class="nav-link">
-		<a href="/console.html">
-			<span>Console</span>
-		</a>
-	</div>
-	<div class="nav-link">
-		<a href="https://www.console.orexin.cz/login">
-			<span>Login</span>
-		</a>
-	</div>
+			<div class="nav-link">
+				<a href="/index.html">
+					<span>Úvod</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/about.html">
+					<span>O nás</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/services.html">
+					<span>Služby</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/partnership.html">
+					<span>Partnerství</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/contact.html">
+					<span>Kontakt</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/console.html">
+					<span>Console</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="https://www.console.orexin.cz/login">
+					<span>Login</span>
+				</a>
+			</div>
 			<div class="row flex-center">
 				<div class="logo col">
 					<a href="/index.html" class="row">
@@ -64,11 +64,11 @@ class NavbarMobile extends HTMLElement {
 					</a>
 				</div>
 				<div id="menu" class="col flex-center">
-				<span class="typcn typcn-th-menu"></span>
+					<span class="typcn typcn-th-menu"></span>
 				</div>
 			</div>
 		`;
-		document.getElementById('nav-logo').innerHTML = svgLogoWhite;
+		document.querySelector('#nav-logo').innerHTML = svgLogoWhite;
 		this.id='navbar-mobile-wrapper'
 		
 		document.getElementById('menu').addEventListener('click', () => {
@@ -93,6 +93,53 @@ class NavbarMobile extends HTMLElement {
 	}
 }
 
+class NavbarMobileSidebar extends HTMLElement {
+	constructor() {
+		super();
 
+		// ...Event listeners etc..
+	}
+
+	connectedCallback() {
+		this.innerHTML = `
+			<div class="nav-link">
+				<a href="/index.html">
+					<span>Úvod</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/about.html">
+					<span>O nás</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/services.html">
+					<span>Služby</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/partnership.html">
+					<span>Partnerství</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/contact.html">
+					<span>Kontakt</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="/console.html">
+					<span>Console</span>
+				</a>
+			</div>
+			<div class="nav-link">
+				<a href="https://www.console.orexin.cz/login">
+					<span>Login</span>
+				</a>
+			</div>
+		`;
+	}
+}
 
 customElements.define('navbar-mobile-wrapper', NavbarMobile);
+customElements.define('navbar-mobile-sidebar', NavbarMobileSidebar);

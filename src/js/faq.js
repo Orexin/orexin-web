@@ -1,4 +1,4 @@
-import '../css/faq.css';
+import '@css/faq.css';
 
 const arrows = document.getElementsByClassName('faq-icon-container');
 

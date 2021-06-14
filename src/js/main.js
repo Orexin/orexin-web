@@ -1,13 +1,13 @@
 // CSS
 import 'normalize.css';
-import './../css/main.css';
-import './../css/components/keyframes.css';
+import '@css/main.css';
+import '@css/components/keyframes.css';
 import 'typicons.font/src/font/typicons.css';
 
 // COMPONENTS
-import '../components/navbar';
-import '../components/navbar-mobile';
-import '../components/footer';
+import '@components/navbar';
+import '@components/navbar-mobile';
+import '@components/footer';
 
 window.onload = function () {
 	// ✨ aestetic title ✨

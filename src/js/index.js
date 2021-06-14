@@ -1,11 +1,11 @@
-import '../css/index.css';
-import './../components/mini-contact.js';
+import '@css/index.css';
+//import '@components/mini-contact.js';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-import svgWebPres from './../img/index-web-pres.svg';
-import svgWebApp from './../img/index-web-app.svg';
-import svgEcommerce from './../img/index-ecommerce.svg';
+import svgWebPres from '@img/index-web-pres.svg';
+import svgWebApp from '@img/index-web-app.svg';
+import svgEcommerce from '@img/index-ecommerce.svg';
 
 // inject SVGs
 document.getElementById('svg-web-pres').innerHTML = svgWebPres;

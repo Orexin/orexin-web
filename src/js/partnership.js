@@ -1,14 +1,14 @@
 // Imports
-import './../css/partnership.css';
-import './../components/mini-contact';
+import '@css/partnership.css';
+import '@components/mini-contact';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-import svgAdvertisement from './../img/partnership/advertisement.svg';
-import svgComission from './../img/partnership/comission.svg';
-import svgDiscount from './../img/partnership/discount.svg';
-import svgSupport from './../img/partnership/support.svg';
-import svgTeam from './../img/partnership/team.svg';
+import svgAdvertisement from '@img/partnership/advertisement.svg';
+import svgComission from '@img/partnership/comission.svg';
+import svgDiscount from '@img/partnership/discount.svg';
+import svgSupport from '@img/partnership/support.svg';
+import svgTeam from '@img/partnership/team.svg';
 
 
 // inject SVGs

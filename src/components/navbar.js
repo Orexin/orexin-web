@@ -1,9 +1,9 @@
-import './../css/components/navbar.css';
+import '@css/components/navbar.css';
 
 //const logoWhite = require('./../img/logos/logo-white-sm.png');
 //const logoGrad = require('./../img/logos/logo-gradient-sm.png');
-const svgLogoWhite = require('./../img/logos/logo-white-sm.svg');
-const svgLogoGrad = require('./../img/logos/logo-gradient-sm.svg');
+const svgLogoWhite = require('@img/logos/logo-white-sm.svg');
+const svgLogoGrad = require('@img/logos/logo-gradient-sm.svg');
 
 
 class Navbar extends HTMLElement {

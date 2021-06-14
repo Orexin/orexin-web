@@ -198,10 +198,6 @@ module.exports = {
 			chunks: ['main'],
 			filename: '404.html'
 		}),
-		// custom vars for relative paths
-		new JsConfigPathsPlugin({
-			configFileName: "jsconfig.json" 
-		}),
 		new WorkboxPlugin.GenerateSW({
 			// these options encourage the ServiceWorkers to get in there fast
 			// and not allow any straggling "old" SWs to hang around

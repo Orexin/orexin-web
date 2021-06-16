@@ -1,3 +1,9 @@
+
+#mini-contact-title > h2{
+	color: var(--violet);
+	font-size: 40px;
+}
+
 .mini-contact {
 	border: 1px rgba(0, 0, 0, 0.1) solid;
 	width: 45%;
@@ -26,3 +32,7 @@
 .form-group:nth-child(2) {
 	display: none;
 }
+
+/* RESPO */
+
+/* RESPO END */

@@ -18,7 +18,7 @@ class Footer extends HTMLElement {
 			 <p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
 			</div>
 			<div>
-			<a href="/contact.html" class="footer-a">Jdeme na to</a>
+				<a href="/contact.html" class="footer-a">Jdeme na to</a>
 			</div>
 		</div>
 		<div class="upper">

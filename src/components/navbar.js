@@ -97,7 +97,7 @@ class Navbar extends HTMLElement {
 				nav.classList.add('whited');
 				navLogo.innerHTML = svgLogoGrad;
 				//navLogo.style.content = `url(${logoGrad})`
-				kontaktBtn.classList.add('fancy-btn-trans-whited')
+				kontaktBtn.classList.add('fancy-btn-trans-special-whited')
 				for (var i = 0; i < navLi.length; i++) {
 					navLi[i].classList.remove('nav-li-white-hover')
 					navLi[i].classList.add('nav-li-violet-hover')
@@ -106,7 +106,7 @@ class Navbar extends HTMLElement {
 				nav.classList.remove('whited');
 				navLogo.innerHTML = svgLogoWhite;
 				//navLogo.style.content = `url(${logoWhite})`
-				kontaktBtn.classList.remove('fancy-btn-trans-whited')
+				kontaktBtn.classList.remove('fancy-btn-trans-special-whited')
 				for (var i = 0; i < navLi.length; i++) {
 					navLi[i].classList.add('nav-li-white-hover')
 					navLi[i].classList.remove('nav-li-violet-hover')

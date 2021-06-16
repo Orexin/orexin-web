@@ -105,6 +105,18 @@ svg {
 	text-align: center;
 }
 
+/* PARTNERSTVI PROC END */
+
+/* PARTNERSTVI JAK */
+
+#partnerstvi-jak {
+	padding: 50px 0 50px 0;
+}
+
+/* PARTNERSTVI JAK END */
+
+/* RESPO */
+
 @media screen and (max-width: 1216px) {
 	.partnerstvi-proc-cards-container {
 		grid-template-columns: 2fr 2fr;
@@ -154,13 +166,4 @@ svg {
 	}
 }
 
-
-/* PARTNERSTVI PROC END */
-
-/* PARTNERSTVI JAK */
-
-#partnerstvi-jak {
-	padding: 50px 0 50px 0;
-}
-
-/* PARTNERSTVI JAK END */
+/* RESPO END */

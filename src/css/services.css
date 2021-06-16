@@ -21,6 +21,7 @@ svg {
 
 .in-text-link {
 	transition: all 0.3s ease-in-out;
+	text-decoration: underline;
 }
 
 .in-text-link:visited {
@@ -29,7 +30,16 @@ svg {
 
 .in-text-link:hover {
 	color: #fff;
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+.section-link {
+	margin: 35px auto;
+}
+
+.section-link > a {
+	color: #fff;
+	font-size: 18px;
 }
 
 /* DEFAULTS END */
@@ -298,8 +308,16 @@ svg {
 	width: 60%;
 }
 
+#sprava .section-link > a {
+	margin-left: 20%;
+}
+
 #traffic p {
-	width: 70%;
+	width: 90%;
+}
+
+#traffic .section-link > a {
+	margin-left: 20%;
 }
 
 #dynamika p {
@@ -318,8 +336,16 @@ svg {
 	width: 70%;
 }
 
+#fotky .section-link > a {
+	margin-left: 22%;
+}
+
 #customs p {
 	width: 70%;
+}
+
+#customs .section-link > a {
+	margin-left: 22%;
 }
 
 /* #svg-sluzby-sprava-cog-1 {
@@ -427,6 +453,11 @@ svg {
 .cenik-kontakt a {
 	margin: 15px auto;
 	text-align: center;
+}
+
+.cenik-kontakt a:hover {
+	border-color: var(--violet);
+	color: var(--violet) !important;
 }
 
 .cenik-kontakt * {
@@ -709,3 +740,7 @@ svg {
 /* ECOMMERCE END*/
 
 /* SUB-SERVICES END */
+
+/* RESPO */
+
+/* RESPO END */

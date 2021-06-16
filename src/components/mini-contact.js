@@ -10,6 +10,9 @@ class MiniContact extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
+		<div id="mini-contact-title" class="row flex-center">
+			<h2>Napište nám</h2>
+		</div>
 		<div class="mini-contact">
 			<form>
 				<div class="form-group">

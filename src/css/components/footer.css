@@ -45,33 +45,7 @@ footer-wrapper > .footer-content > .upper > img {
 	margin: 0px 10%;
 }
 
-@media screen and (max-width: 850px) {
-	.top-banner {
-		flex-direction: unset;
-		flex-wrap: unset;
-		justify-content: center;
-		align-items: center;
-	}
-
-	/* idk bruh nepobírám vertickou a horizontskou alignmentaci */
-	.top-banner > div:nth-child(1) {
-		float: left;
-		align-self: flex-start;
-		justify-content: center;
-	}
-	
-	.top-banner > div:nth-child(2) {
-		display: none;
-	}
-	
-	.top-banner > div:nth-child(3) {
-		float: right;
-		align-self: flex-end;
-		justify-content: center;
-	}
-}
-
-.top-banner > a {
+.top-banner a {
 	font-size: 14px;
 	font-weight: 500;
 	padding: 8px 15px;
@@ -80,7 +54,7 @@ footer-wrapper > .footer-content > .upper > img {
 	transition-duration: 0.3s;
 }
 
-.top-banner > a:hover {
+.top-banner a:hover {
 	background-color: var(--violet);
 	color: white !important;
 }
@@ -119,22 +93,9 @@ footer-wrapper > .footer-content > .upper > img {
 	transition: width 0.3s ease-in-out;
 }
 
-@keyframes footerFromLeft {
-	from {
-		width: 0;
-	}
-	to {
-		width: 89.5%;
-	}
-}
-
 .upper a:hover h3,
 .upper a:hover img {
 	transform: scale(1.05);
-}
-
-.upper a:hover div {
-	animation: footerFromLeft 0.3s ease-in-out forwards;
 }
 
 .socials {
@@ -172,3 +133,33 @@ footer-wrapper > .footer-content > .upper > img {
 .nobody-cares > a:hover {
 	color: white !important;
 }
+
+/* RESPO */
+
+@media screen and (max-width: 850px) {
+	.top-banner {
+		flex-direction: unset;
+		flex-wrap: unset;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* idk bruh nepobírám vertickou a horizontskou alignmentaci */
+	.top-banner > div:nth-child(1) {
+		float: left;
+		align-self: flex-start;
+		justify-content: center;
+	}
+	
+	.top-banner > div:nth-child(2) {
+		display: none;
+	}
+	
+	.top-banner > div:nth-child(3) {
+		float: right;
+		align-self: flex-end;
+		justify-content: center;
+	}
+}
+
+/* RESPO END */

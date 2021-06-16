@@ -182,7 +182,7 @@ svg {
 	border-color: #fff;
 }
 
-.fancy-btn-trans-whited:hover {
+.fancy-btn-trans-special-whited:hover {
 	color: var(--violet-dark) !important;
 	border-color: var(--violet-dark);
 }

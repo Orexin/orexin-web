@@ -104,7 +104,8 @@ html {
 }
 
 .fancy-btn-trans,
-.fancy-btn-trans-violet {
+.fancy-btn-trans-violet,
+.fancy-btn-trans-whited {
 	font-size: 14px;
 	font-weight: 500;
 	border: solid white 2px;
@@ -133,6 +134,16 @@ html {
 	color: var(--violet-dark);
 	border-color: var(--violet-dark);
 	background-color: transparent;
+}
+
+.fancy-btn-trans-whited {
+	background-color: #fff;
+	color: var(--violet) !important;
+}
+
+.fancy-btn-trans-whited:hover {
+	background-color: transparent;
+	color: #fff !important;
 }
 
 /* style classes */
@@ -615,39 +626,6 @@ form p.gdpr-notice {
 
 /* width */
 
-@media only screen and (max-width: 1505px) {
-	#uvod-text div h1:nth-child(1) {
-		font-size: 40px !important;
-	}
-
-	#uvod-text div h2 {
-		font-size: 25px !important;
-		margin-bottom: 5px;
-	}
-}
-
-@media only screen and (max-width: 1230px) {
-	#uvod-text div h1:nth-child(1) {
-		font-size: 30px !important;
-	}
-
-	#uvod-text div h2 {
-		font-size: 20px !important;
-		margin-bottom: 10px;
-	}
-}
-
-@media only screen and (max-width: 930px) {
-	#uvod-text div h1:nth-child(1) {
-		font-size: 20px !important;
-	}
-
-	#uvod-text div h2 {
-		font-size: 15px !important;
-		margin-bottom: 15px;
-	}
-}
-
 @media only screen and (min-width: 885px) {
 	navbar-mobile-wrapper {
 		display: none;
@@ -674,24 +652,9 @@ form p.gdpr-notice {
 	navbar-wrapper, #scrollup-btn{
 		display: none;
 	}
-
-	#uvod-text {
-		top: 0;
-	}
 }
 
 /* height */
-
-@media only screen and (max-height: 768px) {
-	#uvod-text div h1:nth-child(1) {
-		font-size: 40px !important;
-	}
-
-	#uvod-text div h2 {
-		font-size: 25px !important;
-		margin-bottom: 5px;
-	}
-}
 
 @media only screen and (max-width: 345px) {
 	navbar-mobile-wrapper .nav-link a {

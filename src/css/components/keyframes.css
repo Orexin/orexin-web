@@ -76,19 +76,104 @@
 }
 
 @keyframes floatingElm {
-0% {
-	transform: translateY(0);
+	0% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	70% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
-20% {
-	transform: translateY(-10px);
+
+/* MOBILE NAV MENU */
+
+@keyframes menuTop {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 22px;
+    transform: rotate(45deg);
+  }
 }
-50% {
-	transform: translateY(0px);
+
+@keyframes menuTop-2 {
+  0% {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 22px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
 }
-70% {
-	transform: translateY(-10px);
+
+@keyframes menuBottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
 }
-100% {
-	transform: translateY(0);
+
+@keyframes menuBottom-2 {
+  0% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
 }
+
+@keyframes menuScaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
+
+@keyframes menuScaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* MOBILE NAV MENU END */

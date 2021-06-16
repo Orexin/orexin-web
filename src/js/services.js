@@ -3,7 +3,6 @@ import '@components/mini-contact';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-//import svgRozcestnik from '@img/svg-services/svg-rozcestnik.svg';
 import svgRozcestnikWebPres from '@img/svg-services/svg-rozcestnik-web-pres.svg';
 import svgRozcestnikWebApp from '@img/svg-services/svg-rozcestnik-web-app.svg';
 import svgRozcestnikEcommerce from '@img/svg-services/svg-rozcestnik-ecommerce.svg';

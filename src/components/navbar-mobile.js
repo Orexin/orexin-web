@@ -21,70 +21,68 @@ class NavbarMobile extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
+			<div class="nav-link"></div>
+			<a href="/index.html" class="nav-link">
+				<span>Úvod</span>
+			</a>
+			<a href="/about.html" class="nav-link">
+				<span>O nás</span>
+			</a>
+			<a href="/services.html" class="nav-link">
+				<span>Služby</span>
+			</a>
+			<a href="/partnership.html" class="nav-link">
+				<span>Partnerství</span>
+			</a>
+			<a href="/contact.html" class="nav-link">
+				<span>Kontakt</span>
+			</a>
+			<div class="nav-link"></div>
 			<div class="nav-link">
-				<a href="/index.html">
-					<span>Úvod</span>
+				<a href="/console.html" class="fancy-btn-trans">
+					Console
+				</a>
+				<a href="https://www.console.orexin.cz/login" class="fancy-btn-trans">
+					Login
 				</a>
 			</div>
-			<div class="nav-link">
-				<a href="/about.html">
-					<span>O nás</span>
-				</a>
-			</div>
-			<div class="nav-link">
-				<a href="/services.html">
-					<span>Služby</span>
-				</a>
-			</div>
-			<div class="nav-link">
-				<a href="/partnership.html">
-					<span>Partnerství</span>
-				</a>
-			</div>
-			<div class="nav-link">
-				<a href="/contact.html">
-					<span>Kontakt</span>
-				</a>
-			</div>
-			<div class="nav-link">
-				<a href="/console.html">
-					<span>Console</span>
-				</a>
-			</div>
-			<div class="nav-link">
-				<a href="https://www.console.orexin.cz/login">
-					<span>Login</span>
-				</a>
-			</div>
-			<div class="row flex-center">
-				<div class="logo col">
+			<div class="nav-link"></div>
+			<div class="row">
+				<div class="mobile-logo flex-center">
 					<a href="/index.html" class="row">
-						<div id="nav-logo" class="col flex-center"></div>
-						<span class="col flex-center">Orexin</span>
+						<div id="nav-mobile-logo" class="flex-center"></div>
+						<span class=" flex-center">Orexin</span>
 					</a>
 				</div>
-				<div id="menu" class="col flex-center">
-					<span class="typcn typcn-th-menu"></span>
+				<div id="menu" class="not-active">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
 		`;
-		document.querySelector('#nav-logo').innerHTML = svgLogoWhite;
+		document.querySelector('#nav-mobile-logo').innerHTML = svgLogoWhite;
 		this.id='navbar-mobile-wrapper'
-		
-		document.getElementById('menu').addEventListener('click', () => {
+		const menu = document.getElementById('menu')
+
+		menu.addEventListener('click', () => {
 			const links = document.getElementsByClassName("nav-link");
 			const container = document.getElementById('navbar-mobile-wrapper')
+
+			if(menu.className == "not-active")
+				menu.className = "active"
+			else
+				menu.className = "not-active"
+
 			for(var i = 0; i < links.length; i++ ) {
 				if (links[i].style.display === "flex") {
 					links[i].style.display = "none";
 					links[i].style.flexDirection = 'unset'
-					links[i].style.justifyContent = 'unset'
 					links[i].style.alignItems = 'unset'
 					container.style.height='12.5vh'
 				} else {
 					links[i].style.display = "flex";
 					links[i].style.flexDirection = 'row'
-					links[i].style.justifyContent = 'center'
 					links[i].style.alignItems = 'center'
 					container.style.height='100vh'
 				}

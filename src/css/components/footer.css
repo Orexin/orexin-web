@@ -136,7 +136,11 @@ footer-wrapper > .footer-content > .upper > img {
 
 /* RESPO */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 885px) {
+	footer-wrapper {
+		padding-bottom: 12.5vh;
+	}
+
 	.top-banner {
 		flex-direction: unset;
 		flex-wrap: unset;

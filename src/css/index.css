@@ -102,9 +102,13 @@
 	flex-wrap: nowrap;
 	margin-top: 75px;
 	margin-bottom: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card-el {
+	display: inline-block;
 	height: 450px;
 	width: 450px;
 	transition-duration: 0.5s;
@@ -130,11 +134,11 @@
 	transition: all 0.9s ease-in-out;
 }
 
-.card-el:hover {
+.card-el:hover, .card-el:focus {
 	transform: translateY(-25px);
 	background-color: var(--violet-light);
 }
-.card-el:hover > .card-text {
+.card-el:hover > .card-text, .card-el:focus > .card-text {
 	transform: translateY(0px);
 	transition-duration: 0.5s;
 }
@@ -179,7 +183,7 @@
 	content: 'Platba za pochodu';
 }
 #oldMan:after {
-	content: 'The future is today';
+	content: 'Future is today';
 }
 #oldMan:hover:after {
 	content: 'Budoucnost je dnes';
@@ -232,7 +236,7 @@
 /*! NABIDKA END !*/
 
 /*! SOLUTIONS SELECT! */
-.solutions {
+#solutions {
 	width: 100%;
 	background-color: var(--violet-dark);
 	padding: 50px 0px 50px 0px;
@@ -247,15 +251,15 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.solutions a:hover .solutions div div div svg #svg-index-web-pres-bg {
+#solutions a:hover #solutions div div div svg #svg-index-web-pres-bg {
 	transform: translateX(100px);
 }
 
-.solutions p {
+#solutions p {
 	margin: 5px 0 30px 0;
 }
 
-.solutions a {
+#solutions a {
 	background: #fff;
 	border-color: #fff;
 	color: var(--violet) !important;
@@ -509,6 +513,12 @@
 	}
 }
 
+@media only screen and (max-width: 1265px) {
+	.card-el {
+		width: 400px;
+	}
+}
+
 @media only screen and (max-width: 1216px) {
 	#uvod-text div h1:nth-child(1) {
 		font-size: 30px !important;
@@ -525,16 +535,27 @@
 
 	.cards {
 		overflow-x: scroll;
-		padding: 15px;
+		padding: 15px 15px 15px 35px;
 		width: 100%;
+		display: block;
+
 	}
 
 	.cards::-webkit-scrollbar {
+		height: 10px;
 		background: var(--violet-dark);
+	}
+
+	.cards::-webkit-scrollbar-thumb {
+		background: #727897;
+		border-radius: 12px;
+		border-color: #727897;
 	}
 
 	.card-el {
 		box-shadow: 0px 0px 30px rgba(100, 100, 100, 0.2) !important;
+		display: block;
+		width: 400px;
 	}
 }
 
@@ -580,6 +601,19 @@
 	#uvod-text div h2 {
 		font-size: 25px !important;
 		margin-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 625px) and  (max-width: 850px){
+	.two-columns > div > svg{
+		height: 600px;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	#solutions .two-columns h2 {
+		font-size: 25px;
 	}
 }
 

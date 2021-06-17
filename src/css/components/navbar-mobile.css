@@ -26,6 +26,7 @@ navbar-mobile-wrapper > .row, .nav-link {
 navbar-mobile-wrapper > .row {
 	width: 100vw;
 	height: 12.5vh;
+	justify-content: space-between;
 }
 
 .nav-link {
@@ -92,10 +93,6 @@ navbar-mobile-wrapper > .row {
 	margin-right: 5px;
 	padding-top: 5px;
 	transition: all 0.15s ease-in-out;
-}
-
-navbar-mobile-wrapper > .row {
-	justify-content: space-between;
 }
 
 #menu {

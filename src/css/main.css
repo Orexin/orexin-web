@@ -333,8 +333,7 @@ body {
 	}
 
 	.two-columns > div > svg{
-		height: 600px;
-		max-width: 100%;
+		margin-top: 50px auto 25px auto;
 	}
 }
 

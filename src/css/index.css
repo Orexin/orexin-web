@@ -405,14 +405,18 @@
 
 #partneri > .container > .row {
 	gap: 25px;
+	margin: 25px auto;
 }
 
-#partneri > .container > .row > img {
-	height: 25px;
-	/*width: auto;*/
-	/*debug*/
+#partneri > .container > .row  img {
+	height: 200px;
 	max-width: 100%;
-	cursor: pointer;
+}
+
+#partneri > .container > .row span{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
 }
 
 /*! PARTNERI END!*/

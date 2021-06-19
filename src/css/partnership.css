@@ -15,6 +15,22 @@ svg {
 
 #nasi-partneri h2 {
 	justify-content: center;
+	text-align: center;
+}
+
+#nasi-partneri > .row {
+	margin: 25px auto;
+}
+
+#nasi-partneri .logo-img > img {
+	height: 200px;
+	max-width: 100%;
+}
+
+#nasi-partneri > .row span{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
 }
 
 /* NASI PARTNERI END */

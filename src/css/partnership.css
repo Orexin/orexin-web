@@ -6,28 +6,35 @@ svg {
 /* NASI PARTNERI */
 
 #nasi-partneri {
-	padding: 30px 0 50px 0;
-}
-
-#nasi-partneri * {
-	color: var(--violet);
+	padding: 40px 0;
+	background: var(--violet-darker);
 }
 
 #nasi-partneri h2 {
 	justify-content: center;
 	text-align: center;
+	font-size: 40px;
 }
 
-#nasi-partneri > .row {
+#nasi-partneri > .container > .row {
 	margin: 25px auto;
 }
 
-#nasi-partneri .logo-img > img {
-	height: 200px;
-	max-width: 100%;
+#nasi-partneri > .container > .row > .col {
+	width: 300px;
+	max-height: 100%;
+	padding: 25px;
+	border-radius: 12px;
+	background-color: var(--violet-dark);
+	box-shadow: 0px 0px 50px #35353538 !important;
 }
 
-#nasi-partneri > .row span{
+#nasi-partneri .logo-img > img {
+	width: 250px;
+	max-height: 100%;
+}
+
+#nasi-partneri > .container > .row span{
 	text-align: center;
 	font-size: 25px;
 	font-weight: 600;
@@ -37,7 +44,7 @@ svg {
 
 /* PARTNERI TEAM */
 
-#partnerstvi-team div {
+#partnerstvi-team > .container > #svg-team {
 	margin: 75px auto;
 }
 

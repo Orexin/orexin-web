@@ -333,7 +333,7 @@ body {
 	}
 
 	.two-columns > div > svg{
-		margin-top: 50px auto 25px auto;
+		margin: 50px auto 25px auto;
 	}
 }
 
@@ -626,11 +626,11 @@ form p.gdpr-notice {
 /* width */
 
 @media only screen and (min-width: 885px) {
-	navbar-mobile-wrapper {
+	navbar-wrapper > #navbar-mobile {
 		display: none;
 	}
 
-	navbar-wrapper {
+	navbar-wrapper > #navbar {
 		display: flex;
 	}
 
@@ -644,35 +644,16 @@ form p.gdpr-notice {
 }
 
 @media only screen and (max-width: 885px) {
-	navbar-mobile-wrapper{
+	navbar-wrapper > #navbar-mobile{
 		display: flex;
 	}
 
-	navbar-wrapper, #scrollup-btn{
+	navbar-wrapper > #navbar, #scrollup-btn{
 		display: none;
 	}
 }
 
 /* height */
-
-@media only screen and (max-width: 345px) {
-	navbar-mobile-wrapper .nav-link a {
-		font-size: 20px;
-	}
-
-	navbar-mobile-wrapper > .row > .mobile-logo > a > span {
-		font-size: 30px !important;
-		margin-top: 3px;
-	}
-
-	#nav-mobile-logo {
-		height: 40px;
-		width: 40px;
-		margin-right: 5px;
-		padding-top: 5px;
-		transition: all 0.15s ease-in-out;
-	}
-}
 
 /* 9.1 XS (<576px) */
 @media only screen and (max-width: 576px) {

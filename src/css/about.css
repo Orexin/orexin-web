@@ -13,46 +13,39 @@ svg {
 	width: 100%;
 }
 
-.abt-landing {
+#abt-landing {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--violet-darker);
+	padding-top: 50px;
 }
-.abt-main {
-	height: 90vh;
-	/*debug*/
+
+#abt-landing .two-columns {
+	align-items: center;
 }
+
 .abt-action {
 	height: 10vh;
 	text-align: center;
 	z-index: 1000;
 }
-
-.abt-content {
-	flex-wrap: nowrap;
-}
-
-.abt-item {
-	width: 50% !important;
-	height: 100vh !important;
-}
-
 .abt-text {
 	justify-content: center;
+	align-items: center;
 }
 
-.abt-text > .smol {
-	font-size: 20px;
-}
-.abt-text > span {
+.abt-text > span:first-child {
 	font-size: 40px;
+}
+
+.abt-text > span:last-child {
+	font-size: 20px;
 }
 
 .abt-text * {
 	font-weight: 800;
 	color: white;
 	text-align: left;
-
 }
 
 /* ABT-LANDING END*/
@@ -212,6 +205,56 @@ svg {
 	#svg-assembly {
 		max-height: 500px;
 		width: 100%;
+	}
+
+	.abt-text > span:first-child {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 1216px) {
+	#svg-assembly {
+		max-height: 450px;
+		width: 100%;
+	}
+
+	.abt-text > span:first-child {
+		font-size: 25px;
+	}
+
+	.abt-text > span:last-child {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#svg-assembly {
+		max-height: 400px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.two-columns > div > svg{
+		margin: 0;
+		height: 500px;
+		max-width: 100%;
+	}
+
+	.abt-text {
+		margin: 125px 0 50px 0;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.abt-text {
+		margin: 10vh 0 40px 0;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.abt-text {
+		margin: 0 0 40px 0;
 	}
 }
 

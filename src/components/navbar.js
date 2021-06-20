@@ -1,10 +1,7 @@
 import '@css/components/navbar.css';
 
-//const logoWhite = require('./../img/logos/logo-white-sm.png');
-//const logoGrad = require('./../img/logos/logo-gradient-sm.png');
 const svgLogoWhite = require('@img/logos/logo-white-sm.svg');
 const svgLogoGrad = require('@img/logos/logo-gradient-sm.svg');
-
 
 class Navbar extends HTMLElement {
 	constructor() {
@@ -23,56 +20,100 @@ class Navbar extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
-<div class="logo">
-	<a href="/index.html">
-		<div id="nav-logo"></div>
-	</a>
-</div>
-<div class="nav-set">
-	<div class="nav-links">
-		<ul>
-			<li class="nav-li nav-li-white-hover">
+		<div id="navbar">
+			<div class="logo">
 				<a href="/index.html">
-					<span>Úvod</span>
+					<div id="nav-logo"></div>
 				</a>
-			</li>
-			<li class="nav-li nav-li-white-hover">
-				<a href="/about.html">
-					<span>O&nbsp;nás</span>
-				</a>
-			</li>
-			<li class="nav-li nav-li-white-hover">
-				<a href="/services.html">
-					<span>Služby</span>
-				</a>
-			</li>
-			<li class="nav-li nav-li-white-hover">
-				<a href="/partnership.html">
-					<span>Partnerství</span>
-				</a>
-			</li>
-			<li class="nav-li nav-li-white-hover">
-			<a href="/contact.html">
+			</div>
+			<div class="nav-set">
+				<div class="nav-links">
+					<ul>
+						<li class="nav-li nav-li-white-hover">
+							<a href="/index.html">
+								<span>Úvod</span>
+							</a>
+						</li>
+						<li class="nav-li nav-li-white-hover">
+							<a href="/about.html">
+								<span>O&nbsp;nás</span>
+							</a>
+						</li>
+						<li class="nav-li nav-li-white-hover">
+							<a href="/services.html">
+								<span>Služby</span>
+							</a>
+						</li>
+						<li class="nav-li nav-li-white-hover">
+							<a href="/partnership.html">
+								<span>Partnerství</span>
+							</a>
+						</li>
+						<li class="nav-li nav-li-white-hover">
+						<a href="/contact.html">
+							<span>Kontakt</span>
+						</a>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav-actions">
+				<ul>
+					<li class="nav-console-btn nav-li nav-li-white-hover">
+						<a href="/console.html">
+							<span>Console</span>
+						</a>
+					</li>
+				</ul>
+				<a href="https://www.console.orexin.cz/login" id="fancy-nav-btn" class="fancy-btn-trans">Login</a>
+			</div>
+		</div>
+		<div id="navbar-mobile">
+			<div class="nav-link"></div>
+			<a href="/index.html" class="nav-link">
+				<span>Úvod</span>
+			</a>
+			<a href="/about.html" class="nav-link">
+				<span>O nás</span>
+			</a>
+			<a href="/services.html" class="nav-link">
+				<span>Služby</span>
+			</a>
+			<a href="/partnership.html" class="nav-link">
+				<span>Partnerství</span>
+			</a>
+			<a href="/contact.html" class="nav-link">
 				<span>Kontakt</span>
 			</a>
-		</li>
-		</ul>
-	</div>
-</div>
-<div class="nav-actions">
-	<ul>
-		<li class="nav-console-btn nav-li nav-li-white-hover">
-			<a href="/console.html">
-				<span>Console</span>
-			</a>
-		</li>
-	</ul>
-	<a href="https://www.console.orexin.cz/login" id="fancy-nav-btn" class="fancy-btn-trans">Login</a>
-</div>
-		`;
+			<div class="nav-link"></div>
+			<div class="nav-link">
+				<a href="/console.html" class="fancy-btn-trans">
+					Console
+				</a>
+				<a href="https://www.console.orexin.cz/login" class="fancy-btn-trans">
+					Login
+				</a>
+			</div>
+			<div class="nav-link"></div>
+			<div class="row">
+				<div class="mobile-logo flex-center">
+					<a href="/index.html" class="row">
+						<div id="nav-mobile-logo" class="flex-center"></div>
+						<span class=" flex-center">Orexin</span>
+					</a>
+				</div>
+				<div id="menu" class="not-active">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+				`;
 
+		// Nav
 		// Hide on scroll anim
-		const nav = document.querySelector('navbar-wrapper');
+		const nav = document.getElementById('navbar');
 		const navLogo = document.querySelector('#nav-logo');
 		const kontaktBtn = document.querySelector('#fancy-nav-btn');
 		const navLi = document.getElementsByClassName('nav-li');
@@ -114,65 +155,35 @@ class Navbar extends HTMLElement {
 			}
 		};
 
-		// hover logo animation
-/* 		var degrees1 = 0, degrees2 = 0;
-		const navPath1 = document.querySelector('.nav-emblem-path-1');
-		const navPath2 = document.querySelector('.nav-emblem-path-2');
-		const regeneratorRuntime = require('regenerator-runtime');
+		// Mobile nav
+		document.querySelector('#nav-mobile-logo').innerHTML = svgLogoWhite;
+		const menu = document.getElementById('menu')
 
-		const sleep = (time) => {
-			return new Promise((resolve) => setTimeout(resolve, time));
-		};
+		menu.addEventListener('click', () => {
+			const links = document.getElementsByClassName("nav-link");
+			const container = document.getElementById('navbar-mobile')
 
-		navLogo.addEventListener('mouseover', () => {
-			const logoHover1 = async () => {
-				for(var i = 0; i < 361; i++) {
-					navPath1.style.transform = `rotateZ(${i}deg)`;
-					degrees1 = i;
-					if  (i >= 360) {
-						i = 0;
-					}
-					console.log(i)
-					await sleep(150);
+			if(menu.className == "not-active")
+				menu.className = "active"
+			else
+				menu.className = "not-active"
+
+			for(var i = 0; i < links.length; i++ ) {
+				if (links[i].style.display === "flex") {
+					links[i].style.display = "none";
+					links[i].style.flexDirection = 'unset'
+					links[i].style.alignItems = 'unset'
+					container.style.height='12.5vh'
+					document.getElementsByTagName('body')[0].style.overflow = "auto"
+				} else {
+					links[i].style.display = "flex";
+					links[i].style.flexDirection = 'row'
+					links[i].style.alignItems = 'center'
+					container.style.height='100vh'
+					document.getElementsByTagName('body')[0].style.overflow = "hidden"
 				}
 			}
-			const logoHover2 = async () => {
-				for(var i = 360; i > -1; i--) {
-					navPath2.style.transform = `rotateZ(${i}deg)`;
-					degrees2 = i;
-					if  (i <= 0) {
-						i = 360;
-					}
-					console.log(i)
-					await sleep(150);
-				}
-			}
-			logoHover1()
-			logoHover2()
-		}); */
-
-		// spin that fella back
-/* 		navLogo.addEventListener('mouseout', () => {
-			const logoHover = async () => {
-				for(var i = 0; i < 361; i++) {
-					navPath2.style.transform = `rotateZ(${i}deg)`;
-					degrees2 = i;
-					if  (i >= 360) {
-						i = 0;
-					}
-					await sleep(5);
-				}
-				for(var i = 360; i > 0; i--) {
-					navPath1.style.transform = `rotateZ(${i}deg)`;
-					degrees1 = i;
-					if  (i >= 360) {
-						i = 0;
-					}
-					await sleep(5);
-				}
-			}
-			logoHover()
-		}); */
+		})
 	}
 }
 

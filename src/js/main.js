@@ -6,7 +6,6 @@ import 'typicons.font/src/font/typicons.css';
 
 // COMPONENTS
 import '@components/navbar';
-import '@components/navbar-mobile';
 import '@components/footer';
 
 window.onload = function () {
@@ -40,7 +39,7 @@ window.onload = function () {
 
 	if(document.getElementById('scrollup-btn')&&displayWindowSize()>885) {
 		var scrollupBtn = document.getElementById('scrollup-btn');
-		console.log(screen.width)
+		console.log(window.innerWidth)
 		window.onscroll = function () {
 			scrollFunction();
 		};

@@ -264,8 +264,14 @@
 	border-color: #fff;
 	color: var(--violet) !important;
 	margin: 5px 0;
-
 }
+
+#solutions a:hover {
+	background: transparent;
+	color: #fff !important;
+	margin: 5px 0;
+}
+
 /*! SOLUTIONS SELECT! END */
 
 /*! REFERENCE !*/

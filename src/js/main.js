@@ -1,4 +1,5 @@
 // CSS
+import 'oxn.css'
 import 'normalize.css';
 import '@css/main.css';
 import '@css/components/keyframes.css';

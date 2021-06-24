@@ -90,10 +90,7 @@ svg {
 	padding: 60px;
 	background: var(--violet-dark);
 }
-#we-are-orexin div > .header {
-	text-align: center;
-}
-#we-are-orexin div > .header > h1 {
+#we-are-orexin div > .header * {
 	text-align: center;
 }
 

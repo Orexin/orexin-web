@@ -21,6 +21,7 @@ svg {
 
 .in-text-link {
 	transition: all 0.3s ease-in-out;
+	text-decoration: underline;
 }
 
 .in-text-link:visited {
@@ -29,7 +30,16 @@ svg {
 
 .in-text-link:hover {
 	color: #fff;
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+.section-link {
+	margin: 35px auto;
+}
+
+.section-link > a {
+	color: #fff;
+	font-size: 18px;
 }
 
 /* DEFAULTS END */
@@ -82,11 +92,13 @@ svg {
 	padding: 25px 0 25px 10px;
 }
 
+.subservices-nav-button > [class*="col-"], .skip-button > [class*="col-"]  {
+	padding: .75rem;
+}
+
 /* ROZCESTNIK */
 
 #rozcestnik {
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
@@ -296,8 +308,16 @@ svg {
 	width: 60%;
 }
 
+#sprava .section-link > a {
+	margin-left: 20%;
+}
+
 #traffic p {
-	width: 70%;
+	width: 90%;
+}
+
+#traffic .section-link > a {
+	margin-left: 20%;
 }
 
 #dynamika p {
@@ -316,8 +336,16 @@ svg {
 	width: 70%;
 }
 
+#fotky .section-link > a {
+	margin-left: 22%;
+}
+
 #customs p {
 	width: 70%;
+}
+
+#customs .section-link > a {
+	margin-left: 22%;
 }
 
 /* #svg-sluzby-sprava-cog-1 {
@@ -350,7 +378,7 @@ svg {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 50px 0 150px 0;
+	margin-top: 50px;
 }
 #cenik > div {
 	display: flex;
@@ -381,6 +409,7 @@ svg {
 #cenik > div > div {
 	background: #fff;
 	border-radius: 10px;
+	padding: 5px 15px 15px 15px;
 	padding-top: 5px;
 	padding-bottom: 15px;
 }
@@ -409,7 +438,7 @@ svg {
 }
 
 .cenik-explanations div h3 {
-	margin-left: 35px;
+	margin-left: 20px;
 	font-weight: 600;
 }
 
@@ -418,8 +447,17 @@ svg {
 }
 
 .cenik-kontakt {
-	justify-content: center;
 	margin-top: 20px !important;
+}
+
+.cenik-kontakt a {
+	margin: 15px auto;
+	text-align: center;
+}
+
+.cenik-kontakt a:hover {
+	border-color: var(--violet);
+	color: var(--violet) !important;
 }
 
 .cenik-kontakt * {
@@ -702,3 +740,7 @@ svg {
 /* ECOMMERCE END*/
 
 /* SUB-SERVICES END */
+
+/* RESPO */
+
+/* RESPO END */

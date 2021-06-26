@@ -6,24 +6,45 @@ svg {
 /* NASI PARTNERI */
 
 #nasi-partneri {
-	padding: 30px 0 50px 0;
-}
-
-#nasi-partneri * {
-	color: var(--violet);
+	padding: 40px 0;
+	background: var(--violet-darker);
 }
 
 #nasi-partneri h2 {
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
+	text-align: center;
+	font-size: 40px;
+}
+
+#nasi-partneri > .container > .row {
+	margin: 25px auto;
+}
+
+#nasi-partneri > .container > .row > .col {
+	width: 300px;
+	max-height: 100%;
+	padding: 25px;
+	border-radius: 12px;
+	background-color: var(--violet-dark);
+	box-shadow: 0px 0px 50px #35353538 !important;
+}
+
+#nasi-partneri .logo-img > img {
+	width: 250px;
+	max-height: 100%;
+}
+
+#nasi-partneri > .container > .row span{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
 }
 
 /* NASI PARTNERI END */
 
 /* PARTNERI TEAM */
 
-#partnerstvi-team div {
+#partnerstvi-team > .container > #svg-team {
 	margin: 75px auto;
 }
 
@@ -65,7 +86,7 @@ svg {
 	border-radius: 12px;
 	margin: 20px;
 	padding: 30px;
-	height: 305px;
+	height: 345px;
 }
 
 .partnerstvi-proc-cards-container > div {
@@ -106,6 +127,18 @@ svg {
 .partnerstvi-proc-cards-container > div h3 {
 	text-align: center;
 }
+
+/* PARTNERSTVI PROC END */
+
+/* PARTNERSTVI JAK */
+
+#partnerstvi-jak {
+	padding: 50px 0 50px 0;
+}
+
+/* PARTNERSTVI JAK END */
+
+/* RESPO */
 
 @media screen and (max-width: 1216px) {
 	.partnerstvi-proc-cards-container {
@@ -156,13 +189,4 @@ svg {
 	}
 }
 
-
-/* PARTNERSTVI PROC END */
-
-/* PARTNERSTVI JAK */
-
-#partnerstvi-jak {
-	padding: 50px 0 50px 0;
-}
-
-/* PARTNERSTVI JAK END */
+/* RESPO END */

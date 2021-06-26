@@ -1,12 +1,11 @@
-// import './../components/mini-contact.js';
-import '../css/services.css';
-import './../components/mini-contact';
+import '@css/services.css';
+import '@components/mini-contact';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-import svgWeb from './../img/svg-services/svg-web-pres.svg';
-import svgPres from './../img/svg-services/svg-reprezentace.svg';
-import svgFast from './../img/svg-services/svg-rychla-vyroba.svg';
+import svgWeb from '@img/svg-services/svg-web-pres.svg';
+import svgPres from '@img/svg-services/svg-reprezentace.svg';
+import svgFast from '@img/svg-services/svg-rychla-vyroba.svg';
 
 // inject SVGs
 document.getElementById('svg-web').innerHTML = svgWeb;

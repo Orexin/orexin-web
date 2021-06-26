@@ -8,7 +8,7 @@
 	<meta name="description" content="Jak s námi navázat partnerství a jaké výhody s toho plynou" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./img/logos/logo-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('@img/logos/logo-gradient.png') %>" type="image/x-icon" />
 
 	<!-- PWA -->
 	<link rel="manifest" crossorigin="use-credentials" href="/../manifest.json">
@@ -118,7 +118,7 @@
 	<!-- UVOD SUBPAGES -->
 	<section class="uvod-subpages uvod-subpages-container">
 		<div class="uvod-subpages uvod-subpages-title text container">
-			<div class="column">
+			<div class="col">
 				<h1>Partnerství</h1>
 				<h2>Staňte se naším obchodním partnerem</h2>
 			</div>
@@ -126,13 +126,20 @@
 	</section>
 
 	<!-- NASI-PARTNERI -->
-	<section id="nasi-partneri" class="container">
-		<h2>Naši partneři</h2>
-		<div>
-			<div class="logo-img">
-				<img src="#" alt="">
+	<section id="nasi-partneri">
+		<div class="container">
+			<h2>Naši partneři</h2>
+			<div class="row flex-center">
+				<div class="col flex-center">
+					<div class="logo-img">
+						<img src="<%= require('@img/partnership/skydive.png') %>" alt="Skydive">
+					</div>
+					<span>Skydive</span>
+					<p>Skydive je firma z Dobré u Frýdku-Místku, která nám pomáhá s focením a postprodukcí jedinečných fotografií
+						pro
+						váš web.</p>
+				</div>
 			</div>
-			<span>Skydive</span>
 		</div>
 	</section>
 
@@ -142,7 +149,7 @@
 			<div id="svg-team">
 				<!-- svg -->
 			</div>
-			<div class="flex-center flex-d-column">
+			<div class="flex-center col">
 				<div class="txt-white">
 					<h2>Týmově jde práce vždy lépe od ruky</h2>
 					<p>S partnery chceme dlouhodobě spolupracovat na projektech, díky kterých
@@ -154,7 +161,7 @@
 
 	<!-- PARTNERSTVI-PROC -->
 	<section id="partnerstvi-proc" class="container">
-		<h2 class="row">Proč s námi spolupracovat?</h2>
+		<h2 class="row flex-center">Proč s námi spolupracovat?</h2>
 		<div class="partnerstvi-proc-cards-container">
 			<div id="partnerstvi-proc-card-1">
 				<div class="partnerstvi-proc-card-content">

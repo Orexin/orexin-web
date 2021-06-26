@@ -1,1 +1,1 @@
-import './../css/article.css';
+import '@css/article.css';

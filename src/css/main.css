@@ -8,6 +8,12 @@
 	font-family: 'Montserrat', sans-serif !important; /*! Bulma to přemrdává v contact buttonu je to mrdka */
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 :root {
 	--violet: #4508bd;
 	--violet-light: #5c09ff;
@@ -21,6 +27,15 @@
 
 html {
 	scroll-behavior: smooth;
+	box-sizing: border-box;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 /* SCROLLUP BTN */
@@ -89,7 +104,8 @@ html {
 }
 
 .fancy-btn-trans,
-.fancy-btn-trans-violet {
+.fancy-btn-trans-violet,
+.fancy-btn-trans-whited {
 	font-size: 14px;
 	font-weight: 500;
 	border: solid white 2px;
@@ -118,6 +134,16 @@ html {
 	color: var(--violet-dark);
 	border-color: var(--violet-dark);
 	background-color: transparent;
+}
+
+.fancy-btn-trans-whited {
+	background-color: #fff;
+	color: var(--violet) !important;
+}
+
+.fancy-btn-trans-whited:hover {
+	background-color: transparent;
+	color: #fff !important;
 }
 
 /* style classes */
@@ -173,12 +199,29 @@ a {
 	transition: all 0.3s ease;
 }
 
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover,
+a:visited,
+a:active,
+a:focus {
+	color: currentColor;
+}
+
 /* nadpisy v hero */
 h1 {
 	font-size: 45px;
 	color: #fff;
 	text-align: left;
 	font-weight: 700;
+	margin: 0;
 }
 
 /* nadpisy ve stránce */
@@ -220,116 +263,6 @@ body {
 	font-size: 16px;
 	color: var(--text-gray);
 }
-
-/* REX */
-
-.two-columns {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-.columns {
-	margin: 0 !important;
-}
-
-.block-center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.flex-center {
-	display: flex !important;
-	align-items: center;
-	justify-content: center;
-}
-
-.flex-d-row {
-	flex-direction: row;
-}
-
-.flex-d-column {
-	flex-direction: column;
-}
-
-.row {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.row::after {
-	clear: both;
-	display: table;
-}
-
-.col {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-}
-
-[class*='col-'] {
-	float: left;
-}
-
-.col-1 {
-	width: 8.33%;
-}
-.col-2 {
-	width: 16.66%;
-}
-.col-3 {
-	width: 25%;
-}
-.col-4 {
-	width: 33.33%;
-}
-.col-5 {
-	width: 41.66%;
-}
-.col-6 {
-	width: 50%;
-}
-.col-7 {
-	width: 58.33%;
-}
-.col-8 {
-	width: 66.66%;
-}
-.col-9 {
-	width: 75%;
-}
-.col-10 {
-	width: 83.33%;
-}
-.col-11 {
-	width: 91.66%;
-}
-.col-12 {
-	width: 100%;
-}
-
-.container {
-	flex-grow: 1;
-	margin: 0 auto;
-	position: relative;
-	width: auto;
-}
-
-/* @media screen and (min-width: 1408px) {.container {max-width: 1344px !important;}}
-@media screen and (min-width: 1216px) {.container {max-width: 1152px !important;}}
-@media screen and (min-width: 1024px) {.container {max-width: 960px !important;}}
- @media screen and (min-width: 960px) {.container {max-width: 768px !important;}}
-@media screen and (min-width: 768px) {.container {max-width: 576px !important;}}
-@media screen and (min-width: 576px) {.container {max-width: 414px !important;}}
-@media screen and (max-width: 576px) {.container {max-width: 375px !important;}} */
-
-/* https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries */
-
-/* REX END */
 
 .btn {
 	font-size: 14px;
@@ -415,19 +348,17 @@ body {
 .uvod-subpages.text h1 {
 	font-size: 80px;
 	font-weight: 500;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
 	margin-bottom: 0;
 }
 
 .uvod-subpages.text h2 {
 	font-size: 25px;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
 	margin-bottom: 11vh;
 	font-weight: 600;
+}
+
+.uvod-subpages.text * {
+	margin: 0 auto;
 }
 
 /** FORMS */
@@ -515,7 +446,6 @@ form p.gdpr-notice {
 }
 
 .select-box {
-	width: 100%;
 }
 
 .select-box > input {
@@ -613,6 +543,10 @@ form p.gdpr-notice {
 
 /* TEXT END */
 
+.floatingElmAnimation {
+	animation: floatingElm 7s linear infinite;
+}
+
 .socials-hover a:nth-child(1) > span:hover {
 	color: #4267b2;
 }
@@ -638,6 +572,39 @@ form p.gdpr-notice {
 }
 
 /** RESPO */
+
+/* width */
+
+@media only screen and (min-width: 885px) {
+	navbar-wrapper > #navbar-mobile {
+		display: none;
+	}
+
+	navbar-wrapper > #navbar {
+		display: flex;
+	}
+
+	#scrollup-btn {
+		display: block;
+	}
+
+	#uvod-text {
+		top: 125px;
+	}
+}
+
+@media only screen and (max-width: 885px) {
+	navbar-wrapper > #navbar-mobile {
+		display: flex;
+	}
+
+	navbar-wrapper > #navbar,
+	#scrollup-btn {
+		display: none;
+	}
+}
+
+/* height */
 
 /* 9.1 XS (<576px) */
 @media only screen and (max-width: 576px) {
@@ -683,28 +650,4 @@ form p.gdpr-notice {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #727897;
-}
-
-/* Waves SVG*/
-
-.custom-shape-divider-bottom-1610843841 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
-	margin-bottom: 13px;
-}
-
-.custom-shape-divider-bottom-1610843841 svg {
-	position: relative;
-	display: block;
-	width: calc(274% + 1.3px);
-	height: 69px;
-}
-
-.custom-shape-divider-bottom-1610843841 .shape-fill {
-	fill: #fff;
 }

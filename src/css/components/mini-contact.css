@@ -1,6 +1,12 @@
+
+#mini-contact-title > h2{
+	color: var(--violet);
+	font-size: 40px;
+}
+
 .mini-contact {
 	border: 1px rgba(0, 0, 0, 0.1) solid;
-	width: 45%;
+	width: 50%;
 	margin: 50px auto;
 	padding: 30px;
 	border-radius: 12px;
@@ -21,3 +27,56 @@
 	display: block;
 	margin-bottom: 5px;
 }
+
+/* honeypot */
+.form-group:nth-child(2) {
+	display: none;
+}
+
+/* RESPO */
+
+@media only screen and (max-width: 1216px) {
+	.mini-contact {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.mini-contact {
+		width: 65%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.mini-contact {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 625px) {
+	.mini-contact {
+		width: 75%;
+	}
+
+	#select-boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.select-box {
+		display: flex;
+		flex-direction: row;
+		width: 65%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.select-box * {
+		width: 100%;
+	}
+}
+
+/* RESPO END */

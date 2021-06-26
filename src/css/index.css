@@ -9,6 +9,7 @@
 	width: 50px;
 	overflow: hidden;
 }
+
 #mainArrow:hover {
 	background-color: var(--violet-light);
 }
@@ -22,6 +23,7 @@
 	transform: translate(-50%, -50%);
 	padding: 5px 15px 5px 15px;
 }
+
 #mainArrow:hover > span {
 	animation-name: arrowGoBrr;
 	animation-duration: 0.5s;
@@ -38,7 +40,6 @@
 }
 
 #uvod-text {
-	top: 125px;
 	position: absolute;
 	margin-left: 3vh;
 	display: grid;
@@ -59,16 +60,18 @@
 	text-align: left;
 	font-size: 50px;
 	resize: horizontal;
+	margin-right: 15px;
 }
+
 #uvod-text div h2 {
 	text-align: left;
-	font-size: 35px;
+	font-size: 30px;
 	resize: horizontal;
 	font-weight: 400;
 }
 
 #get-started-button {
-	margin-top: -40px !important;
+	margin-top: -33px !important;
 }
 
 .uvod-sub-pages img {
@@ -96,15 +99,16 @@
 }
 
 .cards {
-	display: flex;
-	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
 	margin-top: 75px;
 	margin-bottom: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .card-el {
+	display: inline-block;
 	height: 450px;
 	width: 450px;
 	transition-duration: 0.5s;
@@ -130,11 +134,11 @@
 	transition: all 0.9s ease-in-out;
 }
 
-.card-el:hover {
+.card-el:hover, .card-el:focus {
 	transform: translateY(-25px);
 	background-color: var(--violet-light);
 }
-.card-el:hover > .card-text {
+.card-el:hover > .card-text, .card-el:focus > .card-text {
 	transform: translateY(0px);
 	transition-duration: 0.5s;
 }
@@ -142,23 +146,21 @@
 	transform: translateY(450px);
 }
 .card-img h2 {
-	font-family: 'Montserrat', sans-serif;
+	
 	color: var(--violet);
 	font-size: 25px;
 	text-align: center;
 }
 .card-text p {
 	text-align: center;
+	margin: 0 15px;
 }
 .see-also {
 	text-align: center;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 15px;
 }
 .see-also a {
+	margin: 20px 0;
 	font-size: 14px;
 	font-weight: 500;
 	border: solid white 2px;
@@ -178,13 +180,13 @@
 	content: 'Pay-as-you-go';
 }
 #pay:hover:after {
-	content: 'Jak to přeložit??';
+	content: 'Platba za pochodu';
 }
 #oldMan:after {
-	content: 'The future is now, old man.';
+	content: 'Future is today';
 }
 #oldMan:hover:after {
-	content: 'Budoucnost je nyní, staříku.';
+	content: 'Budoucnost je dnes';
 }
 #third:after {
 	content: 'Full control';
@@ -208,16 +210,16 @@
 	color: white;
 }
 .card-el:hover > .card-img {
-	height: 75%;
+	height: 65%;
 }
 .card-img {
 	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
 	transition-duration: 0.5s;
+}
+
+.card-img * {
+	transition: all .3s ease;
 }
 
 /*SKEW*/
@@ -234,14 +236,14 @@
 /*! NABIDKA END !*/
 
 /*! SOLUTIONS SELECT! */
-.solutions {
+#solutions {
 	width: 100%;
 	background-color: var(--violet-dark);
 	padding: 50px 0px 50px 0px;
 }
 .sol-text > h2 {
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	
 	font-size: 40px;
 }
 
@@ -249,21 +251,27 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.solutions a:hover .solutions div div div svg #svg-index-web-pres-bg {
+#solutions a:hover #solutions div div div svg #svg-index-web-pres-bg {
 	transform: translateX(100px);
 }
 
-.solutions p {
+#solutions p {
 	margin: 5px 0 30px 0;
 }
 
-.solutions a {
+#solutions a {
 	background: #fff;
 	border-color: #fff;
 	color: var(--violet) !important;
 	margin: 5px 0;
-
 }
+
+#solutions a:hover {
+	background: transparent;
+	color: #fff !important;
+	margin: 5px 0;
+}
+
 /*! SOLUTIONS SELECT! END */
 
 /*! REFERENCE !*/
@@ -360,7 +368,7 @@
 }
 .caption > a {
 	color: white;
-	font-family: 'Montserrat', sans-serif;
+	
 	font-weight: 600;
 }
 .caption > a > span {
@@ -383,39 +391,6 @@
 	margin: 10px 25px 25px 25px;
 }
 
-@media screen and (max-width: 1408px) {
-	.ref-container {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-areas: 
-		"ref1 ref2 ref3"
-		"ref4 ref5 ref6"
-		"ref7 ref8 ref9";
-		grid-gap: 3rem;
-	}
-
-	.ref-col:last-child {
-		display: grid;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.ref-container {
-		grid-template-columns: 2fr 2fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-		grid-template-areas: 
-		"ref1 ref2"
-		"ref3 ref4"
-		"ref5 ref6"
-		"ref7 ref8";
-		grid-gap: 3rem;
-	}
-
-	.ref-col:last-child {
-		display: none;
-	}
-}
-
 /*! REFERENCE END !*/
 
 /*! PARTNERI !*/
@@ -436,14 +411,12 @@
 
 #partneri > .container > .row {
 	gap: 25px;
+	margin: 25px auto;
 }
 
-#partneri > .container > .row > img {
-	height: 25px;
-	/*width: auto;*/
-	/*debug*/
+#partneri > .container > .row  img {
+	height: 200px;
 	max-width: 100%;
-	cursor: pointer;
 }
 
 /*! PARTNERI END!*/
@@ -506,3 +479,146 @@
 }
 
 /*! QUOTE END !*/
+
+/*! CONTACT !*/
+
+#kontakt {
+	padding-top: 20px;
+}
+
+/*! CONTACT END !*/
+
+/*! RESPO !*/
+
+@media only screen and (max-width: 1505px) {
+	#uvod-text div h1:nth-child(1) {
+		font-size: 40px !important;
+	}
+
+	#uvod-text div h2 {
+		font-size: 25px !important;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 1408px) {
+	.ref-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"ref1 ref2 ref3"
+		"ref4 ref5 ref6"
+		"ref7 ref8 ref9";
+		grid-gap: 3rem;
+	}
+
+	.ref-col:last-child {
+		display: grid;
+	}
+}
+
+@media only screen and (max-width: 1265px) {
+	.card-el {
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 1216px) {
+	#uvod-text div h1:nth-child(1) {
+		font-size: 30px !important;
+	}
+
+	#uvod-text div h2 {
+		font-size: 20px !important;
+		margin-bottom: 10px;
+	}
+
+	#nabidka-okna {
+		padding: 75px 0 0 0;
+	}
+
+	.cards {
+		overflow-x: scroll;
+		padding: 15px 15px 15px 35px;
+		width: 100%;
+		display: block;
+
+	}
+
+	.cards::-webkit-scrollbar {
+		height: 10px;
+		background: var(--violet-dark);
+	}
+
+	.cards::-webkit-scrollbar-thumb {
+		background: #727897;
+		border-radius: 12px;
+		border-color: #727897;
+	}
+
+	.card-el {
+		box-shadow: 0px 0px 30px rgba(100, 100, 100, 0.2) !important;
+		display: block;
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.ref-container {
+		grid-template-columns: 2fr 2fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		"ref1 ref2"
+		"ref3 ref4"
+		"ref5 ref6"
+		"ref7 ref8";
+		grid-gap: 3rem;
+	}
+
+	.ref-col:last-child {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	#uvod-text div h1:nth-child(1) {
+		font-size: 20px !important;
+	}
+
+	#uvod-text div h2 {
+		font-size: 15px !important;
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 885px) {
+	#uvod-text {
+		top: 0;
+	}
+}
+
+@media only screen and (max-height: 768px) {
+	#uvod-text div h1:nth-child(1) {
+		font-size: 40px !important;
+	}
+
+	#uvod-text div h2 {
+		font-size: 25px !important;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 625px) and  (max-width: 850px){
+	.two-columns > div > svg{
+		height: 600px;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	#solutions .two-columns h2 {
+		font-size: 25px;
+	}
+}
+
+/*! RESPO END !*/

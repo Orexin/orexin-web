@@ -35,10 +35,10 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Orexin Solutions" />
 	<meta property="og:description" content="Realizujeme webové stránky, které přesně odrážejí vás a váš cíl" />
-	<meta property="og:image" content="<%= require('./img/logos/logo-gradient.png') %>" />
+	<meta property="og:image" content="<%= require('@img/logos/logo-gradient.png') %>" />
 
 	<!-- <link rel="canonical" href="https://orexinsolutions.com/" /> sets page as the main page and prevents other pages from indexing -->
-	<link rel="shortcut icon" href="<%= require('./img/logos/logo-gradient-sm.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('@img/logos/logo-gradient-sm.png') %>" type="image/x-icon" />
 
 	<!-- PWA -->
 	<link rel="manifest" crossorigin="use-credentials" href="/../manifest.json">
@@ -147,15 +147,15 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 
 	<!-- UVOD -->
 	<section id="uvod">
-		<img src="<%= require('./img/hero.png') %>" alt="úvodní fotka" />
+		<img src="<%= require('@img/hero.png') %>" alt="úvodní fotka" />
 		<div id="uvod-text">
 			<div>
-				<h1 class="is-size-1">VAŠI TVÁŘ V ONLINE SVĚTĚ <wbr>VYBUDUJEME MY,</wbr></h1><br>
-				<h2 class="is-size-3"> a vy tak můžete dělat to co vám jde nejlépe</h2>
+				<h1>VAŠI TVÁŘ V ONLINE <br> SVĚTĚ VYBUDUJEME MY,</h1><br>
+				<h2> a vy tak můžete dělat to co vám jde nejlépe.</h2>
 			</div>
 			<div></div>
 		</div>
-		<div id="get-started-button" class="columns is-centered">
+		<div id="get-started-button" class="row flex-center">
 			<a href="./index.html#nabidka" id="mainArrow" title="Jít dolů">
 				<span class="typcn typcn-arrow-down-thick"></span>
 			</a>
@@ -172,42 +172,41 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			<div class="card-rows">
 				<div class="cards">
 					<div id="card-1" class="card-el">
-						<div class="card-img">
+						<div class="card-img col flex-center">
 							<span class="typcn typcn-credit-card card-icon"></span>
 							<h2 id="pay"></h2>
 						</div>
 						<div class="card-text">
-							<p>Cena podle návštěvnosti a dalších faktorů webu. Platíte jen za to, za co opravdu musíte.
+							<p>Cena podle návštěvnosti a využitého datového prostoru. Platíte jen za to, za co opravdu využijete.
 							</p>
-							<div class="see-also">
-								<a href="#" class="fancy-btn-trans">Faktory</a>
-								<a href="#" class="fancy-btn-trans">random</a>
+							<div class="see-also flex-center">
+								<a href="/services.html#traffic" class="fancy-btn-trans-white">Faktory</a>
+								<a href="/services.html#cenik" class="fancy-btn-trans-white">Ceny</a>
 							</div>
 						</div>
 					</div>
 					<div id="card-2" class="card-el">
-						<div class="card-img">
+						<div class="card-img col flex-center">
 							<span class="typcn typcn-media-fast-forward-outline card-icon"></span>
 							<h2 id="oldMan"></h2>
 						</div>
 						<div class="card-text">
-							<p>Pro naše weby a aplikace používáme nejmodernější technologie, aby vše běželo, jak má.</p>
-							<div class="see-also">
-								<a href="#" class="fancy-btn-trans">Techstack</a>
-								<a href="#" class="fancy-btn-trans">WEB 3.0</a>
+							<p>Pro naše weby a aplikace používáme nejmodernější technologie, aby vše běželo jak má.</p>
+							<div class="see-also flex-center">
+								<a href="/about.html#techstack" class="fancy-btn-trans-white">Techstack</a>
+								<a href="#" class="fancy-btn-trans-white">REX</a>
 							</div>
 						</div>
 					</div>
 					<div id="card-3" class="card-el">
-						<div class="card-img">
+						<div class="card-img col flex-center">
 							<span class="typcn typcn-thumbs-up card-icon"></span>
 							<h2 id="third"></h2>
 						</div>
 						<div class="card-text">
-							<p>Web je po dokončení Váš a tím pádem si s ním můžete dělat co chcete, stačí říct.</p>
-							<div class="see-also">
-								<a href="#" class="fancy-btn-trans">Web jako NFT</a>
-								<a href="#" class="fancy-btn-trans">Vaše práva</a>
+							<p>Web máte ve své moci vy, a díky našemu intuitivnímu redakčnímu systému je úprava jednoduchá.</p>
+							<div class="see-also flex-center">
+								<a href="/console.html" class="fancy-btn-trans-white">Orexin Console</a>
 							</div>
 						</div>
 					</div>
@@ -219,13 +218,13 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			<!--JUST A PLACEHOLDER-->
 		</div>
 	</section>
-	<section class="solutions">
+	<section id="solutions">
 		<div class="container">
 			<div class="sol-text">
 				<h2>Začněme s typem řešení</h2>
 			</div>
 			<div class="two-columns">
-				<div class="flex-center flex-d-column">
+				<div class="flex-center col">
 					<div>
 						<h2>Webová prezentace</h2>
 						<p>Pokud počítače a internet nejsou zrovna vaše věc nebo potřebujete šetřit čas vyplníme obsah
@@ -235,7 +234,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 						<a href="./services/web-pres.html" id="solutions-web-pres-btn" class="fancy-btn-trans">Dozvědět se více</a>
 					</div>
 				</div>
-				<div id="svg-web-pres">
+				<div id="svg-web-pres" class="grid-reverse">
 					<!-- svg -->
 				</div>
 			</div>
@@ -243,7 +242,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 				<div id="svg-web-app">
 					<!-- svg -->
 				</div>
-				<div class="flex-center flex-d-column">
+				<div class="flex-center col">
 					<div>
 						<h2>Webová aplikace</h2>
 						<p>Pokud počítače a internet nejsou zrovna vaše věc nebo potřebujete šetřit čas vyplníme obsah
@@ -255,7 +254,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 				</div>
 			</div>
 			<div class="two-columns">
-				<div class="flex-center flex-d-column">
+				<div class="flex-center col">
 					<div>
 						<h2>Ecommerce</h2>
 						<p>Pokud počítače a internet nejsou zrovna vaše věc nebo potřebujete šetřit čas vyplníme obsah
@@ -266,7 +265,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 							více</a>
 					</div>
 				</div>
-				<div id="svg-ecommerce">
+				<div id="svg-ecommerce" class="grid-reverse">
 					<!-- svg -->
 				</div>
 			</div>
@@ -274,14 +273,14 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 	</section>
 
 	<!-- REFERENCE => dát pryč až bude co tam dát tak přidat (min 4 weby)-->
-	<section id="reference" class="container">
+	<!-- 	<section id="reference" class="container">
 		<div class="sol-text">
 			<h2>Reference</h2>
 		</div>
 		<div class="ref-container">
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -291,7 +290,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -301,7 +300,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -311,7 +310,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -321,7 +320,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -331,7 +330,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -341,7 +340,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -351,7 +350,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -361,7 +360,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 			</div>
 			<div class="ref-col">
 				<div class="ref">
-					<img src="<%= require('./img/no-image.png') %>" alt="no image available" loading="lazy" />
+					<img src="<%= require('@img/no-image.png') %>" alt="no image available" loading="lazy" />
 					<div class="image-caption caption">
 						<a href="#">Navštívit stránku <span class="typcn typcn-export"></span></a>
 					</div>
@@ -370,10 +369,10 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- QUOTE => dát pryč až bude co tam dát tak přidat -->
-	<section id="quote">
+	<!-- 	<section id="quote">
 		<div class="q-main">
 			<h2>Díky Orexinu a jeho řešení se můžu naplno věnovat svému byznysu a tomu, co mě baví, jelikož Orexin dělá
 				většinu věcí za mě. <h2 id="stfu">Automaticky.</h2>
@@ -385,7 +384,7 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 				alt="">
 			<p>Tvoje Mamka, Google s.r.o</p>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- PARTNERI -->
 	<section id="partneri">
@@ -394,27 +393,14 @@ Do you want to work with us? https://www.orexin.com/apply/easteregg
 				<h2>Naši partneři</h2>
 				<p>Protože týmová práce je základ úspěchu</p>
 			</div>
-			<div class="row">
-				<img class="col"
-					src="https://www.pngkey.com/png/full/129-1294048_hostoreas-youtube-channel-tagged-youtube-logoqyoutube-nimble-collective.png"
-					loading="lazy" alt="">
-				<img class="col"
-					src="https://www.pngkey.com/png/full/129-1294048_hostoreas-youtube-channel-tagged-youtube-logoqyoutube-nimble-collective.png"
-					loading="lazy" alt="">
-				<img class="col"
-					src="https://www.pngkey.com/png/full/129-1294048_hostoreas-youtube-channel-tagged-youtube-logoqyoutube-nimble-collective.png"
-					loading="lazy" alt="">
-				<img class="col"
-					src="https://www.pngkey.com/png/full/129-1294048_hostoreas-youtube-channel-tagged-youtube-logoqyoutube-nimble-collective.png"
-					loading="lazy" alt="">
-				<img class="col"
-					src="https://www.pngkey.com/png/full/129-1294048_hostoreas-youtube-channel-tagged-youtube-logoqyoutube-nimble-collective.png"
-					loading="lazy" alt="">
-				<img class="col"
-					src="https://www.pngkey.com/png/full/129-1294048_hostoreas-youtube-channel-tagged-youtube-logoqyoutube-nimble-collective.png"
-					loading="lazy" alt="">
+			<div class="row flex-center">
+				<div class="col flex-center">
+					<div class="logo-img">
+						<img src="<%= require('@img/partnership/skydive.png') %>" alt="Skydive">
+					</div>
+				</div>
 			</div>
-			<div class="row">
+			<div class="row flex-center">
 				<a href="./partnership.html" class="fancy-btn-trans col">Dozvědět se více</a>
 			</div>
 		</div>

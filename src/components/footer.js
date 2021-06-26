@@ -1,6 +1,6 @@
-import './../css/components/footer.css';
+import '@css/components/footer.css';
 
-const logoWhite = require('./../img/logos/logo-white.png');
+const logoWhite = require('@img/logos/logo-white.png');
 
 class Footer extends HTMLElement {
 	constructor() {
@@ -11,9 +11,15 @@ class Footer extends HTMLElement {
 		this.innerHTML = `
 	<div class="footer-content">
 		<div class="top-banner">
-			<h2>Připraveni?</h2>
-			<p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
-			<a href="/contact.html" class="footer-a">Jdeme na to</a>
+			<div>
+				<h2>Připraveni?</h2>
+			</div>
+			<div>
+			 <p>Sejdeme se, promluvíme si o tom a dohodneme se. </br> <strong>Kafe je na nás.</strong></p>
+			</div>
+			<div>
+				<a href="/contact.html" class="footer-a">Jdeme na to</a>
+			</div>
 		</div>
 		<div class="upper">
 			<img src=${logoWhite} alt="Orexin White Logo" </div>

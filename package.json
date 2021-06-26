@@ -28,6 +28,7 @@
 		"@babel/preset-env": "^7.12.11",
 		"babel-loader": "^8.2.2",
 		"clean-webpack-plugin": "^3.0.0",
+		"copy-webpack-plugin": "^9.0.0",
 		"css-loader": "^5.0.1",
 		"cssnano": "^4.1.10",
 		"firebase-tools": "^9.0.1",
@@ -43,12 +44,11 @@
 		"workbox-webpack-plugin": "^6.1.5"
 	},
 	"dependencies": {
-		"@splidejs/splide": "^2.4.21",
-		"aos": "^2.3.4",
+		"agent-base": "^6.0.2",
 		"apple-touch-icons-webpack-plugin": "^1.2.0",
-		"bulma": "^0.9.1",
 		"normalize.css": "^8.0.1",
 		"npx": "^10.2.2",
+		"oxn.css": "^1.0.2",
 		"typicons.font": "^2.0.9",
 		"waypoints": "^4.0.1",
 		"webpack-pwa-manifest": "^4.3.0"

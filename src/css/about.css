@@ -6,69 +6,46 @@ svg {
 	height: 100%;
 }
 
-.flex-container > .flex-row  {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.flex-container > .flex-row > .flex-col {
-	display: flex;
-	flex-direction: column;
-}
-
-.text p, .m-box p {
-	font-size: 20px !important;
-}
-
-.text-card {
-	transform: translateY(100px);
-	transition: all 0.75s ease-in-out;
-	opacity: 0;
-}
-
 /* ABT-LANDING */
 
-.abt-landing {
+#svg-assembly {
+	max-height: 700px;
+	width: 100%;
+}
+
+#abt-landing {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--violet-darker);
+	padding-top: 50px;
 }
-.abt-main {
-	height: 90vh;
-	/*debug*/
+
+#abt-landing .two-columns {
+	align-items: center;
 }
+
 .abt-action {
 	height: 10vh;
 	text-align: center;
+	z-index: 1000;
 }
-
-.abt-content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+.abt-text {
 	justify-content: center;
 	align-items: center;
 }
-.abt-item {
-	width: 50% !important;
-	height: 100vh !important;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.abt-text > span:first-child {
+	font-size: 40px;
 }
 
-.abt-text > .smol {
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
+.abt-text > span:last-child {
 	font-size: 20px;
 }
-.abt-text > span {
-	font-size: 40px;
+
+.abt-text * {
 	font-weight: 800;
+	color: white;
+	text-align: left;
 }
 
 /* ABT-LANDING END*/
@@ -81,17 +58,13 @@ svg {
 	padding-bottom: 60px;
 }
 
-#brain > .brain-row {
+#brain > .row {
 	margin-top: 45px;
 }
 
-#brain > .brain-row > div:nth-child(1) {
+#brain > .row > .col:nth-child(1) {
 	width: 700px;
 	margin-right: 80px;
-}
-
-#brain > .brain-row > div:nth-child(2) > h2 {
-	color: var(--violet);
 }
 
 #svg-brain {
@@ -99,12 +72,12 @@ svg {
 	width: 100%;
 }
 
-.m-box {
-	width: 400px !important;
-	margin: 25px;
+#brain > .row > .col:nth-child(2) {
+	justify-content: center;
+	width: 50%;
 }
 
-.m-box * {
+#brain > .row > .col:nth-child(2) * {
 	color: var(--violet);
 	margin: 10px;
 }
@@ -117,10 +90,7 @@ svg {
 	padding: 60px;
 	background: var(--violet-dark);
 }
-#we-are-orexin div > .header {
-	text-align: center;
-}
-#we-are-orexin div > .header > h1 {
+#we-are-orexin div > .header * {
 	text-align: center;
 }
 
@@ -136,14 +106,14 @@ svg {
 	margin: 20px;
 }
 
-#we-are-orexin > .container > .row > .col > p {
-
-}
-
 #we-are-orexin > .container > .row > .col > div {
 	height: 350px;
 	max-width: 100%;
 	margin: 30px auto;
+}
+
+#we-are-orexin h3 {
+	text-align: center;
 }
 
 /* WE-ARE-OREXIN END */
@@ -155,27 +125,22 @@ svg {
 	padding: 50px;
 }
 
-#education > .header {
-	text-align: center;
-}
-
-#education > .header > h2 {
-	font-size: 30px;
-	color: var(--violet);
-	margin: 0;
-}
-
-#education > .header > p {
-	color: var(--text-gray);
-}
-
-#education > .flex-row > .flex-col:nth-child(2) * {
-	color: var(--violet);
+#education > .row > .col:nth-child(1) {
+	margin-right: 80px;
 }
 
 #svg-education {
-	max-height: 800px;
+	max-height: 650px;
 	width: 100%;
+}
+
+#education > .row > .col:nth-child(2) {
+	justify-content: center;
+}
+
+#education > .row > .col:nth-child(2) * {
+	color: var(--violet);
+	margin: 10px;
 }
 
 /* EDUCATION END */
@@ -231,214 +196,63 @@ svg {
 	font-weight: 700;
 }
 
-/* OLD VANTYHO CODE */
+/* RESPO */
 
-/*! STORY!
-#story {
-	width: 100%;
-	background: var(--violet-dark);
+@media only screen and (max-height: 768px) {
+	#svg-assembly {
+		max-height: 500px;
+		width: 100%;
+	}
+
+	.abt-text > span:first-child {
+		font-size: 30px;
+	}
 }
 
-#story-title div {
-	margin: 7vh 0 2vh 1.5vh;
+@media screen and (max-width: 1216px) {
+	#svg-assembly {
+		max-height: 450px;
+		width: 100%;
+	}
+
+	.abt-text > span:first-child {
+		font-size: 25px;
+	}
+
+	.abt-text > span:last-child {
+		font-size: 15px;
+	}
 }
 
-#story-title div h2 {
-	color: #fff;
-	font-size: 40px;
-	font-weight: 900;
+@media screen and (max-width: 1024px) {
+	#svg-assembly {
+		max-height: 400px;
+		width: 100%;
+	}
 }
 
-#story-title div p {
-	font-size: 20px;
-	color: #fff;
+@media screen and (max-width: 850px) {
+	.two-columns > div > svg{
+		margin: 0;
+		height: 500px;
+		max-width: 100%;
+	}
+
+	.abt-text {
+		margin: 125px 0 50px 0;
+	}
 }
 
-.splide-about {
-	max-width: 100%;
-	max-height: 100%;
+@media only screen and (max-width: 575px) {
+	.abt-text {
+		margin: 10vh 0 40px 0;
+	}
 }
 
-.splide-about div ul li img {
-	display: block;
-	width: 100vw;
-	height: 76vh;
-	position: relative;
+@media only screen and (max-width: 450px) {
+	.abt-text {
+		margin: 0 0 40px 0;
+	}
 }
 
-.splide__slide-about-1 h2 {
-	position: absolute;
-	top: 0;
-	font-size: 35px;
-	font-weight: 900;
-	margin: 3vh 0 1vh 7vh;
-	line-height: 40px;
-}
-
-.splide__slide-about-1 h3 {
-	position: absolute;
-	top: 15vh;
-	font-size: 25px;
-	margin: 4vh 0 1vh 7vh;
-	line-height: 30px;
-}
-/*! STORY END!
-
-/*! TECHNOLOGIE !
-
-#technologie {
-	background: var(--violet-dark);
-	overflow: hidden;
-}
-
-#technologie-title {
-	transform: rotateZ(-45deg);
-	display: inline-block;
-	margin-bottom: 11vh;
-}
-
-#technologie-title div h2 {
-	font-size: 50px;
-	font-weight: 900;
-	text-align: center;
-	transform: translateY(15vh) translateX(-15vh);
-}
-
-.technologie-presentation-column {
-	margin-left: -39vw;
-}
-
-.technologie-presentation-container {
-	background: #fff;
-	display: flex;
-	flex-direction: row;
-	overflow: hidden;
-	position: absolute;
-}
-
-.second-row {
-	margin-right: 10vh;
-	margin-top: 10vh;
-}
-
-.technologie-presentation-container div {
-	margin: 2vh 5vh 2vh 0vh;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: -10;
-}
-
-.technologie-presentation-container div img {
-	max-height: 100%;
-	max-width: 75px;
-	position: relative;
-	z-index: 10000000;
-}
-
-.technologie-presentation-container > div > img:hover {
-	cursor: pointer;
-}
-
-/* .technologie-presentation-container-1 {
-	margin-top: 7vw !important;
-	margin-right: 8vw !important;
-}
- 
-.technologie-presentation-column div {
-	position: relative;
-	transform: rotateZ(-45deg);
-	z-index: 2;
-}
-
-.technologie-presentation-shape-1,
-.technologie-presentation-shape-2,
-.technologie-presentation-shape-3 {
-	margin: 0 !important;
-	width: 30vw;
-	height: 100%;
-	position: absolute;
-}
-
-.technologie-presentation-shape-1 {
-	background: var(--violet-light);
-	transform: skew(-45deg);
-	position: absolute;
-	margin-top: -22.25vh !important;
-	margin-left: -79vh !important;
-}
-
-.technologie-presentation-shape-2 {
-	background: var(--violet);
-	transform: skew(-22.5deg);
-	margin-top: -22.25vh !important;
-	margin-left: -49vh !important;
-}
-
-.technologie-presentation-shape-3 {
-	background: var(--violet-dark);
-	margin-left: 5vh;
-	margin-top: -22.25vh !important;
-	margin-left: -19vh !important;
-}
-
-.third-row {
-	top: -10vh;
-	left: 10vh;
-	position: absolute;
-}
-
-.first-row div img,
-.third-row div img {
-	animation: technologiePresentationUp 30s linear infinite;
-}
-
-.second-row div img {
-	animation: technologiePresentationDown 30s linear infinite;
-}
-
-#technologie-presentation div div div img {
-	position: relative;
-	z-index: 1000;
-}
-
-.technologie-desc-container {
-	position: relative;
-	z-index: 2;
-	background: var(--violet-dark);
-}
-
-#technologie-desc {
-	display: flex;
-	flex-direction: row;
-	float: right;
-}
-
-.technologie-desc-column {
-	display: flex;
-	flex-direction: column;
-}
-
-.technologie-desc-column div img,
-.technologie-desc-column div h2,
-.technologie-desc-column div p {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-.technologie-desc-column div h2 {
-	float: left;
-	font-size: 40px;
-	font-weight: 900;
-}
-
-.technologie-desc-column div p {
-	font-size: 19px;
-	line-height: 24px;
-}
-/*! TECHNOLOGIE END!*/
-
-/*OLD VANTYHO CODE END*/
-
-/*! ABOUT END!*/
+/* RESPO END */

@@ -8,7 +8,7 @@
 	<meta name="description" content="O společnosti a našich cílech" />
 	<meta name="author" content="Orexin Solutions" />
 
-	<link rel="shortcut icon" href="<%= require('./img/logos/logo-gradient.png') %>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<%= require('@img/logos/logo-gradient.png') %>" type="image/x-icon" />
 
 	<!-- PWA -->
 	<link rel="manifest" crossorigin="use-credentials" href="/../manifest.json">
@@ -115,28 +115,28 @@
 	<!-- NAV -->
 	<navbar-wrapper></navbar-wrapper>
 
-	<div class="abt-landing">
-		<div class="abt-main">
-			<div class="abt-content">
-				<div class="abt-item abt-image">
-					web na páse assembly paid animation
+	<section id="abt-landing">
+		<div class="container">
+			<div class="two-columns">
+				<div id="svg-assembly">
+					<!-- svg -->
 				</div>
-				<div class="abt-item abt-text">
-					<span>Dáváme vašim snům reálnou podobu.</span>
-					<p class="smol">OREXIN SOLUTIONS</p>
+				<div class="abt-text">
+					<span>Dáváme vašim snům reálnou podobu.</span> <br>
+					<span>OREXIN SOLUTIONS</span>
 				</div>
 			</div>
 		</div>
 		<div class="abt-action">
 			<a href="#brain" class="fancy-btn-trans">Poznejme se!</a>
 		</div>
-	</div>
-	<div id="brain" class="container flex-container">
-		<div class="flex-row brain-row">
-			<div id="svg-brain" class="flex-col">
+	</section>
+	<div id="brain" class="container container">
+		<div class="row flex-center">
+			<div id="svg-brain" class="col">
 				<!-- svg -->
 			</div>
-			<div id="text-card-brain" class="flex-col text-card m-box">
+			<div class="col">
 				<h2>Co je to orexin?</h2>
 				<p> Orexin je neuropeptid, vytvořen v části mozku zvané hypotalamus. Orexin má více funkcí, ale ta,
 					která
@@ -153,7 +153,7 @@
 				<h1>Jsme Orexin Solutions</h1>
 				<p>Established @2021</p>
 			</div>
-			<div class="row">
+			<div class="row flex-center">
 				<div class="col">
 					<h3>Kdo jsme?</h3>
 					<div id="svg-kdo-jsme">
@@ -184,12 +184,12 @@
 			</div>
 		</div>
 	</div>
-	<div id="education" class="container flex-container">
-		<div class="flex-row">
-			<div id="svg-education" class="flex-col">
+	<div id="education" class="container">
+		<div class="row flex-center">
+			<div id="svg-education" class="col">
 				<!-- svg -->
 			</div>
-			<div id="text-card-education" class="flex-col text-card">
+			<div class="col">
 				<h2>Podporujeme vzdělávání</h2>
 				<p>Na našem blogu a sociálních sítích zveřejňujeme tipy a rady jak dosáhnout lepšího kódu a lepšího
 					vzhledu

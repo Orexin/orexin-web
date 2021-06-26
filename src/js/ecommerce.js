@@ -1,13 +1,12 @@
-// import './../components/mini-contact';
-import '../css/services.css';
-import './../components/mini-contact';
+import '@css/services.css';
+import '@components/mini-contact';
 import 'waypoints/lib/noframework.waypoints.min.js';
 
 // SVGs
-import svgEcommerce from './../img/svg-services/svg-ecommerce.svg';
-import svgSeo from './../img/svg-services/svg-seo.svg';
-import svgPlatby from './../img/svg-services/svg-moznosti-platby.svg';
-import svgObjednavky from './../img/svg-services/svg-dokonceni-objednavky.svg';
+import svgEcommerce from '@img/svg-services/svg-ecommerce.svg';
+import svgSeo from '@img/svg-services/svg-seo.svg';
+import svgPlatby from '@img/svg-services/svg-moznosti-platby.svg';
+import svgObjednavky from '@img/svg-services/svg-dokonceni-objednavky.svg';
 
 // inject SVGs
 document.getElementById('svg-ecommerce').innerHTML = svgEcommerce;

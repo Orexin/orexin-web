@@ -1,6 +1,6 @@
-import './../css/components/mini-contact.css';
+import '@css/components/mini-contact.css';
 
-const logoWhite = require('./../img/logos/logo-white.png');
+const logoWhite = require('@img/logos/logo-white.png');
 var checkedState1, checkedState2, checkedState3;
 
 class MiniContact extends HTMLElement {
@@ -10,12 +10,22 @@ class MiniContact extends HTMLElement {
 
 	connectedCallback() {
 		this.innerHTML = `
+		<div id="mini-contact-title" class="row flex-center">
+			<h2>Napište nám</h2>
+		</div>
 		<div class="mini-contact">
 			<form>
 				<div class="form-group">
 					<label for="jmeno">Vaše jméno a příjmení</label>
 					<div class="input-icon-wrap">
 						<input id="jmeno" type="text" tabindex="1" placeholder="Jan Novák" />
+						<span class="typcn typcn-user-outline"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="jmeno">Username</label>
+					<div class="input-icon-wrap">
+						<input name="username" id="username" type="text" tabindex="1" />
 						<span class="typcn typcn-user-outline"></span>
 					</div>
 				</div>
@@ -44,7 +54,7 @@ class MiniContact extends HTMLElement {
 					</div>
 				</div>
 				<div class="send-button form-group flex-center">
-					<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+					<input id="submit" class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
 				</div>
 				<p class="gdpr-notice">Odesláním souhlasíte se <a href="/privacy.html" tabindex="9">zpracováním osobních údajů</a>.</p>
 			</form>
@@ -60,3 +70,12 @@ if (window.location.pathname == '/services/ecommerce.html') checkedState2 = 'che
 console.log(window.location.pathname)
 
 customElements.define('mini-contact', MiniContact);
+
+// honeyPot
+document.getElementById('submit').addEventListener('click', (e) => {
+	e.preventDefault()
+	if(document.getElementById('username').value !== "") {
+		alert('jsi hnusný bot!')
+		e.preventDefault()
+	}
+})

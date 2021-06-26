@@ -10,6 +10,15 @@ module.exports = {
 
 	devtool: 'source-map',
 
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, './src/'),
+			"@components": path.resolve(__dirname, './src/components/'),
+			"@img": path.resolve(__dirname, './src/img/'),
+			"@css": path.resolve(__dirname, './src/css/'),
+		}
+	},
+
 	entry: {
 		main: '/src/js/main.js',
 		article: '/src/js/article.js',
@@ -23,6 +32,7 @@ module.exports = {
 		webapp: '/src/js/web-app.js',
 		ecommerce: '/src/js/ecommerce.js',
 		partnership: '/src/js/partnership.js',
+		console: '/src/js/console.js',
 	},
 
 	module: {
@@ -68,9 +78,8 @@ module.exports = {
 				test: /\.svg$/,
 				use: 'html-loader'
 			}
-		]
+		],
 	},
-
 
 	plugins: [
 		new CleanWebpackPlugin({}),
@@ -176,6 +185,18 @@ module.exports = {
 			inject: true,
 			chunks: ['main', 'partnership'],
 			filename: 'partnership.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: '/src/console.html',
+			inject: true,
+			chunks: ['main', 'console'],
+			filename: 'console.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: '/src/404.html',
+			inject: true,
+			chunks: ['main'],
+			filename: '404.html'
 		}),
 		new WorkboxPlugin.GenerateSW({
 			// these options encourage the ServiceWorkers to get in there fast

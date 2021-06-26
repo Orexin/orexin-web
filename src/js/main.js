@@ -1,5 +1,5 @@
 // CSS
-import 'oxn.css'
+import 'oxn-css';
 import 'normalize.css';
 import '@css/main.css';
 import '@css/components/keyframes.css';
@@ -14,7 +14,7 @@ window.onload = function () {
 	if (document.title === 'Web-development na míru | Orexin Solutions') document.title = 'Orexin Solutions';
 
 	// if preloader exists yeet out preloader
-	if(document.getElementById('preloader')) {
+	if (document.getElementById('preloader')) {
 		document.getElementById('preloader').style.display = 'none';
 		document.getElementById('preloader').classList.remove('loading');
 	}
@@ -23,7 +23,7 @@ window.onload = function () {
 	window.addEventListener('scroll', function () {
 		let container = document.getElementsByClassName('uvod-subpages-container');
 		let title = document.getElementsByClassName('uvod-subpages-title');
-		var value = window.scrollY/2;
+		var value = window.scrollY / 2;
 		for (var i = 0; i < container.length; i++) {
 			container[i].style.marginTop = `-${value + 0.5}px`;
 			title[i].style.marginTop = `+${value + 0.15}px`;
@@ -32,15 +32,15 @@ window.onload = function () {
 
 	// scroll to top btn, not sure right
 	function displayWindowSize() {
-		return screen.width
+		return screen.width;
 	}
 
-	window.onresize = displayWindowSize()
-	window.onload = displayWindowSize()
+	window.onresize = displayWindowSize();
+	window.onload = displayWindowSize();
 
-	if(document.getElementById('scrollup-btn')&&displayWindowSize()>885) {
+	if (document.getElementById('scrollup-btn') && displayWindowSize() > 885) {
 		var scrollupBtn = document.getElementById('scrollup-btn');
-		console.log(window.innerWidth)
+		console.log(window.innerWidth);
 		window.onscroll = function () {
 			scrollFunction();
 		};
@@ -59,5 +59,3 @@ window.onload = function () {
 		});
 	}
 };
-
-

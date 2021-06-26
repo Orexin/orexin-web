@@ -48,7 +48,7 @@
 		"apple-touch-icons-webpack-plugin": "^1.2.0",
 		"normalize.css": "^8.0.1",
 		"npx": "^10.2.2",
-		"oxn.css": "^1.0.2",
+		"oxn-css": "^1.0.6",
 		"typicons.font": "^2.0.9",
 		"waypoints": "^4.0.1",
 		"webpack-pwa-manifest": "^4.3.0"

@@ -1,22 +1,20 @@
 import './../css/contact.css';
 
-// selecting služby
+// selecting services
 const checkLabels = document.querySelectorAll('.selectBox > label');
 Array.from(checkLabels).forEach((item) => {
 	item.addEventListener('click', (event) => {
-		const checkbox = item.previousElementSibling;
-		console.log(checkbox);
+		let checkbox = item.previousElementSibling;
 		if (checkbox.checked) {
 			checkbox.checked = true;
 		} else {
 			checkbox.checked = false;
 		}
-		console.log(checkbox.checked);
 	});
 });
 
 // ask if you really wanna close the page, when form is filled
-window.addEventListener('beforeunload', function (e) {
+window.addEventListener('beforeunload', (e) => {
 	let name = document.getElementById('name').value;
 	let email = document.getElementById('email').value;
 	let phone = document.getElementById('phone').value;
@@ -26,6 +24,16 @@ window.addEventListener('beforeunload', function (e) {
 		e.preventDefault();
 		e.returnValue = '';
 	}
+});
+
+// success checkmark
+const submit = document.getElementById('submit');
+submit.addEventListener('click', (e) => {
+	e.preventDefault();
+
+	submit.style.display = 'none';
+	document.getElementById('form').style.display = 'none';
+	document.getElementById('success').classList.add('animate-success');
 });
 
 // phone mask

@@ -201,7 +201,7 @@
 						</div>
 					</div>
 					<div class="contact-form-body">
-						<form autocomplete="on">
+						<form id="form" autocomplete="on">
 							<div class="form-inputs columns">
 								<div class="column is-half">
 									<div class="form-group">
@@ -252,12 +252,18 @@
 								</div>
 							</div>
 							<div class="send-button form-group flex-center">
-								<input class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
+								<input id="submit" class="btn btn-violet" type="button" tabindex="8" value="Odeslat" />
 							</div>
 							<p class="gdpr-notice">Odesláním souhlasíte se <a href="/privacy.html" tabindex="9">zpracováním osobních
 									údajů</a>.
 							</p>
 						</form>
+						<div id="success">
+							<svg id="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+								<circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+								<path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+							</svg>
+						</div>
 					</div>
 				</div>
 				<div class="kontakty block-center">

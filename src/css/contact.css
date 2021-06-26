@@ -150,7 +150,6 @@
 	width: 85%;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	border-radius: 12px;
-	transition: all 0.5s;
 	margin-top: -154px;
 }
 
@@ -197,7 +196,6 @@
 	background: white; /* #f8f4fe */
 	border-bottom-right-radius: 12px;
 	border-bottom-left-radius: 12px;
-	transition: all 0.5s;
 	padding: 30px;
 }
 

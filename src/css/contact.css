@@ -150,7 +150,7 @@
 	width: 85%;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	border-radius: 12px;
-	margin-top: -154px;
+	margin-top: -142px;
 }
 
 .contact .column.form-group {
@@ -197,6 +197,7 @@
 	border-bottom-right-radius: 12px;
 	border-bottom-left-radius: 12px;
 	padding: 30px;
+	min-height: 507px; /* aby byl success mark uprostřed btw */
 }
 
 .contact-form-body p {
@@ -221,7 +222,7 @@
 }
 
 /* honeypot */
-.form-group:nth-child(2) {
+.usr {
 	display: none;
 }
 

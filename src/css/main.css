@@ -484,9 +484,18 @@ form p.gdpr-notice {
 }
 
 /* success checkmark */
+/* bylo by cool přidat animaci pro fade out formu po kliku odeslat */
+.animate-success {
+	min-height: inherit;
+}
+
 .animate-success #checkmark {
 	display: block;
 	animation: checkmark-fill 0.4s ease-in-out 0.4s forwards, checkmark-scale 0.3s ease-in-out 0.9s both;
+}
+
+.animate-success span {
+	display: inline !important;
 }
 
 .animate-success .checkmark-circle {
@@ -495,6 +504,10 @@ form p.gdpr-notice {
 
 .animate-success .checkmark-check {
 	animation: checkmark-stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+#success {
+	flex-direction: column;
 }
 
 #checkmark {
@@ -506,6 +519,12 @@ form p.gdpr-notice {
 	stroke: white;
 	stroke-miterlimit: 10;
 	box-shadow: inset 0px 0px 0px #4508bd;
+	display: none;
+}
+
+#success span {
+	padding-top: 10px;
+	color: var(--text-dark);
 	display: none;
 }
 
